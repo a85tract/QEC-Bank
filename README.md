@@ -40,11 +40,12 @@ reproduction, and a guided tour). Only the maintainers can mark an entry gold.
 | `exports/site/` | the static site, deployed to GitHub Pages |
 | `schemas/` | JSON Schemas for the records above |
 | `registry/` | controlled vocabularies: categories, circuits, decoders, noise models, and references |
-| `codes/<id>/` | source cards, instances, intuition, and pedagogy notes for the codes covered by [QEC-Bank-Academy](https://github.com/a85tract/QEC-Bank-Academy): surface, toric, bivariate bicycle, honeycomb, Bacon–Shor, quantum expander, Haah cubic, and 2D dynamic-automorphism color codes |
+| `codes/<id>/` | source cards, instances, constructors, intuition, and pedagogy notes for the codes covered by [QEC-Bank-Academy](https://github.com/a85tract/QEC-Bank-Academy): surface, toric, bivariate bicycle, honeycomb, Bacon–Shor, quantum expander, Haah cubic, and 2D dynamic-automorphism color codes |
 | `foundations/` | shared background explanations (Pauli algebra, stabilizer codes, Knill–Laflamme conditions, CSS chain complexes, logicals and distance, subsystem codes, schedules, decoding, bounds) |
 | `wanted/` | open problems that QEC-Bank cannot resolve yet |
+| `qeclib/` | the library the constructors use: GF(2) linear algebra, Paulis, check matrices, chain complexes, schedules, scenes, logical operators, and exact and randomized distance computation |
 
-The `codes/` entries include their text and data only. The constructors and
+The `codes/` entries include each code's deterministic constructor. The
 `reproduce.py` scripts they refer to are not part of this release. The files
 are byte-identical to the sources the exports were built from, so their
 SHA-256 hashes match the ones recorded in the exports. The exports and the
@@ -55,9 +56,31 @@ Each export is wrapped in a consumer envelope that names its schema and its
 verification status. Schema and contract ids use the `qec-atlas-` prefix of the
 tool that generates the data.
 
+## Rebuilding a code
+
+The constructors need Python 3.12 or later with `numpy`, `pyyaml`, and
+`jsonschema`. From the repository root:
+
+```python
+import importlib.util, yaml
+from qeclib.distance import exact_distance
+
+spec = importlib.util.spec_from_file_location("surface", "codes/surface/constructor.py")
+surface = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(surface)
+
+cm = surface.build(L=3)["checkmatrix"]
+print(cm.n, cm.k, exact_distance(cm)[0])   # 13 1 3
+```
+
+Each `codes/<id>/instances.yaml` lists the parameters of the recorded
+instances and their claims, so every `verified` value of n, k, and d for these
+codes can be recomputed this way.
+
 ## License
 
-The data are released under CC BY 4.0. Records bound to the
+The data are released under CC BY 4.0, and the Python source code under
+Apache-2.0 (see [LICENSE-APACHE](LICENSE-APACHE)). Records bound to the
 [Error Correction Zoo](https://errorcorrectionzoo.org) carry an `eczoo` source
 binding, and the material taken or adapted from the Zoo stays under
 CC BY-SA 4.0. See [LICENSE](LICENSE).
