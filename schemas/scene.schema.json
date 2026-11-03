@@ -1,0 +1,851 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qec-atlas.local/schemas/scene.schema.json",
+  "title": "QEC Atlas Scene v2",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/scene2d"
+    },
+    {
+      "$ref": "#/$defs/scene3d"
+    }
+  ],
+  "$defs": {
+    "vector2": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "vector3": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "method"
+      ],
+      "properties": {
+        "kind": {
+          "const": "verified"
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "style": {
+      "enum": [
+        "X",
+        "Y",
+        "Z",
+        "mixed",
+        "neutral"
+      ]
+    },
+    "role": {
+      "enum": [
+        "data",
+        "ancilla",
+        "boundary",
+        "abstract"
+      ]
+    },
+    "layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "kind",
+        "defaultVisible"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "data",
+            "checks",
+            "measurements",
+            "logicals",
+            "cells",
+            "boundaries",
+            "annotations"
+          ]
+        },
+        "defaultVisible": {
+          "type": "boolean"
+        }
+      }
+    },
+    "coordinateSystem2d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "origin"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "cartesian",
+            "periodic"
+          ]
+        },
+        "origin": {
+          "$ref": "#/$defs/vector2"
+        },
+        "basis": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "$ref": "#/$defs/vector2"
+            },
+            {
+              "$ref": "#/$defs/vector2"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "const": "periodic"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "basis"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "basis"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "coordinateSystem3d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "origin"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "cartesian",
+            "periodic"
+          ]
+        },
+        "origin": {
+          "$ref": "#/$defs/vector3"
+        },
+        "basis": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "$ref": "#/$defs/vector3"
+            },
+            {
+              "$ref": "#/$defs/vector3"
+            },
+            {
+              "$ref": "#/$defs/vector3"
+            }
+          ],
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "const": "periodic"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "basis"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "basis"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "camera2d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fit",
+        "padding",
+        "minZoom",
+        "maxZoom"
+      ],
+      "properties": {
+        "fit": {
+          "const": "contain"
+        },
+        "padding": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 0.5
+        },
+        "minZoom": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "maxZoom": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "camera3d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "projection",
+        "position",
+        "target",
+        "up",
+        "near",
+        "far",
+        "minDistance",
+        "maxDistance"
+      ],
+      "properties": {
+        "kind": {
+          "const": "orbit"
+        },
+        "projection": {
+          "enum": [
+            "perspective",
+            "orthographic"
+          ]
+        },
+        "position": {
+          "$ref": "#/$defs/vector3"
+        },
+        "target": {
+          "$ref": "#/$defs/vector3"
+        },
+        "up": {
+          "$ref": "#/$defs/vector3"
+        },
+        "near": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "far": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "fov": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 180
+        },
+        "minDistance": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "maxDistance": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "projection"
+            ],
+            "properties": {
+              "projection": {
+                "const": "perspective"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "fov"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "fov"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "node2d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "position",
+        "role",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "position": {
+          "$ref": "#/$defs/vector2"
+        },
+        "role": {
+          "$ref": "#/$defs/role"
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "node3d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "position",
+        "role",
+        "label",
+        "layer"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "position": {
+          "$ref": "#/$defs/vector3"
+        },
+        "role": {
+          "$ref": "#/$defs/role"
+        },
+        "label": {
+          "type": "string"
+        },
+        "layer": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "object2d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "points",
+        "style",
+        "layer",
+        "item",
+        "hitPoint"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "face",
+            "polyline",
+            "segment",
+            "spokes"
+          ]
+        },
+        "points": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/vector2"
+          }
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "layer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hitPoint": {
+          "$ref": "#/$defs/vector2"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "const": "segment"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "points": {
+                "maxItems": 2
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "const": "face"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "points": {
+                "minItems": 3
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "const": "spokes"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "points": {
+                "minItems": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    "primitive3d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "vertices",
+        "style",
+        "layer",
+        "item"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "segment",
+            "polyline",
+            "face",
+            "cell"
+          ]
+        },
+        "vertices": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "faces": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "array",
+            "minItems": 3,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "style": {
+          "$ref": "#/$defs/style"
+        },
+        "layer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "label": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "const": "segment"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "vertices": {
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "const": "face"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "vertices": {
+                "minItems": 3
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "const": "cell"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "faces"
+            ],
+            "properties": {
+              "vertices": {
+                "minItems": 4
+              }
+            }
+          },
+          "else": {
+            "not": {
+              "required": [
+                "faces"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "frame2d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "mode",
+        "objects"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode": {
+          "enum": [
+            "data",
+            "incidence",
+            "construction",
+            "lattice",
+            "logical",
+            "schedule"
+          ]
+        },
+        "round": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/object2d"
+          }
+        }
+      },
+      "$ref": "#/$defs/frameMode"
+    },
+    "frame3d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "mode",
+        "primitives"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode": {
+          "enum": [
+            "data",
+            "incidence",
+            "construction",
+            "lattice",
+            "logical",
+            "schedule"
+          ]
+        },
+        "round": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "primitives": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "$ref": "#/$defs/frameMode"
+    },
+    "frameMode": {
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "mode"
+            ],
+            "properties": {
+              "mode": {
+                "const": "schedule"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "round"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "round"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "scene2d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "dimension",
+        "origin",
+        "coordinateSystem",
+        "camera",
+        "layers",
+        "nodes",
+        "frames"
+      ],
+      "properties": {
+        "schema": {
+          "const": "qec-atlas-scene-v2"
+        },
+        "dimension": {
+          "const": 2
+        },
+        "origin": {
+          "$ref": "#/$defs/origin"
+        },
+        "coordinateSystem": {
+          "$ref": "#/$defs/coordinateSystem2d"
+        },
+        "camera": {
+          "$ref": "#/$defs/camera2d"
+        },
+        "layers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/layer"
+          }
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node2d"
+          }
+        },
+        "frames": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/frame2d"
+          }
+        }
+      }
+    },
+    "scene3d": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "dimension",
+        "origin",
+        "coordinateSystem",
+        "camera",
+        "layers",
+        "nodes",
+        "primitives",
+        "frames"
+      ],
+      "properties": {
+        "schema": {
+          "const": "qec-atlas-scene-v2"
+        },
+        "dimension": {
+          "const": 3
+        },
+        "origin": {
+          "$ref": "#/$defs/origin"
+        },
+        "coordinateSystem": {
+          "$ref": "#/$defs/coordinateSystem3d"
+        },
+        "camera": {
+          "$ref": "#/$defs/camera3d"
+        },
+        "layers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/layer"
+          }
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/node3d"
+          }
+        },
+        "primitives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/primitive3d"
+          }
+        },
+        "frames": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/frame3d"
+          }
+        }
+      }
+    }
+  }
+}
