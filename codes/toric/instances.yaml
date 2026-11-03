@@ -1,0 +1,15 @@
+- label: L2
+  params: {L: 2}
+  claims:
+    - {property: n, value: 8, origin: {kind: verified}}
+    - {property: k, value: 2, origin: {kind: verified}}
+    - {property: d, exact: 2, origin: {kind: verified}}
+    - {property: css, value: true, origin: {kind: verified}}
+
+- label: L3
+  params: {L: 3}
+  claims:
+    - {property: n, value: 18, origin: {kind: verified}}
+    - {property: k, value: 2, origin: {kind: verified}}
+    - {property: d, exact: 3, origin: {kind: verified}}
+    - {property: css, value: true, origin: {kind: verified}}

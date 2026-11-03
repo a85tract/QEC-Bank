@@ -1,0 +1,75 @@
+version: 1
+title: "Haah cubic Code 1: from a projected cube to no-string logic"
+subtitle: "A truthful 2D projection of 3D periodic data; corner polynomials, translated checks, irregular degeneracy, and plane-not-string logicals."
+lattices:
+  L2: {entry: haah_cubic, instance: L2_periodic, label: "L=2 periodic Code 1"}
+  L3: {entry: haah_cubic, instance: L3_periodic, label: "L=3 periodic Code 1"}
+item_notes:
+  L3:
+    construction:
+      "0":
+        label: "A projected cubic edge"
+        explanation: "This segment is the dimetric image of one edge in three dimensions. Apparent crossings in the page have no planar-locality meaning."
+      "12":
+        label: "Two orbitals at one vertex"
+        explanation: "The short mixed segment separates orbital A and orbital B visually; it is not a physical coupling."
+    incidence:
+      "0":
+        label: "Code 1 X cube generator"
+        explanation: "Orbital A follows 1+x+y+z and orbital B follows 1+xy+yz+zx."
+      "1":
+        label: "Inverted-and-swapped Z generator"
+        explanation: "Spatial inversion and orbital exchange produce the commuting Z partner."
+    logical:
+      "0":
+        label: "Periodic X plane"
+        explanation: "All marked sites lie in x=0 on orbital A. Projection spokes show membership, not a string."
+      "1":
+        label: "Conjugate periodic Z plane"
+        explanation: "The x+y=0 plane crosses the X plane on an odd number of orbital-A sites when L=3."
+steps:
+  - title: "Read the picture as a projection"
+    narrative: "The page shows constructor coordinates after a fixed dimetric map from three dimensions to two. The highlighted segment is one projected cubic edge; depth has been flattened, and no overlap or crossing in this view asserts a planar interaction. The exact three periodic directions remain recorded in the data."
+    state: {lattice: L3, mode: construction, filter: all, highlight: 0}
+    origin: {kind: verified, method: "constructor geometry projection metadata + Scene v2"}
+    refs: [haah2011local]
+  - title: "Keep both qubits at every vertex"
+    narrative: "The highlighted short pair contains orbital A and orbital B at one cubic-lattice vertex. Their small visual separation prevents overplotting; it is not an edge in the Hamiltonian. A corner operator may act on A, on B, on both, or on neither, so deleting the orbital label would delete the Code 1 identity."
+    state: {lattice: L3, mode: construction, filter: all, highlight: 12}
+    origin: {kind: verified, method: "constructor qubit_index and orbital-resolved coordinates"}
+    refs: [haah2011local]
+  - title: "Build the X row from two polynomials"
+    narrative: "Switch to incidence. The red spokes mark one weight-eight X generator: orbital A occupies the corners in 1+x+y+z, while orbital B occupies 1+xy+yz+zx. Translating this complete pattern, rather than translating a generic cube label, creates every X row."
+    state: {lattice: L3, mode: incidence, filter: X, highlight: 0}
+    origin: {kind: verified, method: "constructor cube_support(L, anchor, 'X')"}
+    refs: [haah2011local]
+  - title: "Invert and swap to get Z"
+    narrative: "The blue generator is the spatially inverted X pattern with A and B exchanged. In the positive-cube convention its two polynomial supports are x+y+z+xyz and xy+xz+yz+xyz. Expanding all periodic translates gives HX HZ^T=0 exactly; commutation is a matrix result, not a promise made by the drawing."
+    state: {lattice: L3, mode: incidence, filter: Z, highlight: 1}
+    origin: {kind: verified, method: "constructor _Z_OFFSETS and binary CSS commutation"}
+    refs: [haah2011local]
+  - title: "Period changes rank, not the local rule"
+    narrative: "Now shrink the torus to L=2 without changing a corner operator. Rank dependencies proliferate: the sixteen-qubit matrix encodes six qubits and has exact distance two. At L=3 the fifty-four-qubit matrix encodes two. This jump is why the entry computes k for each period instead of advertising one smooth degeneracy formula."
+    state: {lattice: L2, mode: incidence, filter: all}
+    origin: {kind: verified, method: "CheckMatrix GF(2) ranks and exact CSS distance for L=2"}
+    refs: [haah2011local]
+  - title: "A plane logical is not a forbidden string"
+    narrative: "Return to L=3. The projected red support is X on orbital A across the periodic plane x=0. It commutes with every stabilizer and is outside the X-stabilizer row space. The rays merely collect projected support sites; physically the operator is a two-dimensional plane, not a one-dimensional path."
+    state: {lattice: L3, mode: logical, filter: X, highlight: 0}
+    origin: {kind: verified, method: "constructor._plane_logicals normalizer and row-space checks"}
+    refs: [haah2011local]
+  - title: "Cross it with the conjugate plane"
+    narrative: "The blue x+y=0 plane is a Z logical. On this odd period it meets the X plane on three orbital-A sites, so their binary overlap is odd and the logicals anticommute. The displayed weight-nine representative supplies the literature upper bound used for the L=3 distance interval; the lower bound comes from the macroscopic-distance theorem."
+    state: {lattice: L3, mode: logical, filter: all, highlight: 1}
+    origin: {kind: verified, method: "constructor._plane_logicals symplectic overlap"}
+    refs: [haah2011local]
+  - title: "State the no-string theorem at its real boundary"
+    narrative: "The theorem rules out arbitrarily long nontrivial logical string segments whose width stays fixed. It does not rule out the plane pair just displayed, fractal logical supports, or size-dependent extra logical qubits. It also does not by itself prove a self-correcting memory: thermal dynamics and a decoder are additional claims."
+    state: {lattice: L3, mode: logical, filter: all}
+    origin: {kind: curated, ref: haah2011local}
+    refs: [haah2011local, bravyi2011energy, bravyi2011selfcorrection]
+  - title: "Interrogate local algebra and global period separately"
+    narrative: "Leave the L=3 projection open. Construction mode checks the orbital-resolved cell, incidence mode compares the two translated CSS rules, and logical mode shows one conjugate plane pair. When asking a new question, first decide whether it concerns the local polynomial, the periodic quotient, the decoder/noise model, or a boundary variant; those layers are not interchangeable."
+    state: {lattice: L3, mode: construction, filter: all}
+    origin: {kind: verified, method: "haah-code1-dimetric-projection-v1"}
+    refs: [haah2011local, williamson2016fractal]

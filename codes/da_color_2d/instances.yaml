@@ -1,0 +1,7 @@
+- label: table8_pauli_triangle
+  params: {patch: table8-pauli-triangle-incidence-v1}
+  claims:
+    - {property: n, value: 24, origin: {kind: verified}}
+    - {property: k, value: 1, origin: {kind: verified}}
+    - {property: css, value: false, origin: {kind: verified}}
+    - {property: dynamic_k, value: 1, origin: {kind: verified}}

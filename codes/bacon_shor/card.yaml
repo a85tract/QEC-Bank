@@ -1,0 +1,1909 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Vertical XX pairs and horizontal ZZ pairs generate a nonabelian gauge group. Multiplying every vertical pair across two neighboring rows gives an X stabilizer; multiplying every horizontal pair across two neighboring columns gives a Z stabilizer. The constructor verifies that these center generators commute with the full gauge group and lie in its span.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "bacon2003decoherence",
+          "bacon2006operator",
+          "aliferis2007subsystem"
+        ],
+        "rung": "R1",
+        "type": "gauge-center-quotient"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:views:0@a3f56737661d080e0958dec617b3098dde16a51cc2b44d365ac03b118f362f6a",
+      "field": "views",
+      "id": "atlas-assertion:bacon_shor:views:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/views/0",
+      "source_sha256": "a3f56737661d080e0958dec617b3098dde16a51cc2b44d365ac03b118f362f6a",
+      "version_id": "atlas-assertion:bacon_shor:views:0@sha256:a3f56737661d080e0958dec617b3098dde16a51cc2b44d365ac03b118f362f6a"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Perfect gauge readout reduces the two Pauli channels to classical repetition inference in perpendicular directions. A bare logical X may be placed on any complete row and a bare logical Z on any complete column; parallel representatives differ only by gauge action. The engine constructs the protected quotient C(S)/G, exactly enumerates the three shipped finite instances, and independently validates any seeded upper-bound witness. Scalable lower bounds and presentation-equivalence certificates remain open under wanted/subsystem-dressed-distance.",
+        "origin": {
+          "converter": "qeclib.gf2.rank + Bacon–Shor gauge-span and logical-pair checks",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "bacon2006operator",
+          "aliferis2007subsystem",
+          "napp2013optimal"
+        ],
+        "rung": "R2",
+        "type": "repetition-quotient"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:views:1@f7f7d9c1b2ef459cb11a0c6db22d5ccb851ca5d5987b0afeff39f4416114d544",
+      "field": "views",
+      "id": "atlas-assertion:bacon_shor:views:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/views/1",
+      "source_sha256": "f7f7d9c1b2ef459cb11a0c6db22d5ccb851ca5d5987b0afeff39f4416114d544",
+      "version_id": "atlas-assertion:bacon_shor:views:1@sha256:f7f7d9c1b2ef459cb11a0c6db22d5ccb851ca5d5987b0afeff39f4416114d544"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Reading the same XX/ZZ links as Hamiltonian terms produces the square quantum-compass pattern and its rigid line symmetries. This dictionary does not turn the ordinary static Bacon–Shor model into a topological or self-correcting memory; locality belongs to the gauge generators, while the stabilizer products grow with a linear dimension.",
+        "origin": {
+          "kind": "curated",
+          "ref": "dorier2005compass"
+        },
+        "refs": [
+          "dorier2005compass",
+          "bacon2006operator",
+          "sarma2013gauge"
+        ],
+        "rung": "R5",
+        "type": "compass-hamiltonian"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:views:2@3d528141f99a70518fd2fd26de82a51417dd3620ede4b452bfc547998c782698",
+      "field": "views",
+      "id": "atlas-assertion:bacon_shor:views:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/views/2",
+      "source_sha256": "3d528141f99a70518fd2fd26de82a51417dd3620ede4b452bfc547998c782698",
+      "version_id": "atlas-assertion:bacon_shor:views:2@sha256:3d528141f99a70518fd2fd26de82a51417dd3620ede4b452bfc547998c782698"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A surface-code tensor network can be reorganized by declaring selected dangling legs logical rather than physical. The reassignment exposes the Bacon–Shor weight-two gauge structure and explains the relationship as a change of subsystem bookkeeping, not an equality of stabilizer tables.",
+        "origin": {
+          "kind": "curated",
+          "ref": "cao2022quantumlego"
+        },
+        "refs": [
+          "cao2022quantumlego"
+        ],
+        "rung": "R5",
+        "type": "tensor-leg-reassignment"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:views:3@f278b1e37b362f3706c691633d3e06ce7dfc58485a3e664d06a40ab744a8f0cd",
+      "field": "views",
+      "id": "atlas-assertion:bacon_shor:views:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/views/3",
+      "source_sha256": "f278b1e37b362f3706c691633d3e06ce7dfc58485a3e664d06a40ab744a8f0cd",
+      "version_id": "atlas-assertion:bacon_shor:views:3@sha256:f278b1e37b362f3706c691633d3e06ce7dfc58485a3e664d06a40ab744a8f0cd"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The gauge-term anticommutation graph records which perpendicular XX and ZZ links meet once. It is a useful contrast with free-fermion subsystem constructions, but the ordinary Bacon–Shor compass Hamiltonian itself is not labeled free-fermion solvable: the fetched source explicitly treats it as the obstructed relative as of 2026-08-02.",
+        "origin": {
+          "kind": "curated",
+          "ref": "chapman2022freefermion"
+        },
+        "refs": [
+          "chapman2022freefermion"
+        ],
+        "rung": "R5",
+        "type": "frustration-graph-boundary"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:views:4@1adfce3d53984c7d16da978b287d6667e2da48494d6478da4492e64565f55555",
+      "field": "views",
+      "id": "atlas-assertion:bacon_shor:views:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/views/4",
+      "source_sha256": "1adfce3d53984c7d16da978b287d6667e2da48494d6478da4492e64565f55555",
+      "version_id": "atlas-assertion:bacon_shor:views:4@sha256:1adfce3d53984c7d16da978b287d6667e2da48494d6478da4492e64565f55555"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Floquet–Bacon–Shor replaces the static gauge-center object with a period-four measurement schedule whose detectors and logical representatives evolve in time. Its superconducting logical-operation demonstration is therefore evidence for a dynamical descendant, not a hardware realization of this card's static check matrix.",
+        "origin": {
+          "kind": "curated",
+          "ref": "alam2025board"
+        },
+        "refs": [
+          "alam2025board",
+          "sun2025floquetbacon"
+        ],
+        "rung": "R3",
+        "type": "period-four-descendant"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:views:5@221c870de5388998afd5df10421c7ac6e91a7dc8bb2dd7b6a8eb23965c3319fc",
+      "field": "views",
+      "id": "atlas-assertion:bacon_shor:views:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/views/5",
+      "source_sha256": "221c870de5388998afd5df10421c7ac6e91a7dc8bb2dd7b6a8eb23965c3319fc",
+      "version_id": "atlas-assertion:bacon_shor:views:5@sha256:221c870de5388998afd5df10421c7ac6e91a7dc8bb2dd7b6a8eb23965c3319fc"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "subsystem",
+        "origin": {
+          "kind": "curated",
+          "ref": "bacon2006operator"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:categories:0@fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389",
+      "field": "categories",
+      "id": "atlas-assertion:bacon_shor:categories:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/categories/0",
+      "source_sha256": "fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389",
+      "version_id": "atlas-assertion:bacon_shor:categories:0@sha256:fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:categories:1@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:bacon_shor:categories:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/categories/1",
+      "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "version_id": "atlas-assertion:bacon_shor:categories:1@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "lookup-table",
+        "noise": "finite rectangular blocks with perfect two-qubit gauge outcomes under stochastic Pauli noise",
+        "notes": "The exact-small decision rule factorizes into repetition-style parity inference along rows and columns; it may be implemented by majority logic instead of literally storing a table. The optimum rectangle is a property of the X/Z noise bias and objective, not a code-only constant.",
+        "refs": [
+          "aliferis2007subsystem",
+          "napp2013optimal"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:decoders:0@e1d8a1fcf9a6de1d93ec53f20119d4bcf5b85ad84680b9705774e0eda850d812",
+      "field": "decoders",
+      "id": "atlas-assertion:bacon_shor:decoders:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/decoders/0",
+      "source_sha256": "e1d8a1fcf9a6de1d93ec53f20119d4bcf5b85ad84680b9705774e0eda850d812",
+      "version_id": "atlas-assertion:bacon_shor:decoders:0@sha256:e1d8a1fcf9a6de1d93ec53f20119d4bcf5b85ad84680b9705774e0eda850d812"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "lookup-table",
+        "noise": "circuit faults in repeated low-weight gauge extraction or encoded-ancilla Steane extraction on fixed small blocks",
+        "notes": "Here the input includes a protocol-specific history of gauge outcomes, flags, or encoded-ancilla checks. Repeating gauge measurements and using a Steane ancilla are different syndrome objects, so their logical-error comparisons cannot be transferred to an unspecified static decoder.",
+        "refs": [
+          "cross2009comparative",
+          "escobar2025improved"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:decoders:1@23acc6d6ec2be62a885f52c1830757bb4d11e867dd59d79c13061981c288642e",
+      "field": "decoders",
+      "id": "atlas-assertion:bacon_shor:decoders:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/decoders/1",
+      "source_sha256": "23acc6d6ec2be62a885f52c1830757bb4d11e867dd59d79c13061981c288642e",
+      "version_id": "atlas-assertion:bacon_shor:decoders:1@sha256:23acc6d6ec2be62a885f52c1830757bb4d11e867dd59d79c13061981c288642e"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "uniform circuit-level noise on the period-four Floquet–Bacon–Shor descendant",
+        "notes": "Matching consumes constant-weight spacetime detectors built from the scheduled circuit. This row is intentionally variant-scoped: it does not establish a conventional threshold for the static rectangular family. No extraction-independent threshold for plain static stabilizer products was found in the stated searches as of 2026-08-02.",
+        "refs": [
+          "alam2025board",
+          "gidney2023less"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:decoders:2@87681e019858d2e768f08e4cbada2c351de91e1fee323ac8ced359eb0d870fa9",
+      "field": "decoders",
+      "id": "atlas-assertion:bacon_shor:decoders:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/decoders/2",
+      "source_sha256": "87681e019858d2e768f08e4cbada2c351de91e1fee323ac8ced359eb0d870fa9",
+      "version_id": "atlas-assertion:bacon_shor:decoders:2@sha256:87681e019858d2e768f08e4cbada2c351de91e1fee323ac8ced359eb0d870fa9"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "one pairwise physical-CNOT layer between matching grid sites; block alignment, routing, syndrome extraction, and recovery are additional",
+        "gate": "CNOT between aligned Bacon–Shor blocks",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "aliferis2007subsystem"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:operations:0@9a4faa179b572338407f60c64e1f1f1345b6188522f7fc363ff01462a451e304",
+      "field": "operations",
+      "id": "atlas-assertion:bacon_shor:operations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/operations/0",
+      "source_sha256": "9a4faa179b572338407f60c64e1f1f1345b6188522f7fc363ff01462a451e304",
+      "version_id": "atlas-assertion:bacon_shor:operations:0@sha256:9a4faa179b572338407f60c64e1f1f1345b6188522f7fc363ff01462a451e304"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "one physical-H layer followed by the row/column permutation that restores the declared vertical-X and horizontal-Z gauge orientation",
+        "gate": "H on a square block",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "aliferis2007subsystem"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:operations:1@d2fa4763e28f4e3f06ee4b2a63937009e2bf90646f75dd7ffc5c5fe062eea433",
+      "field": "operations",
+      "id": "atlas-assertion:bacon_shor:operations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/operations/1",
+      "source_sha256": "d2fa4763e28f4e3f06ee4b2a63937009e2bf90646f75dd7ffc5c5fe062eea433",
+      "version_id": "atlas-assertion:bacon_shor:operations:1@sha256:d2fa4763e28f4e3f06ee4b2a63937009e2bf90646f75dd7ffc5c5fe062eea433"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "block dimensions must satisfy the cited geometry for the chosen control order; changing aspect ratio and performing error correction between pieces are protocol resources, not free transversal gates on one square",
+        "gate": "multi-controlled Z family on dimension-matched rectangles",
+        "level": "non-Clifford controlled-phase hierarchy",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "yoder2017universalbacon"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:operations:2@b1dc0ec1c9273d95a5ab33d82e0ee7d86c0212af0b5c66e1b024742d52df0dda",
+      "field": "operations",
+      "id": "atlas-assertion:bacon_shor:operations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/operations/2",
+      "source_sha256": "b1dc0ec1c9273d95a5ab33d82e0ee7d86c0212af0b5c66e1b024742d52df0dda",
+      "version_id": "atlas-assertion:bacon_shor:operations:2@sha256:b1dc0ec1c9273d95a5ab33d82e0ee7d86c0212af0b5c66e1b024742d52df0dda"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "a compatible boundary, an ancilla code patch, repeated joint gauge measurements, and classical feed-forward",
+        "gate": "joint logical parity and state transfer",
+        "level": "measurement-based Clifford interface",
+        "mechanism": "surgery",
+        "origin": {
+          "kind": "claimed",
+          "ref": "nautrup2017interface"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:operations:3@62dd4ce1038189151714af6256d4761023f476c22755e25e08f336bbbbcf6c5d",
+      "field": "operations",
+      "id": "atlas-assertion:bacon_shor:operations:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/operations/3",
+      "source_sha256": "62dd4ce1038189151714af6256d4761023f476c22755e25e08f336bbbbcf6c5d",
+      "version_id": "atlas-assertion:bacon_shor:operations:3@sha256:62dd4ce1038189151714af6256d4761023f476c22755e25e08f336bbbbcf6c5d"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "verified ancillas, teleportation measurements, and correction around strongly rectangular blocks; the aspect ratio is optimized jointly with the hardware noise bias",
+        "gate": "biased-noise universal primitives",
+        "level": "teleportation-assisted universal set",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "brooks2013asymmetric"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:operations:4@257539ee0924a54d27ed41b2622da4a1c8215fe27af86ba8345c10b3360bc075",
+      "field": "operations",
+      "id": "atlas-assertion:bacon_shor:operations:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/operations/4",
+      "source_sha256": "257539ee0924a54d27ed41b2622da4a1c8215fe27af86ba8345c10b3360bc075",
+      "version_id": "atlas-assertion:bacon_shor:operations:4@sha256:257539ee0924a54d27ed41b2622da4a1c8215fe27af86ba8345c10b3360bc075"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "coherent correction circuits and extra qubits replace mid-circuit measurement while the code is deformed; measurement-free does not mean correction-free",
+        "gate": "CCZ by measurement-free deformation",
+        "level": "non-Clifford",
+        "mechanism": "switching",
+        "origin": {
+          "kind": "claimed",
+          "ref": "veroni2025measurementfree"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:operations:5@ba5ad3c1069e0442a470042cc1008c9a00c4b1ac89b4a3438ec3c968763c960c",
+      "field": "operations",
+      "id": "atlas-assertion:bacon_shor:operations:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/operations/5",
+      "source_sha256": "ba5ad3c1069e0442a470042cc1008c9a00c4b1ac89b4a3438ec3c968763c960c",
+      "version_id": "atlas-assertion:bacon_shor:operations:5@sha256:ba5ad3c1069e0442a470042cc1008c9a00c4b1ac89b4a3438ec3c968763c960c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "a period-four measurement schedule, time-dependent logical tracking, and detector decoding; this operation is not attached to the static checkmatrix exported by this entry",
+        "gate": "logical operations on the Floquet–Bacon–Shor descendant",
+        "level": "dynamical logical control (variant only)",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "sun2025floquetbacon"
+        }
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:operations:6@ef37260872830cbaf75591acd404c86e68849406f97bf313c28b652279c1082d",
+      "field": "operations",
+      "id": "atlas-assertion:bacon_shor:operations:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/operations/6",
+      "source_sha256": "ef37260872830cbaf75591acd404c86e68849406f97bf313c28b652279c1082d",
+      "version_id": "atlas-assertion:bacon_shor:operations:6@sha256:ef37260872830cbaf75591acd404c86e68849406f97bf313c28b652279c1082d"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A nine-data-qubit Bacon–Shor logical block with four ancillas demonstrated fault-tolerant preparation, measurement, corrected rotations, and stabilizer extraction. This is a fixed-distance primitive suite, not an increasing-distance below-threshold memory experiment.",
+        "platform": "thirteen-qubit trapped-ion processor",
+        "refs": [
+          "egan2021fault"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:realizations:0@055bbc8a4b083171bfd39ef968d177b305a9c7d5fac3e90a9ae1dfd7b4aefda7",
+      "field": "realizations",
+      "id": "atlas-assertion:bacon_shor:realizations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/realizations/0",
+      "source_sha256": "055bbc8a4b083171bfd39ef968d177b305a9c7d5fac3e90a9ae1dfd7b4aefda7",
+      "version_id": "atlas-assertion:bacon_shor:realizations:0@sha256:055bbc8a4b083171bfd39ef968d177b305a9c7d5fac3e90a9ae1dfd7b4aefda7"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Highly rectangular blocks are combined with teleportation and biased elementary operations so geometry protects the dominant Pauli channel. The resource claim includes ancilla preparation, verification, and correction; it is not supplied by block aspect ratio alone.",
+        "platform": "bias-preserving teleportation architecture",
+        "refs": [
+          "brooks2013asymmetric"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:realizations:1@383b936b0c8c4cac0d3b01dc5c00a7f79a67c889958525af5bec1bb108d4463f",
+      "field": "realizations",
+      "id": "atlas-assertion:bacon_shor:realizations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/realizations/1",
+      "source_sha256": "383b936b0c8c4cac0d3b01dc5c00a7f79a67c889958525af5bec1bb108d4463f",
+      "version_id": "atlas-assertion:bacon_shor:realizations:1@sha256:383b936b0c8c4cac0d3b01dc5c00a7f79a67c889958525af5bec1bb108d4463f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "For the square three-by-three member in this constructor's orientation, promote all horizontal ZZ gauge pairs to stabilizers. Together with the two X center generators, they reproduce the repository's nine-qubit Shor stabilizer row space exactly; the discarded gauge freedom becomes fixed. The neighboring Shor entry uses encoded-basis names that call the Z column logical X and the X row logical Z, so its logical labels are swapped relative to this card's Pauli-type names even though the protected Pauli algebra is the same.",
+        "refs": [
+          "shor1995scheme",
+          "bacon2006operator"
+        ],
+        "target": "shor_nine",
+        "type": "gauge_fixes_to"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:relations:0@c72c328cb56f36e365b5247f66eebe77d36ee849a4ce6d3ebf519f0a4deac024",
+      "field": "relations",
+      "id": "atlas-assertion:bacon_shor:relations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/relations/0",
+      "source_sha256": "c72c328cb56f36e365b5247f66eebe77d36ee849a4ce6d3ebf519f0a4deac024",
+      "version_id": "atlas-assertion:bacon_shor:relations:0@sha256:c72c328cb56f36e365b5247f66eebe77d36ee849a4ce6d3ebf519f0a4deac024"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "Plain rectangular Bacon–Shor occupies every site of the defining binary matrix. Bravyi–Bacon–Shor permits a general occupancy matrix and derives encoded dimension and distances from its row and column codes, so its rate claims do not transfer to the full rectangle.",
+        "refs": [
+          "bravyi2011subsystem",
+          "yoder2019optimal"
+        ],
+        "target": "bravyi_bacon_shor",
+        "type": "special_case_of"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:relations:1@c9a189b7114fbbe9e972a7de50946c7b7a12f6a583368474c679b47be8bddf00",
+      "field": "relations",
+      "id": "atlas-assertion:bacon_shor:relations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/relations/1",
+      "source_sha256": "c9a189b7114fbbe9e972a7de50946c7b7a12f6a583368474c679b47be8bddf00",
+      "version_id": "atlas-assertion:bacon_shor:relations:1@sha256:c9a189b7114fbbe9e972a7de50946c7b7a12f6a583368474c679b47be8bddf00"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "Promoting selected gauge generators to commuting stabilizers produces two-dimensional compass-code descendants between the Bacon–Shor and surface-like extremes. The pattern of promoted checks is part of the target code and is not encoded by changing only rows and columns here.",
+        "refs": [
+          "li2019compass"
+        ],
+        "target": "compass_code_2d",
+        "type": "gauge_fixes_to"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:relations:2@bd9750c70ee17c2d8244047106b22c5aa5a8012037fda3f6825b45168bb10d03",
+      "field": "relations",
+      "id": "atlas-assertion:bacon_shor:relations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/relations/2",
+      "source_sha256": "bd9750c70ee17c2d8244047106b22c5aa5a8012037fda3f6825b45168bb10d03",
+      "version_id": "atlas-assertion:bacon_shor:relations:2@sha256:bd9750c70ee17c2d8244047106b22c5aa5a8012037fda3f6825b45168bb10d03"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "The protected X and Z parities are perpendicular repetition constraints, with local pair checks liberated into a gauge subsystem. This quotient is the subsystem analogue of Shor's nested repetition construction rather than an HGP replay recipe.",
+        "refs": [
+          "shor1995scheme",
+          "bacon2006operator"
+        ],
+        "target": "repetition",
+        "type": "product_of"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor:relations:3@a73b831abe885f04a261bb6626cc7c8ffd9a70a908cd4053dfa33fa9771c8086",
+      "field": "relations",
+      "id": "atlas-assertion:bacon_shor:relations:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bacon_shor/card.yaml#/relations/3",
+      "source_sha256": "a73b831abe885f04a261bb6626cc7c8ffd9a70a908cd4053dfa33fa9771c8086",
+      "version_id": "atlas-assertion:bacon_shor:relations:3@sha256:a73b831abe885f04a261bb6626cc7c8ffd9a70a908cd4053dfa33fa9771c8086"
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:bacon_shor#collection",
+      "status": "preserved",
+      "tier": "T3"
+    }
+  ],
+  "decision_class": "exact-clean",
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:bacon_shor#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:bacon_shor#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/bacon_shor/card.yaml#/identity",
+          "atlas:atlas/bacon_shor/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/bacon_shor/bacon_shor-foundations.md",
+          "t206:codes/quantum/qubits/subsystem/qldpc/bbs/bacon_shor/bacon_shor.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bacon_shor"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:bacon_shor#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:bacon_shor",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "3976995c43a68b34f18f5640d19a5c9ebb61b88eaeff45c840d599acdee47b7e",
+          "payload_sha256": "ce6988c508ba6f531a63b563c00cbbee261db516cda48e82b5568c1935b7a4cd",
+          "semantic_hash": "d8e746166aa33cd21c1e3bff3d05272a36667b09d28142bba448271a7e9fe1a2"
+        },
+        "id": "atlas-instance:bacon_shor:square_2",
+        "label": "square_2",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:d8e746166aa33cd21c1e3bff3d05272a36667b09d28142bba448271a7e9fe1a2:small-exact-distance-enumeration:271b03921909450750bb1d1e462d4b68b5b50302a41e961dc447240854903d06@1",
+            "certificate:d8e746166aa33cd21c1e3bff3d05272a36667b09d28142bba448271a7e9fe1a2:structural-validity:d9c3eba0867e036d80ee055bfacaec81a80b70e2b2966450dda1e23faca73252@1"
+          ],
+          "instance_record_sha256": "45e09de3720de954bd992e620c45d538b6d35616c5eed6637aa7c9e07adcf75a",
+          "lean_report_sha256": "2d18de62d60e6711903f8e85f9cb35fc996457b913605b25214a5bb4e7acdb7d",
+          "semantic_hash": "d8e746166aa33cd21c1e3bff3d05272a36667b09d28142bba448271a7e9fe1a2"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "1c29a8f24745ed0f46c366410a154841f2a42d484de214a6bfc65fc275a33ccd",
+        "v2_envelope_id": "formal-ir-v2:bacon_shor:square_2"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "3976995c43a68b34f18f5640d19a5c9ebb61b88eaeff45c840d599acdee47b7e",
+          "payload_sha256": "ddc9316115b69f2c5ea7bc8ef6032dcaf9b296f703ce75a88e52ca6b2608c305",
+          "semantic_hash": "5c0662072db371fae17448c471d1e4b9ea3184325cf1a9b1944ebd4870bd5a59"
+        },
+        "id": "atlas-instance:bacon_shor:square_3",
+        "label": "square_3",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:5c0662072db371fae17448c471d1e4b9ea3184325cf1a9b1944ebd4870bd5a59:small-exact-distance-enumeration:c4a654bbfa09ddeb866d5624a7ce88d82dd31baf55243d7cc6053367e1593029@1",
+            "certificate:5c0662072db371fae17448c471d1e4b9ea3184325cf1a9b1944ebd4870bd5a59:structural-validity:6a89c70c06fe4696845b40a5d3b1626ecdebbda52f439fcc3bdfe9a793464f8f@1"
+          ],
+          "instance_record_sha256": "7410f8847ad65c74207c920c89cf271b4888f6b9069155f18ea00ab52511e882",
+          "lean_report_sha256": "860b1d5ad543881b607ac5d03e7a3928292f951da12bcf60b83f876a650018da",
+          "semantic_hash": "5c0662072db371fae17448c471d1e4b9ea3184325cf1a9b1944ebd4870bd5a59"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "1e223769bfa247edf2c6a401d74b43523d750fdff94bc7c68e1adac5d3d91482",
+        "v2_envelope_id": "formal-ir-v2:bacon_shor:square_3"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "3976995c43a68b34f18f5640d19a5c9ebb61b88eaeff45c840d599acdee47b7e",
+          "payload_sha256": "32630c8c32a0730d602c83d976366a289892211f99d07f9f3aad9eef0aedf0db",
+          "semantic_hash": "b0d377ae17fea267829a4ab952d2343536046e0eaddbe222a10af409067d4b4a"
+        },
+        "id": "atlas-instance:bacon_shor:rectangle_3x5",
+        "label": "rectangle_3x5",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:b0d377ae17fea267829a4ab952d2343536046e0eaddbe222a10af409067d4b4a:small-exact-distance-enumeration:de64e396eea8edea38c0fdab599b94365e094fe4833f5b11f3e817b947e8a926@1",
+            "certificate:b0d377ae17fea267829a4ab952d2343536046e0eaddbe222a10af409067d4b4a:structural-validity:02b38c50c8f6113d933d752e30c78f8fd63fc6bca2e43ed385bd9ebdc4f1e592@1"
+          ],
+          "instance_record_sha256": "1bc6f20589f855f6f14d6874affdc19d4d10494ecb3fbc7ba323f65728edb1e5",
+          "lean_report_sha256": "7f9e18f1aae6497bc3fe5a6129c9cfeb4704f6bb49d20caeb7286981a39916a4",
+          "semantic_hash": "b0d377ae17fea267829a4ab952d2343536046e0eaddbe222a10af409067d4b4a"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b7d9b0ac2c8e815d08751d9336025a1f272e486d6b64c83cbc4a125fedde2e12",
+        "v2_envelope_id": "formal-ir-v2:bacon_shor:rectangle_3x5"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 3,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:bacon_shor#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "id": "bacon_shor",
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:bacon_shor:views:0",
+      "atlas-assertion:bacon_shor:views:1",
+      "atlas-assertion:bacon_shor:views:2",
+      "atlas-assertion:bacon_shor:views:3",
+      "atlas-assertion:bacon_shor:views:4",
+      "atlas-assertion:bacon_shor:views:5",
+      "atlas-assertion:bacon_shor:categories:0",
+      "atlas-assertion:bacon_shor:categories:1",
+      "atlas-assertion:bacon_shor:decoders:0",
+      "atlas-assertion:bacon_shor:decoders:1",
+      "atlas-assertion:bacon_shor:decoders:2",
+      "atlas-assertion:bacon_shor:operations:0",
+      "atlas-assertion:bacon_shor:operations:1",
+      "atlas-assertion:bacon_shor:operations:2",
+      "atlas-assertion:bacon_shor:operations:3",
+      "atlas-assertion:bacon_shor:operations:4",
+      "atlas-assertion:bacon_shor:operations:5",
+      "atlas-assertion:bacon_shor:operations:6",
+      "atlas-assertion:bacon_shor:realizations:0",
+      "atlas-assertion:bacon_shor:realizations:1",
+      "atlas-assertion:bacon_shor:relations:0",
+      "atlas-assertion:bacon_shor:relations:1",
+      "atlas-assertion:bacon_shor:relations:2",
+      "atlas-assertion:bacon_shor:relations:3"
+    ],
+    "entity_ids": [
+      "eczoo-entity:bacon_shor#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:bacon_shor:views:0@a3f56737661d080e0958dec617b3098dde16a51cc2b44d365ac03b118f362f6a",
+      "atlas-evidence:bacon_shor:views:1@f7f7d9c1b2ef459cb11a0c6db22d5ccb851ca5d5987b0afeff39f4416114d544",
+      "atlas-evidence:bacon_shor:views:2@3d528141f99a70518fd2fd26de82a51417dd3620ede4b452bfc547998c782698",
+      "atlas-evidence:bacon_shor:views:3@f278b1e37b362f3706c691633d3e06ce7dfc58485a3e664d06a40ab744a8f0cd",
+      "atlas-evidence:bacon_shor:views:4@1adfce3d53984c7d16da978b287d6667e2da48494d6478da4492e64565f55555",
+      "atlas-evidence:bacon_shor:views:5@221c870de5388998afd5df10421c7ac6e91a7dc8bb2dd7b6a8eb23965c3319fc",
+      "atlas-evidence:bacon_shor:categories:0@fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389",
+      "atlas-evidence:bacon_shor:categories:1@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:bacon_shor:decoders:0@e1d8a1fcf9a6de1d93ec53f20119d4bcf5b85ad84680b9705774e0eda850d812",
+      "atlas-evidence:bacon_shor:decoders:1@23acc6d6ec2be62a885f52c1830757bb4d11e867dd59d79c13061981c288642e",
+      "atlas-evidence:bacon_shor:decoders:2@87681e019858d2e768f08e4cbada2c351de91e1fee323ac8ced359eb0d870fa9",
+      "atlas-evidence:bacon_shor:operations:0@9a4faa179b572338407f60c64e1f1f1345b6188522f7fc363ff01462a451e304",
+      "atlas-evidence:bacon_shor:operations:1@d2fa4763e28f4e3f06ee4b2a63937009e2bf90646f75dd7ffc5c5fe062eea433",
+      "atlas-evidence:bacon_shor:operations:2@b1dc0ec1c9273d95a5ab33d82e0ee7d86c0212af0b5c66e1b024742d52df0dda",
+      "atlas-evidence:bacon_shor:operations:3@62dd4ce1038189151714af6256d4761023f476c22755e25e08f336bbbbcf6c5d",
+      "atlas-evidence:bacon_shor:operations:4@257539ee0924a54d27ed41b2622da4a1c8215fe27af86ba8345c10b3360bc075",
+      "atlas-evidence:bacon_shor:operations:5@ba5ad3c1069e0442a470042cc1008c9a00c4b1ac89b4a3438ec3c968763c960c",
+      "atlas-evidence:bacon_shor:operations:6@ef37260872830cbaf75591acd404c86e68849406f97bf313c28b652279c1082d",
+      "atlas-evidence:bacon_shor:realizations:0@055bbc8a4b083171bfd39ef968d177b305a9c7d5fac3e90a9ae1dfd7b4aefda7",
+      "atlas-evidence:bacon_shor:realizations:1@383b936b0c8c4cac0d3b01dc5c00a7f79a67c889958525af5bec1bb108d4463f",
+      "atlas-evidence:bacon_shor:relations:0@c72c328cb56f36e365b5247f66eebe77d36ee849a4ce6d3ebf519f0a4deac024",
+      "atlas-evidence:bacon_shor:relations:1@c9a189b7114fbbe9e972a7de50946c7b7a12f6a583368474c679b47be8bddf00",
+      "atlas-evidence:bacon_shor:relations:2@bd9750c70ee17c2d8244047106b22c5aa5a8012037fda3f6825b45168bb10d03",
+      "atlas-evidence:bacon_shor:relations:3@a73b831abe885f04a261bb6626cc7c8ffd9a70a908cd4053dfa33fa9771c8086"
+    ],
+    "formalization_id": "atlas-formalization:bacon_shor",
+    "instance_ids": [
+      "atlas-instance:bacon_shor:square_2",
+      "atlas-instance:bacon_shor:square_3",
+      "atlas-instance:bacon_shor:rectangle_3x5"
+    ],
+    "page_id": "atlas-page:bacon_shor",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bacon_shor"
+    ]
+  },
+  "instances": [
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "3976995c43a68b34f18f5640d19a5c9ebb61b88eaeff45c840d599acdee47b7e",
+        "payload_sha256": "ce6988c508ba6f531a63b563c00cbbee261db516cda48e82b5568c1935b7a4cd",
+        "semantic_hash": "d8e746166aa33cd21c1e3bff3d05272a36667b09d28142bba448271a7e9fe1a2"
+      },
+      "id": "atlas-instance:bacon_shor:square_2",
+      "label": "square_2",
+      "lean_v1": {
+        "branch": "subsystem-gauge",
+        "certificate_ids": [
+          "certificate:d8e746166aa33cd21c1e3bff3d05272a36667b09d28142bba448271a7e9fe1a2:small-exact-distance-enumeration:271b03921909450750bb1d1e462d4b68b5b50302a41e961dc447240854903d06@1",
+          "certificate:d8e746166aa33cd21c1e3bff3d05272a36667b09d28142bba448271a7e9fe1a2:structural-validity:d9c3eba0867e036d80ee055bfacaec81a80b70e2b2966450dda1e23faca73252@1"
+        ],
+        "instance_record_sha256": "45e09de3720de954bd992e620c45d538b6d35616c5eed6637aa7c9e07adcf75a",
+        "lean_report_sha256": "2d18de62d60e6711903f8e85f9cb35fc996457b913605b25214a5bb4e7acdb7d",
+        "semantic_hash": "d8e746166aa33cd21c1e3bff3d05272a36667b09d28142bba448271a7e9fe1a2"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "1c29a8f24745ed0f46c366410a154841f2a42d484de214a6bfc65fc275a33ccd",
+      "v2_envelope_id": "formal-ir-v2:bacon_shor:square_2"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "3976995c43a68b34f18f5640d19a5c9ebb61b88eaeff45c840d599acdee47b7e",
+        "payload_sha256": "ddc9316115b69f2c5ea7bc8ef6032dcaf9b296f703ce75a88e52ca6b2608c305",
+        "semantic_hash": "5c0662072db371fae17448c471d1e4b9ea3184325cf1a9b1944ebd4870bd5a59"
+      },
+      "id": "atlas-instance:bacon_shor:square_3",
+      "label": "square_3",
+      "lean_v1": {
+        "branch": "subsystem-gauge",
+        "certificate_ids": [
+          "certificate:5c0662072db371fae17448c471d1e4b9ea3184325cf1a9b1944ebd4870bd5a59:small-exact-distance-enumeration:c4a654bbfa09ddeb866d5624a7ce88d82dd31baf55243d7cc6053367e1593029@1",
+          "certificate:5c0662072db371fae17448c471d1e4b9ea3184325cf1a9b1944ebd4870bd5a59:structural-validity:6a89c70c06fe4696845b40a5d3b1626ecdebbda52f439fcc3bdfe9a793464f8f@1"
+        ],
+        "instance_record_sha256": "7410f8847ad65c74207c920c89cf271b4888f6b9069155f18ea00ab52511e882",
+        "lean_report_sha256": "860b1d5ad543881b607ac5d03e7a3928292f951da12bcf60b83f876a650018da",
+        "semantic_hash": "5c0662072db371fae17448c471d1e4b9ea3184325cf1a9b1944ebd4870bd5a59"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "1e223769bfa247edf2c6a401d74b43523d750fdff94bc7c68e1adac5d3d91482",
+      "v2_envelope_id": "formal-ir-v2:bacon_shor:square_3"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "3976995c43a68b34f18f5640d19a5c9ebb61b88eaeff45c840d599acdee47b7e",
+        "payload_sha256": "32630c8c32a0730d602c83d976366a289892211f99d07f9f3aad9eef0aedf0db",
+        "semantic_hash": "b0d377ae17fea267829a4ab952d2343536046e0eaddbe222a10af409067d4b4a"
+      },
+      "id": "atlas-instance:bacon_shor:rectangle_3x5",
+      "label": "rectangle_3x5",
+      "lean_v1": {
+        "branch": "subsystem-gauge",
+        "certificate_ids": [
+          "certificate:b0d377ae17fea267829a4ab952d2343536046e0eaddbe222a10af409067d4b4a:small-exact-distance-enumeration:de64e396eea8edea38c0fdab599b94365e094fe4833f5b11f3e817b947e8a926@1",
+          "certificate:b0d377ae17fea267829a4ab952d2343536046e0eaddbe222a10af409067d4b4a:structural-validity:02b38c50c8f6113d933d752e30c78f8fd63fc6bca2e43ed385bd9ebdc4f1e592@1"
+        ],
+        "instance_record_sha256": "1bc6f20589f855f6f14d6874affdc19d4d10494ecb3fbc7ba323f65728edb1e5",
+        "lean_report_sha256": "7f9e18f1aae6497bc3fe5a6129c9cfeb4704f6bb49d20caeb7286981a39916a4",
+        "semantic_hash": "b0d377ae17fea267829a4ab952d2343536046e0eaddbe222a10af409067d4b4a"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "b7d9b0ac2c8e815d08751d9336025a1f272e486d6b64c83cbc4a125fedde2e12",
+      "v2_envelope_id": "formal-ir-v2:bacon_shor:rectangle_3x5"
+    }
+  ],
+  "legacy_card": {
+    "categories": [
+      {
+        "id": "subsystem",
+        "origin": {
+          "kind": "curated",
+          "ref": "bacon2006operator"
+        }
+      },
+      {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      }
+    ],
+    "decoders": [
+      {
+        "id": "lookup-table",
+        "noise": "finite rectangular blocks with perfect two-qubit gauge outcomes under stochastic Pauli noise",
+        "notes": "The exact-small decision rule factorizes into repetition-style parity inference along rows and columns; it may be implemented by majority logic instead of literally storing a table. The optimum rectangle is a property of the X/Z noise bias and objective, not a code-only constant.",
+        "refs": [
+          "aliferis2007subsystem",
+          "napp2013optimal"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "lookup-table",
+        "noise": "circuit faults in repeated low-weight gauge extraction or encoded-ancilla Steane extraction on fixed small blocks",
+        "notes": "Here the input includes a protocol-specific history of gauge outcomes, flags, or encoded-ancilla checks. Repeating gauge measurements and using a Steane ancilla are different syndrome objects, so their logical-error comparisons cannot be transferred to an unspecified static decoder.",
+        "refs": [
+          "cross2009comparative",
+          "escobar2025improved"
+        ],
+        "status": "research-grade"
+      },
+      {
+        "id": "mwpm",
+        "noise": "uniform circuit-level noise on the period-four Floquet–Bacon–Shor descendant",
+        "notes": "Matching consumes constant-weight spacetime detectors built from the scheduled circuit. This row is intentionally variant-scoped: it does not establish a conventional threshold for the static rectangular family. No extraction-independent threshold for plain static stabilizer products was found in the stated searches as of 2026-08-02.",
+        "refs": [
+          "alam2025board",
+          "gidney2023less"
+        ],
+        "status": "research-grade"
+      }
+    ],
+    "description": "A rectangular grid code that makes Shor's two repetition protections local by treating nearest-neighbour XX and ZZ parities as gauge generators. These gauge measurements need not commute with one another: only their center fixes the protected subspace. The unconstrained gauge subsystem absorbs local changes of representative, while one row-spanning X string and one column-spanning Z string carry the logical qubit.",
+    "eczoo": {
+      "classification": "exact-family",
+      "source": {
+        "blob_url": "https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/subsystem/qldpc/bbs/bacon_shor/bacon_shor.yml",
+        "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+        "page_url": "https://errorcorrectionzoo.org/c/bacon_shor",
+        "path": "codes/quantum/qubits/subsystem/qldpc/bbs/bacon_shor/bacon_shor.yml",
+        "repository_url": "https://github.com/errorcorrectionzoo/eczoo_data",
+        "retrieved_on": "2026-08-05",
+        "sha256": "782d484a02dea609d14e25c28d1c59e8c11d0ad4202b057a9e035d0c4ec92009"
+      },
+      "status": "mapped",
+      "zoo_id": "bacon_shor"
+    },
+    "fit": {
+      "platforms": [
+        "nearest-neighbour-square-array",
+        "trapped-ion-all-to-all",
+        "bias-preserving-architecture"
+      ],
+      "tasks": [
+        "fault-tolerant-memory",
+        "bias-tailored-protection",
+        "logical-operations"
+      ]
+    },
+    "id": "bacon_shor",
+    "identity": {
+      "aliases": [
+        "Bacon–Shor subsystem code",
+        "operator Bacon–Shor code"
+      ],
+      "canonical_name": "Bacon–Shor code",
+      "variant": "rectangular static subsystem family"
+    },
+    "kind": "family",
+    "operations": [
+      {
+        "cost": "one pairwise physical-CNOT layer between matching grid sites; block alignment, routing, syndrome extraction, and recovery are additional",
+        "gate": "CNOT between aligned Bacon–Shor blocks",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "aliferis2007subsystem"
+        }
+      },
+      {
+        "cost": "one physical-H layer followed by the row/column permutation that restores the declared vertical-X and horizontal-Z gauge orientation",
+        "gate": "H on a square block",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "aliferis2007subsystem"
+        }
+      },
+      {
+        "cost": "block dimensions must satisfy the cited geometry for the chosen control order; changing aspect ratio and performing error correction between pieces are protocol resources, not free transversal gates on one square",
+        "gate": "multi-controlled Z family on dimension-matched rectangles",
+        "level": "non-Clifford controlled-phase hierarchy",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "yoder2017universalbacon"
+        }
+      },
+      {
+        "cost": "a compatible boundary, an ancilla code patch, repeated joint gauge measurements, and classical feed-forward",
+        "gate": "joint logical parity and state transfer",
+        "level": "measurement-based Clifford interface",
+        "mechanism": "surgery",
+        "origin": {
+          "kind": "claimed",
+          "ref": "nautrup2017interface"
+        }
+      },
+      {
+        "cost": "verified ancillas, teleportation measurements, and correction around strongly rectangular blocks; the aspect ratio is optimized jointly with the hardware noise bias",
+        "gate": "biased-noise universal primitives",
+        "level": "teleportation-assisted universal set",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "brooks2013asymmetric"
+        }
+      },
+      {
+        "cost": "coherent correction circuits and extra qubits replace mid-circuit measurement while the code is deformed; measurement-free does not mean correction-free",
+        "gate": "CCZ by measurement-free deformation",
+        "level": "non-Clifford",
+        "mechanism": "switching",
+        "origin": {
+          "kind": "claimed",
+          "ref": "veroni2025measurementfree"
+        }
+      },
+      {
+        "cost": "a period-four measurement schedule, time-dependent logical tracking, and detector decoding; this operation is not attached to the static checkmatrix exported by this entry",
+        "gate": "logical operations on the Floquet–Bacon–Shor descendant",
+        "level": "dynamical logical control (variant only)",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "sun2025floquetbacon"
+        }
+      }
+    ],
+    "params": {
+      "columns": "Number of physical-qubit columns; at least two.",
+      "rows": "Number of physical-qubit rows; at least two."
+    },
+    "presentation": {
+      "guided_tour": {
+        "status": "available"
+      },
+      "orienting_view": {
+        "kind": "construction",
+        "status": "available"
+      }
+    },
+    "realizations": [
+      {
+        "description": "A nine-data-qubit Bacon–Shor logical block with four ancillas demonstrated fault-tolerant preparation, measurement, corrected rotations, and stabilizer extraction. This is a fixed-distance primitive suite, not an increasing-distance below-threshold memory experiment.",
+        "platform": "thirteen-qubit trapped-ion processor",
+        "refs": [
+          "egan2021fault"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "description": "Highly rectangular blocks are combined with teleportation and biased elementary operations so geometry protects the dominant Pauli channel. The resource claim includes ancilla preparation, verification, and correction; it is not supplied by block aspect ratio alone.",
+        "platform": "bias-preserving teleportation architecture",
+        "refs": [
+          "brooks2013asymmetric"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "refs": [
+      "shor1995scheme",
+      "bacon2003decoherence",
+      "bacon2006operator",
+      "aliferis2007subsystem",
+      "cross2009comparative",
+      "napp2013optimal",
+      "brooks2013asymmetric",
+      "bravyi2011subsystem",
+      "li2019compass",
+      "yoder2019optimal",
+      "alam2025board",
+      "escobar2025improved",
+      "gidney2023less",
+      "dorier2005compass",
+      "sarma2013gauge",
+      "cao2022quantumlego",
+      "chapman2022freefermion",
+      "egan2021fault",
+      "sun2025floquetbacon",
+      "yoder2017universalbacon",
+      "nautrup2017interface",
+      "veroni2025measurementfree"
+    ],
+    "relations": [
+      {
+        "how": "For the square three-by-three member in this constructor's orientation, promote all horizontal ZZ gauge pairs to stabilizers. Together with the two X center generators, they reproduce the repository's nine-qubit Shor stabilizer row space exactly; the discarded gauge freedom becomes fixed. The neighboring Shor entry uses encoded-basis names that call the Z column logical X and the X row logical Z, so its logical labels are swapped relative to this card's Pauli-type names even though the protected Pauli algebra is the same.",
+        "refs": [
+          "shor1995scheme",
+          "bacon2006operator"
+        ],
+        "target": "shor_nine",
+        "type": "gauge_fixes_to"
+      },
+      {
+        "how": "Plain rectangular Bacon–Shor occupies every site of the defining binary matrix. Bravyi–Bacon–Shor permits a general occupancy matrix and derives encoded dimension and distances from its row and column codes, so its rate claims do not transfer to the full rectangle.",
+        "refs": [
+          "bravyi2011subsystem",
+          "yoder2019optimal"
+        ],
+        "target": "bravyi_bacon_shor",
+        "type": "special_case_of"
+      },
+      {
+        "how": "Promoting selected gauge generators to commuting stabilizers produces two-dimensional compass-code descendants between the Bacon–Shor and surface-like extremes. The pattern of promoted checks is part of the target code and is not encoded by changing only rows and columns here.",
+        "refs": [
+          "li2019compass"
+        ],
+        "target": "compass_code_2d",
+        "type": "gauge_fixes_to"
+      },
+      {
+        "how": "The protected X and Z parities are perpendicular repetition constraints, with local pair checks liberated into a gauge subsystem. This quotient is the subsystem analogue of Shor's nested repetition construction rather than an HGP replay recipe.",
+        "refs": [
+          "shor1995scheme",
+          "bacon2006operator"
+        ],
+        "target": "repetition",
+        "type": "product_of"
+      }
+    ],
+    "tier": "T3",
+    "views": [
+      {
+        "description": "Vertical XX pairs and horizontal ZZ pairs generate a nonabelian gauge group. Multiplying every vertical pair across two neighboring rows gives an X stabilizer; multiplying every horizontal pair across two neighboring columns gives a Z stabilizer. The constructor verifies that these center generators commute with the full gauge group and lie in its span.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "bacon2003decoherence",
+          "bacon2006operator",
+          "aliferis2007subsystem"
+        ],
+        "rung": "R1",
+        "type": "gauge-center-quotient"
+      },
+      {
+        "description": "Perfect gauge readout reduces the two Pauli channels to classical repetition inference in perpendicular directions. A bare logical X may be placed on any complete row and a bare logical Z on any complete column; parallel representatives differ only by gauge action. The engine constructs the protected quotient C(S)/G, exactly enumerates the three shipped finite instances, and independently validates any seeded upper-bound witness. Scalable lower bounds and presentation-equivalence certificates remain open under wanted/subsystem-dressed-distance.",
+        "origin": {
+          "converter": "qeclib.gf2.rank + Bacon–Shor gauge-span and logical-pair checks",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "bacon2006operator",
+          "aliferis2007subsystem",
+          "napp2013optimal"
+        ],
+        "rung": "R2",
+        "type": "repetition-quotient"
+      },
+      {
+        "description": "Reading the same XX/ZZ links as Hamiltonian terms produces the square quantum-compass pattern and its rigid line symmetries. This dictionary does not turn the ordinary static Bacon–Shor model into a topological or self-correcting memory; locality belongs to the gauge generators, while the stabilizer products grow with a linear dimension.",
+        "origin": {
+          "kind": "curated",
+          "ref": "dorier2005compass"
+        },
+        "refs": [
+          "dorier2005compass",
+          "bacon2006operator",
+          "sarma2013gauge"
+        ],
+        "rung": "R5",
+        "type": "compass-hamiltonian"
+      },
+      {
+        "description": "A surface-code tensor network can be reorganized by declaring selected dangling legs logical rather than physical. The reassignment exposes the Bacon–Shor weight-two gauge structure and explains the relationship as a change of subsystem bookkeeping, not an equality of stabilizer tables.",
+        "origin": {
+          "kind": "curated",
+          "ref": "cao2022quantumlego"
+        },
+        "refs": [
+          "cao2022quantumlego"
+        ],
+        "rung": "R5",
+        "type": "tensor-leg-reassignment"
+      },
+      {
+        "description": "The gauge-term anticommutation graph records which perpendicular XX and ZZ links meet once. It is a useful contrast with free-fermion subsystem constructions, but the ordinary Bacon–Shor compass Hamiltonian itself is not labeled free-fermion solvable: the fetched source explicitly treats it as the obstructed relative as of 2026-08-02.",
+        "origin": {
+          "kind": "curated",
+          "ref": "chapman2022freefermion"
+        },
+        "refs": [
+          "chapman2022freefermion"
+        ],
+        "rung": "R5",
+        "type": "frustration-graph-boundary"
+      },
+      {
+        "description": "Floquet–Bacon–Shor replaces the static gauge-center object with a period-four measurement schedule whose detectors and logical representatives evolve in time. Its superconducting logical-operation demonstration is therefore evidence for a dynamical descendant, not a hardware realization of this card's static check matrix.",
+        "origin": {
+          "kind": "curated",
+          "ref": "alam2025board"
+        },
+        "refs": [
+          "alam2025board",
+          "sun2025floquetbacon"
+        ],
+        "rung": "R3",
+        "type": "period-four-descendant"
+      }
+    ],
+    "visual_instance": "square_3"
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:bacon_shor#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:bacon_shor#collection",
+        "status": "preserved",
+        "tier": "T3"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:bacon_shor",
+    "presented_entity_ids": [
+      "eczoo-entity:bacon_shor#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:bacon_shor#collection",
+    "redirects": [],
+    "route": "/entries/bacon_shor.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/bacon_shor"
+  },
+  "parent_content": null,
+  "projection": {
+    "method": "embedded-utf8-source-v1",
+    "source_sha256": "6c1eb3bbcdca40c92763fd641e73f3ab8df3925946097924e3c4589af68393a4",
+    "status": "exact"
+  },
+  "schema": "qec-atlas-entry-card-v2",
+  "scoped_facets": {
+    "categories": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "subsystem",
+          "origin": {
+            "kind": "curated",
+            "ref": "bacon2006operator"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:categories:0@fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389",
+        "field": "categories",
+        "id": "atlas-assertion:bacon_shor:categories:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/categories/0",
+        "source_sha256": "fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389",
+        "version_id": "atlas-assertion:bacon_shor:categories:0@sha256:fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "css",
+          "origin": {
+            "kind": "verified"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:categories:1@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "field": "categories",
+        "id": "atlas-assertion:bacon_shor:categories:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/categories/1",
+        "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "version_id": "atlas-assertion:bacon_shor:categories:1@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+      }
+    ],
+    "decoders": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "lookup-table",
+          "noise": "finite rectangular blocks with perfect two-qubit gauge outcomes under stochastic Pauli noise",
+          "notes": "The exact-small decision rule factorizes into repetition-style parity inference along rows and columns; it may be implemented by majority logic instead of literally storing a table. The optimum rectangle is a property of the X/Z noise bias and objective, not a code-only constant.",
+          "refs": [
+            "aliferis2007subsystem",
+            "napp2013optimal"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:decoders:0@e1d8a1fcf9a6de1d93ec53f20119d4bcf5b85ad84680b9705774e0eda850d812",
+        "field": "decoders",
+        "id": "atlas-assertion:bacon_shor:decoders:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/decoders/0",
+        "source_sha256": "e1d8a1fcf9a6de1d93ec53f20119d4bcf5b85ad84680b9705774e0eda850d812",
+        "version_id": "atlas-assertion:bacon_shor:decoders:0@sha256:e1d8a1fcf9a6de1d93ec53f20119d4bcf5b85ad84680b9705774e0eda850d812"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "lookup-table",
+          "noise": "circuit faults in repeated low-weight gauge extraction or encoded-ancilla Steane extraction on fixed small blocks",
+          "notes": "Here the input includes a protocol-specific history of gauge outcomes, flags, or encoded-ancilla checks. Repeating gauge measurements and using a Steane ancilla are different syndrome objects, so their logical-error comparisons cannot be transferred to an unspecified static decoder.",
+          "refs": [
+            "cross2009comparative",
+            "escobar2025improved"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:decoders:1@23acc6d6ec2be62a885f52c1830757bb4d11e867dd59d79c13061981c288642e",
+        "field": "decoders",
+        "id": "atlas-assertion:bacon_shor:decoders:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/decoders/1",
+        "source_sha256": "23acc6d6ec2be62a885f52c1830757bb4d11e867dd59d79c13061981c288642e",
+        "version_id": "atlas-assertion:bacon_shor:decoders:1@sha256:23acc6d6ec2be62a885f52c1830757bb4d11e867dd59d79c13061981c288642e"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "uniform circuit-level noise on the period-four Floquet–Bacon–Shor descendant",
+          "notes": "Matching consumes constant-weight spacetime detectors built from the scheduled circuit. This row is intentionally variant-scoped: it does not establish a conventional threshold for the static rectangular family. No extraction-independent threshold for plain static stabilizer products was found in the stated searches as of 2026-08-02.",
+          "refs": [
+            "alam2025board",
+            "gidney2023less"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:decoders:2@87681e019858d2e768f08e4cbada2c351de91e1fee323ac8ced359eb0d870fa9",
+        "field": "decoders",
+        "id": "atlas-assertion:bacon_shor:decoders:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/decoders/2",
+        "source_sha256": "87681e019858d2e768f08e4cbada2c351de91e1fee323ac8ced359eb0d870fa9",
+        "version_id": "atlas-assertion:bacon_shor:decoders:2@sha256:87681e019858d2e768f08e4cbada2c351de91e1fee323ac8ced359eb0d870fa9"
+      }
+    ],
+    "operations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "one pairwise physical-CNOT layer between matching grid sites; block alignment, routing, syndrome extraction, and recovery are additional",
+          "gate": "CNOT between aligned Bacon–Shor blocks",
+          "level": "Clifford",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "aliferis2007subsystem"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:operations:0@9a4faa179b572338407f60c64e1f1f1345b6188522f7fc363ff01462a451e304",
+        "field": "operations",
+        "id": "atlas-assertion:bacon_shor:operations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/operations/0",
+        "source_sha256": "9a4faa179b572338407f60c64e1f1f1345b6188522f7fc363ff01462a451e304",
+        "version_id": "atlas-assertion:bacon_shor:operations:0@sha256:9a4faa179b572338407f60c64e1f1f1345b6188522f7fc363ff01462a451e304"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "one physical-H layer followed by the row/column permutation that restores the declared vertical-X and horizontal-Z gauge orientation",
+          "gate": "H on a square block",
+          "level": "Clifford",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "aliferis2007subsystem"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:operations:1@d2fa4763e28f4e3f06ee4b2a63937009e2bf90646f75dd7ffc5c5fe062eea433",
+        "field": "operations",
+        "id": "atlas-assertion:bacon_shor:operations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/operations/1",
+        "source_sha256": "d2fa4763e28f4e3f06ee4b2a63937009e2bf90646f75dd7ffc5c5fe062eea433",
+        "version_id": "atlas-assertion:bacon_shor:operations:1@sha256:d2fa4763e28f4e3f06ee4b2a63937009e2bf90646f75dd7ffc5c5fe062eea433"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "block dimensions must satisfy the cited geometry for the chosen control order; changing aspect ratio and performing error correction between pieces are protocol resources, not free transversal gates on one square",
+          "gate": "multi-controlled Z family on dimension-matched rectangles",
+          "level": "non-Clifford controlled-phase hierarchy",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "yoder2017universalbacon"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:operations:2@b1dc0ec1c9273d95a5ab33d82e0ee7d86c0212af0b5c66e1b024742d52df0dda",
+        "field": "operations",
+        "id": "atlas-assertion:bacon_shor:operations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/operations/2",
+        "source_sha256": "b1dc0ec1c9273d95a5ab33d82e0ee7d86c0212af0b5c66e1b024742d52df0dda",
+        "version_id": "atlas-assertion:bacon_shor:operations:2@sha256:b1dc0ec1c9273d95a5ab33d82e0ee7d86c0212af0b5c66e1b024742d52df0dda"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "a compatible boundary, an ancilla code patch, repeated joint gauge measurements, and classical feed-forward",
+          "gate": "joint logical parity and state transfer",
+          "level": "measurement-based Clifford interface",
+          "mechanism": "surgery",
+          "origin": {
+            "kind": "claimed",
+            "ref": "nautrup2017interface"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:operations:3@62dd4ce1038189151714af6256d4761023f476c22755e25e08f336bbbbcf6c5d",
+        "field": "operations",
+        "id": "atlas-assertion:bacon_shor:operations:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/operations/3",
+        "source_sha256": "62dd4ce1038189151714af6256d4761023f476c22755e25e08f336bbbbcf6c5d",
+        "version_id": "atlas-assertion:bacon_shor:operations:3@sha256:62dd4ce1038189151714af6256d4761023f476c22755e25e08f336bbbbcf6c5d"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "verified ancillas, teleportation measurements, and correction around strongly rectangular blocks; the aspect ratio is optimized jointly with the hardware noise bias",
+          "gate": "biased-noise universal primitives",
+          "level": "teleportation-assisted universal set",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "brooks2013asymmetric"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:operations:4@257539ee0924a54d27ed41b2622da4a1c8215fe27af86ba8345c10b3360bc075",
+        "field": "operations",
+        "id": "atlas-assertion:bacon_shor:operations:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/operations/4",
+        "source_sha256": "257539ee0924a54d27ed41b2622da4a1c8215fe27af86ba8345c10b3360bc075",
+        "version_id": "atlas-assertion:bacon_shor:operations:4@sha256:257539ee0924a54d27ed41b2622da4a1c8215fe27af86ba8345c10b3360bc075"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "coherent correction circuits and extra qubits replace mid-circuit measurement while the code is deformed; measurement-free does not mean correction-free",
+          "gate": "CCZ by measurement-free deformation",
+          "level": "non-Clifford",
+          "mechanism": "switching",
+          "origin": {
+            "kind": "claimed",
+            "ref": "veroni2025measurementfree"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:operations:5@ba5ad3c1069e0442a470042cc1008c9a00c4b1ac89b4a3438ec3c968763c960c",
+        "field": "operations",
+        "id": "atlas-assertion:bacon_shor:operations:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/operations/5",
+        "source_sha256": "ba5ad3c1069e0442a470042cc1008c9a00c4b1ac89b4a3438ec3c968763c960c",
+        "version_id": "atlas-assertion:bacon_shor:operations:5@sha256:ba5ad3c1069e0442a470042cc1008c9a00c4b1ac89b4a3438ec3c968763c960c"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "a period-four measurement schedule, time-dependent logical tracking, and detector decoding; this operation is not attached to the static checkmatrix exported by this entry",
+          "gate": "logical operations on the Floquet–Bacon–Shor descendant",
+          "level": "dynamical logical control (variant only)",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "sun2025floquetbacon"
+          }
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:operations:6@ef37260872830cbaf75591acd404c86e68849406f97bf313c28b652279c1082d",
+        "field": "operations",
+        "id": "atlas-assertion:bacon_shor:operations:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/operations/6",
+        "source_sha256": "ef37260872830cbaf75591acd404c86e68849406f97bf313c28b652279c1082d",
+        "version_id": "atlas-assertion:bacon_shor:operations:6@sha256:ef37260872830cbaf75591acd404c86e68849406f97bf313c28b652279c1082d"
+      }
+    ],
+    "realizations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A nine-data-qubit Bacon–Shor logical block with four ancillas demonstrated fault-tolerant preparation, measurement, corrected rotations, and stabilizer extraction. This is a fixed-distance primitive suite, not an increasing-distance below-threshold memory experiment.",
+          "platform": "thirteen-qubit trapped-ion processor",
+          "refs": [
+            "egan2021fault"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:realizations:0@055bbc8a4b083171bfd39ef968d177b305a9c7d5fac3e90a9ae1dfd7b4aefda7",
+        "field": "realizations",
+        "id": "atlas-assertion:bacon_shor:realizations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/realizations/0",
+        "source_sha256": "055bbc8a4b083171bfd39ef968d177b305a9c7d5fac3e90a9ae1dfd7b4aefda7",
+        "version_id": "atlas-assertion:bacon_shor:realizations:0@sha256:055bbc8a4b083171bfd39ef968d177b305a9c7d5fac3e90a9ae1dfd7b4aefda7"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Highly rectangular blocks are combined with teleportation and biased elementary operations so geometry protects the dominant Pauli channel. The resource claim includes ancilla preparation, verification, and correction; it is not supplied by block aspect ratio alone.",
+          "platform": "bias-preserving teleportation architecture",
+          "refs": [
+            "brooks2013asymmetric"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:realizations:1@383b936b0c8c4cac0d3b01dc5c00a7f79a67c889958525af5bec1bb108d4463f",
+        "field": "realizations",
+        "id": "atlas-assertion:bacon_shor:realizations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/realizations/1",
+        "source_sha256": "383b936b0c8c4cac0d3b01dc5c00a7f79a67c889958525af5bec1bb108d4463f",
+        "version_id": "atlas-assertion:bacon_shor:realizations:1@sha256:383b936b0c8c4cac0d3b01dc5c00a7f79a67c889958525af5bec1bb108d4463f"
+      }
+    ],
+    "relations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "For the square three-by-three member in this constructor's orientation, promote all horizontal ZZ gauge pairs to stabilizers. Together with the two X center generators, they reproduce the repository's nine-qubit Shor stabilizer row space exactly; the discarded gauge freedom becomes fixed. The neighboring Shor entry uses encoded-basis names that call the Z column logical X and the X row logical Z, so its logical labels are swapped relative to this card's Pauli-type names even though the protected Pauli algebra is the same.",
+          "refs": [
+            "shor1995scheme",
+            "bacon2006operator"
+          ],
+          "target": "shor_nine",
+          "type": "gauge_fixes_to"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:relations:0@c72c328cb56f36e365b5247f66eebe77d36ee849a4ce6d3ebf519f0a4deac024",
+        "field": "relations",
+        "id": "atlas-assertion:bacon_shor:relations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/relations/0",
+        "source_sha256": "c72c328cb56f36e365b5247f66eebe77d36ee849a4ce6d3ebf519f0a4deac024",
+        "version_id": "atlas-assertion:bacon_shor:relations:0@sha256:c72c328cb56f36e365b5247f66eebe77d36ee849a4ce6d3ebf519f0a4deac024"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "Plain rectangular Bacon–Shor occupies every site of the defining binary matrix. Bravyi–Bacon–Shor permits a general occupancy matrix and derives encoded dimension and distances from its row and column codes, so its rate claims do not transfer to the full rectangle.",
+          "refs": [
+            "bravyi2011subsystem",
+            "yoder2019optimal"
+          ],
+          "target": "bravyi_bacon_shor",
+          "type": "special_case_of"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:relations:1@c9a189b7114fbbe9e972a7de50946c7b7a12f6a583368474c679b47be8bddf00",
+        "field": "relations",
+        "id": "atlas-assertion:bacon_shor:relations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/relations/1",
+        "source_sha256": "c9a189b7114fbbe9e972a7de50946c7b7a12f6a583368474c679b47be8bddf00",
+        "version_id": "atlas-assertion:bacon_shor:relations:1@sha256:c9a189b7114fbbe9e972a7de50946c7b7a12f6a583368474c679b47be8bddf00"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "Promoting selected gauge generators to commuting stabilizers produces two-dimensional compass-code descendants between the Bacon–Shor and surface-like extremes. The pattern of promoted checks is part of the target code and is not encoded by changing only rows and columns here.",
+          "refs": [
+            "li2019compass"
+          ],
+          "target": "compass_code_2d",
+          "type": "gauge_fixes_to"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:relations:2@bd9750c70ee17c2d8244047106b22c5aa5a8012037fda3f6825b45168bb10d03",
+        "field": "relations",
+        "id": "atlas-assertion:bacon_shor:relations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/relations/2",
+        "source_sha256": "bd9750c70ee17c2d8244047106b22c5aa5a8012037fda3f6825b45168bb10d03",
+        "version_id": "atlas-assertion:bacon_shor:relations:2@sha256:bd9750c70ee17c2d8244047106b22c5aa5a8012037fda3f6825b45168bb10d03"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "The protected X and Z parities are perpendicular repetition constraints, with local pair checks liberated into a gauge subsystem. This quotient is the subsystem analogue of Shor's nested repetition construction rather than an HGP replay recipe.",
+          "refs": [
+            "shor1995scheme",
+            "bacon2006operator"
+          ],
+          "target": "repetition",
+          "type": "product_of"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:relations:3@a73b831abe885f04a261bb6626cc7c8ffd9a70a908cd4053dfa33fa9771c8086",
+        "field": "relations",
+        "id": "atlas-assertion:bacon_shor:relations:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/relations/3",
+        "source_sha256": "a73b831abe885f04a261bb6626cc7c8ffd9a70a908cd4053dfa33fa9771c8086",
+        "version_id": "atlas-assertion:bacon_shor:relations:3@sha256:a73b831abe885f04a261bb6626cc7c8ffd9a70a908cd4053dfa33fa9771c8086"
+      }
+    ],
+    "views": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Vertical XX pairs and horizontal ZZ pairs generate a nonabelian gauge group. Multiplying every vertical pair across two neighboring rows gives an X stabilizer; multiplying every horizontal pair across two neighboring columns gives a Z stabilizer. The constructor verifies that these center generators commute with the full gauge group and lie in its span.",
+          "origin": {
+            "kind": "canonical"
+          },
+          "refs": [
+            "bacon2003decoherence",
+            "bacon2006operator",
+            "aliferis2007subsystem"
+          ],
+          "rung": "R1",
+          "type": "gauge-center-quotient"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:views:0@a3f56737661d080e0958dec617b3098dde16a51cc2b44d365ac03b118f362f6a",
+        "field": "views",
+        "id": "atlas-assertion:bacon_shor:views:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/views/0",
+        "source_sha256": "a3f56737661d080e0958dec617b3098dde16a51cc2b44d365ac03b118f362f6a",
+        "version_id": "atlas-assertion:bacon_shor:views:0@sha256:a3f56737661d080e0958dec617b3098dde16a51cc2b44d365ac03b118f362f6a"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Perfect gauge readout reduces the two Pauli channels to classical repetition inference in perpendicular directions. A bare logical X may be placed on any complete row and a bare logical Z on any complete column; parallel representatives differ only by gauge action. The engine constructs the protected quotient C(S)/G, exactly enumerates the three shipped finite instances, and independently validates any seeded upper-bound witness. Scalable lower bounds and presentation-equivalence certificates remain open under wanted/subsystem-dressed-distance.",
+          "origin": {
+            "converter": "qeclib.gf2.rank + Bacon–Shor gauge-span and logical-pair checks",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "bacon2006operator",
+            "aliferis2007subsystem",
+            "napp2013optimal"
+          ],
+          "rung": "R2",
+          "type": "repetition-quotient"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:views:1@f7f7d9c1b2ef459cb11a0c6db22d5ccb851ca5d5987b0afeff39f4416114d544",
+        "field": "views",
+        "id": "atlas-assertion:bacon_shor:views:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/views/1",
+        "source_sha256": "f7f7d9c1b2ef459cb11a0c6db22d5ccb851ca5d5987b0afeff39f4416114d544",
+        "version_id": "atlas-assertion:bacon_shor:views:1@sha256:f7f7d9c1b2ef459cb11a0c6db22d5ccb851ca5d5987b0afeff39f4416114d544"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Reading the same XX/ZZ links as Hamiltonian terms produces the square quantum-compass pattern and its rigid line symmetries. This dictionary does not turn the ordinary static Bacon–Shor model into a topological or self-correcting memory; locality belongs to the gauge generators, while the stabilizer products grow with a linear dimension.",
+          "origin": {
+            "kind": "curated",
+            "ref": "dorier2005compass"
+          },
+          "refs": [
+            "dorier2005compass",
+            "bacon2006operator",
+            "sarma2013gauge"
+          ],
+          "rung": "R5",
+          "type": "compass-hamiltonian"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:views:2@3d528141f99a70518fd2fd26de82a51417dd3620ede4b452bfc547998c782698",
+        "field": "views",
+        "id": "atlas-assertion:bacon_shor:views:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/views/2",
+        "source_sha256": "3d528141f99a70518fd2fd26de82a51417dd3620ede4b452bfc547998c782698",
+        "version_id": "atlas-assertion:bacon_shor:views:2@sha256:3d528141f99a70518fd2fd26de82a51417dd3620ede4b452bfc547998c782698"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A surface-code tensor network can be reorganized by declaring selected dangling legs logical rather than physical. The reassignment exposes the Bacon–Shor weight-two gauge structure and explains the relationship as a change of subsystem bookkeeping, not an equality of stabilizer tables.",
+          "origin": {
+            "kind": "curated",
+            "ref": "cao2022quantumlego"
+          },
+          "refs": [
+            "cao2022quantumlego"
+          ],
+          "rung": "R5",
+          "type": "tensor-leg-reassignment"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:views:3@f278b1e37b362f3706c691633d3e06ce7dfc58485a3e664d06a40ab744a8f0cd",
+        "field": "views",
+        "id": "atlas-assertion:bacon_shor:views:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/views/3",
+        "source_sha256": "f278b1e37b362f3706c691633d3e06ce7dfc58485a3e664d06a40ab744a8f0cd",
+        "version_id": "atlas-assertion:bacon_shor:views:3@sha256:f278b1e37b362f3706c691633d3e06ce7dfc58485a3e664d06a40ab744a8f0cd"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The gauge-term anticommutation graph records which perpendicular XX and ZZ links meet once. It is a useful contrast with free-fermion subsystem constructions, but the ordinary Bacon–Shor compass Hamiltonian itself is not labeled free-fermion solvable: the fetched source explicitly treats it as the obstructed relative as of 2026-08-02.",
+          "origin": {
+            "kind": "curated",
+            "ref": "chapman2022freefermion"
+          },
+          "refs": [
+            "chapman2022freefermion"
+          ],
+          "rung": "R5",
+          "type": "frustration-graph-boundary"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:views:4@1adfce3d53984c7d16da978b287d6667e2da48494d6478da4492e64565f55555",
+        "field": "views",
+        "id": "atlas-assertion:bacon_shor:views:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/views/4",
+        "source_sha256": "1adfce3d53984c7d16da978b287d6667e2da48494d6478da4492e64565f55555",
+        "version_id": "atlas-assertion:bacon_shor:views:4@sha256:1adfce3d53984c7d16da978b287d6667e2da48494d6478da4492e64565f55555"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:bacon_shor#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Floquet–Bacon–Shor replaces the static gauge-center object with a period-four measurement schedule whose detectors and logical representatives evolve in time. Its superconducting logical-operation demonstration is therefore evidence for a dynamical descendant, not a hardware realization of this card's static check matrix.",
+          "origin": {
+            "kind": "curated",
+            "ref": "alam2025board"
+          },
+          "refs": [
+            "alam2025board",
+            "sun2025floquetbacon"
+          ],
+          "rung": "R3",
+          "type": "period-four-descendant"
+        },
+        "evidence_id": "atlas-evidence:bacon_shor:views:5@221c870de5388998afd5df10421c7ac6e91a7dc8bb2dd7b6a8eb23965c3319fc",
+        "field": "views",
+        "id": "atlas-assertion:bacon_shor:views:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bacon_shor/card.yaml#/views/5",
+        "source_sha256": "221c870de5388998afd5df10421c7ac6e91a7dc8bb2dd7b6a8eb23965c3319fc",
+        "version_id": "atlas-assertion:bacon_shor:views:5@sha256:221c870de5388998afd5df10421c7ac6e91a7dc8bb2dd7b6a8eb23965c3319fc"
+      }
+    ]
+  },
+  "source": {
+    "collection": "atlas",
+    "encoding": "utf-8",
+    "entry_id": "bacon_shor",
+    "path": "atlas/bacon_shor/card.yaml",
+    "sha256": "6c1eb3bbcdca40c92763fd641e73f3ab8df3925946097924e3c4589af68393a4",
+    "text": "id: bacon_shor\nkind: family\nidentity:\n  canonical_name: \"Bacon–Shor code\"\n  variant: \"rectangular static subsystem family\"\n  aliases:\n    - \"Bacon–Shor subsystem code\"\n    - \"operator Bacon–Shor code\"\npresentation:\n  orienting_view: {status: available, kind: construction}\n  guided_tour: {status: available}\neczoo:\n  status: mapped\n  zoo_id: bacon_shor\n  classification: exact-family\n  source:\n    repository_url: https://github.com/errorcorrectionzoo/eczoo_data\n    commit: b2437d9e2dc09284e04c66ef72ee81b7ed7bd129\n    retrieved_on: \"2026-08-05\"\n    path: codes/quantum/qubits/subsystem/qldpc/bbs/bacon_shor/bacon_shor.yml\n    sha256: 782d484a02dea609d14e25c28d1c59e8c11d0ad4202b057a9e035d0c4ec92009\n    page_url: https://errorcorrectionzoo.org/c/bacon_shor\n    blob_url: https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/subsystem/qldpc/bbs/bacon_shor/bacon_shor.yml\ndescription: >-\n  A rectangular grid code that makes Shor's two repetition protections local\n  by treating nearest-neighbour XX and ZZ parities as gauge generators. These\n  gauge measurements need not commute with one another: only their center\n  fixes the protected subspace. The unconstrained gauge subsystem absorbs\n  local changes of representative, while one row-spanning X string and one\n  column-spanning Z string carry the logical qubit.\nviews:\n  - rung: R1\n    type: gauge-center-quotient\n    description: >-\n      Vertical XX pairs and horizontal ZZ pairs generate a nonabelian gauge\n      group. Multiplying every vertical pair across two neighboring rows gives\n      an X stabilizer; multiplying every horizontal pair across two neighboring\n      columns gives a Z stabilizer. The constructor verifies that these center\n      generators commute with the full gauge group and lie in its span.\n    origin: {kind: canonical}\n    refs: [bacon2003decoherence, bacon2006operator, aliferis2007subsystem]\n  - rung: R2\n    type: repetition-quotient\n    description: >-\n      Perfect gauge readout reduces the two Pauli channels to classical\n      repetition inference in perpendicular directions. A bare logical X may\n      be placed on any complete row and a bare logical Z on any complete\n      column; parallel representatives differ only by gauge action. The engine\n      constructs the protected quotient C(S)/G, exactly enumerates the three\n      shipped finite instances, and independently validates any seeded\n      upper-bound witness. Scalable lower bounds and presentation-equivalence\n      certificates remain open under wanted/subsystem-dressed-distance.\n    origin:\n      kind: derived\n      converter: \"qeclib.gf2.rank + Bacon–Shor gauge-span and logical-pair checks\"\n      version: \"v1\"\n    refs: [bacon2006operator, aliferis2007subsystem, napp2013optimal]\n  - rung: R5\n    type: compass-hamiltonian\n    description: >-\n      Reading the same XX/ZZ links as Hamiltonian terms produces the square\n      quantum-compass pattern and its rigid line symmetries. This dictionary\n      does not turn the ordinary static Bacon–Shor model into a topological or\n      self-correcting memory; locality belongs to the gauge generators, while\n      the stabilizer products grow with a linear dimension.\n    origin: {kind: curated, ref: dorier2005compass}\n    refs: [dorier2005compass, bacon2006operator, sarma2013gauge]\n  - rung: R5\n    type: tensor-leg-reassignment\n    description: >-\n      A surface-code tensor network can be reorganized by declaring selected\n      dangling legs logical rather than physical. The reassignment exposes the\n      Bacon–Shor weight-two gauge structure and explains the relationship as a\n      change of subsystem bookkeeping, not an equality of stabilizer tables.\n    origin: {kind: curated, ref: cao2022quantumlego}\n    refs: [cao2022quantumlego]\n  - rung: R5\n    type: frustration-graph-boundary\n    description: >-\n      The gauge-term anticommutation graph records which perpendicular XX and\n      ZZ links meet once. It is a useful contrast with free-fermion subsystem\n      constructions, but the ordinary Bacon–Shor compass Hamiltonian itself is\n      not labeled free-fermion solvable: the fetched source explicitly treats\n      it as the obstructed relative as of 2026-08-02.\n    origin: {kind: curated, ref: chapman2022freefermion}\n    refs: [chapman2022freefermion]\n  - rung: R3\n    type: period-four-descendant\n    description: >-\n      Floquet–Bacon–Shor replaces the static gauge-center object with a\n      period-four measurement schedule whose detectors and logical\n      representatives evolve in time. Its superconducting logical-operation\n      demonstration is therefore evidence for a dynamical descendant, not a\n      hardware realization of this card's static check matrix.\n    origin: {kind: curated, ref: alam2025board}\n    refs: [alam2025board, sun2025floquetbacon]\ncategories:\n  - {id: subsystem, origin: {kind: curated, ref: bacon2006operator}}\n  - {id: css, origin: {kind: verified}}\nrefs:\n  - shor1995scheme\n  - bacon2003decoherence\n  - bacon2006operator\n  - aliferis2007subsystem\n  - cross2009comparative\n  - napp2013optimal\n  - brooks2013asymmetric\n  - bravyi2011subsystem\n  - li2019compass\n  - yoder2019optimal\n  - alam2025board\n  - escobar2025improved\n  - gidney2023less\n  - dorier2005compass\n  - sarma2013gauge\n  - cao2022quantumlego\n  - chapman2022freefermion\n  - egan2021fault\n  - sun2025floquetbacon\n  - yoder2017universalbacon\n  - nautrup2017interface\n  - veroni2025measurementfree\nparams:\n  rows: \"Number of physical-qubit rows; at least two.\"\n  columns: \"Number of physical-qubit columns; at least two.\"\nvisual_instance: square_3\ntier: T3\nfit:\n  platforms:\n    - nearest-neighbour-square-array\n    - trapped-ion-all-to-all\n    - bias-preserving-architecture\n  tasks:\n    - fault-tolerant-memory\n    - bias-tailored-protection\n    - logical-operations\ndecoders:\n  - id: lookup-table\n    status: standard\n    noise: >-\n      finite rectangular blocks with perfect two-qubit gauge outcomes under\n      stochastic Pauli noise\n    notes: >-\n      The exact-small decision rule factorizes into repetition-style parity\n      inference along rows and columns; it may be implemented by majority\n      logic instead of literally storing a table. The optimum rectangle is a\n      property of the X/Z noise bias and objective, not a code-only constant.\n    refs: [aliferis2007subsystem, napp2013optimal]\n  - id: lookup-table\n    status: research-grade\n    noise: >-\n      circuit faults in repeated low-weight gauge extraction or encoded-ancilla\n      Steane extraction on fixed small blocks\n    notes: >-\n      Here the input includes a protocol-specific history of gauge outcomes,\n      flags, or encoded-ancilla checks. Repeating gauge measurements and using\n      a Steane ancilla are different syndrome objects, so their logical-error\n      comparisons cannot be transferred to an unspecified static decoder.\n    refs: [cross2009comparative, escobar2025improved]\n  - id: mwpm\n    status: research-grade\n    noise: >-\n      uniform circuit-level noise on the period-four Floquet–Bacon–Shor\n      descendant\n    notes: >-\n      Matching consumes constant-weight spacetime detectors built from the\n      scheduled circuit. This row is intentionally variant-scoped: it does not\n      establish a conventional threshold for the static rectangular family.\n      No extraction-independent threshold for plain static stabilizer products\n      was found in the stated searches as of 2026-08-02.\n    refs: [alam2025board, gidney2023less]\nrealizations:\n  - platform: \"thirteen-qubit trapped-ion processor\"\n    status: demonstrated\n    description: >-\n      A nine-data-qubit Bacon–Shor logical block with four ancillas demonstrated\n      fault-tolerant preparation, measurement, corrected rotations, and\n      stabilizer extraction. This is a fixed-distance primitive suite, not an\n      increasing-distance below-threshold memory experiment.\n    refs: [egan2021fault]\n  - platform: \"bias-preserving teleportation architecture\"\n    status: proposed\n    description: >-\n      Highly rectangular blocks are combined with teleportation and biased\n      elementary operations so geometry protects the dominant Pauli channel.\n      The resource claim includes ancilla preparation, verification, and\n      correction; it is not supplied by block aspect ratio alone.\n    refs: [brooks2013asymmetric]\nrelations:\n  - type: gauge_fixes_to\n    target: shor_nine\n    how: >-\n      For the square three-by-three member in this constructor's orientation,\n      promote all horizontal ZZ gauge pairs to stabilizers. Together with the\n      two X center generators, they reproduce the repository's nine-qubit Shor\n      stabilizer row space exactly; the discarded gauge freedom becomes fixed.\n      The neighboring Shor entry uses encoded-basis names that call the Z\n      column logical X and the X row logical Z, so its logical labels are\n      swapped relative to this card's Pauli-type names even though the\n      protected Pauli algebra is the same.\n    refs: [shor1995scheme, bacon2006operator]\n  - type: special_case_of\n    target: bravyi_bacon_shor\n    how: >-\n      Plain rectangular Bacon–Shor occupies every site of the defining binary\n      matrix. Bravyi–Bacon–Shor permits a general occupancy matrix and derives\n      encoded dimension and distances from its row and column codes, so its\n      rate claims do not transfer to the full rectangle.\n    refs: [bravyi2011subsystem, yoder2019optimal]\n  - type: gauge_fixes_to\n    target: compass_code_2d\n    how: >-\n      Promoting selected gauge generators to commuting stabilizers produces\n      two-dimensional compass-code descendants between the Bacon–Shor and\n      surface-like extremes. The pattern of promoted checks is part of the\n      target code and is not encoded by changing only rows and columns here.\n    refs: [li2019compass]\n  - type: product_of\n    target: repetition\n    how: >-\n      The protected X and Z parities are perpendicular repetition constraints,\n      with local pair checks liberated into a gauge subsystem. This quotient is\n      the subsystem analogue of Shor's nested repetition construction rather\n      than an HGP replay recipe.\n    refs: [shor1995scheme, bacon2006operator]\noperations:\n  - gate: \"CNOT between aligned Bacon–Shor blocks\"\n    mechanism: transversal\n    level: \"Clifford\"\n    cost: >-\n      one pairwise physical-CNOT layer between matching grid sites; block\n      alignment, routing, syndrome extraction, and recovery are additional\n    origin: {kind: claimed, ref: aliferis2007subsystem}\n  - gate: \"H on a square block\"\n    mechanism: transversal\n    level: \"Clifford\"\n    cost: >-\n      one physical-H layer followed by the row/column permutation that restores\n      the declared vertical-X and horizontal-Z gauge orientation\n    origin: {kind: claimed, ref: aliferis2007subsystem}\n  - gate: \"multi-controlled Z family on dimension-matched rectangles\"\n    mechanism: transversal\n    level: \"non-Clifford controlled-phase hierarchy\"\n    cost: >-\n      block dimensions must satisfy the cited geometry for the chosen control\n      order; changing aspect ratio and performing error correction between\n      pieces are protocol resources, not free transversal gates on one square\n    origin: {kind: claimed, ref: yoder2017universalbacon}\n  - gate: \"joint logical parity and state transfer\"\n    mechanism: surgery\n    level: \"measurement-based Clifford interface\"\n    cost: >-\n      a compatible boundary, an ancilla code patch, repeated joint gauge\n      measurements, and classical feed-forward\n    origin: {kind: claimed, ref: nautrup2017interface}\n  - gate: \"biased-noise universal primitives\"\n    mechanism: measurement-based\n    level: \"teleportation-assisted universal set\"\n    cost: >-\n      verified ancillas, teleportation measurements, and correction around\n      strongly rectangular blocks; the aspect ratio is optimized jointly with\n      the hardware noise bias\n    origin: {kind: claimed, ref: brooks2013asymmetric}\n  - gate: \"CCZ by measurement-free deformation\"\n    mechanism: switching\n    level: \"non-Clifford\"\n    cost: >-\n      coherent correction circuits and extra qubits replace mid-circuit\n      measurement while the code is deformed; measurement-free does not mean\n      correction-free\n    origin: {kind: claimed, ref: veroni2025measurementfree}\n  - gate: \"logical operations on the Floquet–Bacon–Shor descendant\"\n    mechanism: measurement-based\n    level: \"dynamical logical control (variant only)\"\n    cost: >-\n      a period-four measurement schedule, time-dependent logical tracking, and\n      detector decoding; this operation is not attached to the static\n      checkmatrix exported by this entry\n    origin: {kind: claimed, ref: sun2025floquetbacon}\n",
+    "version": "qec-atlas-card-v1"
+  },
+  "source_binding": {
+    "binding_state": "clean",
+    "legacy_source": {
+      "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+      "continuity": "same-path-same-bytes",
+      "path": "codes/quantum/qubits/subsystem/qldpc/bbs/bacon_shor/bacon_shor.yml",
+      "sha256": "782d484a02dea609d14e25c28d1c59e8c11d0ad4202b057a9e035d0c4ec92009",
+      "zoo_id": "bacon_shor"
+    },
+    "source_commit": "5c11f03d77895fe46564fe792288304fe4b6a998",
+    "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bacon_shor",
+    "source_path": "codes/quantum/qubits/subsystem/qldpc/bbs/bacon_shor/bacon_shor.yml",
+    "source_sha256": "782d484a02dea609d14e25c28d1c59e8c11d0ad4202b057a9e035d0c4ec92009",
+    "t206_entity_ids": [
+      "eczoo-entity:bacon_shor#collection"
+    ],
+    "target_denotation_entity_ids": [
+      "eczoo-entity:bacon_shor#collection"
+    ],
+    "target_disposition": "atomic"
+  },
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,82 @@
+version: 1
+title: "Bacon–Shor: from local gauge links to one protected qubit"
+subtitle: "Multiply noncommuting pair checks into a commuting center, then read the logical row and column."
+lattices:
+  square:
+    {entry: bacon_shor, instance: square_3, label: "three-by-three Bacon–Shor block"}
+  rectangle:
+    {entry: bacon_shor, instance: rectangle_3x5, label: "three-by-five asymmetric block"}
+item_notes:
+  square:
+    construction:
+      "0":
+        label: "First vertical X gauge pair"
+        explanation: "XX acts on q0 and q3, the top two sites of the first column."
+      "6":
+        label: "First horizontal Z gauge pair"
+        explanation: "ZZ acts on q0 and q1, sharing exactly q0 with gauge item 0."
+    incidence:
+      "0":
+        label: "First X center generator"
+        explanation: "The three vertical X pairs between rows zero and one multiply to X on q0 through q5."
+      "2":
+        label: "First Z center generator"
+        explanation: "The three horizontal Z pairs between columns zero and one multiply to Z on q0, q1, q3, q4, q6, and q7."
+    logical:
+      "0":
+        label: "Bare logical X"
+        explanation: "X across the top row commutes with every gauge generator."
+      "1":
+        label: "Bare logical Z"
+        explanation: "Z down the first column commutes with every gauge generator and crosses logical X once."
+steps:
+  - title: "Begin with the gauge links"
+    narrative: "Nine data qubits sit on a square grid. Red vertical segments are two-qubit XX generators and blue horizontal segments are two-qubit ZZ generators. These local operators define the subsystem presentation; they are not all stabilizers."
+    state: {lattice: square, mode: construction, filter: all}
+    origin: {kind: verified, method: "constructor.gauge_supports(3, 3)"}
+    refs: [bacon2006operator, aliferis2007subsystem]
+  - title: "Read one vertical XX pair"
+    narrative: "The highlighted gauge generator touches q0 and q3. Every red link has the same vertical grammar, so increasing the block adds local measurements without increasing their weight."
+    state: {lattice: square, mode: construction, filter: X, highlight: 0}
+    origin: {kind: verified, method: "constructor.gauge_supports(3, 3)[0]"}
+    refs: [bacon2006operator]
+  - title: "See why the gauge group is nonabelian"
+    narrative: "The highlighted blue ZZ pair touches q0 and q1. It shares exactly q0 with the previous XX pair, so those two gauge generators anticommute. That is allowed: gauge outcomes can disturb the disposable gauge subsystem while preserving the logical information."
+    state: {lattice: square, mode: construction, filter: Z, highlight: 6}
+    origin: {kind: verified, method: "symplectic product of gauge rows 0 and 6"}
+    refs: [bacon2006operator]
+  - title: "Multiply a complete strip into the center"
+    narrative: "Switch to the stabilizer-center view. The highlighted X operator is the product of the three vertical XX links between the top two rows. Every horizontal ZZ gauge link meets this six-qubit strip zero or two times, so the product commutes with the entire gauge group."
+    state: {lattice: square, mode: incidence, filter: X, highlight: 0}
+    origin: {kind: verified, method: "constructor.stabilizer_supports(3, 3)[0] + CheckMatrix.validate"}
+    refs: [bacon2006operator, aliferis2007subsystem]
+  - title: "Build the perpendicular center generator"
+    narrative: "The highlighted Z strip multiplies the horizontal ZZ links between the first two columns. Its overlap with every X center strip is even, so the center generators commute although their local factors need not."
+    state: {lattice: square, mode: incidence, filter: Z, highlight: 2}
+    origin: {kind: verified, method: "constructor.stabilizer_supports(3, 3)[2] + CheckMatrix.validate"}
+    refs: [bacon2006operator]
+  - title: "Count the protected quotient, not only stabilizers"
+    narrative: "The center has four independent generators, but nine minus four is not the logical-qubit count because the noncentral gauge pairs also remove protected degrees of freedom. The constructor ranks the full gauge span and the center together; the subsystem formula leaves one logical qubit and four gauge qubits."
+    state: {lattice: square, mode: incidence, filter: all}
+    origin: {kind: verified, method: "CheckMatrix.k with GF(2) stabilizer and gauge ranks"}
+    refs: [bacon2006operator]
+  - title: "Cross one logical row with one logical column"
+    narrative: "Logical X runs across the top row and logical Z down the first column. Each commutes with every gauge generator, while the two representatives share q0 once and therefore anticommute. Parallel rows or columns differ by gauge action, which is the geometric meaning of the protected quotient."
+    state: {lattice: square, mode: logical, filter: all}
+    origin: {kind: verified, method: "constructor.logical_supports + bare-logical symplectic checks"}
+    refs: [bacon2006operator]
+  - title: "Recover the nine-qubit Shor gauge fix"
+    narrative: "Return to the gauge links and keep the horizontal Z pairs. If all six are promoted from gauge operators to stabilizers, then together with the two X center strips they reproduce the repository's Shor stabilizer row space exactly. The protected Pauli algebra is unchanged, but the Shor entry's encoded-basis logical names swap this card's X-row and Z-column labels."
+    state: {lattice: square, mode: construction, filter: Z}
+    origin: {kind: curated, ref: bacon2006operator}
+    refs: [shor1995scheme, bacon2006operator]
+  - title: "Stretch one repetition direction"
+    narrative: "The three-by-five block keeps a three-site logical Z column but lengthens the logical X row to five sites. This is why aspect ratio can match asymmetric X/Z noise. The shared referee now recomputes the finite block's total dressed distance modulo gauge; the separately named X/Z sector formulas remain literature-attributed."
+    state: {lattice: rectangle, mode: logical, filter: all}
+    origin: {kind: curated, ref: napp2013optimal}
+    refs: [napp2013optimal, brooks2013asymmetric]
+  - title: "Interrogate gauge, center, and logical roles"
+    narrative: "Leave the rectangle in free exploration. Compare one local gauge edge, one full center strip, and one logical string. Their weights scale differently because they answer different questions: what may fluctuate, what fixes the codespace, and what acts on protected information."
+    state: {lattice: rectangle, mode: construction, filter: all}
+    origin: {kind: verified, method: "bacon-shor-gauge-center-scene-v1"}
+    refs: [bacon2006operator]

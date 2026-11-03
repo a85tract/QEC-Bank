@@ -1,0 +1,29 @@
+- label: L2_periodic
+  params: {L: 2}
+  claims:
+    - {property: n, value: 16, origin: {kind: verified}}
+    - {property: k, value: 6, origin: {kind: verified}}
+    - {property: d, exact: 2, origin: {kind: verified}}
+    - {property: css, value: true, origin: {kind: verified}}
+
+- label: L3_periodic
+  params: {L: 3}
+  claims:
+    - {property: n, value: 54, origin: {kind: verified}}
+    - {property: k, value: 2, origin: {kind: verified}}
+    - property: d
+      lower: {value: 3}
+      upper: {value: 9, method: literature}
+      origin: {kind: claimed, ref: haah2011local}
+    - {property: css, value: true, origin: {kind: verified}}
+
+- label: L4_periodic
+  params: {L: 4}
+  claims:
+    - {property: n, value: 128, origin: {kind: verified}}
+    - {property: k, value: 14, origin: {kind: verified}}
+    - property: d
+      lower: {value: 4}
+      upper: {value: 16, method: literature}
+      origin: {kind: claimed, ref: haah2011local}
+    - {property: css, value: true, origin: {kind: verified}}

@@ -1,0 +1,1603 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Periodic translation expands the two local X patterns and their inverted Z partners into sparse binary CSS matrices. The stacked symplectic rows are the finite executable baseline used for commutation, rank, logical, and small-distance calculations.",
+        "origin": {
+          "converter": "haah_cubic.build periodic offsets -> CheckMatrix.from_css",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "haah2011local"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:0@81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/views/0",
+      "source_sha256": "81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8",
+      "version_id": "atlas-assertion:haah_cubic:views:0@sha256:81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "At each cubic vertex, orbital A and orbital B receive different Pauli factors. For the X generator their supports are the monomials of 1+x+y+z and 1+xy+yz+zx. Spatial inversion followed by exchanging the orbitals gives the Z generator. Keeping the complete corner table is essential: the phrase “two checks per cube” also describes inequivalent models in the founding classification.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "haah2011local"
+        ],
+        "rung": "R2",
+        "type": "cube-corner-css"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:1@e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/views/1",
+      "source_sha256": "e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199",
+      "version_id": "atlas-assertion:haah_cubic:views:1@sha256:e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Translation becomes multiplication by Laurent monomials, so the infinite stabilizer family is stored in two compact polynomial columns. A finite periodic instance imposes x^L=y^L=z^L=1 and expands every translate into binary CSS rows. Matrix rank then computes k for that particular L; it must not be replaced by a guessed smooth scaling law.",
+        "origin": {
+          "converter": "constructor._X_OFFSETS/_Z_OFFSETS -> periodic binary CSS rows",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "haah2011local",
+          "williamson2016fractal"
+        ],
+        "rung": "R5",
+        "type": "laurent-polynomial-module"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:2@644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/views/2",
+      "source_sha256": "644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c",
+      "version_id": "atlas-assertion:haah_cubic:views:2@sha256:644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "“No string logical operator” is a statement about bounded-width logical segments whose length can grow without bound. The proof deforms long candidate segments until their nontrivial part disconnects. Periodic plane and fractal logical operators remain, so replacing “no string” by “no logical” would reverse the content of the theorem.",
+        "origin": {
+          "kind": "curated",
+          "ref": "haah2011local"
+        },
+        "refs": [
+          "haah2011local"
+        ],
+        "rung": "R5",
+        "type": "no-string-logical-segments"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:3@a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/views/3",
+      "source_sha256": "a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3",
+      "version_id": "atlas-assertion:haah_cubic:views:3@sha256:a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Local Pauli faults create bounded clusters of cube defects, but isolated fracton charge cannot be transported by an ordinary Pauli string. Error patterns and neutral clusters therefore organize recursively rather than as pairs joined by shortest paths, motivating the family-specific renormalization decoder.",
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi2011selfcorrection"
+        },
+        "refs": [
+          "haah2011local",
+          "bravyi2011selfcorrection"
+        ],
+        "rung": "R5",
+        "type": "fractal-syndrome-geometry"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:4@c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/views/4",
+      "source_sha256": "c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872",
+      "version_id": "atlas-assertion:haah_cubic:views:4@sha256:c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Coarse-graining does not return one copy of the same phase as an ordinary fixed-point topological model would. The cubic model bifurcates into multiple sectors, which is a structural phase diagnostic rather than a numerical decoder claim or a finite-size degeneracy formula.",
+        "origin": {
+          "kind": "curated",
+          "ref": "haah2014bifurcation"
+        },
+        "refs": [
+          "haah2014bifurcation",
+          "dua2019bifurcating"
+        ],
+        "rung": "R5",
+        "type": "bifurcating-renormalization"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:5@870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/views/5",
+      "source_sha256": "870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65",
+      "version_id": "atlas-assertion:haah_cubic:views:5@sha256:870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Ungauging turns the stabilizer constraints into a model with fractal subsystem symmetries. This dictionary explains why the natural conserved structures are neither ordinary global symmetries nor freely deformable strings; it changes representation and should not be reported as a logical gate on a fixed periodic block.",
+        "origin": {
+          "kind": "curated",
+          "ref": "williamson2016fractal"
+        },
+        "refs": [
+          "williamson2016fractal",
+          "vijay2016fracton"
+        ],
+        "rung": "R5",
+        "type": "ungauged-fractal-symmetry"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:6@6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/views/6",
+      "source_sha256": "6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7",
+      "version_id": "atlas-assertion:haah_cubic:views:6@sha256:6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:haah_cubic:categories:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/categories/0",
+      "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "version_id": "atlas-assertion:haah_cubic:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "qldpc",
+        "origin": {
+          "kind": "curated",
+          "ref": "haah2011local"
+        }
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:categories:1@b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032",
+      "field": "categories",
+      "id": "atlas-assertion:haah_cubic:categories:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/categories/1",
+      "source_sha256": "b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032",
+      "version_id": "atlas-assertion:haah_cubic:categories:1@sha256:b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "vijay2016fracton"
+        }
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:categories:2@be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb",
+      "field": "categories",
+      "id": "atlas-assertion:haah_cubic:categories:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/categories/2",
+      "source_sha256": "be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb",
+      "version_id": "atlas-assertion:haah_cubic:categories:2@sha256:be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "renormalization-group",
+        "noise": "thermal or phenomenological local Pauli faults with perfect access to the violated cubic-code stabilizers",
+        "notes": "The decoder clusters defects over increasing length scales and locally neutralizes clusters compatible with bounded errors. Its reported memory behavior belongs to the specified thermal dynamics and canonical cubic family; it is not a circuit-level repeated-measurement threshold.",
+        "refs": [
+          "bravyi2011selfcorrection",
+          "haah2011local"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:decoders:0@b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1",
+      "field": "decoders",
+      "id": "atlas-assertion:haah_cubic:decoders:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/decoders/0",
+      "source_sha256": "b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1",
+      "version_id": "atlas-assertion:haah_cubic:decoders:0@sha256:b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "bp-osd",
+        "noise": "code-capacity Pauli noise represented only by the exported sparse binary CSS matrix",
+        "notes": "BP-OSD is a generic qLDPC matrix baseline, not a theorem about fracton syndrome geometry. Its performance and tuning cannot be transferred from unrelated sparse codes to this periodic family without a dedicated benchmark.",
+        "refs": [
+          "panteleev2021degenerate"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:decoders:1@2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d",
+      "field": "decoders",
+      "id": "atlas-assertion:haah_cubic:decoders:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/decoders/1",
+      "source_sha256": "2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d",
+      "version_id": "atlas-assertion:haah_cubic:decoders:1@sha256:2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "gap": {
+          "target": "wanted:decoders-3d-fracton"
+        },
+        "id": "none-known",
+        "noise": "a fully specified repeated syndrome-extraction circuit with data, measurement, leakage, and correlated hardware faults",
+        "notes": "No primary circuit-level threshold for exact CSS Code 1 was found in the dated search completed on 2026-08-09. The actionable scalable-decoder and benchmark gap is routed to wanted:decoders-3d-fracton.",
+        "refs": [
+          "haah2011local",
+          "bravyi2011selfcorrection"
+        ],
+        "status": "none-known"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:decoders:2@67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f",
+      "field": "decoders",
+      "id": "atlas-assertion:haah_cubic:decoders:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/decoders/2",
+      "source_sha256": "67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f",
+      "version_id": "atlas-assertion:haah_cubic:decoders:2@sha256:67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "one parallel physical-Pauli layer on a constructor-derived periodic plane; the displayed X and Z representatives each have area scaling and anticommute for odd L, while special even periods require a separately tracked logical basis",
+        "gate": "conjugate periodic plane Pauli pair for odd L",
+        "level": "logical Pauli",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "verified",
+          "method": "constructor._plane_logicals commutation, row-space, and overlap checks"
+        }
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:operations:0@f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915",
+      "field": "operations",
+      "id": "atlas-assertion:haah_cubic:operations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/operations/0",
+      "source_sha256": "f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915",
+      "version_id": "atlas-assertion:haah_cubic:operations:0@sha256:f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "replace the periodic block by a boundary or defect geometry, specify which excitations condense, measure the changed checks, decode the transition, and track the resulting logical frame",
+        "gate": "boundary creation, condensation, and defect manipulation",
+        "level": "geometry-changing code operation",
+        "mechanism": "switching",
+        "origin": {
+          "kind": "claimed",
+          "ref": "aitchison2023boundaries"
+        }
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:operations:1@e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a",
+      "field": "operations",
+      "id": "atlas-assertion:haah_cubic:operations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/operations/1",
+      "source_sha256": "e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a",
+      "version_id": "atlas-assertion:haah_cubic:operations:1@sha256:e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "introduce the ungauging constraints and change the model's degrees of freedom and symmetry description; this is not a universal gate on the original fixed periodic code block",
+        "gate": "ungauging to a fractal-symmetry model",
+        "level": "representation and phase transformation",
+        "mechanism": "switching",
+        "origin": {
+          "kind": "claimed",
+          "ref": "williamson2016fractal"
+        }
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:operations:2@4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b",
+      "field": "operations",
+      "id": "atlas-assertion:haah_cubic:operations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/operations/2",
+      "source_sha256": "4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b",
+      "version_id": "atlas-assertion:haah_cubic:operations:2@sha256:4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The translated X and Z cube checks define mutually commuting local Hamiltonian terms whose common ground space is the code space. This is a theoretical model definition, not a preparation circuit, repeated syndrome-extraction protocol, or laboratory demonstration; no primary experiment implementing exact CSS Code 1 was found as of 2026-08-09.",
+        "platform": "three-dimensional commuting-projector spin Hamiltonian",
+        "refs": [
+          "haah2011local",
+          "vijay2016fracton"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:realizations:0@549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885",
+      "field": "realizations",
+      "id": "atlas-assertion:haah_cubic:realizations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/realizations/0",
+      "source_sha256": "549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885",
+      "version_id": "atlas-assertion:haah_cubic:realizations:0@sha256:549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "The canonical entry fixes the qubit CSS polynomial pair 1+x+y+z and 1+xy+yz+zx. Generalized Haah codes alter the local polynomial data or coefficient field; they contain this choice as a specialization but are not aliases of every periodic Code 1 instance. The target entry is pending.",
+        "refs": [
+          "haah2011local",
+          "tian2019generalized"
+        ],
+        "target": "generalized_haah",
+        "type": "special_case_of"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:relations:0@ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604",
+      "field": "relations",
+      "id": "atlas-assertion:haah_cubic:relations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/relations/0",
+      "source_sha256": "ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604",
+      "version_id": "atlas-assertion:haah_cubic:relations:0@sha256:ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "Ungauging the cubic code produces a spin model with fractal subsystem symmetries, while gauging reverses the dictionary under the assumptions of the construction. This is a representation-changing duality, not a finite-depth logical gate on the same periodic Hilbert space. The target entry is pending.",
+        "refs": [
+          "williamson2016fractal"
+        ],
+        "target": "fractal_symmetry_model",
+        "type": "dual_of"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:relations:1@7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad",
+      "field": "relations",
+      "id": "atlas-assertion:haah_cubic:relations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "haah_cubic/card.yaml#/relations/1",
+      "source_sha256": "7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad",
+      "version_id": "atlas-assertion:haah_cubic:relations:1@sha256:7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad"
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:haah_cubic#collection",
+      "status": "preserved",
+      "tier": "T2"
+    }
+  ],
+  "decision_class": "exact-clean",
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:haah_cubic#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:haah_cubic#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/haah_cubic/card.yaml#/identity",
+          "atlas:atlas/haah_cubic/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/haah_cubic/haah_cubic-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/fracton/haah_cubic.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:haah_cubic"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:haah_cubic#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:haah_cubic",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+          "payload_sha256": "69608bea8b7bb9b49761ff35476f50842626a3af9b6e19e574ff62ef810381eb",
+          "semantic_hash": "e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628"
+        },
+        "id": "atlas-instance:haah_cubic:L2_periodic",
+        "label": "L2_periodic",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628:small-exact-distance-enumeration:4e68d500c7e13b3838142c6a7e1f7ff61d5cc92f062c93410237afc471439c1a@1",
+            "certificate:e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628:structural-validity:4caaaaa56e91c709ede16f7740f2f44835bc3a8c2b38ecdf47ab433ee23d21e9@1"
+          ],
+          "instance_record_sha256": "494a12e6be640986d00c3575f3a38c1c3dec3c8070458f7d3772d76f5953205d",
+          "lean_report_sha256": "49865adda69ca5919e3d73e820797344b965a18283d85a1a0434bf3963cce329",
+          "semantic_hash": "e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "7d94aa15e1e87fba7a1ce23162bcb456c734183608d051a16078d82c82fc7cd8",
+        "v2_envelope_id": "formal-ir-v2:haah_cubic:L2_periodic"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+          "payload_sha256": "02fc076f5ff01f3dc755744f5d7e63b45458c17457c6d2de9a7b19491c78139d",
+          "semantic_hash": "24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033"
+        },
+        "id": "atlas-instance:haah_cubic:L3_periodic",
+        "label": "L3_periodic",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033:structural-validity:842ecfbf7c151e9ee63268901a44eabfd63788d5c288cdd97a049ec63bfad80d@1"
+          ],
+          "instance_record_sha256": "0ef665ca92634ed027e3abc723636ab1c7cd0647b55a0183cf9bb9c54c5763de",
+          "lean_report_sha256": "662974ba9fc066a4c3aa9ce12f97c7dbe70ff49a2bb7f0535b87f534cc910a91",
+          "semantic_hash": "24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "155b0f7ec164c577239f6db97d0cf5c58cc1192a4aaa1cf6c08ad94c32293411",
+        "v2_envelope_id": "formal-ir-v2:haah_cubic:L3_periodic"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+          "payload_sha256": "9a38f00b77138f6537d380d0242fe61d24590423ecc64dd9bffc50a3af5b6faa",
+          "semantic_hash": "b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac"
+        },
+        "id": "atlas-instance:haah_cubic:L4_periodic",
+        "label": "L4_periodic",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac:structural-validity:06328281685596e3ea30d2b3bf50b0dc3a73a8b9be997cc26ee80ae0e6f17306@1"
+          ],
+          "instance_record_sha256": "b2ebbdcc9c385f4dd1fd6e1eeb6ff55e95e05645b3c4487272fc68dc37765917",
+          "lean_report_sha256": "77a582f6678ce87e702e6d182e7df20f5f37352f2bb02a85683e386cfc8a0f89",
+          "semantic_hash": "b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "15810f872ebc489aef2571bd99915e4f0085cabe799c0f7e25eb4d30901814a9",
+        "v2_envelope_id": "formal-ir-v2:haah_cubic:L4_periodic"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 3,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:haah_cubic#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "id": "haah_cubic",
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:haah_cubic:views:0",
+      "atlas-assertion:haah_cubic:views:1",
+      "atlas-assertion:haah_cubic:views:2",
+      "atlas-assertion:haah_cubic:views:3",
+      "atlas-assertion:haah_cubic:views:4",
+      "atlas-assertion:haah_cubic:views:5",
+      "atlas-assertion:haah_cubic:views:6",
+      "atlas-assertion:haah_cubic:categories:0",
+      "atlas-assertion:haah_cubic:categories:1",
+      "atlas-assertion:haah_cubic:categories:2",
+      "atlas-assertion:haah_cubic:decoders:0",
+      "atlas-assertion:haah_cubic:decoders:1",
+      "atlas-assertion:haah_cubic:decoders:2",
+      "atlas-assertion:haah_cubic:operations:0",
+      "atlas-assertion:haah_cubic:operations:1",
+      "atlas-assertion:haah_cubic:operations:2",
+      "atlas-assertion:haah_cubic:realizations:0",
+      "atlas-assertion:haah_cubic:relations:0",
+      "atlas-assertion:haah_cubic:relations:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:haah_cubic#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:haah_cubic:views:0@81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8",
+      "atlas-evidence:haah_cubic:views:1@e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199",
+      "atlas-evidence:haah_cubic:views:2@644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c",
+      "atlas-evidence:haah_cubic:views:3@a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3",
+      "atlas-evidence:haah_cubic:views:4@c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872",
+      "atlas-evidence:haah_cubic:views:5@870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65",
+      "atlas-evidence:haah_cubic:views:6@6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7",
+      "atlas-evidence:haah_cubic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:haah_cubic:categories:1@b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032",
+      "atlas-evidence:haah_cubic:categories:2@be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb",
+      "atlas-evidence:haah_cubic:decoders:0@b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1",
+      "atlas-evidence:haah_cubic:decoders:1@2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d",
+      "atlas-evidence:haah_cubic:decoders:2@67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f",
+      "atlas-evidence:haah_cubic:operations:0@f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915",
+      "atlas-evidence:haah_cubic:operations:1@e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a",
+      "atlas-evidence:haah_cubic:operations:2@4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b",
+      "atlas-evidence:haah_cubic:realizations:0@549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885",
+      "atlas-evidence:haah_cubic:relations:0@ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604",
+      "atlas-evidence:haah_cubic:relations:1@7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad"
+    ],
+    "formalization_id": "atlas-formalization:haah_cubic",
+    "instance_ids": [
+      "atlas-instance:haah_cubic:L2_periodic",
+      "atlas-instance:haah_cubic:L3_periodic",
+      "atlas-instance:haah_cubic:L4_periodic"
+    ],
+    "page_id": "atlas-page:haah_cubic",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:haah_cubic"
+    ]
+  },
+  "instances": [
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+        "payload_sha256": "69608bea8b7bb9b49761ff35476f50842626a3af9b6e19e574ff62ef810381eb",
+        "semantic_hash": "e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628"
+      },
+      "id": "atlas-instance:haah_cubic:L2_periodic",
+      "label": "L2_periodic",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628:small-exact-distance-enumeration:4e68d500c7e13b3838142c6a7e1f7ff61d5cc92f062c93410237afc471439c1a@1",
+          "certificate:e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628:structural-validity:4caaaaa56e91c709ede16f7740f2f44835bc3a8c2b38ecdf47ab433ee23d21e9@1"
+        ],
+        "instance_record_sha256": "494a12e6be640986d00c3575f3a38c1c3dec3c8070458f7d3772d76f5953205d",
+        "lean_report_sha256": "49865adda69ca5919e3d73e820797344b965a18283d85a1a0434bf3963cce329",
+        "semantic_hash": "e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "7d94aa15e1e87fba7a1ce23162bcb456c734183608d051a16078d82c82fc7cd8",
+      "v2_envelope_id": "formal-ir-v2:haah_cubic:L2_periodic"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+        "payload_sha256": "02fc076f5ff01f3dc755744f5d7e63b45458c17457c6d2de9a7b19491c78139d",
+        "semantic_hash": "24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033"
+      },
+      "id": "atlas-instance:haah_cubic:L3_periodic",
+      "label": "L3_periodic",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033:structural-validity:842ecfbf7c151e9ee63268901a44eabfd63788d5c288cdd97a049ec63bfad80d@1"
+        ],
+        "instance_record_sha256": "0ef665ca92634ed027e3abc723636ab1c7cd0647b55a0183cf9bb9c54c5763de",
+        "lean_report_sha256": "662974ba9fc066a4c3aa9ce12f97c7dbe70ff49a2bb7f0535b87f534cc910a91",
+        "semantic_hash": "24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "155b0f7ec164c577239f6db97d0cf5c58cc1192a4aaa1cf6c08ad94c32293411",
+      "v2_envelope_id": "formal-ir-v2:haah_cubic:L3_periodic"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+        "payload_sha256": "9a38f00b77138f6537d380d0242fe61d24590423ecc64dd9bffc50a3af5b6faa",
+        "semantic_hash": "b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac"
+      },
+      "id": "atlas-instance:haah_cubic:L4_periodic",
+      "label": "L4_periodic",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac:structural-validity:06328281685596e3ea30d2b3bf50b0dc3a73a8b9be997cc26ee80ae0e6f17306@1"
+        ],
+        "instance_record_sha256": "b2ebbdcc9c385f4dd1fd6e1eeb6ff55e95e05645b3c4487272fc68dc37765917",
+        "lean_report_sha256": "77a582f6678ce87e702e6d182e7df20f5f37352f2bb02a85683e386cfc8a0f89",
+        "semantic_hash": "b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "15810f872ebc489aef2571bd99915e4f0085cabe799c0f7e25eb4d30901814a9",
+      "v2_envelope_id": "formal-ir-v2:haah_cubic:L4_periodic"
+    }
+  ],
+  "legacy_card": {
+    "categories": [
+      {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      {
+        "id": "qldpc",
+        "origin": {
+          "kind": "curated",
+          "ref": "haah2011local"
+        }
+      },
+      {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "vijay2016fracton"
+        }
+      }
+    ],
+    "claim_gaps": [
+      {
+        "property": "d",
+        "target": "wanted:fast-distance"
+      }
+    ],
+    "decoders": [
+      {
+        "id": "renormalization-group",
+        "noise": "thermal or phenomenological local Pauli faults with perfect access to the violated cubic-code stabilizers",
+        "notes": "The decoder clusters defects over increasing length scales and locally neutralizes clusters compatible with bounded errors. Its reported memory behavior belongs to the specified thermal dynamics and canonical cubic family; it is not a circuit-level repeated-measurement threshold.",
+        "refs": [
+          "bravyi2011selfcorrection",
+          "haah2011local"
+        ],
+        "status": "research-grade"
+      },
+      {
+        "id": "bp-osd",
+        "noise": "code-capacity Pauli noise represented only by the exported sparse binary CSS matrix",
+        "notes": "BP-OSD is a generic qLDPC matrix baseline, not a theorem about fracton syndrome geometry. Its performance and tuning cannot be transferred from unrelated sparse codes to this periodic family without a dedicated benchmark.",
+        "refs": [
+          "panteleev2021degenerate"
+        ],
+        "status": "research-grade"
+      },
+      {
+        "gap": {
+          "target": "wanted:decoders-3d-fracton"
+        },
+        "id": "none-known",
+        "noise": "a fully specified repeated syndrome-extraction circuit with data, measurement, leakage, and correlated hardware faults",
+        "notes": "No primary circuit-level threshold for exact CSS Code 1 was found in the dated search completed on 2026-08-09. The actionable scalable-decoder and benchmark gap is routed to wanted:decoders-3d-fracton.",
+        "refs": [
+          "haah2011local",
+          "bravyi2011selfcorrection"
+        ],
+        "status": "none-known"
+      }
+    ],
+    "description": "Haah's cubic code here means CSS Code 1 of the founding classification: a pair of data qubits occupies every vertex of a periodic cubic lattice, and one X-type plus one inversion-related Z-type corner pattern is translated over every cube. Its encoded dimension depends arithmetically on the periodic length rather than following one size-independent degeneracy formula. The no-string theorem excludes arbitrarily long nontrivial logical string segments of fixed width; it does not say that logical operators are absent, and it is not by itself a proof of thermodynamic self-correction. The orienting visual is explicitly a two-dimensional projection of the constructor's three-dimensional data, not a planar embedding.",
+    "eczoo": {
+      "classification": "exact-family",
+      "source": {
+        "blob_url": "https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/fracton/haah_cubic.yml",
+        "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+        "page_url": "https://errorcorrectionzoo.org/c/haah_cubic",
+        "path": "codes/quantum/qubits/stabilizer/fracton/haah_cubic.yml",
+        "repository_url": "https://github.com/errorcorrectionzoo/eczoo_data",
+        "retrieved_on": "2026-08-05",
+        "sha256": "6edec7f7f3650eb6b9db08bcaadb4738780911b828079abec95635b25b17345f"
+      },
+      "status": "mapped",
+      "zoo_id": "haah_cubic"
+    },
+    "fit": {
+      "platforms": [
+        "three-dimensional-local-interaction-architecture",
+        "Hamiltonian-quantum-memory-model"
+      ],
+      "tasks": [
+        "fracton-quantum-memory-theory",
+        "finite-period-degeneracy-study",
+        "three-dimensional-decoder-research"
+      ]
+    },
+    "id": "haah_cubic",
+    "identity": {
+      "aliases": [
+        "Haah's code",
+        "cubic Code 1",
+        "type-II fracton code"
+      ],
+      "canonical_name": "Haah cubic code",
+      "variant": "periodic qubit CSS Code 1"
+    },
+    "kind": "family",
+    "operations": [
+      {
+        "cost": "one parallel physical-Pauli layer on a constructor-derived periodic plane; the displayed X and Z representatives each have area scaling and anticommute for odd L, while special even periods require a separately tracked logical basis",
+        "gate": "conjugate periodic plane Pauli pair for odd L",
+        "level": "logical Pauli",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "verified",
+          "method": "constructor._plane_logicals commutation, row-space, and overlap checks"
+        }
+      },
+      {
+        "cost": "replace the periodic block by a boundary or defect geometry, specify which excitations condense, measure the changed checks, decode the transition, and track the resulting logical frame",
+        "gate": "boundary creation, condensation, and defect manipulation",
+        "level": "geometry-changing code operation",
+        "mechanism": "switching",
+        "origin": {
+          "kind": "claimed",
+          "ref": "aitchison2023boundaries"
+        }
+      },
+      {
+        "cost": "introduce the ungauging constraints and change the model's degrees of freedom and symmetry description; this is not a universal gate on the original fixed periodic code block",
+        "gate": "ungauging to a fractal-symmetry model",
+        "level": "representation and phase transformation",
+        "mechanism": "switching",
+        "origin": {
+          "kind": "claimed",
+          "ref": "williamson2016fractal"
+        }
+      }
+    ],
+    "params": {
+      "L": "Linear period of the cubic three-torus. The constructor accepts integer L at least two, places a pair of qubits at each vertex, and computes the encoded dimension from binary ranks for that exact period."
+    },
+    "presentation": {
+      "guided_tour": {
+        "status": "available"
+      },
+      "orienting_view": {
+        "kind": "lattice",
+        "status": "available"
+      }
+    },
+    "realizations": [
+      {
+        "description": "The translated X and Z cube checks define mutually commuting local Hamiltonian terms whose common ground space is the code space. This is a theoretical model definition, not a preparation circuit, repeated syndrome-extraction protocol, or laboratory demonstration; no primary experiment implementing exact CSS Code 1 was found as of 2026-08-09.",
+        "platform": "three-dimensional commuting-projector spin Hamiltonian",
+        "refs": [
+          "haah2011local",
+          "vijay2016fracton"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "refs": [
+      "haah2011local",
+      "bravyi2011energy",
+      "bravyi2011selfcorrection",
+      "haah2014bifurcation",
+      "williamson2016fractal",
+      "vijay2016fracton",
+      "panteleev2021degenerate",
+      "tian2018manifolds",
+      "tian2019generalized",
+      "dua2019compactifying",
+      "dua2019bifurcating",
+      "aitchison2023boundaries",
+      "song2021defect"
+    ],
+    "relations": [
+      {
+        "how": "The canonical entry fixes the qubit CSS polynomial pair 1+x+y+z and 1+xy+yz+zx. Generalized Haah codes alter the local polynomial data or coefficient field; they contain this choice as a specialization but are not aliases of every periodic Code 1 instance. The target entry is pending.",
+        "refs": [
+          "haah2011local",
+          "tian2019generalized"
+        ],
+        "target": "generalized_haah",
+        "type": "special_case_of"
+      },
+      {
+        "how": "Ungauging the cubic code produces a spin model with fractal subsystem symmetries, while gauging reverses the dictionary under the assumptions of the construction. This is a representation-changing duality, not a finite-depth logical gate on the same periodic Hilbert space. The target entry is pending.",
+        "refs": [
+          "williamson2016fractal"
+        ],
+        "target": "fractal_symmetry_model",
+        "type": "dual_of"
+      }
+    ],
+    "tier": "T2",
+    "views": [
+      {
+        "description": "Periodic translation expands the two local X patterns and their inverted Z partners into sparse binary CSS matrices. The stacked symplectic rows are the finite executable baseline used for commutation, rank, logical, and small-distance calculations.",
+        "origin": {
+          "converter": "haah_cubic.build periodic offsets -> CheckMatrix.from_css",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "haah2011local"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      {
+        "description": "At each cubic vertex, orbital A and orbital B receive different Pauli factors. For the X generator their supports are the monomials of 1+x+y+z and 1+xy+yz+zx. Spatial inversion followed by exchanging the orbitals gives the Z generator. Keeping the complete corner table is essential: the phrase “two checks per cube” also describes inequivalent models in the founding classification.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "haah2011local"
+        ],
+        "rung": "R2",
+        "type": "cube-corner-css"
+      },
+      {
+        "description": "Translation becomes multiplication by Laurent monomials, so the infinite stabilizer family is stored in two compact polynomial columns. A finite periodic instance imposes x^L=y^L=z^L=1 and expands every translate into binary CSS rows. Matrix rank then computes k for that particular L; it must not be replaced by a guessed smooth scaling law.",
+        "origin": {
+          "converter": "constructor._X_OFFSETS/_Z_OFFSETS -> periodic binary CSS rows",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "haah2011local",
+          "williamson2016fractal"
+        ],
+        "rung": "R5",
+        "type": "laurent-polynomial-module"
+      },
+      {
+        "description": "“No string logical operator” is a statement about bounded-width logical segments whose length can grow without bound. The proof deforms long candidate segments until their nontrivial part disconnects. Periodic plane and fractal logical operators remain, so replacing “no string” by “no logical” would reverse the content of the theorem.",
+        "origin": {
+          "kind": "curated",
+          "ref": "haah2011local"
+        },
+        "refs": [
+          "haah2011local"
+        ],
+        "rung": "R5",
+        "type": "no-string-logical-segments"
+      },
+      {
+        "description": "Local Pauli faults create bounded clusters of cube defects, but isolated fracton charge cannot be transported by an ordinary Pauli string. Error patterns and neutral clusters therefore organize recursively rather than as pairs joined by shortest paths, motivating the family-specific renormalization decoder.",
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi2011selfcorrection"
+        },
+        "refs": [
+          "haah2011local",
+          "bravyi2011selfcorrection"
+        ],
+        "rung": "R5",
+        "type": "fractal-syndrome-geometry"
+      },
+      {
+        "description": "Coarse-graining does not return one copy of the same phase as an ordinary fixed-point topological model would. The cubic model bifurcates into multiple sectors, which is a structural phase diagnostic rather than a numerical decoder claim or a finite-size degeneracy formula.",
+        "origin": {
+          "kind": "curated",
+          "ref": "haah2014bifurcation"
+        },
+        "refs": [
+          "haah2014bifurcation",
+          "dua2019bifurcating"
+        ],
+        "rung": "R5",
+        "type": "bifurcating-renormalization"
+      },
+      {
+        "description": "Ungauging turns the stabilizer constraints into a model with fractal subsystem symmetries. This dictionary explains why the natural conserved structures are neither ordinary global symmetries nor freely deformable strings; it changes representation and should not be reported as a logical gate on a fixed periodic block.",
+        "origin": {
+          "kind": "curated",
+          "ref": "williamson2016fractal"
+        },
+        "refs": [
+          "williamson2016fractal",
+          "vijay2016fracton"
+        ],
+        "rung": "R5",
+        "type": "ungauged-fractal-symmetry"
+      }
+    ],
+    "visual_instance": "L3_periodic"
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:haah_cubic#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:haah_cubic#collection",
+        "status": "preserved",
+        "tier": "T2"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:haah_cubic",
+    "presented_entity_ids": [
+      "eczoo-entity:haah_cubic#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:haah_cubic#collection",
+    "redirects": [],
+    "route": "/entries/haah_cubic.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/haah_cubic"
+  },
+  "parent_content": null,
+  "projection": {
+    "method": "embedded-utf8-source-v1",
+    "source_sha256": "ca4f4b690759f1722de19f3a26734e7e22f3b993815a5ab3b9b3294911c62199",
+    "status": "exact"
+  },
+  "schema": "qec-atlas-entry-card-v2",
+  "scoped_facets": {
+    "categories": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "css",
+          "origin": {
+            "kind": "verified"
+          }
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "field": "categories",
+        "id": "atlas-assertion:haah_cubic:categories:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/categories/0",
+        "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "version_id": "atlas-assertion:haah_cubic:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "qldpc",
+          "origin": {
+            "kind": "curated",
+            "ref": "haah2011local"
+          }
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:categories:1@b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032",
+        "field": "categories",
+        "id": "atlas-assertion:haah_cubic:categories:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/categories/1",
+        "source_sha256": "b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032",
+        "version_id": "atlas-assertion:haah_cubic:categories:1@sha256:b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "topological",
+          "origin": {
+            "kind": "curated",
+            "ref": "vijay2016fracton"
+          }
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:categories:2@be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb",
+        "field": "categories",
+        "id": "atlas-assertion:haah_cubic:categories:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/categories/2",
+        "source_sha256": "be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb",
+        "version_id": "atlas-assertion:haah_cubic:categories:2@sha256:be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb"
+      }
+    ],
+    "decoders": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "renormalization-group",
+          "noise": "thermal or phenomenological local Pauli faults with perfect access to the violated cubic-code stabilizers",
+          "notes": "The decoder clusters defects over increasing length scales and locally neutralizes clusters compatible with bounded errors. Its reported memory behavior belongs to the specified thermal dynamics and canonical cubic family; it is not a circuit-level repeated-measurement threshold.",
+          "refs": [
+            "bravyi2011selfcorrection",
+            "haah2011local"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:decoders:0@b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1",
+        "field": "decoders",
+        "id": "atlas-assertion:haah_cubic:decoders:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/decoders/0",
+        "source_sha256": "b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1",
+        "version_id": "atlas-assertion:haah_cubic:decoders:0@sha256:b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "bp-osd",
+          "noise": "code-capacity Pauli noise represented only by the exported sparse binary CSS matrix",
+          "notes": "BP-OSD is a generic qLDPC matrix baseline, not a theorem about fracton syndrome geometry. Its performance and tuning cannot be transferred from unrelated sparse codes to this periodic family without a dedicated benchmark.",
+          "refs": [
+            "panteleev2021degenerate"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:decoders:1@2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d",
+        "field": "decoders",
+        "id": "atlas-assertion:haah_cubic:decoders:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/decoders/1",
+        "source_sha256": "2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d",
+        "version_id": "atlas-assertion:haah_cubic:decoders:1@sha256:2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "gap": {
+            "target": "wanted:decoders-3d-fracton"
+          },
+          "id": "none-known",
+          "noise": "a fully specified repeated syndrome-extraction circuit with data, measurement, leakage, and correlated hardware faults",
+          "notes": "No primary circuit-level threshold for exact CSS Code 1 was found in the dated search completed on 2026-08-09. The actionable scalable-decoder and benchmark gap is routed to wanted:decoders-3d-fracton.",
+          "refs": [
+            "haah2011local",
+            "bravyi2011selfcorrection"
+          ],
+          "status": "none-known"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:decoders:2@67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f",
+        "field": "decoders",
+        "id": "atlas-assertion:haah_cubic:decoders:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/decoders/2",
+        "source_sha256": "67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f",
+        "version_id": "atlas-assertion:haah_cubic:decoders:2@sha256:67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f"
+      }
+    ],
+    "operations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "one parallel physical-Pauli layer on a constructor-derived periodic plane; the displayed X and Z representatives each have area scaling and anticommute for odd L, while special even periods require a separately tracked logical basis",
+          "gate": "conjugate periodic plane Pauli pair for odd L",
+          "level": "logical Pauli",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "verified",
+            "method": "constructor._plane_logicals commutation, row-space, and overlap checks"
+          }
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:operations:0@f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915",
+        "field": "operations",
+        "id": "atlas-assertion:haah_cubic:operations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/operations/0",
+        "source_sha256": "f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915",
+        "version_id": "atlas-assertion:haah_cubic:operations:0@sha256:f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "replace the periodic block by a boundary or defect geometry, specify which excitations condense, measure the changed checks, decode the transition, and track the resulting logical frame",
+          "gate": "boundary creation, condensation, and defect manipulation",
+          "level": "geometry-changing code operation",
+          "mechanism": "switching",
+          "origin": {
+            "kind": "claimed",
+            "ref": "aitchison2023boundaries"
+          }
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:operations:1@e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a",
+        "field": "operations",
+        "id": "atlas-assertion:haah_cubic:operations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/operations/1",
+        "source_sha256": "e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a",
+        "version_id": "atlas-assertion:haah_cubic:operations:1@sha256:e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "introduce the ungauging constraints and change the model's degrees of freedom and symmetry description; this is not a universal gate on the original fixed periodic code block",
+          "gate": "ungauging to a fractal-symmetry model",
+          "level": "representation and phase transformation",
+          "mechanism": "switching",
+          "origin": {
+            "kind": "claimed",
+            "ref": "williamson2016fractal"
+          }
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:operations:2@4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b",
+        "field": "operations",
+        "id": "atlas-assertion:haah_cubic:operations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/operations/2",
+        "source_sha256": "4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b",
+        "version_id": "atlas-assertion:haah_cubic:operations:2@sha256:4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b"
+      }
+    ],
+    "realizations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The translated X and Z cube checks define mutually commuting local Hamiltonian terms whose common ground space is the code space. This is a theoretical model definition, not a preparation circuit, repeated syndrome-extraction protocol, or laboratory demonstration; no primary experiment implementing exact CSS Code 1 was found as of 2026-08-09.",
+          "platform": "three-dimensional commuting-projector spin Hamiltonian",
+          "refs": [
+            "haah2011local",
+            "vijay2016fracton"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:realizations:0@549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885",
+        "field": "realizations",
+        "id": "atlas-assertion:haah_cubic:realizations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/realizations/0",
+        "source_sha256": "549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885",
+        "version_id": "atlas-assertion:haah_cubic:realizations:0@sha256:549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885"
+      }
+    ],
+    "relations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "The canonical entry fixes the qubit CSS polynomial pair 1+x+y+z and 1+xy+yz+zx. Generalized Haah codes alter the local polynomial data or coefficient field; they contain this choice as a specialization but are not aliases of every periodic Code 1 instance. The target entry is pending.",
+          "refs": [
+            "haah2011local",
+            "tian2019generalized"
+          ],
+          "target": "generalized_haah",
+          "type": "special_case_of"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:relations:0@ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604",
+        "field": "relations",
+        "id": "atlas-assertion:haah_cubic:relations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/relations/0",
+        "source_sha256": "ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604",
+        "version_id": "atlas-assertion:haah_cubic:relations:0@sha256:ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "Ungauging the cubic code produces a spin model with fractal subsystem symmetries, while gauging reverses the dictionary under the assumptions of the construction. This is a representation-changing duality, not a finite-depth logical gate on the same periodic Hilbert space. The target entry is pending.",
+          "refs": [
+            "williamson2016fractal"
+          ],
+          "target": "fractal_symmetry_model",
+          "type": "dual_of"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:relations:1@7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad",
+        "field": "relations",
+        "id": "atlas-assertion:haah_cubic:relations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/relations/1",
+        "source_sha256": "7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad",
+        "version_id": "atlas-assertion:haah_cubic:relations:1@sha256:7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad"
+      }
+    ],
+    "views": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Periodic translation expands the two local X patterns and their inverted Z partners into sparse binary CSS matrices. The stacked symplectic rows are the finite executable baseline used for commutation, rank, logical, and small-distance calculations.",
+          "origin": {
+            "converter": "haah_cubic.build periodic offsets -> CheckMatrix.from_css",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "haah2011local"
+          ],
+          "rung": "R1",
+          "type": "symplectic-css-checks"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:views:0@81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8",
+        "field": "views",
+        "id": "atlas-assertion:haah_cubic:views:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/views/0",
+        "source_sha256": "81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8",
+        "version_id": "atlas-assertion:haah_cubic:views:0@sha256:81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "At each cubic vertex, orbital A and orbital B receive different Pauli factors. For the X generator their supports are the monomials of 1+x+y+z and 1+xy+yz+zx. Spatial inversion followed by exchanging the orbitals gives the Z generator. Keeping the complete corner table is essential: the phrase “two checks per cube” also describes inequivalent models in the founding classification.",
+          "origin": {
+            "kind": "canonical"
+          },
+          "refs": [
+            "haah2011local"
+          ],
+          "rung": "R2",
+          "type": "cube-corner-css"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:views:1@e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199",
+        "field": "views",
+        "id": "atlas-assertion:haah_cubic:views:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/views/1",
+        "source_sha256": "e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199",
+        "version_id": "atlas-assertion:haah_cubic:views:1@sha256:e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Translation becomes multiplication by Laurent monomials, so the infinite stabilizer family is stored in two compact polynomial columns. A finite periodic instance imposes x^L=y^L=z^L=1 and expands every translate into binary CSS rows. Matrix rank then computes k for that particular L; it must not be replaced by a guessed smooth scaling law.",
+          "origin": {
+            "converter": "constructor._X_OFFSETS/_Z_OFFSETS -> periodic binary CSS rows",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "haah2011local",
+            "williamson2016fractal"
+          ],
+          "rung": "R5",
+          "type": "laurent-polynomial-module"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:views:2@644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c",
+        "field": "views",
+        "id": "atlas-assertion:haah_cubic:views:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/views/2",
+        "source_sha256": "644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c",
+        "version_id": "atlas-assertion:haah_cubic:views:2@sha256:644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "“No string logical operator” is a statement about bounded-width logical segments whose length can grow without bound. The proof deforms long candidate segments until their nontrivial part disconnects. Periodic plane and fractal logical operators remain, so replacing “no string” by “no logical” would reverse the content of the theorem.",
+          "origin": {
+            "kind": "curated",
+            "ref": "haah2011local"
+          },
+          "refs": [
+            "haah2011local"
+          ],
+          "rung": "R5",
+          "type": "no-string-logical-segments"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:views:3@a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3",
+        "field": "views",
+        "id": "atlas-assertion:haah_cubic:views:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/views/3",
+        "source_sha256": "a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3",
+        "version_id": "atlas-assertion:haah_cubic:views:3@sha256:a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Local Pauli faults create bounded clusters of cube defects, but isolated fracton charge cannot be transported by an ordinary Pauli string. Error patterns and neutral clusters therefore organize recursively rather than as pairs joined by shortest paths, motivating the family-specific renormalization decoder.",
+          "origin": {
+            "kind": "curated",
+            "ref": "bravyi2011selfcorrection"
+          },
+          "refs": [
+            "haah2011local",
+            "bravyi2011selfcorrection"
+          ],
+          "rung": "R5",
+          "type": "fractal-syndrome-geometry"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:views:4@c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872",
+        "field": "views",
+        "id": "atlas-assertion:haah_cubic:views:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/views/4",
+        "source_sha256": "c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872",
+        "version_id": "atlas-assertion:haah_cubic:views:4@sha256:c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Coarse-graining does not return one copy of the same phase as an ordinary fixed-point topological model would. The cubic model bifurcates into multiple sectors, which is a structural phase diagnostic rather than a numerical decoder claim or a finite-size degeneracy formula.",
+          "origin": {
+            "kind": "curated",
+            "ref": "haah2014bifurcation"
+          },
+          "refs": [
+            "haah2014bifurcation",
+            "dua2019bifurcating"
+          ],
+          "rung": "R5",
+          "type": "bifurcating-renormalization"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:views:5@870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65",
+        "field": "views",
+        "id": "atlas-assertion:haah_cubic:views:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/views/5",
+        "source_sha256": "870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65",
+        "version_id": "atlas-assertion:haah_cubic:views:5@sha256:870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:haah_cubic#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Ungauging turns the stabilizer constraints into a model with fractal subsystem symmetries. This dictionary explains why the natural conserved structures are neither ordinary global symmetries nor freely deformable strings; it changes representation and should not be reported as a logical gate on a fixed periodic block.",
+          "origin": {
+            "kind": "curated",
+            "ref": "williamson2016fractal"
+          },
+          "refs": [
+            "williamson2016fractal",
+            "vijay2016fracton"
+          ],
+          "rung": "R5",
+          "type": "ungauged-fractal-symmetry"
+        },
+        "evidence_id": "atlas-evidence:haah_cubic:views:6@6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7",
+        "field": "views",
+        "id": "atlas-assertion:haah_cubic:views:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "haah_cubic/card.yaml#/views/6",
+        "source_sha256": "6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7",
+        "version_id": "atlas-assertion:haah_cubic:views:6@sha256:6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7"
+      }
+    ]
+  },
+  "source": {
+    "collection": "atlas",
+    "encoding": "utf-8",
+    "entry_id": "haah_cubic",
+    "path": "atlas/haah_cubic/card.yaml",
+    "sha256": "ca4f4b690759f1722de19f3a26734e7e22f3b993815a5ab3b9b3294911c62199",
+    "text": "id: haah_cubic\nkind: family\nidentity:\n  canonical_name: \"Haah cubic code\"\n  variant: \"periodic qubit CSS Code 1\"\n  aliases:\n    - \"Haah's code\"\n    - \"cubic Code 1\"\n    - \"type-II fracton code\"\npresentation:\n  orienting_view: {status: available, kind: lattice}\n  guided_tour: {status: available}\neczoo:\n  status: mapped\n  zoo_id: haah_cubic\n  classification: exact-family\n  source:\n    repository_url: https://github.com/errorcorrectionzoo/eczoo_data\n    commit: b2437d9e2dc09284e04c66ef72ee81b7ed7bd129\n    retrieved_on: \"2026-08-05\"\n    path: codes/quantum/qubits/stabilizer/fracton/haah_cubic.yml\n    sha256: 6edec7f7f3650eb6b9db08bcaadb4738780911b828079abec95635b25b17345f\n    page_url: https://errorcorrectionzoo.org/c/haah_cubic\n    blob_url: https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/fracton/haah_cubic.yml\ndescription: >-\n  Haah's cubic code here means CSS Code 1 of the founding classification: a\n  pair of data qubits occupies every vertex of a periodic cubic lattice, and\n  one X-type plus one inversion-related Z-type corner pattern is translated\n  over every cube. Its encoded dimension depends arithmetically on the\n  periodic length rather than following one size-independent degeneracy\n  formula. The no-string theorem excludes arbitrarily long nontrivial logical\n  string segments of fixed width; it does not say that logical operators are\n  absent, and it is not by itself a proof of thermodynamic self-correction.\n  The orienting visual is explicitly a two-dimensional projection of the\n  constructor's three-dimensional data, not a planar embedding.\nclaim_gaps:\n  - {property: d, target: wanted:fast-distance}\nviews:\n  - rung: R1\n    type: symplectic-css-checks\n    description: >-\n      Periodic translation expands the two local X patterns and their inverted\n      Z partners into sparse binary CSS matrices. The stacked symplectic rows\n      are the finite executable baseline used for commutation, rank, logical,\n      and small-distance calculations.\n    origin:\n      kind: derived\n      converter: \"haah_cubic.build periodic offsets -> CheckMatrix.from_css\"\n      version: \"v1\"\n    refs: [haah2011local]\n  - rung: R2\n    type: cube-corner-css\n    description: >-\n      At each cubic vertex, orbital A and orbital B receive different Pauli\n      factors. For the X generator their supports are the monomials of\n      1+x+y+z and 1+xy+yz+zx. Spatial inversion followed by exchanging the\n      orbitals gives the Z generator. Keeping the complete corner table is\n      essential: the phrase “two checks per cube” also describes inequivalent\n      models in the founding classification.\n    origin: {kind: canonical}\n    refs: [haah2011local]\n  - rung: R5\n    type: laurent-polynomial-module\n    description: >-\n      Translation becomes multiplication by Laurent monomials, so the infinite\n      stabilizer family is stored in two compact polynomial columns. A finite\n      periodic instance imposes x^L=y^L=z^L=1 and expands every translate into\n      binary CSS rows. Matrix rank then computes k for that particular L; it\n      must not be replaced by a guessed smooth scaling law.\n    origin:\n      kind: derived\n      converter: \"constructor._X_OFFSETS/_Z_OFFSETS -> periodic binary CSS rows\"\n      version: \"v1\"\n    refs: [haah2011local, williamson2016fractal]\n  - rung: R5\n    type: no-string-logical-segments\n    description: >-\n      “No string logical operator” is a statement about bounded-width logical\n      segments whose length can grow without bound. The proof deforms long\n      candidate segments until their nontrivial part disconnects. Periodic\n      plane and fractal logical operators remain, so replacing “no string” by\n      “no logical” would reverse the content of the theorem.\n    origin: {kind: curated, ref: haah2011local}\n    refs: [haah2011local]\n  - rung: R5\n    type: fractal-syndrome-geometry\n    description: >-\n      Local Pauli faults create bounded clusters of cube defects, but isolated\n      fracton charge cannot be transported by an ordinary Pauli string. Error\n      patterns and neutral clusters therefore organize recursively rather than\n      as pairs joined by shortest paths, motivating the family-specific\n      renormalization decoder.\n    origin: {kind: curated, ref: bravyi2011selfcorrection}\n    refs: [haah2011local, bravyi2011selfcorrection]\n  - rung: R5\n    type: bifurcating-renormalization\n    description: >-\n      Coarse-graining does not return one copy of the same phase as an ordinary\n      fixed-point topological model would. The cubic model bifurcates into\n      multiple sectors, which is a structural phase diagnostic rather than a\n      numerical decoder claim or a finite-size degeneracy formula.\n    origin: {kind: curated, ref: haah2014bifurcation}\n    refs: [haah2014bifurcation, dua2019bifurcating]\n  - rung: R5\n    type: ungauged-fractal-symmetry\n    description: >-\n      Ungauging turns the stabilizer constraints into a model with fractal\n      subsystem symmetries. This dictionary explains why the natural conserved\n      structures are neither ordinary global symmetries nor freely deformable\n      strings; it changes representation and should not be reported as a\n      logical gate on a fixed periodic block.\n    origin: {kind: curated, ref: williamson2016fractal}\n    refs: [williamson2016fractal, vijay2016fracton]\ncategories:\n  - {id: css, origin: {kind: verified}}\n  - {id: qldpc, origin: {kind: curated, ref: haah2011local}}\n  - {id: topological, origin: {kind: curated, ref: vijay2016fracton}}\nrefs:\n  - haah2011local\n  - bravyi2011energy\n  - bravyi2011selfcorrection\n  - haah2014bifurcation\n  - williamson2016fractal\n  - vijay2016fracton\n  - panteleev2021degenerate\n  - tian2018manifolds\n  - tian2019generalized\n  - dua2019compactifying\n  - dua2019bifurcating\n  - aitchison2023boundaries\n  - song2021defect\nparams:\n  L: >-\n    Linear period of the cubic three-torus. The constructor accepts integer\n    L at least two, places a pair of qubits at each vertex, and computes the\n    encoded dimension from binary ranks for that exact period.\nvisual_instance: L3_periodic\ntier: T2\nfit:\n  platforms:\n    - three-dimensional-local-interaction-architecture\n    - Hamiltonian-quantum-memory-model\n  tasks:\n    - fracton-quantum-memory-theory\n    - finite-period-degeneracy-study\n    - three-dimensional-decoder-research\ndecoders:\n  - id: renormalization-group\n    status: research-grade\n    noise: >-\n      thermal or phenomenological local Pauli faults with perfect access to\n      the violated cubic-code stabilizers\n    notes: >-\n      The decoder clusters defects over increasing length scales and locally\n      neutralizes clusters compatible with bounded errors. Its reported memory\n      behavior belongs to the specified thermal dynamics and canonical cubic\n      family; it is not a circuit-level repeated-measurement threshold.\n    refs: [bravyi2011selfcorrection, haah2011local]\n  - id: bp-osd\n    status: research-grade\n    noise: >-\n      code-capacity Pauli noise represented only by the exported sparse binary\n      CSS matrix\n    notes: >-\n      BP-OSD is a generic qLDPC matrix baseline, not a theorem about fracton\n      syndrome geometry. Its performance and tuning cannot be transferred\n      from unrelated sparse codes to this periodic family without a dedicated\n      benchmark.\n    refs: [panteleev2021degenerate]\n  - id: none-known\n    status: none-known\n    gap: {target: wanted:decoders-3d-fracton}\n    noise: >-\n      a fully specified repeated syndrome-extraction circuit with data,\n      measurement, leakage, and correlated hardware faults\n    notes: >-\n      No primary circuit-level threshold for exact CSS Code 1 was found in the\n      dated search completed on 2026-08-09. The actionable scalable-decoder and\n      benchmark gap is routed to wanted:decoders-3d-fracton.\n    refs: [haah2011local, bravyi2011selfcorrection]\nrealizations:\n  - platform: \"three-dimensional commuting-projector spin Hamiltonian\"\n    status: proposed\n    description: >-\n      The translated X and Z cube checks define mutually commuting local\n      Hamiltonian terms whose common ground space is the code space. This is a\n      theoretical model definition, not a preparation circuit, repeated\n      syndrome-extraction protocol, or laboratory demonstration; no primary\n      experiment implementing exact CSS Code 1 was found as of 2026-08-09.\n    refs: [haah2011local, vijay2016fracton]\nrelations:\n  - type: special_case_of\n    target: generalized_haah\n    how: >-\n      The canonical entry fixes the qubit CSS polynomial pair\n      1+x+y+z and 1+xy+yz+zx. Generalized Haah codes alter the local\n      polynomial data or coefficient field; they contain this choice as a\n      specialization but are not aliases of every periodic Code 1 instance.\n      The target entry is pending.\n    refs: [haah2011local, tian2019generalized]\n  - type: dual_of\n    target: fractal_symmetry_model\n    how: >-\n      Ungauging the cubic code produces a spin model with fractal subsystem\n      symmetries, while gauging reverses the dictionary under the assumptions\n      of the construction. This is a representation-changing duality, not a\n      finite-depth logical gate on the same periodic Hilbert space. The target\n      entry is pending.\n    refs: [williamson2016fractal]\noperations:\n  - gate: \"conjugate periodic plane Pauli pair for odd L\"\n    mechanism: transversal\n    level: \"logical Pauli\"\n    cost: >-\n      one parallel physical-Pauli layer on a constructor-derived periodic\n      plane; the displayed X and Z representatives each have area scaling and\n      anticommute for odd L, while special even periods require a separately\n      tracked logical basis\n    origin:\n      kind: verified\n      method: \"constructor._plane_logicals commutation, row-space, and overlap checks\"\n  - gate: \"boundary creation, condensation, and defect manipulation\"\n    mechanism: switching\n    level: \"geometry-changing code operation\"\n    cost: >-\n      replace the periodic block by a boundary or defect geometry, specify\n      which excitations condense, measure the changed checks, decode the\n      transition, and track the resulting logical frame\n    origin: {kind: claimed, ref: aitchison2023boundaries}\n  - gate: \"ungauging to a fractal-symmetry model\"\n    mechanism: switching\n    level: \"representation and phase transformation\"\n    cost: >-\n      introduce the ungauging constraints and change the model's degrees of\n      freedom and symmetry description; this is not a universal gate on the\n      original fixed periodic code block\n    origin: {kind: claimed, ref: williamson2016fractal}\n",
+    "version": "qec-atlas-card-v1"
+  },
+  "source_binding": {
+    "binding_state": "clean",
+    "legacy_source": {
+      "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+      "continuity": "same-path-updated-bytes",
+      "path": "codes/quantum/qubits/stabilizer/fracton/haah_cubic.yml",
+      "sha256": "6edec7f7f3650eb6b9db08bcaadb4738780911b828079abec95635b25b17345f",
+      "zoo_id": "haah_cubic"
+    },
+    "source_commit": "5c11f03d77895fe46564fe792288304fe4b6a998",
+    "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:haah_cubic",
+    "source_path": "codes/quantum/qubits/stabilizer/fracton/haah_cubic.yml",
+    "source_sha256": "79d22ffc3ec8987dd69c355e3cc85fee6ae82387e322d4fc07705ad92c245193",
+    "t206_entity_ids": [
+      "eczoo-entity:haah_cubic#collection"
+    ],
+    "target_denotation_entity_ids": [
+      "eczoo-entity:haah_cubic#collection"
+    ],
+    "target_disposition": "atomic"
+  },
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,1398 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:da_color_2d",
+        "kind": "formalization"
+      },
+      "content": {
+        "description": "The constructor tracks the sign-free instantaneous stabilizer group and exports its independent Pauli rows at the declared reference round as a symplectic CheckMatrix. This R1 snapshot is executable, but it is not a substitute for the fault distance of the full schedule.",
+        "origin": {
+          "converter": "constructor._schedule + ISGTracker reference row space",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "davydova2024dynamic"
+        ],
+        "rung": "R1",
+        "type": "reference-isg-checks"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:views:0@d664389f027e8da8252db90773e93dd00e79cdf4133afdc1ad4d71731740ceb2",
+      "field": "views",
+      "id": "atlas-assertion:da_color_2d:views:0",
+      "index": 0,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/views/0",
+      "source_sha256": "d664389f027e8da8252db90773e93dd00e79cdf4133afdc1ad4d71731740ceb2",
+      "version_id": "atlas-assertion:da_color_2d:views:0@sha256:d664389f027e8da8252db90773e93dd00e79cdf4133afdc1ad4d71731740ceb2"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:da_color_2d",
+        "kind": "formalization"
+      },
+      "content": {
+        "description": "Put two qubits at every site of a finite triangular color substrate and add color-labelled docking sites where the Y boundary would otherwise require a high-weight coupling. Interlayer V measurements fold the two layers into one effective color-code frame; intralayer E measurements unfold them into two toric sectors. The exported coordinates separate the layers visually but are an incidence layout, not a metric claim.",
+        "origin": {
+          "converter": "constructor.SITE_COORDS + layer offsets + docking labels",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "davydova2024dynamic"
+        ],
+        "rung": "R2",
+        "type": "doubled-patch-stack"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:views:1@2893110e3860f814c2da2436342f753d9049b3d36938a55466fd78f31e401196",
+      "field": "views",
+      "id": "atlas-assertion:da_color_2d:views:1",
+      "index": 1,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/views/1",
+      "source_sha256": "2893110e3860f814c2da2436342f753d9049b3d36938a55466fd78f31e401196",
+      "version_id": "atlas-assertion:da_color_2d:views:1@sha256:2893110e3860f814c2da2436342f753d9049b3d36938a55466fd78f31e401196"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:da_color_2d",
+        "kind": "formalization"
+      },
+      "content": {
+        "description": "Read the padded witness from t=0 through t=8. The first return to the vertical-measurement frame occurs only after the startup transient; at that reference round the sign-free ISG has one logical degree of freedom, and the same row space returns at the final displayed round. A four-move condensation motif is therefore not by itself the complete executable witness.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "davydova2024dynamic"
+        ],
+        "rung": "R3",
+        "type": "padded-schedule-isg"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:views:2@88ea42765945b2b4d049dd18488266de6a5bc58a32b1fdf9922072e8a8e6bbda",
+      "field": "views",
+      "id": "atlas-assertion:da_color_2d:views:2",
+      "index": 2,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/views/2",
+      "source_sha256": "88ea42765945b2b4d049dd18488266de6a5bc58a32b1fdf9922072e8a8e6bbda",
+      "version_id": "atlas-assertion:da_color_2d:views:2@sha256:88ea42765945b2b4d049dd18488266de6a5bc58a32b1fdf9922072e8a8e6bbda"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "V(P1P2) acts between layers at one site, while E_c(P_l) acts along a color-c edge inside layer l. Boundary singles and mixed interlayer Paulis replace the bulk rule where a logical string must terminate. Keeping site, layer, color, Pauli, and round as separate labels prevents a drawing color from being mistaken for a measurement flavor.",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        },
+        "refs": [
+          "davydova2024dynamic"
+        ],
+        "rung": "R3",
+        "type": "measurement-class-dictionary"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:views:3@a8b1225c0eaa2b845acc2931de94b6525d7bf5b1f484904569c3e1a2f8c923c7",
+      "field": "views",
+      "id": "atlas-assertion:da_color_2d:views:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/views/3",
+      "source_sha256": "a8b1225c0eaa2b845acc2931de94b6525d7bf5b1f484904569c3e1a2f8c923c7",
+      "version_id": "atlas-assertion:da_color_2d:views:3@sha256:a8b1225c0eaa2b845acc2931de94b6525d7bf5b1f484904569c3e1a2f8c923c7"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Stabilizer-row-space recurrence says that the code frame closes; it does not say that logical labels return trivially. The primary construction transports the Pauli-triangle representatives as X_L to Z_L, Z_L to Y_L, and Y_L to X_L, which is the logical SH action. The constructor marks this map curated rather than verified because sign-free ISG rank tracking cannot derive outcome-dependent logical transport.",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        },
+        "refs": [
+          "davydova2024dynamic",
+          "aasen2022automorphism"
+        ],
+        "rung": "R5",
+        "type": "logical-frame-automorphism"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:views:4@1cf01aa7182c0d7e5c8258e6ba206fec2186dc62eee11c0b4f211754e83c9418",
+      "field": "views",
+      "id": "atlas-assertion:da_color_2d:views:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/views/4",
+      "source_sha256": "1cf01aa7182c0d7e5c8258e6ba206fec2186dc62eee11c0b4f211754e83c9418",
+      "version_id": "atlas-assertion:da_color_2d:views:4@sha256:1cf01aa7182c0d7e5c8258e6ba206fec2186dc62eee11c0b4f211754e83c9418"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Error information is a product of measurement outcomes from several rounds. A data or measurement fault flips a pattern of spacetime detectors, and a decoder must compare histories modulo time-dependent gauge relations. Static color-code syndrome lookup and the distance of one exported ISG snapshot are therefore not protocol-level guarantees.",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        },
+        "refs": [
+          "davydova2024dynamic",
+          "blackwell2025distance"
+        ],
+        "rung": "R3",
+        "type": "spacetime-detectors"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:views:5@8c57a0abbd919d7d92789429dab0c967ed265196fafe8cc7af741755acc5a7af",
+      "field": "views",
+      "id": "atlas-assertion:da_color_2d:views:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/views/5",
+      "source_sha256": "8c57a0abbd919d7d92789429dab0c967ed265196fafe8cc7af741755acc5a7af",
+      "version_id": "atlas-assertion:da_color_2d:views:5@sha256:8c57a0abbd919d7d92789429dab0c967ed265196fafe8cc7af741755acc5a7af"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "At the intermediate E-measurement frames, the doubled color substrate separates into toric-code sectors joined by the boundary prescription. Unfolding explains why the checks stay low weight and how logical strings survive each transition; it is a frame dictionary, not a claim that the time-dependent family is a static surface code.",
+        "origin": {
+          "kind": "curated",
+          "ref": "kubica2015unfolding"
+        },
+        "refs": [
+          "kubica2015unfolding",
+          "davydova2024dynamic"
+        ],
+        "rung": "R5",
+        "type": "unfolded-toric-sectors"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:views:6@fc06079081768476442336336c12679c633ec37485e322427a0166c21c70876f",
+      "field": "views",
+      "id": "atlas-assertion:da_color_2d:views:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/views/6",
+      "source_sha256": "fc06079081768476442336336c12679c633ec37485e322427a0166c21c70876f",
+      "version_id": "atlas-assertion:da_color_2d:views:6@sha256:fc06079081768476442336336c12679c633ec37485e322427a0166c21c70876f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A measurement quantum cellular automaton treats each round as a local causal update and exposes boundary information flow that an unordered stabilizer list erases. The QCA view is useful for comparing dynamic phases, while the literal Schedule remains the executable source for this entry.",
+        "origin": {
+          "kind": "curated",
+          "ref": "aasen2023mqca"
+        },
+        "refs": [
+          "aasen2023mqca"
+        ],
+        "rung": "R5",
+        "type": "measurement-qca"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:views:7@74736ed8d65ae6c6a36f747e1f55846976f54838ea5e4241f5b64e289f29b123",
+      "field": "views",
+      "id": "atlas-assertion:da_color_2d:views:7",
+      "index": 7,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/views/7",
+      "source_sha256": "74736ed8d65ae6c6a36f747e1f55846976f54838ea5e4241f5b64e289f29b123",
+      "version_id": "atlas-assertion:da_color_2d:views:7@sha256:74736ed8d65ae6c6a36f747e1f55846976f54838ea5e4241f5b64e289f29b123"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "dynamical",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        }
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:categories:0@7fd0f261ff9db80292df53dfb77f5c76977c87bc229ba029bf16ee5052e1d4ef",
+      "field": "categories",
+      "id": "atlas-assertion:da_color_2d:categories:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/categories/0",
+      "source_sha256": "7fd0f261ff9db80292df53dfb77f5c76977c87bc229ba029bf16ee5052e1d4ef",
+      "version_id": "atlas-assertion:da_color_2d:categories:0@sha256:7fd0f261ff9db80292df53dfb77f5c76977c87bc229ba029bf16ee5052e1d4ef"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:da_color_2d",
+        "kind": "formalization"
+      },
+      "content": {
+        "id": "non-css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:categories:1@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:da_color_2d:categories:1",
+      "index": 1,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/categories/1",
+      "source_sha256": "dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "version_id": "atlas-assertion:da_color_2d:categories:1@sha256:dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        }
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:categories:2@4d01ca3e24a040ae160f7c729a9e6399344ee9d3a62747f2e6240b45905b3c24",
+      "field": "categories",
+      "id": "atlas-assertion:da_color_2d:categories:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/categories/2",
+      "source_sha256": "4d01ca3e24a040ae160f7c729a9e6399344ee9d3a62747f2e6240b45905b3c24",
+      "version_id": "atlas-assertion:da_color_2d:categories:2@sha256:4d01ca3e24a040ae160f7c729a9e6399344ee9d3a62747f2e6240b45905b3c24"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "gap": {
+          "target": "wanted:floquet-fault-distance"
+        },
+        "id": "none-known",
+        "noise": "the complete padded Pauli-triangle schedule with data faults, measurement faults, boundary docking faults, and repeated gate cycles",
+        "notes": "The primary work constructs candidate bulk and boundary detectors but leaves completeness at the Y boundary and a full numerical fault-tolerance analysis open. No protocol-specific circuit-level threshold or standard decoder was found in the search completed on 2026-08-09. General Floquet distance and decoherence frameworks do not fill this exact-family benchmark.",
+        "refs": [
+          "davydova2024dynamic",
+          "blackwell2025distance",
+          "tang2025floquet"
+        ],
+        "status": "none-known"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:decoders:0@6a0a7bc6d996c316ad86fb2de16aef8dcab623250244a9aba122494f73b6ebee",
+      "field": "decoders",
+      "id": "atlas-assertion:da_color_2d:decoders:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/decoders/0",
+      "source_sha256": "6a0a7bc6d996c316ad86fb2de16aef8dcab623250244a9aba122494f73b6ebee",
+      "version_id": "atlas-assertion:da_color_2d:decoders:0@sha256:6a0a7bc6d996c316ad86fb2de16aef8dcab623250244a9aba122494f73b6ebee"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "execute the complete padded phi_(rbg) Pauli-triangle sequence, retain all measurement outcomes needed for detectors, and update the logical Pauli frame; the finite constructor verifies the schedule and ISG recurrence but not the cited outcome-dependent logical transport",
+        "gate": "SH / cyclic logical-Pauli permutation",
+        "level": "single-qubit Clifford frame",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "davydova2024dynamic"
+        }
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:operations:0@2ba052e8f11f19b2bf1c785f5c376cca2e7f63a17d65c88b1d104f7a5f8903ad",
+      "field": "operations",
+      "id": "atlas-assertion:da_color_2d:operations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/operations/0",
+      "source_sha256": "2ba052e8f11f19b2bf1c785f5c376cca2e7f63a17d65c88b1d104f7a5f8903ad",
+      "version_id": "atlas-assertion:da_color_2d:operations:0@sha256:2ba052e8f11f19b2bf1c785f5c376cca2e7f63a17d65c88b1d104f7a5f8903ad"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "compose the two single-triangle color-permutation generators with the separate double-triangle entangling sequence; the latter can require a three-body boundary measurement and is not exported by this single- triangle constructor",
+        "gate": "full logical Clifford group on a stack of Pauli triangles",
+        "level": "multi-qubit Clifford protocol",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "davydova2024dynamic"
+        }
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:operations:1@30e4037632b35a8d49407c27795d88472bef9786c4dcf102c7df203854df5e96",
+      "field": "operations",
+      "id": "atlas-assertion:da_color_2d:operations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/operations/1",
+      "source_sha256": "30e4037632b35a8d49407c27795d88472bef9786c4dcf102c7df203854df5e96",
+      "version_id": "atlas-assertion:da_color_2d:operations:1@sha256:30e4037632b35a8d49407c27795d88472bef9786c4dcf102c7df203854df5e96"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "The protocol begins and returns to an effective two-dimensional color code, but uses an ordered low-weight measurement path through different instantaneous frames. The relation targets the broader static family; it does not identify this schedule with the existing 6.6.6 or 4.8.8 finite-boundary entries.",
+        "refs": [
+          "davydova2024dynamic",
+          "bombin2006topological"
+        ],
+        "target": "color_code_2d",
+        "type": "floquetification_of"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:relations:0@0e9cd980009181dfaf50066c34a61e08566d6c439e0984d40747f4eb2b1a2afc",
+      "field": "relations",
+      "id": "atlas-assertion:da_color_2d:relations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/relations/0",
+      "source_sha256": "0e9cd980009181dfaf50066c34a61e08566d6c439e0984d40747f4eb2b1a2afc",
+      "version_id": "atlas-assertion:da_color_2d:relations:0@sha256:0e9cd980009181dfaf50066c34a61e08566d6c439e0984d40747f4eb2b1a2afc"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "This entry fixes the two-dimensional color substrate, Pauli-triangle boundary, and phi_(rbg) schedule inside the wider construction class of measurement paths that realize topological automorphisms.",
+        "refs": [
+          "davydova2024dynamic",
+          "aasen2022automorphism"
+        ],
+        "target": "dynamic_automorphism",
+        "type": "special_case_of"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:relations:1@d8a250117efd3725879e4f1d34a9133b444f81c92d4d549fe8b7d7a2bc54a033",
+      "field": "relations",
+      "id": "atlas-assertion:da_color_2d:relations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/relations/1",
+      "source_sha256": "d8a250117efd3725879e4f1d34a9133b444f81c92d4d549fe8b7d7a2bc54a033",
+      "version_id": "atlas-assertion:da_color_2d:relations:1@sha256:d8a250117efd3725879e4f1d34a9133b444f81c92d4d549fe8b7d7a2bc54a033"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:da_color_2d#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "The reference frame has color-code topological order, while its doubled microscopic qubits, Pauli boundaries, docking sites, and time-dependent checks differ from the static three-color-boundary 6.6.6 constructor. Bulk phase does not transfer finite parameters or decoder results.",
+        "refs": [
+          "davydova2024dynamic",
+          "bombin2006topological"
+        ],
+        "target": "color_666",
+        "type": "same_bulk_phase_as"
+      },
+      "evidence_id": "atlas-evidence:da_color_2d:relations:2@0c3ba919e183093e75e74792c4b2f9b71e9ffb3f0ded452130e34cf904074203",
+      "field": "relations",
+      "id": "atlas-assertion:da_color_2d:relations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "da_color_2d/card.yaml#/relations/2",
+      "source_sha256": "0c3ba919e183093e75e74792c4b2f9b71e9ffb3f0ded452130e34cf904074203",
+      "version_id": "atlas-assertion:da_color_2d:relations:2@sha256:0c3ba919e183093e75e74792c4b2f9b71e9ffb3f0ded452130e34cf904074203"
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:da_color_2d#collection",
+      "status": "preserved-with-science-hold",
+      "tier": "T2"
+    }
+  ],
+  "decision_class": "exact-held",
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:da_color_2d#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:da_color_2d#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/da_color_2d/card.yaml#/identity",
+          "atlas:atlas/da_color_2d/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/da_color_2d/da_color_2d-eczoo-intake.md",
+          "t206:codes/quantum/qubits/dynamic/floquet/2d/da_color_2d.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:da_color_2d"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:da_color_2d#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:da_color_2d",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "fed0f2b9c8a0c2e53512be1467b1588acabed6b7f9679defcc5b55584187916a",
+          "payload_sha256": "658002642bd66821f6627aa8eeb5b51721571ebf68c28b0915ec4263f7bf3781",
+          "semantic_hash": "6fb002b87cb19e5a6644a3dbd18a237cb8bb9047cd08a8ed386d99d5689419df"
+        },
+        "id": "atlas-instance:da_color_2d:table8_pauli_triangle",
+        "label": "table8_pauli_triangle",
+        "lean_v1": {
+          "branch": "measurement-schedule",
+          "certificate_ids": [
+            "certificate:6fb002b87cb19e5a6644a3dbd18a237cb8bb9047cd08a8ed386d99d5689419df:structural-validity:3fec22d80910b25c4df34a15ace3b051e1f0553ded857eadf407f72eb517eea8@1"
+          ],
+          "instance_record_sha256": "52494df0f7272357dc037f788dd7d2e5efa9f793ada3e76cde1bf04599a96057",
+          "lean_report_sha256": "ee41ceb023e7da1a41595c72a3f9b7eebfd6e1510c7e79951730746c619fa498",
+          "semantic_hash": "6fb002b87cb19e5a6644a3dbd18a237cb8bb9047cd08a8ed386d99d5689419df"
+        },
+        "source_binding_status": "row-local-science-hold",
+        "source_sha256": "3c1dc4584df700eb3b4db0f87e9d3cd063f03e22b56dfbaea50e04087a3830d4",
+        "v2_envelope_id": "formal-ir-v2:da_color_2d:table8_pauli_triangle"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "finite-payload-valid-source-binding-held",
+    "target_entity_id": "eczoo-entity:da_color_2d#collection"
+  },
+  "hold": {
+    "clean_coverage": false,
+    "ids": [
+      "da_color_table8_logical_frame_mismatch"
+    ],
+    "migration_blocking": false,
+    "state": "row-local-science-hold"
+  },
+  "id": "da_color_2d",
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:da_color_2d:views:0",
+      "atlas-assertion:da_color_2d:views:1",
+      "atlas-assertion:da_color_2d:views:2",
+      "atlas-assertion:da_color_2d:views:3",
+      "atlas-assertion:da_color_2d:views:4",
+      "atlas-assertion:da_color_2d:views:5",
+      "atlas-assertion:da_color_2d:views:6",
+      "atlas-assertion:da_color_2d:views:7",
+      "atlas-assertion:da_color_2d:categories:0",
+      "atlas-assertion:da_color_2d:categories:1",
+      "atlas-assertion:da_color_2d:categories:2",
+      "atlas-assertion:da_color_2d:decoders:0",
+      "atlas-assertion:da_color_2d:operations:0",
+      "atlas-assertion:da_color_2d:operations:1",
+      "atlas-assertion:da_color_2d:relations:0",
+      "atlas-assertion:da_color_2d:relations:1",
+      "atlas-assertion:da_color_2d:relations:2"
+    ],
+    "entity_ids": [
+      "eczoo-entity:da_color_2d#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:da_color_2d:views:0@d664389f027e8da8252db90773e93dd00e79cdf4133afdc1ad4d71731740ceb2",
+      "atlas-evidence:da_color_2d:views:1@2893110e3860f814c2da2436342f753d9049b3d36938a55466fd78f31e401196",
+      "atlas-evidence:da_color_2d:views:2@88ea42765945b2b4d049dd18488266de6a5bc58a32b1fdf9922072e8a8e6bbda",
+      "atlas-evidence:da_color_2d:views:3@a8b1225c0eaa2b845acc2931de94b6525d7bf5b1f484904569c3e1a2f8c923c7",
+      "atlas-evidence:da_color_2d:views:4@1cf01aa7182c0d7e5c8258e6ba206fec2186dc62eee11c0b4f211754e83c9418",
+      "atlas-evidence:da_color_2d:views:5@8c57a0abbd919d7d92789429dab0c967ed265196fafe8cc7af741755acc5a7af",
+      "atlas-evidence:da_color_2d:views:6@fc06079081768476442336336c12679c633ec37485e322427a0166c21c70876f",
+      "atlas-evidence:da_color_2d:views:7@74736ed8d65ae6c6a36f747e1f55846976f54838ea5e4241f5b64e289f29b123",
+      "atlas-evidence:da_color_2d:categories:0@7fd0f261ff9db80292df53dfb77f5c76977c87bc229ba029bf16ee5052e1d4ef",
+      "atlas-evidence:da_color_2d:categories:1@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "atlas-evidence:da_color_2d:categories:2@4d01ca3e24a040ae160f7c729a9e6399344ee9d3a62747f2e6240b45905b3c24",
+      "atlas-evidence:da_color_2d:decoders:0@6a0a7bc6d996c316ad86fb2de16aef8dcab623250244a9aba122494f73b6ebee",
+      "atlas-evidence:da_color_2d:operations:0@2ba052e8f11f19b2bf1c785f5c376cca2e7f63a17d65c88b1d104f7a5f8903ad",
+      "atlas-evidence:da_color_2d:operations:1@30e4037632b35a8d49407c27795d88472bef9786c4dcf102c7df203854df5e96",
+      "atlas-evidence:da_color_2d:relations:0@0e9cd980009181dfaf50066c34a61e08566d6c439e0984d40747f4eb2b1a2afc",
+      "atlas-evidence:da_color_2d:relations:1@d8a250117efd3725879e4f1d34a9133b444f81c92d4d549fe8b7d7a2bc54a033",
+      "atlas-evidence:da_color_2d:relations:2@0c3ba919e183093e75e74792c4b2f9b71e9ffb3f0ded452130e34cf904074203"
+    ],
+    "formalization_id": "atlas-formalization:da_color_2d",
+    "instance_ids": [
+      "atlas-instance:da_color_2d:table8_pauli_triangle"
+    ],
+    "page_id": "atlas-page:da_color_2d",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:da_color_2d"
+    ]
+  },
+  "instances": [
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "fed0f2b9c8a0c2e53512be1467b1588acabed6b7f9679defcc5b55584187916a",
+        "payload_sha256": "658002642bd66821f6627aa8eeb5b51721571ebf68c28b0915ec4263f7bf3781",
+        "semantic_hash": "6fb002b87cb19e5a6644a3dbd18a237cb8bb9047cd08a8ed386d99d5689419df"
+      },
+      "id": "atlas-instance:da_color_2d:table8_pauli_triangle",
+      "label": "table8_pauli_triangle",
+      "lean_v1": {
+        "branch": "measurement-schedule",
+        "certificate_ids": [
+          "certificate:6fb002b87cb19e5a6644a3dbd18a237cb8bb9047cd08a8ed386d99d5689419df:structural-validity:3fec22d80910b25c4df34a15ace3b051e1f0553ded857eadf407f72eb517eea8@1"
+        ],
+        "instance_record_sha256": "52494df0f7272357dc037f788dd7d2e5efa9f793ada3e76cde1bf04599a96057",
+        "lean_report_sha256": "ee41ceb023e7da1a41595c72a3f9b7eebfd6e1510c7e79951730746c619fa498",
+        "semantic_hash": "6fb002b87cb19e5a6644a3dbd18a237cb8bb9047cd08a8ed386d99d5689419df"
+      },
+      "source_binding_status": "row-local-science-hold",
+      "source_sha256": "3c1dc4584df700eb3b4db0f87e9d3cd063f03e22b56dfbaea50e04087a3830d4",
+      "v2_envelope_id": "formal-ir-v2:da_color_2d:table8_pauli_triangle"
+    }
+  ],
+  "legacy_card": {
+    "categories": [
+      {
+        "id": "dynamical",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        }
+      },
+      {
+        "id": "non-css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        }
+      }
+    ],
+    "claim_gaps": [
+      {
+        "property": "d",
+        "target": "wanted:floquet-fault-distance"
+      }
+    ],
+    "decoders": [
+      {
+        "gap": {
+          "target": "wanted:floquet-fault-distance"
+        },
+        "id": "none-known",
+        "noise": "the complete padded Pauli-triangle schedule with data faults, measurement faults, boundary docking faults, and repeated gate cycles",
+        "notes": "The primary work constructs candidate bulk and boundary detectors but leaves completeness at the Y boundary and a full numerical fault-tolerance analysis open. No protocol-specific circuit-level threshold or standard decoder was found in the search completed on 2026-08-09. General Floquet distance and decoherence frameworks do not fill this exact-family benchmark.",
+        "refs": [
+          "davydova2024dynamic",
+          "blackwell2025distance",
+          "tang2025floquet"
+        ],
+        "status": "none-known"
+      }
+    ],
+    "description": "A dynamic-automorphism color code stores a color-code logical subsystem while low-weight measurements repeatedly unfold a doubled color patch into toric-code sectors and fold it back. The ordered history is the code: an individual round exposes only one instantaneous stabilizer frame. This entry fixes the complete padded Pauli-triangle protocol for the cyclic color permutation. Its finite constructor verifies every measured Pauli, the startup-to-reference ISG, and recurrence of the reference row space; the induced logical Clifford frame remains a cited boundary because the engine does not yet transport outcome-dependent logical representatives.",
+    "eczoo": {
+      "classification": "exact-family",
+      "source": {
+        "blob_url": "https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/dynamic/floquet/2d/da_color_2d.yml",
+        "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+        "page_url": "https://errorcorrectionzoo.org/c/da_color_2d",
+        "path": "codes/quantum/qubits/dynamic/floquet/2d/da_color_2d.yml",
+        "repository_url": "https://github.com/errorcorrectionzoo/eczoo_data",
+        "retrieved_on": "2026-08-05",
+        "sha256": "c93d49d299ad748ab4c5ff6e38b8be594a6316fdeae2b8dd8860f0382193db8b"
+      },
+      "status": "mapped",
+      "zoo_id": "da_color_2d"
+    },
+    "fit": {
+      "platforms": [
+        "local-two-qubit-parity-measurement-array",
+        "layered-color-code-architecture"
+      ],
+      "tasks": [
+        "measurement-driven-Clifford-computation",
+        "spacetime-error-correction-research",
+        "dynamic-boundary-design"
+      ]
+    },
+    "id": "da_color_2d",
+    "identity": {
+      "aliases": [
+        "2D DA color code",
+        "dynamic automorphism color code"
+      ],
+      "canonical_name": "Two-dimensional dynamic-automorphism color code",
+      "variant": "Pauli-triangle phi_(rbg) protocol"
+    },
+    "kind": "family",
+    "operations": [
+      {
+        "cost": "execute the complete padded phi_(rbg) Pauli-triangle sequence, retain all measurement outcomes needed for detectors, and update the logical Pauli frame; the finite constructor verifies the schedule and ISG recurrence but not the cited outcome-dependent logical transport",
+        "gate": "SH / cyclic logical-Pauli permutation",
+        "level": "single-qubit Clifford frame",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "davydova2024dynamic"
+        }
+      },
+      {
+        "cost": "compose the two single-triangle color-permutation generators with the separate double-triangle entangling sequence; the latter can require a three-body boundary measurement and is not exported by this single- triangle constructor",
+        "gate": "full logical Clifford group on a stack of Pauli triangles",
+        "level": "multi-qubit Clifford protocol",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "davydova2024dynamic"
+        }
+      }
+    ],
+    "params": {
+      "patch": "Exact finite schedule witness. The only supported literal is 'table8-pauli-triangle-incidence-v1'; it fixes qubit order, edge colors, boundary representatives, docking sites, and all padded rounds."
+    },
+    "presentation": {
+      "guided_tour": {
+        "status": "available"
+      },
+      "orienting_view": {
+        "kind": "schedule",
+        "status": "available"
+      }
+    },
+    "realizations": [],
+    "refs": [
+      "davydova2024dynamic",
+      "aasen2022automorphism",
+      "bombin2006topological",
+      "davydova2023css",
+      "hastings2021dynamically",
+      "aitchison2024competing",
+      "blackwell2025distance",
+      "tang2025floquet",
+      "wootton2022plaquettes",
+      "aasen2023mqca",
+      "bombin2023unifying",
+      "kubica2015unfolding",
+      "bauer2025nonclifford"
+    ],
+    "relations": [
+      {
+        "how": "The protocol begins and returns to an effective two-dimensional color code, but uses an ordered low-weight measurement path through different instantaneous frames. The relation targets the broader static family; it does not identify this schedule with the existing 6.6.6 or 4.8.8 finite-boundary entries.",
+        "refs": [
+          "davydova2024dynamic",
+          "bombin2006topological"
+        ],
+        "target": "color_code_2d",
+        "type": "floquetification_of"
+      },
+      {
+        "how": "This entry fixes the two-dimensional color substrate, Pauli-triangle boundary, and phi_(rbg) schedule inside the wider construction class of measurement paths that realize topological automorphisms.",
+        "refs": [
+          "davydova2024dynamic",
+          "aasen2022automorphism"
+        ],
+        "target": "dynamic_automorphism",
+        "type": "special_case_of"
+      },
+      {
+        "how": "The reference frame has color-code topological order, while its doubled microscopic qubits, Pauli boundaries, docking sites, and time-dependent checks differ from the static three-color-boundary 6.6.6 constructor. Bulk phase does not transfer finite parameters or decoder results.",
+        "refs": [
+          "davydova2024dynamic",
+          "bombin2006topological"
+        ],
+        "target": "color_666",
+        "type": "same_bulk_phase_as"
+      }
+    ],
+    "tier": "T2",
+    "views": [
+      {
+        "description": "The constructor tracks the sign-free instantaneous stabilizer group and exports its independent Pauli rows at the declared reference round as a symplectic CheckMatrix. This R1 snapshot is executable, but it is not a substitute for the fault distance of the full schedule.",
+        "origin": {
+          "converter": "constructor._schedule + ISGTracker reference row space",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "davydova2024dynamic"
+        ],
+        "rung": "R1",
+        "type": "reference-isg-checks"
+      },
+      {
+        "description": "Put two qubits at every site of a finite triangular color substrate and add color-labelled docking sites where the Y boundary would otherwise require a high-weight coupling. Interlayer V measurements fold the two layers into one effective color-code frame; intralayer E measurements unfold them into two toric sectors. The exported coordinates separate the layers visually but are an incidence layout, not a metric claim.",
+        "origin": {
+          "converter": "constructor.SITE_COORDS + layer offsets + docking labels",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "davydova2024dynamic"
+        ],
+        "rung": "R2",
+        "type": "doubled-patch-stack"
+      },
+      {
+        "description": "Read the padded witness from t=0 through t=8. The first return to the vertical-measurement frame occurs only after the startup transient; at that reference round the sign-free ISG has one logical degree of freedom, and the same row space returns at the final displayed round. A four-move condensation motif is therefore not by itself the complete executable witness.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "davydova2024dynamic"
+        ],
+        "rung": "R3",
+        "type": "padded-schedule-isg"
+      },
+      {
+        "description": "V(P1P2) acts between layers at one site, while E_c(P_l) acts along a color-c edge inside layer l. Boundary singles and mixed interlayer Paulis replace the bulk rule where a logical string must terminate. Keeping site, layer, color, Pauli, and round as separate labels prevents a drawing color from being mistaken for a measurement flavor.",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        },
+        "refs": [
+          "davydova2024dynamic"
+        ],
+        "rung": "R3",
+        "type": "measurement-class-dictionary"
+      },
+      {
+        "description": "Stabilizer-row-space recurrence says that the code frame closes; it does not say that logical labels return trivially. The primary construction transports the Pauli-triangle representatives as X_L to Z_L, Z_L to Y_L, and Y_L to X_L, which is the logical SH action. The constructor marks this map curated rather than verified because sign-free ISG rank tracking cannot derive outcome-dependent logical transport.",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        },
+        "refs": [
+          "davydova2024dynamic",
+          "aasen2022automorphism"
+        ],
+        "rung": "R5",
+        "type": "logical-frame-automorphism"
+      },
+      {
+        "description": "Error information is a product of measurement outcomes from several rounds. A data or measurement fault flips a pattern of spacetime detectors, and a decoder must compare histories modulo time-dependent gauge relations. Static color-code syndrome lookup and the distance of one exported ISG snapshot are therefore not protocol-level guarantees.",
+        "origin": {
+          "kind": "curated",
+          "ref": "davydova2024dynamic"
+        },
+        "refs": [
+          "davydova2024dynamic",
+          "blackwell2025distance"
+        ],
+        "rung": "R3",
+        "type": "spacetime-detectors"
+      },
+      {
+        "description": "At the intermediate E-measurement frames, the doubled color substrate separates into toric-code sectors joined by the boundary prescription. Unfolding explains why the checks stay low weight and how logical strings survive each transition; it is a frame dictionary, not a claim that the time-dependent family is a static surface code.",
+        "origin": {
+          "kind": "curated",
+          "ref": "kubica2015unfolding"
+        },
+        "refs": [
+          "kubica2015unfolding",
+          "davydova2024dynamic"
+        ],
+        "rung": "R5",
+        "type": "unfolded-toric-sectors"
+      },
+      {
+        "description": "A measurement quantum cellular automaton treats each round as a local causal update and exposes boundary information flow that an unordered stabilizer list erases. The QCA view is useful for comparing dynamic phases, while the literal Schedule remains the executable source for this entry.",
+        "origin": {
+          "kind": "curated",
+          "ref": "aasen2023mqca"
+        },
+        "refs": [
+          "aasen2023mqca"
+        ],
+        "rung": "R5",
+        "type": "measurement-qca"
+      }
+    ],
+    "visual_instance": "table8_pauli_triangle"
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:da_color_2d#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:da_color_2d#collection",
+        "status": "preserved-with-science-hold",
+        "tier": "T2"
+      }
+    ],
+    "composition": "exact-held",
+    "id": "atlas-page:da_color_2d",
+    "presented_entity_ids": [
+      "eczoo-entity:da_color_2d#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:da_color_2d#collection",
+    "redirects": [],
+    "route": "/entries/da_color_2d.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/da_color_2d"
+  },
+  "parent_content": null,
+  "projection": {
+    "method": "embedded-utf8-source-v1",
+    "source_sha256": "f6f7db36212a373c5e46e1d13343fbaa6f86f5b758607403ade27b6282338715",
+    "status": "exact"
+  },
+  "schema": "qec-atlas-entry-card-v2",
+  "scoped_facets": {
+    "categories": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "dynamical",
+          "origin": {
+            "kind": "curated",
+            "ref": "davydova2024dynamic"
+          }
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:categories:0@7fd0f261ff9db80292df53dfb77f5c76977c87bc229ba029bf16ee5052e1d4ef",
+        "field": "categories",
+        "id": "atlas-assertion:da_color_2d:categories:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/categories/0",
+        "source_sha256": "7fd0f261ff9db80292df53dfb77f5c76977c87bc229ba029bf16ee5052e1d4ef",
+        "version_id": "atlas-assertion:da_color_2d:categories:0@sha256:7fd0f261ff9db80292df53dfb77f5c76977c87bc229ba029bf16ee5052e1d4ef"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-formalization:da_color_2d",
+          "kind": "formalization"
+        },
+        "content": {
+          "id": "non-css",
+          "origin": {
+            "kind": "verified"
+          }
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:categories:1@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+        "field": "categories",
+        "id": "atlas-assertion:da_color_2d:categories:1",
+        "index": 1,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/categories/1",
+        "source_sha256": "dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+        "version_id": "atlas-assertion:da_color_2d:categories:1@sha256:dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "topological",
+          "origin": {
+            "kind": "curated",
+            "ref": "davydova2024dynamic"
+          }
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:categories:2@4d01ca3e24a040ae160f7c729a9e6399344ee9d3a62747f2e6240b45905b3c24",
+        "field": "categories",
+        "id": "atlas-assertion:da_color_2d:categories:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/categories/2",
+        "source_sha256": "4d01ca3e24a040ae160f7c729a9e6399344ee9d3a62747f2e6240b45905b3c24",
+        "version_id": "atlas-assertion:da_color_2d:categories:2@sha256:4d01ca3e24a040ae160f7c729a9e6399344ee9d3a62747f2e6240b45905b3c24"
+      }
+    ],
+    "decoders": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "gap": {
+            "target": "wanted:floquet-fault-distance"
+          },
+          "id": "none-known",
+          "noise": "the complete padded Pauli-triangle schedule with data faults, measurement faults, boundary docking faults, and repeated gate cycles",
+          "notes": "The primary work constructs candidate bulk and boundary detectors but leaves completeness at the Y boundary and a full numerical fault-tolerance analysis open. No protocol-specific circuit-level threshold or standard decoder was found in the search completed on 2026-08-09. General Floquet distance and decoherence frameworks do not fill this exact-family benchmark.",
+          "refs": [
+            "davydova2024dynamic",
+            "blackwell2025distance",
+            "tang2025floquet"
+          ],
+          "status": "none-known"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:decoders:0@6a0a7bc6d996c316ad86fb2de16aef8dcab623250244a9aba122494f73b6ebee",
+        "field": "decoders",
+        "id": "atlas-assertion:da_color_2d:decoders:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/decoders/0",
+        "source_sha256": "6a0a7bc6d996c316ad86fb2de16aef8dcab623250244a9aba122494f73b6ebee",
+        "version_id": "atlas-assertion:da_color_2d:decoders:0@sha256:6a0a7bc6d996c316ad86fb2de16aef8dcab623250244a9aba122494f73b6ebee"
+      }
+    ],
+    "operations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "execute the complete padded phi_(rbg) Pauli-triangle sequence, retain all measurement outcomes needed for detectors, and update the logical Pauli frame; the finite constructor verifies the schedule and ISG recurrence but not the cited outcome-dependent logical transport",
+          "gate": "SH / cyclic logical-Pauli permutation",
+          "level": "single-qubit Clifford frame",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "davydova2024dynamic"
+          }
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:operations:0@2ba052e8f11f19b2bf1c785f5c376cca2e7f63a17d65c88b1d104f7a5f8903ad",
+        "field": "operations",
+        "id": "atlas-assertion:da_color_2d:operations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/operations/0",
+        "source_sha256": "2ba052e8f11f19b2bf1c785f5c376cca2e7f63a17d65c88b1d104f7a5f8903ad",
+        "version_id": "atlas-assertion:da_color_2d:operations:0@sha256:2ba052e8f11f19b2bf1c785f5c376cca2e7f63a17d65c88b1d104f7a5f8903ad"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "compose the two single-triangle color-permutation generators with the separate double-triangle entangling sequence; the latter can require a three-body boundary measurement and is not exported by this single- triangle constructor",
+          "gate": "full logical Clifford group on a stack of Pauli triangles",
+          "level": "multi-qubit Clifford protocol",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "davydova2024dynamic"
+          }
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:operations:1@30e4037632b35a8d49407c27795d88472bef9786c4dcf102c7df203854df5e96",
+        "field": "operations",
+        "id": "atlas-assertion:da_color_2d:operations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/operations/1",
+        "source_sha256": "30e4037632b35a8d49407c27795d88472bef9786c4dcf102c7df203854df5e96",
+        "version_id": "atlas-assertion:da_color_2d:operations:1@sha256:30e4037632b35a8d49407c27795d88472bef9786c4dcf102c7df203854df5e96"
+      }
+    ],
+    "realizations": [],
+    "relations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "The protocol begins and returns to an effective two-dimensional color code, but uses an ordered low-weight measurement path through different instantaneous frames. The relation targets the broader static family; it does not identify this schedule with the existing 6.6.6 or 4.8.8 finite-boundary entries.",
+          "refs": [
+            "davydova2024dynamic",
+            "bombin2006topological"
+          ],
+          "target": "color_code_2d",
+          "type": "floquetification_of"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:relations:0@0e9cd980009181dfaf50066c34a61e08566d6c439e0984d40747f4eb2b1a2afc",
+        "field": "relations",
+        "id": "atlas-assertion:da_color_2d:relations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/relations/0",
+        "source_sha256": "0e9cd980009181dfaf50066c34a61e08566d6c439e0984d40747f4eb2b1a2afc",
+        "version_id": "atlas-assertion:da_color_2d:relations:0@sha256:0e9cd980009181dfaf50066c34a61e08566d6c439e0984d40747f4eb2b1a2afc"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "This entry fixes the two-dimensional color substrate, Pauli-triangle boundary, and phi_(rbg) schedule inside the wider construction class of measurement paths that realize topological automorphisms.",
+          "refs": [
+            "davydova2024dynamic",
+            "aasen2022automorphism"
+          ],
+          "target": "dynamic_automorphism",
+          "type": "special_case_of"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:relations:1@d8a250117efd3725879e4f1d34a9133b444f81c92d4d549fe8b7d7a2bc54a033",
+        "field": "relations",
+        "id": "atlas-assertion:da_color_2d:relations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/relations/1",
+        "source_sha256": "d8a250117efd3725879e4f1d34a9133b444f81c92d4d549fe8b7d7a2bc54a033",
+        "version_id": "atlas-assertion:da_color_2d:relations:1@sha256:d8a250117efd3725879e4f1d34a9133b444f81c92d4d549fe8b7d7a2bc54a033"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "The reference frame has color-code topological order, while its doubled microscopic qubits, Pauli boundaries, docking sites, and time-dependent checks differ from the static three-color-boundary 6.6.6 constructor. Bulk phase does not transfer finite parameters or decoder results.",
+          "refs": [
+            "davydova2024dynamic",
+            "bombin2006topological"
+          ],
+          "target": "color_666",
+          "type": "same_bulk_phase_as"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:relations:2@0c3ba919e183093e75e74792c4b2f9b71e9ffb3f0ded452130e34cf904074203",
+        "field": "relations",
+        "id": "atlas-assertion:da_color_2d:relations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/relations/2",
+        "source_sha256": "0c3ba919e183093e75e74792c4b2f9b71e9ffb3f0ded452130e34cf904074203",
+        "version_id": "atlas-assertion:da_color_2d:relations:2@sha256:0c3ba919e183093e75e74792c4b2f9b71e9ffb3f0ded452130e34cf904074203"
+      }
+    ],
+    "views": [
+      {
+        "applies_to": {
+          "id": "atlas-formalization:da_color_2d",
+          "kind": "formalization"
+        },
+        "content": {
+          "description": "The constructor tracks the sign-free instantaneous stabilizer group and exports its independent Pauli rows at the declared reference round as a symplectic CheckMatrix. This R1 snapshot is executable, but it is not a substitute for the fault distance of the full schedule.",
+          "origin": {
+            "converter": "constructor._schedule + ISGTracker reference row space",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "davydova2024dynamic"
+          ],
+          "rung": "R1",
+          "type": "reference-isg-checks"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:views:0@d664389f027e8da8252db90773e93dd00e79cdf4133afdc1ad4d71731740ceb2",
+        "field": "views",
+        "id": "atlas-assertion:da_color_2d:views:0",
+        "index": 0,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/views/0",
+        "source_sha256": "d664389f027e8da8252db90773e93dd00e79cdf4133afdc1ad4d71731740ceb2",
+        "version_id": "atlas-assertion:da_color_2d:views:0@sha256:d664389f027e8da8252db90773e93dd00e79cdf4133afdc1ad4d71731740ceb2"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-formalization:da_color_2d",
+          "kind": "formalization"
+        },
+        "content": {
+          "description": "Put two qubits at every site of a finite triangular color substrate and add color-labelled docking sites where the Y boundary would otherwise require a high-weight coupling. Interlayer V measurements fold the two layers into one effective color-code frame; intralayer E measurements unfold them into two toric sectors. The exported coordinates separate the layers visually but are an incidence layout, not a metric claim.",
+          "origin": {
+            "converter": "constructor.SITE_COORDS + layer offsets + docking labels",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "davydova2024dynamic"
+          ],
+          "rung": "R2",
+          "type": "doubled-patch-stack"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:views:1@2893110e3860f814c2da2436342f753d9049b3d36938a55466fd78f31e401196",
+        "field": "views",
+        "id": "atlas-assertion:da_color_2d:views:1",
+        "index": 1,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/views/1",
+        "source_sha256": "2893110e3860f814c2da2436342f753d9049b3d36938a55466fd78f31e401196",
+        "version_id": "atlas-assertion:da_color_2d:views:1@sha256:2893110e3860f814c2da2436342f753d9049b3d36938a55466fd78f31e401196"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-formalization:da_color_2d",
+          "kind": "formalization"
+        },
+        "content": {
+          "description": "Read the padded witness from t=0 through t=8. The first return to the vertical-measurement frame occurs only after the startup transient; at that reference round the sign-free ISG has one logical degree of freedom, and the same row space returns at the final displayed round. A four-move condensation motif is therefore not by itself the complete executable witness.",
+          "origin": {
+            "kind": "canonical"
+          },
+          "refs": [
+            "davydova2024dynamic"
+          ],
+          "rung": "R3",
+          "type": "padded-schedule-isg"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:views:2@88ea42765945b2b4d049dd18488266de6a5bc58a32b1fdf9922072e8a8e6bbda",
+        "field": "views",
+        "id": "atlas-assertion:da_color_2d:views:2",
+        "index": 2,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/views/2",
+        "source_sha256": "88ea42765945b2b4d049dd18488266de6a5bc58a32b1fdf9922072e8a8e6bbda",
+        "version_id": "atlas-assertion:da_color_2d:views:2@sha256:88ea42765945b2b4d049dd18488266de6a5bc58a32b1fdf9922072e8a8e6bbda"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "V(P1P2) acts between layers at one site, while E_c(P_l) acts along a color-c edge inside layer l. Boundary singles and mixed interlayer Paulis replace the bulk rule where a logical string must terminate. Keeping site, layer, color, Pauli, and round as separate labels prevents a drawing color from being mistaken for a measurement flavor.",
+          "origin": {
+            "kind": "curated",
+            "ref": "davydova2024dynamic"
+          },
+          "refs": [
+            "davydova2024dynamic"
+          ],
+          "rung": "R3",
+          "type": "measurement-class-dictionary"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:views:3@a8b1225c0eaa2b845acc2931de94b6525d7bf5b1f484904569c3e1a2f8c923c7",
+        "field": "views",
+        "id": "atlas-assertion:da_color_2d:views:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/views/3",
+        "source_sha256": "a8b1225c0eaa2b845acc2931de94b6525d7bf5b1f484904569c3e1a2f8c923c7",
+        "version_id": "atlas-assertion:da_color_2d:views:3@sha256:a8b1225c0eaa2b845acc2931de94b6525d7bf5b1f484904569c3e1a2f8c923c7"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Stabilizer-row-space recurrence says that the code frame closes; it does not say that logical labels return trivially. The primary construction transports the Pauli-triangle representatives as X_L to Z_L, Z_L to Y_L, and Y_L to X_L, which is the logical SH action. The constructor marks this map curated rather than verified because sign-free ISG rank tracking cannot derive outcome-dependent logical transport.",
+          "origin": {
+            "kind": "curated",
+            "ref": "davydova2024dynamic"
+          },
+          "refs": [
+            "davydova2024dynamic",
+            "aasen2022automorphism"
+          ],
+          "rung": "R5",
+          "type": "logical-frame-automorphism"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:views:4@1cf01aa7182c0d7e5c8258e6ba206fec2186dc62eee11c0b4f211754e83c9418",
+        "field": "views",
+        "id": "atlas-assertion:da_color_2d:views:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/views/4",
+        "source_sha256": "1cf01aa7182c0d7e5c8258e6ba206fec2186dc62eee11c0b4f211754e83c9418",
+        "version_id": "atlas-assertion:da_color_2d:views:4@sha256:1cf01aa7182c0d7e5c8258e6ba206fec2186dc62eee11c0b4f211754e83c9418"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Error information is a product of measurement outcomes from several rounds. A data or measurement fault flips a pattern of spacetime detectors, and a decoder must compare histories modulo time-dependent gauge relations. Static color-code syndrome lookup and the distance of one exported ISG snapshot are therefore not protocol-level guarantees.",
+          "origin": {
+            "kind": "curated",
+            "ref": "davydova2024dynamic"
+          },
+          "refs": [
+            "davydova2024dynamic",
+            "blackwell2025distance"
+          ],
+          "rung": "R3",
+          "type": "spacetime-detectors"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:views:5@8c57a0abbd919d7d92789429dab0c967ed265196fafe8cc7af741755acc5a7af",
+        "field": "views",
+        "id": "atlas-assertion:da_color_2d:views:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/views/5",
+        "source_sha256": "8c57a0abbd919d7d92789429dab0c967ed265196fafe8cc7af741755acc5a7af",
+        "version_id": "atlas-assertion:da_color_2d:views:5@sha256:8c57a0abbd919d7d92789429dab0c967ed265196fafe8cc7af741755acc5a7af"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "At the intermediate E-measurement frames, the doubled color substrate separates into toric-code sectors joined by the boundary prescription. Unfolding explains why the checks stay low weight and how logical strings survive each transition; it is a frame dictionary, not a claim that the time-dependent family is a static surface code.",
+          "origin": {
+            "kind": "curated",
+            "ref": "kubica2015unfolding"
+          },
+          "refs": [
+            "kubica2015unfolding",
+            "davydova2024dynamic"
+          ],
+          "rung": "R5",
+          "type": "unfolded-toric-sectors"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:views:6@fc06079081768476442336336c12679c633ec37485e322427a0166c21c70876f",
+        "field": "views",
+        "id": "atlas-assertion:da_color_2d:views:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/views/6",
+        "source_sha256": "fc06079081768476442336336c12679c633ec37485e322427a0166c21c70876f",
+        "version_id": "atlas-assertion:da_color_2d:views:6@sha256:fc06079081768476442336336c12679c633ec37485e322427a0166c21c70876f"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:da_color_2d#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A measurement quantum cellular automaton treats each round as a local causal update and exposes boundary information flow that an unordered stabilizer list erases. The QCA view is useful for comparing dynamic phases, while the literal Schedule remains the executable source for this entry.",
+          "origin": {
+            "kind": "curated",
+            "ref": "aasen2023mqca"
+          },
+          "refs": [
+            "aasen2023mqca"
+          ],
+          "rung": "R5",
+          "type": "measurement-qca"
+        },
+        "evidence_id": "atlas-evidence:da_color_2d:views:7@74736ed8d65ae6c6a36f747e1f55846976f54838ea5e4241f5b64e289f29b123",
+        "field": "views",
+        "id": "atlas-assertion:da_color_2d:views:7",
+        "index": 7,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "da_color_2d/card.yaml#/views/7",
+        "source_sha256": "74736ed8d65ae6c6a36f747e1f55846976f54838ea5e4241f5b64e289f29b123",
+        "version_id": "atlas-assertion:da_color_2d:views:7@sha256:74736ed8d65ae6c6a36f747e1f55846976f54838ea5e4241f5b64e289f29b123"
+      }
+    ]
+  },
+  "source": {
+    "collection": "atlas",
+    "encoding": "utf-8",
+    "entry_id": "da_color_2d",
+    "path": "atlas/da_color_2d/card.yaml",
+    "sha256": "f6f7db36212a373c5e46e1d13343fbaa6f86f5b758607403ade27b6282338715",
+    "text": "id: da_color_2d\nkind: family\nidentity:\n  canonical_name: \"Two-dimensional dynamic-automorphism color code\"\n  variant: \"Pauli-triangle phi_(rbg) protocol\"\n  aliases:\n    - \"2D DA color code\"\n    - \"dynamic automorphism color code\"\npresentation:\n  orienting_view: {status: available, kind: schedule}\n  guided_tour: {status: available}\neczoo:\n  status: mapped\n  zoo_id: da_color_2d\n  classification: exact-family\n  source:\n    repository_url: https://github.com/errorcorrectionzoo/eczoo_data\n    commit: b2437d9e2dc09284e04c66ef72ee81b7ed7bd129\n    retrieved_on: \"2026-08-05\"\n    path: codes/quantum/qubits/dynamic/floquet/2d/da_color_2d.yml\n    sha256: c93d49d299ad748ab4c5ff6e38b8be594a6316fdeae2b8dd8860f0382193db8b\n    page_url: https://errorcorrectionzoo.org/c/da_color_2d\n    blob_url: https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/dynamic/floquet/2d/da_color_2d.yml\ndescription: >-\n  A dynamic-automorphism color code stores a color-code logical subsystem\n  while low-weight measurements repeatedly unfold a doubled color patch into\n  toric-code sectors and fold it back. The ordered history is the code: an\n  individual round exposes only one instantaneous stabilizer frame. This\n  entry fixes the complete padded Pauli-triangle protocol for the cyclic\n  color permutation. Its finite constructor verifies every measured Pauli,\n  the startup-to-reference ISG, and recurrence of the reference row space;\n  the induced logical Clifford frame remains a cited boundary because the\n  engine does not yet transport outcome-dependent logical representatives.\nclaim_gaps:\n  - {property: d, target: wanted:floquet-fault-distance}\nviews:\n  - rung: R1\n    type: reference-isg-checks\n    description: >-\n      The constructor tracks the sign-free instantaneous stabilizer group and\n      exports its independent Pauli rows at the declared reference round as a\n      symplectic CheckMatrix. This R1 snapshot is executable, but it is not a\n      substitute for the fault distance of the full schedule.\n    origin:\n      kind: derived\n      converter: \"constructor._schedule + ISGTracker reference row space\"\n      version: \"v1\"\n    refs: [davydova2024dynamic]\n  - rung: R2\n    type: doubled-patch-stack\n    description: >-\n      Put two qubits at every site of a finite triangular color substrate and\n      add color-labelled docking sites where the Y boundary would otherwise\n      require a high-weight coupling. Interlayer V measurements fold the two\n      layers into one effective color-code frame; intralayer E measurements\n      unfold them into two toric sectors. The exported coordinates separate\n      the layers visually but are an incidence layout, not a metric claim.\n    origin:\n      kind: derived\n      converter: \"constructor.SITE_COORDS + layer offsets + docking labels\"\n      version: \"v1\"\n    refs: [davydova2024dynamic]\n  - rung: R3\n    type: padded-schedule-isg\n    description: >-\n      Read the padded witness from t=0 through t=8. The first return to the\n      vertical-measurement frame occurs only after the startup transient; at\n      that reference round the sign-free ISG has one logical degree of\n      freedom, and the same row space returns at the final displayed round.\n      A four-move condensation motif is therefore not by itself the complete\n      executable witness.\n    origin: {kind: canonical}\n    refs: [davydova2024dynamic]\n  - rung: R3\n    type: measurement-class-dictionary\n    description: >-\n      V(P1P2) acts between layers at one site, while E_c(P_l) acts along a\n      color-c edge inside layer l. Boundary singles and mixed interlayer\n      Paulis replace the bulk rule where a logical string must terminate.\n      Keeping site, layer, color, Pauli, and round as separate labels prevents\n      a drawing color from being mistaken for a measurement flavor.\n    origin: {kind: curated, ref: davydova2024dynamic}\n    refs: [davydova2024dynamic]\n  - rung: R5\n    type: logical-frame-automorphism\n    description: >-\n      Stabilizer-row-space recurrence says that the code frame closes; it does\n      not say that logical labels return trivially. The primary construction\n      transports the Pauli-triangle representatives as X_L to Z_L, Z_L to\n      Y_L, and Y_L to X_L, which is the logical SH action. The constructor\n      marks this map curated rather than verified because sign-free ISG rank\n      tracking cannot derive outcome-dependent logical transport.\n    origin: {kind: curated, ref: davydova2024dynamic}\n    refs: [davydova2024dynamic, aasen2022automorphism]\n  - rung: R3\n    type: spacetime-detectors\n    description: >-\n      Error information is a product of measurement outcomes from several\n      rounds. A data or measurement fault flips a pattern of spacetime\n      detectors, and a decoder must compare histories modulo time-dependent\n      gauge relations. Static color-code syndrome lookup and the distance of\n      one exported ISG snapshot are therefore not protocol-level guarantees.\n    origin: {kind: curated, ref: davydova2024dynamic}\n    refs: [davydova2024dynamic, blackwell2025distance]\n  - rung: R5\n    type: unfolded-toric-sectors\n    description: >-\n      At the intermediate E-measurement frames, the doubled color substrate\n      separates into toric-code sectors joined by the boundary prescription.\n      Unfolding explains why the checks stay low weight and how logical\n      strings survive each transition; it is a frame dictionary, not a claim\n      that the time-dependent family is a static surface code.\n    origin: {kind: curated, ref: kubica2015unfolding}\n    refs: [kubica2015unfolding, davydova2024dynamic]\n  - rung: R5\n    type: measurement-qca\n    description: >-\n      A measurement quantum cellular automaton treats each round as a local\n      causal update and exposes boundary information flow that an unordered\n      stabilizer list erases. The QCA view is useful for comparing dynamic\n      phases, while the literal Schedule remains the executable source for\n      this entry.\n    origin: {kind: curated, ref: aasen2023mqca}\n    refs: [aasen2023mqca]\ncategories:\n  - {id: dynamical, origin: {kind: curated, ref: davydova2024dynamic}}\n  - {id: non-css, origin: {kind: verified}}\n  - {id: topological, origin: {kind: curated, ref: davydova2024dynamic}}\nrefs:\n  - davydova2024dynamic\n  - aasen2022automorphism\n  - bombin2006topological\n  - davydova2023css\n  - hastings2021dynamically\n  - aitchison2024competing\n  - blackwell2025distance\n  - tang2025floquet\n  - wootton2022plaquettes\n  - aasen2023mqca\n  - bombin2023unifying\n  - kubica2015unfolding\n  - bauer2025nonclifford\nparams:\n  patch: >-\n    Exact finite schedule witness. The only supported literal is\n    'table8-pauli-triangle-incidence-v1'; it fixes qubit order, edge colors,\n    boundary representatives, docking sites, and all padded rounds.\nvisual_instance: table8_pauli_triangle\ntier: T2\nfit:\n  platforms:\n    - local-two-qubit-parity-measurement-array\n    - layered-color-code-architecture\n  tasks:\n    - measurement-driven-Clifford-computation\n    - spacetime-error-correction-research\n    - dynamic-boundary-design\ndecoders:\n  - id: none-known\n    status: none-known\n    gap: {target: wanted:floquet-fault-distance}\n    noise: >-\n      the complete padded Pauli-triangle schedule with data faults,\n      measurement faults, boundary docking faults, and repeated gate cycles\n    notes: >-\n      The primary work constructs candidate bulk and boundary detectors but\n      leaves completeness at the Y boundary and a full numerical\n      fault-tolerance analysis open. No protocol-specific circuit-level\n      threshold or standard decoder was found in the search completed on\n      2026-08-09. General Floquet distance and decoherence frameworks do not\n      fill this exact-family benchmark.\n    refs: [davydova2024dynamic, blackwell2025distance, tang2025floquet]\nrealizations: []\nrelations:\n  - type: floquetification_of\n    target: color_code_2d\n    how: >-\n      The protocol begins and returns to an effective two-dimensional color\n      code, but uses an ordered low-weight measurement path through different\n      instantaneous frames. The relation targets the broader static family;\n      it does not identify this schedule with the existing 6.6.6 or 4.8.8\n      finite-boundary entries.\n    refs: [davydova2024dynamic, bombin2006topological]\n  - type: special_case_of\n    target: dynamic_automorphism\n    how: >-\n      This entry fixes the two-dimensional color substrate, Pauli-triangle\n      boundary, and phi_(rbg) schedule inside the wider construction class of\n      measurement paths that realize topological automorphisms.\n    refs: [davydova2024dynamic, aasen2022automorphism]\n  - type: same_bulk_phase_as\n    target: color_666\n    how: >-\n      The reference frame has color-code topological order, while its doubled\n      microscopic qubits, Pauli boundaries, docking sites, and time-dependent\n      checks differ from the static three-color-boundary 6.6.6 constructor.\n      Bulk phase does not transfer finite parameters or decoder results.\n    refs: [davydova2024dynamic, bombin2006topological]\noperations:\n  - gate: \"SH / cyclic logical-Pauli permutation\"\n    mechanism: measurement-based\n    level: \"single-qubit Clifford frame\"\n    cost: >-\n      execute the complete padded phi_(rbg) Pauli-triangle sequence, retain\n      all measurement outcomes needed for detectors, and update the logical\n      Pauli frame; the finite constructor verifies the schedule and ISG\n      recurrence but not the cited outcome-dependent logical transport\n    origin: {kind: claimed, ref: davydova2024dynamic}\n  - gate: \"full logical Clifford group on a stack of Pauli triangles\"\n    mechanism: measurement-based\n    level: \"multi-qubit Clifford protocol\"\n    cost: >-\n      compose the two single-triangle color-permutation generators with the\n      separate double-triangle entangling sequence; the latter can require a\n      three-body boundary measurement and is not exported by this single-\n      triangle constructor\n    origin: {kind: claimed, ref: davydova2024dynamic}\n",
+    "version": "qec-atlas-card-v1"
+  },
+  "source_binding": {
+    "binding_state": "row-local-science-hold",
+    "legacy_source": {
+      "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+      "continuity": "same-path-same-bytes",
+      "path": "codes/quantum/qubits/dynamic/floquet/2d/da_color_2d.yml",
+      "sha256": "c93d49d299ad748ab4c5ff6e38b8be594a6316fdeae2b8dd8860f0382193db8b",
+      "zoo_id": "da_color_2d"
+    },
+    "source_commit": "5c11f03d77895fe46564fe792288304fe4b6a998",
+    "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:da_color_2d",
+    "source_path": "codes/quantum/qubits/dynamic/floquet/2d/da_color_2d.yml",
+    "source_sha256": "c93d49d299ad748ab4c5ff6e38b8be594a6316fdeae2b8dd8860f0382193db8b",
+    "t206_entity_ids": [
+      "eczoo-entity:da_color_2d#collection"
+    ],
+    "target_denotation_entity_ids": [
+      "eczoo-entity:da_color_2d#collection"
+    ],
+    "target_disposition": "atomic"
+  },
+  "target_version": "entry-ontology-v2"
+}

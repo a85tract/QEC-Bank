@@ -1,0 +1,90 @@
+schema: qec-atlas-da-color-dynamic-memory-v1
+id: da-color-table8-pauli-triangle-dynamic-memory
+version: 1
+entry: da_color_2d
+instance: table8_pauli_triangle
+protocol: {id: da-color-dynamic-memory, version: 1}
+constructor:
+  params: {patch: table8-pauli-triangle-incidence-v1}
+  schedule_fingerprint:
+    format: qec-atlas-schedule-pauli-strings-v1
+    sha256: a1d915401bb8b3796f9ac84ea40fb443631814c069fc15337784f45cf8917df4
+  checkmatrix_fingerprint:
+    format: stab-gauge-uint8-v1
+    stab_shape: 23x48
+    gauge_shape: null
+    sha256: fce2f04be8c6d2d2c70ab3717ad0f9b326eb151ee589219497161978d42a78d3
+rounds:
+  - {id: 0, source_round: 0, measurements: 15, one_qubit: 6, two_qubit: 9, boundary_singles: 6, docking_pairs: 3}
+  - {id: 1, source_round: 1, measurements: 16, one_qubit: 2, two_qubit: 14, boundary_singles: 2, docking_pairs: 4}
+  - {id: 2, source_round: 2, measurements: 20, one_qubit: 6, two_qubit: 14, boundary_singles: 6, docking_pairs: 4}
+  - {id: 3, source_round: 3, measurements: 16, one_qubit: 2, two_qubit: 14, boundary_singles: 2, docking_pairs: 4}
+  - {id: 4, source_round: 4, measurements: 15, one_qubit: 6, two_qubit: 9, boundary_singles: 6, docking_pairs: 3}
+  - {id: 5, source_round: 5, measurements: 16, one_qubit: 2, two_qubit: 14, boundary_singles: 2, docking_pairs: 4}
+  - {id: 6, source_round: 6, measurements: 20, one_qubit: 6, two_qubit: 14, boundary_singles: 6, docking_pairs: 4}
+  - {id: 7, source_round: 7, measurements: 16, one_qubit: 2, two_qubit: 14, boundary_singles: 2, docking_pairs: 4}
+  - {id: 8, source_round: 8, measurements: 15, one_qubit: 6, two_qubit: 9, boundary_singles: 6, docking_pairs: 3}
+window:
+  rounds: 9
+  startup_rounds: [0, 1, 2, 3, 4]
+  steady_rounds: [5, 6, 7]
+  terminal_rounds: [8]
+  fault_rounds: [5, 6]
+  logical_baseline_round: 4
+  logical_terminal_round: 8
+detectors:
+  derivation: signed-dependent-measurement-parity-v1
+  columns: ordered-measurement-outcomes-t0-through-t8
+  row_order: causal-round-measurement
+  phases:
+    startup: [0, 1, 2, 3, 4]
+    steady: [5, 6, 7]
+    terminal: [8]
+logical_frame:
+  transport: signed-symplectic-isg-history-v1
+  basis: deterministic-logical-basis-v1
+  basis_order: [x0, z0]
+  baseline_round: 4
+  terminal_round: 8
+  expected_automorphism:
+    id: phi_rbg
+    logical_gate: SH
+    order: 3
+    map: {x0: z0, z0: y0, y0: x0}
+    ref: davydova2024dynamic
+benign_equivalence:
+  kind: detector-affine-logical-kernel-v1
+  data_coset: post-measurement-pauli-mod-measured-operator-v1
+fault_model:
+  id: direct-support-pauli-record-v1
+  location: after-each-measurement-in-rounds-5-and-6
+  weight: one-per-faulty-location
+  spacelike:
+    mechanism: support-local-data-pauli-after-measurement
+    raw_alphabet: all-nonidentity-paulis-on-measured-support
+    quotient: measured-operator-is-vacuous
+  timelike:
+    mechanism: reported-measurement-outcome-flip
+  sector_policy: independent-no-mixed-sector-search
+search:
+  method: complete-layers-plus-independent-witness-v1
+  complete_through_weight: 2
+  witness_search_through_weight: 3
+  ordering: round-measurement-pauli-lexicographic
+  constructive_witness:
+    method: detector-signature-meet-in-middle-v1
+    max_pair_combinations: {spacelike: 25000, timelike: 1000}
+fixtures:
+  - {id: zero-history, sector: none, faults: [], expected: benign}
+  - id: single-vacuous-measured-operator
+    sector: spacelike
+    faults: [{round: 5, measurement: 0, pauli: XX}]
+    expected: benign
+  - id: single-detected-data-fault
+    sector: spacelike
+    faults: [{round: 5, measurement: 0, pauli: XZ}]
+    expected: detected
+  - id: single-detected-record-fault
+    sector: timelike
+    faults: [{round: 5, measurement: 14, flip: true}]
+    expected: detected

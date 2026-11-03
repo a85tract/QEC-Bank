@@ -1,0 +1,48 @@
+# Code-specific pedagogy over the shared schedule explorer; no Honeycomb JS.
+version: 1
+title: "Honeycomb Floquet code: three incompatible matchings, one memory"
+subtitle: "Follow the verified 3x3 measurement period and test the label distinction that protects two logical qubits."
+lattices:
+  main:
+    {entry: honeycomb, instance: L3x3, label: "Honeycomb 3x3 schedule"}
+steps:
+  - title: "Begin with a measurement round, not a static code"
+    narrative: "Round 0 contains nine disjoint two-qubit measurements and touches all eighteen qubits exactly once. The equal-edge honeycomb coordinates, torus periods, edges, and Pauli labels all come from constructor.py; matching boundary arrows identify the two pairs of opposite sides."
+    state: {lattice: main, mode: schedule, round: 0, filter: all}
+    origin: {kind: verified, method: "honeycomb.build(L1=3,L2=3) schedule export"}
+    refs: [hastings2021dynamically]
+  - title: "Read a seam as a local edge"
+    narrative: "Highlight measurement 8. Its XX support is qubits 0 and 13: the cut-open fundamental domain places the two visible pieces at identified sides, while the minimum-image displacement remains one honeycomb edge. The seam is a drawing convention, not a physical boundary."
+    state: {lattice: main, mode: schedule, round: 0, filter: X, highlight: 8}
+    origin: {kind: verified, method: "periodic coordinate and unit-edge assertions in reproduce.py"}
+    refs: [hastings2021dynamically]
+  - title: "Direction chooses Pauli type"
+    narrative: "Filter to X and highlight measurement 0: it is XX on qubits 3 and 8. Geometric direction determines the Pauli letter, but this edge belongs to round 0 because of its adjacent plaquette colors."
+    state: {lattice: main, mode: schedule, round: 0, filter: X, highlight: 0}
+    origin: {kind: verified, method: "round-0 support asserted in reproduce.py"}
+    refs: [hastings2021dynamically, kitaev2006anyons]
+  - title: "One round deliberately mixes X, Y, and Z"
+    narrative: "Switch to Y and inspect measurement 2 on qubits 1 and 2. Round 0 also contains three XX and three ZZ edges: the round label is not the Pauli-direction label."
+    state: {lattice: main, mode: schedule, round: 0, filter: Y, highlight: 2}
+    origin: {kind: verified, method: "per-round Pauli Counter in reproduce.py"}
+    refs: [hastings2021dynamically]
+  - title: "Advance the moving matching"
+    narrative: "Round 1 replaces the previous matching; highlighted XX now acts on qubits 1 and 6. Incoming checks anticommute with selected old generators, so the ISG update trades pivots instead of accumulating every edge operator."
+    state: {lattice: main, mode: schedule, round: 1, filter: X, highlight: 0}
+    origin: {kind: verified, method: "ISGTracker evolution and round-1 support"}
+    refs: [hastings2021dynamically]
+  - title: "Close the three-round period"
+    narrative: "Round 2 measurement 0 is ZZ on qubits 0 and 1. After startup, completing this third matching returns the same phase-specific ISG row space while the effective toric anyon frame has undergone electric-magnetic exchange."
+    state: {lattice: main, mode: schedule, round: 2, filter: Z, highlight: 0}
+    origin: {kind: curated, ref: hastings2021dynamically}
+    refs: [hastings2021dynamically, aasen2022automorphism]
+  - title: "Separate the displayed edges from the hidden detector"
+    narrative: "Show every round-2 edge again. The explorer displays ideal measured operators; a plaquette detector is a product of outcomes gathered across time and is therefore absent from this one-round picture."
+    state: {lattice: main, mode: schedule, round: 2, filter: all}
+    origin: {kind: curated, ref: gidney2021fault}
+    refs: [gidney2021fault, blackwell2025distance]
+  - title: "Interrogate the dangerous counterfactual"
+    narrative: "Cycle through the rounds and verify that each mixes all three Pauli types. If a proposed implementation instead shows an all-XX, all-YY, then all-ZZ sequence, it is the direction-grouped counterexample: on 6x6 its verified dynamic logical count is twenty, not two."
+    state: {lattice: main, mode: schedule, round: 0, filter: all, highlight: 1}
+    origin: {kind: verified, method: "direction-grouped 6x6 anti-test in reproduce.py"}
+    refs: [hastings2021dynamically]

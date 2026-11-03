@@ -1,0 +1,85 @@
+version: 1
+title: "Quantum expander: certify the factor before decoding the product"
+subtitle: "Keep the classical Tanner graph, HGP sectors, finite expansion witness, and decoder theorem in their proper layers."
+lattices:
+  K5: {entry: quantum_expander, instance: complete_graph_5, label: "K5 incidence finite witness"}
+  AG4: {entry: quantum_expander, instance: affine_plane_4, label: "AG(2,4) incidence finite witness"}
+item_notes:
+  K5:
+    construction:
+      "0":
+        label: "One A-side edge variable"
+        explanation: "This variable has the two endpoint vertices as neighbors; the finite left cutoff includes singleton sets only."
+      "10":
+        label: "One B-side vertex check"
+        explanation: "This vertex is incident on four edge variables; pairs of B vertices lose only their shared edge from the ideal disjoint-neighborhood count."
+    incidence:
+      "0":
+        label: "A-by-A qubits"
+        explanation: "The first product sector has one qubit for every ordered pair of factor variables."
+      "1":
+        label: "B-by-B qubits"
+        explanation: "The second product sector has one qubit for every ordered pair of factor checks."
+      "2":
+        label: "Representative X product check"
+        explanation: "Its support is the literal first row of the exported HX matrix."
+      "3":
+        label: "Representative Z product check"
+        explanation: "Its support is the literal first row of the exported HZ matrix."
+      "4":
+        label: "Lifted triangle word"
+        explanation: "Three K5 edges form a binary cycle in ker H and lift to a weight-three X logical outside the X-stabilizer row space."
+  AG4:
+    construction:
+      "0":
+        label: "One affine line"
+        explanation: "Every line contains four points; intersecting line pairs share one point and parallel pairs share none."
+      "20":
+        label: "One affine point"
+        explanation: "Every point lies on five lines; every pair of points determines one common line."
+steps:
+  - title: "Start from the classical factor"
+    narrative: "The left column is A, the ten edge variables of the K5 incidence matrix; the right column is B, its five vertex checks. The spokes are classical Tanner neighborhoods. They are not physical couplers and they are not the quantum code's Tanner graph."
+    state: {lattice: K5, mode: construction, filter: all, highlight: 0}
+    origin: {kind: verified, method: "constructor.complete_graph_incidence + factor scene"}
+    refs: [leverrier2015quantumexpander, hoory2006expander]
+  - title: "Audit both expansion directions"
+    narrative: "On A the declared finite cutoff contains singletons, whose two neighbors are all distinct. On B the cutoff includes pairs: two K5 vertices touch seven distinct edges rather than the ideal eight, so the worst deficit is one eighth, strictly below one sixth. The constructor exhausts every set inside each cutoff instead of inferring this from a spectral label."
+    state: {lattice: K5, mode: construction, filter: all, highlight: 10}
+    origin: {kind: verified, method: "constructor.expansion_certificate exhaustive subset enumeration"}
+    refs: [leverrier2015quantumexpander]
+  - title: "Form two quantum qubit sectors"
+    narrative: "Switch to incidence mode. HGP(H,H) creates an A-by-A sector with one hundred qubits and a B-by-B sector with twenty-five. The blocklength is their sum. These product coordinates are quantum data; the factor vertices left on the page are only the construction inputs."
+    state: {lattice: K5, mode: incidence, filter: all, highlight: 0}
+    origin: {kind: verified, method: "factor dimensions + qeclib.constructions.hgp"}
+    refs: [tillich2009quantum]
+  - title: "Build the complementary CSS rows"
+    narrative: "The highlighted X row combines H tensor an identity with the transpose block. The displayed Z row uses the complementary factor ordering. Their mixed tensor term appears twice in HX HZ^T and cancels over GF(2); the entry regression compares the exported matrices to the shared HGP primitive exactly."
+    state: {lattice: K5, mode: incidence, filter: X, highlight: 2}
+    origin: {kind: verified, method: "qeclib.constructions.hgp exact matrix equality and CheckMatrix.validate"}
+    refs: [tillich2009quantum]
+  - title: "Lift a classical cycle to a quantum logical"
+    narrative: "A triangle is the first nonzero binary cycle of the K5 vertex-edge matrix. Fixing one A coordinate outside the factor row space and placing that triangle in the other coordinate gives the displayed weight-three X operator. It commutes with every Z check and is not an X stabilizer; exact CSS enumeration finds no lighter logical."
+    state: {lattice: K5, mode: incidence, filter: X, highlight: 4}
+    origin: {kind: verified, method: "constructor._minimum_kernel_word + exact CSS distance enumeration"}
+    refs: [tillich2009quantum]
+  - title: "Strengthen the finite certificate, not the asymptotic claim"
+    narrative: "The affine-plane witness has twenty A-side lines of degree four and sixteen B-side points of degree five. Exhausting all singletons and pairs gives worst deficits one eighth on A and one tenth on B. This is a stronger finite cutoff than the K5 example, but the two named matrices still do not form a growing fixed-degree sequence with fixed gamma."
+    state: {lattice: AG4, mode: construction, filter: all, highlight: 20}
+    origin: {kind: verified, method: "constructor.affine_plane_4_incidence + exhaustive expansion certificate"}
+    refs: [leverrier2015quantumexpander, hoory2006expander]
+  - title: "Attach every decoder statement to its noise model"
+    narrative: "Small-set flip is a perfect-syndrome local greedy decoder whose adversarial proof uses both deficits below one sixth. The random-error result instead proves that obstructing structures are unlikely, while peeling follows resolvable erasures. A threshold or success guarantee from one regime cannot be copied into either of the others."
+    state: {lattice: K5, mode: construction, filter: all}
+    origin: {kind: curated, ref: leverrier2015quantumexpander}
+    refs: [leverrier2015quantumexpander, fawzi2017efficient, prabhu2025peeling]
+  - title: "Keep architecture outside the check matrix"
+    narrative: "The family is qLDPC because an intended asymptotic factor sequence keeps degrees bounded, not because the finite visual is geometrically local. Long-range routing, noisy measurement, ancillas, and recovery scheduling belong to the fault-tolerance architecture. No exact-family repeated-syndrome experiment was found in the dated search completed on 2026-08-09."
+    state: {lattice: K5, mode: incidence, filter: all}
+    origin: {kind: curated, ref: delfosse2021measurement}
+    refs: [delfosse2021measurement, fawzi2018constant]
+  - title: "Interrogate one layer at a time"
+    narrative: "Leave the K5 witness open. In construction mode ask which factor subset is being certified; in incidence mode trace which Kronecker block creates a quantum support; in logical mode verify the lifted factor word. Before quoting a decoder or operation, name the syndrome model and the extra protocol machinery."
+    state: {lattice: K5, mode: construction, filter: all}
+    origin: {kind: verified, method: "quantum-expander-factor-product-scene-v1"}
+    refs: [leverrier2015quantumexpander, tillich2009quantum]

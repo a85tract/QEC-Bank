@@ -1,0 +1,21 @@
+- label: L3
+  params: {L: 3}
+  claims:
+    - {property: n, value: 13, origin: {kind: verified}}
+    - {property: k, value: 1, origin: {kind: verified}}
+    - {property: d, exact: 3, origin: {kind: verified}}
+    - {property: css, value: true, origin: {kind: verified}}
+- label: L4
+  params: {L: 4}
+  claims:
+    - {property: n, value: 25, origin: {kind: verified}}
+    - {property: k, value: 1, origin: {kind: verified}}
+    - {property: d, exact: 4, origin: {kind: verified}}
+    - {property: css, value: true, origin: {kind: verified}}
+- label: L5
+  params: {L: 5}
+  claims:
+    - {property: n, value: 41, origin: {kind: verified}}
+    - {property: k, value: 1, origin: {kind: verified}}
+    - {property: d, lower: {value: 5}, upper: {value: 5, method: rand-lowweight-v1, seed: 0, iters: 2000}, origin: {kind: bounded, ref: dennis2002topological}}
+    - {property: css, value: true, origin: {kind: verified}}

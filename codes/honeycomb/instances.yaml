@@ -1,0 +1,15 @@
+- label: L3x3
+  params: {L1: 3, L2: 3}
+  claims:
+    - {property: n, value: 18, origin: {kind: verified}}
+    - {property: k, value: 2, origin: {kind: verified}}
+    - {property: css, value: false, origin: {kind: verified}}
+    - {property: dynamic_k, value: 2, origin: {kind: verified}}
+# 6x6 discriminates the HH coloring schedule from the direction-grouped bug (which gives dk=20 here)
+- label: L6x6
+  params: {L1: 6, L2: 6}
+  claims:
+    - {property: n, value: 72, origin: {kind: verified}}
+    - {property: k, value: 2, origin: {kind: verified}}
+    - {property: css, value: false, origin: {kind: verified}}
+    - {property: dynamic_k, value: 2, origin: {kind: verified}}

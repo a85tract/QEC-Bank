@@ -1,0 +1,2740 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Expanding the two repetition-factor boundary maps gives sparse binary X and Z check matrices. Their stacked symplectic rows are the universal executable baseline used for commutation, rank, logical, and distance calculations.",
+        "origin": {
+          "converter": "surface.build HGP output -> CheckMatrix.from_css",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "tillich2009quantum"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      "evidence_id": "atlas-evidence:surface:views:0@c0b21bef02dc23daa370aa1e067b430bd939e41b68a5a97d56d299b8ffb74cd8",
+      "field": "views",
+      "id": "atlas-assertion:surface:views:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/views/0",
+      "source_sha256": "c0b21bef02dc23daa370aa1e067b430bd939e41b68a5a97d56d299b8ffb74cd8",
+      "version_id": "atlas-assertion:surface:views:0@sha256:c0b21bef02dc23daa370aa1e067b430bd939e41b68a5a97d56d299b8ffb74cd8"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Two open length-L repetition chains form the two axes. The two HGP qubit blocks are bit×bit and check×check, while X and Z checks let one parity map act at a time; open-chain corank is exactly what leaves one logical qubit rather than the toric code's two.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "tillich2009quantum"
+        ],
+        "rung": "R2",
+        "type": "hypergraph-product"
+      },
+      "evidence_id": "atlas-evidence:surface:views:1@728915b9568d26c92263afc36b69804bce482df10afaf4a938427f15eae32da3",
+      "field": "views",
+      "id": "atlas-assertion:surface:views:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/views/1",
+      "source_sha256": "728915b9568d26c92263afc36b69804bce482df10afaf4a938427f15eae32da3",
+      "version_id": "atlas-assertion:surface:views:1@sha256:728915b9568d26c92263afc36b69804bce482df10afaf4a938427f15eae32da3"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The checks are the boundary and coboundary maps of a relative chain complex. Logical strings are relative cycles modulo boundaries, and distance is the shortest nontrivial primal or dual relative cycle.",
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi1998quantum"
+        },
+        "refs": [
+          "bravyi1998quantum",
+          "bombin2007homological"
+        ],
+        "rung": "R2",
+        "type": "homological"
+      },
+      "evidence_id": "atlas-evidence:surface:views:2@397b6b6e8703ee77c4907534d71980fbae472f37f395ce0b403fbb1a13087d36",
+      "field": "views",
+      "id": "atlas-assertion:surface:views:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/views/2",
+      "source_sha256": "397b6b6e8703ee77c4907534d71980fbae472f37f395ce0b403fbb1a13087d36",
+      "version_id": "atlas-assertion:surface:views:2@sha256:397b6b6e8703ee77c4907534d71980fbae472f37f395ce0b403fbb1a13087d36"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Error chains with a fixed syndrome become disorder sectors of a random-bond Ising model. Maximum-likelihood decoding compares their free energies; minimum-weight matching is the zero-temperature approximation that keeps energy but discards path entropy.",
+        "origin": {
+          "kind": "curated",
+          "ref": "dennis2002topological"
+        },
+        "refs": [
+          "dennis2002topological",
+          "wang2003confinement"
+        ],
+        "rung": "R5",
+        "type": "statistical-mechanics"
+      },
+      "evidence_id": "atlas-evidence:surface:views:3@2b7bae17dbfb2457ea25768dcec712ce4b6f2e5783c0752bf691f51b44591a6e",
+      "field": "views",
+      "id": "atlas-assertion:surface:views:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/views/3",
+      "source_sha256": "2b7bae17dbfb2457ea25768dcec712ce4b6f2e5783c0752bf691f51b44591a6e",
+      "version_id": "atlas-assertion:surface:views:3@sha256:2b7bae17dbfb2457ea25768dcec712ce4b6f2e5783c0752bf691f51b44591a6e"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A phase-free ZX diagram and a CSS code encode the same binary linear subspace. In this language rough/smooth merge and split operations become spider maps, so lattice surgery is diagram rewriting rather than an opaque stabilizer schedule.",
+        "origin": {
+          "kind": "curated",
+          "ref": "kissinger2022phasefree"
+        },
+        "refs": [
+          "kissinger2022phasefree",
+          "debeaudrap2020zx",
+          "bombin2023unifying"
+        ],
+        "rung": "R5",
+        "type": "zx"
+      },
+      "evidence_id": "atlas-evidence:surface:views:4@ef871e8c4e2f805029df42143284ed5bff91e654914a40c6e95a4b2b99644981",
+      "field": "views",
+      "id": "atlas-assertion:surface:views:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/views/4",
+      "source_sha256": "ef871e8c4e2f805029df42143284ed5bff91e654914a40c6e95a4b2b99644981",
+      "version_id": "atlas-assertion:surface:views:4@sha256:ef871e8c4e2f805029df42143284ed5bff91e654914a40c6e95a4b2b99644981"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The toric bulk underlying the planar patch becomes a quantized graph: star and plaquette checks are unified as cycle operators, e/m duality is graph self-duality, and charged string diagrams expose the fermionic composite and twist-defect bookkeeping.",
+        "dialect": "quon",
+        "gap": {
+          "target": "wanted:fermionic-compiler"
+        },
+        "origin": {
+          "kind": "curated",
+          "ref": "liu2019quantized"
+        },
+        "refs": [
+          "liu2017quon",
+          "liu2019quantized"
+        ],
+        "rung": "R5",
+        "type": "fermionic"
+      },
+      "evidence_id": "atlas-evidence:surface:views:5@4e29a1d845bc3c0e84d9b27c3d5a01b7bba6b4bdf48e569db50390901e24cd5e",
+      "field": "views",
+      "id": "atlas-assertion:surface:views:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/views/5",
+      "source_sha256": "4e29a1d845bc3c0e84d9b27c3d5a01b7bba6b4bdf48e569db50390901e24cd5e",
+      "version_id": "atlas-assertion:surface:views:5@sha256:4e29a1d845bc3c0e84d9b27c3d5a01b7bba6b4bdf48e569db50390901e24cd5e"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The ground space is a PEPS whose virtual Z2 symmetry generates topological degeneracy, local indistinguishability, and anyonic excitations. The code's topological order is therefore a constraint on the local tensor, not merely a property asserted from its Hamiltonian.",
+        "origin": {
+          "kind": "curated",
+          "ref": "schuch2010peps"
+        },
+        "refs": [
+          "schuch2010peps"
+        ],
+        "rung": "R5",
+        "type": "tensor-network"
+      },
+      "evidence_id": "atlas-evidence:surface:views:6@0c27bdecc47d490793bbfbd6e67f055fcaeb51ce96ae7992acc08fa53c631985",
+      "field": "views",
+      "id": "atlas-assertion:surface:views:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/views/6",
+      "source_sha256": "0c27bdecc47d490793bbfbd6e67f055fcaeb51ce96ae7992acc08fa53c631985",
+      "version_id": "atlas-assertion:surface:views:6@sha256:0c27bdecc47d490793bbfbd6e67f055fcaeb51ce96ae7992acc08fa53c631985"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:surface:categories:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/categories/0",
+      "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "version_id": "atlas-assertion:surface:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "dennis2002topological"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:categories:1@cc0ae2970806cfe65a094cf55b0cf158102776453cd3829cc48d6b19b60bb069",
+      "field": "categories",
+      "id": "atlas-assertion:surface:categories:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/categories/1",
+      "source_sha256": "cc0ae2970806cfe65a094cf55b0cf158102776453cd3829cc48d6b19b60bb069",
+      "version_id": "atlas-assertion:surface:categories:1@sha256:cc0ae2970806cfe65a094cf55b0cf158102776453cd3829cc48d6b19b60bb069"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "hypergraph-product",
+        "origin": {
+          "kind": "curated",
+          "ref": "tillich2009quantum"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:categories:2@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "field": "categories",
+      "id": "atlas-assertion:surface:categories:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/categories/2",
+      "source_sha256": "98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "version_id": "atlas-assertion:surface:categories:2@sha256:98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "independent X/Z noise with perfect syndrome (code capacity)",
+        "notes": "Matching reaches about 10.3%, while maximum-likelihood decoding reaches about 10.9% under the corresponding independent-noise convention. The gap is path entropy: matching minimizes chain energy rather than class free energy.",
+        "refs": [
+          "dennis2002topological",
+          "wang2003confinement",
+          "higgott2022pymatching"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:surface:decoders:0@ab0505054f1c51670dfeefc0c0e45a5e8d49adb158ec26759285881029497650",
+      "field": "decoders",
+      "id": "atlas-assertion:surface:decoders:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/decoders/0",
+      "source_sha256": "ab0505054f1c51670dfeefc0c0e45a5e8d49adb158ec26759285881029497650",
+      "version_id": "atlas-assertion:surface:decoders:0@sha256:ab0505054f1c51670dfeefc0c0e45a5e8d49adb158ec26759285881029497650"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "phenomenological data and syndrome noise over repeated rounds",
+        "notes": "The spacetime matching transition is about 2.9% for the symmetric phenomenological model studied by Wang, Harrington, and Preskill. This number is not a circuit-level gate threshold.",
+        "refs": [
+          "wang2003confinement"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:surface:decoders:1@8a2840feb817b498d17745ec3854f7cb00de21594b88d773b640eef9313683fc",
+      "field": "decoders",
+      "id": "atlas-assertion:surface:decoders:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/decoders/1",
+      "source_sha256": "8a2840feb817b498d17745ec3854f7cb00de21594b88d773b640eef9313683fc",
+      "version_id": "atlas-assertion:surface:decoders:1@sha256:8a2840feb817b498d17745ec3854f7cb00de21594b88d773b640eef9313683fc"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "circuit-level depolarizing syndrome-extraction circuit",
+        "notes": "Fowler's scheduled eight-step syndrome circuit has a threshold near 0.57% per circuit step, or roughly 4% per full cycle in that paper's stochastic model. The value is schedule-, gate-set-, and decoder-dependent, so it must not be compared directly with the code-capacity figures above.",
+        "refs": [
+          "fowler2012surface"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:surface:decoders:2@9840fd1405f2c2084166e9038051fa0d8b0b33e4e41b114411efca5d34f1114f",
+      "field": "decoders",
+      "id": "atlas-assertion:surface:decoders:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/decoders/2",
+      "source_sha256": "9840fd1405f2c2084166e9038051fa0d8b0b33e4e41b114411efca5d34f1114f",
+      "version_id": "atlas-assertion:surface:decoders:2@sha256:9840fd1405f2c2084166e9038051fa0d8b0b33e4e41b114411efca5d34f1114f"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "union-find",
+        "noise": "perfect syndrome and faulty repeated syndrome benchmarks",
+        "notes": "The toric-bulk benchmarks give about 9.9% with perfect syndrome and 2.6% with faulty syndrome measurements. Union-find trades a small threshold loss relative to matching for almost-linear worst-case processing.",
+        "refs": [
+          "delfosse2021almost"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:surface:decoders:3@2fe374ef6e24bdbc5bac8c356fbc750e0b706ad7f1083d17a7ee6493cbd24715",
+      "field": "decoders",
+      "id": "atlas-assertion:surface:decoders:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/decoders/3",
+      "source_sha256": "2fe374ef6e24bdbc5bac8c356fbc750e0b706ad7f1083d17a7ee6493cbd24715",
+      "version_id": "atlas-assertion:surface:decoders:3@sha256:2fe374ef6e24bdbc5bac8c356fbc750e0b706ad7f1083d17a7ee6493cbd24715"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "renormalization-group",
+        "noise": "code-capacity Pauli noise on surface/toric-code lattices",
+        "notes": "Hierarchical coarse-graining estimates the probability of logical classes rather than committing immediately to one globally lightest chain. It exposes a distinct speed/accuracy tradeoff and generalizes naturally to other topological-code lattices.",
+        "refs": [
+          "duclos2010fast"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:surface:decoders:4@f15012c7cd9f92a6e8fdafe05d33f735c38beaac399b3dc796e8b26fde0cc67b",
+      "field": "decoders",
+      "id": "atlas-assertion:surface:decoders:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/decoders/4",
+      "source_sha256": "f15012c7cd9f92a6e8fdafe05d33f735c38beaac399b3dc796e8b26fde0cc67b",
+      "version_id": "atlas-assertion:surface:decoders:4@sha256:f15012c7cd9f92a6e8fdafe05d33f735c38beaac399b3dc796e8b26fde0cc67b"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "tensor-network-mld",
+        "noise": "independent X/Z noise exactly; general Pauli noise approximately",
+        "notes": "Exact free-fermion contraction is available for the restricted independent channel, while matrix-product-state contraction approximates maximum likelihood for more general noise. The bond dimension controls the accuracy/runtime tradeoff.",
+        "refs": [
+          "bravyi2014efficient"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:surface:decoders:5@db2e745abe94581dcd70120e58785723188fc810971660820082cbcb379f8017",
+      "field": "decoders",
+      "id": "atlas-assertion:surface:decoders:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/decoders/5",
+      "source_sha256": "db2e745abe94581dcd70120e58785723188fc810971660820082cbcb379f8017",
+      "version_id": "atlas-assertion:surface:decoders:5@sha256:db2e745abe94581dcd70120e58785723188fc810971660820082cbcb379f8017"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "bp-osd",
+        "noise": "CSS parity-check decoding with calibrated soft information",
+        "notes": "Belief propagation supplies qubit reliabilities and ordered-statistics post-processing repairs non-convergence on the lattice's short cycles. It is a portable qLDPC baseline rather than a geometry-specialized decoder.",
+        "refs": [
+          "roffe2020decoding"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:surface:decoders:6@8220bc3371867a5e37114c799f7e3635d8edef24a991b9751c3b7f2c59fb8883",
+      "field": "decoders",
+      "id": "atlas-assertion:surface:decoders:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/decoders/6",
+      "source_sha256": "8220bc3371867a5e37114c799f7e3635d8edef24a991b9751c3b7f2c59fb8883",
+      "version_id": "atlas-assertion:surface:decoders:6@sha256:8220bc3371867a5e37114c799f7e3635d8edef24a991b9751c3b7f2c59fb8883"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "belief-matching",
+        "noise": "correlated circuit-level detector faults",
+        "notes": "Belief propagation first assigns correlated fault mechanisms to detector events, then reweights a matching graph. This retains the mature matching backend while correcting the independent-edge approximation.",
+        "refs": [
+          "higgott2023beliefmatching"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:surface:decoders:7@7326233c26fcf9ba41b909a2ece1befa9bf17ea0fdd1291714851bf689a5ec86",
+      "field": "decoders",
+      "id": "atlas-assertion:surface:decoders:7",
+      "index": 7,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/decoders/7",
+      "source_sha256": "7326233c26fcf9ba41b909a2ece1befa9bf17ea0fdd1291714851bf689a5ec86",
+      "version_id": "atlas-assertion:surface:decoders:7@sha256:7326233c26fcf9ba41b909a2ece1befa9bf17ea0fdd1291714851bf689a5ec86"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "O(d) rounds per merge/split plus an ancilla routing patch",
+        "gate": "CNOT",
+        "level": "Clifford",
+        "mechanism": "surgery",
+        "origin": {
+          "kind": "claimed",
+          "ref": "horsman2012surface"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:0@7d7557bee880e2e9a71963920368371cccaa7904407a8ee4e920996a685662a9",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/0",
+      "source_sha256": "7d7557bee880e2e9a71963920368371cccaa7904407a8ee4e920996a685662a9",
+      "version_id": "atlas-assertion:surface:operations:0@sha256:7d7557bee880e2e9a71963920368371cccaa7904407a8ee4e920996a685662a9"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "constant-depth physical CNOT layer; transport and correlated-decoding costs remain",
+        "gate": "CNOT",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "bluvstein2024logical"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:1@8debfa6a631175a044d87f1aa9df947d4c679857800f6a4d38e0c4e8607b9c14",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/1",
+      "source_sha256": "8debfa6a631175a044d87f1aa9df947d4c679857800f6a4d38e0c4e8607b9c14",
+      "version_id": "atlas-assertion:surface:operations:1@sha256:8debfa6a631175a044d87f1aa9df947d4c679857800f6a4d38e0c4e8607b9c14"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "O(d) or more rounds and a distance-sized reserved hole trajectory",
+        "gate": "CNOT",
+        "level": "Clifford",
+        "mechanism": "braiding",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fowler2012surface"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:2@b224e123a6872a06028efce567e6d1f0005aabda2acee3c9d5d3250b8c425a05",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/2",
+      "source_sha256": "b224e123a6872a06028efce567e6d1f0005aabda2acee3c9d5d3250b8c425a05",
+      "version_id": "atlas-assertion:surface:operations:2@sha256:b224e123a6872a06028efce567e6d1f0005aabda2acee3c9d5d3250b8c425a05"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "twist/corner code deformation over distance-preserving paths",
+        "gate": "single-qubit Clifford",
+        "level": "Clifford",
+        "mechanism": "braiding",
+        "origin": {
+          "kind": "claimed",
+          "ref": "brown2017poking"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:3@aa40c28569574f6b16b606cb1dffe88b87aea293ba9864f8868928eec019c710",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/3",
+      "source_sha256": "aa40c28569574f6b16b606cb1dffe88b87aea293ba9864f8868928eec019c710",
+      "version_id": "atlas-assertion:surface:operations:3@sha256:aa40c28569574f6b16b606cb1dffe88b87aea293ba9864f8868928eec019c710"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "constant-depth gates plus a fold or equivalent qubit permutation",
+        "gate": "H / S",
+        "level": "Clifford",
+        "mechanism": "fold-transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "moussa2016transversal"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:4@f73eb797f43374f461dfa6896ae838e80863cf131a1f11e8280215c9c53af675",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/4",
+      "source_sha256": "f73eb797f43374f461dfa6896ae838e80863cf131a1f11e8280215c9c53af675",
+      "version_id": "atlas-assertion:surface:operations:4@sha256:f73eb797f43374f461dfa6896ae838e80863cf131a1f11e8280215c9c53af675"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "prepare a physical product state, measure the complementary stabilizers for d rounds, and decode the spacetime record",
+        "gate": "logical |0> / |+> initialization",
+        "level": "stabilizer preparation",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fowler2012surface"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:5@0465aa0d5ddf08cd3d0b844e6abaa4168d90f9f4471f100168010d3ca66d6230",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/5",
+      "source_sha256": "0465aa0d5ddf08cd3d0b844e6abaa4168d90f9f4471f100168010d3ca66d6230",
+      "version_id": "atlas-assertion:surface:operations:5@sha256:0465aa0d5ddf08cd3d0b844e6abaa4168d90f9f4471f100168010d3ca66d6230"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "destructively measure all data qubits in the selected basis and decode the final data/syndrome history",
+        "gate": "logical Z / X readout",
+        "level": "stabilizer measurement",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fowler2012surface"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:6@77072f53d92472d103779f9aec2b185587ce55c21b378eef1163fb489eb36138",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/6",
+      "source_sha256": "77072f53d92472d103779f9aec2b185587ce55c21b378eef1163fb489eb36138",
+      "version_id": "atlas-assertion:surface:operations:6@sha256:77072f53d92472d103779f9aec2b185587ce55c21b378eef1163fb489eb36138"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "a classical frame update after decoded logical measurements; no immediate physical Pauli layer is required",
+        "gate": "Pauli-frame update",
+        "level": "Clifford bookkeeping",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fowler2012surface"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:7@80f056cd731601f9e16342c34ab84107782b6ade33130990d05899b033f52771",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:7",
+      "index": 7,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/7",
+      "source_sha256": "80f056cd731601f9e16342c34ab84107782b6ade33130990d05899b033f52771",
+      "version_id": "atlas-assertion:surface:operations:7@sha256:80f056cd731601f9e16342c34ab84107782b6ade33130990d05899b033f52771"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "inject and distill a magic state, then consume it by gate teleportation; factory spacetime dominates",
+        "gate": "T",
+        "level": "non-Clifford",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "bravyi2005magic"
+        }
+      },
+      "evidence_id": "atlas-evidence:surface:operations:8@063c565b27cc0d7af18e732ce7f589db9647ecbca30fbd229293ef39e285e3a7",
+      "field": "operations",
+      "id": "atlas-assertion:surface:operations:8",
+      "index": 8,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/operations/8",
+      "source_sha256": "063c565b27cc0d7af18e732ce7f589db9647ecbca30fbd229293ef39e285e3a7",
+      "version_id": "atlas-assertion:surface:operations:8@sha256:063c565b27cc0d7af18e732ce7f589db9647ecbca30fbd229293ef39e285e3a7"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Scaling from distance 3 to distance 5 reduced logical error per cycle from the distance-3 ensemble average 3.028% ± 0.023% to 2.914% ± 0.016%. This is the 2023 distance-scaling result; it did not report the later Willow suppression factor.",
+        "platform": "Google superconducting square-grid processors",
+        "refs": [
+          "google2023suppressing"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:surface:realizations:0@30d1fa107aa40a0d981e773f927cb9f9a39b293d8b536d85a9a638275812da57",
+      "field": "realizations",
+      "id": "atlas-assertion:surface:realizations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/realizations/0",
+      "source_sha256": "30d1fa107aa40a0d981e773f927cb9f9a39b293d8b536d85a9a638275812da57",
+      "version_id": "atlas-assertion:surface:realizations:0@sha256:30d1fa107aa40a0d981e773f927cb9f9a39b293d8b536d85a9a638275812da57"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A distance-7 patch reached 0.143% ± 0.003% logical error per cycle and each distance increase of two suppressed error by Λ = 2.14 ± 0.02, with logical lifetime beyond the best physical qubit.",
+        "platform": "Google Willow superconducting processor",
+        "refs": [
+          "google2024below"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:surface:realizations:1@9be2f39e4a6a377236d4f1b102630b02714b2b62d3fa4eef6913dcdf7fe6eff1",
+      "field": "realizations",
+      "id": "atlas-assertion:surface:realizations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/realizations/1",
+      "source_sha256": "9be2f39e4a6a377236d4f1b102630b02714b2b62d3fa4eef6913dcdf7fe6eff1",
+      "version_id": "atlas-assertion:surface:realizations:1@sha256:9be2f39e4a6a377236d4f1b102630b02714b2b62d3fa4eef6913dcdf7fe6eff1"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Hexagonal-connectivity, walking data/measure-role, and iSWAP-based surface-code schedules all showed distance-dependent error suppression, demonstrating that the code can be adapted to connectivity, leakage, and native-gate constraints.",
+        "platform": "Google Willow dynamic superconducting layouts",
+        "refs": [
+          "eickbusch2024dynamic"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:surface:realizations:2@a41c0bc44814f064b3fd146e3fc21cb2d3187ac402af2d28cabd59a669cf0803",
+      "field": "realizations",
+      "id": "atlas-assertion:surface:realizations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/realizations/2",
+      "source_sha256": "a41c0bc44814f064b3fd146e3fc21cb2d3187ac402af2d28cabd59a669cf0803",
+      "version_id": "atlas-assertion:surface:realizations:2@sha256:a41c0bc44814f064b3fd146e3fc21cb2d3187ac402af2d28cabd59a669cf0803"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A 17-qubit distance-3 Surface-17 patch executed repeated correction cycles, providing an independent superconducting realization of a planar surface-code memory.",
+        "platform": "USTC Zuchongzhi 2.1 superconducting processor",
+        "refs": [
+          "zhao2022realization"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:surface:realizations:3@216d885051d22598cd489811d1b48d6ee241e6140791f27d4c3a3ddee6159282",
+      "field": "realizations",
+      "id": "atlas-assertion:surface:realizations:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/realizations/3",
+      "source_sha256": "216d885051d22598cd489811d1b48d6ee241e6140791f27d4c3a3ddee6159282",
+      "version_id": "atlas-assertion:surface:realizations:3@sha256:216d885051d22598cd489811d1b48d6ee241e6140791f27d4c3a3ddee6159282"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Movable atoms realized surface-code patches inside a multi-code logical processor and enabled transversal inter-patch entangling gates by aligning corresponding data qubits. This is a logical-operations demonstration, not a below-threshold surface-memory claim; for the distance-five and distance-seven surface blocks, logical input-state preparation was not itself fault-tolerant.",
+        "platform": "reconfigurable neutral-atom arrays",
+        "refs": [
+          "bluvstein2024logical"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:surface:realizations:4@5609214386a63a1043665a2db117ee3b1f8a98b5b80052ac7f6b8123631b2d12",
+      "field": "realizations",
+      "id": "atlas-assertion:surface:realizations:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/realizations/4",
+      "source_sha256": "5609214386a63a1043665a2db117ee3b1f8a98b5b80052ac7f6b8123631b2d12",
+      "version_id": "atlas-assertion:surface:realizations:4@sha256:5609214386a63a1043665a2db117ee3b1f8a98b5b80052ac7f6b8123631b2d12"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "HGP(rep_L, rep_L) — the planar surface code is the hypergraph product of two repetition codes",
+        "refs": [
+          "tillich2009quantum"
+        ],
+        "target": "hgp",
+        "type": "product_of"
+      },
+      "evidence_id": "atlas-evidence:surface:relations:0@d3d61d8f556066a535b33da4aa86369de9b31dfd7fa49bbca2a1a5e768e42129",
+      "field": "relations",
+      "id": "atlas-assertion:surface:relations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/relations/0",
+      "source_sha256": "d3d61d8f556066a535b33da4aa86369de9b31dfd7fa49bbca2a1a5e768e42129",
+      "version_id": "atlas-assertion:surface:relations:0@sha256:d3d61d8f556066a535b33da4aa86369de9b31dfd7fa49bbca2a1a5e768e42129"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:surface#subject",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "The same square-lattice star/plaquette bulk is obtained from HGP(rep_L, rep_L); open repetition factors give the planar Surface patch, while periodic factors close it into the toric code.",
+        "refs": [
+          "kitaev2003fault",
+          "dennis2002topological",
+          "tillich2009quantum"
+        ],
+        "target": "toric",
+        "type": "same_bulk_phase_as"
+      },
+      "evidence_id": "atlas-evidence:surface:relations:1@1d1e6c8370cd46a2f2181536d92e88e92dd42dfa505165358be207de4c9adce5",
+      "field": "relations",
+      "id": "atlas-assertion:surface:relations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "preserve-narrow-child-scope",
+      "source_locator": "surface/card.yaml#/relations/1",
+      "source_sha256": "1d1e6c8370cd46a2f2181536d92e88e92dd42dfa505165358be207de4c9adce5",
+      "version_id": "atlas-assertion:surface:relations:1@sha256:1d1e6c8370cd46a2f2181536d92e88e92dd42dfa505165358be207de4c9adce5"
+    }
+  ],
+  "compatibility_projection": {
+    "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+    "status": "lossy"
+  },
+  "completion_scopes": [
+    {
+      "authority": "C2 does not transfer child completeness to parent",
+      "entity_id": "eczoo-entity:surface#collection",
+      "status": "new-broad-skeleton",
+      "tier": "T0"
+    },
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "atlas-entity:surface#subject",
+      "status": "preserved-child-scope",
+      "tier": "gold"
+    }
+  ],
+  "decision_class": "scoped-expansion",
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family",
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:surface#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:surface#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+        "status": "lossy"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/surface/card.yaml#/identity",
+          "atlas:atlas/surface/card.yaml#/eczoo/zoo_id",
+          "t205:atlas/surface/card.yaml",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:surface#collection@qec-atlas-eczoo-ontology-v2"
+    },
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "atlas-entity:surface#subject",
+      "lineage": {
+        "action": "atlas-scope-made-explicit",
+        "previous_version_ids": [
+          "atlas-page:surface@legacy-subject"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "C2-scoped-expansion",
+        "evidence_locators": [
+          "atlas:atlas/surface/card.yaml#/identity",
+          "atlas:atlas/surface/card.yaml#/eczoo/zoo_id",
+          "t205:atlas/surface/card.yaml",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Planar unrotated rough/smooth rectangular Surface-code family.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "atlas-entity:surface#subject@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:surface",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "8cf58bd8f1e0c445b9d92c60ff239bc7c5e65ca1eb501d47e0aff206c1b55cd6",
+          "payload_sha256": "f35fbf8644996028eb92fdf9ef90364c255d03c98b6beb1a31e92673d8b33c6b",
+          "semantic_hash": "8442e560b9de5fb4f2806d77e7d48829a033113cfb0f818ecccc6fba34f88a8d"
+        },
+        "id": "atlas-instance:surface:L3",
+        "label": "L3",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8442e560b9de5fb4f2806d77e7d48829a033113cfb0f818ecccc6fba34f88a8d:small-exact-distance-enumeration:52a4fc3757b12865de549e0ca88987328c340a7f0c5a6ca6ee85298889715212@1",
+            "certificate:8442e560b9de5fb4f2806d77e7d48829a033113cfb0f818ecccc6fba34f88a8d:structural-validity:90cb639a139a5ed3a243c9fd25a70ad9189cfa18f8fc27b664454876b043e15d@1"
+          ],
+          "instance_record_sha256": "a214eb81c200d1e3b44ad4c355f15842cb30b0886a3ced9777e92a14e40e4d88",
+          "lean_report_sha256": "a66d607d9167c3c37c2ed7de7b2ef09a20547e13ffee351a8843132e9f453f09",
+          "semantic_hash": "8442e560b9de5fb4f2806d77e7d48829a033113cfb0f818ecccc6fba34f88a8d"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "ff247d8df525f8fed74d1bd0ac63b40b47fe63f8900866c2350fcb3b37b7b8f5",
+        "v2_envelope_id": "formal-ir-v2:surface:L3"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "8cf58bd8f1e0c445b9d92c60ff239bc7c5e65ca1eb501d47e0aff206c1b55cd6",
+          "payload_sha256": "f8e5ca7fdbe85379505f7b18517a6ee12314180f0dacfbb5f0a3554667b6146e",
+          "semantic_hash": "14dbc9bd9de60b8374e0077d1bc7ed34e204a0b55de5dafed1253333a25f2fa0"
+        },
+        "id": "atlas-instance:surface:L4",
+        "label": "L4",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:14dbc9bd9de60b8374e0077d1bc7ed34e204a0b55de5dafed1253333a25f2fa0:small-exact-distance-enumeration:cb2e25f8b19c6477679e64577cd7d6ccba3819e4b676350c90a441d57824146c@1",
+            "certificate:14dbc9bd9de60b8374e0077d1bc7ed34e204a0b55de5dafed1253333a25f2fa0:structural-validity:b2e10e5e9f5ae0eeabd2a91777a7c0dca912364f95756ee1028859a2f4ea5c60@1"
+          ],
+          "instance_record_sha256": "1a4f8abc7a9f634afbb0464a1ecb929c87d99164725f159030431cce53497ae4",
+          "lean_report_sha256": "531f34cda86ad054316e85de4331ee91bf66cfaa5e60dda49b428ffc016a9ee8",
+          "semantic_hash": "14dbc9bd9de60b8374e0077d1bc7ed34e204a0b55de5dafed1253333a25f2fa0"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "d7fbca855a9e26228e00aaef47238740e3bfb8255ac6989c88742c3677e7babd",
+        "v2_envelope_id": "formal-ir-v2:surface:L4"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "8cf58bd8f1e0c445b9d92c60ff239bc7c5e65ca1eb501d47e0aff206c1b55cd6",
+          "payload_sha256": "c957128d205e468dd64d4ddf2ff1f91a86da0fba7426c400a71e3c24fc8cf1ea",
+          "semantic_hash": "df1d7dff6245677c9b49872cce27bcf70cf2b167483dd67fa8ce077955d82c57"
+        },
+        "id": "atlas-instance:surface:L5",
+        "label": "L5",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:df1d7dff6245677c9b49872cce27bcf70cf2b167483dd67fa8ce077955d82c57:structural-validity:c2cd103605d713b02273ce15483f89b2db621df0e2ebe0223432ae20e50aa800@1"
+          ],
+          "instance_record_sha256": "a1489a85cd0a2f7a9b61b7f672cd88ff6557d18fb1bc1e17a3ade4bc9a8a11e3",
+          "lean_report_sha256": "d803e17ab2a5f63ad36318d92c9cbb91940eb48caaebdbe434a1e8bdaaffa787",
+          "semantic_hash": "df1d7dff6245677c9b49872cce27bcf70cf2b167483dd67fa8ce077955d82c57"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b37e8f0bec7a2f5168b8650b0dee9b8b30c0198ed084c2e9fd65d35f5e84eb2a",
+        "v2_envelope_id": "formal-ir-v2:surface:L5"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 3,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "atlas-entity:surface#subject"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "id": "surface",
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:surface:views:0",
+      "atlas-assertion:surface:views:1",
+      "atlas-assertion:surface:views:2",
+      "atlas-assertion:surface:views:3",
+      "atlas-assertion:surface:views:4",
+      "atlas-assertion:surface:views:5",
+      "atlas-assertion:surface:views:6",
+      "atlas-assertion:surface:categories:0",
+      "atlas-assertion:surface:categories:1",
+      "atlas-assertion:surface:categories:2",
+      "atlas-assertion:surface:decoders:0",
+      "atlas-assertion:surface:decoders:1",
+      "atlas-assertion:surface:decoders:2",
+      "atlas-assertion:surface:decoders:3",
+      "atlas-assertion:surface:decoders:4",
+      "atlas-assertion:surface:decoders:5",
+      "atlas-assertion:surface:decoders:6",
+      "atlas-assertion:surface:decoders:7",
+      "atlas-assertion:surface:operations:0",
+      "atlas-assertion:surface:operations:1",
+      "atlas-assertion:surface:operations:2",
+      "atlas-assertion:surface:operations:3",
+      "atlas-assertion:surface:operations:4",
+      "atlas-assertion:surface:operations:5",
+      "atlas-assertion:surface:operations:6",
+      "atlas-assertion:surface:operations:7",
+      "atlas-assertion:surface:operations:8",
+      "atlas-assertion:surface:realizations:0",
+      "atlas-assertion:surface:realizations:1",
+      "atlas-assertion:surface:realizations:2",
+      "atlas-assertion:surface:realizations:3",
+      "atlas-assertion:surface:realizations:4",
+      "atlas-assertion:surface:relations:0",
+      "atlas-assertion:surface:relations:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:surface#collection",
+      "atlas-entity:surface#subject"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:surface:views:0@c0b21bef02dc23daa370aa1e067b430bd939e41b68a5a97d56d299b8ffb74cd8",
+      "atlas-evidence:surface:views:1@728915b9568d26c92263afc36b69804bce482df10afaf4a938427f15eae32da3",
+      "atlas-evidence:surface:views:2@397b6b6e8703ee77c4907534d71980fbae472f37f395ce0b403fbb1a13087d36",
+      "atlas-evidence:surface:views:3@2b7bae17dbfb2457ea25768dcec712ce4b6f2e5783c0752bf691f51b44591a6e",
+      "atlas-evidence:surface:views:4@ef871e8c4e2f805029df42143284ed5bff91e654914a40c6e95a4b2b99644981",
+      "atlas-evidence:surface:views:5@4e29a1d845bc3c0e84d9b27c3d5a01b7bba6b4bdf48e569db50390901e24cd5e",
+      "atlas-evidence:surface:views:6@0c27bdecc47d490793bbfbd6e67f055fcaeb51ce96ae7992acc08fa53c631985",
+      "atlas-evidence:surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:surface:categories:1@cc0ae2970806cfe65a094cf55b0cf158102776453cd3829cc48d6b19b60bb069",
+      "atlas-evidence:surface:categories:2@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "atlas-evidence:surface:decoders:0@ab0505054f1c51670dfeefc0c0e45a5e8d49adb158ec26759285881029497650",
+      "atlas-evidence:surface:decoders:1@8a2840feb817b498d17745ec3854f7cb00de21594b88d773b640eef9313683fc",
+      "atlas-evidence:surface:decoders:2@9840fd1405f2c2084166e9038051fa0d8b0b33e4e41b114411efca5d34f1114f",
+      "atlas-evidence:surface:decoders:3@2fe374ef6e24bdbc5bac8c356fbc750e0b706ad7f1083d17a7ee6493cbd24715",
+      "atlas-evidence:surface:decoders:4@f15012c7cd9f92a6e8fdafe05d33f735c38beaac399b3dc796e8b26fde0cc67b",
+      "atlas-evidence:surface:decoders:5@db2e745abe94581dcd70120e58785723188fc810971660820082cbcb379f8017",
+      "atlas-evidence:surface:decoders:6@8220bc3371867a5e37114c799f7e3635d8edef24a991b9751c3b7f2c59fb8883",
+      "atlas-evidence:surface:decoders:7@7326233c26fcf9ba41b909a2ece1befa9bf17ea0fdd1291714851bf689a5ec86",
+      "atlas-evidence:surface:operations:0@7d7557bee880e2e9a71963920368371cccaa7904407a8ee4e920996a685662a9",
+      "atlas-evidence:surface:operations:1@8debfa6a631175a044d87f1aa9df947d4c679857800f6a4d38e0c4e8607b9c14",
+      "atlas-evidence:surface:operations:2@b224e123a6872a06028efce567e6d1f0005aabda2acee3c9d5d3250b8c425a05",
+      "atlas-evidence:surface:operations:3@aa40c28569574f6b16b606cb1dffe88b87aea293ba9864f8868928eec019c710",
+      "atlas-evidence:surface:operations:4@f73eb797f43374f461dfa6896ae838e80863cf131a1f11e8280215c9c53af675",
+      "atlas-evidence:surface:operations:5@0465aa0d5ddf08cd3d0b844e6abaa4168d90f9f4471f100168010d3ca66d6230",
+      "atlas-evidence:surface:operations:6@77072f53d92472d103779f9aec2b185587ce55c21b378eef1163fb489eb36138",
+      "atlas-evidence:surface:operations:7@80f056cd731601f9e16342c34ab84107782b6ade33130990d05899b033f52771",
+      "atlas-evidence:surface:operations:8@063c565b27cc0d7af18e732ce7f589db9647ecbca30fbd229293ef39e285e3a7",
+      "atlas-evidence:surface:realizations:0@30d1fa107aa40a0d981e773f927cb9f9a39b293d8b536d85a9a638275812da57",
+      "atlas-evidence:surface:realizations:1@9be2f39e4a6a377236d4f1b102630b02714b2b62d3fa4eef6913dcdf7fe6eff1",
+      "atlas-evidence:surface:realizations:2@a41c0bc44814f064b3fd146e3fc21cb2d3187ac402af2d28cabd59a669cf0803",
+      "atlas-evidence:surface:realizations:3@216d885051d22598cd489811d1b48d6ee241e6140791f27d4c3a3ddee6159282",
+      "atlas-evidence:surface:realizations:4@5609214386a63a1043665a2db117ee3b1f8a98b5b80052ac7f6b8123631b2d12",
+      "atlas-evidence:surface:relations:0@d3d61d8f556066a535b33da4aa86369de9b31dfd7fa49bbca2a1a5e768e42129",
+      "atlas-evidence:surface:relations:1@1d1e6c8370cd46a2f2181536d92e88e92dd42dfa505165358be207de4c9adce5"
+    ],
+    "formalization_id": "atlas-formalization:surface",
+    "instance_ids": [
+      "atlas-instance:surface:L3",
+      "atlas-instance:surface:L4",
+      "atlas-instance:surface:L5"
+    ],
+    "page_id": "atlas-page:surface",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+    ]
+  },
+  "instances": [
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "8cf58bd8f1e0c445b9d92c60ff239bc7c5e65ca1eb501d47e0aff206c1b55cd6",
+        "payload_sha256": "f35fbf8644996028eb92fdf9ef90364c255d03c98b6beb1a31e92673d8b33c6b",
+        "semantic_hash": "8442e560b9de5fb4f2806d77e7d48829a033113cfb0f818ecccc6fba34f88a8d"
+      },
+      "id": "atlas-instance:surface:L3",
+      "label": "L3",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:8442e560b9de5fb4f2806d77e7d48829a033113cfb0f818ecccc6fba34f88a8d:small-exact-distance-enumeration:52a4fc3757b12865de549e0ca88987328c340a7f0c5a6ca6ee85298889715212@1",
+          "certificate:8442e560b9de5fb4f2806d77e7d48829a033113cfb0f818ecccc6fba34f88a8d:structural-validity:90cb639a139a5ed3a243c9fd25a70ad9189cfa18f8fc27b664454876b043e15d@1"
+        ],
+        "instance_record_sha256": "a214eb81c200d1e3b44ad4c355f15842cb30b0886a3ced9777e92a14e40e4d88",
+        "lean_report_sha256": "a66d607d9167c3c37c2ed7de7b2ef09a20547e13ffee351a8843132e9f453f09",
+        "semantic_hash": "8442e560b9de5fb4f2806d77e7d48829a033113cfb0f818ecccc6fba34f88a8d"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "ff247d8df525f8fed74d1bd0ac63b40b47fe63f8900866c2350fcb3b37b7b8f5",
+      "v2_envelope_id": "formal-ir-v2:surface:L3"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "8cf58bd8f1e0c445b9d92c60ff239bc7c5e65ca1eb501d47e0aff206c1b55cd6",
+        "payload_sha256": "f8e5ca7fdbe85379505f7b18517a6ee12314180f0dacfbb5f0a3554667b6146e",
+        "semantic_hash": "14dbc9bd9de60b8374e0077d1bc7ed34e204a0b55de5dafed1253333a25f2fa0"
+      },
+      "id": "atlas-instance:surface:L4",
+      "label": "L4",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:14dbc9bd9de60b8374e0077d1bc7ed34e204a0b55de5dafed1253333a25f2fa0:small-exact-distance-enumeration:cb2e25f8b19c6477679e64577cd7d6ccba3819e4b676350c90a441d57824146c@1",
+          "certificate:14dbc9bd9de60b8374e0077d1bc7ed34e204a0b55de5dafed1253333a25f2fa0:structural-validity:b2e10e5e9f5ae0eeabd2a91777a7c0dca912364f95756ee1028859a2f4ea5c60@1"
+        ],
+        "instance_record_sha256": "1a4f8abc7a9f634afbb0464a1ecb929c87d99164725f159030431cce53497ae4",
+        "lean_report_sha256": "531f34cda86ad054316e85de4331ee91bf66cfaa5e60dda49b428ffc016a9ee8",
+        "semantic_hash": "14dbc9bd9de60b8374e0077d1bc7ed34e204a0b55de5dafed1253333a25f2fa0"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "d7fbca855a9e26228e00aaef47238740e3bfb8255ac6989c88742c3677e7babd",
+      "v2_envelope_id": "formal-ir-v2:surface:L4"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "8cf58bd8f1e0c445b9d92c60ff239bc7c5e65ca1eb501d47e0aff206c1b55cd6",
+        "payload_sha256": "c957128d205e468dd64d4ddf2ff1f91a86da0fba7426c400a71e3c24fc8cf1ea",
+        "semantic_hash": "df1d7dff6245677c9b49872cce27bcf70cf2b167483dd67fa8ce077955d82c57"
+      },
+      "id": "atlas-instance:surface:L5",
+      "label": "L5",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:df1d7dff6245677c9b49872cce27bcf70cf2b167483dd67fa8ce077955d82c57:structural-validity:c2cd103605d713b02273ce15483f89b2db621df0e2ebe0223432ae20e50aa800@1"
+        ],
+        "instance_record_sha256": "a1489a85cd0a2f7a9b61b7f672cd88ff6557d18fb1bc1e17a3ade4bc9a8a11e3",
+        "lean_report_sha256": "d803e17ab2a5f63ad36318d92c9cbb91940eb48caaebdbe434a1e8bdaaffa787",
+        "semantic_hash": "df1d7dff6245677c9b49872cce27bcf70cf2b167483dd67fa8ce077955d82c57"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "b37e8f0bec7a2f5168b8650b0dee9b8b30c0198ed084c2e9fd65d35f5e84eb2a",
+      "v2_envelope_id": "formal-ir-v2:surface:L5"
+    }
+  ],
+  "legacy_card": {
+    "categories": [
+      {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "dennis2002topological"
+        }
+      },
+      {
+        "id": "hypergraph-product",
+        "origin": {
+          "kind": "curated",
+          "ref": "tillich2009quantum"
+        }
+      }
+    ],
+    "claim_gaps": [
+      {
+        "property": "d",
+        "target": "wanted:fast-distance"
+      }
+    ],
+    "construction": {
+      "inputs": {
+        "H1": {
+          "output": "parity_check",
+          "params": {
+            "L": {
+              "instance_param": "L"
+            }
+          },
+          "ref": {
+            "id": "rep_parity",
+            "kind": "generator",
+            "version": 1
+          }
+        },
+        "H2": {
+          "output": "parity_check",
+          "params": {
+            "L": {
+              "instance_param": "L"
+            }
+          },
+          "ref": {
+            "id": "rep_parity",
+            "kind": "generator",
+            "version": 1
+          }
+        }
+      },
+      "match": "exact-checkmatrix-v1",
+      "op": {
+        "id": "hgp",
+        "version": 1
+      },
+      "output": "checkmatrix",
+      "schema": "qec-atlas-construction-v1"
+    },
+    "decoders": [
+      {
+        "id": "mwpm",
+        "noise": "independent X/Z noise with perfect syndrome (code capacity)",
+        "notes": "Matching reaches about 10.3%, while maximum-likelihood decoding reaches about 10.9% under the corresponding independent-noise convention. The gap is path entropy: matching minimizes chain energy rather than class free energy.",
+        "refs": [
+          "dennis2002topological",
+          "wang2003confinement",
+          "higgott2022pymatching"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "mwpm",
+        "noise": "phenomenological data and syndrome noise over repeated rounds",
+        "notes": "The spacetime matching transition is about 2.9% for the symmetric phenomenological model studied by Wang, Harrington, and Preskill. This number is not a circuit-level gate threshold.",
+        "refs": [
+          "wang2003confinement"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "mwpm",
+        "noise": "circuit-level depolarizing syndrome-extraction circuit",
+        "notes": "Fowler's scheduled eight-step syndrome circuit has a threshold near 0.57% per circuit step, or roughly 4% per full cycle in that paper's stochastic model. The value is schedule-, gate-set-, and decoder-dependent, so it must not be compared directly with the code-capacity figures above.",
+        "refs": [
+          "fowler2012surface"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "union-find",
+        "noise": "perfect syndrome and faulty repeated syndrome benchmarks",
+        "notes": "The toric-bulk benchmarks give about 9.9% with perfect syndrome and 2.6% with faulty syndrome measurements. Union-find trades a small threshold loss relative to matching for almost-linear worst-case processing.",
+        "refs": [
+          "delfosse2021almost"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "renormalization-group",
+        "noise": "code-capacity Pauli noise on surface/toric-code lattices",
+        "notes": "Hierarchical coarse-graining estimates the probability of logical classes rather than committing immediately to one globally lightest chain. It exposes a distinct speed/accuracy tradeoff and generalizes naturally to other topological-code lattices.",
+        "refs": [
+          "duclos2010fast"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "tensor-network-mld",
+        "noise": "independent X/Z noise exactly; general Pauli noise approximately",
+        "notes": "Exact free-fermion contraction is available for the restricted independent channel, while matrix-product-state contraction approximates maximum likelihood for more general noise. The bond dimension controls the accuracy/runtime tradeoff.",
+        "refs": [
+          "bravyi2014efficient"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "bp-osd",
+        "noise": "CSS parity-check decoding with calibrated soft information",
+        "notes": "Belief propagation supplies qubit reliabilities and ordered-statistics post-processing repairs non-convergence on the lattice's short cycles. It is a portable qLDPC baseline rather than a geometry-specialized decoder.",
+        "refs": [
+          "roffe2020decoding"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "belief-matching",
+        "noise": "correlated circuit-level detector faults",
+        "notes": "Belief propagation first assigns correlated fault mechanisms to detector events, then reweights a matching graph. This retains the mature matching backend while correcting the independent-edge approximation.",
+        "refs": [
+          "higgott2023beliefmatching"
+        ],
+        "status": "standard"
+      }
+    ],
+    "description": "A planar CSS stabilizer code obtained by putting qubits on the edges of a cellulated surface, X checks at vertices, and Z checks around faces. Rough and smooth boundaries absorb the two kinds of error string; a string that joins the complementary boundaries is logical. This unrotated family is constructed exactly as HGP(rep_L, rep_L).",
+    "eczoo": {
+      "classification": "variant",
+      "source": {
+        "blob_url": "https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml",
+        "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+        "page_url": "https://errorcorrectionzoo.org/c/surface",
+        "path": "codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml",
+        "repository_url": "https://github.com/errorcorrectionzoo/eczoo_data",
+        "retrieved_on": "2026-08-05",
+        "sha256": "48d0fdd56792ea67ab2ed4f7ec8c7350efe12b4d3128ef60d23c50ea64f0343f"
+      },
+      "status": "mapped",
+      "zoo_id": "surface"
+    },
+    "fit": {
+      "platforms": [
+        "superconducting-2d-grid",
+        "neutral-atom-reconfigurable"
+      ],
+      "tasks": [
+        "memory",
+        "computation"
+      ]
+    },
+    "id": "surface",
+    "identity": {
+      "aliases": [
+        "planar code",
+        "Kitaev surface code"
+      ],
+      "canonical_name": "Surface code",
+      "variant": "planar, unrotated"
+    },
+    "kind": "family",
+    "operations": [
+      {
+        "cost": "O(d) rounds per merge/split plus an ancilla routing patch",
+        "gate": "CNOT",
+        "level": "Clifford",
+        "mechanism": "surgery",
+        "origin": {
+          "kind": "claimed",
+          "ref": "horsman2012surface"
+        }
+      },
+      {
+        "cost": "constant-depth physical CNOT layer; transport and correlated-decoding costs remain",
+        "gate": "CNOT",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "bluvstein2024logical"
+        }
+      },
+      {
+        "cost": "O(d) or more rounds and a distance-sized reserved hole trajectory",
+        "gate": "CNOT",
+        "level": "Clifford",
+        "mechanism": "braiding",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fowler2012surface"
+        }
+      },
+      {
+        "cost": "twist/corner code deformation over distance-preserving paths",
+        "gate": "single-qubit Clifford",
+        "level": "Clifford",
+        "mechanism": "braiding",
+        "origin": {
+          "kind": "claimed",
+          "ref": "brown2017poking"
+        }
+      },
+      {
+        "cost": "constant-depth gates plus a fold or equivalent qubit permutation",
+        "gate": "H / S",
+        "level": "Clifford",
+        "mechanism": "fold-transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "moussa2016transversal"
+        }
+      },
+      {
+        "cost": "prepare a physical product state, measure the complementary stabilizers for d rounds, and decode the spacetime record",
+        "gate": "logical |0> / |+> initialization",
+        "level": "stabilizer preparation",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fowler2012surface"
+        }
+      },
+      {
+        "cost": "destructively measure all data qubits in the selected basis and decode the final data/syndrome history",
+        "gate": "logical Z / X readout",
+        "level": "stabilizer measurement",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fowler2012surface"
+        }
+      },
+      {
+        "cost": "a classical frame update after decoded logical measurements; no immediate physical Pauli layer is required",
+        "gate": "Pauli-frame update",
+        "level": "Clifford bookkeeping",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fowler2012surface"
+        }
+      },
+      {
+        "cost": "inject and distill a magic state, then consume it by gate teleportation; factory spacetime dominates",
+        "gate": "T",
+        "level": "non-Clifford",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "bravyi2005magic"
+        }
+      }
+    ],
+    "params": {
+      "L": "distance (odd or even, L >= 2)"
+    },
+    "presentation": {
+      "guided_tour": {
+        "status": "available"
+      },
+      "orienting_view": {
+        "kind": "lattice",
+        "status": "available"
+      }
+    },
+    "realizations": [
+      {
+        "description": "Scaling from distance 3 to distance 5 reduced logical error per cycle from the distance-3 ensemble average 3.028% ± 0.023% to 2.914% ± 0.016%. This is the 2023 distance-scaling result; it did not report the later Willow suppression factor.",
+        "platform": "Google superconducting square-grid processors",
+        "refs": [
+          "google2023suppressing"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "description": "A distance-7 patch reached 0.143% ± 0.003% logical error per cycle and each distance increase of two suppressed error by Λ = 2.14 ± 0.02, with logical lifetime beyond the best physical qubit.",
+        "platform": "Google Willow superconducting processor",
+        "refs": [
+          "google2024below"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "description": "Hexagonal-connectivity, walking data/measure-role, and iSWAP-based surface-code schedules all showed distance-dependent error suppression, demonstrating that the code can be adapted to connectivity, leakage, and native-gate constraints.",
+        "platform": "Google Willow dynamic superconducting layouts",
+        "refs": [
+          "eickbusch2024dynamic"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "description": "A 17-qubit distance-3 Surface-17 patch executed repeated correction cycles, providing an independent superconducting realization of a planar surface-code memory.",
+        "platform": "USTC Zuchongzhi 2.1 superconducting processor",
+        "refs": [
+          "zhao2022realization"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "description": "Movable atoms realized surface-code patches inside a multi-code logical processor and enabled transversal inter-patch entangling gates by aligning corresponding data qubits. This is a logical-operations demonstration, not a below-threshold surface-memory claim; for the distance-five and distance-seven surface blocks, logical input-state preparation was not itself fault-tolerant.",
+        "platform": "reconfigurable neutral-atom arrays",
+        "refs": [
+          "bluvstein2024logical"
+        ],
+        "status": "demonstrated"
+      }
+    ],
+    "refs": [
+      "kitaev2003fault",
+      "dennis2002topological",
+      "tillich2009quantum",
+      "bravyi1998quantum",
+      "bombin2007homological",
+      "fowler2012surface",
+      "horsman2012surface",
+      "bravyi2009nogo",
+      "bravyi2010tradeoffs",
+      "bravyi2011energy",
+      "bravyi2013classification",
+      "bombin2007optimal",
+      "bombin2010twist",
+      "bonilla2021xzzx",
+      "moussa2016transversal",
+      "brown2017poking",
+      "raussendorf2007fault",
+      "bravyi2005magic",
+      "wang2003confinement",
+      "aharonov1997fault",
+      "duclos2010fast",
+      "higgott2022pymatching",
+      "delfosse2021almost",
+      "bravyi2014efficient",
+      "higgott2023beliefmatching",
+      "roffe2020decoding",
+      "google2023suppressing",
+      "google2024below",
+      "eickbusch2024dynamic",
+      "zhao2022realization",
+      "bluvstein2024logical",
+      "liu2017quon",
+      "liu2019quantized",
+      "kissinger2022phasefree",
+      "debeaudrap2020zx",
+      "bombin2023unifying",
+      "schuch2010peps",
+      "haah2011local",
+      "bravyi2024bicycle"
+    ],
+    "relations": [
+      {
+        "how": "HGP(rep_L, rep_L) — the planar surface code is the hypergraph product of two repetition codes",
+        "refs": [
+          "tillich2009quantum"
+        ],
+        "target": "hgp",
+        "type": "product_of"
+      },
+      {
+        "how": "The same square-lattice star/plaquette bulk is obtained from HGP(rep_L, rep_L); open repetition factors give the planar Surface patch, while periodic factors close it into the toric code.",
+        "refs": [
+          "kitaev2003fault",
+          "dennis2002topological",
+          "tillich2009quantum"
+        ],
+        "target": "toric",
+        "type": "same_bulk_phase_as"
+      }
+    ],
+    "tier": "gold",
+    "views": [
+      {
+        "description": "Expanding the two repetition-factor boundary maps gives sparse binary X and Z check matrices. Their stacked symplectic rows are the universal executable baseline used for commutation, rank, logical, and distance calculations.",
+        "origin": {
+          "converter": "surface.build HGP output -> CheckMatrix.from_css",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "tillich2009quantum"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      {
+        "description": "Two open length-L repetition chains form the two axes. The two HGP qubit blocks are bit×bit and check×check, while X and Z checks let one parity map act at a time; open-chain corank is exactly what leaves one logical qubit rather than the toric code's two.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "tillich2009quantum"
+        ],
+        "rung": "R2",
+        "type": "hypergraph-product"
+      },
+      {
+        "description": "The checks are the boundary and coboundary maps of a relative chain complex. Logical strings are relative cycles modulo boundaries, and distance is the shortest nontrivial primal or dual relative cycle.",
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi1998quantum"
+        },
+        "refs": [
+          "bravyi1998quantum",
+          "bombin2007homological"
+        ],
+        "rung": "R2",
+        "type": "homological"
+      },
+      {
+        "description": "Error chains with a fixed syndrome become disorder sectors of a random-bond Ising model. Maximum-likelihood decoding compares their free energies; minimum-weight matching is the zero-temperature approximation that keeps energy but discards path entropy.",
+        "origin": {
+          "kind": "curated",
+          "ref": "dennis2002topological"
+        },
+        "refs": [
+          "dennis2002topological",
+          "wang2003confinement"
+        ],
+        "rung": "R5",
+        "type": "statistical-mechanics"
+      },
+      {
+        "description": "A phase-free ZX diagram and a CSS code encode the same binary linear subspace. In this language rough/smooth merge and split operations become spider maps, so lattice surgery is diagram rewriting rather than an opaque stabilizer schedule.",
+        "origin": {
+          "kind": "curated",
+          "ref": "kissinger2022phasefree"
+        },
+        "refs": [
+          "kissinger2022phasefree",
+          "debeaudrap2020zx",
+          "bombin2023unifying"
+        ],
+        "rung": "R5",
+        "type": "zx"
+      },
+      {
+        "description": "The toric bulk underlying the planar patch becomes a quantized graph: star and plaquette checks are unified as cycle operators, e/m duality is graph self-duality, and charged string diagrams expose the fermionic composite and twist-defect bookkeeping.",
+        "dialect": "quon",
+        "gap": {
+          "target": "wanted:fermionic-compiler"
+        },
+        "origin": {
+          "kind": "curated",
+          "ref": "liu2019quantized"
+        },
+        "refs": [
+          "liu2017quon",
+          "liu2019quantized"
+        ],
+        "rung": "R5",
+        "type": "fermionic"
+      },
+      {
+        "description": "The ground space is a PEPS whose virtual Z2 symmetry generates topological degeneracy, local indistinguishability, and anyonic excitations. The code's topological order is therefore a constraint on the local tensor, not merely a property asserted from its Hamiltonian.",
+        "origin": {
+          "kind": "curated",
+          "ref": "schuch2010peps"
+        },
+        "refs": [
+          "schuch2010peps"
+        ],
+        "rung": "R5",
+        "type": "tensor-network"
+      }
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "atlas-entity:surface#subject",
+    "completion_scopes": [
+      {
+        "authority": "C2 does not transfer child completeness to parent",
+        "entity_id": "eczoo-entity:surface#collection",
+        "status": "new-broad-skeleton",
+        "tier": "T0"
+      },
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "atlas-entity:surface#subject",
+        "status": "preserved-child-scope",
+        "tier": "gold"
+      }
+    ],
+    "composition": "scoped-expansion",
+    "id": "atlas-page:surface",
+    "presented_entity_ids": [
+      "eczoo-entity:surface#collection",
+      "atlas-entity:surface#subject"
+    ],
+    "primary_entity_id": "eczoo-entity:surface#collection",
+    "redirects": [],
+    "route": "/entries/surface.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/surface"
+  },
+  "parent_content": {
+    "child_relation": {
+      "assertion_id": "atlas-parent-assertion:surface:child-relation",
+      "from": "atlas-entity:surface#subject",
+      "origin": {
+        "kind": "verified",
+        "method": "owner-approved-C2-scoped-expansion"
+      },
+      "to": "eczoo-entity:surface#collection",
+      "type": "narrower-than"
+    },
+    "description": {
+      "applies_to": "eczoo-entity:surface#collection",
+      "assertion_id": "atlas-parent-assertion:surface:description",
+      "origin": {
+        "kind": "claimed",
+        "locators": [
+          "/description#paragraph:0",
+          "/description#paragraph:2",
+          "/description#paragraph:3",
+          "/description#paragraph:4",
+          "/description#paragraph:5"
+        ],
+        "method": "pinned-eczoo-source",
+        "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+      },
+      "text": "Surface codes are Abelian topological CSS codes defined from cellulations of two-dimensional surfaces. The source denotation spans closed and bounded surfaces, multiple boundary types, punctures, and mixed-boundary layouts; Atlas's current constructor covers one planar rectangular subfamily."
+    },
+    "entry_id": "surface",
+    "parent_entity_id": "eczoo-entity:surface#collection",
+    "scope": {
+      "applies_to": "eczoo-entity:surface#collection",
+      "assertion_id": "atlas-parent-assertion:surface:scope",
+      "excludes": [
+        "Restricting the collection to Atlas's unrotated rough/smooth rectangular child.",
+        "Transferring the child's gold status to the broad collection."
+      ],
+      "includes": [
+        "Closed-surface members, including the toric specialization.",
+        "Planar members with rough and smooth boundary segments.",
+        "Punctured, higher-genus, and mixed-boundary members described by the source."
+      ],
+      "origin": {
+        "kind": "claimed",
+        "locators": [
+          "/description#paragraph:2",
+          "/description#paragraph:3",
+          "/description#paragraph:4",
+          "/description#paragraph:5"
+        ],
+        "method": "pinned-eczoo-source-plus-owner-scope-decision",
+        "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+      }
+    },
+    "source": {
+      "locators": [
+        "/description#paragraph:0",
+        "/description#paragraph:2",
+        "/description#paragraph:3",
+        "/description#paragraph:4",
+        "/description#paragraph:5"
+      ],
+      "node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface",
+      "path": "codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml",
+      "sha256": "48d0fdd56792ea67ab2ed4f7ec8c7350efe12b4d3128ef60d23c50ea64f0343f",
+      "zoo_id": "surface"
+    },
+    "tier": "T0",
+    "variant_map": {
+      "applies_to": "eczoo-entity:surface#collection",
+      "assertion_id": "atlas-parent-assertion:surface:variant-map",
+      "completeness": "source-axis-map",
+      "variants": [
+        {
+          "atlas_status": "broad-parent-axis",
+          "id": "closed-surface",
+          "label": "Closed-surface cellulations",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:2",
+              "/description#paragraph:4"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+          }
+        },
+        {
+          "atlas_status": "one-subfamily-formalized",
+          "id": "planar-boundary",
+          "label": "Planar patches with rough and smooth boundaries",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:2",
+              "/description#paragraph:3"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+          }
+        },
+        {
+          "atlas_status": "parent-only-axis",
+          "id": "punctures-and-genus",
+          "label": "Punctured and higher-genus surface variants",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:4"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+          }
+        },
+        {
+          "atlas_status": "parent-only-axis",
+          "id": "mixed-boundary",
+          "label": "Mixed-boundary layouts",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:5"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface"
+          }
+        }
+      ]
+    }
+  },
+  "projection": {
+    "method": "embedded-utf8-source-v1",
+    "source_sha256": "f60832da28a59e6469a4bac94a3a2137d7559e3a6525b37159b1ae839a11f64f",
+    "status": "exact"
+  },
+  "schema": "qec-atlas-entry-card-v2",
+  "scoped_facets": {
+    "categories": [
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "css",
+          "origin": {
+            "kind": "verified"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "field": "categories",
+        "id": "atlas-assertion:surface:categories:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/categories/0",
+        "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "version_id": "atlas-assertion:surface:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "topological",
+          "origin": {
+            "kind": "curated",
+            "ref": "dennis2002topological"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:categories:1@cc0ae2970806cfe65a094cf55b0cf158102776453cd3829cc48d6b19b60bb069",
+        "field": "categories",
+        "id": "atlas-assertion:surface:categories:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/categories/1",
+        "source_sha256": "cc0ae2970806cfe65a094cf55b0cf158102776453cd3829cc48d6b19b60bb069",
+        "version_id": "atlas-assertion:surface:categories:1@sha256:cc0ae2970806cfe65a094cf55b0cf158102776453cd3829cc48d6b19b60bb069"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "hypergraph-product",
+          "origin": {
+            "kind": "curated",
+            "ref": "tillich2009quantum"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:categories:2@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+        "field": "categories",
+        "id": "atlas-assertion:surface:categories:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/categories/2",
+        "source_sha256": "98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+        "version_id": "atlas-assertion:surface:categories:2@sha256:98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb"
+      }
+    ],
+    "decoders": [
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "independent X/Z noise with perfect syndrome (code capacity)",
+          "notes": "Matching reaches about 10.3%, while maximum-likelihood decoding reaches about 10.9% under the corresponding independent-noise convention. The gap is path entropy: matching minimizes chain energy rather than class free energy.",
+          "refs": [
+            "dennis2002topological",
+            "wang2003confinement",
+            "higgott2022pymatching"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:surface:decoders:0@ab0505054f1c51670dfeefc0c0e45a5e8d49adb158ec26759285881029497650",
+        "field": "decoders",
+        "id": "atlas-assertion:surface:decoders:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/decoders/0",
+        "source_sha256": "ab0505054f1c51670dfeefc0c0e45a5e8d49adb158ec26759285881029497650",
+        "version_id": "atlas-assertion:surface:decoders:0@sha256:ab0505054f1c51670dfeefc0c0e45a5e8d49adb158ec26759285881029497650"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "phenomenological data and syndrome noise over repeated rounds",
+          "notes": "The spacetime matching transition is about 2.9% for the symmetric phenomenological model studied by Wang, Harrington, and Preskill. This number is not a circuit-level gate threshold.",
+          "refs": [
+            "wang2003confinement"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:surface:decoders:1@8a2840feb817b498d17745ec3854f7cb00de21594b88d773b640eef9313683fc",
+        "field": "decoders",
+        "id": "atlas-assertion:surface:decoders:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/decoders/1",
+        "source_sha256": "8a2840feb817b498d17745ec3854f7cb00de21594b88d773b640eef9313683fc",
+        "version_id": "atlas-assertion:surface:decoders:1@sha256:8a2840feb817b498d17745ec3854f7cb00de21594b88d773b640eef9313683fc"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "circuit-level depolarizing syndrome-extraction circuit",
+          "notes": "Fowler's scheduled eight-step syndrome circuit has a threshold near 0.57% per circuit step, or roughly 4% per full cycle in that paper's stochastic model. The value is schedule-, gate-set-, and decoder-dependent, so it must not be compared directly with the code-capacity figures above.",
+          "refs": [
+            "fowler2012surface"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:surface:decoders:2@9840fd1405f2c2084166e9038051fa0d8b0b33e4e41b114411efca5d34f1114f",
+        "field": "decoders",
+        "id": "atlas-assertion:surface:decoders:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/decoders/2",
+        "source_sha256": "9840fd1405f2c2084166e9038051fa0d8b0b33e4e41b114411efca5d34f1114f",
+        "version_id": "atlas-assertion:surface:decoders:2@sha256:9840fd1405f2c2084166e9038051fa0d8b0b33e4e41b114411efca5d34f1114f"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "union-find",
+          "noise": "perfect syndrome and faulty repeated syndrome benchmarks",
+          "notes": "The toric-bulk benchmarks give about 9.9% with perfect syndrome and 2.6% with faulty syndrome measurements. Union-find trades a small threshold loss relative to matching for almost-linear worst-case processing.",
+          "refs": [
+            "delfosse2021almost"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:surface:decoders:3@2fe374ef6e24bdbc5bac8c356fbc750e0b706ad7f1083d17a7ee6493cbd24715",
+        "field": "decoders",
+        "id": "atlas-assertion:surface:decoders:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/decoders/3",
+        "source_sha256": "2fe374ef6e24bdbc5bac8c356fbc750e0b706ad7f1083d17a7ee6493cbd24715",
+        "version_id": "atlas-assertion:surface:decoders:3@sha256:2fe374ef6e24bdbc5bac8c356fbc750e0b706ad7f1083d17a7ee6493cbd24715"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "renormalization-group",
+          "noise": "code-capacity Pauli noise on surface/toric-code lattices",
+          "notes": "Hierarchical coarse-graining estimates the probability of logical classes rather than committing immediately to one globally lightest chain. It exposes a distinct speed/accuracy tradeoff and generalizes naturally to other topological-code lattices.",
+          "refs": [
+            "duclos2010fast"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:surface:decoders:4@f15012c7cd9f92a6e8fdafe05d33f735c38beaac399b3dc796e8b26fde0cc67b",
+        "field": "decoders",
+        "id": "atlas-assertion:surface:decoders:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/decoders/4",
+        "source_sha256": "f15012c7cd9f92a6e8fdafe05d33f735c38beaac399b3dc796e8b26fde0cc67b",
+        "version_id": "atlas-assertion:surface:decoders:4@sha256:f15012c7cd9f92a6e8fdafe05d33f735c38beaac399b3dc796e8b26fde0cc67b"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "tensor-network-mld",
+          "noise": "independent X/Z noise exactly; general Pauli noise approximately",
+          "notes": "Exact free-fermion contraction is available for the restricted independent channel, while matrix-product-state contraction approximates maximum likelihood for more general noise. The bond dimension controls the accuracy/runtime tradeoff.",
+          "refs": [
+            "bravyi2014efficient"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:surface:decoders:5@db2e745abe94581dcd70120e58785723188fc810971660820082cbcb379f8017",
+        "field": "decoders",
+        "id": "atlas-assertion:surface:decoders:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/decoders/5",
+        "source_sha256": "db2e745abe94581dcd70120e58785723188fc810971660820082cbcb379f8017",
+        "version_id": "atlas-assertion:surface:decoders:5@sha256:db2e745abe94581dcd70120e58785723188fc810971660820082cbcb379f8017"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "bp-osd",
+          "noise": "CSS parity-check decoding with calibrated soft information",
+          "notes": "Belief propagation supplies qubit reliabilities and ordered-statistics post-processing repairs non-convergence on the lattice's short cycles. It is a portable qLDPC baseline rather than a geometry-specialized decoder.",
+          "refs": [
+            "roffe2020decoding"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:surface:decoders:6@8220bc3371867a5e37114c799f7e3635d8edef24a991b9751c3b7f2c59fb8883",
+        "field": "decoders",
+        "id": "atlas-assertion:surface:decoders:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/decoders/6",
+        "source_sha256": "8220bc3371867a5e37114c799f7e3635d8edef24a991b9751c3b7f2c59fb8883",
+        "version_id": "atlas-assertion:surface:decoders:6@sha256:8220bc3371867a5e37114c799f7e3635d8edef24a991b9751c3b7f2c59fb8883"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "belief-matching",
+          "noise": "correlated circuit-level detector faults",
+          "notes": "Belief propagation first assigns correlated fault mechanisms to detector events, then reweights a matching graph. This retains the mature matching backend while correcting the independent-edge approximation.",
+          "refs": [
+            "higgott2023beliefmatching"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:surface:decoders:7@7326233c26fcf9ba41b909a2ece1befa9bf17ea0fdd1291714851bf689a5ec86",
+        "field": "decoders",
+        "id": "atlas-assertion:surface:decoders:7",
+        "index": 7,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/decoders/7",
+        "source_sha256": "7326233c26fcf9ba41b909a2ece1befa9bf17ea0fdd1291714851bf689a5ec86",
+        "version_id": "atlas-assertion:surface:decoders:7@sha256:7326233c26fcf9ba41b909a2ece1befa9bf17ea0fdd1291714851bf689a5ec86"
+      }
+    ],
+    "operations": [
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "O(d) rounds per merge/split plus an ancilla routing patch",
+          "gate": "CNOT",
+          "level": "Clifford",
+          "mechanism": "surgery",
+          "origin": {
+            "kind": "claimed",
+            "ref": "horsman2012surface"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:0@7d7557bee880e2e9a71963920368371cccaa7904407a8ee4e920996a685662a9",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/0",
+        "source_sha256": "7d7557bee880e2e9a71963920368371cccaa7904407a8ee4e920996a685662a9",
+        "version_id": "atlas-assertion:surface:operations:0@sha256:7d7557bee880e2e9a71963920368371cccaa7904407a8ee4e920996a685662a9"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "constant-depth physical CNOT layer; transport and correlated-decoding costs remain",
+          "gate": "CNOT",
+          "level": "Clifford",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "bluvstein2024logical"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:1@8debfa6a631175a044d87f1aa9df947d4c679857800f6a4d38e0c4e8607b9c14",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/1",
+        "source_sha256": "8debfa6a631175a044d87f1aa9df947d4c679857800f6a4d38e0c4e8607b9c14",
+        "version_id": "atlas-assertion:surface:operations:1@sha256:8debfa6a631175a044d87f1aa9df947d4c679857800f6a4d38e0c4e8607b9c14"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "O(d) or more rounds and a distance-sized reserved hole trajectory",
+          "gate": "CNOT",
+          "level": "Clifford",
+          "mechanism": "braiding",
+          "origin": {
+            "kind": "claimed",
+            "ref": "fowler2012surface"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:2@b224e123a6872a06028efce567e6d1f0005aabda2acee3c9d5d3250b8c425a05",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/2",
+        "source_sha256": "b224e123a6872a06028efce567e6d1f0005aabda2acee3c9d5d3250b8c425a05",
+        "version_id": "atlas-assertion:surface:operations:2@sha256:b224e123a6872a06028efce567e6d1f0005aabda2acee3c9d5d3250b8c425a05"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "twist/corner code deformation over distance-preserving paths",
+          "gate": "single-qubit Clifford",
+          "level": "Clifford",
+          "mechanism": "braiding",
+          "origin": {
+            "kind": "claimed",
+            "ref": "brown2017poking"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:3@aa40c28569574f6b16b606cb1dffe88b87aea293ba9864f8868928eec019c710",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/3",
+        "source_sha256": "aa40c28569574f6b16b606cb1dffe88b87aea293ba9864f8868928eec019c710",
+        "version_id": "atlas-assertion:surface:operations:3@sha256:aa40c28569574f6b16b606cb1dffe88b87aea293ba9864f8868928eec019c710"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "constant-depth gates plus a fold or equivalent qubit permutation",
+          "gate": "H / S",
+          "level": "Clifford",
+          "mechanism": "fold-transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "moussa2016transversal"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:4@f73eb797f43374f461dfa6896ae838e80863cf131a1f11e8280215c9c53af675",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/4",
+        "source_sha256": "f73eb797f43374f461dfa6896ae838e80863cf131a1f11e8280215c9c53af675",
+        "version_id": "atlas-assertion:surface:operations:4@sha256:f73eb797f43374f461dfa6896ae838e80863cf131a1f11e8280215c9c53af675"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "prepare a physical product state, measure the complementary stabilizers for d rounds, and decode the spacetime record",
+          "gate": "logical |0> / |+> initialization",
+          "level": "stabilizer preparation",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "fowler2012surface"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:5@0465aa0d5ddf08cd3d0b844e6abaa4168d90f9f4471f100168010d3ca66d6230",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/5",
+        "source_sha256": "0465aa0d5ddf08cd3d0b844e6abaa4168d90f9f4471f100168010d3ca66d6230",
+        "version_id": "atlas-assertion:surface:operations:5@sha256:0465aa0d5ddf08cd3d0b844e6abaa4168d90f9f4471f100168010d3ca66d6230"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "destructively measure all data qubits in the selected basis and decode the final data/syndrome history",
+          "gate": "logical Z / X readout",
+          "level": "stabilizer measurement",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "fowler2012surface"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:6@77072f53d92472d103779f9aec2b185587ce55c21b378eef1163fb489eb36138",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/6",
+        "source_sha256": "77072f53d92472d103779f9aec2b185587ce55c21b378eef1163fb489eb36138",
+        "version_id": "atlas-assertion:surface:operations:6@sha256:77072f53d92472d103779f9aec2b185587ce55c21b378eef1163fb489eb36138"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "a classical frame update after decoded logical measurements; no immediate physical Pauli layer is required",
+          "gate": "Pauli-frame update",
+          "level": "Clifford bookkeeping",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "fowler2012surface"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:7@80f056cd731601f9e16342c34ab84107782b6ade33130990d05899b033f52771",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:7",
+        "index": 7,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/7",
+        "source_sha256": "80f056cd731601f9e16342c34ab84107782b6ade33130990d05899b033f52771",
+        "version_id": "atlas-assertion:surface:operations:7@sha256:80f056cd731601f9e16342c34ab84107782b6ade33130990d05899b033f52771"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "inject and distill a magic state, then consume it by gate teleportation; factory spacetime dominates",
+          "gate": "T",
+          "level": "non-Clifford",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "bravyi2005magic"
+          }
+        },
+        "evidence_id": "atlas-evidence:surface:operations:8@063c565b27cc0d7af18e732ce7f589db9647ecbca30fbd229293ef39e285e3a7",
+        "field": "operations",
+        "id": "atlas-assertion:surface:operations:8",
+        "index": 8,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/operations/8",
+        "source_sha256": "063c565b27cc0d7af18e732ce7f589db9647ecbca30fbd229293ef39e285e3a7",
+        "version_id": "atlas-assertion:surface:operations:8@sha256:063c565b27cc0d7af18e732ce7f589db9647ecbca30fbd229293ef39e285e3a7"
+      }
+    ],
+    "realizations": [
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Scaling from distance 3 to distance 5 reduced logical error per cycle from the distance-3 ensemble average 3.028% ± 0.023% to 2.914% ± 0.016%. This is the 2023 distance-scaling result; it did not report the later Willow suppression factor.",
+          "platform": "Google superconducting square-grid processors",
+          "refs": [
+            "google2023suppressing"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:surface:realizations:0@30d1fa107aa40a0d981e773f927cb9f9a39b293d8b536d85a9a638275812da57",
+        "field": "realizations",
+        "id": "atlas-assertion:surface:realizations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/realizations/0",
+        "source_sha256": "30d1fa107aa40a0d981e773f927cb9f9a39b293d8b536d85a9a638275812da57",
+        "version_id": "atlas-assertion:surface:realizations:0@sha256:30d1fa107aa40a0d981e773f927cb9f9a39b293d8b536d85a9a638275812da57"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A distance-7 patch reached 0.143% ± 0.003% logical error per cycle and each distance increase of two suppressed error by Λ = 2.14 ± 0.02, with logical lifetime beyond the best physical qubit.",
+          "platform": "Google Willow superconducting processor",
+          "refs": [
+            "google2024below"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:surface:realizations:1@9be2f39e4a6a377236d4f1b102630b02714b2b62d3fa4eef6913dcdf7fe6eff1",
+        "field": "realizations",
+        "id": "atlas-assertion:surface:realizations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/realizations/1",
+        "source_sha256": "9be2f39e4a6a377236d4f1b102630b02714b2b62d3fa4eef6913dcdf7fe6eff1",
+        "version_id": "atlas-assertion:surface:realizations:1@sha256:9be2f39e4a6a377236d4f1b102630b02714b2b62d3fa4eef6913dcdf7fe6eff1"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Hexagonal-connectivity, walking data/measure-role, and iSWAP-based surface-code schedules all showed distance-dependent error suppression, demonstrating that the code can be adapted to connectivity, leakage, and native-gate constraints.",
+          "platform": "Google Willow dynamic superconducting layouts",
+          "refs": [
+            "eickbusch2024dynamic"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:surface:realizations:2@a41c0bc44814f064b3fd146e3fc21cb2d3187ac402af2d28cabd59a669cf0803",
+        "field": "realizations",
+        "id": "atlas-assertion:surface:realizations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/realizations/2",
+        "source_sha256": "a41c0bc44814f064b3fd146e3fc21cb2d3187ac402af2d28cabd59a669cf0803",
+        "version_id": "atlas-assertion:surface:realizations:2@sha256:a41c0bc44814f064b3fd146e3fc21cb2d3187ac402af2d28cabd59a669cf0803"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A 17-qubit distance-3 Surface-17 patch executed repeated correction cycles, providing an independent superconducting realization of a planar surface-code memory.",
+          "platform": "USTC Zuchongzhi 2.1 superconducting processor",
+          "refs": [
+            "zhao2022realization"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:surface:realizations:3@216d885051d22598cd489811d1b48d6ee241e6140791f27d4c3a3ddee6159282",
+        "field": "realizations",
+        "id": "atlas-assertion:surface:realizations:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/realizations/3",
+        "source_sha256": "216d885051d22598cd489811d1b48d6ee241e6140791f27d4c3a3ddee6159282",
+        "version_id": "atlas-assertion:surface:realizations:3@sha256:216d885051d22598cd489811d1b48d6ee241e6140791f27d4c3a3ddee6159282"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Movable atoms realized surface-code patches inside a multi-code logical processor and enabled transversal inter-patch entangling gates by aligning corresponding data qubits. This is a logical-operations demonstration, not a below-threshold surface-memory claim; for the distance-five and distance-seven surface blocks, logical input-state preparation was not itself fault-tolerant.",
+          "platform": "reconfigurable neutral-atom arrays",
+          "refs": [
+            "bluvstein2024logical"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:surface:realizations:4@5609214386a63a1043665a2db117ee3b1f8a98b5b80052ac7f6b8123631b2d12",
+        "field": "realizations",
+        "id": "atlas-assertion:surface:realizations:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/realizations/4",
+        "source_sha256": "5609214386a63a1043665a2db117ee3b1f8a98b5b80052ac7f6b8123631b2d12",
+        "version_id": "atlas-assertion:surface:realizations:4@sha256:5609214386a63a1043665a2db117ee3b1f8a98b5b80052ac7f6b8123631b2d12"
+      }
+    ],
+    "relations": [
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "HGP(rep_L, rep_L) — the planar surface code is the hypergraph product of two repetition codes",
+          "refs": [
+            "tillich2009quantum"
+          ],
+          "target": "hgp",
+          "type": "product_of"
+        },
+        "evidence_id": "atlas-evidence:surface:relations:0@d3d61d8f556066a535b33da4aa86369de9b31dfd7fa49bbca2a1a5e768e42129",
+        "field": "relations",
+        "id": "atlas-assertion:surface:relations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/relations/0",
+        "source_sha256": "d3d61d8f556066a535b33da4aa86369de9b31dfd7fa49bbca2a1a5e768e42129",
+        "version_id": "atlas-assertion:surface:relations:0@sha256:d3d61d8f556066a535b33da4aa86369de9b31dfd7fa49bbca2a1a5e768e42129"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "The same square-lattice star/plaquette bulk is obtained from HGP(rep_L, rep_L); open repetition factors give the planar Surface patch, while periodic factors close it into the toric code.",
+          "refs": [
+            "kitaev2003fault",
+            "dennis2002topological",
+            "tillich2009quantum"
+          ],
+          "target": "toric",
+          "type": "same_bulk_phase_as"
+        },
+        "evidence_id": "atlas-evidence:surface:relations:1@1d1e6c8370cd46a2f2181536d92e88e92dd42dfa505165358be207de4c9adce5",
+        "field": "relations",
+        "id": "atlas-assertion:surface:relations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/relations/1",
+        "source_sha256": "1d1e6c8370cd46a2f2181536d92e88e92dd42dfa505165358be207de4c9adce5",
+        "version_id": "atlas-assertion:surface:relations:1@sha256:1d1e6c8370cd46a2f2181536d92e88e92dd42dfa505165358be207de4c9adce5"
+      }
+    ],
+    "views": [
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Expanding the two repetition-factor boundary maps gives sparse binary X and Z check matrices. Their stacked symplectic rows are the universal executable baseline used for commutation, rank, logical, and distance calculations.",
+          "origin": {
+            "converter": "surface.build HGP output -> CheckMatrix.from_css",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "tillich2009quantum"
+          ],
+          "rung": "R1",
+          "type": "symplectic-css-checks"
+        },
+        "evidence_id": "atlas-evidence:surface:views:0@c0b21bef02dc23daa370aa1e067b430bd939e41b68a5a97d56d299b8ffb74cd8",
+        "field": "views",
+        "id": "atlas-assertion:surface:views:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/views/0",
+        "source_sha256": "c0b21bef02dc23daa370aa1e067b430bd939e41b68a5a97d56d299b8ffb74cd8",
+        "version_id": "atlas-assertion:surface:views:0@sha256:c0b21bef02dc23daa370aa1e067b430bd939e41b68a5a97d56d299b8ffb74cd8"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Two open length-L repetition chains form the two axes. The two HGP qubit blocks are bit×bit and check×check, while X and Z checks let one parity map act at a time; open-chain corank is exactly what leaves one logical qubit rather than the toric code's two.",
+          "origin": {
+            "kind": "canonical"
+          },
+          "refs": [
+            "tillich2009quantum"
+          ],
+          "rung": "R2",
+          "type": "hypergraph-product"
+        },
+        "evidence_id": "atlas-evidence:surface:views:1@728915b9568d26c92263afc36b69804bce482df10afaf4a938427f15eae32da3",
+        "field": "views",
+        "id": "atlas-assertion:surface:views:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/views/1",
+        "source_sha256": "728915b9568d26c92263afc36b69804bce482df10afaf4a938427f15eae32da3",
+        "version_id": "atlas-assertion:surface:views:1@sha256:728915b9568d26c92263afc36b69804bce482df10afaf4a938427f15eae32da3"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The checks are the boundary and coboundary maps of a relative chain complex. Logical strings are relative cycles modulo boundaries, and distance is the shortest nontrivial primal or dual relative cycle.",
+          "origin": {
+            "kind": "curated",
+            "ref": "bravyi1998quantum"
+          },
+          "refs": [
+            "bravyi1998quantum",
+            "bombin2007homological"
+          ],
+          "rung": "R2",
+          "type": "homological"
+        },
+        "evidence_id": "atlas-evidence:surface:views:2@397b6b6e8703ee77c4907534d71980fbae472f37f395ce0b403fbb1a13087d36",
+        "field": "views",
+        "id": "atlas-assertion:surface:views:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/views/2",
+        "source_sha256": "397b6b6e8703ee77c4907534d71980fbae472f37f395ce0b403fbb1a13087d36",
+        "version_id": "atlas-assertion:surface:views:2@sha256:397b6b6e8703ee77c4907534d71980fbae472f37f395ce0b403fbb1a13087d36"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Error chains with a fixed syndrome become disorder sectors of a random-bond Ising model. Maximum-likelihood decoding compares their free energies; minimum-weight matching is the zero-temperature approximation that keeps energy but discards path entropy.",
+          "origin": {
+            "kind": "curated",
+            "ref": "dennis2002topological"
+          },
+          "refs": [
+            "dennis2002topological",
+            "wang2003confinement"
+          ],
+          "rung": "R5",
+          "type": "statistical-mechanics"
+        },
+        "evidence_id": "atlas-evidence:surface:views:3@2b7bae17dbfb2457ea25768dcec712ce4b6f2e5783c0752bf691f51b44591a6e",
+        "field": "views",
+        "id": "atlas-assertion:surface:views:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/views/3",
+        "source_sha256": "2b7bae17dbfb2457ea25768dcec712ce4b6f2e5783c0752bf691f51b44591a6e",
+        "version_id": "atlas-assertion:surface:views:3@sha256:2b7bae17dbfb2457ea25768dcec712ce4b6f2e5783c0752bf691f51b44591a6e"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A phase-free ZX diagram and a CSS code encode the same binary linear subspace. In this language rough/smooth merge and split operations become spider maps, so lattice surgery is diagram rewriting rather than an opaque stabilizer schedule.",
+          "origin": {
+            "kind": "curated",
+            "ref": "kissinger2022phasefree"
+          },
+          "refs": [
+            "kissinger2022phasefree",
+            "debeaudrap2020zx",
+            "bombin2023unifying"
+          ],
+          "rung": "R5",
+          "type": "zx"
+        },
+        "evidence_id": "atlas-evidence:surface:views:4@ef871e8c4e2f805029df42143284ed5bff91e654914a40c6e95a4b2b99644981",
+        "field": "views",
+        "id": "atlas-assertion:surface:views:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/views/4",
+        "source_sha256": "ef871e8c4e2f805029df42143284ed5bff91e654914a40c6e95a4b2b99644981",
+        "version_id": "atlas-assertion:surface:views:4@sha256:ef871e8c4e2f805029df42143284ed5bff91e654914a40c6e95a4b2b99644981"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The toric bulk underlying the planar patch becomes a quantized graph: star and plaquette checks are unified as cycle operators, e/m duality is graph self-duality, and charged string diagrams expose the fermionic composite and twist-defect bookkeeping.",
+          "dialect": "quon",
+          "gap": {
+            "target": "wanted:fermionic-compiler"
+          },
+          "origin": {
+            "kind": "curated",
+            "ref": "liu2019quantized"
+          },
+          "refs": [
+            "liu2017quon",
+            "liu2019quantized"
+          ],
+          "rung": "R5",
+          "type": "fermionic"
+        },
+        "evidence_id": "atlas-evidence:surface:views:5@4e29a1d845bc3c0e84d9b27c3d5a01b7bba6b4bdf48e569db50390901e24cd5e",
+        "field": "views",
+        "id": "atlas-assertion:surface:views:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/views/5",
+        "source_sha256": "4e29a1d845bc3c0e84d9b27c3d5a01b7bba6b4bdf48e569db50390901e24cd5e",
+        "version_id": "atlas-assertion:surface:views:5@sha256:4e29a1d845bc3c0e84d9b27c3d5a01b7bba6b4bdf48e569db50390901e24cd5e"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-entity:surface#subject",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The ground space is a PEPS whose virtual Z2 symmetry generates topological degeneracy, local indistinguishability, and anyonic excitations. The code's topological order is therefore a constraint on the local tensor, not merely a property asserted from its Hamiltonian.",
+          "origin": {
+            "kind": "curated",
+            "ref": "schuch2010peps"
+          },
+          "refs": [
+            "schuch2010peps"
+          ],
+          "rung": "R5",
+          "type": "tensor-network"
+        },
+        "evidence_id": "atlas-evidence:surface:views:6@0c27bdecc47d490793bbfbd6e67f055fcaeb51ce96ae7992acc08fa53c631985",
+        "field": "views",
+        "id": "atlas-assertion:surface:views:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "preserve-narrow-child-scope",
+        "source_locator": "surface/card.yaml#/views/6",
+        "source_sha256": "0c27bdecc47d490793bbfbd6e67f055fcaeb51ce96ae7992acc08fa53c631985",
+        "version_id": "atlas-assertion:surface:views:6@sha256:0c27bdecc47d490793bbfbd6e67f055fcaeb51ce96ae7992acc08fa53c631985"
+      }
+    ]
+  },
+  "source": {
+    "collection": "atlas",
+    "encoding": "utf-8",
+    "entry_id": "surface",
+    "path": "atlas/surface/card.yaml",
+    "sha256": "f60832da28a59e6469a4bac94a3a2137d7559e3a6525b37159b1ae839a11f64f",
+    "text": "id: surface\nkind: family\nidentity:\n  canonical_name: \"Surface code\"\n  variant: \"planar, unrotated\"\n  aliases: [\"planar code\", \"Kitaev surface code\"]\npresentation:\n  orienting_view: {status: available, kind: lattice}\n  guided_tour: {status: available}\neczoo:\n  status: mapped\n  zoo_id: surface\n  classification: variant\n  source:\n    repository_url: https://github.com/errorcorrectionzoo/eczoo_data\n    commit: b2437d9e2dc09284e04c66ef72ee81b7ed7bd129\n    retrieved_on: \"2026-08-05\"\n    path: codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml\n    sha256: 48d0fdd56792ea67ab2ed4f7ec8c7350efe12b4d3128ef60d23c50ea64f0343f\n    page_url: https://errorcorrectionzoo.org/c/surface\n    blob_url: https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml\ndescription: >-\n  A planar CSS stabilizer code obtained by putting qubits on the edges of a\n  cellulated surface, X checks at vertices, and Z checks around faces. Rough\n  and smooth boundaries absorb the two kinds of error string; a string that\n  joins the complementary boundaries is logical. This unrotated family is\n  constructed exactly as HGP(rep_L, rep_L).\nclaim_gaps:\n  - {property: d, target: wanted:fast-distance}\nviews:\n  - rung: R1\n    type: symplectic-css-checks\n    description: >-\n      Expanding the two repetition-factor boundary maps gives sparse binary X\n      and Z check matrices. Their stacked symplectic rows are the universal\n      executable baseline used for commutation, rank, logical, and distance\n      calculations.\n    origin:\n      kind: derived\n      converter: \"surface.build HGP output -> CheckMatrix.from_css\"\n      version: \"v1\"\n    refs: [tillich2009quantum]\n  - rung: R2\n    type: hypergraph-product\n    description: >-\n      Two open length-L repetition chains form the two axes. The two HGP qubit\n      blocks are bit×bit and check×check, while X and Z checks let one parity\n      map act at a time; open-chain corank is exactly what leaves one logical\n      qubit rather than the toric code's two.\n    origin: {kind: canonical}\n    refs: [tillich2009quantum]\n  - rung: R2\n    type: homological\n    description: >-\n      The checks are the boundary and coboundary maps of a relative chain\n      complex. Logical strings are relative cycles modulo boundaries, and\n      distance is the shortest nontrivial primal or dual relative cycle.\n    origin: {kind: curated, ref: bravyi1998quantum}\n    refs: [bravyi1998quantum, bombin2007homological]\n  - rung: R5\n    type: statistical-mechanics\n    description: >-\n      Error chains with a fixed syndrome become disorder sectors of a\n      random-bond Ising model. Maximum-likelihood decoding compares their free\n      energies; minimum-weight matching is the zero-temperature approximation\n      that keeps energy but discards path entropy.\n    origin: {kind: curated, ref: dennis2002topological}\n    refs: [dennis2002topological, wang2003confinement]\n  - rung: R5\n    type: zx\n    description: >-\n      A phase-free ZX diagram and a CSS code encode the same binary linear\n      subspace. In this language rough/smooth merge and split operations become\n      spider maps, so lattice surgery is diagram rewriting rather than an\n      opaque stabilizer schedule.\n    origin: {kind: curated, ref: kissinger2022phasefree}\n    refs: [kissinger2022phasefree, debeaudrap2020zx, bombin2023unifying]\n  - rung: R5\n    type: fermionic\n    dialect: quon\n    description: >-\n      The toric bulk underlying the planar patch becomes a quantized graph:\n      star and plaquette checks are unified as cycle operators, e/m duality is\n      graph self-duality, and charged string diagrams expose the fermionic\n      composite and twist-defect bookkeeping.\n    origin: {kind: curated, ref: liu2019quantized}\n    refs: [liu2017quon, liu2019quantized]\n    gap: {target: wanted:fermionic-compiler}\n  - rung: R5\n    type: tensor-network\n    description: >-\n      The ground space is a PEPS whose virtual Z2 symmetry generates\n      topological degeneracy, local indistinguishability, and anyonic\n      excitations. The code's topological order is therefore a constraint on\n      the local tensor, not merely a property asserted from its Hamiltonian.\n    origin: {kind: curated, ref: schuch2010peps}\n    refs: [schuch2010peps]\ncategories:\n  - {id: css, origin: {kind: verified}}\n  - {id: topological, origin: {kind: curated, ref: dennis2002topological}}\n  - {id: hypergraph-product, origin: {kind: curated, ref: tillich2009quantum}}\nrefs: [kitaev2003fault, dennis2002topological, tillich2009quantum, bravyi1998quantum,\n       bombin2007homological, fowler2012surface, horsman2012surface, bravyi2009nogo,\n       bravyi2010tradeoffs, bravyi2011energy, bravyi2013classification,\n       bombin2007optimal, bombin2010twist, bonilla2021xzzx, moussa2016transversal,\n       brown2017poking, raussendorf2007fault, bravyi2005magic, wang2003confinement,\n       aharonov1997fault, duclos2010fast, higgott2022pymatching, delfosse2021almost,\n       bravyi2014efficient, higgott2023beliefmatching, roffe2020decoding,\n       google2023suppressing, google2024below, eickbusch2024dynamic,\n       zhao2022realization, bluvstein2024logical, liu2017quon, liu2019quantized,\n       kissinger2022phasefree, debeaudrap2020zx, bombin2023unifying, schuch2010peps,\n       haah2011local, bravyi2024bicycle]\nparams: {L: \"distance (odd or even, L >= 2)\"}\nconstruction:\n  schema: qec-atlas-construction-v1\n  op: {id: hgp, version: 1}\n  inputs:\n    H1:\n      ref: {kind: generator, id: rep_parity, version: 1}\n      params:\n        L: {instance_param: L}\n      output: parity_check\n    H2:\n      ref: {kind: generator, id: rep_parity, version: 1}\n      params:\n        L: {instance_param: L}\n      output: parity_check\n  output: checkmatrix\n  match: exact-checkmatrix-v1\ntier: gold\nfit:\n  platforms: [superconducting-2d-grid, neutral-atom-reconfigurable]\n  tasks: [memory, computation]\ndecoders:\n  - id: mwpm\n    status: standard\n    noise: \"independent X/Z noise with perfect syndrome (code capacity)\"\n    notes: >-\n      Matching reaches about 10.3%, while maximum-likelihood decoding reaches\n      about 10.9% under the corresponding independent-noise convention. The\n      gap is path entropy: matching minimizes chain energy rather than class\n      free energy.\n    refs: [dennis2002topological, wang2003confinement, higgott2022pymatching]\n  - id: mwpm\n    status: standard\n    noise: \"phenomenological data and syndrome noise over repeated rounds\"\n    notes: >-\n      The spacetime matching transition is about 2.9% for the symmetric\n      phenomenological model studied by Wang, Harrington, and Preskill. This\n      number is not a circuit-level gate threshold.\n    refs: [wang2003confinement]\n  - id: mwpm\n    status: standard\n    noise: \"circuit-level depolarizing syndrome-extraction circuit\"\n    notes: >-\n      Fowler's scheduled eight-step syndrome circuit has a threshold near\n      0.57% per circuit step, or roughly 4% per full cycle in that paper's\n      stochastic model. The value is schedule-, gate-set-, and\n      decoder-dependent, so it must not be compared directly with the\n      code-capacity figures above.\n    refs: [fowler2012surface]\n  - id: union-find\n    status: standard\n    noise: \"perfect syndrome and faulty repeated syndrome benchmarks\"\n    notes: >-\n      The toric-bulk benchmarks give about 9.9% with perfect syndrome and 2.6%\n      with faulty syndrome measurements. Union-find trades a small threshold\n      loss relative to matching for almost-linear worst-case processing.\n    refs: [delfosse2021almost]\n  - id: renormalization-group\n    status: standard\n    noise: \"code-capacity Pauli noise on surface/toric-code lattices\"\n    notes: >-\n      Hierarchical coarse-graining estimates the probability of logical classes\n      rather than committing immediately to one globally lightest chain. It\n      exposes a distinct speed/accuracy tradeoff and generalizes naturally to\n      other topological-code lattices.\n    refs: [duclos2010fast]\n  - id: tensor-network-mld\n    status: standard\n    noise: \"independent X/Z noise exactly; general Pauli noise approximately\"\n    notes: >-\n      Exact free-fermion contraction is available for the restricted independent\n      channel, while matrix-product-state contraction approximates maximum\n      likelihood for more general noise. The bond dimension controls the\n      accuracy/runtime tradeoff.\n    refs: [bravyi2014efficient]\n  - id: bp-osd\n    status: standard\n    noise: \"CSS parity-check decoding with calibrated soft information\"\n    notes: >-\n      Belief propagation supplies qubit reliabilities and ordered-statistics\n      post-processing repairs non-convergence on the lattice's short cycles. It\n      is a portable qLDPC baseline rather than a geometry-specialized decoder.\n    refs: [roffe2020decoding]\n  - id: belief-matching\n    status: standard\n    noise: \"correlated circuit-level detector faults\"\n    notes: >-\n      Belief propagation first assigns correlated fault mechanisms to detector\n      events, then reweights a matching graph. This retains the mature matching\n      backend while correcting the independent-edge approximation.\n    refs: [higgott2023beliefmatching]\nrealizations:\n  - platform: \"Google superconducting square-grid processors\"\n    status: demonstrated\n    description: >-\n      Scaling from distance 3 to distance 5 reduced logical error per cycle\n      from the distance-3 ensemble average 3.028% ± 0.023% to\n      2.914% ± 0.016%. This is the 2023 distance-scaling result; it did not\n      report the later Willow suppression factor.\n    refs: [google2023suppressing]\n  - platform: \"Google Willow superconducting processor\"\n    status: demonstrated\n    description: >-\n      A distance-7 patch reached 0.143% ± 0.003% logical error per cycle and\n      each distance increase of two suppressed error by\n      Λ = 2.14 ± 0.02, with logical lifetime beyond the best physical qubit.\n    refs: [google2024below]\n  - platform: \"Google Willow dynamic superconducting layouts\"\n    status: demonstrated\n    description: >-\n      Hexagonal-connectivity, walking data/measure-role, and iSWAP-based\n      surface-code schedules all showed distance-dependent error suppression,\n      demonstrating that the code can be adapted to connectivity, leakage,\n      and native-gate constraints.\n    refs: [eickbusch2024dynamic]\n  - platform: \"USTC Zuchongzhi 2.1 superconducting processor\"\n    status: demonstrated\n    description: >-\n      A 17-qubit distance-3 Surface-17 patch executed repeated correction\n      cycles, providing an independent superconducting realization of a\n      planar surface-code memory.\n    refs: [zhao2022realization]\n  - platform: \"reconfigurable neutral-atom arrays\"\n    status: demonstrated\n    description: >-\n      Movable atoms realized surface-code patches inside a multi-code logical\n      processor and enabled transversal inter-patch entangling gates by\n      aligning corresponding data qubits. This is a logical-operations\n      demonstration, not a below-threshold surface-memory claim; for the\n      distance-five and distance-seven surface blocks, logical input-state\n      preparation was not itself fault-tolerant.\n    refs: [bluvstein2024logical]\nrelations:\n  - {type: product_of, target: hgp, how: \"HGP(rep_L, rep_L) — the planar surface code is the hypergraph product of two repetition codes\", refs: [tillich2009quantum]}\n  - {type: same_bulk_phase_as, target: toric, how: \"The same square-lattice star/plaquette bulk is obtained from HGP(rep_L, rep_L); open repetition factors give the planar Surface patch, while periodic factors close it into the toric code.\", refs: [kitaev2003fault, dennis2002topological, tillich2009quantum]}\noperations:\n  - {gate: \"CNOT\", mechanism: surgery, level: \"Clifford\", cost: \"O(d) rounds per merge/split plus an ancilla routing patch\", origin: {kind: claimed, ref: horsman2012surface}}\n  - {gate: \"CNOT\", mechanism: transversal, level: \"Clifford\", cost: \"constant-depth physical CNOT layer; transport and correlated-decoding costs remain\", origin: {kind: claimed, ref: bluvstein2024logical}}\n  - {gate: \"CNOT\", mechanism: braiding, level: \"Clifford\", cost: \"O(d) or more rounds and a distance-sized reserved hole trajectory\", origin: {kind: claimed, ref: fowler2012surface}}\n  - {gate: \"single-qubit Clifford\", mechanism: braiding, level: \"Clifford\", cost: \"twist/corner code deformation over distance-preserving paths\", origin: {kind: claimed, ref: brown2017poking}}\n  - {gate: \"H / S\", mechanism: fold-transversal, level: \"Clifford\", cost: \"constant-depth gates plus a fold or equivalent qubit permutation\", origin: {kind: claimed, ref: moussa2016transversal}}\n  - {gate: \"logical |0> / |+> initialization\", mechanism: measurement-based, level: \"stabilizer preparation\", cost: \"prepare a physical product state, measure the complementary stabilizers for d rounds, and decode the spacetime record\", origin: {kind: claimed, ref: fowler2012surface}}\n  - {gate: \"logical Z / X readout\", mechanism: measurement-based, level: \"stabilizer measurement\", cost: \"destructively measure all data qubits in the selected basis and decode the final data/syndrome history\", origin: {kind: claimed, ref: fowler2012surface}}\n  - {gate: \"Pauli-frame update\", mechanism: measurement-based, level: \"Clifford bookkeeping\", cost: \"a classical frame update after decoded logical measurements; no immediate physical Pauli layer is required\", origin: {kind: claimed, ref: fowler2012surface}}\n  - {gate: \"T\", mechanism: measurement-based, level: \"non-Clifford\", cost: \"inject and distill a magic state, then consume it by gate teleportation; factory spacetime dominates\", origin: {kind: claimed, ref: bravyi2005magic}}\n",
+    "version": "qec-atlas-card-v1"
+  },
+  "source_binding": {
+    "binding_state": "clean-with-scoped-expansion",
+    "legacy_source": {
+      "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+      "continuity": "same-path-same-bytes",
+      "path": "codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml",
+      "sha256": "48d0fdd56792ea67ab2ed4f7ec8c7350efe12b4d3128ef60d23c50ea64f0343f",
+      "zoo_id": "surface"
+    },
+    "source_commit": "5c11f03d77895fe46564fe792288304fe4b6a998",
+    "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:surface",
+    "source_path": "codes/quantum/qubits/stabilizer/topological/surface/2d_surface/surface.yml",
+    "source_sha256": "48d0fdd56792ea67ab2ed4f7ec8c7350efe12b4d3128ef60d23c50ea64f0343f",
+    "t206_entity_ids": [
+      "eczoo-entity:surface#collection"
+    ],
+    "target_denotation_entity_ids": [
+      "eczoo-entity:surface#collection"
+    ],
+    "target_disposition": "atomic"
+  },
+  "target_version": "entry-ontology-v2"
+}

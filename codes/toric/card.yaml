@@ -1,0 +1,1948 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Expanding every vertex star and face boundary gives sparse binary X and Z matrices. Their stacked symplectic rows are the executable baseline for commutation, rank, exact small-instance distance, logical-loop, and stacked-block CNOT checks.",
+        "origin": {
+          "converter": "ChainComplex.to_checkmatrix plus toric logical-support validation",
+          "kind": "derived",
+          "version": "toric-square-v2"
+        },
+        "refs": [
+          "kitaev1997imperfect",
+          "kitaev2003fault"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      "evidence_id": "atlas-evidence:toric:views:0@6cd04ef5755e27b57f373bd692a64ca165bfb7e7fa4aa926fbcded87bb1ff467",
+      "field": "views",
+      "id": "atlas-assertion:toric:views:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/views/0",
+      "source_sha256": "6cd04ef5755e27b57f373bd692a64ca165bfb7e7fa4aa926fbcded87bb1ff467",
+      "version_id": "atlas-assertion:toric:views:0@sha256:6cd04ef5755e27b57f373bd692a64ca165bfb7e7fa4aa926fbcded87bb1ff467"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Qubits are the one-cells of a square cellulation of the torus. The face boundary d2 and vertex incidence d1 satisfy d1 d2=0; HX=d1 and HZ=d2^T. Cycles modulo local boundaries leave the two noncontractible homology directions and hence two logical qubits.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "kitaev1997quantum",
+          "kitaev2003fault",
+          "dennis2002topological"
+        ],
+        "rung": "R2",
+        "type": "periodic-chain-complex"
+      },
+      "evidence_id": "atlas-evidence:toric:views:1@95db0f6706e1e8da7a21745f4eeb98f346caf56f0181862432d102d20de4786d",
+      "field": "views",
+      "id": "atlas-assertion:toric:views:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/views/1",
+      "source_sha256": "95db0f6706e1e8da7a21745f4eeb98f346caf56f0181862432d102d20de4786d",
+      "version_id": "atlas-assertion:toric:views:1@sha256:95db0f6706e1e8da7a21745f4eeb98f346caf56f0181862432d102d20de4786d"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Let C_L be the square cyclic repetition parity map with one check per periodic neighbor pair. HGP(C_L, C_L^T) reproduces the constructor's ordered star and plaquette matrices exactly. The square cyclic factors have both kernel and transpose-kernel sectors; this is why the output has two logical sectors, unlike HGP of the open repetition factors used by the planar Surface entry.",
+        "origin": {
+          "converter": "pedagogy/reproduce.py cyclic_hgp_checkmatrix",
+          "kind": "derived",
+          "version": "cyclic-hgp-exact-v1"
+        },
+        "refs": [
+          "tillich2009quantum",
+          "kovalev2012improved"
+        ],
+        "rung": "R2",
+        "type": "cyclic-hypergraph-product"
+      },
+      "evidence_id": "atlas-evidence:toric:views:2@335182a57f8fbeab1faf8d5f5ea3c57f6869256075631983b6a3849386fc5500",
+      "field": "views",
+      "id": "atlas-assertion:toric:views:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/views/2",
+      "source_sha256": "335182a57f8fbeab1faf8d5f5ea3c57f6869256075631983b6a3849386fc5500",
+      "version_id": "atlas-assertion:toric:views:2@sha256:335182a57f8fbeab1faf8d5f5ea3c57f6869256075631983b6a3849386fc5500"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Open primal and dual strings create endpoint excitations of the two charge types. Closed contractible strings act locally, while crossing noncontractible strings have odd symplectic intersection and therefore realize conjugate logical Paulis.",
+        "origin": {
+          "kind": "curated",
+          "ref": "kitaev2003fault"
+        },
+        "refs": [
+          "kitaev2003fault"
+        ],
+        "rung": "R5",
+        "type": "anyon-strings"
+      },
+      "evidence_id": "atlas-evidence:toric:views:3@08161bfcb7cda4f91e7f98639fa80f0f839101807b95f3aeb549c724a2df6345",
+      "field": "views",
+      "id": "atlas-assertion:toric:views:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/views/3",
+      "source_sha256": "08161bfcb7cda4f91e7f98639fa80f0f839101807b95f3aeb549c724a2df6345",
+      "version_id": "atlas-assertion:toric:views:3@sha256:08161bfcb7cda4f91e7f98639fa80f0f839101807b95f3aeb549c724a2df6345"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Corrections with one syndrome split into homology classes whose total likelihoods become disorder-sector partition functions. Matching keeps a light representative; maximum-likelihood decoding compares class free energies. The phase boundary depends on the noise and syndrome model.",
+        "origin": {
+          "kind": "curated",
+          "ref": "dennis2002topological"
+        },
+        "refs": [
+          "dennis2002topological",
+          "wang2003confinement",
+          "chubb2021statistical"
+        ],
+        "rung": "R5",
+        "type": "statistical-mechanics"
+      },
+      "evidence_id": "atlas-evidence:toric:views:4@0497676e00223a6cea50b72b761c2b12ab5894c00c98f82d1aaf413d0e25275a",
+      "field": "views",
+      "id": "atlas-assertion:toric:views:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/views/4",
+      "source_sha256": "0497676e00223a6cea50b72b761c2b12ab5894c00c98f82d1aaf413d0e25275a",
+      "version_id": "atlas-assertion:toric:views:4@sha256:0497676e00223a6cea50b72b761c2b12ab5894c00c98f82d1aaf413d0e25275a"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A PEPS virtual Z2 symmetry encodes the same topological degeneracy and local indistinguishability. In decoding, tensor contractions instead sum probabilities inside logical classes; the state representation and the decoder use related mathematics but answer different questions.",
+        "origin": {
+          "kind": "curated",
+          "ref": "schuch2010peps"
+        },
+        "refs": [
+          "schuch2010peps",
+          "bravyi2014efficient"
+        ],
+        "rung": "R5",
+        "type": "tensor-network"
+      },
+      "evidence_id": "atlas-evidence:toric:views:5@38f059d85cc110a1232da82c582a3059e36548d6e57f219eb77475ff22253b5d",
+      "field": "views",
+      "id": "atlas-assertion:toric:views:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/views/5",
+      "source_sha256": "38f059d85cc110a1232da82c582a3059e36548d6e57f219eb77475ff22253b5d",
+      "version_id": "atlas-assertion:toric:views:5@sha256:38f059d85cc110a1232da82c582a3059e36548d6e57f219eb77475ff22253b5d"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Under restricted coherent-noise channels the correction calculation can be mapped to free Majorana fermions and simulated efficiently. This is a channel-specific algorithmic dictionary, not a claim that the physical qubits are tetrons or that arbitrary coherent noise becomes Pauli noise.",
+        "dialect": "majorana-pairs",
+        "gap": {
+          "target": "wanted:fermionic-compiler"
+        },
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi2018coherent"
+        },
+        "refs": [
+          "bravyi2018coherent",
+          "iverson2020coherence"
+        ],
+        "rung": "R5",
+        "type": "fermionic"
+      },
+      "evidence_id": "atlas-evidence:toric:views:6@9e3c37c3e95ed15970c6da5421051e9f8f0984dde7983c15d23b14ef60062a0f",
+      "field": "views",
+      "id": "atlas-assertion:toric:views:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/views/6",
+      "source_sha256": "9e3c37c3e95ed15970c6da5421051e9f8f0984dde7983c15d23b14ef60062a0f",
+      "version_id": "atlas-assertion:toric:views:6@sha256:9e3c37c3e95ed15970c6da5421051e9f8f0984dde7983c15d23b14ef60062a0f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      "evidence_id": "atlas-evidence:toric:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:toric:categories:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/categories/0",
+      "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "version_id": "atlas-assertion:toric:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "kitaev2003fault"
+        }
+      },
+      "evidence_id": "atlas-evidence:toric:categories:1@e37387ce123c2a03294d4d6e0a5a90502a43ca59ee6fd54e49ffc453ae01c1fa",
+      "field": "categories",
+      "id": "atlas-assertion:toric:categories:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/categories/1",
+      "source_sha256": "e37387ce123c2a03294d4d6e0a5a90502a43ca59ee6fd54e49ffc453ae01c1fa",
+      "version_id": "atlas-assertion:toric:categories:1@sha256:e37387ce123c2a03294d4d6e0a5a90502a43ca59ee6fd54e49ffc453ae01c1fa"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "hypergraph-product",
+        "origin": {
+          "kind": "curated",
+          "ref": "tillich2009quantum"
+        }
+      },
+      "evidence_id": "atlas-evidence:toric:categories:2@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "field": "categories",
+      "id": "atlas-assertion:toric:categories:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/categories/2",
+      "source_sha256": "98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "version_id": "atlas-assertion:toric:categories:2@sha256:98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "independent X/Z data faults with perfect syndrome (code capacity)",
+        "notes": "Defects are paired on the periodic primal or dual lattice. The decoder minimizes one additive chain cost; it does not sum every degenerate path in a logical class, and its benchmark cannot be transferred to depolarizing, coherent, or faulty-syndrome models.",
+        "refs": [
+          "dennis2002topological",
+          "wang2010thresholds",
+          "higgott2022pymatching"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:toric:decoders:0@9ae1b1a72910878577a65e47aa51b4a84e2a201613f38af7215c488922ffecf9",
+      "field": "decoders",
+      "id": "atlas-assertion:toric:decoders:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/decoders/0",
+      "source_sha256": "9ae1b1a72910878577a65e47aa51b4a84e2a201613f38af7215c488922ffecf9",
+      "version_id": "atlas-assertion:toric:decoders:0@sha256:9ae1b1a72910878577a65e47aa51b4a84e2a201613f38af7215c488922ffecf9"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "repeated noisy data and syndrome records in a declared phenomenological or circuit detector model",
+        "notes": "Matching moves to spacetime. Round boundaries, measurement normalization, hook correlations, and the extraction schedule become part of the decoder identity, so no code-capacity number is reused here.",
+        "refs": [
+          "dennis2002topological",
+          "wang2003confinement",
+          "wang2010thresholds"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:toric:decoders:1@bf5fa1bbea9c418950e445361693ecee1dda82955a19caf97b391ba6ab2ad237",
+      "field": "decoders",
+      "id": "atlas-assertion:toric:decoders:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/decoders/1",
+      "source_sha256": "bf5fa1bbea9c418950e445361693ecee1dda82955a19caf97b391ba6ab2ad237",
+      "version_id": "atlas-assertion:toric:decoders:1@sha256:bf5fa1bbea9c418950e445361693ecee1dda82955a19caf97b391ba6ab2ad237"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "renormalization-group",
+        "noise": "periodic topological-code Pauli models with a specified syndrome history",
+        "notes": "Hierarchical coarse-graining retains approximate logical-class probabilities and trades accuracy for speed. Published behavior belongs to the chosen lattice, channel, scale rule, and syndrome model.",
+        "refs": [
+          "duclos2010fast"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:toric:decoders:2@23cc42fb34bc53d520f7784688862aa4a364d15d896b82c3411063db7404ae0c",
+      "field": "decoders",
+      "id": "atlas-assertion:toric:decoders:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/decoders/2",
+      "source_sha256": "23cc42fb34bc53d520f7784688862aa4a364d15d896b82c3411063db7404ae0c",
+      "version_id": "atlas-assertion:toric:decoders:2@sha256:23cc42fb34bc53d520f7784688862aa4a364d15d896b82c3411063db7404ae0c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "tensor-network-mld",
+        "noise": "restricted independent channels exactly, and locally correlated Pauli channels approximately",
+        "notes": "Free-fermion or tensor contractions compare logical-class weights rather than selecting one light path. Exactness and runtime change with the channel and contraction width; they are not universal Toric properties.",
+        "refs": [
+          "bravyi2014efficient",
+          "chubb2021statistical"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:toric:decoders:3@aeac1c7a88a0e4ab1a917b25fe087fb9cc56fb4f6c8c11ac96ed407d62a9f5cc",
+      "field": "decoders",
+      "id": "atlas-assertion:toric:decoders:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/decoders/3",
+      "source_sha256": "aeac1c7a88a0e4ab1a917b25fe087fb9cc56fb4f6c8c11ac96ed407d62a9f5cc",
+      "version_id": "atlas-assertion:toric:decoders:3@sha256:aeac1c7a88a0e4ab1a917b25fe087fb9cc56fb4f6c8c11ac96ed407d62a9f5cc"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "bp-osd",
+        "noise": "finite sparse CSS matrices with calibrated soft information and perfect syndrome",
+        "notes": "BP-OSD is a portable qLDPC baseline. Ordered-statistics post-processing can repair short-cycle message-passing failures, but no Toric-specific likelihood or threshold follows from the matrix alone.",
+        "refs": [
+          "roffe2020decoding"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:toric:decoders:4@71722c50ebe072ec590eec343500ae51fb1153c1013fc80bb8e197aac959c3eb",
+      "field": "decoders",
+      "id": "atlas-assertion:toric:decoders:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/decoders/4",
+      "source_sha256": "71722c50ebe072ec590eec343500ae51fb1153c1013fc80bb8e197aac959c3eb",
+      "version_id": "atlas-assertion:toric:decoders:4@sha256:71722c50ebe072ec590eec343500ae51fb1153c1013fc80bb8e197aac959c3eb"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "detectable qubit loss with known erasure locations plus declared computational faults",
+        "notes": "Lost edges can be merged into superchecks and decoded using their known locations. The percolation boundary and the computational-error tradeoff are specific to detectable loss, not to unheralded leakage.",
+        "refs": [
+          "stace2009loss"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:toric:decoders:5@a0508491399bfbbf805883aeea22f0bd7b8772afe8d6ab3ed0d3829aee1b97d5",
+      "field": "decoders",
+      "id": "atlas-assertion:toric:decoders:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/decoders/5",
+      "source_sha256": "a0508491399bfbbf805883aeea22f0bd7b8772afe8d6ab3ed0d3829aee1b97d5",
+      "version_id": "atlas-assertion:toric:decoders:5@sha256:a0508491399bfbbf805883aeea22f0bd7b8772afe8d6ab3ed0d3829aee1b97d5"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "one parallel physical-Pauli layer on a noncontractible length-L support, or a classical Pauli-frame update",
+        "gate": "logical X / Z Pauli loops",
+        "level": "Pauli",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "verified",
+          "method": "constructor logical-loop commutation, row-space, and symplectic-pair checks"
+        }
+      },
+      "evidence_id": "atlas-evidence:toric:operations:0@bf5114465e7762ab8e6be889f77a2de16d97c881269f89aea32765586319bcb5",
+      "field": "operations",
+      "id": "atlas-assertion:toric:operations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/operations/0",
+      "source_sha256": "bf5114465e7762ab8e6be889f77a2de16d97c881269f89aea32765586319bcb5",
+      "version_id": "atlas-assertion:toric:operations:0@sha256:bf5114465e7762ab8e6be889f77a2de16d97c881269f89aea32765586319bcb5"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "one pairwise physical-CNOT layer; alignment, transport, and correlated decoding are external architecture costs",
+        "gate": "CNOT between corresponding logical sectors of two aligned Toric blocks",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "verified",
+          "method": "pedagogy/reproduce.py stacked-block symplectic conjugation"
+        }
+      },
+      "evidence_id": "atlas-evidence:toric:operations:1@221b743e3f8ef4556221c37e40a52b8582875a8082c0ac07ede9056e5f4e9c95",
+      "field": "operations",
+      "id": "atlas-assertion:toric:operations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/operations/1",
+      "source_sha256": "221b743e3f8ef4556221c37e40a52b8582875a8082c0ac07ede9056e5f4e9c95",
+      "version_id": "atlas-assertion:toric:operations:1@sha256:221b743e3f8ef4556221c37e40a52b8582875a8082c0ac07ede9056e5f4e9c95"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "fold pairings, Dehn-twist deformation, and single-shot logical Pauli measurements with protocol-specific ancillas and decoding",
+        "gate": "single-block Clifford generating set",
+        "level": "Clifford",
+        "mechanism": "fold-transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "guernut2024toric"
+        }
+      },
+      "evidence_id": "atlas-evidence:toric:operations:2@3a1e7020ae5c1cff1b828e7406c672858b862fd726b252ec4f9df79c44f100ac",
+      "field": "operations",
+      "id": "atlas-assertion:toric:operations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/operations/2",
+      "source_sha256": "3a1e7020ae5c1cff1b828e7406c672858b862fd726b252ec4f9df79c44f100ac",
+      "version_id": "atlas-assertion:toric:operations:2@sha256:3a1e7020ae5c1cff1b828e7406c672858b862fd726b252ec4f9df79c44f100ac"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "single-shot measurement gadget plus an ancilla layout and decoder from the proposed Toric Clifford protocol",
+        "gate": "logical Pauli measurement",
+        "level": "stabilizer measurement",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "guernut2024toric"
+        }
+      },
+      "evidence_id": "atlas-evidence:toric:operations:3@840d80950da8abfa9c3da1479ae5c2a61afc7ae50e4c8bec0e55fe2afd518fa8",
+      "field": "operations",
+      "id": "atlas-assertion:toric:operations:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/operations/3",
+      "source_sha256": "840d80950da8abfa9c3da1479ae5c2a61afc7ae50e4c8bec0e55fe2afd518fa8",
+      "version_id": "atlas-assertion:toric:operations:3@sha256:840d80950da8abfa9c3da1479ae5c2a61afc7ae50e4c8bec0e55fe2afd518fa8"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The experiment prepared and characterized a finite Toric-code state on periodic geometry. This establishes state preparation, not repeated syndrome extraction, arbitrary logical-state preservation, or below-threshold scaling.",
+        "platform": "reconfigurable neutral-atom array with coherent transport",
+        "refs": [
+          "bluvstein2022processor"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:toric:realizations:0@40bb602bc68aceb4756c2f50681c30b6e60c0b2121579d943499312ed50e681b",
+      "field": "realizations",
+      "id": "atlas-assertion:toric:realizations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/realizations/0",
+      "source_sha256": "40bb602bc68aceb4756c2f50681c30b6e60c0b2121579d943499312ed50e681b",
+      "version_id": "atlas-assertion:toric:realizations:0@sha256:40bb602bc68aceb4756c2f50681c30b6e60c0b2121579d943499312ed50e681b"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Repeated Toric syndrome extraction, lost-qubit replacement, reservoir reloading, and decoded logical-memory data were demonstrated. The reported finite two-distance comparison remains bound to its stated round range and is not promoted as an asymptotic threshold.",
+        "platform": "neutral-atom array with mid-circuit measurement and atom reloading",
+        "refs": [
+          "atomcomputing2026toric"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:toric:realizations:1@e9d83655e5e5a57ed7a468dc0b6d9f9e48b680af180ffb8af3522f31ebc00503",
+      "field": "realizations",
+      "id": "atlas-assertion:toric:realizations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/realizations/1",
+      "source_sha256": "e9d83655e5e5a57ed7a468dc0b6d9f9e48b680af180ffb8af3522f31ebc00503",
+      "version_id": "atlas-assertion:toric:realizations:1@sha256:e9d83655e5e5a57ed7a468dc0b6d9f9e48b680af180ffb8af3522f31ebc00503"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "HGP(C_L, C_L^T), where C_L is the square cyclic neighbor-parity map, reproduces the ordered Toric check matrices exactly. These periodic square factors are not the open rep_L factors used by the planar Surface construction recipe.",
+        "refs": [
+          "tillich2009quantum",
+          "kovalev2012improved"
+        ],
+        "target": "hgp",
+        "type": "product_of"
+      },
+      "evidence_id": "atlas-evidence:toric:relations:0@ba5c56f61cbb706c39f067dfc418e74e351cbddc18133c6b86cff51c783c7f96",
+      "field": "relations",
+      "id": "atlas-assertion:toric:relations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/relations/0",
+      "source_sha256": "ba5c56f61cbb706c39f067dfc418e74e351cbddc18133c6b86cff51c783c7f96",
+      "version_id": "atlas-assertion:toric:relations:0@sha256:ba5c56f61cbb706c39f067dfc418e74e351cbddc18133c6b86cff51c783c7f96"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "Both use the square-lattice star and plaquette bulk. Cutting the torus creates rough and smooth boundaries and changes absolute cycles into relative strings; closing those boundaries restores two periodic homology directions. Bulk equivalence is not code-space identity.",
+        "refs": [
+          "kitaev2003fault",
+          "bravyi1998quantum",
+          "dennis2002topological"
+        ],
+        "target": "surface",
+        "type": "same_bulk_phase_as"
+      },
+      "evidence_id": "atlas-evidence:toric:relations:1@81340b167df1c3e19cbec224e886c71e6f7e6747432b772aa8cfc73ca32b56d8",
+      "field": "relations",
+      "id": "atlas-assertion:toric:relations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/relations/1",
+      "source_sha256": "81340b167df1c3e19cbec224e886c71e6f7e6747432b772aa8cfc73ca32b56d8",
+      "version_id": "atlas-assertion:toric:relations:1@sha256:81340b167df1c3e19cbec224e886c71e6f7e6747432b772aa8cfc73ca32b56d8"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:toric#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "At the appropriate frames, contracting the just-measured Honeycomb matching and applying a depth-one local Clifford basis change gives Toric stabilizers on a coarser lattice. The full Honeycomb object remains a time-periodic measurement protocol with spacetime detectors and an anyon automorphism.",
+        "refs": [
+          "hastings2021dynamically",
+          "aasen2022automorphism"
+        ],
+        "target": "honeycomb",
+        "type": "same_bulk_phase_as"
+      },
+      "evidence_id": "atlas-evidence:toric:relations:2@5466c3f23477b5609f72b3e5be6991cf1392988e5589b611a0fab843254b9792",
+      "field": "relations",
+      "id": "atlas-assertion:toric:relations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "toric/card.yaml#/relations/2",
+      "source_sha256": "5466c3f23477b5609f72b3e5be6991cf1392988e5589b611a0fab843254b9792",
+      "version_id": "atlas-assertion:toric:relations:2@sha256:5466c3f23477b5609f72b3e5be6991cf1392988e5589b611a0fab843254b9792"
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:toric#collection",
+      "status": "preserved",
+      "tier": "T2"
+    }
+  ],
+  "decision_class": "exact-clean",
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:toric#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:toric#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/toric/card.yaml#/identity",
+          "atlas:atlas/toric/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/toric/toric-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/2d_surface/toric/toric.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:toric"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:toric#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:toric",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "499e5a21a6039e96c5ccd9681c0d9fa86589a7146851bffce08da6de32f10a22",
+          "payload_sha256": "ed04af86f7fbfdf501b697403a0ea2131df72675bb5b6502bad6678202fadf33",
+          "semantic_hash": "37bd6d0c7f707d75e7844f66d62aced1b227b3100e995c333582c4f3c17df315"
+        },
+        "id": "atlas-instance:toric:L2",
+        "label": "L2",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:37bd6d0c7f707d75e7844f66d62aced1b227b3100e995c333582c4f3c17df315:small-exact-distance-enumeration:84b7f2147621fc645bb35634fb92e3bcfb4901a3d635d816c4a1ca54646bb3f7@1",
+            "certificate:37bd6d0c7f707d75e7844f66d62aced1b227b3100e995c333582c4f3c17df315:structural-validity:7f6af3315499f24ebf189955f125d57427d9f2b4434023c33ffbd787830b22ca@1"
+          ],
+          "instance_record_sha256": "6870acc75de92522f2099f3418f05061623063b65409dc634537c32f167ecd9a",
+          "lean_report_sha256": "5687b4816193aae37066e452bd14334f77b465c576b3488c38792c0855ad58df",
+          "semantic_hash": "37bd6d0c7f707d75e7844f66d62aced1b227b3100e995c333582c4f3c17df315"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "20b3ddc7a1baee6aef46aa5164b8982c6b84a24caadcc837dc9777b47ba5e877",
+        "v2_envelope_id": "formal-ir-v2:toric:L2"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "499e5a21a6039e96c5ccd9681c0d9fa86589a7146851bffce08da6de32f10a22",
+          "payload_sha256": "cfe4c8ef8f615e5954e070ad43644a6692a762de6de987bbabf04eb4f58bc663",
+          "semantic_hash": "d9beb1ad67b2ac43dcc0d0f78fce2b5ceb81814dadd7818b6b5c523507d81b6d"
+        },
+        "id": "atlas-instance:toric:L3",
+        "label": "L3",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:d9beb1ad67b2ac43dcc0d0f78fce2b5ceb81814dadd7818b6b5c523507d81b6d:small-exact-distance-enumeration:9eb96504b683a4344d9db71f9bc37b4c62f24d450bf467d6d312b757277d1045@1",
+            "certificate:d9beb1ad67b2ac43dcc0d0f78fce2b5ceb81814dadd7818b6b5c523507d81b6d:structural-validity:2de3a74d6e8f2e3e77c5dcf162084a8de5d072b31d32b3f83f6743861bbb77fb@1"
+          ],
+          "instance_record_sha256": "cd2f16cc904bd6bbc9673282c5235dc13b7affb50af4a3d39d49426cde2c9f00",
+          "lean_report_sha256": "961f66540b2302c251e65efa441c772638d494e0026e2cfd04ae4ed60be20754",
+          "semantic_hash": "d9beb1ad67b2ac43dcc0d0f78fce2b5ceb81814dadd7818b6b5c523507d81b6d"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b6eaf161ad932729b6bef44a2e7c19e7a099b25b563ce3448ea229f8f2e61080",
+        "v2_envelope_id": "formal-ir-v2:toric:L3"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 2,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:toric#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "id": "toric",
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:toric:views:0",
+      "atlas-assertion:toric:views:1",
+      "atlas-assertion:toric:views:2",
+      "atlas-assertion:toric:views:3",
+      "atlas-assertion:toric:views:4",
+      "atlas-assertion:toric:views:5",
+      "atlas-assertion:toric:views:6",
+      "atlas-assertion:toric:categories:0",
+      "atlas-assertion:toric:categories:1",
+      "atlas-assertion:toric:categories:2",
+      "atlas-assertion:toric:decoders:0",
+      "atlas-assertion:toric:decoders:1",
+      "atlas-assertion:toric:decoders:2",
+      "atlas-assertion:toric:decoders:3",
+      "atlas-assertion:toric:decoders:4",
+      "atlas-assertion:toric:decoders:5",
+      "atlas-assertion:toric:operations:0",
+      "atlas-assertion:toric:operations:1",
+      "atlas-assertion:toric:operations:2",
+      "atlas-assertion:toric:operations:3",
+      "atlas-assertion:toric:realizations:0",
+      "atlas-assertion:toric:realizations:1",
+      "atlas-assertion:toric:relations:0",
+      "atlas-assertion:toric:relations:1",
+      "atlas-assertion:toric:relations:2"
+    ],
+    "entity_ids": [
+      "eczoo-entity:toric#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:toric:views:0@6cd04ef5755e27b57f373bd692a64ca165bfb7e7fa4aa926fbcded87bb1ff467",
+      "atlas-evidence:toric:views:1@95db0f6706e1e8da7a21745f4eeb98f346caf56f0181862432d102d20de4786d",
+      "atlas-evidence:toric:views:2@335182a57f8fbeab1faf8d5f5ea3c57f6869256075631983b6a3849386fc5500",
+      "atlas-evidence:toric:views:3@08161bfcb7cda4f91e7f98639fa80f0f839101807b95f3aeb549c724a2df6345",
+      "atlas-evidence:toric:views:4@0497676e00223a6cea50b72b761c2b12ab5894c00c98f82d1aaf413d0e25275a",
+      "atlas-evidence:toric:views:5@38f059d85cc110a1232da82c582a3059e36548d6e57f219eb77475ff22253b5d",
+      "atlas-evidence:toric:views:6@9e3c37c3e95ed15970c6da5421051e9f8f0984dde7983c15d23b14ef60062a0f",
+      "atlas-evidence:toric:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:toric:categories:1@e37387ce123c2a03294d4d6e0a5a90502a43ca59ee6fd54e49ffc453ae01c1fa",
+      "atlas-evidence:toric:categories:2@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "atlas-evidence:toric:decoders:0@9ae1b1a72910878577a65e47aa51b4a84e2a201613f38af7215c488922ffecf9",
+      "atlas-evidence:toric:decoders:1@bf5fa1bbea9c418950e445361693ecee1dda82955a19caf97b391ba6ab2ad237",
+      "atlas-evidence:toric:decoders:2@23cc42fb34bc53d520f7784688862aa4a364d15d896b82c3411063db7404ae0c",
+      "atlas-evidence:toric:decoders:3@aeac1c7a88a0e4ab1a917b25fe087fb9cc56fb4f6c8c11ac96ed407d62a9f5cc",
+      "atlas-evidence:toric:decoders:4@71722c50ebe072ec590eec343500ae51fb1153c1013fc80bb8e197aac959c3eb",
+      "atlas-evidence:toric:decoders:5@a0508491399bfbbf805883aeea22f0bd7b8772afe8d6ab3ed0d3829aee1b97d5",
+      "atlas-evidence:toric:operations:0@bf5114465e7762ab8e6be889f77a2de16d97c881269f89aea32765586319bcb5",
+      "atlas-evidence:toric:operations:1@221b743e3f8ef4556221c37e40a52b8582875a8082c0ac07ede9056e5f4e9c95",
+      "atlas-evidence:toric:operations:2@3a1e7020ae5c1cff1b828e7406c672858b862fd726b252ec4f9df79c44f100ac",
+      "atlas-evidence:toric:operations:3@840d80950da8abfa9c3da1479ae5c2a61afc7ae50e4c8bec0e55fe2afd518fa8",
+      "atlas-evidence:toric:realizations:0@40bb602bc68aceb4756c2f50681c30b6e60c0b2121579d943499312ed50e681b",
+      "atlas-evidence:toric:realizations:1@e9d83655e5e5a57ed7a468dc0b6d9f9e48b680af180ffb8af3522f31ebc00503",
+      "atlas-evidence:toric:relations:0@ba5c56f61cbb706c39f067dfc418e74e351cbddc18133c6b86cff51c783c7f96",
+      "atlas-evidence:toric:relations:1@81340b167df1c3e19cbec224e886c71e6f7e6747432b772aa8cfc73ca32b56d8",
+      "atlas-evidence:toric:relations:2@5466c3f23477b5609f72b3e5be6991cf1392988e5589b611a0fab843254b9792"
+    ],
+    "formalization_id": "atlas-formalization:toric",
+    "instance_ids": [
+      "atlas-instance:toric:L2",
+      "atlas-instance:toric:L3"
+    ],
+    "page_id": "atlas-page:toric",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:toric"
+    ]
+  },
+  "instances": [
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "499e5a21a6039e96c5ccd9681c0d9fa86589a7146851bffce08da6de32f10a22",
+        "payload_sha256": "ed04af86f7fbfdf501b697403a0ea2131df72675bb5b6502bad6678202fadf33",
+        "semantic_hash": "37bd6d0c7f707d75e7844f66d62aced1b227b3100e995c333582c4f3c17df315"
+      },
+      "id": "atlas-instance:toric:L2",
+      "label": "L2",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:37bd6d0c7f707d75e7844f66d62aced1b227b3100e995c333582c4f3c17df315:small-exact-distance-enumeration:84b7f2147621fc645bb35634fb92e3bcfb4901a3d635d816c4a1ca54646bb3f7@1",
+          "certificate:37bd6d0c7f707d75e7844f66d62aced1b227b3100e995c333582c4f3c17df315:structural-validity:7f6af3315499f24ebf189955f125d57427d9f2b4434023c33ffbd787830b22ca@1"
+        ],
+        "instance_record_sha256": "6870acc75de92522f2099f3418f05061623063b65409dc634537c32f167ecd9a",
+        "lean_report_sha256": "5687b4816193aae37066e452bd14334f77b465c576b3488c38792c0855ad58df",
+        "semantic_hash": "37bd6d0c7f707d75e7844f66d62aced1b227b3100e995c333582c4f3c17df315"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "20b3ddc7a1baee6aef46aa5164b8982c6b84a24caadcc837dc9777b47ba5e877",
+      "v2_envelope_id": "formal-ir-v2:toric:L2"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "499e5a21a6039e96c5ccd9681c0d9fa86589a7146851bffce08da6de32f10a22",
+        "payload_sha256": "cfe4c8ef8f615e5954e070ad43644a6692a762de6de987bbabf04eb4f58bc663",
+        "semantic_hash": "d9beb1ad67b2ac43dcc0d0f78fce2b5ceb81814dadd7818b6b5c523507d81b6d"
+      },
+      "id": "atlas-instance:toric:L3",
+      "label": "L3",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:d9beb1ad67b2ac43dcc0d0f78fce2b5ceb81814dadd7818b6b5c523507d81b6d:small-exact-distance-enumeration:9eb96504b683a4344d9db71f9bc37b4c62f24d450bf467d6d312b757277d1045@1",
+          "certificate:d9beb1ad67b2ac43dcc0d0f78fce2b5ceb81814dadd7818b6b5c523507d81b6d:structural-validity:2de3a74d6e8f2e3e77c5dcf162084a8de5d072b31d32b3f83f6743861bbb77fb@1"
+        ],
+        "instance_record_sha256": "cd2f16cc904bd6bbc9673282c5235dc13b7affb50af4a3d39d49426cde2c9f00",
+        "lean_report_sha256": "961f66540b2302c251e65efa441c772638d494e0026e2cfd04ae4ed60be20754",
+        "semantic_hash": "d9beb1ad67b2ac43dcc0d0f78fce2b5ceb81814dadd7818b6b5c523507d81b6d"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "b6eaf161ad932729b6bef44a2e7c19e7a099b25b563ce3448ea229f8f2e61080",
+      "v2_envelope_id": "formal-ir-v2:toric:L3"
+    }
+  ],
+  "legacy_card": {
+    "categories": [
+      {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "kitaev2003fault"
+        }
+      },
+      {
+        "id": "hypergraph-product",
+        "origin": {
+          "kind": "curated",
+          "ref": "tillich2009quantum"
+        }
+      }
+    ],
+    "decoders": [
+      {
+        "id": "mwpm",
+        "noise": "independent X/Z data faults with perfect syndrome (code capacity)",
+        "notes": "Defects are paired on the periodic primal or dual lattice. The decoder minimizes one additive chain cost; it does not sum every degenerate path in a logical class, and its benchmark cannot be transferred to depolarizing, coherent, or faulty-syndrome models.",
+        "refs": [
+          "dennis2002topological",
+          "wang2010thresholds",
+          "higgott2022pymatching"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "mwpm",
+        "noise": "repeated noisy data and syndrome records in a declared phenomenological or circuit detector model",
+        "notes": "Matching moves to spacetime. Round boundaries, measurement normalization, hook correlations, and the extraction schedule become part of the decoder identity, so no code-capacity number is reused here.",
+        "refs": [
+          "dennis2002topological",
+          "wang2003confinement",
+          "wang2010thresholds"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "renormalization-group",
+        "noise": "periodic topological-code Pauli models with a specified syndrome history",
+        "notes": "Hierarchical coarse-graining retains approximate logical-class probabilities and trades accuracy for speed. Published behavior belongs to the chosen lattice, channel, scale rule, and syndrome model.",
+        "refs": [
+          "duclos2010fast"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "tensor-network-mld",
+        "noise": "restricted independent channels exactly, and locally correlated Pauli channels approximately",
+        "notes": "Free-fermion or tensor contractions compare logical-class weights rather than selecting one light path. Exactness and runtime change with the channel and contraction width; they are not universal Toric properties.",
+        "refs": [
+          "bravyi2014efficient",
+          "chubb2021statistical"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "bp-osd",
+        "noise": "finite sparse CSS matrices with calibrated soft information and perfect syndrome",
+        "notes": "BP-OSD is a portable qLDPC baseline. Ordered-statistics post-processing can repair short-cycle message-passing failures, but no Toric-specific likelihood or threshold follows from the matrix alone.",
+        "refs": [
+          "roffe2020decoding"
+        ],
+        "status": "research-grade"
+      },
+      {
+        "id": "mwpm",
+        "noise": "detectable qubit loss with known erasure locations plus declared computational faults",
+        "notes": "Lost edges can be merged into superchecks and decoded using their known locations. The percolation boundary and the computational-error tradeoff are specific to detectable loss, not to unheralded leakage.",
+        "refs": [
+          "stace2009loss"
+        ],
+        "status": "research-grade"
+      }
+    ],
+    "description": "The square Toric code puts one qubit on every edge of an L-by-L periodic square cellulation. Vertex X stars and face Z plaquettes detect endpoints of open error strings. Contractible closed strings are stabilizers, while the two independent primal cycles and their crossing dual cycles form two logical Pauli pairs. This entry is the static two-dimensional qubit family, not an open Surface patch, a higher-dimensional Toric code, or every model in the same topological phase.",
+    "eczoo": {
+      "classification": "exact-family",
+      "source": {
+        "blob_url": "https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/topological/surface/2d_surface/toric/toric.yml",
+        "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+        "page_url": "https://errorcorrectionzoo.org/c/toric",
+        "path": "codes/quantum/qubits/stabilizer/topological/surface/2d_surface/toric/toric.yml",
+        "repository_url": "https://github.com/errorcorrectionzoo/eczoo_data",
+        "retrieved_on": "2026-08-05",
+        "sha256": "e5cf8abbdc9733e971853999ed73d0be6253410613a66f24a0af95e19946a2ed"
+      },
+      "status": "mapped",
+      "zoo_id": "toric"
+    },
+    "fit": {
+      "platforms": [
+        "neutral-atom-reconfigurable",
+        "periodic-lattice-simulator"
+      ],
+      "tasks": [
+        "memory",
+        "topological-state-preparation",
+        "decoder-benchmarking"
+      ]
+    },
+    "id": "toric",
+    "identity": {
+      "aliases": [
+        "Kitaev toric code",
+        "surface code on a torus",
+        "square-lattice toric code"
+      ],
+      "canonical_name": "Toric code",
+      "variant": "two-dimensional periodic square cellulation"
+    },
+    "kind": "family",
+    "operations": [
+      {
+        "cost": "one parallel physical-Pauli layer on a noncontractible length-L support, or a classical Pauli-frame update",
+        "gate": "logical X / Z Pauli loops",
+        "level": "Pauli",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "verified",
+          "method": "constructor logical-loop commutation, row-space, and symplectic-pair checks"
+        }
+      },
+      {
+        "cost": "one pairwise physical-CNOT layer; alignment, transport, and correlated decoding are external architecture costs",
+        "gate": "CNOT between corresponding logical sectors of two aligned Toric blocks",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "verified",
+          "method": "pedagogy/reproduce.py stacked-block symplectic conjugation"
+        }
+      },
+      {
+        "cost": "fold pairings, Dehn-twist deformation, and single-shot logical Pauli measurements with protocol-specific ancillas and decoding",
+        "gate": "single-block Clifford generating set",
+        "level": "Clifford",
+        "mechanism": "fold-transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "guernut2024toric"
+        }
+      },
+      {
+        "cost": "single-shot measurement gadget plus an ancilla layout and decoder from the proposed Toric Clifford protocol",
+        "gate": "logical Pauli measurement",
+        "level": "stabilizer measurement",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "guernut2024toric"
+        }
+      }
+    ],
+    "params": {
+      "L": "Integer linear size L >= 2 of the periodic square fundamental domain; there are L^2 vertices, L^2 faces, and 2 L^2 edge qubits."
+    },
+    "presentation": {
+      "guided_tour": {
+        "status": "available"
+      },
+      "orienting_view": {
+        "kind": "lattice",
+        "status": "available"
+      }
+    },
+    "realizations": [
+      {
+        "description": "The experiment prepared and characterized a finite Toric-code state on periodic geometry. This establishes state preparation, not repeated syndrome extraction, arbitrary logical-state preservation, or below-threshold scaling.",
+        "platform": "reconfigurable neutral-atom array with coherent transport",
+        "refs": [
+          "bluvstein2022processor"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "description": "Repeated Toric syndrome extraction, lost-qubit replacement, reservoir reloading, and decoded logical-memory data were demonstrated. The reported finite two-distance comparison remains bound to its stated round range and is not promoted as an asymptotic threshold.",
+        "platform": "neutral-atom array with mid-circuit measurement and atom reloading",
+        "refs": [
+          "atomcomputing2026toric"
+        ],
+        "status": "demonstrated"
+      }
+    ],
+    "refs": [
+      "kitaev1997imperfect",
+      "kitaev1997quantum",
+      "kitaev2003fault",
+      "dennis2002topological",
+      "bravyi1998quantum",
+      "tillich2009quantum",
+      "kovalev2012improved",
+      "wang2003confinement",
+      "wang2010thresholds",
+      "stace2009loss",
+      "duclos2010fast",
+      "bravyi2014efficient",
+      "breuckmann2017local",
+      "bravyi2018coherent",
+      "chubb2021statistical",
+      "iverson2020coherence",
+      "roffe2020decoding",
+      "higgott2022pymatching",
+      "schuch2010peps",
+      "bravyi2013classification",
+      "guernut2024toric",
+      "bauer2025nonclifford",
+      "hastings2021dynamically",
+      "aasen2022automorphism",
+      "bluvstein2022processor",
+      "atomcomputing2026toric"
+    ],
+    "relations": [
+      {
+        "how": "HGP(C_L, C_L^T), where C_L is the square cyclic neighbor-parity map, reproduces the ordered Toric check matrices exactly. These periodic square factors are not the open rep_L factors used by the planar Surface construction recipe.",
+        "refs": [
+          "tillich2009quantum",
+          "kovalev2012improved"
+        ],
+        "target": "hgp",
+        "type": "product_of"
+      },
+      {
+        "how": "Both use the square-lattice star and plaquette bulk. Cutting the torus creates rough and smooth boundaries and changes absolute cycles into relative strings; closing those boundaries restores two periodic homology directions. Bulk equivalence is not code-space identity.",
+        "refs": [
+          "kitaev2003fault",
+          "bravyi1998quantum",
+          "dennis2002topological"
+        ],
+        "target": "surface",
+        "type": "same_bulk_phase_as"
+      },
+      {
+        "how": "At the appropriate frames, contracting the just-measured Honeycomb matching and applying a depth-one local Clifford basis change gives Toric stabilizers on a coarser lattice. The full Honeycomb object remains a time-periodic measurement protocol with spacetime detectors and an anyon automorphism.",
+        "refs": [
+          "hastings2021dynamically",
+          "aasen2022automorphism"
+        ],
+        "target": "honeycomb",
+        "type": "same_bulk_phase_as"
+      }
+    ],
+    "tier": "T2",
+    "views": [
+      {
+        "description": "Expanding every vertex star and face boundary gives sparse binary X and Z matrices. Their stacked symplectic rows are the executable baseline for commutation, rank, exact small-instance distance, logical-loop, and stacked-block CNOT checks.",
+        "origin": {
+          "converter": "ChainComplex.to_checkmatrix plus toric logical-support validation",
+          "kind": "derived",
+          "version": "toric-square-v2"
+        },
+        "refs": [
+          "kitaev1997imperfect",
+          "kitaev2003fault"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      {
+        "description": "Qubits are the one-cells of a square cellulation of the torus. The face boundary d2 and vertex incidence d1 satisfy d1 d2=0; HX=d1 and HZ=d2^T. Cycles modulo local boundaries leave the two noncontractible homology directions and hence two logical qubits.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "kitaev1997quantum",
+          "kitaev2003fault",
+          "dennis2002topological"
+        ],
+        "rung": "R2",
+        "type": "periodic-chain-complex"
+      },
+      {
+        "description": "Let C_L be the square cyclic repetition parity map with one check per periodic neighbor pair. HGP(C_L, C_L^T) reproduces the constructor's ordered star and plaquette matrices exactly. The square cyclic factors have both kernel and transpose-kernel sectors; this is why the output has two logical sectors, unlike HGP of the open repetition factors used by the planar Surface entry.",
+        "origin": {
+          "converter": "pedagogy/reproduce.py cyclic_hgp_checkmatrix",
+          "kind": "derived",
+          "version": "cyclic-hgp-exact-v1"
+        },
+        "refs": [
+          "tillich2009quantum",
+          "kovalev2012improved"
+        ],
+        "rung": "R2",
+        "type": "cyclic-hypergraph-product"
+      },
+      {
+        "description": "Open primal and dual strings create endpoint excitations of the two charge types. Closed contractible strings act locally, while crossing noncontractible strings have odd symplectic intersection and therefore realize conjugate logical Paulis.",
+        "origin": {
+          "kind": "curated",
+          "ref": "kitaev2003fault"
+        },
+        "refs": [
+          "kitaev2003fault"
+        ],
+        "rung": "R5",
+        "type": "anyon-strings"
+      },
+      {
+        "description": "Corrections with one syndrome split into homology classes whose total likelihoods become disorder-sector partition functions. Matching keeps a light representative; maximum-likelihood decoding compares class free energies. The phase boundary depends on the noise and syndrome model.",
+        "origin": {
+          "kind": "curated",
+          "ref": "dennis2002topological"
+        },
+        "refs": [
+          "dennis2002topological",
+          "wang2003confinement",
+          "chubb2021statistical"
+        ],
+        "rung": "R5",
+        "type": "statistical-mechanics"
+      },
+      {
+        "description": "A PEPS virtual Z2 symmetry encodes the same topological degeneracy and local indistinguishability. In decoding, tensor contractions instead sum probabilities inside logical classes; the state representation and the decoder use related mathematics but answer different questions.",
+        "origin": {
+          "kind": "curated",
+          "ref": "schuch2010peps"
+        },
+        "refs": [
+          "schuch2010peps",
+          "bravyi2014efficient"
+        ],
+        "rung": "R5",
+        "type": "tensor-network"
+      },
+      {
+        "description": "Under restricted coherent-noise channels the correction calculation can be mapped to free Majorana fermions and simulated efficiently. This is a channel-specific algorithmic dictionary, not a claim that the physical qubits are tetrons or that arbitrary coherent noise becomes Pauli noise.",
+        "dialect": "majorana-pairs",
+        "gap": {
+          "target": "wanted:fermionic-compiler"
+        },
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi2018coherent"
+        },
+        "refs": [
+          "bravyi2018coherent",
+          "iverson2020coherence"
+        ],
+        "rung": "R5",
+        "type": "fermionic"
+      }
+    ],
+    "visual_instance": "L3"
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:toric#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:toric#collection",
+        "status": "preserved",
+        "tier": "T2"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:toric",
+    "presented_entity_ids": [
+      "eczoo-entity:toric#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:toric#collection",
+    "redirects": [],
+    "route": "/entries/toric.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/toric"
+  },
+  "parent_content": null,
+  "projection": {
+    "method": "embedded-utf8-source-v1",
+    "source_sha256": "304601d2a3226a970a5dfa8084cfb66a2e7cb7bc2e4e31b4a8ee4302c673ff0f",
+    "status": "exact"
+  },
+  "schema": "qec-atlas-entry-card-v2",
+  "scoped_facets": {
+    "categories": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "css",
+          "origin": {
+            "kind": "verified"
+          }
+        },
+        "evidence_id": "atlas-evidence:toric:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "field": "categories",
+        "id": "atlas-assertion:toric:categories:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/categories/0",
+        "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "version_id": "atlas-assertion:toric:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "topological",
+          "origin": {
+            "kind": "curated",
+            "ref": "kitaev2003fault"
+          }
+        },
+        "evidence_id": "atlas-evidence:toric:categories:1@e37387ce123c2a03294d4d6e0a5a90502a43ca59ee6fd54e49ffc453ae01c1fa",
+        "field": "categories",
+        "id": "atlas-assertion:toric:categories:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/categories/1",
+        "source_sha256": "e37387ce123c2a03294d4d6e0a5a90502a43ca59ee6fd54e49ffc453ae01c1fa",
+        "version_id": "atlas-assertion:toric:categories:1@sha256:e37387ce123c2a03294d4d6e0a5a90502a43ca59ee6fd54e49ffc453ae01c1fa"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "hypergraph-product",
+          "origin": {
+            "kind": "curated",
+            "ref": "tillich2009quantum"
+          }
+        },
+        "evidence_id": "atlas-evidence:toric:categories:2@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+        "field": "categories",
+        "id": "atlas-assertion:toric:categories:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/categories/2",
+        "source_sha256": "98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+        "version_id": "atlas-assertion:toric:categories:2@sha256:98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb"
+      }
+    ],
+    "decoders": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "independent X/Z data faults with perfect syndrome (code capacity)",
+          "notes": "Defects are paired on the periodic primal or dual lattice. The decoder minimizes one additive chain cost; it does not sum every degenerate path in a logical class, and its benchmark cannot be transferred to depolarizing, coherent, or faulty-syndrome models.",
+          "refs": [
+            "dennis2002topological",
+            "wang2010thresholds",
+            "higgott2022pymatching"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:toric:decoders:0@9ae1b1a72910878577a65e47aa51b4a84e2a201613f38af7215c488922ffecf9",
+        "field": "decoders",
+        "id": "atlas-assertion:toric:decoders:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/decoders/0",
+        "source_sha256": "9ae1b1a72910878577a65e47aa51b4a84e2a201613f38af7215c488922ffecf9",
+        "version_id": "atlas-assertion:toric:decoders:0@sha256:9ae1b1a72910878577a65e47aa51b4a84e2a201613f38af7215c488922ffecf9"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "repeated noisy data and syndrome records in a declared phenomenological or circuit detector model",
+          "notes": "Matching moves to spacetime. Round boundaries, measurement normalization, hook correlations, and the extraction schedule become part of the decoder identity, so no code-capacity number is reused here.",
+          "refs": [
+            "dennis2002topological",
+            "wang2003confinement",
+            "wang2010thresholds"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:toric:decoders:1@bf5fa1bbea9c418950e445361693ecee1dda82955a19caf97b391ba6ab2ad237",
+        "field": "decoders",
+        "id": "atlas-assertion:toric:decoders:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/decoders/1",
+        "source_sha256": "bf5fa1bbea9c418950e445361693ecee1dda82955a19caf97b391ba6ab2ad237",
+        "version_id": "atlas-assertion:toric:decoders:1@sha256:bf5fa1bbea9c418950e445361693ecee1dda82955a19caf97b391ba6ab2ad237"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "renormalization-group",
+          "noise": "periodic topological-code Pauli models with a specified syndrome history",
+          "notes": "Hierarchical coarse-graining retains approximate logical-class probabilities and trades accuracy for speed. Published behavior belongs to the chosen lattice, channel, scale rule, and syndrome model.",
+          "refs": [
+            "duclos2010fast"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:toric:decoders:2@23cc42fb34bc53d520f7784688862aa4a364d15d896b82c3411063db7404ae0c",
+        "field": "decoders",
+        "id": "atlas-assertion:toric:decoders:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/decoders/2",
+        "source_sha256": "23cc42fb34bc53d520f7784688862aa4a364d15d896b82c3411063db7404ae0c",
+        "version_id": "atlas-assertion:toric:decoders:2@sha256:23cc42fb34bc53d520f7784688862aa4a364d15d896b82c3411063db7404ae0c"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "tensor-network-mld",
+          "noise": "restricted independent channels exactly, and locally correlated Pauli channels approximately",
+          "notes": "Free-fermion or tensor contractions compare logical-class weights rather than selecting one light path. Exactness and runtime change with the channel and contraction width; they are not universal Toric properties.",
+          "refs": [
+            "bravyi2014efficient",
+            "chubb2021statistical"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:toric:decoders:3@aeac1c7a88a0e4ab1a917b25fe087fb9cc56fb4f6c8c11ac96ed407d62a9f5cc",
+        "field": "decoders",
+        "id": "atlas-assertion:toric:decoders:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/decoders/3",
+        "source_sha256": "aeac1c7a88a0e4ab1a917b25fe087fb9cc56fb4f6c8c11ac96ed407d62a9f5cc",
+        "version_id": "atlas-assertion:toric:decoders:3@sha256:aeac1c7a88a0e4ab1a917b25fe087fb9cc56fb4f6c8c11ac96ed407d62a9f5cc"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "bp-osd",
+          "noise": "finite sparse CSS matrices with calibrated soft information and perfect syndrome",
+          "notes": "BP-OSD is a portable qLDPC baseline. Ordered-statistics post-processing can repair short-cycle message-passing failures, but no Toric-specific likelihood or threshold follows from the matrix alone.",
+          "refs": [
+            "roffe2020decoding"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:toric:decoders:4@71722c50ebe072ec590eec343500ae51fb1153c1013fc80bb8e197aac959c3eb",
+        "field": "decoders",
+        "id": "atlas-assertion:toric:decoders:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/decoders/4",
+        "source_sha256": "71722c50ebe072ec590eec343500ae51fb1153c1013fc80bb8e197aac959c3eb",
+        "version_id": "atlas-assertion:toric:decoders:4@sha256:71722c50ebe072ec590eec343500ae51fb1153c1013fc80bb8e197aac959c3eb"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "detectable qubit loss with known erasure locations plus declared computational faults",
+          "notes": "Lost edges can be merged into superchecks and decoded using their known locations. The percolation boundary and the computational-error tradeoff are specific to detectable loss, not to unheralded leakage.",
+          "refs": [
+            "stace2009loss"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:toric:decoders:5@a0508491399bfbbf805883aeea22f0bd7b8772afe8d6ab3ed0d3829aee1b97d5",
+        "field": "decoders",
+        "id": "atlas-assertion:toric:decoders:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/decoders/5",
+        "source_sha256": "a0508491399bfbbf805883aeea22f0bd7b8772afe8d6ab3ed0d3829aee1b97d5",
+        "version_id": "atlas-assertion:toric:decoders:5@sha256:a0508491399bfbbf805883aeea22f0bd7b8772afe8d6ab3ed0d3829aee1b97d5"
+      }
+    ],
+    "operations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "one parallel physical-Pauli layer on a noncontractible length-L support, or a classical Pauli-frame update",
+          "gate": "logical X / Z Pauli loops",
+          "level": "Pauli",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "verified",
+            "method": "constructor logical-loop commutation, row-space, and symplectic-pair checks"
+          }
+        },
+        "evidence_id": "atlas-evidence:toric:operations:0@bf5114465e7762ab8e6be889f77a2de16d97c881269f89aea32765586319bcb5",
+        "field": "operations",
+        "id": "atlas-assertion:toric:operations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/operations/0",
+        "source_sha256": "bf5114465e7762ab8e6be889f77a2de16d97c881269f89aea32765586319bcb5",
+        "version_id": "atlas-assertion:toric:operations:0@sha256:bf5114465e7762ab8e6be889f77a2de16d97c881269f89aea32765586319bcb5"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "one pairwise physical-CNOT layer; alignment, transport, and correlated decoding are external architecture costs",
+          "gate": "CNOT between corresponding logical sectors of two aligned Toric blocks",
+          "level": "Clifford",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "verified",
+            "method": "pedagogy/reproduce.py stacked-block symplectic conjugation"
+          }
+        },
+        "evidence_id": "atlas-evidence:toric:operations:1@221b743e3f8ef4556221c37e40a52b8582875a8082c0ac07ede9056e5f4e9c95",
+        "field": "operations",
+        "id": "atlas-assertion:toric:operations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/operations/1",
+        "source_sha256": "221b743e3f8ef4556221c37e40a52b8582875a8082c0ac07ede9056e5f4e9c95",
+        "version_id": "atlas-assertion:toric:operations:1@sha256:221b743e3f8ef4556221c37e40a52b8582875a8082c0ac07ede9056e5f4e9c95"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "fold pairings, Dehn-twist deformation, and single-shot logical Pauli measurements with protocol-specific ancillas and decoding",
+          "gate": "single-block Clifford generating set",
+          "level": "Clifford",
+          "mechanism": "fold-transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "guernut2024toric"
+          }
+        },
+        "evidence_id": "atlas-evidence:toric:operations:2@3a1e7020ae5c1cff1b828e7406c672858b862fd726b252ec4f9df79c44f100ac",
+        "field": "operations",
+        "id": "atlas-assertion:toric:operations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/operations/2",
+        "source_sha256": "3a1e7020ae5c1cff1b828e7406c672858b862fd726b252ec4f9df79c44f100ac",
+        "version_id": "atlas-assertion:toric:operations:2@sha256:3a1e7020ae5c1cff1b828e7406c672858b862fd726b252ec4f9df79c44f100ac"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "single-shot measurement gadget plus an ancilla layout and decoder from the proposed Toric Clifford protocol",
+          "gate": "logical Pauli measurement",
+          "level": "stabilizer measurement",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "guernut2024toric"
+          }
+        },
+        "evidence_id": "atlas-evidence:toric:operations:3@840d80950da8abfa9c3da1479ae5c2a61afc7ae50e4c8bec0e55fe2afd518fa8",
+        "field": "operations",
+        "id": "atlas-assertion:toric:operations:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/operations/3",
+        "source_sha256": "840d80950da8abfa9c3da1479ae5c2a61afc7ae50e4c8bec0e55fe2afd518fa8",
+        "version_id": "atlas-assertion:toric:operations:3@sha256:840d80950da8abfa9c3da1479ae5c2a61afc7ae50e4c8bec0e55fe2afd518fa8"
+      }
+    ],
+    "realizations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The experiment prepared and characterized a finite Toric-code state on periodic geometry. This establishes state preparation, not repeated syndrome extraction, arbitrary logical-state preservation, or below-threshold scaling.",
+          "platform": "reconfigurable neutral-atom array with coherent transport",
+          "refs": [
+            "bluvstein2022processor"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:toric:realizations:0@40bb602bc68aceb4756c2f50681c30b6e60c0b2121579d943499312ed50e681b",
+        "field": "realizations",
+        "id": "atlas-assertion:toric:realizations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/realizations/0",
+        "source_sha256": "40bb602bc68aceb4756c2f50681c30b6e60c0b2121579d943499312ed50e681b",
+        "version_id": "atlas-assertion:toric:realizations:0@sha256:40bb602bc68aceb4756c2f50681c30b6e60c0b2121579d943499312ed50e681b"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Repeated Toric syndrome extraction, lost-qubit replacement, reservoir reloading, and decoded logical-memory data were demonstrated. The reported finite two-distance comparison remains bound to its stated round range and is not promoted as an asymptotic threshold.",
+          "platform": "neutral-atom array with mid-circuit measurement and atom reloading",
+          "refs": [
+            "atomcomputing2026toric"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:toric:realizations:1@e9d83655e5e5a57ed7a468dc0b6d9f9e48b680af180ffb8af3522f31ebc00503",
+        "field": "realizations",
+        "id": "atlas-assertion:toric:realizations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/realizations/1",
+        "source_sha256": "e9d83655e5e5a57ed7a468dc0b6d9f9e48b680af180ffb8af3522f31ebc00503",
+        "version_id": "atlas-assertion:toric:realizations:1@sha256:e9d83655e5e5a57ed7a468dc0b6d9f9e48b680af180ffb8af3522f31ebc00503"
+      }
+    ],
+    "relations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "HGP(C_L, C_L^T), where C_L is the square cyclic neighbor-parity map, reproduces the ordered Toric check matrices exactly. These periodic square factors are not the open rep_L factors used by the planar Surface construction recipe.",
+          "refs": [
+            "tillich2009quantum",
+            "kovalev2012improved"
+          ],
+          "target": "hgp",
+          "type": "product_of"
+        },
+        "evidence_id": "atlas-evidence:toric:relations:0@ba5c56f61cbb706c39f067dfc418e74e351cbddc18133c6b86cff51c783c7f96",
+        "field": "relations",
+        "id": "atlas-assertion:toric:relations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/relations/0",
+        "source_sha256": "ba5c56f61cbb706c39f067dfc418e74e351cbddc18133c6b86cff51c783c7f96",
+        "version_id": "atlas-assertion:toric:relations:0@sha256:ba5c56f61cbb706c39f067dfc418e74e351cbddc18133c6b86cff51c783c7f96"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "Both use the square-lattice star and plaquette bulk. Cutting the torus creates rough and smooth boundaries and changes absolute cycles into relative strings; closing those boundaries restores two periodic homology directions. Bulk equivalence is not code-space identity.",
+          "refs": [
+            "kitaev2003fault",
+            "bravyi1998quantum",
+            "dennis2002topological"
+          ],
+          "target": "surface",
+          "type": "same_bulk_phase_as"
+        },
+        "evidence_id": "atlas-evidence:toric:relations:1@81340b167df1c3e19cbec224e886c71e6f7e6747432b772aa8cfc73ca32b56d8",
+        "field": "relations",
+        "id": "atlas-assertion:toric:relations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/relations/1",
+        "source_sha256": "81340b167df1c3e19cbec224e886c71e6f7e6747432b772aa8cfc73ca32b56d8",
+        "version_id": "atlas-assertion:toric:relations:1@sha256:81340b167df1c3e19cbec224e886c71e6f7e6747432b772aa8cfc73ca32b56d8"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "At the appropriate frames, contracting the just-measured Honeycomb matching and applying a depth-one local Clifford basis change gives Toric stabilizers on a coarser lattice. The full Honeycomb object remains a time-periodic measurement protocol with spacetime detectors and an anyon automorphism.",
+          "refs": [
+            "hastings2021dynamically",
+            "aasen2022automorphism"
+          ],
+          "target": "honeycomb",
+          "type": "same_bulk_phase_as"
+        },
+        "evidence_id": "atlas-evidence:toric:relations:2@5466c3f23477b5609f72b3e5be6991cf1392988e5589b611a0fab843254b9792",
+        "field": "relations",
+        "id": "atlas-assertion:toric:relations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/relations/2",
+        "source_sha256": "5466c3f23477b5609f72b3e5be6991cf1392988e5589b611a0fab843254b9792",
+        "version_id": "atlas-assertion:toric:relations:2@sha256:5466c3f23477b5609f72b3e5be6991cf1392988e5589b611a0fab843254b9792"
+      }
+    ],
+    "views": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Expanding every vertex star and face boundary gives sparse binary X and Z matrices. Their stacked symplectic rows are the executable baseline for commutation, rank, exact small-instance distance, logical-loop, and stacked-block CNOT checks.",
+          "origin": {
+            "converter": "ChainComplex.to_checkmatrix plus toric logical-support validation",
+            "kind": "derived",
+            "version": "toric-square-v2"
+          },
+          "refs": [
+            "kitaev1997imperfect",
+            "kitaev2003fault"
+          ],
+          "rung": "R1",
+          "type": "symplectic-css-checks"
+        },
+        "evidence_id": "atlas-evidence:toric:views:0@6cd04ef5755e27b57f373bd692a64ca165bfb7e7fa4aa926fbcded87bb1ff467",
+        "field": "views",
+        "id": "atlas-assertion:toric:views:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/views/0",
+        "source_sha256": "6cd04ef5755e27b57f373bd692a64ca165bfb7e7fa4aa926fbcded87bb1ff467",
+        "version_id": "atlas-assertion:toric:views:0@sha256:6cd04ef5755e27b57f373bd692a64ca165bfb7e7fa4aa926fbcded87bb1ff467"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Qubits are the one-cells of a square cellulation of the torus. The face boundary d2 and vertex incidence d1 satisfy d1 d2=0; HX=d1 and HZ=d2^T. Cycles modulo local boundaries leave the two noncontractible homology directions and hence two logical qubits.",
+          "origin": {
+            "kind": "canonical"
+          },
+          "refs": [
+            "kitaev1997quantum",
+            "kitaev2003fault",
+            "dennis2002topological"
+          ],
+          "rung": "R2",
+          "type": "periodic-chain-complex"
+        },
+        "evidence_id": "atlas-evidence:toric:views:1@95db0f6706e1e8da7a21745f4eeb98f346caf56f0181862432d102d20de4786d",
+        "field": "views",
+        "id": "atlas-assertion:toric:views:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/views/1",
+        "source_sha256": "95db0f6706e1e8da7a21745f4eeb98f346caf56f0181862432d102d20de4786d",
+        "version_id": "atlas-assertion:toric:views:1@sha256:95db0f6706e1e8da7a21745f4eeb98f346caf56f0181862432d102d20de4786d"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Let C_L be the square cyclic repetition parity map with one check per periodic neighbor pair. HGP(C_L, C_L^T) reproduces the constructor's ordered star and plaquette matrices exactly. The square cyclic factors have both kernel and transpose-kernel sectors; this is why the output has two logical sectors, unlike HGP of the open repetition factors used by the planar Surface entry.",
+          "origin": {
+            "converter": "pedagogy/reproduce.py cyclic_hgp_checkmatrix",
+            "kind": "derived",
+            "version": "cyclic-hgp-exact-v1"
+          },
+          "refs": [
+            "tillich2009quantum",
+            "kovalev2012improved"
+          ],
+          "rung": "R2",
+          "type": "cyclic-hypergraph-product"
+        },
+        "evidence_id": "atlas-evidence:toric:views:2@335182a57f8fbeab1faf8d5f5ea3c57f6869256075631983b6a3849386fc5500",
+        "field": "views",
+        "id": "atlas-assertion:toric:views:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/views/2",
+        "source_sha256": "335182a57f8fbeab1faf8d5f5ea3c57f6869256075631983b6a3849386fc5500",
+        "version_id": "atlas-assertion:toric:views:2@sha256:335182a57f8fbeab1faf8d5f5ea3c57f6869256075631983b6a3849386fc5500"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Open primal and dual strings create endpoint excitations of the two charge types. Closed contractible strings act locally, while crossing noncontractible strings have odd symplectic intersection and therefore realize conjugate logical Paulis.",
+          "origin": {
+            "kind": "curated",
+            "ref": "kitaev2003fault"
+          },
+          "refs": [
+            "kitaev2003fault"
+          ],
+          "rung": "R5",
+          "type": "anyon-strings"
+        },
+        "evidence_id": "atlas-evidence:toric:views:3@08161bfcb7cda4f91e7f98639fa80f0f839101807b95f3aeb549c724a2df6345",
+        "field": "views",
+        "id": "atlas-assertion:toric:views:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/views/3",
+        "source_sha256": "08161bfcb7cda4f91e7f98639fa80f0f839101807b95f3aeb549c724a2df6345",
+        "version_id": "atlas-assertion:toric:views:3@sha256:08161bfcb7cda4f91e7f98639fa80f0f839101807b95f3aeb549c724a2df6345"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Corrections with one syndrome split into homology classes whose total likelihoods become disorder-sector partition functions. Matching keeps a light representative; maximum-likelihood decoding compares class free energies. The phase boundary depends on the noise and syndrome model.",
+          "origin": {
+            "kind": "curated",
+            "ref": "dennis2002topological"
+          },
+          "refs": [
+            "dennis2002topological",
+            "wang2003confinement",
+            "chubb2021statistical"
+          ],
+          "rung": "R5",
+          "type": "statistical-mechanics"
+        },
+        "evidence_id": "atlas-evidence:toric:views:4@0497676e00223a6cea50b72b761c2b12ab5894c00c98f82d1aaf413d0e25275a",
+        "field": "views",
+        "id": "atlas-assertion:toric:views:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/views/4",
+        "source_sha256": "0497676e00223a6cea50b72b761c2b12ab5894c00c98f82d1aaf413d0e25275a",
+        "version_id": "atlas-assertion:toric:views:4@sha256:0497676e00223a6cea50b72b761c2b12ab5894c00c98f82d1aaf413d0e25275a"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A PEPS virtual Z2 symmetry encodes the same topological degeneracy and local indistinguishability. In decoding, tensor contractions instead sum probabilities inside logical classes; the state representation and the decoder use related mathematics but answer different questions.",
+          "origin": {
+            "kind": "curated",
+            "ref": "schuch2010peps"
+          },
+          "refs": [
+            "schuch2010peps",
+            "bravyi2014efficient"
+          ],
+          "rung": "R5",
+          "type": "tensor-network"
+        },
+        "evidence_id": "atlas-evidence:toric:views:5@38f059d85cc110a1232da82c582a3059e36548d6e57f219eb77475ff22253b5d",
+        "field": "views",
+        "id": "atlas-assertion:toric:views:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/views/5",
+        "source_sha256": "38f059d85cc110a1232da82c582a3059e36548d6e57f219eb77475ff22253b5d",
+        "version_id": "atlas-assertion:toric:views:5@sha256:38f059d85cc110a1232da82c582a3059e36548d6e57f219eb77475ff22253b5d"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:toric#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Under restricted coherent-noise channels the correction calculation can be mapped to free Majorana fermions and simulated efficiently. This is a channel-specific algorithmic dictionary, not a claim that the physical qubits are tetrons or that arbitrary coherent noise becomes Pauli noise.",
+          "dialect": "majorana-pairs",
+          "gap": {
+            "target": "wanted:fermionic-compiler"
+          },
+          "origin": {
+            "kind": "curated",
+            "ref": "bravyi2018coherent"
+          },
+          "refs": [
+            "bravyi2018coherent",
+            "iverson2020coherence"
+          ],
+          "rung": "R5",
+          "type": "fermionic"
+        },
+        "evidence_id": "atlas-evidence:toric:views:6@9e3c37c3e95ed15970c6da5421051e9f8f0984dde7983c15d23b14ef60062a0f",
+        "field": "views",
+        "id": "atlas-assertion:toric:views:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "toric/card.yaml#/views/6",
+        "source_sha256": "9e3c37c3e95ed15970c6da5421051e9f8f0984dde7983c15d23b14ef60062a0f",
+        "version_id": "atlas-assertion:toric:views:6@sha256:9e3c37c3e95ed15970c6da5421051e9f8f0984dde7983c15d23b14ef60062a0f"
+      }
+    ]
+  },
+  "source": {
+    "collection": "atlas",
+    "encoding": "utf-8",
+    "entry_id": "toric",
+    "path": "atlas/toric/card.yaml",
+    "sha256": "304601d2a3226a970a5dfa8084cfb66a2e7cb7bc2e4e31b4a8ee4302c673ff0f",
+    "text": "id: toric\nkind: family\nidentity:\n  canonical_name: \"Toric code\"\n  variant: \"two-dimensional periodic square cellulation\"\n  aliases: [\"Kitaev toric code\", \"surface code on a torus\", \"square-lattice toric code\"]\npresentation:\n  orienting_view: {status: available, kind: lattice}\n  guided_tour: {status: available}\neczoo:\n  status: mapped\n  zoo_id: toric\n  classification: exact-family\n  source:\n    repository_url: https://github.com/errorcorrectionzoo/eczoo_data\n    commit: b2437d9e2dc09284e04c66ef72ee81b7ed7bd129\n    retrieved_on: \"2026-08-05\"\n    path: codes/quantum/qubits/stabilizer/topological/surface/2d_surface/toric/toric.yml\n    sha256: e5cf8abbdc9733e971853999ed73d0be6253410613a66f24a0af95e19946a2ed\n    page_url: https://errorcorrectionzoo.org/c/toric\n    blob_url: https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/topological/surface/2d_surface/toric/toric.yml\ndescription: >-\n  The square Toric code puts one qubit on every edge of an L-by-L periodic\n  square cellulation. Vertex X stars and face Z plaquettes detect endpoints of\n  open error strings. Contractible closed strings are stabilizers, while the\n  two independent primal cycles and their crossing dual cycles form two\n  logical Pauli pairs. This entry is the static two-dimensional qubit family,\n  not an open Surface patch, a higher-dimensional Toric code, or every model\n  in the same topological phase.\nviews:\n  - rung: R1\n    type: symplectic-css-checks\n    description: >-\n      Expanding every vertex star and face boundary gives sparse binary X and\n      Z matrices. Their stacked symplectic rows are the executable baseline\n      for commutation, rank, exact small-instance distance, logical-loop, and\n      stacked-block CNOT checks.\n    origin:\n      kind: derived\n      converter: \"ChainComplex.to_checkmatrix plus toric logical-support validation\"\n      version: \"toric-square-v2\"\n    refs: [kitaev1997imperfect, kitaev2003fault]\n  - rung: R2\n    type: periodic-chain-complex\n    description: >-\n      Qubits are the one-cells of a square cellulation of the torus. The face\n      boundary d2 and vertex incidence d1 satisfy d1 d2=0; HX=d1 and HZ=d2^T.\n      Cycles modulo local boundaries leave the two noncontractible homology\n      directions and hence two logical qubits.\n    origin: {kind: canonical}\n    refs: [kitaev1997quantum, kitaev2003fault, dennis2002topological]\n  - rung: R2\n    type: cyclic-hypergraph-product\n    description: >-\n      Let C_L be the square cyclic repetition parity map with one check per\n      periodic neighbor pair. HGP(C_L, C_L^T) reproduces the constructor's\n      ordered star and plaquette matrices exactly. The square cyclic factors\n      have both kernel and transpose-kernel sectors; this is why the output\n      has two logical sectors, unlike HGP of the open repetition factors used\n      by the planar Surface entry.\n    origin:\n      kind: derived\n      converter: \"pedagogy/reproduce.py cyclic_hgp_checkmatrix\"\n      version: \"cyclic-hgp-exact-v1\"\n    refs: [tillich2009quantum, kovalev2012improved]\n  - rung: R5\n    type: anyon-strings\n    description: >-\n      Open primal and dual strings create endpoint excitations of the two\n      charge types. Closed contractible strings act locally, while crossing\n      noncontractible strings have odd symplectic intersection and therefore\n      realize conjugate logical Paulis.\n    origin: {kind: curated, ref: kitaev2003fault}\n    refs: [kitaev2003fault]\n  - rung: R5\n    type: statistical-mechanics\n    description: >-\n      Corrections with one syndrome split into homology classes whose total\n      likelihoods become disorder-sector partition functions. Matching keeps\n      a light representative; maximum-likelihood decoding compares class free\n      energies. The phase boundary depends on the noise and syndrome model.\n    origin: {kind: curated, ref: dennis2002topological}\n    refs: [dennis2002topological, wang2003confinement, chubb2021statistical]\n  - rung: R5\n    type: tensor-network\n    description: >-\n      A PEPS virtual Z2 symmetry encodes the same topological degeneracy and\n      local indistinguishability. In decoding, tensor contractions instead sum\n      probabilities inside logical classes; the state representation and the\n      decoder use related mathematics but answer different questions.\n    origin: {kind: curated, ref: schuch2010peps}\n    refs: [schuch2010peps, bravyi2014efficient]\n  - rung: R5\n    type: fermionic\n    dialect: majorana-pairs\n    description: >-\n      Under restricted coherent-noise channels the correction calculation can\n      be mapped to free Majorana fermions and simulated efficiently. This is a\n      channel-specific algorithmic dictionary, not a claim that the physical\n      qubits are tetrons or that arbitrary coherent noise becomes Pauli noise.\n    origin: {kind: curated, ref: bravyi2018coherent}\n    refs: [bravyi2018coherent, iverson2020coherence]\n    gap: {target: wanted:fermionic-compiler}\ncategories:\n  - {id: css, origin: {kind: verified}}\n  - {id: topological, origin: {kind: curated, ref: kitaev2003fault}}\n  - {id: hypergraph-product, origin: {kind: curated, ref: tillich2009quantum}}\nrefs:\n  - kitaev1997imperfect\n  - kitaev1997quantum\n  - kitaev2003fault\n  - dennis2002topological\n  - bravyi1998quantum\n  - tillich2009quantum\n  - kovalev2012improved\n  - wang2003confinement\n  - wang2010thresholds\n  - stace2009loss\n  - duclos2010fast\n  - bravyi2014efficient\n  - breuckmann2017local\n  - bravyi2018coherent\n  - chubb2021statistical\n  - iverson2020coherence\n  - roffe2020decoding\n  - higgott2022pymatching\n  - schuch2010peps\n  - bravyi2013classification\n  - guernut2024toric\n  - bauer2025nonclifford\n  - hastings2021dynamically\n  - aasen2022automorphism\n  - bluvstein2022processor\n  - atomcomputing2026toric\nparams:\n  L: >-\n    Integer linear size L >= 2 of the periodic square fundamental domain;\n    there are L^2 vertices, L^2 faces, and 2 L^2 edge qubits.\nvisual_instance: L3\ntier: T2\nfit:\n  platforms: [neutral-atom-reconfigurable, periodic-lattice-simulator]\n  tasks: [memory, topological-state-preparation, decoder-benchmarking]\ndecoders:\n  - id: mwpm\n    status: standard\n    noise: \"independent X/Z data faults with perfect syndrome (code capacity)\"\n    notes: >-\n      Defects are paired on the periodic primal or dual lattice. The decoder\n      minimizes one additive chain cost; it does not sum every degenerate path\n      in a logical class, and its benchmark cannot be transferred to\n      depolarizing, coherent, or faulty-syndrome models.\n    refs: [dennis2002topological, wang2010thresholds, higgott2022pymatching]\n  - id: mwpm\n    status: standard\n    noise: \"repeated noisy data and syndrome records in a declared phenomenological or circuit detector model\"\n    notes: >-\n      Matching moves to spacetime. Round boundaries, measurement normalization,\n      hook correlations, and the extraction schedule become part of the\n      decoder identity, so no code-capacity number is reused here.\n    refs: [dennis2002topological, wang2003confinement, wang2010thresholds]\n  - id: renormalization-group\n    status: standard\n    noise: \"periodic topological-code Pauli models with a specified syndrome history\"\n    notes: >-\n      Hierarchical coarse-graining retains approximate logical-class\n      probabilities and trades accuracy for speed. Published behavior belongs\n      to the chosen lattice, channel, scale rule, and syndrome model.\n    refs: [duclos2010fast]\n  - id: tensor-network-mld\n    status: standard\n    noise: \"restricted independent channels exactly, and locally correlated Pauli channels approximately\"\n    notes: >-\n      Free-fermion or tensor contractions compare logical-class weights rather\n      than selecting one light path. Exactness and runtime change with the\n      channel and contraction width; they are not universal Toric properties.\n    refs: [bravyi2014efficient, chubb2021statistical]\n  - id: bp-osd\n    status: research-grade\n    noise: \"finite sparse CSS matrices with calibrated soft information and perfect syndrome\"\n    notes: >-\n      BP-OSD is a portable qLDPC baseline. Ordered-statistics post-processing\n      can repair short-cycle message-passing failures, but no Toric-specific\n      likelihood or threshold follows from the matrix alone.\n    refs: [roffe2020decoding]\n  - id: mwpm\n    status: research-grade\n    noise: \"detectable qubit loss with known erasure locations plus declared computational faults\"\n    notes: >-\n      Lost edges can be merged into superchecks and decoded using their known\n      locations. The percolation boundary and the computational-error tradeoff\n      are specific to detectable loss, not to unheralded leakage.\n    refs: [stace2009loss]\nrealizations:\n  - platform: \"reconfigurable neutral-atom array with coherent transport\"\n    status: demonstrated\n    description: >-\n      The experiment prepared and characterized a finite Toric-code state on\n      periodic geometry. This establishes state preparation, not repeated\n      syndrome extraction, arbitrary logical-state preservation, or\n      below-threshold scaling.\n    refs: [bluvstein2022processor]\n  - platform: \"neutral-atom array with mid-circuit measurement and atom reloading\"\n    status: demonstrated\n    description: >-\n      Repeated Toric syndrome extraction, lost-qubit replacement, reservoir\n      reloading, and decoded logical-memory data were demonstrated. The\n      reported finite two-distance comparison remains bound to its stated\n      round range and is not promoted as an asymptotic threshold.\n    refs: [atomcomputing2026toric]\nrelations:\n  - type: product_of\n    target: hgp\n    how: >-\n      HGP(C_L, C_L^T), where C_L is the square cyclic neighbor-parity map,\n      reproduces the ordered Toric check matrices exactly. These periodic\n      square factors are not the open rep_L factors used by the planar Surface\n      construction recipe.\n    refs: [tillich2009quantum, kovalev2012improved]\n  - type: same_bulk_phase_as\n    target: surface\n    how: >-\n      Both use the square-lattice star and plaquette bulk. Cutting the torus\n      creates rough and smooth boundaries and changes absolute cycles into\n      relative strings; closing those boundaries restores two periodic\n      homology directions. Bulk equivalence is not code-space identity.\n    refs: [kitaev2003fault, bravyi1998quantum, dennis2002topological]\n  - type: same_bulk_phase_as\n    target: honeycomb\n    how: >-\n      At the appropriate frames, contracting the just-measured Honeycomb\n      matching and applying a depth-one local Clifford basis change gives\n      Toric stabilizers on a coarser lattice. The full Honeycomb object remains\n      a time-periodic measurement protocol with spacetime detectors and an\n      anyon automorphism.\n    refs: [hastings2021dynamically, aasen2022automorphism]\noperations:\n  - gate: \"logical X / Z Pauli loops\"\n    mechanism: transversal\n    level: \"Pauli\"\n    cost: \"one parallel physical-Pauli layer on a noncontractible length-L support, or a classical Pauli-frame update\"\n    origin: {kind: verified, method: \"constructor logical-loop commutation, row-space, and symplectic-pair checks\"}\n  - gate: \"CNOT between corresponding logical sectors of two aligned Toric blocks\"\n    mechanism: transversal\n    level: \"Clifford\"\n    cost: \"one pairwise physical-CNOT layer; alignment, transport, and correlated decoding are external architecture costs\"\n    origin: {kind: verified, method: \"pedagogy/reproduce.py stacked-block symplectic conjugation\"}\n  - gate: \"single-block Clifford generating set\"\n    mechanism: fold-transversal\n    level: \"Clifford\"\n    cost: \"fold pairings, Dehn-twist deformation, and single-shot logical Pauli measurements with protocol-specific ancillas and decoding\"\n    origin: {kind: claimed, ref: guernut2024toric}\n  - gate: \"logical Pauli measurement\"\n    mechanism: measurement-based\n    level: \"stabilizer measurement\"\n    cost: \"single-shot measurement gadget plus an ancilla layout and decoder from the proposed Toric Clifford protocol\"\n    origin: {kind: claimed, ref: guernut2024toric}\n",
+    "version": "qec-atlas-card-v1"
+  },
+  "source_binding": {
+    "binding_state": "clean",
+    "legacy_source": {
+      "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+      "continuity": "same-path-updated-bytes",
+      "path": "codes/quantum/qubits/stabilizer/topological/surface/2d_surface/toric/toric.yml",
+      "sha256": "e5cf8abbdc9733e971853999ed73d0be6253410613a66f24a0af95e19946a2ed",
+      "zoo_id": "toric"
+    },
+    "source_commit": "5c11f03d77895fe46564fe792288304fe4b6a998",
+    "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:toric",
+    "source_path": "codes/quantum/qubits/stabilizer/topological/surface/2d_surface/toric/toric.yml",
+    "source_sha256": "746e8ab7d4adb5706ba4e1c2d0b81cefe754b83c7dedf11fe62527a1ff9d15a7",
+    "t206_entity_ids": [
+      "eczoo-entity:toric#collection"
+    ],
+    "target_denotation_entity_ids": [
+      "eczoo-entity:toric#collection"
+    ],
+    "target_disposition": "atomic"
+  },
+  "target_version": "entry-ontology-v2"
+}

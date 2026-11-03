@@ -1,0 +1,118 @@
+schema: qec-atlas-floquet-pair-measurement-v1
+id: honeycomb-l3x3-floquet-pair-memory
+version: 1
+entry: honeycomb
+instance: L3x3
+protocol: {id: floquet-pair-memory, version: 1}
+constructor:
+  params: {L1: 3, L2: 3}
+  schedule_fingerprint:
+    format: qec-atlas-schedule-pauli-strings-v1
+    sha256: f239fdd0d82d58d99f8be8d965da203f9da0cdc72bc0a31622f38cb9eca0f3b8
+  checkmatrix_fingerprint:
+    format: stab-gauge-uint8-v1
+    stab_shape: 16x36
+    gauge_shape: null
+    sha256: e1b9a282675c58461c61a347692e088e4ec22e10f67ce48f43fb5713e31b5690
+rounds:
+  - id: 0
+    measurements:
+      - ___X____X_________
+      - ______ZZ__________
+      - _YY_______________
+      - ____ZZ____________
+      - _________YY_______
+      - ____________Y____Y
+      - ___________X____X_
+      - ______________ZZ__
+      - X____________X____
+  - id: 1
+    measurements:
+      - _X____X___________
+      - __________ZZ______
+      - Y____Y____________
+      - __ZZ______________
+      - _______YY_________
+      - _________X____X___
+      - ____________ZZ____
+      - _______________YY_
+      - ____X____________X
+  - id: 2
+    measurements:
+      - ZZ________________
+      - ______Y____Y______
+      - _____X____X_______
+      - ________ZZ________
+      - ___YY_____________
+      - _______X____X_____
+      - ________________ZZ
+      - _____________YY___
+      - __X____________X__
+window:
+  periods: 6
+  startup_periods: [0, 1]
+  steady_periods: [2, 3]
+  terminal_periods: [4, 5]
+  fault_periods: [2, 3]
+  logical_baseline_period: 1
+  logical_terminal_period: 5
+detectors:
+  inference: adjacent-period-face-parity-v1
+  faces:
+    - [[2, 0], [1, 0], [2, 1], [1, 1], [2, 2], [1, 2]]
+    - [[1, 3], [0, 0], [1, 4], [0, 1], [1, 0], [0, 2]]
+    - [[0, 3], [2, 2], [0, 4], [2, 3], [0, 0], [2, 4]]
+    - [[0, 1], [2, 5], [0, 5], [2, 6], [0, 6], [2, 1]]
+    - [[2, 3], [1, 5], [2, 7], [1, 6], [2, 5], [1, 4]]
+    - [[1, 1], [0, 6], [1, 7], [0, 7], [1, 5], [0, 4]]
+    - [[1, 6], [0, 8], [1, 2], [0, 3], [1, 8], [0, 5]]
+    - [[0, 7], [2, 8], [0, 2], [2, 0], [0, 8], [2, 7]]
+    - [[2, 6], [1, 8], [2, 4], [1, 3], [2, 8], [1, 7]]
+  comparisons:
+    - {id: startup-0, phase: startup, from_period: 0, to_period: 1}
+    - {id: steady-0, phase: steady, from_period: 1, to_period: 2}
+    - {id: steady-1, phase: steady, from_period: 2, to_period: 3}
+    - {id: terminal-0, phase: terminal, from_period: 3, to_period: 4}
+    - {id: terminal-1, phase: terminal, from_period: 4, to_period: 5}
+logical_frame:
+  transport: symplectic-isg-frame-v1
+  closure_periods: 2
+  basis_order: [x0, z0, x1, z1]
+  baseline_representatives:
+    - XXXXXX____________
+    - YX_____Y____Z_____
+    - __XXX___XX___XX___
+    - YX_ZX_____________
+benign_equivalence:
+  kind: detector-logical-kernel-v1
+  data_coset: post-measurement-pauli-mod-measured-pair-v1
+fault_model:
+  id: direct-pair-pauli-record-v1
+  location: after-each-pair-measurement-in-fault-periods
+  weight: one-per-faulty-location
+  spacelike:
+    mechanism: two-qubit-data-pauli-after-pair
+    raw_alphabet: all-15-nonidentity-two-qubit-paulis
+    quotient: measured-pair-pauli-is-vacuous
+  timelike:
+    mechanism: reported-pair-outcome-flip
+  sector_policy: independent-no-mixed-sector-search
+search:
+  method: complete-layers-plus-independent-witness-v1
+  complete_through_weight: 2
+  witness_search_through_weight: 3
+  ordering: period-round-measurement-pauli-lexicographic
+fixtures:
+  - {id: zero-history, sector: none, faults: [], expected: benign}
+  - id: single-vacuous-measured-pair
+    sector: spacelike
+    faults: [{period: 2, round: 0, measurement: 0, pauli: XX}]
+    expected: benign
+  - id: single-detected-data-fault
+    sector: spacelike
+    faults: [{period: 2, round: 0, measurement: 0, pauli: YZ}]
+    expected: detected
+  - id: single-detected-record-fault
+    sector: timelike
+    faults: [{period: 2, round: 0, measurement: 0, flip: true}]
+    expected: detected

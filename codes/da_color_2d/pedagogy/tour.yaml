@@ -1,0 +1,66 @@
+version: 1
+title: "DA color code: close the stabilizer frame, then read the logical motion"
+subtitle: "Walk the padded Pauli-triangle witness from an incomplete startup ISG to a recurrent color-code frame."
+lattices:
+  main:
+    entry: da_color_2d
+    instance: table8_pauli_triangle
+    label: "Table-8 Pauli-triangle incidence witness"
+item_notes:
+  main:
+    schedule:
+      "0":
+        label: "First vertical bulk measurement"
+        explanation: "A Z1Z2 parity folds the two qubits at one bulk site into an effective qubit."
+      "5":
+        label: "X-boundary replacement"
+        explanation: "This X1X2 parity is a boundary rule, not another bulk V(Z1Z2) measurement."
+      "12":
+        label: "Red Y-boundary dock"
+        explanation: "A mixed interlayer Pauli lets the required logical string terminate without a four-body boundary check."
+steps:
+  - title: "Start with a patch stack, not one static code"
+    narrative: "Round t=0 addresses two qubits per labelled site. Bulk vertical Z1Z2 parities, the X- and Z-boundary replacements, and the three Y-boundary docks are distinct measurement classes. The close layer offsets are only an incidence layout; their separation is not a hardware-distance claim."
+    state: {lattice: main, mode: schedule, round: 0, filter: all, highlight: 0}
+    origin: {kind: verified, method: "constructor geometry and round-0 Pauli list"}
+    refs: [davydova2024dynamic]
+  - title: "Unfold into complementary toric sectors"
+    narrative: "At t=1, red XX edges act in layer 1 while green XX edges act in layer 2. Same-color edges are disjoint, and the dock Paulis are chosen to commute with the active edge flavor. This is an ordered transition, not a bag of gauge generators."
+    state: {lattice: main, mode: schedule, round: 1, filter: X, highlight: 0}
+    origin: {kind: verified, method: "EDGE_SETS matchings and Schedule.validate"}
+    refs: [davydova2024dynamic, kubica2015unfolding]
+  - title: "Rotate both color and Pauli labels"
+    narrative: "At t=2, layer 1 measures green ZZ edges and layer 2 measures blue ZZ edges. The red dock is dead for this move and receives both commuting mixed interlayer measurements; the Z boundary simultaneously supplies its single-qubit replacements."
+    state: {lattice: main, mode: schedule, round: 2, filter: Z, highlight: 0}
+    origin: {kind: verified, method: "constructor round-2 family and boundary ledger"}
+    refs: [davydova2024dynamic]
+  - title: "Complete the central automorphism moves"
+    narrative: "At t=3, blue XX edges in layer 1 pair with red XX edges in layer 2. The green dock now receives the two commuting mixed measurements. The ISG already has the eventual rank here, but rank alone does not identify the returned color-code row space."
+    state: {lattice: main, mode: schedule, round: 3, filter: X, highlight: 0}
+    origin: {kind: verified, method: "constructor round-3 Pauli list and ISGTracker rank"}
+    refs: [davydova2024dynamic]
+  - title: "The reference color frame first appears at t=4"
+    narrative: "The second vertical/boundary round is the first declared reference frame after startup. The constructor exports its commuting ISG as the CheckMatrix and verifies one logical degree of freedom. Stopping after the three intermediate edge rounds would omit this identity test."
+    state: {lattice: main, mode: schedule, round: 4, filter: all, highlight: 0}
+    origin: {kind: verified, method: "ISGTracker through round index 4 and CheckMatrix rank"}
+    refs: [davydova2024dynamic]
+  - title: "Repeat the moves only after initialization"
+    narrative: "Rounds t=5 through t=7 repeat the red-green, green-blue, and blue-red measurement classes from the established reference ISG. Detector products may cross this interval; a viewer frame shows measured operators, not the full spacetime detector support."
+    state: {lattice: main, mode: schedule, round: 5, filter: all, highlight: 0}
+    origin: {kind: verified, method: "base-round sequence [0,1,2,3,0,1,2,3,0]"}
+    refs: [davydova2024dynamic, blackwell2025distance]
+  - title: "Close the stabilizer row space at t=8"
+    narrative: "The final vertical/boundary round returns exactly to the reference row space from t=4; the reproduction test compares canonical GF(2) row-space signatures. That equality proves stabilizer-frame recurrence for this finite witness, not a trivial logical operation."
+    state: {lattice: main, mode: schedule, round: 8, filter: all, highlight: 0}
+    origin: {kind: verified, method: "canonical RREF comparison of round-4 and round-8 ISGs"}
+    refs: [davydova2024dynamic]
+  - title: "Keep the logical automorphism on the honest side of the boundary"
+    narrative: "The primary work tracks Pauli-triangle strings through the same cycle and obtains X_L to Z_L to Y_L, the logical SH action. The current engine does not transport outcome-dependent logical representatives, so the entry labels that map curated instead of presenting row-space recurrence as its proof."
+    state: {lattice: main, mode: schedule, round: 8, filter: all}
+    origin: {kind: curated, ref: davydova2024dynamic}
+    refs: [davydova2024dynamic, aasen2022automorphism]
+  - title: "Ask the schedule-aware question"
+    narrative: "Leave the padded witness open and ask which measurement outcomes form one detector across time, which boundary replacement a fault flips, and how the logical frame is updated. Do not read a protocol distance or threshold from the reference CheckMatrix: no exact-family circuit-level threshold was found as of 2026-08-09."
+    state: {lattice: main, mode: schedule, round: 2, filter: all}
+    origin: {kind: curated, ref: davydova2024dynamic}
+    refs: [davydova2024dynamic, blackwell2025distance]

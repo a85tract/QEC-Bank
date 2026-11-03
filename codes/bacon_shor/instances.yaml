@@ -1,0 +1,32 @@
+- label: square_2
+  params: {rows: 2, columns: 2}
+  claims:
+    - {property: n, value: 4, origin: {kind: verified}}
+    - {property: k, value: 1, origin: {kind: verified}}
+    - {property: d, exact: 2, origin: {kind: verified}}
+    - {property: d_X, value: 2, origin: {kind: claimed, ref: bacon2006operator}}
+    - {property: d_Z, value: 2, origin: {kind: claimed, ref: bacon2006operator}}
+    - {property: gauge_qubits, value: 1, origin: {kind: claimed, ref: bacon2006operator}}
+    - {property: css, value: true, origin: {kind: verified}}
+
+- label: square_3
+  params: {rows: 3, columns: 3}
+  claims:
+    - {property: n, value: 9, origin: {kind: verified}}
+    - {property: k, value: 1, origin: {kind: verified}}
+    - {property: d, exact: 3, origin: {kind: verified}}
+    - {property: d_X, value: 3, origin: {kind: claimed, ref: bacon2006operator}}
+    - {property: d_Z, value: 3, origin: {kind: claimed, ref: bacon2006operator}}
+    - {property: gauge_qubits, value: 4, origin: {kind: claimed, ref: bacon2006operator}}
+    - {property: css, value: true, origin: {kind: verified}}
+
+- label: rectangle_3x5
+  params: {rows: 3, columns: 5}
+  claims:
+    - {property: n, value: 15, origin: {kind: verified}}
+    - {property: k, value: 1, origin: {kind: verified}}
+    - {property: d, exact: 3, origin: {kind: verified}}
+    - {property: d_X, value: 5, origin: {kind: claimed, ref: napp2013optimal}}
+    - {property: d_Z, value: 3, origin: {kind: claimed, ref: napp2013optimal}}
+    - {property: gauge_qubits, value: 8, origin: {kind: claimed, ref: bacon2006operator}}
+    - {property: css, value: true, origin: {kind: verified}}

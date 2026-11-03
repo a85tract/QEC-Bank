@@ -1,0 +1,1439 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_expander",
+        "kind": "formalization"
+      },
+      "content": {
+        "description": "Applying the symmetric hypergraph product expands the finite factor into sparse binary X- and Z-check matrices. Their stacked symplectic rows are the executable baseline for commutation, rank, logical witnesses, and finite-distance checks.",
+        "origin": {
+          "converter": "quantum_expander.build -> CheckMatrix.from_css",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "tillich2009quantum",
+          "leverrier2015quantumexpander"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:views:0@a274006cb1bf9efe1f99f9ad65c079a156b898a763f0560d0ddf6c7024becc35",
+      "field": "views",
+      "id": "atlas-assertion:quantum_expander:views:0",
+      "index": 0,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/views/0",
+      "source_sha256": "a274006cb1bf9efe1f99f9ad65c079a156b898a763f0560d0ddf6c7024becc35",
+      "version_id": "atlas-assertion:quantum_expander:views:0@sha256:a274006cb1bf9efe1f99f9ad65c079a156b898a763f0560d0ddf6c7024becc35"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Write the classical parity matrix H as a biregular bipartite graph with variable side A and check side B. For every nonempty S within the chosen cutoff, compare its distinct neighborhood with Delta times |S|. The decoder theorem needs this inequality independently on A and B with both deficit parameters strictly below one sixth; a spectral-gap label or expansion of the later quantum Tanner graph is not a substitute.",
+        "origin": {
+          "kind": "curated",
+          "ref": "leverrier2015quantumexpander"
+        },
+        "refs": [
+          "leverrier2015quantumexpander",
+          "hoory2006expander"
+        ],
+        "rung": "R2",
+        "type": "two-sided-tanner-expansion"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:views:1@733f36bc64cc941ab870be315ca3c891e4f89a15e400bcec2cf8ec66fb9e0129",
+      "field": "views",
+      "id": "atlas-assertion:quantum_expander:views:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/views/1",
+      "source_sha256": "733f36bc64cc941ab870be315ca3c891e4f89a15e400bcec2cf8ec66fb9e0129",
+      "version_id": "atlas-assertion:quantum_expander:views:1@sha256:733f36bc64cc941ab870be315ca3c891e4f89a15e400bcec2cf8ec66fb9e0129"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_expander",
+        "kind": "formalization"
+      },
+      "content": {
+        "description": "Apply HGP(H,H). Physical qubits split into A-by-A and B-by-B sectors, while X checks occupy B-by-A and Z checks occupy A-by-B. Each CSS row combines one factor incidence with its transpose partner. The two mixed Kronecker terms therefore appear twice in HX HZ^T and cancel over GF(2).",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "tillich2009quantum",
+          "leverrier2015quantumexpander"
+        ],
+        "rung": "R2",
+        "type": "symmetric-hypergraph-product"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:views:2@937a6d04656a77da8479cafa370df6290c2998da826300b8a807ad5d23cebf3c",
+      "field": "views",
+      "id": "atlas-assertion:quantum_expander:views:2",
+      "index": 2,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/views/2",
+      "source_sha256": "937a6d04656a77da8479cafa370df6290c2998da826300b8a807ad5d23cebf3c",
+      "version_id": "atlas-assertion:quantum_expander:views:2@sha256:937a6d04656a77da8479cafa370df6290c2998da826300b8a807ad5d23cebf3c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Given a perfect stabilizer syndrome, inspect subsets contained inside one bounded stabilizer support and apply a subset whose flip decreases syndrome weight enough. Expansion ensures that a sufficiently small adversarial error exposes a useful move and that zero syndrome below the protected scale cannot conceal a logical class. This is a generator- local greedy decoder, not bitwise majority voting.",
+        "origin": {
+          "kind": "curated",
+          "ref": "leverrier2015quantumexpander"
+        },
+        "refs": [
+          "leverrier2015quantumexpander"
+        ],
+        "rung": "R5",
+        "type": "small-set-flip"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:views:3@d7fecd17291bb955db896c9712a8986bf76e4e3e699c2b6cb9267e4a720df53c",
+      "field": "views",
+      "id": "atlas-assertion:quantum_expander:views:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/views/3",
+      "source_sha256": "d7fecd17291bb955db896c9712a8986bf76e4e3e699c2b6cb9267e4a720df53c",
+      "version_id": "atlas-assertion:quantum_expander:views:3@sha256:d7fecd17291bb955db896c9712a8986bf76e4e3e699c2b6cb9267e4a720df53c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The founding small-set-flip theorem treats bounded-weight adversarial Pauli errors with perfect syndrome. The later random-error analysis uses probability to exclude bad local structures, and peeling follows resolvable erasure structure. These are three statements with different inputs and failure events; none licenses one model-free threshold.",
+        "origin": {
+          "kind": "curated",
+          "ref": "fawzi2017efficient"
+        },
+        "refs": [
+          "leverrier2015quantumexpander",
+          "fawzi2017efficient",
+          "prabhu2025peeling"
+        ],
+        "rung": "R5",
+        "type": "decoder-regime-split"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:views:4@8ae47448e6d75da9107b115d651d98db6aae50b00b4ef9d3c6fad1e859749bd7",
+      "field": "views",
+      "id": "atlas-assertion:quantum_expander:views:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/views/4",
+      "source_sha256": "8ae47448e6d75da9107b115d651d98db6aae50b00b4ef9d3c6fad1e859749bd7",
+      "version_id": "atlas-assertion:quantum_expander:views:4@sha256:8ae47448e6d75da9107b115d651d98db6aae50b00b4ef9d3c6fad1e859749bd7"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_expander",
+        "kind": "formalization"
+      },
+      "content": {
+        "description": "A kernel word of H can be lifted into one HGP product sector to give a quantum logical witness. The HGP distance theorem combines the classical distance of H with the transpose distance of H^T. The finite constructor exhausts both small kernels and exports one lifted logical, but scalable lower-bound certification remains a separate problem.",
+        "origin": {
+          "converter": "constructor._minimum_kernel_word + factor-derived X logical",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "tillich2009quantum"
+        ],
+        "rung": "R2",
+        "type": "factor-distance-lift"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:views:5@bfb4c843de56a7ad4345e21dd1f9acab62123cb07b78c13f084a368162483512",
+      "field": "views",
+      "id": "atlas-assertion:quantum_expander:views:5",
+      "index": 5,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/views/5",
+      "source_sha256": "bfb4c843de56a7ad4345e21dd1f9acab62123cb07b78c13f084a368162483512",
+      "version_id": "atlas-assertion:quantum_expander:views:5@sha256:bfb4c843de56a7ad4345e21dd1f9acab62123cb07b78c13f084a368162483512"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Bounded check weight does not imply bounded-depth nearest-neighbor extraction in a low-dimensional layout. Expansion distributes Tanner neighbors non-geometrically, so a device needs long-range couplers, routing, or growing local depth. Theoretical constant-overhead recovery accounts for a full architecture; it is not an experimental realization of the finite blocks exported here.",
+        "origin": {
+          "kind": "curated",
+          "ref": "delfosse2021measurement"
+        },
+        "refs": [
+          "delfosse2021measurement",
+          "fawzi2018constant"
+        ],
+        "rung": "R4",
+        "type": "nongeometric-syndrome-circuits"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:views:6@89a9431da4e4718ae185548aa9cb7fad4d03594e08637de7c16de1a175e6f518",
+      "field": "views",
+      "id": "atlas-assertion:quantum_expander:views:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/views/6",
+      "source_sha256": "89a9431da4e4718ae185548aa9cb7fad4d03594e08637de7c16de1a175e6f518",
+      "version_id": "atlas-assertion:quantum_expander:views:6@sha256:89a9431da4e4718ae185548aa9cb7fad4d03594e08637de7c16de1a175e6f518"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_expander",
+        "kind": "formalization"
+      },
+      "content": {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_expander:categories:0",
+      "index": 0,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/categories/0",
+      "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "version_id": "atlas-assertion:quantum_expander:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "hypergraph-product",
+        "origin": {
+          "kind": "curated",
+          "ref": "tillich2009quantum"
+        }
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:categories:1@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_expander:categories:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/categories/1",
+      "source_sha256": "98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "version_id": "atlas-assertion:quantum_expander:categories:1@sha256:98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "qldpc",
+        "origin": {
+          "kind": "curated",
+          "ref": "leverrier2015quantumexpander"
+        }
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:categories:2@efe08be08170dd1b3b36a050d7cacf84a637ad241c6964e81fbc3146cd773db0",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_expander:categories:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/categories/2",
+      "source_sha256": "efe08be08170dd1b3b36a050d7cacf84a637ad241c6964e81fbc3146cd773db0",
+      "version_id": "atlas-assertion:quantum_expander:categories:2@sha256:efe08be08170dd1b3b36a050d7cacf84a637ad241c6964e81fbc3146cd773db0"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_expander",
+        "kind": "formalization"
+      },
+      "content": {
+        "id": "css-pivot",
+        "noise": "one exported finite CSS matrix with perfect X- and Z-syndrome bits; the deterministic algebraic solution ignores error likelihood and degeneracy",
+        "notes": "This is only a reproducible matrix baseline. It is not small-set flip and inherits none of the adversarial or random-error expansion guarantees. The family-specific algorithm is explained in the small-set-flip view; the current controlled decoder registry has no distinct benchmark adapter for it.",
+        "refs": [
+          "leverrier2015quantumexpander"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:decoders:0@a9609ff614888fc3741ca22dde533ec4ce1ff74198c4835a9f52f33c18ee4c0b",
+      "field": "decoders",
+      "id": "atlas-assertion:quantum_expander:decoders:0",
+      "index": 0,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/decoders/0",
+      "source_sha256": "a9609ff614888fc3741ca22dde533ec4ce1ff74198c4835a9f52f33c18ee4c0b",
+      "version_id": "atlas-assertion:quantum_expander:decoders:0@sha256:a9609ff614888fc3741ca22dde533ec4ce1ff74198c4835a9f52f33c18ee4c0b"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_expander",
+        "kind": "formalization"
+      },
+      "content": {
+        "id": "bp-osd",
+        "noise": "code-capacity Pauli noise with perfect syndrome on a sparse binary HGP check matrix",
+        "notes": "BP-OSD is a generic qLDPC comparison point. Its finite-length behavior, tuning, and thresholds on other sparse families do not prove the expansion-conditioned small-set-flip theorem for this family.",
+        "refs": [
+          "panteleev2021degenerate"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:decoders:1@3f0dd88efcd27b07fd31705f62efeae0a81be9af83a86a3938398fea8ca4ffc5",
+      "field": "decoders",
+      "id": "atlas-assertion:quantum_expander:decoders:1",
+      "index": 1,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/decoders/1",
+      "source_sha256": "3f0dd88efcd27b07fd31705f62efeae0a81be9af83a86a3938398fea8ca4ffc5",
+      "version_id": "atlas-assertion:quantum_expander:decoders:1@sha256:3f0dd88efcd27b07fd31705f62efeae0a81be9af83a86a3938398fea8ca4ffc5"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "gap": {
+          "target": "wanted:qldpc-circuit-decoding"
+        },
+        "id": "none-known",
+        "noise": "a complete repeated syndrome-extraction circuit with data, measurement, routing, leakage, and correlated hardware faults",
+        "notes": "No exact-family circuit-level threshold or repeated-syndrome experimental decoder was found in the primary-source search completed on 2026-08-09. This dated gap does not erase the perfect-syndrome small-set-flip theorem.",
+        "refs": [
+          "leverrier2015quantumexpander",
+          "delfosse2021measurement"
+        ],
+        "status": "none-known"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:decoders:2@94c9f3cbbc5cb5724de9544251739b1934ce5310cdacfb2a2730d6562b63b4f8",
+      "field": "decoders",
+      "id": "atlas-assertion:quantum_expander:decoders:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/decoders/2",
+      "source_sha256": "94c9f3cbbc5cb5724de9544251739b1934ce5310cdacfb2a2730d6562b63b4f8",
+      "version_id": "atlas-assertion:quantum_expander:decoders:2@sha256:94c9f3cbbc5cb5724de9544251739b1934ce5310cdacfb2a2730d6562b63b4f8"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "combine quantum-expander blocks with encoded ancillas, repeated recovery, classical decoding, and the paper's scheduling assumptions; constant overhead is an asymptotic property of the complete scheme, not a native transversal gate of one HGP check matrix",
+        "gate": "constant-overhead fault-tolerant encoded computation",
+        "level": "protocol-level fault tolerance",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fawzi2018constant"
+        }
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:operations:0@b4ff2635cd87d5ca273f39edc5b41d666cbc80fe4d246a7787569990deaf57e4",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_expander:operations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/operations/0",
+      "source_sha256": "b4ff2635cd87d5ca273f39edc5b41d666cbc80fe4d246a7787569990deaf57e4",
+      "version_id": "atlas-assertion:quantum_expander:operations:0@sha256:b4ff2635cd87d5ca273f39edc5b41d666cbc80fe4d246a7787569990deaf57e4"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "switch into the auxiliary code required by the protocol, perform the addressed operation, recover through the single-shot boundary, and track the logical frame; the base quantum-expander block alone is not thereby an addressably universal transversal code",
+        "gate": "addressable gates through single-shot code switching",
+        "level": "addressable logical operation in a multi-code protocol",
+        "mechanism": "switching",
+        "origin": {
+          "kind": "claimed",
+          "ref": "golowich2025addressable"
+        }
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:operations:1@659d168418b69249fb87df3f97217ff39fdad8222ce1c96ae5e33050e0c9364c",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_expander:operations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/operations/1",
+      "source_sha256": "659d168418b69249fb87df3f97217ff39fdad8222ce1c96ae5e33050e0c9364c",
+      "version_id": "atlas-assertion:quantum_expander:operations:1@sha256:659d168418b69249fb87df3f97217ff39fdad8222ce1c96ae5e33050e0c9364c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A theoretical constant-overhead scheme combines quantum-expander recovery with encoded ancillas and fault-tolerant scheduling. Geometric measurement bounds show why sparse checks alone do not supply a shallow two-dimensional local circuit. No repeated-syndrome laboratory realization of the exact family was found as of 2026-08-09.",
+        "platform": "non-geometrically-local qLDPC fault-tolerance architecture",
+        "refs": [
+          "fawzi2018constant",
+          "delfosse2021measurement"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:realizations:0@53c99d322e267804a4f7a3dd235025a81143a20f49054ae9088cc13fcb979422",
+      "field": "realizations",
+      "id": "atlas-assertion:quantum_expander:realizations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/realizations/0",
+      "source_sha256": "53c99d322e267804a4f7a3dd235025a81143a20f49054ae9088cc13fcb979422",
+      "version_id": "atlas-assertion:quantum_expander:realizations:0@sha256:53c99d322e267804a4f7a3dd235025a81143a20f49054ae9088cc13fcb979422"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_expander#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "The family fixes the symmetric HGP specialization HGP(H,H) and then restricts H to biregular Tanner factors satisfying two-sided small-set expansion. The constructor regression compares every exported CSS row literally with qeclib.constructions.hgp; generic HGP codes need not meet the expansion hypotheses and are not aliases of this family.",
+        "refs": [
+          "tillich2009quantum",
+          "leverrier2015quantumexpander"
+        ],
+        "target": "hgp",
+        "type": "product_of"
+      },
+      "evidence_id": "atlas-evidence:quantum_expander:relations:0@aff77d73dc20fc2723344b6568a44bd2d669345a7a6381e356fd3b1120789298",
+      "field": "relations",
+      "id": "atlas-assertion:quantum_expander:relations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "quantum_expander/card.yaml#/relations/0",
+      "source_sha256": "aff77d73dc20fc2723344b6568a44bd2d669345a7a6381e356fd3b1120789298",
+      "version_id": "atlas-assertion:quantum_expander:relations:0@sha256:aff77d73dc20fc2723344b6568a44bd2d669345a7a6381e356fd3b1120789298"
+    }
+  ],
+  "compatibility_projection": {
+    "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+    "status": "lossy"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:quantum_expander#collection",
+      "status": "preserved",
+      "tier": "T2"
+    }
+  ],
+  "decision_class": "exact-clean",
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family",
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:quantum_expander#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:quantum_expander#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+        "status": "lossy"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/quantum_expander/card.yaml#/identity",
+          "atlas:atlas/quantum_expander/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_expander/quantum_expander-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/quantum_expander.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_expander"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:quantum_expander#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_expander",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f32b9c6245abba725f3eef546d7fca8d1743def44cb35af7ee546b1e80af4e21",
+          "payload_sha256": "1c07155cbc1b4e9c51901fde63cde3ff7499745f66e6feae625f7ae31069e448",
+          "semantic_hash": "75582ab0163f0b8cd4579adb98e85adf7aed926e9193c153a2966be65108c81f"
+        },
+        "id": "atlas-instance:quantum_expander:complete_graph_5",
+        "label": "complete_graph_5",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:75582ab0163f0b8cd4579adb98e85adf7aed926e9193c153a2966be65108c81f:structural-validity:4330a2bffffb0e726514aac0195eade5df86ecd267ad5e753fa3791c7c6c617f@1"
+          ],
+          "instance_record_sha256": "bf21bc00d39f0ae3678901ced35fc87135c2f4f2f6227e2eb2358837f991fa8c",
+          "lean_report_sha256": "1b68c2a55da9c264cb6f887f6648e75d706ad430f8333e4eb9be2e5ccca1b575",
+          "semantic_hash": "75582ab0163f0b8cd4579adb98e85adf7aed926e9193c153a2966be65108c81f"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "42ea3bf6f2a213d3e0d87ee9468d569b194361d50908b506d817f6479ac922e8",
+        "v2_envelope_id": "formal-ir-v2:quantum_expander:complete_graph_5"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f32b9c6245abba725f3eef546d7fca8d1743def44cb35af7ee546b1e80af4e21",
+          "payload_sha256": "cef268a37ca4b8ab16b7610a9a062942d10b5cca362cb833c0808c671c45c276",
+          "semantic_hash": "4f31adf8bf7620743ac46e6b9dbab4cf415e09eca338aed4d6df4fcb5b8b3cb7"
+        },
+        "id": "atlas-instance:quantum_expander:affine_plane_4",
+        "label": "affine_plane_4",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:4f31adf8bf7620743ac46e6b9dbab4cf415e09eca338aed4d6df4fcb5b8b3cb7:structural-validity:33f8a9bffc678e9e6a285f05c10712f8527f88e2de8b10a39cbd96a3f0da341e@1"
+          ],
+          "instance_record_sha256": "17447f91accf6c2cd966aa4c903e301df0af9a3858d7fdd07f1b89a10e4f68bb",
+          "lean_report_sha256": "dcb1dc65309bf14aea4245be6eada18bd4d72256b4d7387a2c49ac66f14ae754",
+          "semantic_hash": "4f31adf8bf7620743ac46e6b9dbab4cf415e09eca338aed4d6df4fcb5b8b3cb7"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "8e31277727fd9b6143508b897df2239ce70b033ecbbe60da7db5edcc999eb6b5",
+        "v2_envelope_id": "formal-ir-v2:quantum_expander:affine_plane_4"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 2,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:quantum_expander#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "id": "quantum_expander",
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_expander:views:0",
+      "atlas-assertion:quantum_expander:views:1",
+      "atlas-assertion:quantum_expander:views:2",
+      "atlas-assertion:quantum_expander:views:3",
+      "atlas-assertion:quantum_expander:views:4",
+      "atlas-assertion:quantum_expander:views:5",
+      "atlas-assertion:quantum_expander:views:6",
+      "atlas-assertion:quantum_expander:categories:0",
+      "atlas-assertion:quantum_expander:categories:1",
+      "atlas-assertion:quantum_expander:categories:2",
+      "atlas-assertion:quantum_expander:decoders:0",
+      "atlas-assertion:quantum_expander:decoders:1",
+      "atlas-assertion:quantum_expander:decoders:2",
+      "atlas-assertion:quantum_expander:operations:0",
+      "atlas-assertion:quantum_expander:operations:1",
+      "atlas-assertion:quantum_expander:realizations:0",
+      "atlas-assertion:quantum_expander:relations:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:quantum_expander#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_expander:views:0@a274006cb1bf9efe1f99f9ad65c079a156b898a763f0560d0ddf6c7024becc35",
+      "atlas-evidence:quantum_expander:views:1@733f36bc64cc941ab870be315ca3c891e4f89a15e400bcec2cf8ec66fb9e0129",
+      "atlas-evidence:quantum_expander:views:2@937a6d04656a77da8479cafa370df6290c2998da826300b8a807ad5d23cebf3c",
+      "atlas-evidence:quantum_expander:views:3@d7fecd17291bb955db896c9712a8986bf76e4e3e699c2b6cb9267e4a720df53c",
+      "atlas-evidence:quantum_expander:views:4@8ae47448e6d75da9107b115d651d98db6aae50b00b4ef9d3c6fad1e859749bd7",
+      "atlas-evidence:quantum_expander:views:5@bfb4c843de56a7ad4345e21dd1f9acab62123cb07b78c13f084a368162483512",
+      "atlas-evidence:quantum_expander:views:6@89a9431da4e4718ae185548aa9cb7fad4d03594e08637de7c16de1a175e6f518",
+      "atlas-evidence:quantum_expander:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:quantum_expander:categories:1@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+      "atlas-evidence:quantum_expander:categories:2@efe08be08170dd1b3b36a050d7cacf84a637ad241c6964e81fbc3146cd773db0",
+      "atlas-evidence:quantum_expander:decoders:0@a9609ff614888fc3741ca22dde533ec4ce1ff74198c4835a9f52f33c18ee4c0b",
+      "atlas-evidence:quantum_expander:decoders:1@3f0dd88efcd27b07fd31705f62efeae0a81be9af83a86a3938398fea8ca4ffc5",
+      "atlas-evidence:quantum_expander:decoders:2@94c9f3cbbc5cb5724de9544251739b1934ce5310cdacfb2a2730d6562b63b4f8",
+      "atlas-evidence:quantum_expander:operations:0@b4ff2635cd87d5ca273f39edc5b41d666cbc80fe4d246a7787569990deaf57e4",
+      "atlas-evidence:quantum_expander:operations:1@659d168418b69249fb87df3f97217ff39fdad8222ce1c96ae5e33050e0c9364c",
+      "atlas-evidence:quantum_expander:realizations:0@53c99d322e267804a4f7a3dd235025a81143a20f49054ae9088cc13fcb979422",
+      "atlas-evidence:quantum_expander:relations:0@aff77d73dc20fc2723344b6568a44bd2d669345a7a6381e356fd3b1120789298"
+    ],
+    "formalization_id": "atlas-formalization:quantum_expander",
+    "instance_ids": [
+      "atlas-instance:quantum_expander:complete_graph_5",
+      "atlas-instance:quantum_expander:affine_plane_4"
+    ],
+    "page_id": "atlas-page:quantum_expander",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_expander"
+    ]
+  },
+  "instances": [
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "f32b9c6245abba725f3eef546d7fca8d1743def44cb35af7ee546b1e80af4e21",
+        "payload_sha256": "1c07155cbc1b4e9c51901fde63cde3ff7499745f66e6feae625f7ae31069e448",
+        "semantic_hash": "75582ab0163f0b8cd4579adb98e85adf7aed926e9193c153a2966be65108c81f"
+      },
+      "id": "atlas-instance:quantum_expander:complete_graph_5",
+      "label": "complete_graph_5",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:75582ab0163f0b8cd4579adb98e85adf7aed926e9193c153a2966be65108c81f:structural-validity:4330a2bffffb0e726514aac0195eade5df86ecd267ad5e753fa3791c7c6c617f@1"
+        ],
+        "instance_record_sha256": "bf21bc00d39f0ae3678901ced35fc87135c2f4f2f6227e2eb2358837f991fa8c",
+        "lean_report_sha256": "1b68c2a55da9c264cb6f887f6648e75d706ad430f8333e4eb9be2e5ccca1b575",
+        "semantic_hash": "75582ab0163f0b8cd4579adb98e85adf7aed926e9193c153a2966be65108c81f"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "42ea3bf6f2a213d3e0d87ee9468d569b194361d50908b506d817f6479ac922e8",
+      "v2_envelope_id": "formal-ir-v2:quantum_expander:complete_graph_5"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "f32b9c6245abba725f3eef546d7fca8d1743def44cb35af7ee546b1e80af4e21",
+        "payload_sha256": "cef268a37ca4b8ab16b7610a9a062942d10b5cca362cb833c0808c671c45c276",
+        "semantic_hash": "4f31adf8bf7620743ac46e6b9dbab4cf415e09eca338aed4d6df4fcb5b8b3cb7"
+      },
+      "id": "atlas-instance:quantum_expander:affine_plane_4",
+      "label": "affine_plane_4",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:4f31adf8bf7620743ac46e6b9dbab4cf415e09eca338aed4d6df4fcb5b8b3cb7:structural-validity:33f8a9bffc678e9e6a285f05c10712f8527f88e2de8b10a39cbd96a3f0da341e@1"
+        ],
+        "instance_record_sha256": "17447f91accf6c2cd966aa4c903e301df0af9a3858d7fdd07f1b89a10e4f68bb",
+        "lean_report_sha256": "dcb1dc65309bf14aea4245be6eada18bd4d72256b4d7387a2c49ac66f14ae754",
+        "semantic_hash": "4f31adf8bf7620743ac46e6b9dbab4cf415e09eca338aed4d6df4fcb5b8b3cb7"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "8e31277727fd9b6143508b897df2239ce70b033ecbbe60da7db5edcc999eb6b5",
+      "v2_envelope_id": "formal-ir-v2:quantum_expander:affine_plane_4"
+    }
+  ],
+  "legacy_card": {
+    "categories": [
+      {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      {
+        "id": "hypergraph-product",
+        "origin": {
+          "kind": "curated",
+          "ref": "tillich2009quantum"
+        }
+      },
+      {
+        "id": "qldpc",
+        "origin": {
+          "kind": "curated",
+          "ref": "leverrier2015quantumexpander"
+        }
+      }
+    ],
+    "claim_gaps": [
+      {
+        "property": "d",
+        "target": "wanted:fast-distance"
+      }
+    ],
+    "decoders": [
+      {
+        "id": "css-pivot",
+        "noise": "one exported finite CSS matrix with perfect X- and Z-syndrome bits; the deterministic algebraic solution ignores error likelihood and degeneracy",
+        "notes": "This is only a reproducible matrix baseline. It is not small-set flip and inherits none of the adversarial or random-error expansion guarantees. The family-specific algorithm is explained in the small-set-flip view; the current controlled decoder registry has no distinct benchmark adapter for it.",
+        "refs": [
+          "leverrier2015quantumexpander"
+        ],
+        "status": "research-grade"
+      },
+      {
+        "id": "bp-osd",
+        "noise": "code-capacity Pauli noise with perfect syndrome on a sparse binary HGP check matrix",
+        "notes": "BP-OSD is a generic qLDPC comparison point. Its finite-length behavior, tuning, and thresholds on other sparse families do not prove the expansion-conditioned small-set-flip theorem for this family.",
+        "refs": [
+          "panteleev2021degenerate"
+        ],
+        "status": "research-grade"
+      },
+      {
+        "gap": {
+          "target": "wanted:qldpc-circuit-decoding"
+        },
+        "id": "none-known",
+        "noise": "a complete repeated syndrome-extraction circuit with data, measurement, routing, leakage, and correlated hardware faults",
+        "notes": "No exact-family circuit-level threshold or repeated-syndrome experimental decoder was found in the primary-source search completed on 2026-08-09. This dated gap does not erase the perfect-syndrome small-set-flip theorem.",
+        "refs": [
+          "leverrier2015quantumexpander",
+          "delfosse2021measurement"
+        ],
+        "status": "none-known"
+      }
+    ],
+    "description": "A quantum expander code is a hypergraph-product CSS code whose sparse classical Tanner factor expands every sufficiently small vertex set on both sides. Expansion belongs to the classical factor, not to the quantum check graph, and it is the hypothesis that makes the local small-set-flip decoder provable. The constructor exports two deterministic finite factors and exhaustively checks their declared cutoffs. Those witnesses teach the predicate and verify finite HGP blocks; they are not an explicit asymptotic family with fixed degrees and fixed expansion constants, which the founding source reports only through probabilistic existence.",
+    "eczoo": {
+      "classification": "exact-family",
+      "source": {
+        "blob_url": "https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/quantum_expander.yml",
+        "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+        "page_url": "https://errorcorrectionzoo.org/c/quantum_expander",
+        "path": "codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/quantum_expander.yml",
+        "repository_url": "https://github.com/errorcorrectionzoo/eczoo_data",
+        "retrieved_on": "2026-08-05",
+        "sha256": "8c56c46764375f2cab77f7596837f071340af40363f6c3f617a40e6df1e9270c"
+      },
+      "status": "mapped",
+      "zoo_id": "quantum_expander"
+    },
+    "fit": {
+      "platforms": [
+        "long-range-connected-quantum-register",
+        "routed-qldpc-syndrome-architecture"
+      ],
+      "tasks": [
+        "constant-rate-quantum-memory-theory",
+        "expansion-certified-decoder-research",
+        "nongeometric-qldpc-fault-tolerance"
+      ]
+    },
+    "id": "quantum_expander",
+    "identity": {
+      "aliases": [
+        "quantum expander codes",
+        "small-set-flip quantum codes"
+      ],
+      "canonical_name": "Quantum expander code",
+      "variant": "binary symmetric hypergraph-product family"
+    },
+    "kind": "family",
+    "operations": [
+      {
+        "cost": "combine quantum-expander blocks with encoded ancillas, repeated recovery, classical decoding, and the paper's scheduling assumptions; constant overhead is an asymptotic property of the complete scheme, not a native transversal gate of one HGP check matrix",
+        "gate": "constant-overhead fault-tolerant encoded computation",
+        "level": "protocol-level fault tolerance",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "fawzi2018constant"
+        }
+      },
+      {
+        "cost": "switch into the auxiliary code required by the protocol, perform the addressed operation, recover through the single-shot boundary, and track the logical frame; the base quantum-expander block alone is not thereby an addressably universal transversal code",
+        "gate": "addressable gates through single-shot code switching",
+        "level": "addressable logical operation in a multi-code protocol",
+        "mechanism": "switching",
+        "origin": {
+          "kind": "claimed",
+          "ref": "golowich2025addressable"
+        }
+      }
+    ],
+    "params": {
+      "factor": "Named deterministic finite Tanner witness. Supported values are complete-graph-5-incidence and affine-plane-4-incidence. The value selects fixed ordered incidence data and finite expansion cutoffs, not a scalable asymptotic expander generator."
+    },
+    "presentation": {
+      "guided_tour": {
+        "status": "available"
+      },
+      "orienting_view": {
+        "kind": "construction",
+        "status": "available"
+      }
+    },
+    "realizations": [
+      {
+        "description": "A theoretical constant-overhead scheme combines quantum-expander recovery with encoded ancillas and fault-tolerant scheduling. Geometric measurement bounds show why sparse checks alone do not supply a shallow two-dimensional local circuit. No repeated-syndrome laboratory realization of the exact family was found as of 2026-08-09.",
+        "platform": "non-geometrically-local qLDPC fault-tolerance architecture",
+        "refs": [
+          "fawzi2018constant",
+          "delfosse2021measurement"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "refs": [
+      "leverrier2015quantumexpander",
+      "tillich2009quantum",
+      "hoory2006expander",
+      "fawzi2017efficient",
+      "prabhu2025peeling",
+      "fawzi2018constant",
+      "gottesman2013constant",
+      "golowich2025addressable",
+      "delfosse2021measurement",
+      "placke2024spin",
+      "panteleev2021degenerate"
+    ],
+    "relations": [
+      {
+        "how": "The family fixes the symmetric HGP specialization HGP(H,H) and then restricts H to biregular Tanner factors satisfying two-sided small-set expansion. The constructor regression compares every exported CSS row literally with qeclib.constructions.hgp; generic HGP codes need not meet the expansion hypotheses and are not aliases of this family.",
+        "refs": [
+          "tillich2009quantum",
+          "leverrier2015quantumexpander"
+        ],
+        "target": "hgp",
+        "type": "product_of"
+      }
+    ],
+    "tier": "T2",
+    "views": [
+      {
+        "description": "Applying the symmetric hypergraph product expands the finite factor into sparse binary X- and Z-check matrices. Their stacked symplectic rows are the executable baseline for commutation, rank, logical witnesses, and finite-distance checks.",
+        "origin": {
+          "converter": "quantum_expander.build -> CheckMatrix.from_css",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "tillich2009quantum",
+          "leverrier2015quantumexpander"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      {
+        "description": "Write the classical parity matrix H as a biregular bipartite graph with variable side A and check side B. For every nonempty S within the chosen cutoff, compare its distinct neighborhood with Delta times |S|. The decoder theorem needs this inequality independently on A and B with both deficit parameters strictly below one sixth; a spectral-gap label or expansion of the later quantum Tanner graph is not a substitute.",
+        "origin": {
+          "kind": "curated",
+          "ref": "leverrier2015quantumexpander"
+        },
+        "refs": [
+          "leverrier2015quantumexpander",
+          "hoory2006expander"
+        ],
+        "rung": "R2",
+        "type": "two-sided-tanner-expansion"
+      },
+      {
+        "description": "Apply HGP(H,H). Physical qubits split into A-by-A and B-by-B sectors, while X checks occupy B-by-A and Z checks occupy A-by-B. Each CSS row combines one factor incidence with its transpose partner. The two mixed Kronecker terms therefore appear twice in HX HZ^T and cancel over GF(2).",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "tillich2009quantum",
+          "leverrier2015quantumexpander"
+        ],
+        "rung": "R2",
+        "type": "symmetric-hypergraph-product"
+      },
+      {
+        "description": "Given a perfect stabilizer syndrome, inspect subsets contained inside one bounded stabilizer support and apply a subset whose flip decreases syndrome weight enough. Expansion ensures that a sufficiently small adversarial error exposes a useful move and that zero syndrome below the protected scale cannot conceal a logical class. This is a generator- local greedy decoder, not bitwise majority voting.",
+        "origin": {
+          "kind": "curated",
+          "ref": "leverrier2015quantumexpander"
+        },
+        "refs": [
+          "leverrier2015quantumexpander"
+        ],
+        "rung": "R5",
+        "type": "small-set-flip"
+      },
+      {
+        "description": "The founding small-set-flip theorem treats bounded-weight adversarial Pauli errors with perfect syndrome. The later random-error analysis uses probability to exclude bad local structures, and peeling follows resolvable erasure structure. These are three statements with different inputs and failure events; none licenses one model-free threshold.",
+        "origin": {
+          "kind": "curated",
+          "ref": "fawzi2017efficient"
+        },
+        "refs": [
+          "leverrier2015quantumexpander",
+          "fawzi2017efficient",
+          "prabhu2025peeling"
+        ],
+        "rung": "R5",
+        "type": "decoder-regime-split"
+      },
+      {
+        "description": "A kernel word of H can be lifted into one HGP product sector to give a quantum logical witness. The HGP distance theorem combines the classical distance of H with the transpose distance of H^T. The finite constructor exhausts both small kernels and exports one lifted logical, but scalable lower-bound certification remains a separate problem.",
+        "origin": {
+          "converter": "constructor._minimum_kernel_word + factor-derived X logical",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "tillich2009quantum"
+        ],
+        "rung": "R2",
+        "type": "factor-distance-lift"
+      },
+      {
+        "description": "Bounded check weight does not imply bounded-depth nearest-neighbor extraction in a low-dimensional layout. Expansion distributes Tanner neighbors non-geometrically, so a device needs long-range couplers, routing, or growing local depth. Theoretical constant-overhead recovery accounts for a full architecture; it is not an experimental realization of the finite blocks exported here.",
+        "origin": {
+          "kind": "curated",
+          "ref": "delfosse2021measurement"
+        },
+        "refs": [
+          "delfosse2021measurement",
+          "fawzi2018constant"
+        ],
+        "rung": "R4",
+        "type": "nongeometric-syndrome-circuits"
+      }
+    ],
+    "visual_instance": "complete_graph_5"
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:quantum_expander#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:quantum_expander#collection",
+        "status": "preserved",
+        "tier": "T2"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_expander",
+    "presented_entity_ids": [
+      "eczoo-entity:quantum_expander#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:quantum_expander#collection",
+    "redirects": [],
+    "route": "/entries/quantum_expander.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/quantum_expander"
+  },
+  "parent_content": null,
+  "projection": {
+    "method": "embedded-utf8-source-v1",
+    "source_sha256": "92bd6bbd9b69e69897994456229220e3398d6ff09389732f856b5cc1ae0dc8fe",
+    "status": "exact"
+  },
+  "schema": "qec-atlas-entry-card-v2",
+  "scoped_facets": {
+    "categories": [
+      {
+        "applies_to": {
+          "id": "atlas-formalization:quantum_expander",
+          "kind": "formalization"
+        },
+        "content": {
+          "id": "css",
+          "origin": {
+            "kind": "verified"
+          }
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "field": "categories",
+        "id": "atlas-assertion:quantum_expander:categories:0",
+        "index": 0,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/categories/0",
+        "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "version_id": "atlas-assertion:quantum_expander:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "hypergraph-product",
+          "origin": {
+            "kind": "curated",
+            "ref": "tillich2009quantum"
+          }
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:categories:1@98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+        "field": "categories",
+        "id": "atlas-assertion:quantum_expander:categories:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/categories/1",
+        "source_sha256": "98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb",
+        "version_id": "atlas-assertion:quantum_expander:categories:1@sha256:98c5673455a6d68fb93174e1c55a252eb2d4fe21f0026571c8761d27e9b7d6bb"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "qldpc",
+          "origin": {
+            "kind": "curated",
+            "ref": "leverrier2015quantumexpander"
+          }
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:categories:2@efe08be08170dd1b3b36a050d7cacf84a637ad241c6964e81fbc3146cd773db0",
+        "field": "categories",
+        "id": "atlas-assertion:quantum_expander:categories:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/categories/2",
+        "source_sha256": "efe08be08170dd1b3b36a050d7cacf84a637ad241c6964e81fbc3146cd773db0",
+        "version_id": "atlas-assertion:quantum_expander:categories:2@sha256:efe08be08170dd1b3b36a050d7cacf84a637ad241c6964e81fbc3146cd773db0"
+      }
+    ],
+    "decoders": [
+      {
+        "applies_to": {
+          "id": "atlas-formalization:quantum_expander",
+          "kind": "formalization"
+        },
+        "content": {
+          "id": "css-pivot",
+          "noise": "one exported finite CSS matrix with perfect X- and Z-syndrome bits; the deterministic algebraic solution ignores error likelihood and degeneracy",
+          "notes": "This is only a reproducible matrix baseline. It is not small-set flip and inherits none of the adversarial or random-error expansion guarantees. The family-specific algorithm is explained in the small-set-flip view; the current controlled decoder registry has no distinct benchmark adapter for it.",
+          "refs": [
+            "leverrier2015quantumexpander"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:decoders:0@a9609ff614888fc3741ca22dde533ec4ce1ff74198c4835a9f52f33c18ee4c0b",
+        "field": "decoders",
+        "id": "atlas-assertion:quantum_expander:decoders:0",
+        "index": 0,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/decoders/0",
+        "source_sha256": "a9609ff614888fc3741ca22dde533ec4ce1ff74198c4835a9f52f33c18ee4c0b",
+        "version_id": "atlas-assertion:quantum_expander:decoders:0@sha256:a9609ff614888fc3741ca22dde533ec4ce1ff74198c4835a9f52f33c18ee4c0b"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-formalization:quantum_expander",
+          "kind": "formalization"
+        },
+        "content": {
+          "id": "bp-osd",
+          "noise": "code-capacity Pauli noise with perfect syndrome on a sparse binary HGP check matrix",
+          "notes": "BP-OSD is a generic qLDPC comparison point. Its finite-length behavior, tuning, and thresholds on other sparse families do not prove the expansion-conditioned small-set-flip theorem for this family.",
+          "refs": [
+            "panteleev2021degenerate"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:decoders:1@3f0dd88efcd27b07fd31705f62efeae0a81be9af83a86a3938398fea8ca4ffc5",
+        "field": "decoders",
+        "id": "atlas-assertion:quantum_expander:decoders:1",
+        "index": 1,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/decoders/1",
+        "source_sha256": "3f0dd88efcd27b07fd31705f62efeae0a81be9af83a86a3938398fea8ca4ffc5",
+        "version_id": "atlas-assertion:quantum_expander:decoders:1@sha256:3f0dd88efcd27b07fd31705f62efeae0a81be9af83a86a3938398fea8ca4ffc5"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "gap": {
+            "target": "wanted:qldpc-circuit-decoding"
+          },
+          "id": "none-known",
+          "noise": "a complete repeated syndrome-extraction circuit with data, measurement, routing, leakage, and correlated hardware faults",
+          "notes": "No exact-family circuit-level threshold or repeated-syndrome experimental decoder was found in the primary-source search completed on 2026-08-09. This dated gap does not erase the perfect-syndrome small-set-flip theorem.",
+          "refs": [
+            "leverrier2015quantumexpander",
+            "delfosse2021measurement"
+          ],
+          "status": "none-known"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:decoders:2@94c9f3cbbc5cb5724de9544251739b1934ce5310cdacfb2a2730d6562b63b4f8",
+        "field": "decoders",
+        "id": "atlas-assertion:quantum_expander:decoders:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/decoders/2",
+        "source_sha256": "94c9f3cbbc5cb5724de9544251739b1934ce5310cdacfb2a2730d6562b63b4f8",
+        "version_id": "atlas-assertion:quantum_expander:decoders:2@sha256:94c9f3cbbc5cb5724de9544251739b1934ce5310cdacfb2a2730d6562b63b4f8"
+      }
+    ],
+    "operations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "combine quantum-expander blocks with encoded ancillas, repeated recovery, classical decoding, and the paper's scheduling assumptions; constant overhead is an asymptotic property of the complete scheme, not a native transversal gate of one HGP check matrix",
+          "gate": "constant-overhead fault-tolerant encoded computation",
+          "level": "protocol-level fault tolerance",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "fawzi2018constant"
+          }
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:operations:0@b4ff2635cd87d5ca273f39edc5b41d666cbc80fe4d246a7787569990deaf57e4",
+        "field": "operations",
+        "id": "atlas-assertion:quantum_expander:operations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/operations/0",
+        "source_sha256": "b4ff2635cd87d5ca273f39edc5b41d666cbc80fe4d246a7787569990deaf57e4",
+        "version_id": "atlas-assertion:quantum_expander:operations:0@sha256:b4ff2635cd87d5ca273f39edc5b41d666cbc80fe4d246a7787569990deaf57e4"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "switch into the auxiliary code required by the protocol, perform the addressed operation, recover through the single-shot boundary, and track the logical frame; the base quantum-expander block alone is not thereby an addressably universal transversal code",
+          "gate": "addressable gates through single-shot code switching",
+          "level": "addressable logical operation in a multi-code protocol",
+          "mechanism": "switching",
+          "origin": {
+            "kind": "claimed",
+            "ref": "golowich2025addressable"
+          }
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:operations:1@659d168418b69249fb87df3f97217ff39fdad8222ce1c96ae5e33050e0c9364c",
+        "field": "operations",
+        "id": "atlas-assertion:quantum_expander:operations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/operations/1",
+        "source_sha256": "659d168418b69249fb87df3f97217ff39fdad8222ce1c96ae5e33050e0c9364c",
+        "version_id": "atlas-assertion:quantum_expander:operations:1@sha256:659d168418b69249fb87df3f97217ff39fdad8222ce1c96ae5e33050e0c9364c"
+      }
+    ],
+    "realizations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A theoretical constant-overhead scheme combines quantum-expander recovery with encoded ancillas and fault-tolerant scheduling. Geometric measurement bounds show why sparse checks alone do not supply a shallow two-dimensional local circuit. No repeated-syndrome laboratory realization of the exact family was found as of 2026-08-09.",
+          "platform": "non-geometrically-local qLDPC fault-tolerance architecture",
+          "refs": [
+            "fawzi2018constant",
+            "delfosse2021measurement"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:realizations:0@53c99d322e267804a4f7a3dd235025a81143a20f49054ae9088cc13fcb979422",
+        "field": "realizations",
+        "id": "atlas-assertion:quantum_expander:realizations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/realizations/0",
+        "source_sha256": "53c99d322e267804a4f7a3dd235025a81143a20f49054ae9088cc13fcb979422",
+        "version_id": "atlas-assertion:quantum_expander:realizations:0@sha256:53c99d322e267804a4f7a3dd235025a81143a20f49054ae9088cc13fcb979422"
+      }
+    ],
+    "relations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "The family fixes the symmetric HGP specialization HGP(H,H) and then restricts H to biregular Tanner factors satisfying two-sided small-set expansion. The constructor regression compares every exported CSS row literally with qeclib.constructions.hgp; generic HGP codes need not meet the expansion hypotheses and are not aliases of this family.",
+          "refs": [
+            "tillich2009quantum",
+            "leverrier2015quantumexpander"
+          ],
+          "target": "hgp",
+          "type": "product_of"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:relations:0@aff77d73dc20fc2723344b6568a44bd2d669345a7a6381e356fd3b1120789298",
+        "field": "relations",
+        "id": "atlas-assertion:quantum_expander:relations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/relations/0",
+        "source_sha256": "aff77d73dc20fc2723344b6568a44bd2d669345a7a6381e356fd3b1120789298",
+        "version_id": "atlas-assertion:quantum_expander:relations:0@sha256:aff77d73dc20fc2723344b6568a44bd2d669345a7a6381e356fd3b1120789298"
+      }
+    ],
+    "views": [
+      {
+        "applies_to": {
+          "id": "atlas-formalization:quantum_expander",
+          "kind": "formalization"
+        },
+        "content": {
+          "description": "Applying the symmetric hypergraph product expands the finite factor into sparse binary X- and Z-check matrices. Their stacked symplectic rows are the executable baseline for commutation, rank, logical witnesses, and finite-distance checks.",
+          "origin": {
+            "converter": "quantum_expander.build -> CheckMatrix.from_css",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "tillich2009quantum",
+            "leverrier2015quantumexpander"
+          ],
+          "rung": "R1",
+          "type": "symplectic-css-checks"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:views:0@a274006cb1bf9efe1f99f9ad65c079a156b898a763f0560d0ddf6c7024becc35",
+        "field": "views",
+        "id": "atlas-assertion:quantum_expander:views:0",
+        "index": 0,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/views/0",
+        "source_sha256": "a274006cb1bf9efe1f99f9ad65c079a156b898a763f0560d0ddf6c7024becc35",
+        "version_id": "atlas-assertion:quantum_expander:views:0@sha256:a274006cb1bf9efe1f99f9ad65c079a156b898a763f0560d0ddf6c7024becc35"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Write the classical parity matrix H as a biregular bipartite graph with variable side A and check side B. For every nonempty S within the chosen cutoff, compare its distinct neighborhood with Delta times |S|. The decoder theorem needs this inequality independently on A and B with both deficit parameters strictly below one sixth; a spectral-gap label or expansion of the later quantum Tanner graph is not a substitute.",
+          "origin": {
+            "kind": "curated",
+            "ref": "leverrier2015quantumexpander"
+          },
+          "refs": [
+            "leverrier2015quantumexpander",
+            "hoory2006expander"
+          ],
+          "rung": "R2",
+          "type": "two-sided-tanner-expansion"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:views:1@733f36bc64cc941ab870be315ca3c891e4f89a15e400bcec2cf8ec66fb9e0129",
+        "field": "views",
+        "id": "atlas-assertion:quantum_expander:views:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/views/1",
+        "source_sha256": "733f36bc64cc941ab870be315ca3c891e4f89a15e400bcec2cf8ec66fb9e0129",
+        "version_id": "atlas-assertion:quantum_expander:views:1@sha256:733f36bc64cc941ab870be315ca3c891e4f89a15e400bcec2cf8ec66fb9e0129"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-formalization:quantum_expander",
+          "kind": "formalization"
+        },
+        "content": {
+          "description": "Apply HGP(H,H). Physical qubits split into A-by-A and B-by-B sectors, while X checks occupy B-by-A and Z checks occupy A-by-B. Each CSS row combines one factor incidence with its transpose partner. The two mixed Kronecker terms therefore appear twice in HX HZ^T and cancel over GF(2).",
+          "origin": {
+            "kind": "canonical"
+          },
+          "refs": [
+            "tillich2009quantum",
+            "leverrier2015quantumexpander"
+          ],
+          "rung": "R2",
+          "type": "symmetric-hypergraph-product"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:views:2@937a6d04656a77da8479cafa370df6290c2998da826300b8a807ad5d23cebf3c",
+        "field": "views",
+        "id": "atlas-assertion:quantum_expander:views:2",
+        "index": 2,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/views/2",
+        "source_sha256": "937a6d04656a77da8479cafa370df6290c2998da826300b8a807ad5d23cebf3c",
+        "version_id": "atlas-assertion:quantum_expander:views:2@sha256:937a6d04656a77da8479cafa370df6290c2998da826300b8a807ad5d23cebf3c"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Given a perfect stabilizer syndrome, inspect subsets contained inside one bounded stabilizer support and apply a subset whose flip decreases syndrome weight enough. Expansion ensures that a sufficiently small adversarial error exposes a useful move and that zero syndrome below the protected scale cannot conceal a logical class. This is a generator- local greedy decoder, not bitwise majority voting.",
+          "origin": {
+            "kind": "curated",
+            "ref": "leverrier2015quantumexpander"
+          },
+          "refs": [
+            "leverrier2015quantumexpander"
+          ],
+          "rung": "R5",
+          "type": "small-set-flip"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:views:3@d7fecd17291bb955db896c9712a8986bf76e4e3e699c2b6cb9267e4a720df53c",
+        "field": "views",
+        "id": "atlas-assertion:quantum_expander:views:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/views/3",
+        "source_sha256": "d7fecd17291bb955db896c9712a8986bf76e4e3e699c2b6cb9267e4a720df53c",
+        "version_id": "atlas-assertion:quantum_expander:views:3@sha256:d7fecd17291bb955db896c9712a8986bf76e4e3e699c2b6cb9267e4a720df53c"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The founding small-set-flip theorem treats bounded-weight adversarial Pauli errors with perfect syndrome. The later random-error analysis uses probability to exclude bad local structures, and peeling follows resolvable erasure structure. These are three statements with different inputs and failure events; none licenses one model-free threshold.",
+          "origin": {
+            "kind": "curated",
+            "ref": "fawzi2017efficient"
+          },
+          "refs": [
+            "leverrier2015quantumexpander",
+            "fawzi2017efficient",
+            "prabhu2025peeling"
+          ],
+          "rung": "R5",
+          "type": "decoder-regime-split"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:views:4@8ae47448e6d75da9107b115d651d98db6aae50b00b4ef9d3c6fad1e859749bd7",
+        "field": "views",
+        "id": "atlas-assertion:quantum_expander:views:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/views/4",
+        "source_sha256": "8ae47448e6d75da9107b115d651d98db6aae50b00b4ef9d3c6fad1e859749bd7",
+        "version_id": "atlas-assertion:quantum_expander:views:4@sha256:8ae47448e6d75da9107b115d651d98db6aae50b00b4ef9d3c6fad1e859749bd7"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-formalization:quantum_expander",
+          "kind": "formalization"
+        },
+        "content": {
+          "description": "A kernel word of H can be lifted into one HGP product sector to give a quantum logical witness. The HGP distance theorem combines the classical distance of H with the transpose distance of H^T. The finite constructor exhausts both small kernels and exports one lifted logical, but scalable lower-bound certification remains a separate problem.",
+          "origin": {
+            "converter": "constructor._minimum_kernel_word + factor-derived X logical",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "tillich2009quantum"
+          ],
+          "rung": "R2",
+          "type": "factor-distance-lift"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:views:5@bfb4c843de56a7ad4345e21dd1f9acab62123cb07b78c13f084a368162483512",
+        "field": "views",
+        "id": "atlas-assertion:quantum_expander:views:5",
+        "index": 5,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/views/5",
+        "source_sha256": "bfb4c843de56a7ad4345e21dd1f9acab62123cb07b78c13f084a368162483512",
+        "version_id": "atlas-assertion:quantum_expander:views:5@sha256:bfb4c843de56a7ad4345e21dd1f9acab62123cb07b78c13f084a368162483512"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:quantum_expander#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Bounded check weight does not imply bounded-depth nearest-neighbor extraction in a low-dimensional layout. Expansion distributes Tanner neighbors non-geometrically, so a device needs long-range couplers, routing, or growing local depth. Theoretical constant-overhead recovery accounts for a full architecture; it is not an experimental realization of the finite blocks exported here.",
+          "origin": {
+            "kind": "curated",
+            "ref": "delfosse2021measurement"
+          },
+          "refs": [
+            "delfosse2021measurement",
+            "fawzi2018constant"
+          ],
+          "rung": "R4",
+          "type": "nongeometric-syndrome-circuits"
+        },
+        "evidence_id": "atlas-evidence:quantum_expander:views:6@89a9431da4e4718ae185548aa9cb7fad4d03594e08637de7c16de1a175e6f518",
+        "field": "views",
+        "id": "atlas-assertion:quantum_expander:views:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "quantum_expander/card.yaml#/views/6",
+        "source_sha256": "89a9431da4e4718ae185548aa9cb7fad4d03594e08637de7c16de1a175e6f518",
+        "version_id": "atlas-assertion:quantum_expander:views:6@sha256:89a9431da4e4718ae185548aa9cb7fad4d03594e08637de7c16de1a175e6f518"
+      }
+    ]
+  },
+  "source": {
+    "collection": "atlas",
+    "encoding": "utf-8",
+    "entry_id": "quantum_expander",
+    "path": "atlas/quantum_expander/card.yaml",
+    "sha256": "92bd6bbd9b69e69897994456229220e3398d6ff09389732f856b5cc1ae0dc8fe",
+    "text": "id: quantum_expander\nkind: family\nidentity:\n  canonical_name: \"Quantum expander code\"\n  variant: \"binary symmetric hypergraph-product family\"\n  aliases:\n    - \"quantum expander codes\"\n    - \"small-set-flip quantum codes\"\npresentation:\n  orienting_view: {status: available, kind: construction}\n  guided_tour: {status: available}\neczoo:\n  status: mapped\n  zoo_id: quantum_expander\n  classification: exact-family\n  source:\n    repository_url: https://github.com/errorcorrectionzoo/eczoo_data\n    commit: b2437d9e2dc09284e04c66ef72ee81b7ed7bd129\n    retrieved_on: \"2026-08-05\"\n    path: codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/quantum_expander.yml\n    sha256: 8c56c46764375f2cab77f7596837f071340af40363f6c3f617a40e6df1e9270c\n    page_url: https://errorcorrectionzoo.org/c/quantum_expander\n    blob_url: https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/quantum_expander.yml\ndescription: >-\n  A quantum expander code is a hypergraph-product CSS code whose sparse\n  classical Tanner factor expands every sufficiently small vertex set on both\n  sides. Expansion belongs to the classical factor, not to the quantum check\n  graph, and it is the hypothesis that makes the local small-set-flip decoder\n  provable. The constructor exports two deterministic finite factors and\n  exhaustively checks their declared cutoffs. Those witnesses teach the\n  predicate and verify finite HGP blocks; they are not an explicit asymptotic\n  family with fixed degrees and fixed expansion constants, which the founding\n  source reports only through probabilistic existence.\nclaim_gaps:\n  - {property: d, target: wanted:fast-distance}\nviews:\n  - rung: R1\n    type: symplectic-css-checks\n    description: >-\n      Applying the symmetric hypergraph product expands the finite factor into\n      sparse binary X- and Z-check matrices. Their stacked symplectic rows are\n      the executable baseline for commutation, rank, logical witnesses, and\n      finite-distance checks.\n    origin:\n      kind: derived\n      converter: \"quantum_expander.build -> CheckMatrix.from_css\"\n      version: \"v1\"\n    refs: [tillich2009quantum, leverrier2015quantumexpander]\n  - rung: R2\n    type: two-sided-tanner-expansion\n    description: >-\n      Write the classical parity matrix H as a biregular bipartite graph with\n      variable side A and check side B. For every nonempty S within the chosen\n      cutoff, compare its distinct neighborhood with Delta times |S|. The\n      decoder theorem needs this inequality independently on A and B with\n      both deficit parameters strictly below one sixth; a spectral-gap label\n      or expansion of the later quantum Tanner graph is not a substitute.\n    origin: {kind: curated, ref: leverrier2015quantumexpander}\n    refs: [leverrier2015quantumexpander, hoory2006expander]\n  - rung: R2\n    type: symmetric-hypergraph-product\n    description: >-\n      Apply HGP(H,H). Physical qubits split into A-by-A and B-by-B sectors,\n      while X checks occupy B-by-A and Z checks occupy A-by-B. Each CSS row\n      combines one factor incidence with its transpose partner. The two mixed\n      Kronecker terms therefore appear twice in HX HZ^T and cancel over GF(2).\n    origin: {kind: canonical}\n    refs: [tillich2009quantum, leverrier2015quantumexpander]\n  - rung: R5\n    type: small-set-flip\n    description: >-\n      Given a perfect stabilizer syndrome, inspect subsets contained inside\n      one bounded stabilizer support and apply a subset whose flip decreases\n      syndrome weight enough. Expansion ensures that a sufficiently small\n      adversarial error exposes a useful move and that zero syndrome below the\n      protected scale cannot conceal a logical class. This is a generator-\n      local greedy decoder, not bitwise majority voting.\n    origin: {kind: curated, ref: leverrier2015quantumexpander}\n    refs: [leverrier2015quantumexpander]\n  - rung: R5\n    type: decoder-regime-split\n    description: >-\n      The founding small-set-flip theorem treats bounded-weight adversarial\n      Pauli errors with perfect syndrome. The later random-error analysis uses\n      probability to exclude bad local structures, and peeling follows\n      resolvable erasure structure. These are three statements with different\n      inputs and failure events; none licenses one model-free threshold.\n    origin: {kind: curated, ref: fawzi2017efficient}\n    refs: [leverrier2015quantumexpander, fawzi2017efficient, prabhu2025peeling]\n  - rung: R2\n    type: factor-distance-lift\n    description: >-\n      A kernel word of H can be lifted into one HGP product sector to give a\n      quantum logical witness. The HGP distance theorem combines the classical\n      distance of H with the transpose distance of H^T. The finite constructor\n      exhausts both small kernels and exports one lifted logical, but scalable\n      lower-bound certification remains a separate problem.\n    origin:\n      kind: derived\n      converter: \"constructor._minimum_kernel_word + factor-derived X logical\"\n      version: \"v1\"\n    refs: [tillich2009quantum]\n  - rung: R4\n    type: nongeometric-syndrome-circuits\n    description: >-\n      Bounded check weight does not imply bounded-depth nearest-neighbor\n      extraction in a low-dimensional layout. Expansion distributes Tanner\n      neighbors non-geometrically, so a device needs long-range couplers,\n      routing, or growing local depth. Theoretical constant-overhead recovery\n      accounts for a full architecture; it is not an experimental realization\n      of the finite blocks exported here.\n    origin: {kind: curated, ref: delfosse2021measurement}\n    refs: [delfosse2021measurement, fawzi2018constant]\ncategories:\n  - {id: css, origin: {kind: verified}}\n  - {id: hypergraph-product, origin: {kind: curated, ref: tillich2009quantum}}\n  - {id: qldpc, origin: {kind: curated, ref: leverrier2015quantumexpander}}\nrefs:\n  - leverrier2015quantumexpander\n  - tillich2009quantum\n  - hoory2006expander\n  - fawzi2017efficient\n  - prabhu2025peeling\n  - fawzi2018constant\n  - gottesman2013constant\n  - golowich2025addressable\n  - delfosse2021measurement\n  - placke2024spin\n  - panteleev2021degenerate\nparams:\n  factor: >-\n    Named deterministic finite Tanner witness. Supported values are\n    complete-graph-5-incidence and affine-plane-4-incidence. The value selects\n    fixed ordered incidence data and finite expansion cutoffs, not a scalable\n    asymptotic expander generator.\nvisual_instance: complete_graph_5\ntier: T2\nfit:\n  platforms:\n    - long-range-connected-quantum-register\n    - routed-qldpc-syndrome-architecture\n  tasks:\n    - constant-rate-quantum-memory-theory\n    - expansion-certified-decoder-research\n    - nongeometric-qldpc-fault-tolerance\ndecoders:\n  - id: css-pivot\n    status: research-grade\n    noise: >-\n      one exported finite CSS matrix with perfect X- and Z-syndrome bits; the\n      deterministic algebraic solution ignores error likelihood and degeneracy\n    notes: >-\n      This is only a reproducible matrix baseline. It is not small-set flip and\n      inherits none of the adversarial or random-error expansion guarantees.\n      The family-specific algorithm is explained in the small-set-flip view;\n      the current controlled decoder registry has no distinct benchmark adapter\n      for it.\n    refs: [leverrier2015quantumexpander]\n  - id: bp-osd\n    status: research-grade\n    noise: >-\n      code-capacity Pauli noise with perfect syndrome on a sparse binary HGP\n      check matrix\n    notes: >-\n      BP-OSD is a generic qLDPC comparison point. Its finite-length behavior,\n      tuning, and thresholds on other sparse families do not prove the\n      expansion-conditioned small-set-flip theorem for this family.\n    refs: [panteleev2021degenerate]\n  - id: none-known\n    status: none-known\n    gap: {target: wanted:qldpc-circuit-decoding}\n    noise: >-\n      a complete repeated syndrome-extraction circuit with data, measurement,\n      routing, leakage, and correlated hardware faults\n    notes: >-\n      No exact-family circuit-level threshold or repeated-syndrome experimental\n      decoder was found in the primary-source search completed on 2026-08-09.\n      This dated gap does not erase the perfect-syndrome small-set-flip theorem.\n    refs: [leverrier2015quantumexpander, delfosse2021measurement]\nrealizations:\n  - platform: \"non-geometrically-local qLDPC fault-tolerance architecture\"\n    status: proposed\n    description: >-\n      A theoretical constant-overhead scheme combines quantum-expander recovery\n      with encoded ancillas and fault-tolerant scheduling. Geometric measurement\n      bounds show why sparse checks alone do not supply a shallow two-dimensional\n      local circuit. No repeated-syndrome laboratory realization of the exact\n      family was found as of 2026-08-09.\n    refs: [fawzi2018constant, delfosse2021measurement]\nrelations:\n  - type: product_of\n    target: hgp\n    how: >-\n      The family fixes the symmetric HGP specialization HGP(H,H) and then\n      restricts H to biregular Tanner factors satisfying two-sided small-set\n      expansion. The constructor regression compares every exported CSS row\n      literally with qeclib.constructions.hgp; generic HGP codes need not meet\n      the expansion hypotheses and are not aliases of this family.\n    refs: [tillich2009quantum, leverrier2015quantumexpander]\noperations:\n  - gate: \"constant-overhead fault-tolerant encoded computation\"\n    mechanism: measurement-based\n    level: \"protocol-level fault tolerance\"\n    cost: >-\n      combine quantum-expander blocks with encoded ancillas, repeated recovery,\n      classical decoding, and the paper's scheduling assumptions; constant\n      overhead is an asymptotic property of the complete scheme, not a native\n      transversal gate of one HGP check matrix\n    origin: {kind: claimed, ref: fawzi2018constant}\n  - gate: \"addressable gates through single-shot code switching\"\n    mechanism: switching\n    level: \"addressable logical operation in a multi-code protocol\"\n    cost: >-\n      switch into the auxiliary code required by the protocol, perform the\n      addressed operation, recover through the single-shot boundary, and track\n      the logical frame; the base quantum-expander block alone is not thereby\n      an addressably universal transversal code\n    origin: {kind: claimed, ref: golowich2025addressable}\n",
+    "version": "qec-atlas-card-v1"
+  },
+  "source_binding": {
+    "binding_state": "clean",
+    "legacy_source": {
+      "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+      "continuity": "same-path-same-bytes",
+      "path": "codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/quantum_expander.yml",
+      "sha256": "8c56c46764375f2cab77f7596837f071340af40363f6c3f617a40e6df1e9270c",
+      "zoo_id": "quantum_expander"
+    },
+    "source_commit": "5c11f03d77895fe46564fe792288304fe4b6a998",
+    "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_expander",
+    "source_path": "codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/quantum_expander.yml",
+    "source_sha256": "8c56c46764375f2cab77f7596837f071340af40363f6c3f617a40e6df1e9270c",
+    "t206_entity_ids": [
+      "eczoo-entity:quantum_expander#collection"
+    ],
+    "target_denotation_entity_ids": [
+      "eczoo-entity:quantum_expander#collection"
+    ],
+    "target_disposition": "atomic"
+  },
+  "target_version": "entry-ontology-v2"
+}

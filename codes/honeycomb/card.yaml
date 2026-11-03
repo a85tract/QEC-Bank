@@ -1,0 +1,1707 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:honeycomb",
+        "kind": "formalization"
+      },
+      "content": {
+        "description": "After the declared startup, the constructor exports independent sign-free Pauli generators for one instantaneous stabilizer group as a symplectic CheckMatrix. This is the universal R1 snapshot for rank and commutation; it does not determine the protocol's spacetime distance.",
+        "origin": {
+          "converter": "honeycomb.build Schedule -> ISGTracker steady snapshot",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "hastings2021dynamically"
+        ],
+        "rung": "R1",
+        "type": "steady-isg-checks"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:0@00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:0",
+      "index": 0,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/views/0",
+      "source_sha256": "00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c",
+      "version_id": "atlas-assertion:honeycomb:views:0@sha256:00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:honeycomb",
+        "kind": "formalization"
+      },
+      "content": {
+        "description": "The executable object is a three-round Schedule. An incoming matching replaces anticommuting generators in the instantaneous stabilizer group while preserving a rank-eight plaquette backbone; this view distinguishes the dynamical code from a frozen check matrix.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "hastings2021dynamically"
+        ],
+        "rung": "R3",
+        "type": "schedule-isg"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:1@ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:1",
+      "index": 1,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/views/1",
+      "source_sha256": "ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9",
+      "version_id": "atlas-assertion:honeycomb:views:1@sha256:ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Contract every edge measured in the latest round into an effective qubit. The resulting instantaneous stabilizer group is locally Clifford-equivalent to a toric code, which explains the two logical qubits without identifying the full spacetime protocol with a static toric memory.",
+        "origin": {
+          "kind": "curated",
+          "ref": "hastings2021dynamically"
+        },
+        "refs": [
+          "hastings2021dynamically"
+        ],
+        "rung": "R2",
+        "type": "instantaneous-toric"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:2@c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/views/2",
+      "source_sha256": "c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450",
+      "version_id": "atlas-assertion:honeycomb:views:2@sha256:c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Plaquette information is assembled from measurement outcomes at different times. Faults are classified by the detector events they create and by whether an undetectable spacetime history is benign, so circuit fault distance cannot be read from one instantaneous snapshot.",
+        "origin": {
+          "kind": "curated",
+          "ref": "blackwell2025distance"
+        },
+        "refs": [
+          "gidney2021fault",
+          "blackwell2025distance"
+        ],
+        "rung": "R3",
+        "type": "spacetime-detector"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:3@2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/views/3",
+      "source_sha256": "2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4",
+      "version_id": "atlas-assertion:honeycomb:views:3@sha256:2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Kitaev's four-Majorana representation factors each directional Pauli edge into a Z2 gauge variable and a matter-fermion pairing. The measurement cycle then becomes a rotating pairing pattern whose gauge-invariant products are the plaquette fluxes.",
+        "dialect": "parton",
+        "gap": {
+          "target": "wanted:fermionic-compiler"
+        },
+        "origin": {
+          "kind": "curated",
+          "ref": "kitaev2006anyons"
+        },
+        "refs": [
+          "kitaev2006anyons",
+          "zhu2023majoranaliquid"
+        ],
+        "rung": "R5",
+        "type": "fermionic"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:4@7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/views/4",
+      "source_sha256": "7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc",
+      "version_id": "atlas-assertion:honeycomb:views:4@sha256:7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "One full code period transports the instantaneous toric order through a protected cycle and exchanges electric and magnetic anyon labels. This separates preservation of a logical subspace from the nontrivial logical frame motion performed by the memory schedule itself.",
+        "origin": {
+          "kind": "curated",
+          "ref": "aasen2022automorphism"
+        },
+        "refs": [
+          "hastings2021dynamically",
+          "aasen2022automorphism"
+        ],
+        "rung": "R5",
+        "type": "anyon-automorphism"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:5@e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/views/5",
+      "source_sha256": "e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d",
+      "version_id": "atlas-assertion:honeycomb:views:5@sha256:e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Treating the periodic measurements as a measurement quantum cellular automaton exposes information flow along boundaries and anomalies that are invisible in the bulk stabilizer rank.",
+        "origin": {
+          "kind": "curated",
+          "ref": "aasen2023mqca"
+        },
+        "refs": [
+          "aasen2023mqca"
+        ],
+        "rung": "R5",
+        "type": "measurement-qca"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:6@421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/views/6",
+      "source_sha256": "421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0",
+      "version_id": "atlas-assertion:honeycomb:views:6@sha256:421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A ZX diagram represents the whole measurement history as a spacetime tensor network. Different circuit, fusion, and Floquet descriptions can be related by local rewrites without pretending that their hardware noise models are identical.",
+        "origin": {
+          "kind": "curated",
+          "ref": "bombin2024zx"
+        },
+        "refs": [
+          "bombin2024zx"
+        ],
+        "rung": "R5",
+        "type": "zx-spacetime"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:7@8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:7",
+      "index": 7,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/views/7",
+      "source_sha256": "8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263",
+      "version_id": "atlas-assertion:honeycomb:views:7@sha256:8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "dynamical",
+        "origin": {
+          "kind": "curated",
+          "ref": "hastings2021dynamically"
+        }
+      },
+      "evidence_id": "atlas-evidence:honeycomb:categories:0@bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f",
+      "field": "categories",
+      "id": "atlas-assertion:honeycomb:categories:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/categories/0",
+      "source_sha256": "bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f",
+      "version_id": "atlas-assertion:honeycomb:categories:0@sha256:bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f"
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:honeycomb",
+        "kind": "formalization"
+      },
+      "content": {
+        "id": "non-css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      "evidence_id": "atlas-evidence:honeycomb:categories:1@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:honeycomb:categories:1",
+      "index": 1,
+      "legacy_scope": "formalized-instances",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/categories/1",
+      "source_sha256": "dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "version_id": "atlas-assertion:honeycomb:categories:1@sha256:dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "hastings2021dynamically"
+        }
+      },
+      "evidence_id": "atlas-evidence:honeycomb:categories:2@931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4",
+      "field": "categories",
+      "id": "atlas-assertion:honeycomb:categories:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/categories/2",
+      "source_sha256": "931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4",
+      "version_id": "atlas-assertion:honeycomb:categories:2@sha256:931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "periodic honeycomb detector graphs with repeated parity-measurement faults",
+        "notes": "Plaquette changes populate two interleaved spacetime matching graphs. Correlation-aware matching uses the named parity-measurement circuit and its edge probabilities; the reported threshold range therefore belongs to that circuit/noise/decoder triple, not to the abstract schedule.",
+        "refs": [
+          "gidney2021fault"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:decoders:0@e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f",
+      "field": "decoders",
+      "id": "atlas-assertion:honeycomb:decoders:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/decoders/0",
+      "source_sha256": "e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f",
+      "version_id": "atlas-assertion:honeycomb:decoders:0@sha256:e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "planar SD6, SI1000, EM3, and Majorana-native detector models",
+        "notes": "Boundaries, hook propagation, correlated parity faults, and measurement normalization change the detector graph. Planar and Majorana benchmarks must be compared within their stated circuit models rather than transferred to the torus snapshot.",
+        "refs": [
+          "gidney2022planar",
+          "paetznick2023majorana"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:decoders:1@c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25",
+      "field": "decoders",
+      "id": "atlas-assertion:honeycomb:decoders:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/decoders/1",
+      "source_sha256": "c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25",
+      "version_id": "atlas-assertion:honeycomb:decoders:1@sha256:c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "one three-round memory period; two periods close the anyon label frame",
+        "gate": "electric-magnetic anyon exchange / logical-frame automorphism",
+        "level": "topological Clifford frame",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "hastings2021dynamically"
+        }
+      },
+      "evidence_id": "atlas-evidence:honeycomb:operations:0@14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4",
+      "field": "operations",
+      "id": "atlas-assertion:honeycomb:operations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/operations/0",
+      "source_sha256": "14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4",
+      "version_id": "atlas-assertion:honeycomb:operations:0@sha256:14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "schedule deformations along condensation lines plus repeated fault-tolerant measurements around moving twist endpoints",
+        "gate": "twist creation, transport, fusion, and braiding",
+        "level": "defect-mediated topological operations",
+        "mechanism": "braiding",
+        "origin": {
+          "kind": "claimed",
+          "ref": "ellison2023twist"
+        }
+      },
+      "evidence_id": "atlas-evidence:honeycomb:operations:1@941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893",
+      "field": "operations",
+      "id": "atlas-assertion:honeycomb:operations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/operations/1",
+      "source_sha256": "941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893",
+      "version_id": "atlas-assertion:honeycomb:operations:1@sha256:941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "one schedule period on a non-orientable cross-cap geometry, or a folded bilayer implementation of that geometry",
+        "gate": "logical HZ on a cross-cap encoded qubit",
+        "level": "Clifford",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "kobayashi2024crosscap"
+        }
+      },
+      "evidence_id": "atlas-evidence:honeycomb:operations:2@5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409",
+      "field": "operations",
+      "id": "atlas-assertion:honeycomb:operations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/operations/2",
+      "source_sha256": "5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409",
+      "version_id": "atlas-assertion:honeycomb:operations:2@sha256:5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A preliminary hardware study measured plaquette stabilizers of the original Floquet schedule and reported syndrome-change rates. It did not demonstrate a protected logical memory, distance scaling, or logical error suppression.",
+        "platform": "IBM Falcon superconducting processor",
+        "refs": [
+          "wootton2022plaquettes"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:realizations:0@4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30",
+      "field": "realizations",
+      "id": "atlas-assertion:honeycomb:realizations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/realizations/0",
+      "source_sha256": "4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30",
+      "version_id": "atlas-assertion:honeycomb:realizations:0@sha256:4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Native pair-parity measurements and planar layouts were simulated with Majorana-specific faults. This is an architecture and decoder study, not a laboratory realization of a logical honeycomb memory.",
+        "platform": "Majorana-tetron parity-measurement architecture",
+        "refs": [
+          "karzig2017majorana",
+          "paetznick2023majorana"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:realizations:1@99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d",
+      "field": "realizations",
+      "id": "atlas-assertion:honeycomb:realizations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/realizations/1",
+      "source_sha256": "99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d",
+      "version_id": "atlas-assertion:honeycomb:realizations:1@sha256:99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A co-designed photonic implementation was benchmarked numerically under its loss and hardware assumptions. Its simulated loss threshold is not an experimental honeycomb threshold.",
+        "platform": "spin-optical photonic architecture",
+        "refs": [
+          "dessertaine2026photonic"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:realizations:2@afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c",
+      "field": "realizations",
+      "id": "atlas-assertion:honeycomb:realizations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/realizations/2",
+      "source_sha256": "afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c",
+      "version_id": "atlas-assertion:honeycomb:realizations:2@sha256:afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Data and measurement roles change during the cycle to remove dedicated ancillas, clear leakage, and improve timelike distance. The result is a simulated circuit proposal with a different detector model.",
+        "platform": "ancilla-free dynamic superconducting circuit",
+        "refs": [
+          "claes2025dynamic"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:realizations:3@ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a",
+      "field": "realizations",
+      "id": "atlas-assertion:honeycomb:realizations:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/realizations/3",
+      "source_sha256": "ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a",
+      "version_id": "atlas-assertion:honeycomb:realizations:3@sha256:ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "After each round, contracting the just-measured matching and applying a depth-one local Clifford change of basis maps the instantaneous stabilizer group to toric-code stabilizers on a coarser lattice. The equivalence is frame-by-frame; the full protocol still has spacetime detectors and a nontrivial anyon automorphism.",
+        "refs": [
+          "hastings2021dynamically",
+          "aasen2022automorphism"
+        ],
+        "target": "toric",
+        "type": "same_bulk_phase_as"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:relations:0@27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018",
+      "field": "relations",
+      "id": "atlas-assertion:honeycomb:relations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "honeycomb/card.yaml#/relations/0",
+      "source_sha256": "27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018",
+      "version_id": "atlas-assertion:honeycomb:relations:0@sha256:27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018"
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:honeycomb_floquet#collection",
+      "status": "preserved",
+      "tier": "T3"
+    }
+  ],
+  "decision_class": "exact-clean",
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:honeycomb_floquet#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:honeycomb_floquet#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/honeycomb/card.yaml#/identity",
+          "atlas:atlas/honeycomb/card.yaml#/eczoo/zoo_id",
+          "t205:atlas/honeycomb/card.yaml",
+          "t206:codes/quantum/qubits/dynamic/floquet/2d/honeycomb_floquet.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:honeycomb_floquet"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:honeycomb_floquet#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "formalization": {
+    "constructor_relation": "restricted-parameterized-slice",
+    "coverage": "partial",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:honeycomb",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f3932abad6e7f5718c59220e11a238e9e90032b14e36513378775d484e27381a",
+          "payload_sha256": "49705b340cfba511e18f0c959d9319102d9f9f40a5e7a9f9e9336bfd9931d8b2",
+          "semantic_hash": "d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44"
+        },
+        "id": "atlas-instance:honeycomb:L3x3",
+        "label": "L3x3",
+        "lean_v1": {
+          "branch": "measurement-schedule",
+          "certificate_ids": [
+            "certificate:d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44:structural-validity:d7032e65917144c22cbd7aaae81615bd8adae68dab749b9d6edc87bfd4f1837f@1"
+          ],
+          "instance_record_sha256": "02a9d15481ff1b1de932ad07758a6047edf13db947652d612e72c540719e31c6",
+          "lean_report_sha256": "8e5f91dcfa5bc94cf278e06ffe88aba6b21a0297bbfa59635192c8807528677e",
+          "semantic_hash": "d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "55cb3816d24143da9a23f7c2c8e19653ebd7e9355741bab78dfd06e51373e96f",
+        "v2_envelope_id": "formal-ir-v2:honeycomb:L3x3"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f3932abad6e7f5718c59220e11a238e9e90032b14e36513378775d484e27381a",
+          "payload_sha256": "c172d0a6c1a69071e86d7207b97a367b791539495d5886b4900d9a4f6d20b15f",
+          "semantic_hash": "cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b"
+        },
+        "id": "atlas-instance:honeycomb:L6x6",
+        "label": "L6x6",
+        "lean_v1": {
+          "branch": "measurement-schedule",
+          "certificate_ids": [
+            "certificate:cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b:structural-validity:f0a3cef5c3265e971f13ba988d13ac604edfa8b96fe95f97007328be398c6128@1"
+          ],
+          "instance_record_sha256": "f9939ea3d88cb90cabe124675587cbf78b284a76ab0a0c33bcaf9788d668a03a",
+          "lean_report_sha256": "7a24707622d7b1c1aa0fdfda73c6d1707677c464dd5cb7561dd5a3ac33e6ef24",
+          "semantic_hash": "cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "57a8aef6c343275975f9210d82962db77f95f4a25de0c43501139f9b7d2ed5cc",
+        "v2_envelope_id": "formal-ir-v2:honeycomb:L6x6"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 2,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:honeycomb_floquet#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "id": "honeycomb",
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:honeycomb:views:0",
+      "atlas-assertion:honeycomb:views:1",
+      "atlas-assertion:honeycomb:views:2",
+      "atlas-assertion:honeycomb:views:3",
+      "atlas-assertion:honeycomb:views:4",
+      "atlas-assertion:honeycomb:views:5",
+      "atlas-assertion:honeycomb:views:6",
+      "atlas-assertion:honeycomb:views:7",
+      "atlas-assertion:honeycomb:categories:0",
+      "atlas-assertion:honeycomb:categories:1",
+      "atlas-assertion:honeycomb:categories:2",
+      "atlas-assertion:honeycomb:decoders:0",
+      "atlas-assertion:honeycomb:decoders:1",
+      "atlas-assertion:honeycomb:operations:0",
+      "atlas-assertion:honeycomb:operations:1",
+      "atlas-assertion:honeycomb:operations:2",
+      "atlas-assertion:honeycomb:realizations:0",
+      "atlas-assertion:honeycomb:realizations:1",
+      "atlas-assertion:honeycomb:realizations:2",
+      "atlas-assertion:honeycomb:realizations:3",
+      "atlas-assertion:honeycomb:relations:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:honeycomb_floquet#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:honeycomb:views:0@00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c",
+      "atlas-evidence:honeycomb:views:1@ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9",
+      "atlas-evidence:honeycomb:views:2@c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450",
+      "atlas-evidence:honeycomb:views:3@2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4",
+      "atlas-evidence:honeycomb:views:4@7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc",
+      "atlas-evidence:honeycomb:views:5@e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d",
+      "atlas-evidence:honeycomb:views:6@421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0",
+      "atlas-evidence:honeycomb:views:7@8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263",
+      "atlas-evidence:honeycomb:categories:0@bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f",
+      "atlas-evidence:honeycomb:categories:1@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "atlas-evidence:honeycomb:categories:2@931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4",
+      "atlas-evidence:honeycomb:decoders:0@e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f",
+      "atlas-evidence:honeycomb:decoders:1@c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25",
+      "atlas-evidence:honeycomb:operations:0@14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4",
+      "atlas-evidence:honeycomb:operations:1@941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893",
+      "atlas-evidence:honeycomb:operations:2@5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409",
+      "atlas-evidence:honeycomb:realizations:0@4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30",
+      "atlas-evidence:honeycomb:realizations:1@99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d",
+      "atlas-evidence:honeycomb:realizations:2@afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c",
+      "atlas-evidence:honeycomb:realizations:3@ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a",
+      "atlas-evidence:honeycomb:relations:0@27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018"
+    ],
+    "formalization_id": "atlas-formalization:honeycomb",
+    "instance_ids": [
+      "atlas-instance:honeycomb:L3x3",
+      "atlas-instance:honeycomb:L6x6"
+    ],
+    "page_id": "atlas-page:honeycomb",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:honeycomb_floquet"
+    ]
+  },
+  "instances": [
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "f3932abad6e7f5718c59220e11a238e9e90032b14e36513378775d484e27381a",
+        "payload_sha256": "49705b340cfba511e18f0c959d9319102d9f9f40a5e7a9f9e9336bfd9931d8b2",
+        "semantic_hash": "d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44"
+      },
+      "id": "atlas-instance:honeycomb:L3x3",
+      "label": "L3x3",
+      "lean_v1": {
+        "branch": "measurement-schedule",
+        "certificate_ids": [
+          "certificate:d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44:structural-validity:d7032e65917144c22cbd7aaae81615bd8adae68dab749b9d6edc87bfd4f1837f@1"
+        ],
+        "instance_record_sha256": "02a9d15481ff1b1de932ad07758a6047edf13db947652d612e72c540719e31c6",
+        "lean_report_sha256": "8e5f91dcfa5bc94cf278e06ffe88aba6b21a0297bbfa59635192c8807528677e",
+        "semantic_hash": "d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "55cb3816d24143da9a23f7c2c8e19653ebd7e9355741bab78dfd06e51373e96f",
+      "v2_envelope_id": "formal-ir-v2:honeycomb:L3x3"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "f3932abad6e7f5718c59220e11a238e9e90032b14e36513378775d484e27381a",
+        "payload_sha256": "c172d0a6c1a69071e86d7207b97a367b791539495d5886b4900d9a4f6d20b15f",
+        "semantic_hash": "cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b"
+      },
+      "id": "atlas-instance:honeycomb:L6x6",
+      "label": "L6x6",
+      "lean_v1": {
+        "branch": "measurement-schedule",
+        "certificate_ids": [
+          "certificate:cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b:structural-validity:f0a3cef5c3265e971f13ba988d13ac604edfa8b96fe95f97007328be398c6128@1"
+        ],
+        "instance_record_sha256": "f9939ea3d88cb90cabe124675587cbf78b284a76ab0a0c33bcaf9788d668a03a",
+        "lean_report_sha256": "7a24707622d7b1c1aa0fdfda73c6d1707677c464dd5cb7561dd5a3ac33e6ef24",
+        "semantic_hash": "cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "57a8aef6c343275975f9210d82962db77f95f4a25de0c43501139f9b7d2ed5cc",
+      "v2_envelope_id": "formal-ir-v2:honeycomb:L6x6"
+    }
+  ],
+  "legacy_card": {
+    "categories": [
+      {
+        "id": "dynamical",
+        "origin": {
+          "kind": "curated",
+          "ref": "hastings2021dynamically"
+        }
+      },
+      {
+        "id": "non-css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      {
+        "id": "topological",
+        "origin": {
+          "kind": "curated",
+          "ref": "hastings2021dynamically"
+        }
+      }
+    ],
+    "claim_gaps": [
+      {
+        "property": "d",
+        "target": "wanted:floquet-fault-distance"
+      }
+    ],
+    "construction": {
+      "inputs": {
+        "schedule": {
+          "output": "schedule",
+          "params": {
+            "L1": {
+              "instance_param": "L1"
+            },
+            "L2": {
+              "instance_param": "L2"
+            }
+          },
+          "ref": {
+            "id": "honeycomb_torus_schedule",
+            "kind": "generator",
+            "version": 1
+          }
+        }
+      },
+      "match": "exact-checkmatrix-v1",
+      "op": {
+        "id": "plaquette_colored_floquet",
+        "version": 1
+      },
+      "output": "checkmatrix",
+      "schema": "qec-atlas-construction-v1"
+    },
+    "decoders": [
+      {
+        "id": "mwpm",
+        "noise": "periodic honeycomb detector graphs with repeated parity-measurement faults",
+        "notes": "Plaquette changes populate two interleaved spacetime matching graphs. Correlation-aware matching uses the named parity-measurement circuit and its edge probabilities; the reported threshold range therefore belongs to that circuit/noise/decoder triple, not to the abstract schedule.",
+        "refs": [
+          "gidney2021fault"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "mwpm",
+        "noise": "planar SD6, SI1000, EM3, and Majorana-native detector models",
+        "notes": "Boundaries, hook propagation, correlated parity faults, and measurement normalization change the detector graph. Planar and Majorana benchmarks must be compared within their stated circuit models rather than transferred to the torus snapshot.",
+        "refs": [
+          "gidney2022planar",
+          "paetznick2023majorana"
+        ],
+        "status": "research-grade"
+      }
+    ],
+    "description": "A period-three dynamical stabilizer memory made only from weight-two Pauli measurements on a honeycomb torus. Edge operators are fixed as XX, YY, or ZZ by direction, while a plaquette three-coloring partitions them into three perfect-matching rounds. The code is the ordered schedule and its outcome-dependent instantaneous stabilizer group, not any one static set of mutually commuting edge checks; after startup that group carries two toric-code logical qubits.",
+    "eczoo": {
+      "classification": "exact-family",
+      "source": {
+        "blob_url": "https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/dynamic/floquet/2d/honeycomb_floquet.yml",
+        "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+        "page_url": "https://errorcorrectionzoo.org/c/honeycomb_floquet",
+        "path": "codes/quantum/qubits/dynamic/floquet/2d/honeycomb_floquet.yml",
+        "repository_url": "https://github.com/errorcorrectionzoo/eczoo_data",
+        "retrieved_on": "2026-08-05",
+        "sha256": "0c6302b2689249c3dd9111e9eda8269997761f7a605f6504cdff69c170a0a298"
+      },
+      "status": "mapped",
+      "zoo_id": "honeycomb_floquet"
+    },
+    "fit": {
+      "platforms": [
+        "majorana-parity-measurement",
+        "superconducting-dynamic-circuit",
+        "spin-photonic"
+      ],
+      "tasks": [
+        "memory",
+        "measurement-driven-logical-operations"
+      ]
+    },
+    "id": "honeycomb",
+    "identity": {
+      "aliases": [
+        "Hastings-Haah code"
+      ],
+      "canonical_name": "Honeycomb Floquet code"
+    },
+    "kind": "family",
+    "operations": [
+      {
+        "cost": "one three-round memory period; two periods close the anyon label frame",
+        "gate": "electric-magnetic anyon exchange / logical-frame automorphism",
+        "level": "topological Clifford frame",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "hastings2021dynamically"
+        }
+      },
+      {
+        "cost": "schedule deformations along condensation lines plus repeated fault-tolerant measurements around moving twist endpoints",
+        "gate": "twist creation, transport, fusion, and braiding",
+        "level": "defect-mediated topological operations",
+        "mechanism": "braiding",
+        "origin": {
+          "kind": "claimed",
+          "ref": "ellison2023twist"
+        }
+      },
+      {
+        "cost": "one schedule period on a non-orientable cross-cap geometry, or a folded bilayer implementation of that geometry",
+        "gate": "logical HZ on a cross-cap encoded qubit",
+        "level": "Clifford",
+        "mechanism": "measurement-based",
+        "origin": {
+          "kind": "claimed",
+          "ref": "kobayashi2024crosscap"
+        }
+      }
+    ],
+    "params": {
+      "L1": "torus rows (L1 % 3 == 0: plaquette 3-colorability)",
+      "L2": "torus columns (L2 % 3 == 0: plaquette 3-colorability)"
+    },
+    "presentation": {
+      "guided_tour": {
+        "status": "available"
+      },
+      "orienting_view": {
+        "kind": "schedule",
+        "status": "available"
+      }
+    },
+    "realizations": [
+      {
+        "description": "A preliminary hardware study measured plaquette stabilizers of the original Floquet schedule and reported syndrome-change rates. It did not demonstrate a protected logical memory, distance scaling, or logical error suppression.",
+        "platform": "IBM Falcon superconducting processor",
+        "refs": [
+          "wootton2022plaquettes"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "description": "Native pair-parity measurements and planar layouts were simulated with Majorana-specific faults. This is an architecture and decoder study, not a laboratory realization of a logical honeycomb memory.",
+        "platform": "Majorana-tetron parity-measurement architecture",
+        "refs": [
+          "karzig2017majorana",
+          "paetznick2023majorana"
+        ],
+        "status": "proposed"
+      },
+      {
+        "description": "A co-designed photonic implementation was benchmarked numerically under its loss and hardware assumptions. Its simulated loss threshold is not an experimental honeycomb threshold.",
+        "platform": "spin-optical photonic architecture",
+        "refs": [
+          "dessertaine2026photonic"
+        ],
+        "status": "proposed"
+      },
+      {
+        "description": "Data and measurement roles change during the cycle to remove dedicated ancillas, clear leakage, and improve timelike distance. The result is a simulated circuit proposal with a different detector model.",
+        "platform": "ancilla-free dynamic superconducting circuit",
+        "refs": [
+          "claes2025dynamic"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "refs": [
+      "kitaev2006anyons",
+      "hastings2021dynamically",
+      "gidney2021fault",
+      "aasen2022automorphism",
+      "blackwell2025distance",
+      "vuillot2021planar",
+      "haah2022boundaries",
+      "davydova2023css",
+      "ellison2023twist",
+      "fahimniya2025hyperbolic",
+      "mclauchlan2024defects",
+      "setiawan2025x3z3",
+      "claes2025dynamic",
+      "gidney2022planar",
+      "paetznick2023majorana",
+      "tobias2026worm",
+      "sullivan2023twistnetworks",
+      "kobayashi2024crosscap",
+      "bauer2025nonclifford",
+      "wootton2022plaquettes",
+      "karzig2017majorana",
+      "dessertaine2026photonic",
+      "aasen2023mqca",
+      "bombin2024zx",
+      "zhu2023majoranaliquid"
+    ],
+    "relations": [
+      {
+        "how": "After each round, contracting the just-measured matching and applying a depth-one local Clifford change of basis maps the instantaneous stabilizer group to toric-code stabilizers on a coarser lattice. The equivalence is frame-by-frame; the full protocol still has spacetime detectors and a nontrivial anyon automorphism.",
+        "refs": [
+          "hastings2021dynamically",
+          "aasen2022automorphism"
+        ],
+        "target": "toric",
+        "type": "same_bulk_phase_as"
+      }
+    ],
+    "tier": "T3",
+    "views": [
+      {
+        "description": "After the declared startup, the constructor exports independent sign-free Pauli generators for one instantaneous stabilizer group as a symplectic CheckMatrix. This is the universal R1 snapshot for rank and commutation; it does not determine the protocol's spacetime distance.",
+        "origin": {
+          "converter": "honeycomb.build Schedule -> ISGTracker steady snapshot",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "hastings2021dynamically"
+        ],
+        "rung": "R1",
+        "type": "steady-isg-checks"
+      },
+      {
+        "description": "The executable object is a three-round Schedule. An incoming matching replaces anticommuting generators in the instantaneous stabilizer group while preserving a rank-eight plaquette backbone; this view distinguishes the dynamical code from a frozen check matrix.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "hastings2021dynamically"
+        ],
+        "rung": "R3",
+        "type": "schedule-isg"
+      },
+      {
+        "description": "Contract every edge measured in the latest round into an effective qubit. The resulting instantaneous stabilizer group is locally Clifford-equivalent to a toric code, which explains the two logical qubits without identifying the full spacetime protocol with a static toric memory.",
+        "origin": {
+          "kind": "curated",
+          "ref": "hastings2021dynamically"
+        },
+        "refs": [
+          "hastings2021dynamically"
+        ],
+        "rung": "R2",
+        "type": "instantaneous-toric"
+      },
+      {
+        "description": "Plaquette information is assembled from measurement outcomes at different times. Faults are classified by the detector events they create and by whether an undetectable spacetime history is benign, so circuit fault distance cannot be read from one instantaneous snapshot.",
+        "origin": {
+          "kind": "curated",
+          "ref": "blackwell2025distance"
+        },
+        "refs": [
+          "gidney2021fault",
+          "blackwell2025distance"
+        ],
+        "rung": "R3",
+        "type": "spacetime-detector"
+      },
+      {
+        "description": "Kitaev's four-Majorana representation factors each directional Pauli edge into a Z2 gauge variable and a matter-fermion pairing. The measurement cycle then becomes a rotating pairing pattern whose gauge-invariant products are the plaquette fluxes.",
+        "dialect": "parton",
+        "gap": {
+          "target": "wanted:fermionic-compiler"
+        },
+        "origin": {
+          "kind": "curated",
+          "ref": "kitaev2006anyons"
+        },
+        "refs": [
+          "kitaev2006anyons",
+          "zhu2023majoranaliquid"
+        ],
+        "rung": "R5",
+        "type": "fermionic"
+      },
+      {
+        "description": "One full code period transports the instantaneous toric order through a protected cycle and exchanges electric and magnetic anyon labels. This separates preservation of a logical subspace from the nontrivial logical frame motion performed by the memory schedule itself.",
+        "origin": {
+          "kind": "curated",
+          "ref": "aasen2022automorphism"
+        },
+        "refs": [
+          "hastings2021dynamically",
+          "aasen2022automorphism"
+        ],
+        "rung": "R5",
+        "type": "anyon-automorphism"
+      },
+      {
+        "description": "Treating the periodic measurements as a measurement quantum cellular automaton exposes information flow along boundaries and anomalies that are invisible in the bulk stabilizer rank.",
+        "origin": {
+          "kind": "curated",
+          "ref": "aasen2023mqca"
+        },
+        "refs": [
+          "aasen2023mqca"
+        ],
+        "rung": "R5",
+        "type": "measurement-qca"
+      },
+      {
+        "description": "A ZX diagram represents the whole measurement history as a spacetime tensor network. Different circuit, fusion, and Floquet descriptions can be related by local rewrites without pretending that their hardware noise models are identical.",
+        "origin": {
+          "kind": "curated",
+          "ref": "bombin2024zx"
+        },
+        "refs": [
+          "bombin2024zx"
+        ],
+        "rung": "R5",
+        "type": "zx-spacetime"
+      }
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:honeycomb_floquet#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:honeycomb_floquet#collection",
+        "status": "preserved",
+        "tier": "T3"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:honeycomb",
+    "presented_entity_ids": [
+      "eczoo-entity:honeycomb_floquet#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:honeycomb_floquet#collection",
+    "redirects": [],
+    "route": "/entries/honeycomb.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/honeycomb"
+  },
+  "parent_content": null,
+  "projection": {
+    "method": "embedded-utf8-source-v1",
+    "source_sha256": "77412d98fd4ee84263a3109af32a55cbb8ae35a97766a2258da32bb6ed771749",
+    "status": "exact"
+  },
+  "schema": "qec-atlas-entry-card-v2",
+  "scoped_facets": {
+    "categories": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "dynamical",
+          "origin": {
+            "kind": "curated",
+            "ref": "hastings2021dynamically"
+          }
+        },
+        "evidence_id": "atlas-evidence:honeycomb:categories:0@bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f",
+        "field": "categories",
+        "id": "atlas-assertion:honeycomb:categories:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/categories/0",
+        "source_sha256": "bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f",
+        "version_id": "atlas-assertion:honeycomb:categories:0@sha256:bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-formalization:honeycomb",
+          "kind": "formalization"
+        },
+        "content": {
+          "id": "non-css",
+          "origin": {
+            "kind": "verified"
+          }
+        },
+        "evidence_id": "atlas-evidence:honeycomb:categories:1@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+        "field": "categories",
+        "id": "atlas-assertion:honeycomb:categories:1",
+        "index": 1,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/categories/1",
+        "source_sha256": "dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+        "version_id": "atlas-assertion:honeycomb:categories:1@sha256:dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "topological",
+          "origin": {
+            "kind": "curated",
+            "ref": "hastings2021dynamically"
+          }
+        },
+        "evidence_id": "atlas-evidence:honeycomb:categories:2@931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4",
+        "field": "categories",
+        "id": "atlas-assertion:honeycomb:categories:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/categories/2",
+        "source_sha256": "931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4",
+        "version_id": "atlas-assertion:honeycomb:categories:2@sha256:931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4"
+      }
+    ],
+    "decoders": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "periodic honeycomb detector graphs with repeated parity-measurement faults",
+          "notes": "Plaquette changes populate two interleaved spacetime matching graphs. Correlation-aware matching uses the named parity-measurement circuit and its edge probabilities; the reported threshold range therefore belongs to that circuit/noise/decoder triple, not to the abstract schedule.",
+          "refs": [
+            "gidney2021fault"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:decoders:0@e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f",
+        "field": "decoders",
+        "id": "atlas-assertion:honeycomb:decoders:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/decoders/0",
+        "source_sha256": "e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f",
+        "version_id": "atlas-assertion:honeycomb:decoders:0@sha256:e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "planar SD6, SI1000, EM3, and Majorana-native detector models",
+          "notes": "Boundaries, hook propagation, correlated parity faults, and measurement normalization change the detector graph. Planar and Majorana benchmarks must be compared within their stated circuit models rather than transferred to the torus snapshot.",
+          "refs": [
+            "gidney2022planar",
+            "paetznick2023majorana"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:decoders:1@c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25",
+        "field": "decoders",
+        "id": "atlas-assertion:honeycomb:decoders:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/decoders/1",
+        "source_sha256": "c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25",
+        "version_id": "atlas-assertion:honeycomb:decoders:1@sha256:c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25"
+      }
+    ],
+    "operations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "one three-round memory period; two periods close the anyon label frame",
+          "gate": "electric-magnetic anyon exchange / logical-frame automorphism",
+          "level": "topological Clifford frame",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "hastings2021dynamically"
+          }
+        },
+        "evidence_id": "atlas-evidence:honeycomb:operations:0@14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4",
+        "field": "operations",
+        "id": "atlas-assertion:honeycomb:operations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/operations/0",
+        "source_sha256": "14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4",
+        "version_id": "atlas-assertion:honeycomb:operations:0@sha256:14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "schedule deformations along condensation lines plus repeated fault-tolerant measurements around moving twist endpoints",
+          "gate": "twist creation, transport, fusion, and braiding",
+          "level": "defect-mediated topological operations",
+          "mechanism": "braiding",
+          "origin": {
+            "kind": "claimed",
+            "ref": "ellison2023twist"
+          }
+        },
+        "evidence_id": "atlas-evidence:honeycomb:operations:1@941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893",
+        "field": "operations",
+        "id": "atlas-assertion:honeycomb:operations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/operations/1",
+        "source_sha256": "941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893",
+        "version_id": "atlas-assertion:honeycomb:operations:1@sha256:941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "one schedule period on a non-orientable cross-cap geometry, or a folded bilayer implementation of that geometry",
+          "gate": "logical HZ on a cross-cap encoded qubit",
+          "level": "Clifford",
+          "mechanism": "measurement-based",
+          "origin": {
+            "kind": "claimed",
+            "ref": "kobayashi2024crosscap"
+          }
+        },
+        "evidence_id": "atlas-evidence:honeycomb:operations:2@5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409",
+        "field": "operations",
+        "id": "atlas-assertion:honeycomb:operations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/operations/2",
+        "source_sha256": "5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409",
+        "version_id": "atlas-assertion:honeycomb:operations:2@sha256:5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409"
+      }
+    ],
+    "realizations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A preliminary hardware study measured plaquette stabilizers of the original Floquet schedule and reported syndrome-change rates. It did not demonstrate a protected logical memory, distance scaling, or logical error suppression.",
+          "platform": "IBM Falcon superconducting processor",
+          "refs": [
+            "wootton2022plaquettes"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:realizations:0@4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30",
+        "field": "realizations",
+        "id": "atlas-assertion:honeycomb:realizations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/realizations/0",
+        "source_sha256": "4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30",
+        "version_id": "atlas-assertion:honeycomb:realizations:0@sha256:4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Native pair-parity measurements and planar layouts were simulated with Majorana-specific faults. This is an architecture and decoder study, not a laboratory realization of a logical honeycomb memory.",
+          "platform": "Majorana-tetron parity-measurement architecture",
+          "refs": [
+            "karzig2017majorana",
+            "paetznick2023majorana"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:realizations:1@99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d",
+        "field": "realizations",
+        "id": "atlas-assertion:honeycomb:realizations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/realizations/1",
+        "source_sha256": "99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d",
+        "version_id": "atlas-assertion:honeycomb:realizations:1@sha256:99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A co-designed photonic implementation was benchmarked numerically under its loss and hardware assumptions. Its simulated loss threshold is not an experimental honeycomb threshold.",
+          "platform": "spin-optical photonic architecture",
+          "refs": [
+            "dessertaine2026photonic"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:realizations:2@afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c",
+        "field": "realizations",
+        "id": "atlas-assertion:honeycomb:realizations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/realizations/2",
+        "source_sha256": "afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c",
+        "version_id": "atlas-assertion:honeycomb:realizations:2@sha256:afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Data and measurement roles change during the cycle to remove dedicated ancillas, clear leakage, and improve timelike distance. The result is a simulated circuit proposal with a different detector model.",
+          "platform": "ancilla-free dynamic superconducting circuit",
+          "refs": [
+            "claes2025dynamic"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:realizations:3@ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a",
+        "field": "realizations",
+        "id": "atlas-assertion:honeycomb:realizations:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/realizations/3",
+        "source_sha256": "ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a",
+        "version_id": "atlas-assertion:honeycomb:realizations:3@sha256:ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a"
+      }
+    ],
+    "relations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "After each round, contracting the just-measured matching and applying a depth-one local Clifford change of basis maps the instantaneous stabilizer group to toric-code stabilizers on a coarser lattice. The equivalence is frame-by-frame; the full protocol still has spacetime detectors and a nontrivial anyon automorphism.",
+          "refs": [
+            "hastings2021dynamically",
+            "aasen2022automorphism"
+          ],
+          "target": "toric",
+          "type": "same_bulk_phase_as"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:relations:0@27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018",
+        "field": "relations",
+        "id": "atlas-assertion:honeycomb:relations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/relations/0",
+        "source_sha256": "27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018",
+        "version_id": "atlas-assertion:honeycomb:relations:0@sha256:27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018"
+      }
+    ],
+    "views": [
+      {
+        "applies_to": {
+          "id": "atlas-formalization:honeycomb",
+          "kind": "formalization"
+        },
+        "content": {
+          "description": "After the declared startup, the constructor exports independent sign-free Pauli generators for one instantaneous stabilizer group as a symplectic CheckMatrix. This is the universal R1 snapshot for rank and commutation; it does not determine the protocol's spacetime distance.",
+          "origin": {
+            "converter": "honeycomb.build Schedule -> ISGTracker steady snapshot",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "hastings2021dynamically"
+          ],
+          "rung": "R1",
+          "type": "steady-isg-checks"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:views:0@00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c",
+        "field": "views",
+        "id": "atlas-assertion:honeycomb:views:0",
+        "index": 0,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/views/0",
+        "source_sha256": "00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c",
+        "version_id": "atlas-assertion:honeycomb:views:0@sha256:00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c"
+      },
+      {
+        "applies_to": {
+          "id": "atlas-formalization:honeycomb",
+          "kind": "formalization"
+        },
+        "content": {
+          "description": "The executable object is a three-round Schedule. An incoming matching replaces anticommuting generators in the instantaneous stabilizer group while preserving a rank-eight plaquette backbone; this view distinguishes the dynamical code from a frozen check matrix.",
+          "origin": {
+            "kind": "canonical"
+          },
+          "refs": [
+            "hastings2021dynamically"
+          ],
+          "rung": "R3",
+          "type": "schedule-isg"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:views:1@ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9",
+        "field": "views",
+        "id": "atlas-assertion:honeycomb:views:1",
+        "index": 1,
+        "legacy_scope": "formalized-instances",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/views/1",
+        "source_sha256": "ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9",
+        "version_id": "atlas-assertion:honeycomb:views:1@sha256:ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Contract every edge measured in the latest round into an effective qubit. The resulting instantaneous stabilizer group is locally Clifford-equivalent to a toric code, which explains the two logical qubits without identifying the full spacetime protocol with a static toric memory.",
+          "origin": {
+            "kind": "curated",
+            "ref": "hastings2021dynamically"
+          },
+          "refs": [
+            "hastings2021dynamically"
+          ],
+          "rung": "R2",
+          "type": "instantaneous-toric"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:views:2@c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450",
+        "field": "views",
+        "id": "atlas-assertion:honeycomb:views:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/views/2",
+        "source_sha256": "c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450",
+        "version_id": "atlas-assertion:honeycomb:views:2@sha256:c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Plaquette information is assembled from measurement outcomes at different times. Faults are classified by the detector events they create and by whether an undetectable spacetime history is benign, so circuit fault distance cannot be read from one instantaneous snapshot.",
+          "origin": {
+            "kind": "curated",
+            "ref": "blackwell2025distance"
+          },
+          "refs": [
+            "gidney2021fault",
+            "blackwell2025distance"
+          ],
+          "rung": "R3",
+          "type": "spacetime-detector"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:views:3@2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4",
+        "field": "views",
+        "id": "atlas-assertion:honeycomb:views:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/views/3",
+        "source_sha256": "2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4",
+        "version_id": "atlas-assertion:honeycomb:views:3@sha256:2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Kitaev's four-Majorana representation factors each directional Pauli edge into a Z2 gauge variable and a matter-fermion pairing. The measurement cycle then becomes a rotating pairing pattern whose gauge-invariant products are the plaquette fluxes.",
+          "dialect": "parton",
+          "gap": {
+            "target": "wanted:fermionic-compiler"
+          },
+          "origin": {
+            "kind": "curated",
+            "ref": "kitaev2006anyons"
+          },
+          "refs": [
+            "kitaev2006anyons",
+            "zhu2023majoranaliquid"
+          ],
+          "rung": "R5",
+          "type": "fermionic"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:views:4@7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc",
+        "field": "views",
+        "id": "atlas-assertion:honeycomb:views:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/views/4",
+        "source_sha256": "7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc",
+        "version_id": "atlas-assertion:honeycomb:views:4@sha256:7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "One full code period transports the instantaneous toric order through a protected cycle and exchanges electric and magnetic anyon labels. This separates preservation of a logical subspace from the nontrivial logical frame motion performed by the memory schedule itself.",
+          "origin": {
+            "kind": "curated",
+            "ref": "aasen2022automorphism"
+          },
+          "refs": [
+            "hastings2021dynamically",
+            "aasen2022automorphism"
+          ],
+          "rung": "R5",
+          "type": "anyon-automorphism"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:views:5@e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d",
+        "field": "views",
+        "id": "atlas-assertion:honeycomb:views:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/views/5",
+        "source_sha256": "e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d",
+        "version_id": "atlas-assertion:honeycomb:views:5@sha256:e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Treating the periodic measurements as a measurement quantum cellular automaton exposes information flow along boundaries and anomalies that are invisible in the bulk stabilizer rank.",
+          "origin": {
+            "kind": "curated",
+            "ref": "aasen2023mqca"
+          },
+          "refs": [
+            "aasen2023mqca"
+          ],
+          "rung": "R5",
+          "type": "measurement-qca"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:views:6@421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0",
+        "field": "views",
+        "id": "atlas-assertion:honeycomb:views:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/views/6",
+        "source_sha256": "421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0",
+        "version_id": "atlas-assertion:honeycomb:views:6@sha256:421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:honeycomb_floquet#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A ZX diagram represents the whole measurement history as a spacetime tensor network. Different circuit, fusion, and Floquet descriptions can be related by local rewrites without pretending that their hardware noise models are identical.",
+          "origin": {
+            "kind": "curated",
+            "ref": "bombin2024zx"
+          },
+          "refs": [
+            "bombin2024zx"
+          ],
+          "rung": "R5",
+          "type": "zx-spacetime"
+        },
+        "evidence_id": "atlas-evidence:honeycomb:views:7@8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263",
+        "field": "views",
+        "id": "atlas-assertion:honeycomb:views:7",
+        "index": 7,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "honeycomb/card.yaml#/views/7",
+        "source_sha256": "8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263",
+        "version_id": "atlas-assertion:honeycomb:views:7@sha256:8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263"
+      }
+    ]
+  },
+  "source": {
+    "collection": "atlas",
+    "encoding": "utf-8",
+    "entry_id": "honeycomb",
+    "path": "atlas/honeycomb/card.yaml",
+    "sha256": "77412d98fd4ee84263a3109af32a55cbb8ae35a97766a2258da32bb6ed771749",
+    "text": "id: honeycomb\nkind: family\nidentity:\n  canonical_name: \"Honeycomb Floquet code\"\n  aliases: [\"Hastings-Haah code\"]\npresentation:\n  orienting_view: {status: available, kind: schedule}\n  guided_tour: {status: available}\neczoo:\n  status: mapped\n  zoo_id: honeycomb_floquet\n  classification: exact-family\n  source:\n    repository_url: https://github.com/errorcorrectionzoo/eczoo_data\n    commit: b2437d9e2dc09284e04c66ef72ee81b7ed7bd129\n    retrieved_on: \"2026-08-05\"\n    path: codes/quantum/qubits/dynamic/floquet/2d/honeycomb_floquet.yml\n    sha256: 0c6302b2689249c3dd9111e9eda8269997761f7a605f6504cdff69c170a0a298\n    page_url: https://errorcorrectionzoo.org/c/honeycomb_floquet\n    blob_url: https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/dynamic/floquet/2d/honeycomb_floquet.yml\ndescription: >-\n  A period-three dynamical stabilizer memory made only from weight-two Pauli\n  measurements on a honeycomb torus. Edge operators are fixed as XX, YY, or\n  ZZ by direction, while a plaquette three-coloring partitions them into\n  three perfect-matching rounds. The code is the ordered schedule and its\n  outcome-dependent instantaneous stabilizer group, not any one static set of\n  mutually commuting edge checks; after startup that group carries two\n  toric-code logical qubits.\nclaim_gaps:\n  - {property: d, target: wanted:floquet-fault-distance}\nviews:\n  - rung: R1\n    type: steady-isg-checks\n    description: >-\n      After the declared startup, the constructor exports independent\n      sign-free Pauli generators for one instantaneous stabilizer group as a\n      symplectic CheckMatrix. This is the universal R1 snapshot for rank and\n      commutation; it does not determine the protocol's spacetime distance.\n    origin:\n      kind: derived\n      converter: \"honeycomb.build Schedule -> ISGTracker steady snapshot\"\n      version: \"v1\"\n    refs: [hastings2021dynamically]\n  - rung: R3\n    type: schedule-isg\n    description: >-\n      The executable object is a three-round Schedule. An incoming matching\n      replaces anticommuting generators in the instantaneous stabilizer group\n      while preserving a rank-eight plaquette backbone; this view distinguishes\n      the dynamical code from a frozen check matrix.\n    origin: {kind: canonical}\n    refs: [hastings2021dynamically]\n  - rung: R2\n    type: instantaneous-toric\n    description: >-\n      Contract every edge measured in the latest round into an effective\n      qubit. The resulting instantaneous stabilizer group is locally\n      Clifford-equivalent to a toric code, which explains the two logical\n      qubits without identifying the full spacetime protocol with a static\n      toric memory.\n    origin: {kind: curated, ref: hastings2021dynamically}\n    refs: [hastings2021dynamically]\n  - rung: R3\n    type: spacetime-detector\n    description: >-\n      Plaquette information is assembled from measurement outcomes at\n      different times. Faults are classified by the detector events they\n      create and by whether an undetectable spacetime history is benign, so\n      circuit fault distance cannot be read from one instantaneous snapshot.\n    origin: {kind: curated, ref: blackwell2025distance}\n    refs: [gidney2021fault, blackwell2025distance]\n  - rung: R5\n    type: fermionic\n    dialect: parton\n    description: >-\n      Kitaev's four-Majorana representation factors each directional Pauli\n      edge into a Z2 gauge variable and a matter-fermion pairing. The\n      measurement cycle then becomes a rotating pairing pattern whose\n      gauge-invariant products are the plaquette fluxes.\n    origin: {kind: curated, ref: kitaev2006anyons}\n    refs: [kitaev2006anyons, zhu2023majoranaliquid]\n    gap: {target: wanted:fermionic-compiler}\n  - rung: R5\n    type: anyon-automorphism\n    description: >-\n      One full code period transports the instantaneous toric order through a\n      protected cycle and exchanges electric and magnetic anyon labels. This\n      separates preservation of a logical subspace from the nontrivial logical\n      frame motion performed by the memory schedule itself.\n    origin: {kind: curated, ref: aasen2022automorphism}\n    refs: [hastings2021dynamically, aasen2022automorphism]\n  - rung: R5\n    type: measurement-qca\n    description: >-\n      Treating the periodic measurements as a measurement quantum cellular\n      automaton exposes information flow along boundaries and anomalies that\n      are invisible in the bulk stabilizer rank.\n    origin: {kind: curated, ref: aasen2023mqca}\n    refs: [aasen2023mqca]\n  - rung: R5\n    type: zx-spacetime\n    description: >-\n      A ZX diagram represents the whole measurement history as a spacetime\n      tensor network. Different circuit, fusion, and Floquet descriptions can\n      be related by local rewrites without pretending that their hardware\n      noise models are identical.\n    origin: {kind: curated, ref: bombin2024zx}\n    refs: [bombin2024zx]\ncategories:\n  - {id: dynamical, origin: {kind: curated, ref: hastings2021dynamically}}\n  - {id: non-css, origin: {kind: verified}}\n  - {id: topological, origin: {kind: curated, ref: hastings2021dynamically}}\nrefs:\n  - kitaev2006anyons\n  - hastings2021dynamically\n  - gidney2021fault\n  - aasen2022automorphism\n  - blackwell2025distance\n  - vuillot2021planar\n  - haah2022boundaries\n  - davydova2023css\n  - ellison2023twist\n  - fahimniya2025hyperbolic\n  - mclauchlan2024defects\n  - setiawan2025x3z3\n  - claes2025dynamic\n  - gidney2022planar\n  - paetznick2023majorana\n  - tobias2026worm\n  - sullivan2023twistnetworks\n  - kobayashi2024crosscap\n  - bauer2025nonclifford\n  - wootton2022plaquettes\n  - karzig2017majorana\n  - dessertaine2026photonic\n  - aasen2023mqca\n  - bombin2024zx\n  - zhu2023majoranaliquid\nparams: {L1: \"torus rows (L1 % 3 == 0: plaquette 3-colorability)\", L2: \"torus columns (L2 % 3 == 0: plaquette 3-colorability)\"}\nconstruction:\n  schema: qec-atlas-construction-v1\n  op: {id: plaquette_colored_floquet, version: 1}\n  inputs:\n    schedule:\n      ref: {kind: generator, id: honeycomb_torus_schedule, version: 1}\n      params:\n        L1: {instance_param: L1}\n        L2: {instance_param: L2}\n      output: schedule\n  output: checkmatrix\n  match: exact-checkmatrix-v1\ntier: T3\nfit:\n  platforms:\n    [majorana-parity-measurement, superconducting-dynamic-circuit, spin-photonic]\n  tasks: [memory, measurement-driven-logical-operations]\ndecoders:\n  - id: mwpm\n    status: standard\n    noise: \"periodic honeycomb detector graphs with repeated parity-measurement faults\"\n    notes: >-\n      Plaquette changes populate two interleaved spacetime matching graphs.\n      Correlation-aware matching uses the named parity-measurement circuit and\n      its edge probabilities; the reported threshold range therefore belongs\n      to that circuit/noise/decoder triple, not to the abstract schedule.\n    refs: [gidney2021fault]\n  - id: mwpm\n    status: research-grade\n    noise: \"planar SD6, SI1000, EM3, and Majorana-native detector models\"\n    notes: >-\n      Boundaries, hook propagation, correlated parity faults, and measurement\n      normalization change the detector graph. Planar and Majorana benchmarks\n      must be compared within their stated circuit models rather than\n      transferred to the torus snapshot.\n    refs: [gidney2022planar, paetznick2023majorana]\nrealizations:\n  - platform: \"IBM Falcon superconducting processor\"\n    status: demonstrated\n    description: >-\n      A preliminary hardware study measured plaquette stabilizers of the\n      original Floquet schedule and reported syndrome-change rates. It did not\n      demonstrate a protected logical memory, distance scaling, or logical\n      error suppression.\n    refs: [wootton2022plaquettes]\n  - platform: \"Majorana-tetron parity-measurement architecture\"\n    status: proposed\n    description: >-\n      Native pair-parity measurements and planar layouts were simulated with\n      Majorana-specific faults. This is an architecture and decoder study, not\n      a laboratory realization of a logical honeycomb memory.\n    refs: [karzig2017majorana, paetznick2023majorana]\n  - platform: \"spin-optical photonic architecture\"\n    status: proposed\n    description: >-\n      A co-designed photonic implementation was benchmarked numerically under\n      its loss and hardware assumptions. Its simulated loss threshold is not\n      an experimental honeycomb threshold.\n    refs: [dessertaine2026photonic]\n  - platform: \"ancilla-free dynamic superconducting circuit\"\n    status: proposed\n    description: >-\n      Data and measurement roles change during the cycle to remove dedicated\n      ancillas, clear leakage, and improve timelike distance. The result is a\n      simulated circuit proposal with a different detector model.\n    refs: [claes2025dynamic]\nrelations:\n  - type: same_bulk_phase_as\n    target: toric\n    how: >-\n      After each round, contracting the just-measured matching and applying a\n      depth-one local Clifford change of basis maps the instantaneous\n      stabilizer group to toric-code stabilizers on a coarser lattice. The\n      equivalence is frame-by-frame; the full protocol still has spacetime\n      detectors and a nontrivial anyon automorphism.\n    refs: [hastings2021dynamically, aasen2022automorphism]\noperations:\n  - gate: \"electric-magnetic anyon exchange / logical-frame automorphism\"\n    mechanism: measurement-based\n    level: \"topological Clifford frame\"\n    cost: \"one three-round memory period; two periods close the anyon label frame\"\n    origin: {kind: claimed, ref: hastings2021dynamically}\n  - gate: \"twist creation, transport, fusion, and braiding\"\n    mechanism: braiding\n    level: \"defect-mediated topological operations\"\n    cost: >-\n      schedule deformations along condensation lines plus repeated\n      fault-tolerant measurements around moving twist endpoints\n    origin: {kind: claimed, ref: ellison2023twist}\n  - gate: \"logical HZ on a cross-cap encoded qubit\"\n    mechanism: measurement-based\n    level: \"Clifford\"\n    cost: >-\n      one schedule period on a non-orientable cross-cap geometry, or a folded\n      bilayer implementation of that geometry\n    origin: {kind: claimed, ref: kobayashi2024crosscap}\n",
+    "version": "qec-atlas-card-v1"
+  },
+  "source_binding": {
+    "binding_state": "clean",
+    "legacy_source": {
+      "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+      "continuity": "same-path-same-bytes",
+      "path": "codes/quantum/qubits/dynamic/floquet/2d/honeycomb_floquet.yml",
+      "sha256": "0c6302b2689249c3dd9111e9eda8269997761f7a605f6504cdff69c170a0a298",
+      "zoo_id": "honeycomb_floquet"
+    },
+    "source_commit": "5c11f03d77895fe46564fe792288304fe4b6a998",
+    "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:honeycomb_floquet",
+    "source_path": "codes/quantum/qubits/dynamic/floquet/2d/honeycomb_floquet.yml",
+    "source_sha256": "0c6302b2689249c3dd9111e9eda8269997761f7a605f6504cdff69c170a0a298",
+    "t206_entity_ids": [
+      "eczoo-entity:honeycomb_floquet#collection"
+    ],
+    "target_denotation_entity_ids": [
+      "eczoo-entity:honeycomb_floquet#collection"
+    ],
+    "target_disposition": "atomic"
+  },
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,63 @@
+version: 1
+title: "Toric code: read [[2L²,2,L]] from the torus"
+subtitle: "Edge qubits, local stars and plaquettes, and the four noncontractible logical loops."
+lattices:
+  main: {entry: toric, instance: L3, label: "L3 periodic square lattice"}
+item_notes:
+  main:
+    lattice:
+      "0":
+        label: "Vertex star"
+        explanation: "The red spokes meet at one primal-lattice vertex and end on its four incident edge qubits."
+      "9":
+        label: "Plaquette boundary"
+        explanation: "The blue diamond follows the four edge qubits bounding one primal-lattice face."
+    logical:
+      "0":
+        label: "Horizontal primal cycle"
+        explanation: "This Z string crosses the right edge of the fundamental domain and returns through the left/right identification."
+      "1":
+        label: "Conjugate vertical dual cycle"
+        explanation: "This X string crosses the horizontal Z cycle on exactly one data qubit, so the two logical Paulis anticommute."
+      "2":
+        label: "Vertical primal cycle"
+        explanation: "This independent Z string crosses the top edge and returns through the top/bottom identification."
+      "3":
+        label: "Conjugate horizontal dual cycle"
+        explanation: "This X string crosses the vertical Z cycle on exactly one data qubit."
+steps:
+  - title: "Start with qubits on edges"
+    narrative: "For L=3 the constructor places 18 numbered data qubits at the midpoints of the square-lattice edges. The teal top/bottom pair and violet left/right pair mark opposite boundaries that are identified, so the dashed square is one fundamental domain of a torus."
+    state: {lattice: main, mode: data}
+    origin: {kind: verified, method: "toric.build(L=3) edge coordinates"}
+    refs: [kitaev1997imperfect, kitaev2003fault]
+  - title: "A vertex carries an X star"
+    narrative: "The highlighted X stabilizer is not a filled polygon: four red spokes run from one vertex to its four incident edge qubits. Periodic image handling keeps the star local even when it crosses a seam."
+    state: {lattice: main, mode: lattice, filter: X, highlight: 0}
+    origin: {kind: verified, method: "toric.build(L=3) X-check support"}
+    refs: [kitaev2003fault]
+  - title: "A face carries a Z plaquette"
+    narrative: "The highlighted Z stabilizer follows the four edge qubits around one face. Any star and plaquette overlap on zero or two qubits, so their Pauli operators commute."
+    state: {lattice: main, mode: lattice, filter: Z, highlight: 9}
+    origin: {kind: verified, method: "ChainComplex boundary-of-boundary check"}
+    refs: [kitaev2003fault]
+  - title: "Two directions survive local checks"
+    narrative: "The two blue Z loops wind around the two independent cycles of the torus. Multiplying by plaquette stabilizers deforms either loop locally, but no product of local plaquettes can contract it to the identity."
+    state: {lattice: main, mode: logical, filter: Z}
+    origin: {kind: verified, method: "toric.build(L=3) primal logical supports"}
+    refs: [kitaev2003fault, dennis2002topological]
+  - title: "Each cycle has a conjugate dual loop"
+    narrative: "Red X loops run on dual cycles. Each red loop shares exactly one edge qubit with its conjugate blue loop and therefore anticommutes with it; cross-pair loops have even overlap. These two anticommuting pairs encode two logical qubits."
+    state: {lattice: main, mode: logical, filter: all}
+    origin: {kind: verified, method: "logical-support symplectic overlap"}
+    refs: [kitaev2003fault, dennis2002topological]
+  - title: "The shortest noncontractible loop has length L"
+    narrative: "Every displayed representative uses one edge in each column or row. Local stabilizer multiplication can move the path but cannot remove its winding, so the minimum nontrivial logical weight is L; at L=3 the highlighted representative has weight three."
+    state: {lattice: main, mode: logical, filter: Z, highlight: 0}
+    origin: {kind: verified, method: "toric distance recomputation and logical support"}
+    refs: [kitaev2003fault, dennis2002topological]
+  - title: "Now interrogate the torus yourself"
+    narrative: "Switch among data qubits, stabilizers, and logicals. Filter X or Z, select an operator for its exact support, and zoom across a seam: the same generic Scene v2 player renders every view from constructor-derived data."
+    state: {lattice: main, mode: lattice, filter: all}
+    origin: {kind: verified, method: "constructor-derived-scene-v2"}
+    refs: [kitaev2003fault]

@@ -1,0 +1,18 @@
+- label: complete_graph_5
+  params: {factor: complete-graph-5-incidence}
+  claims:
+    - {property: n, value: 125, origin: {kind: verified}}
+    - {property: k, value: 37, origin: {kind: verified}}
+    - {property: d, exact: 3, origin: {kind: verified}}
+    - {property: css, value: true, origin: {kind: verified}}
+
+- label: affine_plane_4
+  params: {factor: affine-plane-4-incidence}
+  claims:
+    - {property: n, value: 656, origin: {kind: verified}}
+    - {property: k, value: 170, origin: {kind: verified}}
+    - property: d
+      lower: {value: 5}
+      upper: {value: 5, method: "HGP factor-codeword witness"}
+      origin: {kind: claimed, ref: tillich2009quantum}
+    - {property: css, value: true, origin: {kind: verified}}

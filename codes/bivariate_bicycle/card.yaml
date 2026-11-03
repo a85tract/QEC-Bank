@@ -1,0 +1,1915 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Expanding every polynomial monomial as a torus translation produces two sparse binary CSS matrices. Stacking their X and Z rows in symplectic form is the universal executable baseline used for rank, logical, and distance computations.",
+        "origin": {
+          "converter": "bivariate_bicycle.build -> CheckMatrix.from_css",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "bravyi2024bicycle"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:0@493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/views/0",
+      "source_sha256": "493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966",
+      "version_id": "atlas-assertion:bivariate_bicycle:views:0@sha256:493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A and B are sparse elements of F_2[x,y]/(x^l-1,y^m-1). Monomials are torus translations, transpose reverses a translation, and the two CSS check families are assembled without solving pairwise commutation constraints.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "bravyi2024bicycle"
+        ],
+        "rung": "R5",
+        "type": "bivariate-polynomial"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:1@2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/views/1",
+      "source_sha256": "2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26",
+      "version_id": "atlas-assertion:bivariate_bicycle:views:1@sha256:2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The polynomial ring is the regular representation of the abelian group Z_l x Z_m. This view isolates the exact reason A and B commute and places BB codes inside two-block group-algebra codes without identifying the two families.",
+        "origin": {
+          "kind": "curated",
+          "ref": "wang2023abelian"
+        },
+        "refs": [
+          "wang2023abelian",
+          "lin2023twoblock"
+        ],
+        "rung": "R5",
+        "type": "group-algebra"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:2@8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/views/2",
+      "source_sha256": "8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f",
+      "version_id": "atlas-assertion:bivariate_bicycle:views:2@sha256:8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The matrices form the three-term CSS complex R -> R^2 -> R with boundary maps [B;A] and [A|B]. Logical operators are middle homology classes, and the gross code's twelve logical qubits are the quotient dimension left after the two rank-66 boundary maps.",
+        "origin": {
+          "converter": "bivariate_bicycle.build checkmatrix-to-CSS-complex",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "lin2023twoblock",
+          "bravyi2024bicycle"
+        ],
+        "rung": "R2",
+        "type": "homological"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:3@7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/views/3",
+      "source_sha256": "7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410",
+      "version_id": "atlas-assertion:bivariate_bicycle:views:3@sha256:7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Each weight-six check joins three qubits in each data layer. The Tanner incidence can be split into two planar degree-three coupling layers, turning sparse monomials into a concrete syndrome-extraction graph while keeping the schedule and detector model separate from the static code.",
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi2024bicycle"
+        },
+        "refs": [
+          "bravyi2024bicycle",
+          "shaw2025morphing"
+        ],
+        "rung": "R4",
+        "type": "tanner-circuit"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:4@b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/views/4",
+      "source_sha256": "b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f",
+      "version_id": "atlas-assertion:bivariate_bicycle:views:4@sha256:b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The common quotient R/(A,B) controls the number of encoded qubits. Polynomial factors and common roots explain when that quotient appears, why finite blocks can have high rate, and why the studied subclass is not an asymptotically good family.",
+        "origin": {
+          "kind": "curated",
+          "ref": "postema2025existence"
+        },
+        "refs": [
+          "postema2025existence"
+        ],
+        "rung": "R5",
+        "type": "quotient-module"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:5@396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:5",
+      "index": 5,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/views/5",
+      "source_sha256": "396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9",
+      "version_id": "atlas-assertion:bivariate_bicycle:views:5@sha256:396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "The same polynomial ideal can be read as excitation sectors, mobility constraints, and logical strings through a Koszul complex. This view exposes topological frustration and blocks the shortcut of declaring every finite BB code a trivial stack of independent toric codes.",
+        "origin": {
+          "kind": "curated",
+          "ref": "chen2025anyon"
+        },
+        "refs": [
+          "chen2025anyon"
+        ],
+        "rung": "R5",
+        "type": "anyon-koszul"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:6@264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:6",
+      "index": 6,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/views/6",
+      "source_sha256": "264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46",
+      "version_id": "atlas-assertion:bivariate_bicycle:views:6@sha256:264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "For decoding, selected symmetries reduce parts of the syndrome problem to toric-code-like cylinders on which matching applies. The reduction is an operational decoder dictionary, not a global phase equivalence.",
+        "origin": {
+          "kind": "curated",
+          "ref": "sahay2026matching"
+        },
+        "refs": [
+          "sahay2026matching"
+        ],
+        "rung": "R2",
+        "type": "toric-cylinder"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:7@4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:7",
+      "index": 7,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/views/7",
+      "source_sha256": "4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da",
+      "version_id": "atlas-assertion:bivariate_bicycle:views:7@sha256:4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:bivariate_bicycle:categories:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/categories/0",
+      "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "version_id": "atlas-assertion:bivariate_bicycle:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "qldpc",
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi2024bicycle"
+        }
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:categories:1@4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc",
+      "field": "categories",
+      "id": "atlas-assertion:bivariate_bicycle:categories:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/categories/1",
+      "source_sha256": "4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc",
+      "version_id": "atlas-assertion:bivariate_bicycle:categories:1@sha256:4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "bp-osd",
+        "noise": "memoryless Pauli and phenomenological qLDPC benchmarks",
+        "notes": "Belief propagation supplies soft reliabilities and ordered-statistics postprocessing repairs many failures caused by degeneracy and short Tanner-graph cycles. Performance belongs to the stated channel and stopping/OSD settings, not to the bare check matrix.",
+        "refs": [
+          "roffe2020decoding",
+          "panteleev2021degenerate"
+        ],
+        "status": "standard"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:0@2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180",
+      "field": "decoders",
+      "id": "atlas-assertion:bivariate_bicycle:decoders:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/decoders/0",
+      "source_sha256": "2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180",
+      "version_id": "atlas-assertion:bivariate_bicycle:decoders:0@sha256:2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "bp-osd",
+        "noise": "circuit detector model for the seven-CNOT-layer extraction schedule",
+        "notes": "The original end-to-end study reports a 0.8% circuit-level threshold for its BB memory family under the standard circuit-noise model, depth-seven extraction, and BP-OSD. It is not a decoder-independent threshold of every BB construction: changing the family, CNOT order, detector model, noise normalization, or postprocessing defines a different threshold experiment.",
+        "refs": [
+          "bravyi2024bicycle"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:1@b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2",
+      "field": "decoders",
+      "id": "atlas-assertion:bivariate_bicycle:decoders:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/decoders/1",
+      "source_sha256": "b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2",
+      "version_id": "atlas-assertion:bivariate_bicycle:decoders:1@sha256:b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "id": "mwpm",
+        "noise": "BB symmetry reduction to toric-code-like cylinders",
+        "notes": "A cylinder construction exposes matching subproblems and can be combined with BP and over-matching. Its certificate is the specific symmetry reduction; it does not turn every BB instance into independent toric codes.",
+        "refs": [
+          "sahay2026matching"
+        ],
+        "status": "research-grade"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:2@26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4",
+      "field": "decoders",
+      "id": "atlas-assertion:bivariate_bicycle:decoders:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/decoders/2",
+      "source_sha256": "26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4",
+      "version_id": "atlas-assertion:bivariate_bicycle:decoders:2@sha256:26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "one aligned pairwise physical-CNOT layer; module transport, alignment, and correlated decoding are additional architecture costs",
+        "gate": "CNOT between identical BB blocks",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "yoder2025tour"
+        }
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:0@9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/operations/0",
+      "source_sha256": "9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b",
+      "version_id": "atlas-assertion:bivariate_bicycle:operations:0@sha256:9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "a fold/permutation plus constant-depth physical Clifford layers; only symmetric BB instances with a resolved logical action qualify",
+        "gate": "selected logical Clifford generators",
+        "level": "Clifford",
+        "mechanism": "fold-transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "eberhardt2024fold"
+        }
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:1@1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/operations/1",
+      "source_sha256": "1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a",
+      "version_id": "atlas-assertion:bivariate_bicycle:operations:1@sha256:1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "a certified Tanner-graph permutation and its physical routing; the induced symplectic action must be computed for the chosen block",
+        "gate": "logical Clifford operations through automorphisms",
+        "level": "Clifford",
+        "mechanism": "fold-transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "sayginel2025automorphisms"
+        }
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:2@995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/operations/2",
+      "source_sha256": "995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6",
+      "version_id": "atlas-assertion:bivariate_bicycle:operations:2@sha256:995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "long-range ancilla patches, repeated measurements, and a joint decoder; the resource count belongs to the selected modular protocol",
+        "gate": "inter-block Pauli measurements and Clifford surgery",
+        "level": "Clifford",
+        "mechanism": "surgery",
+        "origin": {
+          "kind": "claimed",
+          "ref": "yoder2025tour"
+        }
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:3@1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/operations/3",
+      "source_sha256": "1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d",
+      "version_id": "atlas-assertion:bivariate_bicycle:operations:3@sha256:1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "cost": "constant-depth physical layers on blocks satisfying the extra self-duality and twisted-torus conditions; not a gross-code claim",
+        "gate": "H / S / CNOT in the self-dual BB subfamily",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "liang2025selfdual"
+        }
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:4@bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/operations/4",
+      "source_sha256": "bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60",
+      "version_id": "atlas-assertion:bivariate_bicycle:operations:4@sha256:bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A [[18,4,4]] BB block used 32 transmons to execute all nonlocal weight-six checks and repeated syndrome cycles. The reported logical error per logical qubit per cycle was (8.91 +/- 0.17)%; this establishes feasibility, not below-threshold scaling and not a gross-code run.",
+        "platform": "Kunlun long-range-coupled superconducting processor",
+        "refs": [
+          "wang2026lowoverhead"
+        ],
+        "status": "demonstrated"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:0@99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/realizations/0",
+      "source_sha256": "99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2",
+      "version_id": "atlas-assertion:bivariate_bicycle:realizations:0@sha256:99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Gate routing and Rydberg interactions were co-designed for BB connectivity. The result is a numerical architecture proposal rather than a laboratory logical-memory demonstration.",
+        "platform": "optimized Rydberg neutral-atom layout",
+        "refs": [
+          "poole2025rydberg"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:1@dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:1",
+      "index": 1,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/realizations/1",
+      "source_sha256": "dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f",
+      "version_id": "atlas-assertion:bivariate_bicycle:realizations:1@sha256:dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "Motion or communication embeds long-range BB checks in a locally connected device, including schedules that measure some costly checks less often. The altered cadence and circuit noise must be decoded as part of the proposal.",
+        "platform": "layered two-dimensional hardware",
+        "refs": [
+          "berthusen2025local"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:2@990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:2",
+      "index": 2,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/realizations/2",
+      "source_sha256": "990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884",
+      "version_id": "atlas-assertion:bivariate_bicycle:realizations:2@sha256:990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "A related BB family lowers connectivity from degree six to five and uses six CNOT rounds by morphing the code during extraction. It changes the family and detector model; it is not a cheaper schedule for every BB block.",
+        "platform": "degree-five morphing-circuit layout",
+        "refs": [
+          "shaw2025morphing"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:3@52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:3",
+      "index": 3,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/realizations/3",
+      "source_sha256": "52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f",
+      "version_id": "atlas-assertion:bivariate_bicycle:realizations:3@sha256:52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "description": "An instruction set, compiler, and end-to-end resource model organize distance-12 and distance-18 BB modules into a computer. This closes an architecture gap but remains a proposal, not a hardware realization.",
+        "platform": "modular gross-code architecture",
+        "refs": [
+          "yoder2025tour"
+        ],
+        "status": "proposed"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:4@26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:4",
+      "index": 4,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/realizations/4",
+      "source_sha256": "26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91",
+      "version_id": "atlas-assertion:bivariate_bicycle:realizations:4@sha256:26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91"
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "content": {
+        "how": "Bivariate bicycle codes are the abelian two-block group-algebra codes for Z_l x Z_m; general 2BGA codes may use other groups and need not have a two-variable polynomial presentation.",
+        "refs": [
+          "wang2023abelian",
+          "lin2023twoblock"
+        ],
+        "target": "two_bga",
+        "type": "special_case_of"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:relations:0@91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956",
+      "field": "relations",
+      "id": "atlas-assertion:bivariate_bicycle:relations:0",
+      "index": 0,
+      "legacy_scope": "subject",
+      "migration_action": "materialize-explicit-scope",
+      "source_locator": "bivariate_bicycle/card.yaml#/relations/0",
+      "source_sha256": "91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956",
+      "version_id": "atlas-assertion:bivariate_bicycle:relations:0@sha256:91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956"
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:qcga#collection",
+      "status": "preserved",
+      "tier": "T3"
+    }
+  ],
+  "decision_class": "exact-clean",
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:qcga#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:qcga#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/bivariate_bicycle/card.yaml#/identity",
+          "atlas:atlas/bivariate_bicycle/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/bivariate_bicycle/bivariate_bicycle-foundations.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/qcga.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:qcga"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:qcga#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:bivariate_bicycle",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "4aace05656e8b49ba71ce266f1270d90469dd5f72fd0ae2f643e9c58da77d480",
+          "payload_sha256": "48a8cbbc96277b535b521fcf24babfe80aad439b11f6ffff4b6bc9fb102ef8b6",
+          "semantic_hash": "74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092"
+        },
+        "id": "atlas-instance:bivariate_bicycle:gross",
+        "label": "gross",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092:structural-validity:6dd7200b4f5385ce2ba164c0fa8d8879f03aa0c30718692af22568cb8ca33e3d@1"
+          ],
+          "instance_record_sha256": "8431e4618d5f21f5007ab962ec85fe52e8ee8292119fd09961bdff81c613c28c",
+          "lean_report_sha256": "8d7b1dbddd5f3a147f6323ae8c0636be9e1ba8d6108b739f0686f4f823e57f80",
+          "semantic_hash": "74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "ea429b5484c50de4bca1837db4cd531080abab09b91ab6bbf69d8bff8c40fa65",
+        "v2_envelope_id": "formal-ir-v2:bivariate_bicycle:gross"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "4aace05656e8b49ba71ce266f1270d90469dd5f72fd0ae2f643e9c58da77d480",
+          "payload_sha256": "0881bfcd330574177db374a0ad2ccd4692a72f0dc977f174b240043d1232a228",
+          "semantic_hash": "b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7"
+        },
+        "id": "atlas-instance:bivariate_bicycle:toric_L3",
+        "label": "toric_L3",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7:small-exact-distance-enumeration:9ca87343fc63067318d2dc4d62581ed195c552ac8fad2e2929b7dddf6f628dec@1",
+            "certificate:b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7:structural-validity:58d582a3b955ac211644793c043b5d5fe9e64e1a8cbd02130e74a82b98213102@1"
+          ],
+          "instance_record_sha256": "5def90e6987f9da63c79f2ab9bb60a014c1d767038e70daf603cee4cef900164",
+          "lean_report_sha256": "0db855bbd02eee07f78837d9391d5c7066d4d6c212309dfd8208c73f29b7bf28",
+          "semantic_hash": "b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e53f23210b05afc4b511f4f4a2b4f313095d034ff209a80a4592f78306ecc021",
+        "v2_envelope_id": "formal-ir-v2:bivariate_bicycle:toric_L3"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 2,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:qcga#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "id": "bivariate_bicycle",
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:bivariate_bicycle:views:0",
+      "atlas-assertion:bivariate_bicycle:views:1",
+      "atlas-assertion:bivariate_bicycle:views:2",
+      "atlas-assertion:bivariate_bicycle:views:3",
+      "atlas-assertion:bivariate_bicycle:views:4",
+      "atlas-assertion:bivariate_bicycle:views:5",
+      "atlas-assertion:bivariate_bicycle:views:6",
+      "atlas-assertion:bivariate_bicycle:views:7",
+      "atlas-assertion:bivariate_bicycle:categories:0",
+      "atlas-assertion:bivariate_bicycle:categories:1",
+      "atlas-assertion:bivariate_bicycle:decoders:0",
+      "atlas-assertion:bivariate_bicycle:decoders:1",
+      "atlas-assertion:bivariate_bicycle:decoders:2",
+      "atlas-assertion:bivariate_bicycle:operations:0",
+      "atlas-assertion:bivariate_bicycle:operations:1",
+      "atlas-assertion:bivariate_bicycle:operations:2",
+      "atlas-assertion:bivariate_bicycle:operations:3",
+      "atlas-assertion:bivariate_bicycle:operations:4",
+      "atlas-assertion:bivariate_bicycle:realizations:0",
+      "atlas-assertion:bivariate_bicycle:realizations:1",
+      "atlas-assertion:bivariate_bicycle:realizations:2",
+      "atlas-assertion:bivariate_bicycle:realizations:3",
+      "atlas-assertion:bivariate_bicycle:realizations:4",
+      "atlas-assertion:bivariate_bicycle:relations:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:qcga#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:bivariate_bicycle:views:0@493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966",
+      "atlas-evidence:bivariate_bicycle:views:1@2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26",
+      "atlas-evidence:bivariate_bicycle:views:2@8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f",
+      "atlas-evidence:bivariate_bicycle:views:3@7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410",
+      "atlas-evidence:bivariate_bicycle:views:4@b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f",
+      "atlas-evidence:bivariate_bicycle:views:5@396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9",
+      "atlas-evidence:bivariate_bicycle:views:6@264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46",
+      "atlas-evidence:bivariate_bicycle:views:7@4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da",
+      "atlas-evidence:bivariate_bicycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:bivariate_bicycle:categories:1@4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc",
+      "atlas-evidence:bivariate_bicycle:decoders:0@2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180",
+      "atlas-evidence:bivariate_bicycle:decoders:1@b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2",
+      "atlas-evidence:bivariate_bicycle:decoders:2@26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4",
+      "atlas-evidence:bivariate_bicycle:operations:0@9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b",
+      "atlas-evidence:bivariate_bicycle:operations:1@1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a",
+      "atlas-evidence:bivariate_bicycle:operations:2@995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6",
+      "atlas-evidence:bivariate_bicycle:operations:3@1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d",
+      "atlas-evidence:bivariate_bicycle:operations:4@bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60",
+      "atlas-evidence:bivariate_bicycle:realizations:0@99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2",
+      "atlas-evidence:bivariate_bicycle:realizations:1@dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f",
+      "atlas-evidence:bivariate_bicycle:realizations:2@990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884",
+      "atlas-evidence:bivariate_bicycle:realizations:3@52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f",
+      "atlas-evidence:bivariate_bicycle:realizations:4@26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91",
+      "atlas-evidence:bivariate_bicycle:relations:0@91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956"
+    ],
+    "formalization_id": "atlas-formalization:bivariate_bicycle",
+    "instance_ids": [
+      "atlas-instance:bivariate_bicycle:gross",
+      "atlas-instance:bivariate_bicycle:toric_L3"
+    ],
+    "page_id": "atlas-page:bivariate_bicycle",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:qcga"
+    ]
+  },
+  "instances": [
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "4aace05656e8b49ba71ce266f1270d90469dd5f72fd0ae2f643e9c58da77d480",
+        "payload_sha256": "48a8cbbc96277b535b521fcf24babfe80aad439b11f6ffff4b6bc9fb102ef8b6",
+        "semantic_hash": "74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092"
+      },
+      "id": "atlas-instance:bivariate_bicycle:gross",
+      "label": "gross",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092:structural-validity:6dd7200b4f5385ce2ba164c0fa8d8879f03aa0c30718692af22568cb8ca33e3d@1"
+        ],
+        "instance_record_sha256": "8431e4618d5f21f5007ab962ec85fe52e8ee8292119fd09961bdff81c613c28c",
+        "lean_report_sha256": "8d7b1dbddd5f3a147f6323ae8c0636be9e1ba8d6108b739f0686f4f823e57f80",
+        "semantic_hash": "74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "ea429b5484c50de4bca1837db4cd531080abab09b91ab6bbf69d8bff8c40fa65",
+      "v2_envelope_id": "formal-ir-v2:bivariate_bicycle:gross"
+    },
+    {
+      "expected_comparison": "byte-and-semantic-identical",
+      "formal_ir_v1": {
+        "entry_record_sha256": "4aace05656e8b49ba71ce266f1270d90469dd5f72fd0ae2f643e9c58da77d480",
+        "payload_sha256": "0881bfcd330574177db374a0ad2ccd4692a72f0dc977f174b240043d1232a228",
+        "semantic_hash": "b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7"
+      },
+      "id": "atlas-instance:bivariate_bicycle:toric_L3",
+      "label": "toric_L3",
+      "lean_v1": {
+        "branch": "css-chain",
+        "certificate_ids": [
+          "certificate:b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7:small-exact-distance-enumeration:9ca87343fc63067318d2dc4d62581ed195c552ac8fad2e2929b7dddf6f628dec@1",
+          "certificate:b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7:structural-validity:58d582a3b955ac211644793c043b5d5fe9e64e1a8cbd02130e74a82b98213102@1"
+        ],
+        "instance_record_sha256": "5def90e6987f9da63c79f2ab9bb60a014c1d767038e70daf603cee4cef900164",
+        "lean_report_sha256": "0db855bbd02eee07f78837d9391d5c7066d4d6c212309dfd8208c73f29b7bf28",
+        "semantic_hash": "b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7"
+      },
+      "source_binding_status": "clean",
+      "source_sha256": "e53f23210b05afc4b511f4f4a2b4f313095d034ff209a80a4592f78306ecc021",
+      "v2_envelope_id": "formal-ir-v2:bivariate_bicycle:toric_L3"
+    }
+  ],
+  "legacy_card": {
+    "categories": [
+      {
+        "id": "css",
+        "origin": {
+          "kind": "verified"
+        }
+      },
+      {
+        "id": "qldpc",
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi2024bicycle"
+        }
+      }
+    ],
+    "claim_gaps": [
+      {
+        "property": "d",
+        "target": "wanted:fast-distance"
+      }
+    ],
+    "construction": {
+      "inputs": {
+        "A": {
+          "output": "parity_check",
+          "params": {
+            "l": {
+              "instance_param": "l"
+            },
+            "m": {
+              "instance_param": "m"
+            },
+            "terms": {
+              "instance_param": "a_terms"
+            }
+          },
+          "ref": {
+            "id": "bivariate_polynomial",
+            "kind": "generator",
+            "version": 1
+          }
+        },
+        "B": {
+          "output": "parity_check",
+          "params": {
+            "l": {
+              "instance_param": "l"
+            },
+            "m": {
+              "instance_param": "m"
+            },
+            "terms": {
+              "instance_param": "b_terms"
+            }
+          },
+          "ref": {
+            "id": "bivariate_polynomial",
+            "kind": "generator",
+            "version": 1
+          }
+        }
+      },
+      "match": "exact-checkmatrix-v1",
+      "op": {
+        "id": "bivariate_bicycle",
+        "version": 1
+      },
+      "output": "checkmatrix",
+      "schema": "qec-atlas-construction-v1"
+    },
+    "decoders": [
+      {
+        "id": "bp-osd",
+        "noise": "memoryless Pauli and phenomenological qLDPC benchmarks",
+        "notes": "Belief propagation supplies soft reliabilities and ordered-statistics postprocessing repairs many failures caused by degeneracy and short Tanner-graph cycles. Performance belongs to the stated channel and stopping/OSD settings, not to the bare check matrix.",
+        "refs": [
+          "roffe2020decoding",
+          "panteleev2021degenerate"
+        ],
+        "status": "standard"
+      },
+      {
+        "id": "bp-osd",
+        "noise": "circuit detector model for the seven-CNOT-layer extraction schedule",
+        "notes": "The original end-to-end study reports a 0.8% circuit-level threshold for its BB memory family under the standard circuit-noise model, depth-seven extraction, and BP-OSD. It is not a decoder-independent threshold of every BB construction: changing the family, CNOT order, detector model, noise normalization, or postprocessing defines a different threshold experiment.",
+        "refs": [
+          "bravyi2024bicycle"
+        ],
+        "status": "research-grade"
+      },
+      {
+        "id": "mwpm",
+        "noise": "BB symmetry reduction to toric-code-like cylinders",
+        "notes": "A cylinder construction exposes matching subproblems and can be combined with BP and over-matching. Its certificate is the specific symmetry reduction; it does not turn every BB instance into independent toric codes.",
+        "refs": [
+          "sahay2026matching"
+        ],
+        "status": "research-grade"
+      }
+    ],
+    "description": "A translation-invariant CSS qLDPC family built from two sparse binary polynomials on a finite two-dimensional torus. Each polynomial becomes a cyclic-shift matrix; placing the two matrices in H_X=[A|B] and the swapped transposes in H_Z=[B^T|A^T] makes commutation follow from the abelian polynomial algebra. Representative finite blocks trade planar nearest-neighbor layout for a second coupling layer and encode many logical qubits at moderate distance.",
+    "eczoo": {
+      "classification": "exact-family",
+      "source": {
+        "blob_url": "https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/qcga.yml",
+        "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+        "page_url": "https://errorcorrectionzoo.org/c/qcga",
+        "path": "codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/qcga.yml",
+        "repository_url": "https://github.com/errorcorrectionzoo/eczoo_data",
+        "retrieved_on": "2026-08-05",
+        "sha256": "83ce75676b44561fbc7288fd030ead8af678152843bc1f3fa34fd9a800d71e24"
+      },
+      "status": "mapped",
+      "zoo_id": "qcga"
+    },
+    "fit": {
+      "platforms": [
+        "superconducting-long-range",
+        "neutral-atom-reconfigurable",
+        "modular-networked"
+      ],
+      "tasks": [
+        "memory",
+        "modular-computation"
+      ]
+    },
+    "id": "bivariate_bicycle",
+    "identity": {
+      "aliases": [
+        "BB code",
+        "gross code (l=12, m=6 instance)"
+      ],
+      "canonical_name": "Bivariate bicycle code"
+    },
+    "kind": "family",
+    "operations": [
+      {
+        "cost": "one aligned pairwise physical-CNOT layer; module transport, alignment, and correlated decoding are additional architecture costs",
+        "gate": "CNOT between identical BB blocks",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "yoder2025tour"
+        }
+      },
+      {
+        "cost": "a fold/permutation plus constant-depth physical Clifford layers; only symmetric BB instances with a resolved logical action qualify",
+        "gate": "selected logical Clifford generators",
+        "level": "Clifford",
+        "mechanism": "fold-transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "eberhardt2024fold"
+        }
+      },
+      {
+        "cost": "a certified Tanner-graph permutation and its physical routing; the induced symplectic action must be computed for the chosen block",
+        "gate": "logical Clifford operations through automorphisms",
+        "level": "Clifford",
+        "mechanism": "fold-transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "sayginel2025automorphisms"
+        }
+      },
+      {
+        "cost": "long-range ancilla patches, repeated measurements, and a joint decoder; the resource count belongs to the selected modular protocol",
+        "gate": "inter-block Pauli measurements and Clifford surgery",
+        "level": "Clifford",
+        "mechanism": "surgery",
+        "origin": {
+          "kind": "claimed",
+          "ref": "yoder2025tour"
+        }
+      },
+      {
+        "cost": "constant-depth physical layers on blocks satisfying the extra self-duality and twisted-torus conditions; not a gross-code claim",
+        "gate": "H / S / CNOT in the self-dual BB subfamily",
+        "level": "Clifford",
+        "mechanism": "transversal",
+        "origin": {
+          "kind": "claimed",
+          "ref": "liang2025selfdual"
+        }
+      }
+    ],
+    "params": {
+      "a_terms": "integer exponent pairs for the monomials of A, reduced modulo (l,m)",
+      "b_terms": "integer exponent pairs for the monomials of B, reduced modulo (l,m)",
+      "l": "positive cyclic order of x",
+      "m": "positive cyclic order of y"
+    },
+    "presentation": {
+      "guided_tour": {
+        "status": "available"
+      },
+      "orienting_view": {
+        "kind": "lattice",
+        "status": "available"
+      }
+    },
+    "realizations": [
+      {
+        "description": "A [[18,4,4]] BB block used 32 transmons to execute all nonlocal weight-six checks and repeated syndrome cycles. The reported logical error per logical qubit per cycle was (8.91 +/- 0.17)%; this establishes feasibility, not below-threshold scaling and not a gross-code run.",
+        "platform": "Kunlun long-range-coupled superconducting processor",
+        "refs": [
+          "wang2026lowoverhead"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "description": "Gate routing and Rydberg interactions were co-designed for BB connectivity. The result is a numerical architecture proposal rather than a laboratory logical-memory demonstration.",
+        "platform": "optimized Rydberg neutral-atom layout",
+        "refs": [
+          "poole2025rydberg"
+        ],
+        "status": "proposed"
+      },
+      {
+        "description": "Motion or communication embeds long-range BB checks in a locally connected device, including schedules that measure some costly checks less often. The altered cadence and circuit noise must be decoded as part of the proposal.",
+        "platform": "layered two-dimensional hardware",
+        "refs": [
+          "berthusen2025local"
+        ],
+        "status": "proposed"
+      },
+      {
+        "description": "A related BB family lowers connectivity from degree six to five and uses six CNOT rounds by morphing the code during extraction. It changes the family and detector model; it is not a cheaper schedule for every BB block.",
+        "platform": "degree-five morphing-circuit layout",
+        "refs": [
+          "shaw2025morphing"
+        ],
+        "status": "proposed"
+      },
+      {
+        "description": "An instruction set, compiler, and end-to-end resource model organize distance-12 and distance-18 BB modules into a computer. This closes an architecture gap but remains a proposal, not a hardware realization.",
+        "platform": "modular gross-code architecture",
+        "refs": [
+          "yoder2025tour"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "refs": [
+      "mackay2004sparse",
+      "panteleev2021degenerate",
+      "wang2023abelian",
+      "lin2023twoblock",
+      "bravyi2024bicycle",
+      "postema2025existence",
+      "chen2025anyon",
+      "voss2025multivariate",
+      "wang2026coprime",
+      "eberhardt2024pruning",
+      "liang2025planar",
+      "steffan2025tile",
+      "liang2025selfdual",
+      "roffe2020decoding",
+      "shaw2025morphing",
+      "koutsioumpas2025autdec",
+      "blue2026machine",
+      "sahay2026matching",
+      "pakhunov2026convergence",
+      "pakhunov2026peeling",
+      "cohen2022longrange",
+      "xu2023constant",
+      "eberhardt2024fold",
+      "sayginel2025automorphisms",
+      "breuckmann2026cups",
+      "yoder2025tour",
+      "xu2025batched",
+      "wang2026lowoverhead",
+      "poole2025rydberg",
+      "berthusen2025local",
+      "chen2025fusion",
+      "chandra2026distributed"
+    ],
+    "relations": [
+      {
+        "how": "Bivariate bicycle codes are the abelian two-block group-algebra codes for Z_l x Z_m; general 2BGA codes may use other groups and need not have a two-variable polynomial presentation.",
+        "refs": [
+          "wang2023abelian",
+          "lin2023twoblock"
+        ],
+        "target": "two_bga",
+        "type": "special_case_of"
+      }
+    ],
+    "tier": "T3",
+    "views": [
+      {
+        "description": "Expanding every polynomial monomial as a torus translation produces two sparse binary CSS matrices. Stacking their X and Z rows in symplectic form is the universal executable baseline used for rank, logical, and distance computations.",
+        "origin": {
+          "converter": "bivariate_bicycle.build -> CheckMatrix.from_css",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "bravyi2024bicycle"
+        ],
+        "rung": "R1",
+        "type": "symplectic-css-checks"
+      },
+      {
+        "description": "A and B are sparse elements of F_2[x,y]/(x^l-1,y^m-1). Monomials are torus translations, transpose reverses a translation, and the two CSS check families are assembled without solving pairwise commutation constraints.",
+        "origin": {
+          "kind": "canonical"
+        },
+        "refs": [
+          "bravyi2024bicycle"
+        ],
+        "rung": "R5",
+        "type": "bivariate-polynomial"
+      },
+      {
+        "description": "The polynomial ring is the regular representation of the abelian group Z_l x Z_m. This view isolates the exact reason A and B commute and places BB codes inside two-block group-algebra codes without identifying the two families.",
+        "origin": {
+          "kind": "curated",
+          "ref": "wang2023abelian"
+        },
+        "refs": [
+          "wang2023abelian",
+          "lin2023twoblock"
+        ],
+        "rung": "R5",
+        "type": "group-algebra"
+      },
+      {
+        "description": "The matrices form the three-term CSS complex R -> R^2 -> R with boundary maps [B;A] and [A|B]. Logical operators are middle homology classes, and the gross code's twelve logical qubits are the quotient dimension left after the two rank-66 boundary maps.",
+        "origin": {
+          "converter": "bivariate_bicycle.build checkmatrix-to-CSS-complex",
+          "kind": "derived",
+          "version": "v1"
+        },
+        "refs": [
+          "lin2023twoblock",
+          "bravyi2024bicycle"
+        ],
+        "rung": "R2",
+        "type": "homological"
+      },
+      {
+        "description": "Each weight-six check joins three qubits in each data layer. The Tanner incidence can be split into two planar degree-three coupling layers, turning sparse monomials into a concrete syndrome-extraction graph while keeping the schedule and detector model separate from the static code.",
+        "origin": {
+          "kind": "curated",
+          "ref": "bravyi2024bicycle"
+        },
+        "refs": [
+          "bravyi2024bicycle",
+          "shaw2025morphing"
+        ],
+        "rung": "R4",
+        "type": "tanner-circuit"
+      },
+      {
+        "description": "The common quotient R/(A,B) controls the number of encoded qubits. Polynomial factors and common roots explain when that quotient appears, why finite blocks can have high rate, and why the studied subclass is not an asymptotically good family.",
+        "origin": {
+          "kind": "curated",
+          "ref": "postema2025existence"
+        },
+        "refs": [
+          "postema2025existence"
+        ],
+        "rung": "R5",
+        "type": "quotient-module"
+      },
+      {
+        "description": "The same polynomial ideal can be read as excitation sectors, mobility constraints, and logical strings through a Koszul complex. This view exposes topological frustration and blocks the shortcut of declaring every finite BB code a trivial stack of independent toric codes.",
+        "origin": {
+          "kind": "curated",
+          "ref": "chen2025anyon"
+        },
+        "refs": [
+          "chen2025anyon"
+        ],
+        "rung": "R5",
+        "type": "anyon-koszul"
+      },
+      {
+        "description": "For decoding, selected symmetries reduce parts of the syndrome problem to toric-code-like cylinders on which matching applies. The reduction is an operational decoder dictionary, not a global phase equivalence.",
+        "origin": {
+          "kind": "curated",
+          "ref": "sahay2026matching"
+        },
+        "refs": [
+          "sahay2026matching"
+        ],
+        "rung": "R2",
+        "type": "toric-cylinder"
+      }
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:qcga#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:qcga#collection",
+        "status": "preserved",
+        "tier": "T3"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:bivariate_bicycle",
+    "presented_entity_ids": [
+      "eczoo-entity:qcga#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:qcga#collection",
+    "redirects": [],
+    "route": "/entries/bivariate_bicycle.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/bivariate_bicycle"
+  },
+  "parent_content": null,
+  "projection": {
+    "method": "embedded-utf8-source-v1",
+    "source_sha256": "c552e97d6ce5856ffa8af59112c81884552e8acd39f3dc418d26e134b21a5fd4",
+    "status": "exact"
+  },
+  "schema": "qec-atlas-entry-card-v2",
+  "scoped_facets": {
+    "categories": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "css",
+          "origin": {
+            "kind": "verified"
+          }
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "field": "categories",
+        "id": "atlas-assertion:bivariate_bicycle:categories:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/categories/0",
+        "source_sha256": "dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+        "version_id": "atlas-assertion:bivariate_bicycle:categories:0@sha256:dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "qldpc",
+          "origin": {
+            "kind": "curated",
+            "ref": "bravyi2024bicycle"
+          }
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:categories:1@4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc",
+        "field": "categories",
+        "id": "atlas-assertion:bivariate_bicycle:categories:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/categories/1",
+        "source_sha256": "4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc",
+        "version_id": "atlas-assertion:bivariate_bicycle:categories:1@sha256:4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc"
+      }
+    ],
+    "decoders": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "bp-osd",
+          "noise": "memoryless Pauli and phenomenological qLDPC benchmarks",
+          "notes": "Belief propagation supplies soft reliabilities and ordered-statistics postprocessing repairs many failures caused by degeneracy and short Tanner-graph cycles. Performance belongs to the stated channel and stopping/OSD settings, not to the bare check matrix.",
+          "refs": [
+            "roffe2020decoding",
+            "panteleev2021degenerate"
+          ],
+          "status": "standard"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:0@2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180",
+        "field": "decoders",
+        "id": "atlas-assertion:bivariate_bicycle:decoders:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/decoders/0",
+        "source_sha256": "2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180",
+        "version_id": "atlas-assertion:bivariate_bicycle:decoders:0@sha256:2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "bp-osd",
+          "noise": "circuit detector model for the seven-CNOT-layer extraction schedule",
+          "notes": "The original end-to-end study reports a 0.8% circuit-level threshold for its BB memory family under the standard circuit-noise model, depth-seven extraction, and BP-OSD. It is not a decoder-independent threshold of every BB construction: changing the family, CNOT order, detector model, noise normalization, or postprocessing defines a different threshold experiment.",
+          "refs": [
+            "bravyi2024bicycle"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:1@b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2",
+        "field": "decoders",
+        "id": "atlas-assertion:bivariate_bicycle:decoders:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/decoders/1",
+        "source_sha256": "b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2",
+        "version_id": "atlas-assertion:bivariate_bicycle:decoders:1@sha256:b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "id": "mwpm",
+          "noise": "BB symmetry reduction to toric-code-like cylinders",
+          "notes": "A cylinder construction exposes matching subproblems and can be combined with BP and over-matching. Its certificate is the specific symmetry reduction; it does not turn every BB instance into independent toric codes.",
+          "refs": [
+            "sahay2026matching"
+          ],
+          "status": "research-grade"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:2@26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4",
+        "field": "decoders",
+        "id": "atlas-assertion:bivariate_bicycle:decoders:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/decoders/2",
+        "source_sha256": "26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4",
+        "version_id": "atlas-assertion:bivariate_bicycle:decoders:2@sha256:26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4"
+      }
+    ],
+    "operations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "one aligned pairwise physical-CNOT layer; module transport, alignment, and correlated decoding are additional architecture costs",
+          "gate": "CNOT between identical BB blocks",
+          "level": "Clifford",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "yoder2025tour"
+          }
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:operations:0@9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b",
+        "field": "operations",
+        "id": "atlas-assertion:bivariate_bicycle:operations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/operations/0",
+        "source_sha256": "9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b",
+        "version_id": "atlas-assertion:bivariate_bicycle:operations:0@sha256:9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "a fold/permutation plus constant-depth physical Clifford layers; only symmetric BB instances with a resolved logical action qualify",
+          "gate": "selected logical Clifford generators",
+          "level": "Clifford",
+          "mechanism": "fold-transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "eberhardt2024fold"
+          }
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:operations:1@1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a",
+        "field": "operations",
+        "id": "atlas-assertion:bivariate_bicycle:operations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/operations/1",
+        "source_sha256": "1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a",
+        "version_id": "atlas-assertion:bivariate_bicycle:operations:1@sha256:1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "a certified Tanner-graph permutation and its physical routing; the induced symplectic action must be computed for the chosen block",
+          "gate": "logical Clifford operations through automorphisms",
+          "level": "Clifford",
+          "mechanism": "fold-transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "sayginel2025automorphisms"
+          }
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:operations:2@995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6",
+        "field": "operations",
+        "id": "atlas-assertion:bivariate_bicycle:operations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/operations/2",
+        "source_sha256": "995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6",
+        "version_id": "atlas-assertion:bivariate_bicycle:operations:2@sha256:995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "long-range ancilla patches, repeated measurements, and a joint decoder; the resource count belongs to the selected modular protocol",
+          "gate": "inter-block Pauli measurements and Clifford surgery",
+          "level": "Clifford",
+          "mechanism": "surgery",
+          "origin": {
+            "kind": "claimed",
+            "ref": "yoder2025tour"
+          }
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:operations:3@1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d",
+        "field": "operations",
+        "id": "atlas-assertion:bivariate_bicycle:operations:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/operations/3",
+        "source_sha256": "1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d",
+        "version_id": "atlas-assertion:bivariate_bicycle:operations:3@sha256:1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "cost": "constant-depth physical layers on blocks satisfying the extra self-duality and twisted-torus conditions; not a gross-code claim",
+          "gate": "H / S / CNOT in the self-dual BB subfamily",
+          "level": "Clifford",
+          "mechanism": "transversal",
+          "origin": {
+            "kind": "claimed",
+            "ref": "liang2025selfdual"
+          }
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:operations:4@bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60",
+        "field": "operations",
+        "id": "atlas-assertion:bivariate_bicycle:operations:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/operations/4",
+        "source_sha256": "bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60",
+        "version_id": "atlas-assertion:bivariate_bicycle:operations:4@sha256:bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60"
+      }
+    ],
+    "realizations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A [[18,4,4]] BB block used 32 transmons to execute all nonlocal weight-six checks and repeated syndrome cycles. The reported logical error per logical qubit per cycle was (8.91 +/- 0.17)%; this establishes feasibility, not below-threshold scaling and not a gross-code run.",
+          "platform": "Kunlun long-range-coupled superconducting processor",
+          "refs": [
+            "wang2026lowoverhead"
+          ],
+          "status": "demonstrated"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:0@99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2",
+        "field": "realizations",
+        "id": "atlas-assertion:bivariate_bicycle:realizations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/realizations/0",
+        "source_sha256": "99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2",
+        "version_id": "atlas-assertion:bivariate_bicycle:realizations:0@sha256:99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Gate routing and Rydberg interactions were co-designed for BB connectivity. The result is a numerical architecture proposal rather than a laboratory logical-memory demonstration.",
+          "platform": "optimized Rydberg neutral-atom layout",
+          "refs": [
+            "poole2025rydberg"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:1@dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f",
+        "field": "realizations",
+        "id": "atlas-assertion:bivariate_bicycle:realizations:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/realizations/1",
+        "source_sha256": "dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f",
+        "version_id": "atlas-assertion:bivariate_bicycle:realizations:1@sha256:dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Motion or communication embeds long-range BB checks in a locally connected device, including schedules that measure some costly checks less often. The altered cadence and circuit noise must be decoded as part of the proposal.",
+          "platform": "layered two-dimensional hardware",
+          "refs": [
+            "berthusen2025local"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:2@990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884",
+        "field": "realizations",
+        "id": "atlas-assertion:bivariate_bicycle:realizations:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/realizations/2",
+        "source_sha256": "990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884",
+        "version_id": "atlas-assertion:bivariate_bicycle:realizations:2@sha256:990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A related BB family lowers connectivity from degree six to five and uses six CNOT rounds by morphing the code during extraction. It changes the family and detector model; it is not a cheaper schedule for every BB block.",
+          "platform": "degree-five morphing-circuit layout",
+          "refs": [
+            "shaw2025morphing"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:3@52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f",
+        "field": "realizations",
+        "id": "atlas-assertion:bivariate_bicycle:realizations:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/realizations/3",
+        "source_sha256": "52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f",
+        "version_id": "atlas-assertion:bivariate_bicycle:realizations:3@sha256:52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "An instruction set, compiler, and end-to-end resource model organize distance-12 and distance-18 BB modules into a computer. This closes an architecture gap but remains a proposal, not a hardware realization.",
+          "platform": "modular gross-code architecture",
+          "refs": [
+            "yoder2025tour"
+          ],
+          "status": "proposed"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:4@26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91",
+        "field": "realizations",
+        "id": "atlas-assertion:bivariate_bicycle:realizations:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/realizations/4",
+        "source_sha256": "26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91",
+        "version_id": "atlas-assertion:bivariate_bicycle:realizations:4@sha256:26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91"
+      }
+    ],
+    "relations": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "how": "Bivariate bicycle codes are the abelian two-block group-algebra codes for Z_l x Z_m; general 2BGA codes may use other groups and need not have a two-variable polynomial presentation.",
+          "refs": [
+            "wang2023abelian",
+            "lin2023twoblock"
+          ],
+          "target": "two_bga",
+          "type": "special_case_of"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:relations:0@91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956",
+        "field": "relations",
+        "id": "atlas-assertion:bivariate_bicycle:relations:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/relations/0",
+        "source_sha256": "91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956",
+        "version_id": "atlas-assertion:bivariate_bicycle:relations:0@sha256:91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956"
+      }
+    ],
+    "views": [
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Expanding every polynomial monomial as a torus translation produces two sparse binary CSS matrices. Stacking their X and Z rows in symplectic form is the universal executable baseline used for rank, logical, and distance computations.",
+          "origin": {
+            "converter": "bivariate_bicycle.build -> CheckMatrix.from_css",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "bravyi2024bicycle"
+          ],
+          "rung": "R1",
+          "type": "symplectic-css-checks"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:views:0@493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966",
+        "field": "views",
+        "id": "atlas-assertion:bivariate_bicycle:views:0",
+        "index": 0,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/views/0",
+        "source_sha256": "493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966",
+        "version_id": "atlas-assertion:bivariate_bicycle:views:0@sha256:493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "A and B are sparse elements of F_2[x,y]/(x^l-1,y^m-1). Monomials are torus translations, transpose reverses a translation, and the two CSS check families are assembled without solving pairwise commutation constraints.",
+          "origin": {
+            "kind": "canonical"
+          },
+          "refs": [
+            "bravyi2024bicycle"
+          ],
+          "rung": "R5",
+          "type": "bivariate-polynomial"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:views:1@2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26",
+        "field": "views",
+        "id": "atlas-assertion:bivariate_bicycle:views:1",
+        "index": 1,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/views/1",
+        "source_sha256": "2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26",
+        "version_id": "atlas-assertion:bivariate_bicycle:views:1@sha256:2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The polynomial ring is the regular representation of the abelian group Z_l x Z_m. This view isolates the exact reason A and B commute and places BB codes inside two-block group-algebra codes without identifying the two families.",
+          "origin": {
+            "kind": "curated",
+            "ref": "wang2023abelian"
+          },
+          "refs": [
+            "wang2023abelian",
+            "lin2023twoblock"
+          ],
+          "rung": "R5",
+          "type": "group-algebra"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:views:2@8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f",
+        "field": "views",
+        "id": "atlas-assertion:bivariate_bicycle:views:2",
+        "index": 2,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/views/2",
+        "source_sha256": "8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f",
+        "version_id": "atlas-assertion:bivariate_bicycle:views:2@sha256:8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The matrices form the three-term CSS complex R -> R^2 -> R with boundary maps [B;A] and [A|B]. Logical operators are middle homology classes, and the gross code's twelve logical qubits are the quotient dimension left after the two rank-66 boundary maps.",
+          "origin": {
+            "converter": "bivariate_bicycle.build checkmatrix-to-CSS-complex",
+            "kind": "derived",
+            "version": "v1"
+          },
+          "refs": [
+            "lin2023twoblock",
+            "bravyi2024bicycle"
+          ],
+          "rung": "R2",
+          "type": "homological"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:views:3@7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410",
+        "field": "views",
+        "id": "atlas-assertion:bivariate_bicycle:views:3",
+        "index": 3,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/views/3",
+        "source_sha256": "7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410",
+        "version_id": "atlas-assertion:bivariate_bicycle:views:3@sha256:7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "Each weight-six check joins three qubits in each data layer. The Tanner incidence can be split into two planar degree-three coupling layers, turning sparse monomials into a concrete syndrome-extraction graph while keeping the schedule and detector model separate from the static code.",
+          "origin": {
+            "kind": "curated",
+            "ref": "bravyi2024bicycle"
+          },
+          "refs": [
+            "bravyi2024bicycle",
+            "shaw2025morphing"
+          ],
+          "rung": "R4",
+          "type": "tanner-circuit"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:views:4@b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f",
+        "field": "views",
+        "id": "atlas-assertion:bivariate_bicycle:views:4",
+        "index": 4,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/views/4",
+        "source_sha256": "b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f",
+        "version_id": "atlas-assertion:bivariate_bicycle:views:4@sha256:b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The common quotient R/(A,B) controls the number of encoded qubits. Polynomial factors and common roots explain when that quotient appears, why finite blocks can have high rate, and why the studied subclass is not an asymptotically good family.",
+          "origin": {
+            "kind": "curated",
+            "ref": "postema2025existence"
+          },
+          "refs": [
+            "postema2025existence"
+          ],
+          "rung": "R5",
+          "type": "quotient-module"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:views:5@396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9",
+        "field": "views",
+        "id": "atlas-assertion:bivariate_bicycle:views:5",
+        "index": 5,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/views/5",
+        "source_sha256": "396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9",
+        "version_id": "atlas-assertion:bivariate_bicycle:views:5@sha256:396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "The same polynomial ideal can be read as excitation sectors, mobility constraints, and logical strings through a Koszul complex. This view exposes topological frustration and blocks the shortcut of declaring every finite BB code a trivial stack of independent toric codes.",
+          "origin": {
+            "kind": "curated",
+            "ref": "chen2025anyon"
+          },
+          "refs": [
+            "chen2025anyon"
+          ],
+          "rung": "R5",
+          "type": "anyon-koszul"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:views:6@264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46",
+        "field": "views",
+        "id": "atlas-assertion:bivariate_bicycle:views:6",
+        "index": 6,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/views/6",
+        "source_sha256": "264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46",
+        "version_id": "atlas-assertion:bivariate_bicycle:views:6@sha256:264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46"
+      },
+      {
+        "applies_to": {
+          "id": "eczoo-entity:qcga#collection",
+          "kind": "entity"
+        },
+        "content": {
+          "description": "For decoding, selected symmetries reduce parts of the syndrome problem to toric-code-like cylinders on which matching applies. The reduction is an operational decoder dictionary, not a global phase equivalence.",
+          "origin": {
+            "kind": "curated",
+            "ref": "sahay2026matching"
+          },
+          "refs": [
+            "sahay2026matching"
+          ],
+          "rung": "R2",
+          "type": "toric-cylinder"
+        },
+        "evidence_id": "atlas-evidence:bivariate_bicycle:views:7@4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da",
+        "field": "views",
+        "id": "atlas-assertion:bivariate_bicycle:views:7",
+        "index": 7,
+        "legacy_scope": "subject",
+        "migration_action": "materialize-explicit-scope",
+        "source_locator": "bivariate_bicycle/card.yaml#/views/7",
+        "source_sha256": "4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da",
+        "version_id": "atlas-assertion:bivariate_bicycle:views:7@sha256:4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da"
+      }
+    ]
+  },
+  "source": {
+    "collection": "atlas",
+    "encoding": "utf-8",
+    "entry_id": "bivariate_bicycle",
+    "path": "atlas/bivariate_bicycle/card.yaml",
+    "sha256": "c552e97d6ce5856ffa8af59112c81884552e8acd39f3dc418d26e134b21a5fd4",
+    "text": "id: bivariate_bicycle\nkind: family\nidentity:\n  canonical_name: \"Bivariate bicycle code\"\n  aliases: [\"BB code\", \"gross code (l=12, m=6 instance)\"]\npresentation:\n  orienting_view: {status: available, kind: lattice}\n  guided_tour: {status: available}\neczoo:\n  status: mapped\n  zoo_id: qcga\n  classification: exact-family\n  source:\n    repository_url: https://github.com/errorcorrectionzoo/eczoo_data\n    commit: b2437d9e2dc09284e04c66ef72ee81b7ed7bd129\n    retrieved_on: \"2026-08-05\"\n    path: codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/qcga.yml\n    sha256: 83ce75676b44561fbc7288fd030ead8af678152843bc1f3fa34fd9a800d71e24\n    page_url: https://errorcorrectionzoo.org/c/qcga\n    blob_url: https://github.com/errorcorrectionzoo/eczoo_data/blob/b2437d9e2dc09284e04c66ef72ee81b7ed7bd129/codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/qcga.yml\ndescription: >-\n  A translation-invariant CSS qLDPC family built from two sparse binary\n  polynomials on a finite two-dimensional torus. Each polynomial becomes a\n  cyclic-shift matrix; placing the two matrices in H_X=[A|B] and the swapped\n  transposes in H_Z=[B^T|A^T] makes commutation follow from the abelian\n  polynomial algebra. Representative finite blocks trade planar\n  nearest-neighbor layout for a second coupling layer and encode many logical\n  qubits at moderate distance.\nclaim_gaps:\n  - {property: d, target: wanted:fast-distance}\nviews:\n  - rung: R1\n    type: symplectic-css-checks\n    description: >-\n      Expanding every polynomial monomial as a torus translation produces two\n      sparse binary CSS matrices. Stacking their X and Z rows in symplectic\n      form is the universal executable baseline used for rank, logical, and\n      distance computations.\n    origin:\n      kind: derived\n      converter: \"bivariate_bicycle.build -> CheckMatrix.from_css\"\n      version: \"v1\"\n    refs: [bravyi2024bicycle]\n  - rung: R5\n    type: bivariate-polynomial\n    description: >-\n      A and B are sparse elements of F_2[x,y]/(x^l-1,y^m-1). Monomials are\n      torus translations, transpose reverses a translation, and the two CSS\n      check families are assembled without solving pairwise commutation\n      constraints.\n    origin: {kind: canonical}\n    refs: [bravyi2024bicycle]\n  - rung: R5\n    type: group-algebra\n    description: >-\n      The polynomial ring is the regular representation of the abelian group\n      Z_l x Z_m. This view isolates the exact reason A and B commute and places\n      BB codes inside two-block group-algebra codes without identifying the\n      two families.\n    origin: {kind: curated, ref: wang2023abelian}\n    refs: [wang2023abelian, lin2023twoblock]\n  - rung: R2\n    type: homological\n    description: >-\n      The matrices form the three-term CSS complex R -> R^2 -> R with boundary\n      maps [B;A] and [A|B]. Logical operators are middle homology classes, and\n      the gross code's twelve logical qubits are the quotient dimension left\n      after the two rank-66 boundary maps.\n    origin:\n      kind: derived\n      converter: \"bivariate_bicycle.build checkmatrix-to-CSS-complex\"\n      version: \"v1\"\n    refs: [lin2023twoblock, bravyi2024bicycle]\n  - rung: R4\n    type: tanner-circuit\n    description: >-\n      Each weight-six check joins three qubits in each data layer. The Tanner\n      incidence can be split into two planar degree-three coupling layers,\n      turning sparse monomials into a concrete syndrome-extraction graph while\n      keeping the schedule and detector model separate from the static code.\n    origin: {kind: curated, ref: bravyi2024bicycle}\n    refs: [bravyi2024bicycle, shaw2025morphing]\n  - rung: R5\n    type: quotient-module\n    description: >-\n      The common quotient R/(A,B) controls the number of encoded qubits.\n      Polynomial factors and common roots explain when that quotient appears,\n      why finite blocks can have high rate, and why the studied subclass is\n      not an asymptotically good family.\n    origin: {kind: curated, ref: postema2025existence}\n    refs: [postema2025existence]\n  - rung: R5\n    type: anyon-koszul\n    description: >-\n      The same polynomial ideal can be read as excitation sectors, mobility\n      constraints, and logical strings through a Koszul complex. This view\n      exposes topological frustration and blocks the shortcut of declaring\n      every finite BB code a trivial stack of independent toric codes.\n    origin: {kind: curated, ref: chen2025anyon}\n    refs: [chen2025anyon]\n  - rung: R2\n    type: toric-cylinder\n    description: >-\n      For decoding, selected symmetries reduce parts of the syndrome problem\n      to toric-code-like cylinders on which matching applies. The reduction is\n      an operational decoder dictionary, not a global phase equivalence.\n    origin: {kind: curated, ref: sahay2026matching}\n    refs: [sahay2026matching]\ncategories:\n  - {id: css, origin: {kind: verified}}\n  - {id: qldpc, origin: {kind: curated, ref: bravyi2024bicycle}}\nrefs:\n  - mackay2004sparse\n  - panteleev2021degenerate\n  - wang2023abelian\n  - lin2023twoblock\n  - bravyi2024bicycle\n  - postema2025existence\n  - chen2025anyon\n  - voss2025multivariate\n  - wang2026coprime\n  - eberhardt2024pruning\n  - liang2025planar\n  - steffan2025tile\n  - liang2025selfdual\n  - roffe2020decoding\n  - shaw2025morphing\n  - koutsioumpas2025autdec\n  - blue2026machine\n  - sahay2026matching\n  - pakhunov2026convergence\n  - pakhunov2026peeling\n  - cohen2022longrange\n  - xu2023constant\n  - eberhardt2024fold\n  - sayginel2025automorphisms\n  - breuckmann2026cups\n  - yoder2025tour\n  - xu2025batched\n  - wang2026lowoverhead\n  - poole2025rydberg\n  - berthusen2025local\n  - chen2025fusion\n  - chandra2026distributed\nparams:\n  l: \"positive cyclic order of x\"\n  m: \"positive cyclic order of y\"\n  a_terms: \"integer exponent pairs for the monomials of A, reduced modulo (l,m)\"\n  b_terms: \"integer exponent pairs for the monomials of B, reduced modulo (l,m)\"\nconstruction:\n  schema: qec-atlas-construction-v1\n  op: {id: bivariate_bicycle, version: 1}\n  inputs:\n    A:\n      ref: {kind: generator, id: bivariate_polynomial, version: 1}\n      params:\n        l: {instance_param: l}\n        m: {instance_param: m}\n        terms: {instance_param: a_terms}\n      output: parity_check\n    B:\n      ref: {kind: generator, id: bivariate_polynomial, version: 1}\n      params:\n        l: {instance_param: l}\n        m: {instance_param: m}\n        terms: {instance_param: b_terms}\n      output: parity_check\n  output: checkmatrix\n  match: exact-checkmatrix-v1\ntier: T3\nfit:\n  platforms:\n    [superconducting-long-range, neutral-atom-reconfigurable, modular-networked]\n  tasks: [memory, modular-computation]\ndecoders:\n  - id: bp-osd\n    status: standard\n    noise: \"memoryless Pauli and phenomenological qLDPC benchmarks\"\n    notes: >-\n      Belief propagation supplies soft reliabilities and ordered-statistics\n      postprocessing repairs many failures caused by degeneracy and short\n      Tanner-graph cycles. Performance belongs to the stated channel and\n      stopping/OSD settings, not to the bare check matrix.\n    refs: [roffe2020decoding, panteleev2021degenerate]\n  - id: bp-osd\n    status: research-grade\n    noise: \"circuit detector model for the seven-CNOT-layer extraction schedule\"\n    notes: >-\n      The original end-to-end study reports a 0.8% circuit-level threshold\n      for its BB memory family under the standard circuit-noise model,\n      depth-seven extraction, and BP-OSD. It is not a decoder-independent\n      threshold of every BB construction: changing the family, CNOT order,\n      detector model, noise normalization, or postprocessing defines a\n      different threshold experiment.\n    refs: [bravyi2024bicycle]\n  - id: mwpm\n    status: research-grade\n    noise: \"BB symmetry reduction to toric-code-like cylinders\"\n    notes: >-\n      A cylinder construction exposes matching subproblems and can be combined\n      with BP and over-matching. Its certificate is the specific symmetry\n      reduction; it does not turn every BB instance into independent toric\n      codes.\n    refs: [sahay2026matching]\nrealizations:\n  - platform: \"Kunlun long-range-coupled superconducting processor\"\n    status: demonstrated\n    description: >-\n      A [[18,4,4]] BB block used 32 transmons to execute all nonlocal\n      weight-six checks and repeated syndrome cycles. The reported logical\n      error per logical qubit per cycle was (8.91 +/- 0.17)%; this establishes\n      feasibility, not below-threshold scaling and not a gross-code run.\n    refs: [wang2026lowoverhead]\n  - platform: \"optimized Rydberg neutral-atom layout\"\n    status: proposed\n    description: >-\n      Gate routing and Rydberg interactions were co-designed for BB\n      connectivity. The result is a numerical architecture proposal rather\n      than a laboratory logical-memory demonstration.\n    refs: [poole2025rydberg]\n  - platform: \"layered two-dimensional hardware\"\n    status: proposed\n    description: >-\n      Motion or communication embeds long-range BB checks in a locally\n      connected device, including schedules that measure some costly checks\n      less often. The altered cadence and circuit noise must be decoded as\n      part of the proposal.\n    refs: [berthusen2025local]\n  - platform: \"degree-five morphing-circuit layout\"\n    status: proposed\n    description: >-\n      A related BB family lowers connectivity from degree six to five and uses\n      six CNOT rounds by morphing the code during extraction. It changes the\n      family and detector model; it is not a cheaper schedule for every BB\n      block.\n    refs: [shaw2025morphing]\n  - platform: \"modular gross-code architecture\"\n    status: proposed\n    description: >-\n      An instruction set, compiler, and end-to-end resource model organize\n      distance-12 and distance-18 BB modules into a computer. This closes an\n      architecture gap but remains a proposal, not a hardware realization.\n    refs: [yoder2025tour]\nrelations:\n  - type: special_case_of\n    target: two_bga\n    how: >-\n      Bivariate bicycle codes are the abelian two-block group-algebra codes\n      for Z_l x Z_m; general 2BGA codes may use other groups and need not have\n      a two-variable polynomial presentation.\n    refs: [wang2023abelian, lin2023twoblock]\noperations:\n  - gate: \"CNOT between identical BB blocks\"\n    mechanism: transversal\n    level: \"Clifford\"\n    cost: >-\n      one aligned pairwise physical-CNOT layer; module transport, alignment,\n      and correlated decoding are additional architecture costs\n    origin: {kind: claimed, ref: yoder2025tour}\n  - gate: \"selected logical Clifford generators\"\n    mechanism: fold-transversal\n    level: \"Clifford\"\n    cost: >-\n      a fold/permutation plus constant-depth physical Clifford layers; only\n      symmetric BB instances with a resolved logical action qualify\n    origin: {kind: claimed, ref: eberhardt2024fold}\n  - gate: \"logical Clifford operations through automorphisms\"\n    mechanism: fold-transversal\n    level: \"Clifford\"\n    cost: >-\n      a certified Tanner-graph permutation and its physical routing; the\n      induced symplectic action must be computed for the chosen block\n    origin: {kind: claimed, ref: sayginel2025automorphisms}\n  - gate: \"inter-block Pauli measurements and Clifford surgery\"\n    mechanism: surgery\n    level: \"Clifford\"\n    cost: >-\n      long-range ancilla patches, repeated measurements, and a joint decoder;\n      the resource count belongs to the selected modular protocol\n    origin: {kind: claimed, ref: yoder2025tour}\n  - gate: \"H / S / CNOT in the self-dual BB subfamily\"\n    mechanism: transversal\n    level: \"Clifford\"\n    cost: >-\n      constant-depth physical layers on blocks satisfying the extra\n      self-duality and twisted-torus conditions; not a gross-code claim\n    origin: {kind: claimed, ref: liang2025selfdual}\n",
+    "version": "qec-atlas-card-v1"
+  },
+  "source_binding": {
+    "binding_state": "clean",
+    "legacy_source": {
+      "commit": "b2437d9e2dc09284e04c66ef72ee81b7ed7bd129",
+      "continuity": "same-path-updated-bytes",
+      "path": "codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/qcga.yml",
+      "sha256": "83ce75676b44561fbc7288fd030ead8af678152843bc1f3fa34fd9a800d71e24",
+      "zoo_id": "qcga"
+    },
+    "source_commit": "5c11f03d77895fe46564fe792288304fe4b6a998",
+    "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:qcga",
+    "source_path": "codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/qcga.yml",
+    "source_sha256": "2593f496f1e3af46cfd90c94e2708d975ed98cbf0428f449f25755a1b95fbd0d",
+    "t206_entity_ids": [
+      "eczoo-entity:qcga#collection"
+    ],
+    "target_denotation_entity_ids": [
+      "eczoo-entity:qcga#collection"
+    ],
+    "target_disposition": "atomic"
+  },
+  "target_version": "entry-ontology-v2"
+}
