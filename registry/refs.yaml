@@ -1,0 +1,2005 @@
+# Controlled bibkey vocabulary for structured Atlas citations. ``alias_of``
+# preserves an explicitly known alternate key without treating it as a second
+# paper. Existing structured keys remain canonical when a fetch-verified T11
+# sweep used a different key for the same paper.
+- id: aasen2022automorphism
+  title: "Adiabatic paths of Hamiltonians, symmetries of topological order, and automorphism codes"
+  authors: "David Aasen, Zhenghan Wang, and Matthew B. Hastings"
+  year: 2022
+  url: "https://arxiv.org/abs/2203.11137"
+- id: aasen2023mqca
+  title: "Measurement Quantum Cellular Automata and Anomalies in Floquet Codes"
+  authors: "David Aasen, Jeongwan Haah, Zhi Li, and Roger S. K. Mong"
+  year: 2023
+  url: "https://arxiv.org/abs/2304.01277"
+- id: ahn2002continuous
+  title: "Continuous Quantum Error Correction via Quantum Feedback Control"
+  authors: "Charlene Ahn, Andrew C. Doherty, and Andrew J. Landahl"
+  year: 2002
+  url: "https://arxiv.org/abs/quant-ph/0110111"
+- id: aharonov1997fault
+  title: "Fault Tolerant Quantum Computation with Constant Error"
+  authors: "Dorit Aharonov and Michael Ben-Or"
+  year: 1997
+  url: "https://arxiv.org/abs/quant-ph/9611025"
+- id: alam2025board
+  title: "Bacon-Shor Board Games"
+  authors: "M. Sohaib Alam, Jun Zen, and Thomas R. Scruby"
+  year: 2025
+  url: "https://arxiv.org/abs/2504.02749"
+- id: aliferis2007subsystem
+  title: "Subsystem Fault Tolerance with the Bacon-Shor Code"
+  authors: "Panos Aliferis and Andrew W. Cross"
+  year: 2007
+  url: "https://arxiv.org/abs/quant-ph/0610063"
+- id: aloshious2018localequivalence
+  title: "On the Local Equivalence of 2D Color Codes and Surface Codes with Applications"
+  authors: "Arun B. Aloshious, Arjun Nitin Bhagoji, and Pradeep Kiran Sarvepalli"
+  year: 2018
+  url: "https://arxiv.org/abs/1804.00866"
+- id: anderson2014conversion
+  title: "Fault-Tolerant Conversion Between the Steane and Reed-Muller Quantum Codes"
+  authors: "Jonas T. Anderson, Guillaume Duclos-Cianci, and David Poulin"
+  year: 2014
+  url: "https://arxiv.org/abs/1403.2734"
+- id: andrist2011tricolored
+  title: "Tricolored Lattice Gauge Theory with Randomness: Fault Tolerance in Topological Color Codes"
+  authors: "Ruben S. Andrist, Helmut G. Katzgraber, Héctor Bombín, and Miguel A. Martín-Delgado"
+  year: 2011
+  url: "https://arxiv.org/abs/1005.0777"
+- {id: ashikhmin2020qds}
+- id: bacon2003decoherence
+  title: "Decoherence, Control, and Symmetry in Quantum Computers"
+  authors: "Dave Bacon"
+  year: 2003
+  url: "https://arxiv.org/abs/quant-ph/0305025"
+- id: bacon2006operator
+  title: "Operator Quantum Error Correcting Subsystems for Self-Correcting Quantum Memories"
+  authors: "Dave Bacon"
+  year: 2006
+  url: "https://arxiv.org/abs/quant-ph/0506023"
+- id: bauer2025nonclifford
+  title: "Low-overhead non-Clifford fault-tolerant circuits for all non-chiral abelian topological phases"
+  authors: "Andreas Bauer"
+  year: 2024
+  url: "https://arxiv.org/abs/2403.12119"
+- id: bennett1996mixed
+  title: "Mixed State Entanglement and Quantum Error Correction"
+  authors: "Charles H. Bennett, David P. DiVincenzo, John A. Smolin, and William K. Wootters"
+  year: 1996
+  url: "https://arxiv.org/abs/quant-ph/9604024"
+- {id: berthusen2025local}
+- id: besedin2025repetition
+  title: "Realizing Lattice Surgery on Two Distance-Three Repetition Codes with Superconducting Qubits"
+  authors: "Ilya Besedin et al."
+  year: 2025
+  url: "https://arxiv.org/abs/2501.04612"
+- id: bhatnagar2023lowdepth
+  title: "Low-Depth Flag-Style Syndrome Extraction for Small Quantum Error-Correction Codes"
+  authors: "Dhruv Bhatnagar, Matthew Steinberg, David Elkouss, Carmen G. Almudever, and Sebastian Feld"
+  year: 2023
+  url: "https://arxiv.org/abs/2305.00784"
+- id: blackwell2025distance
+  title: "The code distance of Floquet codes"
+  authors: "Keller Blackwell and Jeongwan Haah"
+  year: 2025
+  url: "https://arxiv.org/abs/2510.05549"
+- {id: blue2026machine}
+- id: bluvstein2024logical
+  title: "Logical quantum processor based on reconfigurable atom arrays"
+  authors: "Dolev Bluvstein et al."
+  year: 2024
+  url: "https://arxiv.org/abs/2312.03982"
+- {id: bluvstein2023logical, alias_of: bluvstein2024logical}
+- id: bluvstein2025architecture
+  title: "Architectural Mechanisms of a Universal Fault-Tolerant Quantum Computer"
+  authors: "Dolev Bluvstein et al."
+  year: 2025
+  url: "https://arxiv.org/abs/2506.20661"
+- {id: bodeker2025interpretable}
+- id: bombin2006topological
+  title: "Topological Quantum Distillation"
+  authors: "Héctor Bombín and Miguel A. Martín-Delgado"
+  year: 2006
+  url: "https://arxiv.org/abs/quant-ph/0605138"
+- id: bombin2007homological
+  title: "Homological Error Correction: Classical and Quantum Codes"
+  authors: "Héctor Bombín and Miguel A. Martín-Delgado"
+  year: 2007
+  url: "https://arxiv.org/abs/quant-ph/0605094"
+- id: bombin2007optimal
+  title: "Optimal Resources for Topological Two-Dimensional Stabilizer Codes: Comparative Study"
+  authors: "Héctor Bombín and Miguel A. Martín-Delgado"
+  year: 2007
+  url: "https://arxiv.org/abs/quant-ph/0703272"
+- id: bombin2010twist
+  title: "Topological Order with a Twist: Ising Anyons from an Abelian Model"
+  authors: "Héctor Bombín"
+  year: 2010
+  url: "https://arxiv.org/abs/1004.1838"
+- id: bombin2023unifying
+  title: "Unifying flavors of fault tolerance with the ZX calculus"
+  authors: "Héctor Bombín, Daniel Litinski, Naomi Nickerson, Fernando Pastawski, and Sam Roberts"
+  year: 2023
+  url: "https://arxiv.org/abs/2303.08829"
+- {id: bombin2024zx, alias_of: bombin2023unifying}
+- id: bonilla2021xzzx
+  title: "The XZZX Surface Code"
+  authors: "J. Pablo Bonilla Ataides, David K. Tuckett, Stephen D. Bartlett, Steven T. Flammia, and Benjamin J. Brown"
+  year: 2021
+  url: "https://arxiv.org/abs/2009.07851"
+- id: bravyi1998quantum
+  title: "Quantum codes on a lattice with boundary"
+  authors: "Sergey B. Bravyi and Alexei Yu. Kitaev"
+  year: 1998
+  url: "https://arxiv.org/abs/quant-ph/9811052"
+- id: bravyi2005magic
+  title: "Universal quantum computation with ideal Clifford gates and noisy ancillas"
+  authors: "Sergey Bravyi and Alexei Kitaev"
+  year: 2005
+  url: "https://arxiv.org/abs/quant-ph/0403025"
+- id: bravyi2009nogo
+  title: "A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes"
+  authors: "Sergey Bravyi and Barbara M. Terhal"
+  year: 2009
+  url: "https://arxiv.org/abs/0810.1983"
+- {id: bravyi2010majorana}
+- id: bravyi2010tradeoffs
+  title: "Tradeoffs for reliable quantum information storage in 2D systems"
+  authors: "Sergey Bravyi, David Poulin, and Barbara Terhal"
+  year: 2010
+  url: "https://arxiv.org/abs/0909.5200"
+- id: bravyi2011subsystem
+  title: "Subsystem Codes with Spatially Local Generators"
+  authors: "Sergey Bravyi"
+  year: 2011
+  url: "https://arxiv.org/abs/1008.1029"
+- id: bravyi2011energy
+  title: "Energy landscape of 3D spin Hamiltonians with topological order"
+  authors: "Sergey Bravyi and Jeongwan Haah"
+  year: 2011
+  url: "https://arxiv.org/abs/1105.4159"
+- id: bravyi2013classification
+  title: "Classification of topologically protected gates for local stabilizer codes"
+  authors: "Sergey Bravyi and Robert König"
+  year: 2013
+  url: "https://arxiv.org/abs/1206.1609"
+- id: bravyi2014efficient
+  title: "Efficient Algorithms for Maximum Likelihood Decoding in the Surface Code"
+  authors: "Sergey Bravyi, Martin Suchara, and Alexander Vargo"
+  year: 2014
+  url: "https://arxiv.org/abs/1405.4883"
+- id: bravyi2015doubled
+  title: "Doubled Color Codes"
+  authors: "Sergey Bravyi and Andrew Cross"
+  year: 2015
+  url: "https://arxiv.org/abs/1509.03239"
+- id: bravyi2024bicycle
+  title: "High-Threshold and Low-Overhead Fault-Tolerant Quantum Memory"
+  authors: "Sergey Bravyi, Andrew W. Cross, Jay M. Gambetta, Dmitri Maslov, Patrick Rall, and Theodore J. Yoder"
+  year: 2024
+  url: "https://arxiv.org/abs/2308.07915"
+- {id: bravyi2024high, alias_of: bravyi2024bicycle}
+- id: bravyihaah2012magic
+  title: "Magic State Distillation with Low Overhead"
+  authors: "Sergey Bravyi and Jeongwan Haah"
+  year: 2012
+  url: "https://arxiv.org/abs/1209.2426"
+- {id: breuckmann2026cups}
+- id: brooks2013asymmetric
+  title: "Fault-Tolerant Quantum Computation with Asymmetric Bacon-Shor Codes"
+  authors: "Peter Brooks and John Preskill"
+  year: 2013
+  url: "https://arxiv.org/abs/1211.1400"
+- id: brown2017poking
+  title: "Poking holes and cutting corners to achieve Clifford gates with the surface code"
+  authors: "Benjamin J. Brown, Katharina Laubscher, Markus S. Kesselring, and James R. Wootton"
+  year: 2017
+  url: "https://arxiv.org/abs/1609.04673"
+- id: butt2024switching
+  title: "Fault-Tolerant Code-Switching Protocols for Near-Term Quantum Processors"
+  authors: "Friederike Butt, Sascha Heußen, Manuel Rispler, and Markus Müller"
+  year: 2024
+  url: "https://arxiv.org/abs/2306.17686"
+- id: calderbank1996good
+  title: "Good Quantum Error-Correcting Codes Exist"
+  authors: "A. R. Calderbank and Peter W. Shor"
+  year: 1996
+  url: "https://arxiv.org/abs/quant-ph/9512032"
+- {id: campbell2016smallest}
+- id: cao2025exactrepetition
+  title: "Exact Decoding of Repetition Code under Circuit Level Noise"
+  authors: "Hanyan Cao, Shoukuan Zhao, Dongyang Feng, Zisong Shen, Haisheng Yan, Tang Su, Weijie Sun, Huikai Xu, Feng Pan, Haifeng Yu, and Pan Zhang"
+  year: 2025
+  url: "https://arxiv.org/abs/2501.03582"
+- id: cao2022quantumlego
+  title: "Quantum Lego: Building Quantum Error Correction Codes from Tensor Networks"
+  authors: "ChunJun Cao and Brad Lackey"
+  year: 2022
+  url: "https://arxiv.org/abs/2109.08158"
+- {id: chakraborty2026multiqubit}
+- id: chamberland2019flagmagic
+  title: "Fault-Tolerant Magic State Preparation with Flag Qubits"
+  authors: "Christopher Chamberland and Andrew W. Cross"
+  year: 2019
+  url: "https://arxiv.org/abs/1811.00566"
+- id: chamberland2020magic
+  title: "Very Low Overhead Fault-Tolerant Magic State Preparation Using Redundant Ancilla Encoding and Flag Qubits"
+  authors: "Christopher Chamberland and Kyungjoo Noh"
+  year: 2020
+  url: "https://arxiv.org/abs/2003.03049"
+- id: chamberland2020triangular
+  title: "Triangular Color Codes on Trivalent Graphs with Flag Qubits"
+  authors: "Christopher Chamberland, Aleksander Kubica, Theodore J. Yoder, and Guanyu Zhu"
+  year: 2020
+  url: "https://arxiv.org/abs/1911.00355"
+- {id: chandra2026distributed}
+- id: chao2018few
+  title: "Fault-Tolerant Quantum Computation with Few Qubits"
+  authors: "Rui Chao and Ben W. Reichardt"
+  year: 2018
+  url: "https://arxiv.org/abs/1705.05365"
+- id: chao2018twoextra
+  title: "Quantum Error Correction with Only Two Extra Qubits"
+  authors: "Rui Chao and Ben W. Reichardt"
+  year: 2018
+  url: "https://arxiv.org/abs/1705.02329"
+- id: chapman2022freefermion
+  title: "Free-Fermion Subsystem Codes"
+  authors: "Adrian Chapman, Steven T. Flammia, and Alicia J. Kollár"
+  year: 2022
+  url: "https://arxiv.org/abs/2201.07254"
+- {id: chen2025anyon}
+- id: chen2021repetitive
+  title: "Exponential Suppression of Bit or Phase Flip Errors with Repetitive Error Correction"
+  authors: "Zijun Chen et al. (Google Quantum AI)"
+  year: 2021
+  url: "https://arxiv.org/abs/2102.06132"
+- {id: chen2025fusion}
+- id: chen2025nishimori
+  title: "Realizing the Nishimori Transition across the Error Threshold for Constant-Depth Quantum Circuits"
+  authors: "Edward H. Chen et al."
+  year: 2025
+  url: "https://arxiv.org/abs/2309.02863"
+- id: chiaverini2004realization
+  title: "Realization of Quantum Error Correction"
+  authors: "J. Chiaverini et al."
+  year: 2004
+  url: "https://doi.org/10.1038/nature03074"
+- {id: claes2025dynamic}
+- {id: cohen2022longrange}
+- id: convy2022machine
+  title: "Machine Learning for Continuous Quantum Error Correction on Superconducting Qubits"
+  authors: "Ian Convy, Haoran Liao, Song Zhang, Sahil Patel, William P. Livingston, Ho Nam Nguyen, Irfan Siddiqi, and K. Birgitta Whaley"
+  year: 2022
+  url: "https://arxiv.org/abs/2110.10378"
+- id: cory1998experimental
+  title: "Experimental Quantum Error Correction"
+  authors: "D. G. Cory, W. Mass, M. Price, E. Knill, R. Laflamme, W. H. Zurek, T. F. Havel, and S. S. Somaroo"
+  year: 1998
+  url: "https://arxiv.org/abs/quant-ph/9802018"
+- id: cramer2016repeated
+  title: "Repeated Quantum Error Correction on a Continuously Encoded Qubit by Real-Time Feedback"
+  authors: "Julia Cramer, Norbert Kalb, M. Adriaan Rol, Bas Hensen, Machiel S. Blok, Matthew Markham, Daniel J. Twitchen, Ronald Hanson, and Tim H. Taminiau"
+  year: 2016
+  url: "https://arxiv.org/abs/1508.01388"
+- id: cross2009comparative
+  title: "A Comparative Code Study for Quantum Fault-Tolerance"
+  authors: "Andrew W. Cross, David P. DiVincenzo, and Barbara M. Terhal"
+  year: 2009
+  url: "https://arxiv.org/abs/0711.1556"
+- id: dasilva2018polygons
+  title: "Construction of Color Codes from Polygons"
+  authors: "Eduardo Brandani da Silva and Waldir S. Soares Junior"
+  year: 2018
+  url: "https://doi.org/10.1088/2399-6528/aad062"
+- {id: cruzbenito2026evolutionary}
+- id: daguerre2025magic
+  title: "Experimental Demonstration of High-Fidelity Logical Magic States from Code Switching"
+  authors: "Lucas Daguerre, Robin Blume-Kohout, Natalie C. Brown, David Hayes, and Isaac H. Kim"
+  year: 2025
+  url: "https://arxiv.org/abs/2506.14169"
+- id: davydova2023css
+  title: "Floquet codes without parent subsystem codes"
+  authors: "Margarita Davydova, Nathanan Tantivasadakarn, and Shankar Balasubramanian"
+  year: 2022
+  url: "https://arxiv.org/abs/2210.02468"
+- id: debeaudrap2020zx
+  title: "The ZX calculus is a language for surface code lattice surgery"
+  authors: "Niel de Beaudrap and Dominic Horsman"
+  year: 2020
+  url: "https://arxiv.org/abs/1704.08670"
+- id: delfosse2014projection
+  title: "Decoding Color Codes by Projection onto Surface Codes"
+  authors: "Nicolas Delfosse"
+  year: 2014
+  url: "https://arxiv.org/abs/1308.6207"
+- id: delfosse2021almost
+  title: "Almost-linear time decoding algorithm for topological codes"
+  authors: "Nicolas Delfosse and Naomi H. Nickerson"
+  year: 2021
+  url: "https://arxiv.org/abs/1709.06218"
+- id: dennis2002topological
+  title: "Topological quantum memory"
+  authors: "Eric Dennis, Alexei Kitaev, Andrew Landahl, and John Preskill"
+  year: 2002
+  url: "https://arxiv.org/abs/quant-ph/0110143"
+- {id: dessertaine2026photonic}
+- id: dorier2005compass
+  title: "The Quantum Compass Model on the Square Lattice"
+  authors: "J. Dorier, F. Becca, and F. Mila"
+  year: 2005
+  url: "https://arxiv.org/abs/cond-mat/0501708"
+- id: duclos2010fast
+  title: "Fast Decoders for Topological Quantum Codes"
+  authors: "Guillaume Duclos-Cianci and David Poulin"
+  year: 2010
+  url: "https://arxiv.org/abs/0911.0581"
+- id: ducloscianci2010fastcolor
+  title: "Fast Decoding Algorithm for Subspace and Subsystem Color Codes and Local Equivalence of Topological Phases"
+  authors: "Guillaume Duclos-Cianci, Héctor Bombín, and David Poulin"
+  year: 2010
+  url: "https://www.physics.usyd.edu.au/quantum/Coogee2011/Abstractv3.pdf"
+- {id: duncan2014quantomatic}
+- {id: eberhardt2024fold}
+- {id: eberhardt2024pruning}
+- id: egan2021fault
+  title: "Fault-Tolerant Operation of a Quantum Error-Correction Code"
+  authors: "Laird Egan et al."
+  year: 2021
+  url: "https://arxiv.org/abs/2009.11482"
+- id: eickbusch2024dynamic
+  title: "Demonstrating dynamic surface codes"
+  authors: "A. Eickbusch et al."
+  year: 2024
+  url: "https://arxiv.org/abs/2412.14360"
+- {id: ellison2023twist}
+- id: escobar2025improved
+  title: "Improved Performance of the Bacon-Shor Code with Steane's Syndrome Extraction Method"
+  authors: "Guillermo Escobar-Arrieta and Mauricio Gutiérrez"
+  year: 2025
+  url: "https://arxiv.org/abs/2403.01659"
+- {id: fahimniya2025hyperbolic}
+- id: farrelly2022localtensor
+  title: "Local Tensor-Network Codes"
+  authors: "Terry Farrelly, David K. Tuckett, and Thomas M. Stace"
+  year: 2022
+  url: "https://arxiv.org/abs/2109.11996"
+- id: fowler2011color
+  title: "2-D Color Code Quantum Computation"
+  authors: "Austin G. Fowler"
+  year: 2011
+  url: "https://arxiv.org/abs/0806.4827"
+- id: fowler2012surface
+  title: "Surface codes: Towards practical large-scale quantum computation"
+  authors: "Austin G. Fowler, Matteo Mariantoni, John M. Martinis, and Andrew N. Cleland"
+  year: 2012
+  url: "https://arxiv.org/abs/1208.0928"
+- {id: gidney2021fault}
+- {id: gidney2021honeycomb, alias_of: gidney2021fault}
+- {id: gidney2022planar}
+- id: gidney2023color
+  title: "New Circuits and an Open Source Decoder for the Color Code"
+  authors: "Craig Gidney and Cody Jones"
+  year: 2023
+  url: "https://arxiv.org/abs/2312.08813"
+- id: gidney2023less
+  title: "Less Bacon More Threshold"
+  authors: "Craig Gidney and Dave Bacon"
+  year: 2023
+  url: "https://arxiv.org/abs/2305.12046"
+- id: google2023suppressing
+  title: "Suppressing quantum errors by scaling a surface code logical qubit"
+  authors: "Google Quantum AI"
+  year: 2023
+  url: "https://arxiv.org/abs/2207.06431"
+- id: google2024below
+  title: "Quantum error correction below the surface code threshold"
+  authors: "Google Quantum AI"
+  year: 2024
+  url: "https://arxiv.org/abs/2408.13687"
+- id: gottesman1997stabilizer
+  title: "Stabilizer Codes and Quantum Error Correction"
+  authors: "Daniel Gottesman"
+  year: 1997
+  url: "https://arxiv.org/abs/quant-ph/9705052"
+- id: grassl2007product
+  title: "Quantum Block and Convolutional Codes from Self-Orthogonal Product Codes"
+  authors: "Markus Grassl and Martin Roetteler"
+  year: 2007
+  url: "https://arxiv.org/abs/quant-ph/0703181"
+- id: grassl2013automorphisms
+  title: "Leveraging Automorphisms of Quantum Codes for Fault-Tolerant Quantum Computation"
+  authors: "Markus Grassl and Martin Roetteler"
+  year: 2013
+  url: "https://arxiv.org/abs/1302.1035"
+- id: grassl1997erasure
+  title: "Codes for the Quantum Erasure Channel"
+  authors: "Markus Grassl, Thomas Beth, and Thomas Pellizzari"
+  year: 1997
+  url: "https://arxiv.org/abs/quant-ph/9610042"
+- id: rains1997distance
+  title: "Quantum Codes of Minimum Distance Two"
+  authors: "Eric M. Rains"
+  year: 1997
+  url: "https://arxiv.org/abs/quant-ph/9704043"
+- id: gingrich2003optical
+  title: "An All Linear Optical Quantum Memory Based on Quantum Error Correction"
+  authors: "Robert M. Gingrich, Pieter Kok, Hwang Lee, Farrokh Vatan, and Jonathan P. Dowling"
+  year: 2003
+  url: "https://arxiv.org/abs/quant-ph/0306098"
+- id: meier2012magic
+  title: "Magic-state distillation with the four-qubit code"
+  authors: "Adam M. Meier, Bryan Eastin, and Emanuel Knill"
+  year: 2012
+  url: "https://arxiv.org/abs/1204.4221"
+- id: criger2016thresholds
+  title: "Noise Thresholds for the [[4, 2, 2]]-concatenated Toric Code"
+  authors: "Ben Criger and Barbara M. Terhal"
+  year: 2016
+  url: "https://arxiv.org/abs/1604.04062"
+- id: gottesman2016small
+  title: "Quantum fault tolerance in small experiments"
+  authors: "Daniel Gottesman"
+  year: 2016
+  url: "https://arxiv.org/abs/1610.03507"
+- id: linke2017faulttolerant
+  title: "Fault-tolerant quantum error detection"
+  authors: "Norbert M. Linke, Mauricio Gutierrez, Kevin A. Landsman, Caroline Figgatt, Shantanu Debnath, Kenneth R. Brown, and Christopher Monroe"
+  year: 2017
+  url: "https://arxiv.org/abs/1611.06946"
+- id: takita2017experimental
+  title: "Experimental demonstration of fault-tolerant state preparation with superconducting qubits"
+  authors: "Maika Takita, Andrew W. Cross, A. D. Corcoles, Jerry M. Chow, and Jay M. Gambetta"
+  year: 2017
+  url: "https://arxiv.org/abs/1705.09259"
+- id: vuillot2018error
+  title: "Is Error Detection Helpful on IBM 5Q Chips?"
+  authors: "Christophe Vuillot"
+  year: 2018
+  url: "https://arxiv.org/abs/1705.08957"
+- id: roffe2018protecting
+  title: "Protecting quantum memories using coherent parity check codes"
+  authors: "Joschka Roffe, David Headley, Nicholas Chancellor, Dominic Horsman, and Viv Kendon"
+  year: 2018
+  url: "https://arxiv.org/abs/1709.01866"
+- id: harper2019faulttolerant
+  title: "Fault-Tolerant Logical Gates in the IBM Quantum Experience"
+  authors: "Robin Harper and Steven T. Flammia"
+  year: 2019
+  url: "https://arxiv.org/abs/1806.02359"
+- id: self2024protecting
+  title: "Protecting expressive circuits with a quantum error detection code"
+  authors: "Chris N. Self, Marcello Benedetti, and David Amaro"
+  year: 2024
+  url: "https://arxiv.org/abs/2211.06703"
+- id: gupta2024encoding
+  title: "Encoding a magic state with beyond break-even fidelity"
+  authors: "Riddhi S. Gupta et al."
+  year: 2024
+  url: "https://arxiv.org/abs/2305.13581"
+- id: cao2024robust
+  title: "Robust analog quantum simulators by quantum error-detecting codes"
+  authors: "Yingkang Cao, Suying Liu, Haowei Deng, Zihan Xia, Xiaodi Wu, and Yu-Xin Wang"
+  year: 2024
+  url: "https://arxiv.org/abs/2412.07764"
+- {id: grassl2007graphs}
+- id: guedes2024cellular
+  title: "Quantum Cellular Automata for Quantum Error Correction and Density Classification"
+  authors: "Thiago L. M. Guedes, Don Winter, and Markus Müller"
+  year: 2024
+  url: "https://arxiv.org/abs/2309.03608"
+- id: haah2011local
+  title: "Local stabilizer codes in three dimensions without string logical operators"
+  authors: "Jeongwan Haah"
+  year: 2011
+  url: "https://arxiv.org/abs/1101.1962"
+- {id: haah2022boundaries, alias_of: aitchison2023boundaries}
+- {id: harris2018holographic}
+- id: hastings2021dynamically
+  title: "Dynamically Generated Logical Qubits"
+  authors: "Matthew B. Hastings and Jeongwan Haah"
+  year: 2021
+  url: "https://arxiv.org/abs/2107.02194"
+- {id: hastings2021dynamical, alias_of: hastings2021dynamically}
+- {id: heussen2024measurementfree}
+- id: higgott2022pymatching
+  title: "PyMatching: A Python package for decoding quantum codes with minimum-weight perfect matching"
+  authors: "Oscar Higgott"
+  year: 2022
+  url: "https://arxiv.org/abs/2105.13082"
+- id: higgott2023beliefmatching
+  title: "Improved Decoding of Circuit Noise and Fragile Boundaries of Tailored Surface Codes"
+  authors: "Oscar Higgott, Thomas C. Bohdanowicz, Aleksander Kubica, Steven T. Flammia, and Earl T. Campbell"
+  year: 2023
+  url: "https://arxiv.org/abs/2203.04948"
+- id: horsman2012surface
+  title: "Surface code quantum computing by lattice surgery"
+  authors: "Clare Horsman, Austin G. Fowler, Simon Devitt, and Rodney Van Meter"
+  year: 2012
+  url: "https://arxiv.org/abs/1111.4022"
+- {id: hu2022divisible}
+- id: jochymoconnor2014concatenated
+  title: "Using Concatenated Quantum Codes for Universal Fault-Tolerant Quantum Gates"
+  authors: "Tomas Jochym-O'Connor and Raymond Laflamme"
+  year: 2014
+  url: "https://arxiv.org/abs/1309.3310"
+- {id: karzig2017majorana}
+- id: katzgraber2009threshold
+  title: "Error Threshold for Color Codes and Random Three-Body Ising Models"
+  authors: "Helmut G. Katzgraber, Héctor Bombín, and Miguel A. Martín-Delgado"
+  year: 2009
+  url: "https://arxiv.org/abs/0902.4845"
+- id: katzgraber2010unionjack
+  title: "Topological Color Codes on Union Jack Lattices: A Stable Implementation of the Whole Clifford Group"
+  authors: "Helmut G. Katzgraber, Héctor Bombín, Ruben S. Andrist, and Miguel A. Martín-Delgado"
+  year: 2010
+  url: "https://arxiv.org/abs/0910.0573"
+- id: kazmina2025detection
+  title: "Realization of a Quantum Error Detection Code with a Dynamically Reassigned Ancillary Qubit"
+  authors: "Alena S. Kazmina et al."
+  year: 2025
+  url: "https://arxiv.org/abs/2506.20529"
+- id: keane2012simple
+  title: "Simple Quantum Error Detection and Correction for Superconducting Qubits"
+  authors: "Kyle Keane and Alexander N. Korotkov"
+  year: 2012
+  url: "https://arxiv.org/abs/1205.1836"
+- id: kelly2015preservation
+  title: "State Preservation by Repetitive Error Detection in a Superconducting Quantum Circuit"
+  authors: "J. Kelly et al."
+  year: 2015
+  url: "https://arxiv.org/abs/1411.7403"
+- id: kesselring2024anyon
+  title: "Anyon Condensation and the Color Code"
+  authors: "Markus S. Kesselring, Julio C. Magdalena de la Fuente, Felix Thomsen, Jens Eisert, Stephen D. Bartlett, and Benjamin J. Brown"
+  year: 2024
+  url: "https://arxiv.org/abs/2212.00042"
+- id: khesin2025universalgraph
+  title: "Universal graph representation of stabilizer codes"
+  authors: "Andrey Boris Khesin, Jonathan Z. Lu, and Peter W. Shor"
+  year: 2025
+  url: "https://arxiv.org/abs/2411.14448"
+- id: kissinger2022phasefree
+  title: "Phase-free ZX diagrams are CSS codes (...or how to graphically grok the surface code)"
+  authors: "Aleks Kissinger"
+  year: 2022
+  url: "https://arxiv.org/abs/2204.14038"
+- id: kitaev2003fault
+  title: "Fault-tolerant quantum computation by anyons"
+  authors: "Alexei Yu. Kitaev"
+  year: 2003
+  url: "https://arxiv.org/abs/quant-ph/9707021"
+- {id: kitaev2006anyons}
+- {id: kobayashi2024crosscap}
+- id: koutsioumpas2025autdec
+  title: "Automorphism Ensemble Decoding of Quantum LDPC Codes"
+  authors: "Stergios Koutsioumpas, Hasan Sayginel, Mark Webster, and Dan E Browne"
+  year: 2025
+  url: "https://arxiv.org/abs/2503.01738"
+- id: kubica2015unfolding
+  title: "Unfolding the Color Code"
+  authors: "Aleksander Kubica, Beni Yoshida, and Fernando Pastawski"
+  year: 2015
+  url: "https://arxiv.org/abs/1503.02065"
+- id: kubica2015universal
+  title: "Universal Transversal Gates with Color Codes: A Simplified Approach"
+  authors: "Aleksander Kubica and Michael E. Beverland"
+  year: 2015
+  url: "https://arxiv.org/abs/1410.0069"
+- id: lacroix2025scaling
+  title: "Scaling and Logic in the Color Code on a Superconducting Quantum Processor"
+  authors: "Nathan Lacroix et al."
+  year: 2025
+  url: "https://arxiv.org/abs/2412.14256"
+- id: laflamme1996perfect
+  title: "Perfect Quantum Error Correction Code"
+  authors: "Raymond Laflamme, Cesar Miquel, Juan Pablo Paz, and Wojciech Hubert Zurek"
+  year: 1996
+  url: "https://arxiv.org/abs/quant-ph/9602019"
+- id: lai2025constant
+  title: "Fault-Tolerant Quantum Error Correction for Constant-Excitation Stabilizer Codes under Coherent Noise"
+  authors: "Ching-Yi Lai, Pei-Hao Liou, and Yingkai Ouyang"
+  year: 2025
+  url: "https://arxiv.org/abs/2507.10395v1"
+- id: laforest2007noise
+  title: "Using Error Correction to Determine the Noise Model"
+  authors: "M. Laforest, D. Simon, J.-C. Boileau, J. Baugh, M. Ditty, and R. Laflamme"
+  year: 2007
+  url: "https://arxiv.org/abs/quant-ph/0610038"
+- id: lake2025confinement
+  title: "Local Active Error Correction from Simulated Confinement"
+  authors: "Ethan Lake"
+  year: 2025
+  url: "https://arxiv.org/abs/2510.08056"
+- id: landahl2011color
+  title: "Fault-Tolerant Quantum Computing with Color Codes"
+  authors: "Andrew J. Landahl, Jonas T. Anderson, and Patrick R. Rice"
+  year: 2011
+  url: "https://arxiv.org/abs/1108.5738"
+- id: landahl2014latticesurgery
+  title: "Quantum Computing by Color-Code Lattice Surgery"
+  authors: "Andrew J. Landahl and Ciaran Ryan-Anderson"
+  year: 2014
+  url: "https://arxiv.org/abs/1407.5103"
+- id: lee2025colordecoder
+  title: "Color Code Decoder with Improved Scaling for Correcting Circuit-Level Noise"
+  authors: "Seok-Hyung Lee, Andrew Li, and Stephen D. Bartlett"
+  year: 2025
+  url: "https://arxiv.org/abs/2404.07482"
+- id: lee2025magiccolor
+  title: "Low-Overhead Magic State Distillation with Color Codes"
+  authors: "Seok-Hyung Lee, Felix Thomsen, Nicholas Fazio, Benjamin J. Brown, and Stephen D. Bartlett"
+  year: 2025
+  url: "https://arxiv.org/abs/2409.07707"
+- id: li2019compass
+  title: "2-D Compass Codes"
+  authors: "Muyuan Li, Daniel Miller, Michael Newman, Yukai Wu, and Kenneth R. Brown"
+  year: 2019
+  url: "https://arxiv.org/abs/1809.01193"
+- {id: liang2025planar}
+- {id: liang2025selfdual}
+- {id: liang2026qudit}
+- {id: lin2023twoblock}
+- id: liu2017quon
+  title: "Quon 3D language for quantum information"
+  authors: "Zhengwei Liu, Alex Wozniakowski, and Arthur M. Jaffe"
+  year: 2017
+  url: "https://arxiv.org/abs/1612.02630"
+- id: liu2025correlated
+  title: "The Correlated Matching Decoder for the 4.8.8 Color Code"
+  authors: "Yantong Liu, Junjie Wu, and Lingling Lao"
+  year: 2025
+  url: "https://arxiv.org/abs/2511.13192"
+- id: livingston2022continuous
+  title: "Experimental Demonstration of Continuous Quantum Error Correction"
+  authors: "William P. Livingston, Machiel S. Blok, Emmanuel Flurin, Justin Dressel, Andrew N. Jordan, and Irfan Siddiqi"
+  year: 2022
+  url: "https://arxiv.org/abs/2107.11398"
+- id: liu2019quantized
+  title: "Quantized Graphs and Quantum Error Correction"
+  authors: "Zhengwei Liu"
+  year: 2019
+  url: "https://arxiv.org/abs/1910.12065"
+- id: mackay2004sparse
+  title: "Sparse Graph Codes for Quantum Error-Correction"
+  authors: "David J. C. MacKay, Graeme Mitchison, and Paul L. McFadden"
+  year: 2004
+  url: "https://arxiv.org/abs/quant-ph/0304161v3"
+- id: martinezgarcia2024population
+  title: "Near-Optimal Decoding Algorithm for Color Codes Using Population Annealing"
+  authors: "Fernando Martínez-García, Francisco Revson F. Pereira, and Pedro Parrado-Rodríguez"
+  year: 2024
+  url: "https://arxiv.org/abs/2405.03776"
+- {id: mayer2024qft}
+- {id: mclauchlan2024defects}
+- id: moussa2016transversal
+  title: "Transversal Clifford gates on folded surface codes"
+  authors: "J. E. Moussa"
+  year: 2016
+  url: "https://arxiv.org/abs/1603.02286"
+- id: moussa2011tworounds
+  title: "Demonstration of Sufficient Control for Two Rounds of Quantum Error Correction in a Solid State Ensemble Quantum Information Processor"
+  authors: "Osama Moussa, Jonathan Baugh, Colm A. Ryan, and Raymond Laflamme"
+  year: 2011
+  url: "https://arxiv.org/abs/1108.4842"
+- {id: moylett2025folds}
+- id: muniz2025ancilla
+  title: "Repeated Ancilla Reuse for Logical Computation on a Neutral Atom Quantum Computer"
+  authors: "J. A. Muniz et al."
+  year: 2025
+  url: "https://arxiv.org/abs/2506.09936"
+- id: nakazato2022spin
+  title: "Quantum Error Correction of Spin Quantum Memories in Diamond under a Zero Magnetic Field"
+  authors: "Takaya Nakazato, Raustin Reyes, Nobuaki Imaike, Kazuyasu Matsuda, Kazuya Tsurumoto, Yuhei Sekiguchi, and Hideo Kosaka"
+  year: 2022
+  url: "https://doi.org/10.1038/s42005-022-00875-6"
+- id: napp2013optimal
+  title: "Optimal Bacon-Shor Codes"
+  authors: "John Napp and John Preskill"
+  year: 2013
+  url: "https://arxiv.org/abs/1209.0794"
+- id: nautrup2017interface
+  title: "Fault-Tolerant Interface Between Quantum Memories and Quantum Processors"
+  authors: "Hendrik Poulsen Nautrup, Nicolai Friis, and Hans J. Briegel"
+  year: 2017
+  url: "https://arxiv.org/abs/1609.08062"
+- id: nezami2022classification
+  title: "Classification of Small Triorthogonal Codes"
+  authors: "Sepehr Nezami and Jeongwan Haah"
+  year: 2022
+  url: "https://arxiv.org/abs/2107.09684"
+- id: nigg2014topological
+  title: "Experimental Quantum Computations on a Topologically Encoded Qubit"
+  authors: "Daniel Nigg et al."
+  year: 2014
+  url: "https://arxiv.org/abs/1403.5426"
+- id: ohzeki2009accuracy
+  title: "Accuracy Thresholds of Topological Color Codes on the Hexagonal and Square-Octagonal Lattices"
+  authors: "Masayuki Ohzeki"
+  year: 2009
+  url: "https://arxiv.org/abs/0903.2102"
+- id: obrien2005zmeasurement
+  title: "High-Fidelity Z-Measurement Error Correction of Optical Qubits"
+  authors: "J. L. O'Brien, G. J. Pryde, A. G. White, and T. C. Ralph"
+  year: 2005
+  url: "https://arxiv.org/abs/quant-ph/0408064"
+- id: paetznick2013universal
+  title: "Universal Fault-Tolerant Quantum Computation with Only Transversal Gates and Error Correction"
+  authors: "Adam Paetznick and Ben W. Reichardt"
+  year: 2013
+  url: "https://arxiv.org/abs/1304.3709"
+- {id: paetznick2023majorana}
+- id: paetznick2024logical
+  title: "Demonstration of Logical Qubits and Repeated Error Correction with Better-Than-Physical Error Rates"
+  authors: "A. Paetznick et al."
+  year: 2024
+  url: "https://arxiv.org/abs/2404.02280v3"
+- {id: pakhunov2026convergence}
+- {id: pakhunov2026peeling}
+- id: panteleev2021degenerate
+  title: "Degenerate Quantum LDPC Codes With Good Finite Length Performance"
+  authors: "Pavel Panteleev and Gleb Kalachev"
+  year: 2021
+  url: "https://arxiv.org/abs/1904.02703"
+- id: paletta2025defect
+  title: "High-Performance Local Decoders for Defect Matching in 1D"
+  authors: "Louis Paletta, Anthony Leverrier, Mazyar Mirrahimi, and Christophe Vuillot"
+  year: 2025
+  url: "https://arxiv.org/abs/2505.10162"
+- {id: perlin2026algorithms}
+- id: pittman2005linear
+  title: "Demonstration of Quantum Error Correction Using Linear Optics"
+  authors: "T. B. Pittman, B. C. Jacobs, and J. D. Franson"
+  year: 2005
+  url: "https://arxiv.org/abs/quant-ph/0502042"
+- {id: pogorelov2024switching}
+- {id: poole2025rydberg}
+- {id: poor2025ultralow}
+- {id: postema2025existence}
+- id: postler2022universal
+  title: "Demonstration of Fault-Tolerant Universal Quantum Gate Operations"
+  authors: "Lukas Postler et al."
+  year: 2022
+  url: "https://arxiv.org/abs/2111.12654"
+- {id: postler2024steaneec}
+- {id: preskill1998reliable}
+- id: raussendorf2007fault
+  title: "Topological fault-tolerance in cluster state quantum computation"
+  authors: "Robert Raussendorf, Jim Harrington, and Karl Goyal"
+  year: 2007
+  url: "https://arxiv.org/abs/quant-ph/0703143"
+- id: reed2012threequbit
+  title: "Realization of Three-Qubit Quantum Error Correction with Superconducting Circuits"
+  authors: "M. D. Reed, L. DiCarlo, S. E. Nigg, L. Sun, L. Frunzio, S. M. Girvin, and R. J. Schoelkopf"
+  year: 2012
+  url: "https://arxiv.org/abs/1109.4948"
+- {id: reichardt2020few}
+- id: reiter2017autonomous
+  title: "Autonomous Quantum Error Correction and Application to Quantum Sensing with Trapped Ions"
+  authors: "F. Reiter, A. S. Sørensen, P. Zoller, and C. A. Muschik"
+  year: 2017
+  url: "https://arxiv.org/abs/1702.08673"
+- id: riste2015bitflip
+  title: "Detecting Bit-Flip Errors in a Logical Qubit Using Stabilizer Measurements"
+  authors: "D. Ristè, S. Poletto, M.-Z. Huang, A. Bruno, V. Vesterinen, O.-P. Saira, L. DiCarlo"
+  year: 2015
+  url: "https://arxiv.org/abs/1411.5542"
+- {id: rodatz2025fault}
+- id: roffe2020decoding
+  title: "Decoding Across the Quantum Low-Density Parity-Check Code Landscape"
+  authors: "Joschka Roffe, David R. White, Simon Burton, and Earl Campbell"
+  year: 2020
+  url: "https://arxiv.org/abs/2005.07016"
+- {id: roffe2020bposd, alias_of: roffe2020decoding}
+- id: rozgonyi2023breakeven
+  title: "Break-Even Point of the Quantum Repetition Code"
+  authors: "Áron Rozgonyi and Gábor Széchenyi"
+  year: 2023
+  url: "https://arxiv.org/abs/2303.17810"
+- {id: ryananderson2021realtime}
+- id: ryananderson2022entangling
+  title: "Implementing Fault-Tolerant Entangling Gates on the Five-Qubit Code and the Color Code"
+  authors: "C. Ryan-Anderson et al."
+  year: 2022
+  url: "https://arxiv.org/abs/2208.01863"
+- id: sahay2022mobius
+  title: "A Decoder for the Triangular Color Code by Matching on a Möbius Strip"
+  authors: "Kaavya Sahay and Benjamin J. Brown"
+  year: 2022
+  url: "https://arxiv.org/abs/2108.11395"
+- {id: sahay2026matching}
+- id: sarma2013gauge
+  title: "Gauge Subsystems, Separability, and Robustness in Autonomous Quantum Memories"
+  authors: "Gopal Sarma and Hideo Mabuchi"
+  year: 2013
+  url: "https://arxiv.org/abs/1212.3564"
+- id: salesrodriguez2025magic
+  title: "Experimental Demonstration of Logical Magic State Distillation"
+  authors: "Pedro Sales Rodriguez et al."
+  year: 2025
+  url: "https://arxiv.org/abs/2412.15165"
+- id: sarovar2005continuous
+  title: "Continuous Quantum Error Correction"
+  authors: "Mohan Sarovar and G. J. Milburn"
+  year: 2005
+  url: "https://arxiv.org/abs/quant-ph/0501049"
+- id: schindler2011repetitive
+  title: "Experimental Repetitive Quantum Error Correction"
+  authors: "Philipp Schindler, Julio T. Barreiro, Thomas Monz, Volckmar Nebendahl, Daniel Nigg, Michael Chwalla, Markus Hennrich, and Rainer Blatt"
+  year: 2011
+  url: "https://doi.org/10.1126/science.1203329"
+- id: sayginel2025automorphisms
+  title: "Fault-Tolerant Logical Clifford Gates from Code Automorphisms"
+  authors: "Hasan Sayginel, Stergios Koutsioumpas, Mark Webster, Abhishek Rajput, and Dan E. Browne"
+  year: 2025
+  url: "https://arxiv.org/abs/2409.18175"
+- id: schuch2010peps
+  title: "PEPS as ground states: Degeneracy and topology"
+  authors: "Norbert Schuch, J. Ignacio Cirac, and David Pérez-García"
+  year: 2010
+  url: "https://arxiv.org/abs/1001.3807"
+- {id: setiawan2025x3z3}
+- id: shaw2008six
+  title: "Encoding One Logical Qubit Into Six Physical Qubits"
+  authors: "Bilal Shaw, Mark M. Wilde, Ognyan Oreshkov, Isaac Kremsky, and Daniel A. Lidar"
+  year: 2008
+  url: "https://arxiv.org/abs/0803.1495"
+- {id: shaw2025morphing}
+- id: sharf2000geometric
+  title: "A Study of Quantum Error Correction by Geometric Algebra and Liquid-State NMR Spectroscopy"
+  authors: "Yehuda Sharf, David G. Cory, Shyamal S. Somaroo, Timothy F. Havel, Emanuel Knill, and Raymond Laflamme"
+  year: 2000
+  url: "https://arxiv.org/abs/quant-ph/0004030"
+- id: shor1995scheme
+  title: "Scheme for Reducing Decoherence in Quantum Computer Memory"
+  authors: "Peter W. Shor"
+  year: 1995
+  url: "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.52.R2493"
+- {id: shor1996fault}
+- {id: steane1996error}
+- {id: steane1996multiple}
+- id: steane1996quantumrm
+  title: "Quantum Reed-Muller Codes"
+  authors: "Andrew Steane"
+  year: 1996
+  url: "https://arxiv.org/abs/quant-ph/9608026"
+- id: steane1996simple
+  title: "Simple Quantum Error-Correcting Codes"
+  authors: "Andrew M. Steane"
+  year: 1996
+  url: "https://arxiv.org/abs/quant-ph/9605021"
+- id: stephens2014decoding
+  title: "Efficient Fault-Tolerant Decoding of Topological Color Codes"
+  authors: "Ashley M. Stephens"
+  year: 2014
+  url: "https://arxiv.org/abs/1402.3037"
+- id: steffan2025tile
+  title: 'Tile Codes: High-Efficiency Quantum Codes on a Lattice with Boundary'
+  authors: Vincent Steffan, Shin Ho Choe, Nikolas P. Breuckmann, Francisco Revson Fernandes
+    Pereira, and Jens Niklas Eberhardt
+  year: 2025
+  url: https://arxiv.org/abs/2504.09171v1
+- {id: sullivan2023twistnetworks}
+- id: sullivan2024golay
+  title: "Code Conversion with the Quantum Golay Code for a Universal Transversal Gate Set"
+  authors: "Matthew Sullivan"
+  year: 2024
+  url: "https://arxiv.org/abs/2307.14425"
+- {id: sun2025dynamical}
+- id: sun2025floquetbacon
+  title: "Logical Operations with a Dynamical Qubit in Floquet-Bacon-Shor Code"
+  authors: "Xuandong Sun et al."
+  year: 2025
+  url: "https://arxiv.org/abs/2503.03867"
+- id: thomsen2024lowoverhead
+  title: "Low-Overhead Quantum Computing with the Color Code"
+  authors: "Felix Thomsen, Markus S. Kesselring, Stephen D. Bartlett, and Benjamin J. Brown"
+  year: 2024
+  url: "https://arxiv.org/abs/2201.07806"
+- id: takada2024flagged
+  title: "Improving Threshold for Fault-Tolerant Color Code Quantum Computing by Flagged Weight Optimization"
+  authors: "Yugo Takada and Keisuke Fujii"
+  year: 2024
+  url: "https://arxiv.org/abs/2402.13958"
+- id: takeda2022silicon
+  title: "Quantum Error Correction with Silicon Spin Qubits"
+  authors: "Kenta Takeda, Akito Noiri, Takashi Nakajima, Takashi Kobayashi, and Seigo Tarucha"
+  year: 2022
+  url: "https://arxiv.org/abs/2201.08581"
+- id: tansuwannont2021capped
+  title: "Achieving Fault Tolerance on Capped Color Codes with Few Ancillas"
+  authors: "Theerapat Tansuwannont and Debbie Leung"
+  year: 2021
+  url: "https://arxiv.org/abs/2106.02649"
+- id: taminiau2014multiqubit
+  title: "Universal Control and Error Correction in Multi-Qubit Spin Registers in Diamond"
+  authors: "T. H. Taminiau, J. Cramer, T. van der Sar, V. V. Dobrovitski, and R. Hanson"
+  year: 2014
+  url: "https://arxiv.org/abs/1309.5452"
+- id: tillich2009quantum
+  title: "Quantum LDPC codes with positive rate and minimum distance proportional to the square root of the blocklength"
+  authors: "Jean-Pierre Tillich and Gilles Zémor"
+  year: 2009
+  url: "https://arxiv.org/abs/0903.0566"
+- {id: tobias2026worm}
+- id: vaidman1996error
+  title: "Error Prevention Scheme with Four Particles"
+  authors: "Lev Vaidman, Lior Goldenberg, and Stephen Wiesner"
+  year: 1996
+  url: "https://arxiv.org/abs/quant-ph/9603031"
+- id: vanriggelen2022phaseflip
+  title: "Phase Flip Code with Semiconductor Spin Qubits"
+  authors: "F. van Riggelen, W. I. L. Lawrie, M. Russ, N. W. Hendrickx, A. Sammak, M. Rispler, B. M. Terhal, G. Scappucci, and M. Veldhorst"
+  year: 2022
+  url: "https://arxiv.org/abs/2202.11530"
+- id: vasmer2022morphing
+  title: "Morphing Quantum Codes"
+  authors: "Michael Vasmer and Aleksander Kubica"
+  year: 2022
+  url: "https://arxiv.org/abs/2112.01446"
+- id: veroni2025measurementfree
+  title: "Universal Quantum Computation via Scalable Measurement-Free Error Correction"
+  authors: "Stefano Veroni, Alexandru Paler, and Giacomo Giudice"
+  year: 2025
+  url: "https://arxiv.org/abs/2412.15187"
+- {id: voss2025multivariate}
+- {id: vuillot2021planar}
+- id: waldherr2014solidstate
+  title: "Quantum Error Correction in a Solid-State Hybrid Spin Register"
+  authors: "G. Waldherr et al."
+  year: 2014
+  url: "https://arxiv.org/abs/1309.6424"
+- id: wang2010graphical
+  title: "Graphical Algorithms and Threshold Error Rates for the 2D Colour Code"
+  authors: "D. S. Wang, A. G. Fowler, C. D. Hill, and L. C. L. Hollenberg"
+  year: 2010
+  url: "https://arxiv.org/abs/0907.1708"
+- id: wang2003confinement
+  title: "Confinement-Higgs transition in a disordered gauge theory and the accuracy threshold for quantum memory"
+  authors: "Chenyang Wang, Jim Harrington, and John Preskill"
+  year: 2003
+  url: "https://arxiv.org/abs/quant-ph/0207088"
+- {id: wang2023abelian}
+- {id: wang2026bbs}
+- {id: wang2026coprime}
+- {id: wang2026lowoverhead}
+- {id: watanabe2026fermionic3d}
+- id: webster2022xp
+  title: "The XP Stabiliser Formalism: a Generalisation of the Pauli Stabiliser Formalism with Arbitrary Phases"
+  authors: "Mark A. Webster, Benjamin J. Brown, and Stephen D. Bartlett"
+  year: 2022
+  url: "https://arxiv.org/abs/2203.00103"
+- id: wootton2022plaquettes
+  title: "Measurements of Floquet code plaquette stabilizers"
+  authors: "James R. Wootton"
+  year: 2022
+  url: "https://arxiv.org/abs/2210.13154"
+- id: wootton2018repetition
+  title: "A Repetition Code of 15 Qubits"
+  authors: "James R. Wootton and Daniel Loss"
+  year: 2018
+  url: "https://arxiv.org/abs/1709.00990"
+- id: wootton2020benchmarking
+  title: "Benchmarking Near-Term Devices with Quantum Error Correction"
+  authors: "James R. Wootton"
+  year: 2020
+  url: "https://arxiv.org/abs/2004.11037"
+- {id: xu2023constant}
+- {id: xu2025batched}
+- id: yoder2016pieceable
+  title: "Universal Fault-Tolerant Gates on Concatenated Stabilizer Codes"
+  authors: "Theodore J. Yoder, Ryuji Takagi, and Isaac L. Chuang"
+  year: 2016
+  url: "https://arxiv.org/abs/1603.03948"
+- id: yoder2017universalbacon
+  title: "Universal Fault-Tolerant Quantum Computation with Bacon-Shor Codes"
+  authors: "Theodore J. Yoder"
+  year: 2017
+  url: "https://arxiv.org/abs/1705.01686"
+- id: yoder2019optimal
+  title: "Optimal Quantum Subsystem Codes in Two Dimensions"
+  authors: "Theodore J. Yoder"
+  year: 2019
+  url: "https://arxiv.org/abs/1901.06319"
+- {id: yoder2025tour}
+- {id: yoshida2025concatenate}
+- id: zen2025circuit
+  title: "Quantum Circuit Discovery for Fault-Tolerant Logical State Preparation with Reinforcement Learning"
+  authors: "Remmy Zen, Jan Olle, Luis Colmenarez, Matteo Puviani, Markus Müller, and Florian Marquardt"
+  year: 2025
+  url: "https://arxiv.org/abs/2402.17761"
+- {id: zeng2007transversality}
+- id: zhang2011highfidelity
+  title: "Experimental Quantum Error Correction with High Fidelity"
+  authors: "Jingfu Zhang, Dorian Gangloff, Osama Moussa, and Raymond Laflamme"
+  year: 2011
+  url: "https://arxiv.org/abs/1109.4821"
+- id: zhang2026bidirectional
+  title: "Bidirectional Decoding for Concatenated Quantum Hamming Codes"
+  authors: "Chao Zhang, Zipeng Wu, Jiahui Wu, and Shilin Huang"
+  year: 2026
+  url: "https://arxiv.org/abs/2601.09131"
+- id: zhao2022realization
+  title: "Realization of an Error-Correcting Surface Code with Superconducting Qubits"
+  authors: "Y. Zhao et al."
+  year: 2022
+  url: "https://arxiv.org/abs/2112.13505"
+- {id: zhu2023majoranaliquid}
+
+# Fetch-verified primary works shared by the T71 batch-02 research sweep.
+- id: aitchison2023boundaries
+  title: "No Strings Attached: Boundaries and Defects in the Cubic Code"
+  authors: "Cory T. Aitchison, Daniel Bulmash, Arpit Dua, Andrew C. Doherty, and Dominic J. Williamson"
+  year: 2023
+  url: "https://arxiv.org/abs/2308.00138"
+- id: aitchison2024competing
+  title: "Competing automorphisms and disordered Floquet codes"
+  authors: "Cory T. Aitchison and Benjamin Béri"
+  year: 2024
+  url: "https://arxiv.org/abs/2410.02398"
+- id: bravyi2011selfcorrection
+  title: "Analytic and numerical demonstration of quantum self-correction in the 3D Cubic Code"
+  authors: "Sergey Bravyi and Jeongwan Haah"
+  year: 2011
+  url: "https://arxiv.org/abs/1112.3252"
+- id: davydova2024dynamic
+  title: "Quantum computation from dynamic automorphism codes"
+  authors: "Margarita Davydova, Nathanan Tantivasadakarn, Shankar Balasubramanian, and David Aasen"
+  year: 2024
+  url: "https://arxiv.org/abs/2307.10353"
+- id: delfosse2021measurement
+  title: "Bounds on stabilizer measurement circuits and obstructions to local implementations of quantum LDPC codes"
+  authors: "Nicolas Delfosse, Michael E. Beverland, and Maxime A. Tremblay"
+  year: 2021
+  url: "https://arxiv.org/abs/2109.14599"
+- id: dua2019compactifying
+  title: "Compactifying fracton stabilizer models"
+  authors: "Arpit Dua, Dominic J. Williamson, Jeongwan Haah, and Meng Cheng"
+  year: 2019
+  url: "https://arxiv.org/abs/1903.12246"
+- id: dua2019sorting
+  title: "Sorting topological stabilizer models in three dimensions"
+  authors: "Arpit Dua, Isaac H. Kim, Meng Cheng, and Dominic J. Williamson"
+  year: 2019
+  url: "https://arxiv.org/abs/1908.08049"
+- id: fawzi2017efficient
+  title: "Efficient decoding of random errors for quantum expander codes"
+  authors: "Omar Fawzi, Antoine Grospellier, and Anthony Leverrier"
+  year: 2017
+  url: "https://arxiv.org/abs/1711.08351"
+- id: fawzi2018constant
+  title: "Constant overhead quantum fault-tolerance with quantum expander codes"
+  authors: "Omar Fawzi, Antoine Grospellier, and Anthony Leverrier"
+  year: 2018
+  url: "https://arxiv.org/abs/1808.03821"
+- id: golowich2025addressable
+  title: "Constant-Overhead Addressable Gates via Single-Shot Code Switching"
+  authors: "Louis Golowich, Kathleen Chang, and Guanyu Zhu"
+  year: 2025
+  url: "https://arxiv.org/abs/2510.06760"
+- id: gottesman2013constant
+  title: "Fault-Tolerant Quantum Computation with Constant Overhead"
+  authors: "Daniel Gottesman"
+  year: 2013
+  url: "https://arxiv.org/abs/1310.2984"
+- id: haah2014bifurcation
+  title: "Bifurcation in entanglement renormalization group flow of a gapped spin model"
+  authors: "Jeongwan Haah"
+  year: 2013
+  url: "https://arxiv.org/abs/1310.4507"
+- id: hoory2006expander
+  title: "Expander graphs and their applications"
+  authors: "Shlomo Hoory, Nathan Linial, and Avi Wigderson"
+  year: 2006
+  url: "https://doi.org/10.1090/S0273-0979-06-01126-8"
+- id: leverrier2015quantumexpander
+  title: "Quantum Expander Codes"
+  authors: "Anthony Leverrier, Jean-Pierre Tillich, and Gilles Zémor"
+  year: 2015
+  url: "https://arxiv.org/abs/1504.00822"
+- id: placke2024spin
+  title: "Topological Quantum Spin Glass Order and its realization in qLDPC codes"
+  authors: "Benedikt Placke, Tibor Rakovszky, Nikolas P. Breuckmann, and Vedika Khemani"
+  year: 2024
+  url: "https://arxiv.org/abs/2412.13248"
+- id: prabhu2025peeling
+  title: "On the Efficacy of the Peeling Decoder for the Quantum Expander Code"
+  authors: "Jefrin Sharmitha Prabhu, Abhinav Vaishya, Shobhit Bhatnagar, Aryaman Manish Kolhe, V. Lalitha, and P. Vijay Kumar"
+  year: 2025
+  url: "https://arxiv.org/abs/2504.21845"
+- id: shirley2018foliated
+  title: "Foliated fracton order from gauging subsystem symmetries"
+  authors: "Wilbur Shirley, Kevin Slagle, and Xie Chen"
+  year: 2018
+  url: "https://arxiv.org/abs/1806.08679"
+- id: song2021defect
+  title: "Topological defect network representations of fracton stabilizer codes"
+  authors: "Zijian Song, Arpit Dua, Wilbur Shirley, and Dominic J. Williamson"
+  year: 2021
+  url: "https://arxiv.org/abs/2112.14717"
+- id: tang2025floquet
+  title: "Phases of Floquet code under local decoherence"
+  authors: "Yuchen Tang and Yimu Bao"
+  year: 2025
+  url: "https://arxiv.org/abs/2504.19041"
+- id: tian2018manifolds
+  title: "Haah codes on general three manifolds"
+  authors: "Kevin T. Tian, Eric Samperton, and Zhenghan Wang"
+  year: 2018
+  url: "https://arxiv.org/abs/1812.02101"
+- id: vijay2016fracton
+  title: "Fracton Topological Order, Generalized Lattice Gauge Theory and Duality"
+  authors: "Sagar Vijay, Jeongwan Haah, and Liang Fu"
+  year: 2016
+  url: "https://arxiv.org/abs/1603.04442"
+- id: williamson2016fractal
+  title: "Fractal symmetries: Ungauging the cubic code"
+  authors: "Dominic J. Williamson"
+  year: 2016
+  url: "https://arxiv.org/abs/1603.05182"
+- id: aasen2020defect
+  title: "Topological Defect Networks for Fractons of all Types"
+  authors: "David Aasen, Daniel Bulmash, Abhinav Prem, Kevin Slagle, and Dominic J. Williamson"
+  year: 2020
+  url: "https://arxiv.org/abs/2002.05166"
+- id: dua2019bifurcating
+  title: "Bifurcating entanglement-renormalization group flows of fracton stabilizer models"
+  authors: "Arpit Dua, Pratyush Sarkar, Dominic J. Williamson, and Meng Cheng"
+  year: 2019
+  url: "https://arxiv.org/abs/1909.12304"
+- id: mian2026multicycle
+  title: "Multivariate Multicycle Codes for Complete Single-Shot Decoding"
+  authors: "Feroz Ahmed Mian, Owen Gwilliam, and Stefan Krastanov"
+  year: 2026
+  url: "https://arxiv.org/abs/2601.18879"
+- id: rakovszky2023physics
+  title: "The Physics of (good) LDPC Codes I. Gauging and dualities"
+  authors: "Tibor Rakovszky and Vedika Khemani"
+  year: 2023
+  url: "https://arxiv.org/abs/2310.16032"
+- id: tian2019generalized
+  title: "Generalized Haah Codes and Fracton Models"
+  authors: "Kevin T. Tian and Zhenghan Wang"
+  year: 2019
+  url: "https://arxiv.org/abs/1902.04543"
+- id: berthusen2025adaptive
+  title: "Adaptive Syndrome Extraction"
+  authors: "Noah Berthusen, Shi Jie Samuel Tan, Eric Huang, and Daniel Gottesman"
+  year: 2025
+  url: "https://arxiv.org/abs/2502.14835"
+- id: berthusen2025automorphism
+  title: "Automorphism gadgets in homological product codes"
+  authors: "Noah Berthusen, Michael J. Gullans, Yifan Hong, Maryam Mudassar, and Shi Jie Samuel Tan"
+  year: 2025
+  url: "https://arxiv.org/abs/2508.04794"
+- id: bravyi2013homological
+  title: "Homological Product Codes"
+  authors: "Sergey Bravyi and Matthew B. Hastings"
+  year: 2013
+  url: "https://arxiv.org/abs/1311.0885"
+- id: chandra2025nonlocal
+  title: "Non-local resources for error correction in quantum LDPC codes"
+  authors: "Omprakash Chandra, Gopikrishnan Muraleedharan, and Gavin K. Brennen"
+  year: 2025
+  url: "https://arxiv.org/abs/2409.05818"
+- id: connolly2024erasure
+  title: "Fast erasure decoder for hypergraph product codes"
+  authors: "Nicholas Connolly, Vivien Londe, Anthony Leverrier, and Nicolas Delfosse"
+  year: 2024
+  url: "https://arxiv.org/abs/2208.01002"
+- id: cross2025small
+  title: "Small Binary Stabilizer Subsystem Codes"
+  authors: "Andrew Cross and Drew Vandeth"
+  year: 2025
+  url: "https://arxiv.org/abs/2501.17447"
+- id: debroy2021optimizing
+  title: "Optimizing Stabilizer Parities for Improved Logical Qubit Memories"
+  authors: "Dripto M. Debroy, Laird Egan, Crystal Noel, Andrew Risinger, Daiwei Zhu, Debopriyo Biswas, Marko Cetina, Chris Monroe, and Kenneth R. Brown"
+  year: 2021
+  url: "https://arxiv.org/abs/2105.05068"
+- id: freedman1998projective
+  title: "Projective plane and planar quantum codes"
+  authors: "Michael H. Freedman and David A. Meyer"
+  year: 1998
+  url: "https://arxiv.org/abs/quant-ph/9810055"
+- id: freire2025optimizing
+  title: "Optimizing hypergraph product codes with random walks, simulated annealing and reinforcement learning"
+  authors: "Bruno C. A. Freire, Nicolas Delfosse, and Anthony Leverrier"
+  year: 2025
+  url: "https://arxiv.org/abs/2501.09622"
+- id: fu2025nogo
+  title: "No-go theorems for logical gates on product quantum codes"
+  authors: "Esther Xiaozhen Fu, Han Zheng, Zimu Li, and Zi-Wen Liu"
+  year: 2025
+  url: "https://arxiv.org/abs/2507.16797"
+- id: gokduman2024erasure
+  title: "Erasure Decoding for Quantum LDPC Codes via Belief Propagation with Guided Decimation"
+  authors: "Mert Gökduman, Hanwen Yao, and Henry D. Pfister"
+  year: 2024
+  url: "https://arxiv.org/abs/2411.08177"
+- id: higgott2023singleshot
+  title: "Improved single-shot decoding of higher dimensional hypergraph product codes"
+  authors: "Oscar Higgott and Nikolas P. Breuckmann"
+  year: 2023
+  url: "https://arxiv.org/abs/2206.03122"
+- id: hong2025singleshot
+  title: "Single-shot preparation of hypergraph product codes via dimension jump"
+  authors: "Yifan Hong"
+  year: 2025
+  url: "https://arxiv.org/abs/2410.05171"
+- id: huang2021ninequbit
+  title: "New construction of nine-qubit error-correcting code"
+  authors: "Long Huang and Xiaohua Wu"
+  year: 2021
+  url: "https://arxiv.org/abs/2110.05130"
+- id: kovalev2012improved
+  title: "Improved quantum hypergraph-product LDPC codes"
+  authors: "Alexey A. Kovalev and Leonid P. Pryadko"
+  year: 2012
+  url: "https://arxiv.org/abs/1202.0928"
+- id: kovalev2013fault
+  title: "Fault-Tolerance of Bad Quantum Low-Density Parity Check Codes"
+  authors: "Alexey A. Kovalev and Leonid P. Pryadko"
+  year: 2013
+  url: "https://arxiv.org/abs/1208.2317"
+- id: kovalev2018threshold
+  title: "Numerical and analytical bounds on threshold error rates for hypergraph-product codes"
+  authors: "Alexey A. Kovalev, Sanjay Prabhakar, Ilya Dumer, and Leonid P. Pryadko"
+  year: 2018
+  url: "https://arxiv.org/abs/1804.01950"
+- id: krishna2021gates
+  title: "Fault-tolerant gates on hypergraph product codes"
+  authors: "Anirudh Krishna and David Poulin"
+  year: 2021
+  url: "https://arxiv.org/abs/1909.07424"
+- id: krishna2023viderman
+  title: "Viderman's algorithm for quantum LDPC codes"
+  authors: "Anirudh Krishna, Inbal Livni Navon, and Mary Wootters"
+  year: 2023
+  url: "https://arxiv.org/abs/2310.07868"
+- id: leverrier2020xyz
+  title: "Quantum XYZ Product Codes"
+  authors: "Anthony Leverrier, Simon Apers, and Christophe Vuillot"
+  year: 2020
+  url: "https://arxiv.org/abs/2011.09746"
+- id: manes2025distance
+  title: "Distance-preserving stabilizer measurements in hypergraph product codes"
+  authors: "Argyris Giannisis Manes and Jahan Claes"
+  year: 2025
+  url: "https://arxiv.org/abs/2308.15520"
+- id: nguyen2021shor
+  title: "Demonstration of Shor encoding on a trapped-ion quantum computer"
+  authors: "Nhung H. Nguyen, Muyuan Li, Alaina M. Green, Cinthia Huerta Alderete, Yingyue Zhu, Daiwei Zhu, Kenneth R. Brown, and Norbert M. Linke"
+  year: 2021
+  url: "https://arxiv.org/abs/2104.01205"
+- id: pabla2026spatial
+  title: "Spatial overhead reduction for 2D hypergraph product codes"
+  authors: "Aarav Pabla, Yu-Xin Wang, and Yifan Hong"
+  year: 2026
+  url: "https://arxiv.org/abs/2605.11318"
+- id: patra2025targeted
+  title: "Targeted Clifford logical gates for hypergraph product codes"
+  authors: "Adway Patra and Alexander Barg"
+  year: 2025
+  url: "https://arxiv.org/abs/2411.17050"
+- id: pradhan2025linear
+  title: "Linear Time Iterative Decoders for Hypergraph-Product and Lifted-Product Codes"
+  authors: "Asit Kumar Pradhan, Nithin Raveendran, Narayanan Rengaswamy, and Bane Vasić"
+  year: 2025
+  url: "https://arxiv.org/abs/2504.01728"
+- id: quintavalle2021reshape
+  title: "ReShape: a decoder for hypergraph product codes"
+  authors: "Armanda O. Quintavalle and Earl T. Campbell"
+  year: 2021
+  url: "https://arxiv.org/abs/2105.02370"
+- id: quintavalle2023partitioning
+  title: "Partitioning qubits in hypergraph product codes to implement logical gates"
+  authors: "Armanda O. Quintavalle, Paul Webster, and Michael Vasmer"
+  year: 2023
+  url: "https://arxiv.org/abs/2204.10812"
+- id: tan2025effective
+  title: "Effective Distance of Higher Dimensional HGPs and Weight-Reduced Quantum LDPC Codes"
+  authors: "Shi Jie Samuel Tan and Lev Stambler"
+  year: 2025
+  url: "https://arxiv.org/abs/2409.02193"
+- id: tiew2024dehn
+  title: "Low-Overhead Entangling Gates from Generalised Dehn Twists"
+  authors: "Ryan Tiew and Nikolas P. Breuckmann"
+  year: 2024
+  url: "https://arxiv.org/abs/2411.03302"
+- id: viderman2013linear
+  title: "Linear-time decoding of regular expander codes"
+  authors: "Michael Viderman"
+  year: 2013
+  url: "https://doi.org/10.1145/2493252.2493255"
+- id: yang2025spatially
+  title: "Spatially-Coupled QLDPC Codes"
+  authors: "Siyi Yang and Robert Calderbank"
+  year: 2025
+  url: "https://arxiv.org/abs/2305.00137"
+- id: yao2024cluster
+  title: "Cluster Decomposition for Improved Erasure Decoding of Quantum LDPC Codes"
+  authors: "Hanwen Yao, Mert Gökduman, and Henry D. Pfister"
+  year: 2024
+  url: "https://arxiv.org/abs/2412.08817"
+- id: zhang2022loss
+  title: "Loss-tolerant all-photonic quantum repeater with generalized Shor code"
+  authors: "Rui Zhang, Li-Zheng Liu, Zheng-Da Li, Yue-Yang Fei, Xu-Fei Yin, Li Li, Nai-Le Liu, Yingqiu Mao, Yu-Ao Chen, and Jian-Wei Pan"
+  year: 2022
+  url: "https://arxiv.org/abs/2203.07979"
+- id: atomcomputing2026toric
+  title: "Quantum error correction with the toric code"
+  authors: "Atom Computing and Collaborators"
+  year: 2026
+  url: "https://arxiv.org/abs/2606.04079"
+- id: bluvstein2022processor
+  title: "A quantum processor based on coherent transport of entangled atom arrays"
+  authors: "Dolev Bluvstein, Harry Levine, Giulia Semeghini, Tout T. Wang, Sepehr Ebadi, Marcin Kalinowski, Alexander Keesling, Nishad Maskara, Hannes Pichler, Markus Greiner, Vladan Vuletic, and Mikhail D. Lukin"
+  year: 2022
+  url: "https://arxiv.org/abs/2112.03923"
+- id: bombin2012strong
+  title: "Strong Resilience of Topological Codes to Depolarization"
+  authors: "Héctor Bombín, Ruben S. Andrist, Masayuki Ohzeki, Helmut G. Katzgraber, and Miguel A. Martín-Delgado"
+  year: 2012
+  url: "https://arxiv.org/abs/1202.1852"
+- id: bravyi2018coherent
+  title: "Correcting coherent errors with surface codes"
+  authors: "Sergey Bravyi, Matthias Englbrecht, Robert König, and Nolan Peard"
+  year: 2018
+  url: "https://arxiv.org/abs/1710.02270"
+- id: breuckmann2017local
+  title: "Local Decoders for the 2D and 4D Toric Code"
+  authors: "Nikolas P. Breuckmann, Kasper Duivenvoorden, Dominik Michels, and Barbara M. Terhal"
+  year: 2017
+  url: "https://arxiv.org/abs/1609.00510"
+- id: chubb2021statistical
+  title: "Statistical mechanical models for quantum codes with correlated noise"
+  authors: "Christopher T. Chubb and Steven T. Flammia"
+  year: 2021
+  url: "https://arxiv.org/abs/1809.10704"
+- id: fischer2024hardness
+  title: "Hardness results for decoding the surface code with Pauli noise"
+  authors: "Alex Fischer and Akimasa Miyake"
+  year: 2024
+  url: "https://arxiv.org/abs/2309.10331"
+- id: guernut2024toric
+  title: "Fault-Tolerant Constant-Depth Clifford Gates on Toric Codes"
+  authors: "Alexandre Guernut and Christophe Vuillot"
+  year: 2024
+  url: "https://arxiv.org/abs/2411.18287"
+- id: iverson2020coherence
+  title: "Coherence in logical quantum channels"
+  authors: "Joseph K. Iverson and John Preskill"
+  year: 2020
+  url: "https://arxiv.org/abs/1912.04319"
+- id: kitaev1997imperfect
+  title: "Quantum Error Correction with Imperfect Gates"
+  authors: "A. Yu. Kitaev"
+  year: 1997
+  url: "https://doi.org/10.1007/978-1-4615-5923-8_19"
+- id: kitaev1997quantum
+  title: "Quantum computations: algorithms and error correction"
+  authors: "A. Yu. Kitaev"
+  year: 1997
+  url: "https://doi.org/10.1070/RM1997v052n06ABEH002155"
+- id: lee2025coherent
+  title: "Exact Calculations of Coherent Information for Toric Codes under Decoherence: Identifying the Fundamental Error Threshold"
+  authors: "Jong Yeon Lee"
+  year: 2025
+  url: "https://arxiv.org/abs/2402.16937"
+- id: stace2009loss
+  title: "Thresholds for topological codes in the presence of loss"
+  authors: "Thomas M. Stace, Sean D. Barrett, and Andrew C. Doherty"
+  year: 2009
+  url: "https://arxiv.org/abs/0904.3556"
+- id: wang2010thresholds
+  title: "Threshold error rates for the toric and surface codes"
+  authors: "David S. Wang, Austin G. Fowler, Ashley M. Stephens, and Lloyd C. L. Hollenberg"
+  year: 2010
+  url: "https://arxiv.org/abs/0905.0531"
+
+# Fetch-verified primary works added by the T153 five-qubit research sweep.
+- id: abobeih2022fault
+  title: "Fault-tolerant operation of a logical qubit in a diamond quantum processor"
+  authors: "M. H. Abobeih et al."
+  year: 2022
+  url: "https://arxiv.org/abs/2108.01646"
+- id: antipov2023circular
+  title: "Realizing a class of stabilizer quantum error correction codes using a single ancilla and circular connectivity"
+  authors: "A. V. Antipov, E. O. Kiktenko, and A. K. Fedorov"
+  year: 2023
+  url: "https://arxiv.org/abs/2207.13356"
+- id: cross2009codeword
+  title: "Codeword Stabilized Quantum Codes"
+  authors: "Andrew Cross, Graeme Smith, John A. Smolin, and Bei Zeng"
+  year: 2009
+  url: "https://arxiv.org/abs/0708.1021"
+- id: de2016dynamically
+  title: "Universal set of Dynamically Protected Gates for Bipartite Qubit Networks II: Soft Pulse Implementation of the [[5,1,3]] Quantum Error Correcting Code"
+  authors: "Amrit De and Leonid P. Pryadko"
+  year: 2016
+  url: "https://arxiv.org/abs/1509.01239"
+- id: divincenzo1996efficient
+  title: "Fault-Tolerant Error Correction with Efficient Quantum Codes"
+  authors: "David P. DiVincenzo and Peter W. Shor"
+  year: 1996
+  url: "https://arxiv.org/abs/quant-ph/9605031"
+- id: dutta2010frobenius
+  title: "Quantum Cyclic Code of length dividing p^t+1"
+  authors: "Sagarmoy Dutta and Piyush P. Kurur"
+  year: 2010
+  url: "https://arxiv.org/abs/1011.5814"
+- id: fowler2004linear
+  title: "Quantum Error Correction on Linear Nearest Neighbor Qubit Arrays"
+  authors: "Austin G. Fowler, Charles D. Hill, and Lloyd C. L. Hollenberg"
+  year: 2004
+  url: "https://arxiv.org/abs/quant-ph/0311116"
+- id: gong2021experimental
+  title: "Experimental exploration of five-qubit quantum error correcting code with superconducting qubits"
+  authors: "Ming Gong et al."
+  year: 2021
+  url: "https://arxiv.org/abs/1907.04507"
+- id: hao2021automorphisms
+  title: "Investigations on Automorphism Groups of Quantum Stabilizer Codes"
+  authors: "Hanson Hao"
+  year: 2021
+  url: "https://arxiv.org/abs/2109.12735"
+- id: hsieh2006encoder
+  title: "Analytical technique for simplification of the encoder-decoder circuit for a perfect five-qubit error correction"
+  authors: "Jin-Yuan Hsieh, Che-Ming Li, and Der-San Chuu"
+  year: 2006
+  url: "https://arxiv.org/abs/quant-ph/0410004"
+- id: knill2001benchmark
+  title: "Implementation of the Five Qubit Error Correction Benchmark"
+  authors: "E. Knill, R. Laflamme, R. Martinez, and C. Negrevergne"
+  year: 2001
+  url: "https://arxiv.org/abs/quant-ph/0101034"
+- id: liu2022exactfive
+  title: "Exact performance of the five-qubit code with coherent errors"
+  authors: "Chaobin Liu"
+  year: 2022
+  url: "https://arxiv.org/abs/2203.01706"
+- id: plenio1997conditional
+  title: "Conditional generation of error syndromes in fault-tolerant error correction"
+  authors: "M. B. Plenio, V. Vedral, and P. L. Knight"
+  year: 1997
+  url: "https://arxiv.org/abs/quant-ph/9608028"
+- id: rahn2002exact
+  title: "Exact Performance of Concatenated Quantum Codes"
+  authors: "Benjamin Rahn, Andrew C. Doherty, and Hideo Mabuchi"
+  year: 2002
+  url: "https://arxiv.org/abs/quant-ph/0206061"
+- id: schlingemann2002graph
+  title: "Quantum error-correcting codes associated with graphs"
+  authors: "D. Schlingemann and R. F. Werner"
+  year: 2002
+  url: "https://arxiv.org/abs/quant-ph/0012111"
+- id: souza2011magic
+  title: "Experimental magic state distillation for fault-tolerant quantum computing"
+  authors: "Alexandre M. Souza, Jingfu Zhang, Colm A. Ryan, and Raymond Laflamme"
+  year: 2011
+  url: "https://arxiv.org/abs/1103.2178"
+- id: tanamoto2013strategy
+  title: "Strategy for implementing stabilizer-based codes on solid-state qubits"
+  authors: "Tetsufumi Tanamoto, Vladimir M. Stojanović, Christoph Bruder, and Daniel Becker"
+  year: 2013
+  url: "https://arxiv.org/abs/1301.4796"
+- id: zhang2012encoded
+  title: "Experimental implementation of encoded logical qubit operations in a perfect quantum error correcting code"
+  authors: "Jingfu Zhang, Raymond Laflamme, and Dieter Suter"
+  year: 2012
+  url: "https://arxiv.org/abs/1208.4797"
+
+# Fetch-verified primary works and author erratum used by T174 Breadth Batch 02.
+- id: dasu2025classification
+  title: "A Classification of Transversal Clifford Gates for Qubit Stabilizer Codes"
+  authors: "Shival Dasu and Simon Burton"
+  year: 2025
+  url: "https://arxiv.org/abs/2507.10519"
+- id: gottesman2004errata
+  title: "Errata for Stabilizer Codes and Quantum Error Correction"
+  authors: "Daniel Gottesman"
+  year: 2004
+  url: "https://www2.perimeterinstitute.ca/personal/dgottesman/thesis-errata.html"
+- id: knill2005noisy
+  title: "Quantum Computing with Very Noisy Devices"
+  authors: "Emanuel Knill"
+  year: 2005
+  url: "https://arxiv.org/abs/quant-ph/0410199"
+- id: li2017bare
+  title: "Fault Tolerance with Bare Ancillary Qubits for a [[7,1,3]] Code"
+  authors: "Muyuan Li, Mauricio Gutiérrez, Stanley E. David, Alonzo Hernandez, and Kenneth R. Brown"
+  year: 2017
+  url: "https://arxiv.org/abs/1702.01155"
+- id: shen2025quantumlego
+  title: "Quantum Lego and XP Stabilizer Codes"
+  authors: "Ruohan Shen, Yixu Wang, and ChunJun Cao"
+  year: 2025
+  url: "https://arxiv.org/abs/2310.19538v2"
+- id: webster2023transversal
+  title: "Transversal Diagonal Logical Operators for Stabiliser Codes"
+  authors: "Mark A. Webster, Armanda O. Quintavalle, and Stephen D. Bartlett"
+  year: 2023
+  url: "https://arxiv.org/abs/2303.15615"
+- id: zou2026algebraic
+  title: "Algebraic Topology Principles behind Topological Quantum Error Correction"
+  authors: "Xiang Zou and Hoi-Kwong Lo"
+  year: 2026
+  url: "https://arxiv.org/abs/2505.06082v2"
+
+# Fetch-verified exact-version primary works used by T182 Breadth Batch 03.
+- id: jordan2006adiabatic
+  title: "Error Correcting Codes for Adiabatic Quantum Computation"
+  authors: "Stephen P. Jordan, Edward Farhi, and Peter W. Shor"
+  year: 2006
+  url: "https://arxiv.org/abs/quant-ph/0512170v3"
+- id: koh2026phantom
+  title: "Entangling Logical Qubits without Physical Operations"
+  authors: "Jin Ming Koh, Anqi Gong, Andrei C. Diaconu, Daniel Bochen Tan, Alexandra A. Geim, Michael J. Gullans, Norman Y. Yao, Mikhail D. Lukin, and Shayan Majidy"
+  year: 2026
+  url: "https://arxiv.org/abs/2601.20927v1"
+- id: kovalev2011cws
+  title: "Low-Complexity Quantum Codes Designed via Codeword-Stabilized Framework"
+  authors: "Alexey A. Kovalev, Ilya Dumer, and Leonid P. Pryadko"
+  year: 2011
+  url: "https://arxiv.org/abs/1108.5490v1"
+- id: kovalev2013hyperbicycle
+  title: "Quantum Hyperbicycle Low-Density Parity-Check Codes with Finite Rate"
+  authors: "Alexey A. Kovalev and Leonid P. Pryadko"
+  year: 2013
+  url: "https://arxiv.org/abs/1212.6703v2"
+- id: landahl2020rhombic
+  title: "The Surface Code on the Rhombic Dodecahedron"
+  authors: "Andrew J. Landahl"
+  year: 2020
+  url: "https://arxiv.org/abs/2010.06628v1"
+- id: reichardt2026fire
+  title: "Fire and Ice: Partially Fault-Tolerant Quantum Computing with Selective State Filtering"
+  authors: "Ben W. Reichardt, David Aasen, and Rui Chao"
+  year: 2026
+  url: "https://arxiv.org/abs/2605.15344v1"
+- id: robertson2017tailored
+  title: "Tailored Codes for Small Quantum Memories"
+  authors: "Alan Robertson, Christopher Granade, Stephen D. Bartlett, and Steven T. Flammia"
+  year: 2017
+  url: "https://arxiv.org/abs/1703.08179v2"
+- id: vatan1997burst
+  title: "Spatially Correlated Qubit Errors and Burst-Correcting Quantum Codes"
+  authors: "F. Vatan, V. P. Roychowdhury, and M. P. Anantram"
+  year: 1997
+  url: "https://arxiv.org/abs/quant-ph/9704019v2"
+- id: vuillot2020pin
+  title: "Quantum Pin Codes"
+  authors: "Christophe Vuillot and Nikolas P. Breuckmann"
+  year: 2020
+  url: "https://arxiv.org/abs/1906.11394v3"
+- id: yoder2017twist
+  title: "The Surface Code with a Twist"
+  authors: "Theodore J. Yoder and Isaac H. Kim"
+  year: 2017
+  url: "https://arxiv.org/abs/1612.04795v2"
+- id: zhang2023transmutation
+  title: "Quantum Error Transmutation"
+  authors: "Daniel Zhang and Toby Cubitt"
+  year: 2023
+  url: "https://arxiv.org/abs/2310.10278v1"
+
+# Fetch-verified exact-version primary works used by T185 Breadth Batch 04.
+- id: aly2006subsystem
+  title: "Subsystem Codes"
+  authors: "Salah A. Aly, Andreas Klappenecker, and Pradeep Kiran Sarvepalli"
+  year: 2006
+  url: "https://arxiv.org/abs/quant-ph/0610153v1"
+- id: berthusen2025symplectic
+  title: "Simple logical quantum computation with concatenated symplectic double codes"
+  authors: "Noah Berthusen and Elijah Durso-Sabina"
+  year: 2025
+  url: "https://arxiv.org/abs/2510.18753v1"
+- id: delfosse2020short
+  title: "Short Shor-style syndrome sequences"
+  authors: "Nicolas Delfosse and Ben W. Reichardt"
+  year: 2020
+  url: "https://arxiv.org/abs/2008.05051v1"
+- id: ezerman2013csslike
+  title: "CSS-like Constructions of Asymmetric Quantum Codes"
+  authors: "Martianus Frederic Ezerman, Somphong Jitman, San Ling, and Dmitrii V. Pasechnik"
+  year: 2013
+  url: "https://arxiv.org/abs/1207.6512v2"
+- id: ganti2014chains
+  title: "A family of [[6k, 2k, 2]] codes for practical, scalable adiabatic quantum computation"
+  authors: "Anand Ganti, Uzoma Onunkwo, and Kevin Young"
+  year: 2014
+  url: "https://arxiv.org/abs/1309.1674v3"
+- id: goto2024hypercube
+  title: "Many-hypercube codes: High-rate quantum error-correcting codes for high-performance fault-tolerant quantum computing"
+  authors: "Hayato Goto"
+  year: 2024
+  url: "https://arxiv.org/abs/2403.16054v3"
+- id: haah2017magic
+  title: "Magic State Distillation with Low Space Overhead and Optimal Asymptotic Input Count"
+  authors: "Jeongwan Haah, Matthew B. Hastings, David Poulin, and David Wecker"
+  year: 2017
+  url: "https://arxiv.org/abs/1703.07847v3"
+- id: hastings2025cyclic
+  title: "A Class of Cyclic Quantum Codes"
+  authors: "Matthew B. Hastings"
+  year: 2025
+  url: "https://arxiv.org/abs/2509.06865v2"
+- id: holmes2026logic
+  title: "Quantum Logic Codes"
+  authors: "Adam Holmes"
+  year: 2026
+  url: "https://arxiv.org/abs/2606.13521v1"
+- id: jones2013multilevel
+  title: "Multilevel distillation of magic states for quantum computing"
+  authors: "Cody Jones"
+  year: 2013
+  url: "https://arxiv.org/abs/1210.3388v2"
+- id: knill1997resilient
+  title: "Resilient Quantum Computation: Error Models and Thresholds"
+  authors: "Emanuel Knill, Raymond Laflamme, and Wojciech H. Zurek"
+  year: 1997
+  url: "https://arxiv.org/abs/quant-ph/9702058v1"
+- id: leung1997approximate
+  title: "Approximate quantum error correction can lead to better codes"
+  authors: "D. W. Leung, M. A. Nielsen, I. L. Chuang, and Y. Yamamoto"
+  year: 1997
+  url: "https://arxiv.org/abs/quant-ph/9704002v1"
+- id: poulin2005operator
+  title: "Stabilizer Formalism for Operator Quantum Error Correction"
+  authors: "David Poulin"
+  year: 2005
+  url: "https://arxiv.org/abs/quant-ph/0508131v4"
+- id: ye2025ions
+  title: "Quantum error correction for long chains of trapped ions"
+  authors: "Min Ye and Nicolas Delfosse"
+  year: 2025
+  url: "https://arxiv.org/abs/2503.22071v3"
+- id: bombin2013gaugecolor
+  title: 'Gauge Color Codes: Optimal Transversal Gates and Gauge Fixing in Topological
+    Stabilizer Codes'
+  authors: H. Bombin
+  year: 2013
+  url: https://arxiv.org/abs/1311.0879v1
+- id: jochymoconnor2020fourdimensional
+  title: A four-dimensional toric code with non-Clifford transversal gates
+  authors: Tomas Jochym-O'Connor and Theodore J. Yoder
+  year: 2020
+  url: https://arxiv.org/abs/2010.02238v1
+- id: chamon2004glassiness
+  title: Quantum Glassiness
+  authors: Claudio Chamon
+  year: 2004
+  url: https://arxiv.org/abs/cond-mat/0404182v1
+- id: cross2022qltc
+  title: Quantum Locally Testable Code with Constant Soundness
+  authors: Andrew Cross, Zhiyang He, Anand Natarajan, Mario Szegedy, and Guanyu Zhu
+  year: 2022
+  url: https://arxiv.org/abs/2209.11405v3
+- id: vijay2015topological
+  title: 'A New Kind of Topological Quantum Order: A Dimensional Hierarchy of Quasiparticles
+    Built from Stationary Excitations'
+  authors: Sagar Vijay, Jeongwan Haah, and Liang Fu
+  year: 2015
+  url: https://arxiv.org/abs/1505.02576v1
+- id: ostrev2022classicalproduct
+  title: Classical product code constructions for quantum Calderbank-Shor-Steane codes
+  authors: Dimiter Ostrev, Davide Orsucci, Francisco Lázaro, and Balazs Matuz
+  year: 2022
+  url: https://arxiv.org/abs/2209.13474v1
+- id: bombin2006brane
+  title: 'Exact Topological Quantum Order in D=3 and Beyond: Branyons and Brane-Net
+    Condensates'
+  authors: H. Bombin and M. A. Martin-Delgado
+  year: 2006
+  url: https://arxiv.org/abs/cond-mat/0607736v3
+- id: chancellor2016graphical
+  title: Graphical Structures for Design and Verification of Quantum Error Correction
+  authors: Nicholas Chancellor, Aleks Kissinger, Joschka Roffe, Stefan Zohren, and Dominic
+    Horsman
+  year: 2016
+  url: https://arxiv.org/abs/1611.08012v4
+- id: campbell2018singleshot
+  title: A theory of single-shot error correction for adversarial noise
+  authors: Earl T. Campbell
+  year: 2018
+  url: https://arxiv.org/abs/1805.09271v6
+- id: haah2017towers
+  title: Towers of generalized divisible quantum codes
+  authors: Jeongwan Haah
+  year: 2017
+  url: https://arxiv.org/abs/1709.08658v1
+- id: leverrier2019localtestability
+  title: Towards local testability for quantum coding
+  authors: Anthony Leverrier, Vivien Londe, and Gilles Zémor
+  year: 2019
+  url: https://arxiv.org/abs/1911.03069v1
+- id: camara2005qldpc
+  title: Constructions and performance of classes of quantum LDPC codes
+  authors: T. Camara, H. Ollivier, and J.-P. Tillich
+  year: 2005
+  url: https://arxiv.org/abs/quant-ph/0502086v1
+- id: bombin2006optimalrate
+  title: Topological Quantum Error Correction with Optimal Encoding Rate
+  authors: H. Bombin and M. A. Martin-Delgado
+  year: 2006
+  url: https://arxiv.org/abs/quant-ph/0602063v1
+- id: hastings2016manifolds
+  title: Quantum Codes from High-Dimensional Manifolds
+  authors: M. B. Hastings
+  year: 2016
+  url: https://arxiv.org/abs/1608.05089v1
+- id: suchara2010subsystem
+  title: Constructions and Noise Threshold of Topological Subsystem Codes
+  authors: Martin Suchara, Sergey Bravyi, and Barbara M. Terhal
+  year: 2010
+  url: https://arxiv.org/abs/1012.0425v1
+- id: zeng2018higherdimensional
+  title: Higher-dimensional quantum hypergraph-product codes
+  authors: Weilei Zeng and Leonid P. Pryadko
+  year: 2018
+  url: https://arxiv.org/abs/1810.01519v1
+- id: calderbank1996gf4
+  title: Quantum Error Correction via Codes over GF(4)
+  authors: A. R. Calderbank, E. M. Rains, P. W. Shor, and N. J. A. Sloane
+  year: 1996
+  url: https://arxiv.org/abs/quant-ph/9608006v1
+- id: watson2015quditcolor
+  title: Qudit Colour Codes and Gauge Colour Codes in All Spatial Dimensions
+  authors: Fern H. E. Watson, Earl T. Campbell, Hussain Anwar, and Dan E. Browne
+  year: 2015
+  url: https://arxiv.org/abs/1503.08800v2
+- id: knill2000linearoptics
+  title: Efficient Linear Optics Quantum Computation
+  authors: E. Knill, R. Laflamme, and G. Milburn
+  year: 2000
+  url: https://arxiv.org/abs/quant-ph/0006088v1
+- id: leverrier2022tanner
+  title: Quantum Tanner codes
+  authors: Anthony Leverrier and Gilles Zémor
+  year: 2022
+  url: https://arxiv.org/abs/2202.13641v1
+- id: fan2016tensor
+  title: On Quantum Tensor Product Codes
+  authors: Jihao Fan, Yonghui Li, Min-Hsiu Hsieh, and Hanwu Chen
+  year: 2016
+  url: https://arxiv.org/abs/1605.09598v4
+- id: hagiwara2011spatial
+  title: Spatially Coupled Quasi-Cyclic Quantum LDPC Codes
+  authors: Manabu Hagiwara, Kenta Kasai, Hideki Imai, and Kohichi Sakaniwa
+  year: 2011
+  url: https://arxiv.org/abs/1102.3181v1
+- id: malcolm2025shyps
+  title: Computing Efficiently in QLDPC Codes
+  authors: Alexander J. Malcolm, Andrew N. Glaudell, Patricio Fuentes, Daryus Chandra,
+    Alexis Schotte, Colby DeLisle, Rafael Haenel, Amir Ebrahimi, Joschka Roffe, Armanda
+    O. Quintavalle, Stefanie J. Beale, Nicholas R. Lee-Hone, and Stephanie Simmons
+  year: 2025
+  url: https://arxiv.org/abs/2502.07150v1
+- id: ollivier2003convolutional
+  title: Description of a quantum convolutional code
+  authors: H. Ollivier and J.-P. Tillich
+  year: 2003
+  url: https://arxiv.org/abs/quant-ph/0304189v1
+- id: bierbrauer2008geometry
+  title: The geometry of quantum codes
+  authors: Jürgen Bierbrauer, Giorgio Faina, Massimo Giulietti, Stefano Marcugini, and
+    Fernanda Pambianco
+  year: 2008
+  url: https://doi.org/10.2140/iig.2008.6.53
+- id: conrad2017stellated
+  title: The Small Stellated Dodecahedron Code and Friends
+  authors: Jonathan Conrad, Christopher Chamberland, Nikolas P. Breuckmann, and Barbara
+    M. Terhal
+  year: 2017
+  url: https://arxiv.org/abs/1712.07666v1
+- id: zeng2020product
+  title: Minimal distances for certain quantum product codes and tensor products of
+    chain complexes
+  authors: Weilei Zeng and Leonid P. Pryadko
+  year: 2020
+  url: https://arxiv.org/abs/2007.12152v1
+- id: li2020subsystemproduct
+  title: A Numerical Study of Bravyi-Bacon-Shor and Subsystem Hypergraph Product Codes
+  authors: Muyuan Li and Theodore J. Yoder
+  year: 2020
+  url: https://arxiv.org/abs/2002.06257v1
+- id: singkanipa2024subsystem
+  title: Families of d=2 2D subsystem stabilizer codes for universal Hamiltonian quantum
+    computation with two-body interactions
+  authors: Phattharaporn Singkanipa, Zihan Xia, and Daniel A. Lidar
+  year: 2024
+  url: https://arxiv.org/abs/2412.06744v1
+- id: menon2025tricycles
+  title: 'Magic tricycles: Efficient magic state generation with finite block-length
+    quantum LDPC codes'
+  authors: Varun Menon, J. Pablo Bonilla-Ataides, Rohan Mehta, Andi Gu, Daniel Bochen
+    Tan, and Mikhail D. Lukin
+  year: 2025
+  url: https://arxiv.org/abs/2508.10714v1
+- id: breuckmann2015hyperbolic
+  title: Constructions and Noise Threshold of Hyperbolic Surface Codes
+  authors: Nikolas P. Breuckmann and Barbara M. Terhal
+  year: 2015
+  url: https://arxiv.org/abs/1506.04029v1
+- id: gidney2023yoked
+  title: Yoked surface codes
+  authors: Craig Gidney, Michael Newman, Peter Brooks, and Cody Jones
+  year: 2023
+  url: https://arxiv.org/abs/2312.04522v1
+- id: ebisu2022anisotropic
+  title: Anisotropic higher rank $\mathbb{Z}_N$ topological phases on graphs
+  authors: Hiromi Ebisu and Bo Han
+  year: 2022
+  url: https://arxiv.org/abs/2209.07987v1
+- id: shirley2018fractional
+  title: Fractional excitations in foliated fracton phases
+  authors: Wilbur Shirley and Kevin Slagle and Xie Chen
+  year: 2018
+  url: https://arxiv.org/abs/1806.08625v1
+- id: steudtner2018fermions
+  title: Quantum codes for quantum simulation of Fermions on a square lattice of qubits
+  authors: Mark Steudtner and Stephanie Wehner
+  year: 2018
+  url: https://arxiv.org/abs/1810.02681v1
+- id: bravyi2000fermionic
+  title: Fermionic quantum computation
+  authors: Sergey Bravyi and Alexei Kitaev
+  year: 2000
+  url: https://arxiv.org/abs/quant-ph/0003137v1
+- id: campbell2016unified
+  title: A unified framework for magic state distillation and multi-qubit gate-synthesis with reduced resource cost
+  authors: Earl T. Campbell and Mark Howard
+  year: 2016
+  url: https://arxiv.org/abs/1606.01904v1
+- id: dua2022clifford
+  title: Clifford-deformed Surface Codes
+  authors: Arpit Dua and Aleksander Kubica and Liang Jiang and Steven T. Flammia and Michael J. Gullans
+  year: 2022
+  url: https://arxiv.org/abs/2201.07802v1
+- id: aydin2025cyclic
+  title: Cyclic Hypergraph Product Code
+  authors: Arda Aydin and Nicolas Delfosse and Edwin Tham
+  year: 2025
+  url: https://arxiv.org/abs/2511.09683v1
+- id: derby2020compact
+  title: A Compact Fermion to Qubit Mapping
+  authors: Charles Derby and Joel Klassen
+  year: 2020
+  url: https://arxiv.org/abs/2003.06939v1
+- id: rengaswamy2020classical
+  title: Classical Coding Problem from Transversal $T$ Gates
+  authors: Narayanan Rengaswamy and Robert Calderbank and Michael Newman and Henry D. Pfister
+  year: 2020
+  url: https://arxiv.org/abs/2001.04887v1
+- id: mostad2024generalizing
+  title: Generalizing Quantum Tanner Codes
+  authors: Olai Å. Mostad and Eirik Rosnes and Hsuan-Yin Lin
+  year: 2024
+  url: https://arxiv.org/abs/2405.07980v1
+- id: bravyi2012subsystemsurface
+  title: Subsystem surface codes with three-qubit check operators
+  authors: Sergey Bravyi and Guillaume Duclos-Cianci and David Poulin and Martin Suchara
+  year: 2012
+  url: https://arxiv.org/abs/1207.1443v1
+- id: chamberland2019lowdegree
+  title: Topological and subsystem codes on low-degree graphs with flag qubits
+  authors: Christopher Chamberland and Guanyu Zhu and Theodore J. Yoder and Jared B. Hertzberg and Andrew W. Cross
+  year: 2019
+  url: https://arxiv.org/abs/1907.09528v1
+- id: farrelly2020tensornetwork
+  title: Tensor-network codes
+  authors: Terry Farrelly and Robert J. Harris and Nathan A. McMahon and Thomas M. Stace
+  year: 2020
+  url: https://arxiv.org/abs/2009.10329v1
+- id: harris2020decoding
+  title: Decoding Holographic Codes with an Integer Optimisation Decoder
+  authors: Robert J. Harris and Elliot Coupe and Nathan A. McMahon and Gavin K. Brennen and Thomas M. Stace
+  year: 2020
+  url: https://arxiv.org/abs/2008.10206v1
+- id: pattison2023hierarchical
+  title: 'Hierarchical memories: Simulating quantum LDPC codes with local gates'
+  authors: Christopher A. Pattison and Anirudh Krishna and John Preskill
+  year: 2023
+  url: https://arxiv.org/abs/2303.04798v1
+- id: harris2018cssholographic
+  title: Calderbank-Steane-Shor Holographic Quantum Error Correcting Codes
+  authors: Robert J. Harris and Nathan A. McMahon and Gavin K. Brennen and Thomas M. Stace
+  year: 2018
+  url: https://arxiv.org/abs/1806.06472v1
+- id: old2024liftconnected
+  title: Lift-Connected Surface Codes
+  authors: Josias Old and Manuel Rispler and Markus Müller
+  year: 2024
+  url: https://arxiv.org/abs/2401.02911v1
+- id: pecorari2024highrate
+  title: High-rate quantum LDPC codes for long-range-connected neutral atom registers
+  authors: Laura Pecorari and Sven Jandura and Gavin K. Brennen and Guido Pupillo
+  year: 2024
+  url: https://arxiv.org/abs/2404.13010v1
+- id: cao2020approximate
+  title: Approximate Bacon-Shor Code and Holography
+  authors: ChunJun Cao and Brad Lackey
+  year: 2020
+  url: https://arxiv.org/abs/2010.05960v1
+- id: hong2023longrange
+  title: Long-range-enhanced surface codes
+  authors: Yifan Hong and Matteo Marinelli and Adam M. Kaufman and Andrew Lucas
+  year: 2023
+  url: https://arxiv.org/abs/2309.11719v1
+- id: wootton2015family
+  title: A family of stabilizer codes for $D({\mathbb Z}_2)$ anyons and Majorana modes
+  authors: James R. Wootton
+  year: 2015
+  url: https://arxiv.org/abs/1501.07779v1
+- id: barnum2002authentication
+  title: Authentication of Quantum Messages
+  authors: Howard Barnum and Claude Crepeau and Daniel Gottesman and Adam Smith and Alain Tapp
+  year: 2002
+  url: https://arxiv.org/abs/quant-ph/0205128v1
+- id: scruby2024rainbow
+  title: 'Quantum Rainbow Codes: Achieving Linear Rate, Growing Distance and Transversal Non-Clifford Gates with Generalised Colour Codes'
+  authors: Thomas R. Scruby and Arthur Pesah and Mark Webster
+  year: 2024
+  url: https://arxiv.org/abs/2408.13130v1
+- id: brown2013short
+  title: Short random circuits define good quantum error correcting codes
+  authors: Winton Brown and Omar Fawzi
+  year: 2013
+  url: https://arxiv.org/abs/1312.7646v1
+- id: raussendorf2001oneway
+  title: The one-way quantum computer -- a non-network model of quantum computation
+  authors: Robert Raussendorf and Daniel E. Browne and Hans J. Briegel
+  year: 2001
+  url: https://arxiv.org/abs/quant-ph/0108118v1
+- id: dauphinais2023oaqec
+  title: Stabilizer Formalism for Operator Algebra Quantum Error Correction
+  authors: Guillaume Dauphinais and David W. Kribs and Michael Vasmer
+  year: 2023
+  url: https://arxiv.org/abs/2304.11442v1
+- id: fletcher2007amplitude
+  title: Channel-Adapted Quantum Error Correction for the Amplitude Damping Channel
+  authors: Andrew S. Fletcher and Peter W. Shor and Moe Z. Win
+  year: 2007
+  url: https://arxiv.org/abs/0710.1052v1
+- id: hong2022tfim
+  title: Quantum error correction in a time-dependent transverse field Ising model
+  authors: Yifan Hong and Jeremy T. Young and Adam M. Kaufman and Andrew Lucas
+  year: 2022
+  url: https://arxiv.org/abs/2205.12998v1
+- id: fujii2010topological
+  title: Topological One-Way Quantum Computation on Verified Logical Cluster States
+  authors: Keisuke Fujii and Katsuji Yamamoto
+  year: 2010
+  url: https://arxiv.org/abs/1008.2048v1
+- id: nelson2023lowdepth
+  title: Fault-Tolerant Quantum Memory using Low-Depth Random Circuit Codes
+  authors: Jon Nelson and Gregory Bentsen and Steven T. Flammia and Michael J. Gullans
+  year: 2023
+  url: https://arxiv.org/abs/2311.17985v1
+- id: tuckett2017ultrahigh
+  title: Ultrahigh Error Threshold for Surface Codes with Biased Noise
+  authors: David K. Tuckett and Stephen D. Bartlett and Steven T. Flammia
+  year: 2017
+  url: https://arxiv.org/abs/1708.08474v1
+- id: sanmiguel2022cellular
+  title: A cellular automaton decoder for a noise-bias tailored color code
+  authors: Jonathan F. San Miguel and Dominic J. Williamson and Benjamin J. Brown
+  year: 2022
+  url: https://arxiv.org/abs/2203.16534v1
+- id: wootton2021hexagonal
+  title: Hexagonal matching codes with 2-body measurements
+  authors: James R. Wootton
+  year: 2021
+  url: https://arxiv.org/abs/2109.13308v1
+- id: placke2024slowmeasurement
+  title: Slow measurement-only dynamics of entanglement in Pauli subsystem codes
+  authors: Benedikt Placke and S. A. Parameswaran
+  year: 2024
+  url: https://arxiv.org/abs/2405.14927v2
+- id: plenio1996realistic_pvk
+  title: Optimal Realistic Quantum Error Correction Code
+  authors: M. B. Plenio, V. Vedral, and P. L. Knight
+  year: 1996
+  url: https://arxiv.org/pdf/quant-ph/9603022v1

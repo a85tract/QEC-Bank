@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qec-atlas-entry-ontology-v2-consumer-envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "consumer_id", "target_contract", "input_contract", "mixed_version_policy", "legacy", "ontology_bindings", "payload", "verification"],
+  "properties": {
+    "schema": {"const": "qec-atlas-entry-ontology-v2-consumer-envelope"},
+    "consumer_id": {"type": "string", "minLength": 1},
+    "target_contract": {"type": "string", "minLength": 1},
+    "input_contract": {"type": "string", "minLength": 1},
+    "mixed_version_policy": {"const": "reject"},
+    "legacy": {"type": "object", "additionalProperties": false, "required": ["contract", "path", "sha256", "projection"], "properties": {"contract": {"type": "string", "minLength": 1}, "path": {"type": "string", "minLength": 1}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "projection": {"const": "exact"}}},
+    "ontology_bindings": {"type": "array", "uniqueItems": true, "items": {"type": "object"}},
+    "payload": {},
+    "verification": {"type": "object", "additionalProperties": false, "required": ["status", "method", "legacy_payload_identical", "scope_closed"], "properties": {"status": {"const": "passed"}, "method": {"type": "string", "minLength": 1}, "legacy_payload_identical": {"type": "boolean"}, "scope_closed": {"type": "boolean"}}}
+  }
+}

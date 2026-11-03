@@ -1,0 +1,32 @@
+schema: qec-atlas-circuit-artifact-registry-v1
+artifacts:
+  - id: surface-unrotated-l3-logical-x-memory
+    version: 1
+    protocol: {id: ancilla-css-memory, version: 1}
+    entry: surface
+    instance: L3
+    schedule: atlas/surface/circuit_memory_l3.yaml
+  - id: repetition-phase-l5-logical-x-memory
+    version: 1
+    protocol: {id: ancilla-css-memory, version: 1}
+    entry: repetition
+    instance: phase_L5
+    schedule: atlas/repetition/circuit_memory_phase_l5.yaml
+  - id: honeycomb-l3x3-floquet-pair-memory
+    version: 1
+    protocol: {id: floquet-pair-memory, version: 1}
+    entry: honeycomb
+    instance: L3x3
+    schedule: atlas/honeycomb/floquet_pair_memory_l3x3.yaml
+  - id: honeycomb-l6x6-floquet-pair-memory
+    version: 1
+    protocol: {id: floquet-pair-memory, version: 1}
+    entry: honeycomb
+    instance: L6x6
+    schedule: atlas/honeycomb/floquet_pair_memory_l6x6.yaml
+  - id: da-color-table8-pauli-triangle-dynamic-memory
+    version: 1
+    protocol: {id: da-color-dynamic-memory, version: 1}
+    entry: da_color_2d
+    instance: table8_pauli_triangle
+    schedule: atlas/da_color_2d/da_color_dynamic_memory_table8.yaml

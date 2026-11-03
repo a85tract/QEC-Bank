@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qec-atlas-entry-card-v2",
+  "title": "QEC Atlas multi-axis Entry Card v2 shadow source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "target_version", "id", "decision_class", "source",
+    "identities", "entities", "source_binding", "page", "formalization",
+    "instances", "assertions", "scoped_facets", "completion_scopes",
+    "hold", "compatibility_projection", "parent_content", "legacy_card",
+    "projection"
+  ],
+  "properties": {
+    "schema": {"const": "qec-atlas-entry-card-v2"},
+    "target_version": {"const": "entry-ontology-v2"},
+    "id": {"type": "string", "minLength": 1},
+    "decision_class": {
+      "enum": ["exact-clean", "exact-held", "scoped-expansion", "corrected-object", "composite-hgp"]
+    },
+    "source": {"$ref": "#/$defs/source"},
+    "identities": {"$ref": "#/$defs/identities"},
+    "entities": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"$ref": "#/$defs/entity"}
+    },
+    "source_binding": {"$ref": "#/$defs/sourceBinding"},
+    "page": {"$ref": "#/$defs/page"},
+    "formalization": {"$ref": "#/$defs/formalization"},
+    "instances": {"type": "array", "items": {"type": "object"}},
+    "assertions": {"type": "array", "items": {"$ref": "#/$defs/assertion"}},
+    "scoped_facets": {"$ref": "#/$defs/scopedFacets"},
+    "completion_scopes": {
+      "type": "array", "minItems": 1, "items": {"$ref": "#/$defs/completionScope"}
+    },
+    "hold": {"$ref": "#/$defs/hold"},
+    "compatibility_projection": {"$ref": "#/$defs/projectionStatus"},
+    "parent_content": {"type": ["object", "null"]},
+    "legacy_card": {"type": "object"},
+    "projection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "method", "source_sha256"],
+      "properties": {
+        "status": {"const": "exact"},
+        "method": {"const": "embedded-utf8-source-v1"},
+        "source_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "idList": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "origin": {
+      "type": "object", "required": ["kind", "method"],
+      "properties": {"kind": {"enum": ["verified", "bounded", "claimed"]}, "method": {"type": "string", "minLength": 1}},
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["version", "path", "collection", "entry_id", "sha256", "encoding", "text"],
+      "properties": {
+        "version": {"const": "qec-atlas-card-v1"},
+        "path": {"type": "string", "pattern": "^(atlas|constructions)/[^/]+/card\\.yaml$"},
+        "collection": {"enum": ["atlas", "constructions"]},
+        "entry_id": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "encoding": {"const": "utf-8"},
+        "text": {"type": "string", "minLength": 1}
+      }
+    },
+    "identities": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_node_ids", "entity_ids", "page_id", "formalization_id", "instance_ids", "assertion_ids", "evidence_ids"],
+      "properties": {
+        "source_node_ids": {"$ref": "#/$defs/idList"},
+        "entity_ids": {"$ref": "#/$defs/idList"},
+        "page_id": {"type": "string", "pattern": "^atlas-page:"},
+        "formalization_id": {"type": "string", "pattern": "^atlas-formalization:"},
+        "instance_ids": {"$ref": "#/$defs/idList"},
+        "assertion_ids": {"$ref": "#/$defs/idList"},
+        "evidence_ids": {"$ref": "#/$defs/idList"}
+      }
+    },
+    "entity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "version_id", "ontology_version", "status", "form", "collection_semantics", "subject_role", "source_node_ids", "projection", "scope_boundary", "lineage", "provenance"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "version_id": {"type": "string", "minLength": 1},
+        "ontology_version": {"const": "qec-atlas-eczoo-ontology-v2"},
+        "status": {"enum": ["active", "superseded"]},
+        "form": {"enum": ["object", "collection", "operator"]},
+        "collection_semantics": {"type": "array", "uniqueItems": true, "items": {"enum": ["indexed-family", "property-class"]}},
+        "operator_semantics": {"type": "object"},
+        "subject_role": {"type": "string", "minLength": 1},
+        "source_node_ids": {"$ref": "#/$defs/idList"},
+        "projection": {"$ref": "#/$defs/projectionStatus"},
+        "scope_boundary": {"type": "string", "minLength": 1},
+        "lineage": {"type": "object"},
+        "provenance": {"type": "object"}
+      }
+    },
+    "projectionStatus": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["status", "value"], "properties": {"status": {"const": "exact"}, "value": {"enum": ["code", "family", "class", "construction", "foundation"]}}},
+        {"type": "object", "additionalProperties": false, "required": ["status", "reason"], "properties": {"status": {"const": "lossy"}, "reason": {"type": "string", "minLength": 1}}}
+      ]
+    },
+    "sourceBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["binding_state", "legacy_source", "source_commit", "source_node_id", "source_path", "source_sha256", "t206_entity_ids", "target_denotation_entity_ids", "target_disposition"],
+      "properties": {
+        "binding_state": {"type": "string", "minLength": 1},
+        "legacy_source": {"type": "object"},
+        "source_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "source_node_id": {"type": "string", "minLength": 1},
+        "source_path": {"type": "string", "minLength": 1},
+        "source_sha256": {"$ref": "#/$defs/sha256"},
+        "t206_entity_ids": {"$ref": "#/$defs/idList"},
+        "target_denotation_entity_ids": {"$ref": "#/$defs/idList"},
+        "target_disposition": {"enum": ["atomic", "composite"]}
+      }
+    },
+    "completionScope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["authority", "entity_id", "status", "tier"],
+      "properties": {
+        "authority": {"type": "string", "minLength": 1},
+        "entity_id": {"type": "string", "minLength": 1},
+        "status": {"type": "string", "minLength": 1},
+        "tier": {"enum": ["T0", "T1", "T2", "T3", "gold"]}
+      }
+    },
+    "page": {
+      "type": "object", "additionalProperties": false,
+      "required": ["assertion_subject_entity_id", "completion_scopes", "composition", "id", "presented_entity_ids", "primary_entity_id", "redirects", "route", "route_action", "route_continuity", "source_path"],
+      "properties": {
+        "assertion_subject_entity_id": {"type": "string", "minLength": 1},
+        "completion_scopes": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/completionScope"}},
+        "composition": {"type": "string", "minLength": 1},
+        "id": {"type": "string", "pattern": "^atlas-page:"},
+        "presented_entity_ids": {"$ref": "#/$defs/idList"},
+        "primary_entity_id": {"type": "string", "minLength": 1},
+        "redirects": {"type": "array", "items": {"type": "string"}},
+        "route": {"type": "string", "pattern": "^/entries/[^/]+\\.html$"},
+        "route_action": {"type": "string", "minLength": 1},
+        "route_continuity": {"type": "string", "minLength": 1},
+        "source_path": {"type": "string", "minLength": 1}
+      }
+    },
+    "formalization": {
+      "type": "object", "required": ["id", "target_entity_id", "coverage", "domain", "instance_role", "constructor_relation", "scope_status", "instances", "formal_ir_v2", "lean"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^atlas-formalization:"},
+        "target_entity_id": {"type": "string", "minLength": 1},
+        "coverage": {"enum": ["exact", "partial"]},
+        "domain": {"type": "string", "minLength": 1},
+        "instance_role": {"type": "string", "minLength": 1},
+        "constructor_relation": {"type": "string", "minLength": 1},
+        "scope_status": {"type": "string", "minLength": 1},
+        "instances": {"type": "array", "minItems": 1, "items": {"type": "object"}, "uniqueItems": true},
+        "formal_ir_v2": {"type": "object"},
+        "lean": {"type": "object"}
+      },
+      "additionalProperties": false
+    },
+    "assertion": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "version_id", "evidence_id", "field", "index", "legacy_scope", "migration_action", "source_locator", "source_sha256", "applies_to", "content"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^atlas-assertion:"},
+        "version_id": {"type": "string", "minLength": 1},
+        "evidence_id": {"type": "string", "pattern": "^atlas-evidence:"},
+        "field": {"enum": ["views", "categories", "decoders", "operations", "realizations", "relations"]},
+        "index": {"type": "integer", "minimum": 0},
+        "legacy_scope": {"type": "string", "minLength": 1},
+        "migration_action": {"type": "string", "minLength": 1},
+        "source_locator": {"type": "string", "minLength": 1},
+        "source_sha256": {"$ref": "#/$defs/sha256"},
+        "applies_to": {
+          "type": "object", "additionalProperties": false,
+          "required": ["kind", "id"],
+          "properties": {"kind": {"enum": ["entity", "formalization"]}, "id": {"type": "string", "minLength": 1}}
+        },
+        "content": {"type": "object"}
+      }
+    },
+    "scopedFacets": {
+      "type": "object", "additionalProperties": false,
+      "required": ["views", "categories", "decoders", "operations", "realizations", "relations"],
+      "properties": {
+        "views": {"type": "array", "items": {"$ref": "#/$defs/assertion"}},
+        "categories": {"type": "array", "items": {"$ref": "#/$defs/assertion"}},
+        "decoders": {"type": "array", "items": {"$ref": "#/$defs/assertion"}},
+        "operations": {"type": "array", "items": {"$ref": "#/$defs/assertion"}},
+        "realizations": {"type": "array", "items": {"$ref": "#/$defs/assertion"}},
+        "relations": {"type": "array", "items": {"$ref": "#/$defs/assertion"}}
+      }
+    },
+    "hold": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "ids", "clean_coverage", "migration_blocking"],
+      "properties": {
+        "state": {"enum": ["none", "row-local-science-hold"]},
+        "ids": {"$ref": "#/$defs/idList"},
+        "clean_coverage": {"type": "boolean"},
+        "migration_blocking": {"type": "boolean"}
+      }
+    }
+  }
+}

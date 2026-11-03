@@ -1,0 +1,52 @@
+- id: iid-pauli
+  version: 1
+  comparison_level: code-capacity
+  name: "Independent identically distributed Pauli data noise"
+  description: >-
+    Each data qubit independently receives I, X, Y, or Z with probabilities
+    1-p_x-p_y-p_z, p_x, p_y, and p_z. Syndrome measurement is perfect; there
+    is no circuit, leakage, erasure flag, analog information, or temporal
+    correlation.
+  parameters:
+    p_x: "X probability per data qubit"
+    p_y: "Y probability per data qubit"
+    p_z: "Z probability per data qubit"
+  executable_runners:
+    - {id: exact-code-capacity, version: 1, evidence: exhaustive}
+    - {id: monte-carlo-code-capacity, version: 1, evidence: sampled}
+- id: phenomenological-component-flip
+  version: 1
+  comparison_level: phenomenological
+  name: "Independent data-component and measurement-outcome flips"
+  description: >-
+    In every repeated CSS-memory round, each data qubit independently receives
+    the protocol's named X or Z component with probability p_data before the
+    noisy syndrome measurement, and each measured component-check outcome
+    independently flips with probability p_measurement. The initial syndrome
+    is known clean and a perfect terminal syndrome closes the time boundary;
+    there is no measurement circuit, gate-level fault, leakage, or temporal
+    correlation.
+  parameters:
+    p_data: "named Pauli-component probability per data qubit and round"
+    p_measurement: "classical outcome-flip probability per measured check and noisy round"
+  executable_runners:
+    - {id: monte-carlo-phenomenological-memory, version: 1, evidence: sampled}
+- id: circuit-depolarizing
+  version: 1
+  comparison_level: circuit-level
+  name: "Independent depolarizing noise at named circuit locations"
+  description: >-
+    The frozen ancilla-CSS schedule applies basis-anticommuting reset and
+    measurement flips, one-qubit depolarization after ancilla Hadamards,
+    two-qubit depolarization after CNOTs, and one-qubit depolarization at every
+    explicitly scheduled idle location. CNOT faults propagate through later
+    gates and therefore include hooks. The model has no leakage, crosstalk,
+    erasure flag, analog information, coherent fault, or temporal correlation.
+  parameters:
+    p_reset: "basis-anticommuting Pauli probability after each reset"
+    p_clifford_1q: "depolarizing probability after each ancilla Hadamard"
+    p_cnot: "two-qubit depolarizing probability after each CNOT"
+    p_measurement: "basis-anticommuting Pauli probability before each measurement"
+    p_idle: "depolarizing probability at each explicitly scheduled idle location"
+  executable_runners:
+    - {id: monte-carlo-circuit-memory, version: 1, evidence: sampled}

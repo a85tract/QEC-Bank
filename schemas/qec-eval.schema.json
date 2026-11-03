@@ -1,0 +1,346 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qec-atlas.local/schemas/qec-eval.schema.json",
+  "title": "QEC-Eval v1 deterministic benchmark",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "corpus",
+    "generator",
+    "scope",
+    "split_policy",
+    "splits",
+    "scoring",
+    "examples"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "qec-atlas-qec-eval-v1"},
+    "id": {"const": "qec-eval-v1"},
+    "corpus": {"$ref": "#/$defs/corpus"},
+    "generator": {"$ref": "#/$defs/generator"},
+    "scope": {"$ref": "#/$defs/scope"},
+    "split_policy": {"$ref": "#/$defs/splitPolicy"},
+    "splits": {"$ref": "#/$defs/splits"},
+    "scoring": {"$ref": "#/$defs/scoring"},
+    "examples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/example"}
+    }
+  },
+  "$defs": {
+    "entryId": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "splitName": {
+      "enum": ["train", "validation", "test"]
+    },
+    "corpus": {
+      "type": "object",
+      "required": ["schema", "canonical_sha256", "records"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": {"const": "qec-atlas-corpus-v2"},
+        "canonical_sha256": {"$ref": "#/$defs/sha256"},
+        "records": {"type": "integer", "minimum": 1}
+      }
+    },
+    "generator": {
+      "type": "object",
+      "required": ["id", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"const": "qeclib.eval"},
+        "version": {"const": 1}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "required": ["source", "task_kinds", "limitations"],
+      "additionalProperties": false,
+      "properties": {
+        "source": {"const": "corpus-v2-formal-claims"},
+        "task_kinds": {
+          "const": [
+            "formal-claim-retrieval",
+            "rate-calculation",
+            "quantum-singleton-check"
+          ]
+        },
+        "limitations": {"type": "string", "minLength": 1}
+      }
+    },
+    "bucketRange": {
+      "type": "object",
+      "required": ["minimum", "maximum"],
+      "additionalProperties": false,
+      "properties": {
+        "minimum": {"type": "integer", "minimum": 0, "maximum": 9},
+        "maximum": {"type": "integer", "minimum": 0, "maximum": 9}
+      }
+    },
+    "splitPolicy": {
+      "type": "object",
+      "required": ["id", "unit", "assignment", "leakage_rule", "context_policy"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"const": "entry-sha256-mod10-v1"},
+        "unit": {"const": "entry"},
+        "assignment": {
+          "type": "object",
+          "required": ["algorithm", "buckets"],
+          "additionalProperties": false,
+          "properties": {
+            "algorithm": {"const": "sha256-first-32-bits-mod-10"},
+            "buckets": {
+              "type": "object",
+              "required": ["train", "validation", "test"],
+              "additionalProperties": false,
+              "properties": {
+                "train": {
+                  "allOf": [
+                    {"$ref": "#/$defs/bucketRange"},
+                    {"properties": {"minimum": {"const": 0}, "maximum": {"const": 5}}}
+                  ]
+                },
+                "validation": {
+                  "allOf": [
+                    {"$ref": "#/$defs/bucketRange"},
+                    {"properties": {"minimum": {"const": 6}, "maximum": {"const": 7}}}
+                  ]
+                },
+                "test": {
+                  "allOf": [
+                    {"$ref": "#/$defs/bucketRange"},
+                    {"properties": {"minimum": {"const": 8}, "maximum": {"const": 9}}}
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "leakage_rule": {"type": "string", "minLength": 1},
+        "context_policy": {
+          "type": "object",
+          "required": ["safe_profile", "excluded_splits"],
+          "additionalProperties": false,
+          "properties": {
+            "safe_profile": {"const": "eval-train"},
+            "excluded_splits": {"const": ["validation", "test"]}
+          }
+        }
+      }
+    },
+    "splitSummary": {
+      "type": "object",
+      "required": ["entry_ids", "example_count"],
+      "additionalProperties": false,
+      "properties": {
+        "entry_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/entryId"}
+        },
+        "example_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "splits": {
+      "type": "object",
+      "required": ["train", "validation", "test"],
+      "additionalProperties": false,
+      "properties": {
+        "train": {"$ref": "#/$defs/splitSummary"},
+        "validation": {"$ref": "#/$defs/splitSummary"},
+        "test": {"$ref": "#/$defs/splitSummary"}
+      }
+    },
+    "scoring": {
+      "type": "object",
+      "required": ["method"],
+      "additionalProperties": false,
+      "properties": {
+        "method": {"const": "canonical-json-exact-v1"}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["formal_anchor", "claim_sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "formal_anchor": {"type": "string", "pattern": "^formal:claim:\\S+$"},
+        "claim_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "sourceOrigin": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": {"enum": ["verified", "bounded", "claimed"]}
+      }
+    },
+    "sourceClaim": {
+      "type": "object",
+      "required": ["property", "origin"],
+      "properties": {
+        "property": {"type": "string", "minLength": 1},
+        "origin": {"$ref": "#/$defs/sourceOrigin"}
+      }
+    },
+    "generatedOrigin": {
+      "type": "object",
+      "required": ["kind", "method"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "verified"},
+        "method": {
+          "enum": [
+            "qec-eval-rate-arithmetic-v1",
+            "qec-eval-singleton-arithmetic-v1"
+          ]
+        }
+      }
+    },
+    "exampleBase": {
+      "type": "object",
+      "required": [
+        "id",
+        "split",
+        "source_entry",
+        "leakage_group",
+        "task",
+        "expected",
+        "evidence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^eval:(claim|rate|singleton):\\S+$"},
+        "split": {"$ref": "#/$defs/splitName"},
+        "source_entry": {"$ref": "#/$defs/entryId"},
+        "leakage_group": {"type": "string", "pattern": "^entry:[a-z0-9_]+$"},
+        "task": {"type": "object"},
+        "expected": {"type": "object"},
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/evidence"}
+        }
+      }
+    },
+    "claimTask": {
+      "type": "object",
+      "required": ["kind", "prompt", "response_format"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "formal-claim-retrieval"},
+        "prompt": {"type": "string", "minLength": 1},
+        "response_format": {"const": "json"}
+      }
+    },
+    "rateTask": {
+      "type": "object",
+      "required": ["kind", "prompt", "response_format"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "rate-calculation"},
+        "prompt": {"type": "string", "minLength": 1},
+        "response_format": {"const": "json"}
+      }
+    },
+    "singletonTask": {
+      "type": "object",
+      "required": ["kind", "prompt", "response_format"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "quantum-singleton-check"},
+        "prompt": {"type": "string", "minLength": 1},
+        "response_format": {"const": "json"}
+      }
+    },
+    "claimExpected": {
+      "type": "object",
+      "required": ["claim"],
+      "additionalProperties": false,
+      "properties": {
+        "claim": {"$ref": "#/$defs/sourceClaim"}
+      }
+    },
+    "rateExpected": {
+      "type": "object",
+      "required": ["numerator", "denominator", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "numerator": {"type": "integer", "minimum": 0},
+        "denominator": {"type": "integer", "minimum": 1},
+        "origin": {
+          "allOf": [
+            {"$ref": "#/$defs/generatedOrigin"},
+            {"properties": {"method": {"const": "qec-eval-rate-arithmetic-v1"}}}
+          ]
+        }
+      }
+    },
+    "singletonExpected": {
+      "type": "object",
+      "required": ["slack", "satisfied", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "slack": {"type": "integer"},
+        "satisfied": {"type": "boolean"},
+        "origin": {
+          "allOf": [
+            {"$ref": "#/$defs/generatedOrigin"},
+            {"properties": {"method": {"const": "qec-eval-singleton-arithmetic-v1"}}}
+          ]
+        }
+      }
+    },
+    "example": {
+      "oneOf": [
+        {
+          "allOf": [
+            {"$ref": "#/$defs/exampleBase"},
+            {
+              "properties": {
+                "task": {"$ref": "#/$defs/claimTask"},
+                "expected": {"$ref": "#/$defs/claimExpected"},
+                "evidence": {"minItems": 1, "maxItems": 1}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/exampleBase"},
+            {
+              "properties": {
+                "task": {"$ref": "#/$defs/rateTask"},
+                "expected": {"$ref": "#/$defs/rateExpected"},
+                "evidence": {"minItems": 2, "maxItems": 2}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/exampleBase"},
+            {
+              "properties": {
+                "task": {"$ref": "#/$defs/singletonTask"},
+                "expected": {"$ref": "#/$defs/singletonExpected"},
+                "evidence": {"minItems": 3, "maxItems": 3}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

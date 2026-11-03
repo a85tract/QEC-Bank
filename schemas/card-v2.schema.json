@@ -1,0 +1,530 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qec-atlas.org/schemas/card-v2.schema.json",
+  "title": "QEC Atlas Card v2",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "subject",
+    "formalization",
+    "identity",
+    "presentation",
+    "categories",
+    "refs",
+    "params",
+    "tier"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "qec-atlas-card-v2"},
+    "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "subject": {"$ref": "#/$defs/subject"},
+    "formalization": {"$ref": "#/$defs/formalization"},
+    "identity": {
+      "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/identity"
+    },
+    "presentation": {
+      "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/presentation"
+    },
+    "eczoo": {"$ref": "#/$defs/eczooMapping"},
+    "description": {"type": "string", "minLength": 1},
+    "views": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type", "description", "origin", "applies_to"],
+        "additionalProperties": false,
+        "properties": {
+          "rung": {"enum": ["R1", "R2", "R3", "R4", "R5"]},
+          "type": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "dialect": {"enum": ["majorana-pairs", "parton", "quon"]},
+          "description": {"type": "string", "minLength": 1},
+          "origin": {
+            "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/viewOrigin"
+          },
+          "applies_to": {"$ref": "#/$defs/appliesTo"},
+          "refs": {"type": "array", "items": {"type": "string"}},
+          "gap": {
+            "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/wantedGap"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "required": ["type"],
+              "properties": {"type": {"const": "fermionic"}}
+            },
+            "then": {"required": ["dialect"]},
+            "else": {"not": {"required": ["dialect"]}}
+          }
+        ]
+      }
+    },
+    "claim_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["property", "target"],
+        "additionalProperties": false,
+        "properties": {
+          "property": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+          },
+          "target": {
+            "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/wantedTarget"
+          }
+        }
+      }
+    },
+    "realizations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "platform",
+          "status",
+          "description",
+          "refs",
+          "applies_to"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "platform": {"type": "string", "minLength": 1},
+          "status": {"enum": ["proposed", "demonstrated"]},
+          "description": {"type": "string", "minLength": 1},
+          "refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string"}
+          },
+          "applies_to": {"$ref": "#/$defs/appliesTo"}
+        }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "origin", "applies_to"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "origin": {
+            "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/origin"
+          },
+          "applies_to": {"$ref": "#/$defs/appliesTo"}
+        }
+      }
+    },
+    "refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string"}
+    },
+    "params": {"type": "object"},
+    "visual_instance": {"type": "string", "minLength": 1},
+    "tier": {"enum": ["T0", "T1", "T2", "T3", "gold"]},
+    "fit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "platforms": {"type": "array", "items": {"type": "string"}},
+        "tasks": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "decoders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "status", "applies_to"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "status": {
+            "enum": ["standard", "research-grade", "none-known"]
+          },
+          "noise": {"type": "string"},
+          "notes": {"type": "string", "minLength": 1},
+          "refs": {"type": "array", "items": {"type": "string"}},
+          "gap": {
+            "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/wantedGap"
+          },
+          "applies_to": {"$ref": "#/$defs/appliesTo"}
+        },
+        "allOf": [
+          {
+            "if": {"required": ["notes"]},
+            "then": {
+              "required": ["refs"],
+              "properties": {"refs": {"minItems": 1}}
+            }
+          }
+        ]
+      }
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gate", "mechanism", "origin", "applies_to"],
+        "additionalProperties": false,
+        "properties": {
+          "gate": {"type": "string"},
+          "mechanism": {
+            "enum": [
+              "transversal",
+              "fold-transversal",
+              "surgery",
+              "switching",
+              "gauge-fixing",
+              "braiding",
+              "measurement-based"
+            ]
+          },
+          "level": {"type": "string"},
+          "cost": {"type": "string"},
+          "origin": {
+            "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/origin"
+          },
+          "applies_to": {"$ref": "#/$defs/appliesTo"}
+        }
+      }
+    },
+    "construction": {
+      "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/construction"
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "target", "applies_to"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "enum": [
+              "special_case_of",
+              "product_of",
+              "dual_of",
+              "gauge_fixes_to",
+              "switchable_with",
+              "floquetification_of",
+              "concatenation_of",
+              "same_bulk_phase_as"
+            ]
+          },
+          "target": {"type": "string"},
+          "how": {"type": "string"},
+          "refs": {"type": "array", "items": {"type": "string"}},
+          "applies_to": {"$ref": "#/$defs/appliesTo"}
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {
+              "kind": {"enum": ["code", "family", "class", "construction"]}
+            }
+          }
+        }
+      },
+      "then": {"required": ["eczoo"]}
+    },
+    {
+      "if": {
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {"kind": {"const": "code"}}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "formalization": {
+            "properties": {
+              "coverage": {"const": "exact"},
+              "domain": {"const": "singleton"},
+              "instance_role": {"const": "representative"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {"kind": {"enum": ["family", "class"]}}
+          },
+          "formalization": {
+            "required": ["coverage"],
+            "properties": {"coverage": {"const": "partial"}}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "formalization": {
+            "properties": {
+              "domain": {"enum": ["enumerated", "parameterized"]},
+              "instance_role": {"const": "witness"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {"kind": {"const": "family"}}
+          },
+          "formalization": {
+            "required": ["coverage"],
+            "properties": {"coverage": {"const": "exact"}}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "formalization": {
+            "properties": {
+              "domain": {"const": "parameterized"},
+              "instance_role": {"const": "member"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["eczoo"],
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {"kind": {"const": "construction"}}
+          },
+          "eczoo": {
+            "required": ["status"],
+            "properties": {"status": {"const": "mapped"}}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "eczoo": {
+            "properties": {
+              "mapping": {
+                "properties": {
+                  "relation": {"const": "construction-equivalent"}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["eczoo"],
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {
+              "kind": {"enum": ["code", "family", "class"]}
+            }
+          },
+          "eczoo": {
+            "required": ["status"],
+            "properties": {"status": {"const": "mapped"}}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "eczoo": {
+            "properties": {
+              "mapping": {
+                "properties": {
+                  "relation": {"not": {"const": "construction-equivalent"}}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {"kind": {"const": "class"}}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "formalization": {
+            "properties": {
+              "coverage": {"enum": ["partial", "none"]}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {"kind": {"const": "construction"}}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "formalization": {
+            "properties": {
+              "coverage": {"const": "exact"},
+              "domain": {"const": "arbitrary-inputs"},
+              "instance_role": {"const": "example-output"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subject": {
+            "required": ["kind"],
+            "properties": {"kind": {"const": "foundation"}}
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "formalization": {
+            "properties": {"coverage": {"const": "none"}}
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "subject": {
+      "type": "object",
+      "required": ["kind"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": ["code", "family", "class", "construction", "foundation"]
+        }
+      }
+    },
+    "formalization": {
+      "type": "object",
+      "required": ["coverage", "domain", "instance_role"],
+      "additionalProperties": false,
+      "properties": {
+        "coverage": {"enum": ["exact", "partial", "none"]},
+        "domain": {
+          "enum": ["singleton", "parameterized", "enumerated", "arbitrary-inputs"]
+        },
+        "instance_role": {
+          "enum": ["representative", "member", "witness", "example-output"]
+        }
+      }
+    },
+    "appliesTo": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["kind"],
+          "additionalProperties": false,
+          "properties": {"kind": {"const": "subject"}}
+        },
+        {
+          "type": "object",
+          "required": ["kind"],
+          "additionalProperties": false,
+          "properties": {"kind": {"const": "formalized-instances"}}
+        },
+        {
+          "type": "object",
+          "required": ["kind", "label"],
+          "additionalProperties": false,
+          "properties": {
+            "kind": {"const": "instance"},
+            "label": {"type": "string", "minLength": 1}
+          }
+        }
+      ]
+    },
+    "eczooRelation": {
+      "enum": [
+        "equivalent",
+        "alias-of",
+        "instance-of",
+        "variant-of",
+        "broader-than",
+        "narrower-than",
+        "construction-equivalent"
+      ]
+    },
+    "eczooMapping": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["status", "zoo_id", "mapping", "source"],
+          "additionalProperties": false,
+          "properties": {
+            "status": {"const": "mapped"},
+            "zoo_id": {
+              "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/eczooSourceId"
+            },
+            "mapping": {
+              "type": "object",
+              "required": ["direction", "relation"],
+              "additionalProperties": false,
+              "properties": {
+                "direction": {"const": "source-to-atlas"},
+                "relation": {"$ref": "#/$defs/eczooRelation"}
+              }
+            },
+            "source": {
+              "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/eczooMappedSource"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["status", "checked_snapshot", "reason"],
+          "additionalProperties": false,
+          "properties": {
+            "status": {"const": "no-page"},
+            "checked_snapshot": {
+              "$ref": "https://qec-atlas.org/schemas/card.schema.json#/$defs/eczooCheckedSnapshot"
+            },
+            "reason": {"type": "string", "minLength": 1, "pattern": "\\S"}
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QEC Atlas instances v0.1",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["label", "params", "claims"],
+    "additionalProperties": false,
+    "properties": {
+      "label": {"type": "string"},
+      "params": {"type": "object"},
+      "claims": {
+        "type": "array",
+        "items": {"$ref": "#/$defs/claim"}
+      }
+    }
+  },
+  "$defs": {
+    "verifiedOrigin": {
+      "type": "object",
+      "required": ["kind"],
+      "additionalProperties": false,
+      "properties": {"kind": {"const": "verified"}}
+    },
+    "boundedOrigin": {
+      "type": "object",
+      "required": ["kind", "ref"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "bounded"},
+        "ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "claimedOrigin": {
+      "type": "object",
+      "required": ["kind", "ref"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "claimed"},
+        "ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "lowerBound": {
+      "type": "object",
+      "required": ["value"],
+      "additionalProperties": false,
+      "properties": {"value": {"type": "integer"}}
+    },
+    "boundedUpper": {
+      "type": "object",
+      "required": ["value", "method", "seed", "iters"],
+      "additionalProperties": false,
+      "properties": {
+        "value": {"type": "integer"},
+        "method": {"type": "string", "minLength": 1},
+        "seed": {"type": "integer"},
+        "iters": {"type": "integer", "minimum": 1}
+      }
+    },
+    "claimedUpper": {
+      "type": "object",
+      "required": ["value", "method"],
+      "additionalProperties": false,
+      "properties": {
+        "value": {"type": "integer"},
+        "method": {"type": "string", "minLength": 1},
+        "seed": {"type": "integer"},
+        "iters": {"type": "integer", "minimum": 1}
+      }
+    },
+    "claim": {
+      "oneOf": [
+        {"$ref": "#/$defs/verifiedValueClaim"},
+        {"$ref": "#/$defs/claimedValueClaim"},
+        {"$ref": "#/$defs/verifiedDistanceClaim"},
+        {"$ref": "#/$defs/boundedDistanceClaim"},
+        {"$ref": "#/$defs/claimedDistanceClaim"}
+      ]
+    },
+    "verifiedValueClaim": {
+      "type": "object",
+      "required": ["property", "value", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "property": {"type": "string", "not": {"const": "d"}},
+        "value": {"type": ["integer", "boolean"]},
+        "origin": {"$ref": "#/$defs/verifiedOrigin"}
+      }
+    },
+    "claimedValueClaim": {
+      "type": "object",
+      "required": ["property", "value", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "property": {"type": "string", "not": {"const": "d"}},
+        "value": {"type": ["integer", "boolean"]},
+        "origin": {"$ref": "#/$defs/claimedOrigin"}
+      }
+    },
+    "verifiedDistanceClaim": {
+      "type": "object",
+      "required": ["property", "exact", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "property": {"const": "d"},
+        "exact": {"type": "integer"},
+        "origin": {"$ref": "#/$defs/verifiedOrigin"}
+      }
+    },
+    "boundedDistanceClaim": {
+      "type": "object",
+      "required": ["property", "lower", "upper", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "property": {"const": "d"},
+        "lower": {"$ref": "#/$defs/lowerBound"},
+        "upper": {"$ref": "#/$defs/boundedUpper"},
+        "origin": {"$ref": "#/$defs/boundedOrigin"}
+      }
+    },
+    "claimedDistanceClaim": {
+      "type": "object",
+      "required": ["property", "lower", "upper", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "property": {"const": "d"},
+        "lower": {"$ref": "#/$defs/lowerBound"},
+        "upper": {"$ref": "#/$defs/claimedUpper"},
+        "origin": {"$ref": "#/$defs/claimedOrigin"}
+      }
+    }
+  }
+}

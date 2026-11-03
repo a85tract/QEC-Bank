@@ -1,0 +1,10 @@
+- {id: css, name: CSS, definition: "Stabilizer generators split into pure-X and pure-Z sets", parents: []}
+- {id: non-css, name: Non-CSS stabilizer, definition: "Stabilizer code that is not CSS in the given presentation", parents: []}
+- {id: small-code, name: Small / textbook code, definition: "Few-qubit canonical example", parents: []}
+- {id: topological, name: Topological, definition: "Code realizing a topological phase; checks geometrically local in some dimension", parents: []}
+- {id: hypergraph-product, name: Hypergraph product, definition: "Obtained as HGP(C1, C2) of two classical codes", parents: [product]}
+- {id: product, name: Product construction, definition: "Built by a product-type combinator", parents: []}
+- {id: qldpc, name: qLDPC, definition: "Bounded check weight and qubit degree as n grows", parents: []}
+- {id: subsystem, name: Subsystem, definition: "Has a nontrivial gauge group", parents: []}
+- {id: dynamical, name: Dynamical / Floquet, definition: "Defined by a measurement schedule with period > 1", parents: []}
+- {id: textbook, name: Textbook spine, definition: "Seed group 1 of the Atlas", parents: [small-code]}

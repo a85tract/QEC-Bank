@@ -1,0 +1,90 @@
+- id: lookup-table
+  name: Lookup table
+  type: exact-small
+  description: Exhaustively maps each syndrome to a correction for one fixed, small code and noise model; exact lookup becomes impractical as the syndrome space grows.
+  refs: []
+  benchmark_adapters:
+    - version: 1
+      comparison_levels: [code-capacity]
+      scalability: exact-small
+      implementation: qeclib.benchmarks.build_lookup_table
+      semantics: Minimum Pauli weight, then symplectic-binary lexicographic tie-break; limited by the exact-runner ceiling.
+- id: css-pivot
+  name: Deterministic CSS pivot baseline
+  type: algebraic-baseline
+  description: Solves the X- and Z-syndrome linear systems by left-to-right GF(2) elimination with free variables fixed to zero; it scales polynomially but ignores likelihoods and degeneracy, so it is a reproducible baseline rather than a competitive decoder.
+  refs: []
+  benchmark_adapters:
+    - version: 1
+      comparison_levels: [code-capacity]
+      scalability: polynomial
+      implementation: qeclib.benchmarks.build_css_pivot_decoder
+      semantics: Separate CSS component solve with left-to-right pivots and all free variables zero.
+- id: repetition-majority
+  name: Repetition majority decoder
+  type: repetition
+  description: Reconstructs the two error strings compatible with an ordered open repetition-chain syndrome and chooses the lower-weight string; it uses linear work per syndrome and is exact for the protected component under independent bit- or phase-flip noise.
+  refs: []
+  benchmark_adapters:
+    - version: 1
+      comparison_levels: [code-capacity]
+      scalability: linear
+      implementation: qeclib.benchmarks.build_repetition_majority_decoder
+      semantics: Ordered open-chain reconstruction followed by minimum weight and symplectic-binary tie-break.
+- id: phenomenological-css-pivot
+  name: Phenomenological CSS space-time pivot baseline
+  type: algebraic-baseline
+  description: Solves the versioned repeated-syndrome detection equations by deterministic GF(2) elimination, returns the inferred cumulative data correction, and treats measurement variables only as history explanations; it is an auditable temporal baseline rather than a likelihood-aware or matching decoder.
+  refs: []
+  benchmark_adapters:
+    - version: 1
+      comparison_levels: [phenomenological]
+      scalability: polynomial
+      implementation: qeclib.benchmarks.build_phenomenological_css_pivot_decoder
+      semantics: Time-major detection rows, then time-major data and measurement columns, with leftmost pivots and free variables fixed to zero.
+- id: circuit-dem-pivot
+  name: Circuit detector-model pivot baseline
+  type: algebraic-baseline
+  description: Solves the exact emitted circuit detector-error-model equations by deterministic GF(2) elimination and predicts the logical-observable bit of the free-variables-zero mechanism explanation; it ignores probabilities and degeneracy and is not a matching or maximum-likelihood decoder.
+  refs: []
+  benchmark_adapters:
+    - version: 1
+      comparison_levels: [circuit-level]
+      scalability: polynomial
+      implementation: qeclib.benchmarks.build_circuit_dem_pivot_decoder
+      semantics: Detector rows and flattened DEM mechanism columns stay in emitted order, with leftmost pivots and all free mechanism variables zero.
+- id: mwpm
+  name: Minimum-weight perfect matching
+  type: matching
+  description: Represents detection events as vertices of a weighted graph and pairs them by minimum total weight; the pairing determines a likely correction chain.
+  refs: [higgott2022pymatching]
+- id: bp-osd
+  name: BP + ordered-statistics
+  type: bp-osd
+  description: Uses belief propagation for soft error estimates, then ordered-statistics post-processing to repair failures caused by short cycles and degeneracy.
+  refs: [roffe2020decoding]
+- id: belief-matching
+  name: Belief matching
+  type: belief-matching
+  description: Uses belief propagation to infer correlated circuit faults and reweight a detector graph before minimum-weight matching chooses a correction.
+  refs: [higgott2023beliefmatching]
+- id: renormalization-group
+  name: Renormalization-group decoder
+  type: renormalization-group
+  description: Coarse-grains syndrome and error distributions hierarchically, using local inference to retain degeneracy information that a single lightest-path calculation discards.
+  refs: [duclos2010fast]
+- id: tensor-network-mld
+  name: Tensor-network maximum-likelihood decoder
+  type: tensor-network
+  description: Compares logical-class probabilities by exact free-fermion methods for restricted noise or by approximate tensor-network contraction for more general channels.
+  refs: [bravyi2014efficient]
+- id: union-find
+  name: Union-find
+  type: union-find
+  description: Grows and merges syndrome clusters until they can be neutralized, trading some matching accuracy for near-linear-time decoding.
+  refs: [delfosse2021almost]
+- id: none-known
+  name: No standard decoder known
+  type: none
+  description: Marks an honest algorithmic gap where the Atlas has no broadly accepted decoder for the stated code and noise setting.
+  refs: []

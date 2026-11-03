@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QEC Atlas formal catalog v1",
+  "type": "object",
+  "required": ["schema", "id", "entry", "formal", "artifacts", "completeness", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "qec-atlas-formal-catalog-v1"},
+    "id": {"type": "string", "pattern": "^entry:[a-z0-9_]+$"},
+    "entry": {
+      "type": "object",
+      "required": ["id", "kind", "tier", "identity", "description", "presentation", "eczoo"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+        "kind": {"enum": ["family", "construction", "foundation"]},
+        "tier": {"enum": ["T1", "T2", "T3", "gold"]},
+        "identity": {"type": "object"},
+        "description": {"type": "string", "minLength": 1},
+        "presentation": {"type": "object"},
+        "eczoo": {"type": "object"}
+      }
+    },
+    "formal": {
+      "type": "object",
+      "required": ["card", "instances", "formal_ir"],
+      "additionalProperties": false,
+      "properties": {
+        "card": {"type": "object"},
+        "instances": {"type": "array", "minItems": 1},
+        "formal_ir": {"$ref": "#/$defs/formalIrLinkset"},
+        "construction_replay": {"type": "object"}
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "required": ["intuition", "pedagogy", "guided_tour"],
+      "additionalProperties": false,
+      "properties": {
+        "intuition": {"type": "boolean"},
+        "pedagogy": {"type": "boolean"},
+        "guided_tour": {"type": "boolean"}
+      }
+    },
+    "completeness": {
+      "type": "object",
+      "required": ["promise", "reader_contract", "facets"],
+      "additionalProperties": false,
+      "properties": {
+        "promise": {
+          "enum": ["formal-skeleton", "researched-entry", "reader-contract-complete", "human-gold"]
+        },
+        "reader_contract": {"enum": ["local-claims", "whole-entry"]},
+        "facets": {
+          "type": "object",
+          "required": ["representations", "decoders", "operations", "realizations", "relations", "pedagogy", "guided_tour"],
+          "additionalProperties": false,
+          "properties": {
+            "representations": {"$ref": "#/$defs/facet"},
+            "decoders": {"$ref": "#/$defs/facet"},
+            "operations": {"$ref": "#/$defs/facet"},
+            "realizations": {"$ref": "#/$defs/facet"},
+            "relations": {"$ref": "#/$defs/facet"},
+            "pedagogy": {"$ref": "#/$defs/facet"},
+            "guided_tour": {"$ref": "#/$defs/facet"}
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["generator", "selection", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "generator": {
+          "type": "object",
+          "required": ["id", "version"],
+          "additionalProperties": false,
+          "properties": {
+            "id": {"const": "qeclib.formal_catalog"},
+            "version": {"const": 1}
+          }
+        },
+        "selection": {
+          "type": "object",
+          "required": ["minimum_tier"],
+          "additionalProperties": false,
+          "properties": {"minimum_tier": {"const": "T1"}}
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["role", "path", "sha256"],
+            "additionalProperties": false,
+            "properties": {
+              "role": {"enum": ["card", "instances", "constructor"]},
+              "path": {"type": "string", "minLength": 1},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "formalIrLinkset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "instances"],
+      "properties": {
+        "schema": {"const": "qec-atlas-formal-ir-linkset-v1"},
+        "instances": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "semantic_hash", "branch", "certificate_ids"],
+            "properties": {
+              "label": {"type": "string", "minLength": 1},
+              "semantic_hash": {"$ref": "#/$defs/digest"},
+              "branch": {
+                "enum": [
+                  "static-stabilizer",
+                  "css-chain",
+                  "subsystem-gauge",
+                  "measurement-schedule"
+                ]
+              },
+              "certificate_ids": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {"type": "string", "pattern": "^certificate:"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "facet": {
+      "type": "object",
+      "required": ["required_at", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "required_at": {"enum": ["T1", "T2", "T3"]},
+        "status": {"enum": ["present", "not-surveyed", "surveyed-empty", "missing-required"]}
+      }
+    }
+  }
+}
