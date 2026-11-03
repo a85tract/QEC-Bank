@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:anisotropic_z2_laplacian",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:anisotropic_z2_laplacian:views:0@9e1dde930ae024bbb201117ea52ca3b2247720370a7bda37a60e77df48b50aa4",
+      "field": "views",
+      "id": "atlas-assertion:anisotropic_z2_laplacian:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:anisotropic_z2_laplacian",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:anisotropic_z2_laplacian:categories:0@6c984191903cdae549fe50ce881b6df0f26f500765c970fdd9e85d4e9e313619",
+      "field": "categories",
+      "id": "atlas-assertion:anisotropic_z2_laplacian:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:anisotropic_z2_laplacian#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:anisotropic_z2_laplacian#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/anisotropic_z2_laplacian",
+          "atlas:atlas/anisotropic_z2_laplacian/card.yaml#/identity",
+          "t222:docs/lit/anisotropic_z2_laplacian/anisotropic_z2_laplacian-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/fracton/anisotropic_z2_laplacian.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo anisotropic_z2_laplacian identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:anisotropic_z2_laplacian"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:anisotropic_z2_laplacian#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "anisotropic_z2_laplacian",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:anisotropic_z2_laplacian",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "554b9f6491dd581da7ddc897690bc029e44d0976d1928e4f71cfc63a7e6e1f8c",
+          "payload_sha256": "785c655833a85127579ca8670f269adb8ba42d398fee5321a6d1bbddad3a3acf",
+          "semantic_hash": "c6e07f59dfcf2bde55851a89e2a8387f4119fc41d776a4aced069aa31cddd1bf"
+        },
+        "id": "atlas-instance:anisotropic_z2_laplacian:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:c6e07f59dfcf2bde55851a89e2a8387f4119fc41d776a4aced069aa31cddd1bf:structural-validity:671958cd9e0cd79327604824e6a107f6f64f4c3ec199884e6cb580af82726753@1"
+          ],
+          "instance_record_sha256": "a3914c07d642f0f7d5e6056ff44fa5a01774808cde28ab05cf51d2786abcd9ba",
+          "lean_report_sha256": "74259dbb8e0a6acf63bee10fbe9dced399cad97703aca889f30e6b90d2281971",
+          "semantic_hash": "c6e07f59dfcf2bde55851a89e2a8387f4119fc41d776a4aced069aa31cddd1bf"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "aea89f3028113eeb377a011eb9bb055a68ae0b84001218d54cfe53f2111fbeb5",
+        "v2_envelope_id": "formal-ir-v2:anisotropic_z2_laplacian:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:anisotropic_z2_laplacian#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:anisotropic_z2_laplacian:views:0",
+      "atlas-assertion:anisotropic_z2_laplacian:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:anisotropic_z2_laplacian#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:anisotropic_z2_laplacian:views:0@9e1dde930ae024bbb201117ea52ca3b2247720370a7bda37a60e77df48b50aa4",
+      "atlas-evidence:anisotropic_z2_laplacian:categories:0@6c984191903cdae549fe50ce881b6df0f26f500765c970fdd9e85d4e9e313619"
+    ],
+    "formalization_id": "atlas-formalization:anisotropic_z2_laplacian",
+    "instance_ids": [
+      "atlas-instance:anisotropic_z2_laplacian:primary"
+    ],
+    "page_id": "atlas-page:anisotropic_z2_laplacian",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:anisotropic_z2_laplacian"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:anisotropic_z2_laplacian#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:anisotropic_z2_laplacian#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:anisotropic_z2_laplacian",
+    "presented_entity_ids": [
+      "eczoo-entity:anisotropic_z2_laplacian#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:anisotropic_z2_laplacian#collection",
+    "redirects": [],
+    "route": "/entries/anisotropic_z2_laplacian.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/anisotropic_z2_laplacian"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:floquet",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:floquet:views:0@2d80522038403f58922f6315675c57e211529d55a730e50587901530b0c1ebca",
+      "field": "views",
+      "id": "atlas-assertion:floquet:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:floquet",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:floquet:categories:0@1a2ad79d362681c045992ce738bc417e048b7e4e707a95be78a06778f2bd57e1",
+      "field": "categories",
+      "id": "atlas-assertion:floquet:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:floquet#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:floquet#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/floquet",
+          "atlas:atlas/floquet/card.yaml#/identity",
+          "t222:docs/lit/floquet/floquet-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/dynamic/floquet/floquet.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo floquet identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:floquet"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:floquet#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "floquet",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:floquet",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "1c61c3785b8e68fdcc5a7dcb27f788a57cf1319df2f171faa23ec780f7ef5db5",
+          "payload_sha256": "3b2289a731b61840bbfeb4ea715f3268e1845fe26b4ae2b16d898736fb0110ad",
+          "semantic_hash": "76f504ede9be4ed1603c873fdfdf37eb5b3112c3979051e8512bdadf703a20ca"
+        },
+        "id": "atlas-instance:floquet:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "measurement-schedule",
+          "certificate_ids": [
+            "certificate:76f504ede9be4ed1603c873fdfdf37eb5b3112c3979051e8512bdadf703a20ca:structural-validity:102323ac6ed9da067bfb6d33d2d79663e97c9e809de3854c66a4cef2d1ad3e52@1"
+          ],
+          "instance_record_sha256": "d8a5947541d153e2e412b49d1ed47e90239cda51c9296a9144408a36da45af70",
+          "lean_report_sha256": "67569ec9715c634fd5b97baeffbf3d16e07bd0ae98d8dc63969c631a36b2646e",
+          "semantic_hash": "76f504ede9be4ed1603c873fdfdf37eb5b3112c3979051e8512bdadf703a20ca"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "751d444d9a79eb140e7eadd08b77b5b58d2b0af296947abf51236c764bf7bb08",
+        "v2_envelope_id": "formal-ir-v2:floquet:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:floquet#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:floquet:views:0",
+      "atlas-assertion:floquet:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:floquet#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:floquet:views:0@2d80522038403f58922f6315675c57e211529d55a730e50587901530b0c1ebca",
+      "atlas-evidence:floquet:categories:0@1a2ad79d362681c045992ce738bc417e048b7e4e707a95be78a06778f2bd57e1"
+    ],
+    "formalization_id": "atlas-formalization:floquet",
+    "instance_ids": [
+      "atlas-instance:floquet:primary"
+    ],
+    "page_id": "atlas-page:floquet",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:floquet"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:floquet#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:floquet#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:floquet",
+    "presented_entity_ids": [
+      "eczoo-entity:floquet#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:floquet#collection",
+    "redirects": [],
+    "route": "/entries/floquet.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/floquet"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

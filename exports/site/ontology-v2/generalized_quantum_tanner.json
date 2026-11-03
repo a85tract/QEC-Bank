@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:generalized_quantum_tanner",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:generalized_quantum_tanner:views:0@30bfad9f338b91b7de012eafcf679aeca6a4801e9ec94d5bf30416fb866ec079",
+      "field": "views",
+      "id": "atlas-assertion:generalized_quantum_tanner:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:generalized_quantum_tanner",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:generalized_quantum_tanner:categories:0@67b2c9881e3d0017655d3eeb6386c30b1459e8f3184bd119886189206811000b",
+      "field": "categories",
+      "id": "atlas-assertion:generalized_quantum_tanner:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:generalized_quantum_tanner#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:generalized_quantum_tanner#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/generalized_quantum_tanner",
+          "atlas:atlas/generalized_quantum_tanner/card.yaml#/identity",
+          "t222:docs/lit/generalized_quantum_tanner/generalized_quantum_tanner-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/qldpc/other_product/generalized_quantum_tanner.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo generalized_quantum_tanner identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:generalized_quantum_tanner"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:generalized_quantum_tanner#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "generalized_quantum_tanner",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:generalized_quantum_tanner",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "532c5fa06e1de38a2e6c5c449973076516fa8a686e972182263fbb2b9405b328",
+          "payload_sha256": "dfb35bfdb0aec7aee109e1ed8dccfc6955dc9b0a5eabdefc93d322394ddb2ee2",
+          "semantic_hash": "7e1ebe9c8e2f2c7b07f909a5aa1292fa2bfaf64551f7ccaae7a83c2e840c0931"
+        },
+        "id": "atlas-instance:generalized_quantum_tanner:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:7e1ebe9c8e2f2c7b07f909a5aa1292fa2bfaf64551f7ccaae7a83c2e840c0931:structural-validity:f808bdc4104529de14eb969c5961af66c5a51817f2f4c847d715bbf593ad285c@1"
+          ],
+          "instance_record_sha256": "4f734129173182f5c28f44c4b2f0db9b3b05769a3cf8f57fad8179350bbb14ef",
+          "lean_report_sha256": "c83e39c76e7c5d0e5d043bda8b22b555893d3499ad5fdc28612be5d1f10ac051",
+          "semantic_hash": "7e1ebe9c8e2f2c7b07f909a5aa1292fa2bfaf64551f7ccaae7a83c2e840c0931"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "176d1888c29d5cdd3b87a1c5d3cb7fe2f313167a483daa9a1561369dd25e7eb0",
+        "v2_envelope_id": "formal-ir-v2:generalized_quantum_tanner:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:generalized_quantum_tanner#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:generalized_quantum_tanner:views:0",
+      "atlas-assertion:generalized_quantum_tanner:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:generalized_quantum_tanner#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:generalized_quantum_tanner:views:0@30bfad9f338b91b7de012eafcf679aeca6a4801e9ec94d5bf30416fb866ec079",
+      "atlas-evidence:generalized_quantum_tanner:categories:0@67b2c9881e3d0017655d3eeb6386c30b1459e8f3184bd119886189206811000b"
+    ],
+    "formalization_id": "atlas-formalization:generalized_quantum_tanner",
+    "instance_ids": [
+      "atlas-instance:generalized_quantum_tanner:primary"
+    ],
+    "page_id": "atlas-page:generalized_quantum_tanner",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:generalized_quantum_tanner"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:generalized_quantum_tanner#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:generalized_quantum_tanner#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:generalized_quantum_tanner",
+    "presented_entity_ids": [
+      "eczoo-entity:generalized_quantum_tanner#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:generalized_quantum_tanner#collection",
+    "redirects": [],
+    "route": "/entries/generalized_quantum_tanner.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/generalized_quantum_tanner"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

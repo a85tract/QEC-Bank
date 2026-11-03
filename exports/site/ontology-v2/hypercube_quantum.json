@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:hypercube_quantum",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:hypercube_quantum:views:0@1de91333c9234fa4c1a25f50f81d49e4bd138c62e186df94abfd32fcc293384a",
+      "field": "views",
+      "id": "atlas-assertion:hypercube_quantum:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:hypercube_quantum",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:hypercube_quantum:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:hypercube_quantum:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:hypercube_quantum#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:hypercube_quantum#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:hypercube_quantum#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/hypercube_quantum/card.yaml#/identity",
+          "atlas:atlas/hypercube_quantum/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/hypercube_quantum/hypercube_quantum-eczoo-intake.md",
+          "t206:codes/quantum/qubits/small_distance/hypercube_quantum.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:hypercube_quantum"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:hypercube_quantum#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "hypercube_quantum",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:hypercube_quantum",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "de50aa51895bce16668108b3c9e41762144a22d45ca4f04994925cd244bb15ad",
+          "payload_sha256": "665618eca242774e5d5ec275e08e23924c1a75adc843bbcdcabbd1e591d05ea1",
+          "semantic_hash": "6f9ce313d32a0a030a4f8f5e0ea738689fd19f230a7326c4efb314f4d34bee85"
+        },
+        "id": "atlas-instance:hypercube_quantum:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:6f9ce313d32a0a030a4f8f5e0ea738689fd19f230a7326c4efb314f4d34bee85:small-exact-distance-enumeration:c7dc76791d60889ae5c231c96e7349f06ec87c289ba609d96061a9cfa3ac2cc1@1",
+            "certificate:6f9ce313d32a0a030a4f8f5e0ea738689fd19f230a7326c4efb314f4d34bee85:structural-validity:f487ac745e37d9ffb7a4f3a626acaa4c00bf108e1462ed59d937b5b91dc05bc9@1"
+          ],
+          "instance_record_sha256": "83c1b9c0c901bc58d92d7755e1828fc02df6e8518cfd93324554c76d0fc66034",
+          "lean_report_sha256": "24778e5f22d2349fb7751f69c0b0e83b5d632f797104cac28efce3f1db64459e",
+          "semantic_hash": "6f9ce313d32a0a030a4f8f5e0ea738689fd19f230a7326c4efb314f4d34bee85"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "7f86c5ca8f74e5a7b83b3af9bc8c67d7c4e121466d50b3c74c2f667666a4ff27",
+        "v2_envelope_id": "formal-ir-v2:hypercube_quantum:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:hypercube_quantum#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:hypercube_quantum:views:0",
+      "atlas-assertion:hypercube_quantum:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:hypercube_quantum#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:hypercube_quantum:views:0@1de91333c9234fa4c1a25f50f81d49e4bd138c62e186df94abfd32fcc293384a",
+      "atlas-evidence:hypercube_quantum:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:hypercube_quantum",
+    "instance_ids": [
+      "atlas-instance:hypercube_quantum:primary"
+    ],
+    "page_id": "atlas-page:hypercube_quantum",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:hypercube_quantum"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:hypercube_quantum#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:hypercube_quantum#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:hypercube_quantum",
+    "presented_entity_ids": [
+      "eczoo-entity:hypercube_quantum#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:hypercube_quantum#collection",
+    "redirects": [],
+    "route": "/entries/hypercube_quantum.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/hypercube_quantum"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

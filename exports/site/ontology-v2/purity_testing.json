@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:purity_testing",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:purity_testing:views:0@8476526411763fc18f16e4e8b79909984e04241ce1fb7cffe331fd954e884ca0",
+      "field": "views",
+      "id": "atlas-assertion:purity_testing:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:purity_testing",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:purity_testing:categories:0@4e157b8980555cccb2031012fa6335c89c38fef6ac3a6bb14dc83bb39379e3ab",
+      "field": "categories",
+      "id": "atlas-assertion:purity_testing:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:purity_testing#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:purity_testing#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/purity_testing",
+          "atlas:atlas/purity_testing/card.yaml#/identity",
+          "t222:docs/lit/purity_testing/purity_testing-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/purity_testing.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo purity_testing identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:purity_testing"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:purity_testing#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "purity_testing",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:purity_testing",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "86bf332c1d926217751fd3c56fc7570b1e1f81778eb897c125788539c655635d",
+          "payload_sha256": "292805cb6bb5d873b76f030d589dbbe60b1f5e9e648d8c1e79a116af86eed08f",
+          "semantic_hash": "10c1439d9e749092c693d9413d8ac3fb07430c970b089d1da1e405a4a34b3b20"
+        },
+        "id": "atlas-instance:purity_testing:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:10c1439d9e749092c693d9413d8ac3fb07430c970b089d1da1e405a4a34b3b20:structural-validity:f15fa6f94954fba0ba1127c91c4860605f0a16dbec715701cca0554a397ad6eb@1"
+          ],
+          "instance_record_sha256": "7341ad65b5c939277e12ef6b3efddaea32b41fcd8f21eee42b0cb1e68933a752",
+          "lean_report_sha256": "69d5e90bec15ddc106296290ea559452d73649562ae1a8ca83da7dec4b7e337b",
+          "semantic_hash": "10c1439d9e749092c693d9413d8ac3fb07430c970b089d1da1e405a4a34b3b20"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "0ec08fe5dc323670396eff91b5a4dab2fa5470670f0aeabe13a06c0a37107108",
+        "v2_envelope_id": "formal-ir-v2:purity_testing:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:purity_testing#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:purity_testing:views:0",
+      "atlas-assertion:purity_testing:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:purity_testing#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:purity_testing:views:0@8476526411763fc18f16e4e8b79909984e04241ce1fb7cffe331fd954e884ca0",
+      "atlas-evidence:purity_testing:categories:0@4e157b8980555cccb2031012fa6335c89c38fef6ac3a6bb14dc83bb39379e3ab"
+    ],
+    "formalization_id": "atlas-formalization:purity_testing",
+    "instance_ids": [
+      "atlas-instance:purity_testing:primary"
+    ],
+    "page_id": "atlas-page:purity_testing",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:purity_testing"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:purity_testing#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:purity_testing#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:purity_testing",
+    "presented_entity_ids": [
+      "eczoo-entity:purity_testing#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:purity_testing#collection",
+    "redirects": [],
+    "route": "/entries/purity_testing.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/purity_testing"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:compass_model",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:compass_model:views:0@fb1333e6355a0717731f69e02c797b43abbd4d3215b9344eea6e91adf68a1859",
+      "field": "views",
+      "id": "atlas-assertion:compass_model:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:compass_model",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:compass_model:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:compass_model:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:compass_model#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:compass_model#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:compass_model#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/compass_model/card.yaml#/identity",
+          "atlas:atlas/compass_model/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/compass_model/compass_model-eczoo-intake.md",
+          "t206:codes/quantum/qubits/subsystem/qldpc/bbs/compass_model.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:compass_model"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:compass_model#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "compass_model",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:compass_model",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7195bdf4f7318eb4c02d5bfbb9cc78575f623247e12fa79869a8f0cbe749084f",
+          "payload_sha256": "d2721a878624541380fae6ed6e75de5a8ccb777c681d35292809653b6f782dc3",
+          "semantic_hash": "e8878ca5de58938ff5ae312463a1409cb9752ef27570b3e73d0c37f3750166b5"
+        },
+        "id": "atlas-instance:compass_model:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:e8878ca5de58938ff5ae312463a1409cb9752ef27570b3e73d0c37f3750166b5:small-exact-distance-enumeration:1f420dbe1703bb04f8f5c3c2a8129aba27dc2e25693815cc3aac75980fdbd7a9@1",
+            "certificate:e8878ca5de58938ff5ae312463a1409cb9752ef27570b3e73d0c37f3750166b5:structural-validity:f57cda3ba741719d2305e2f6a54e53f396a7da5eccc96f376a2aa3a2fda04df0@1"
+          ],
+          "instance_record_sha256": "907fb05a7a7b301609b39111ed30f773c5c6b0cd997a81206b15e9ecbf816038",
+          "lean_report_sha256": "107561cffc7e843724abdab886441ef4eb8a2241cba47ec7eea1016d4e54e3d3",
+          "semantic_hash": "e8878ca5de58938ff5ae312463a1409cb9752ef27570b3e73d0c37f3750166b5"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "3efd7cf9812ddad7fc92953bad41b236bf4104f68254f5d0b939b7e507253d1e",
+        "v2_envelope_id": "formal-ir-v2:compass_model:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:compass_model#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:compass_model:views:0",
+      "atlas-assertion:compass_model:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:compass_model#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:compass_model:views:0@fb1333e6355a0717731f69e02c797b43abbd4d3215b9344eea6e91adf68a1859",
+      "atlas-evidence:compass_model:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:compass_model",
+    "instance_ids": [
+      "atlas-instance:compass_model:primary"
+    ],
+    "page_id": "atlas-page:compass_model",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:compass_model"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:compass_model#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:compass_model#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:compass_model",
+    "presented_entity_ids": [
+      "eczoo-entity:compass_model#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:compass_model#collection",
+    "redirects": [],
+    "route": "/entries/compass_model.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/compass_model"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

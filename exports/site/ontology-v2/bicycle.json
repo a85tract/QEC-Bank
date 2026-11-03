@@ -1,0 +1,189 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:bicycle",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:bicycle:views:0@6c442991139e036d6920bcaadc8db14bd2ef6ad46559b5f425db7b974a564b81",
+      "field": "views",
+      "id": "atlas-assertion:bicycle:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:bicycle",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:bicycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:bicycle:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bicycle#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bicycle:categories:1@9324c8c35846c8cfc03ff8f2ffb2999254a7affe037c4862ae2da12f56a0f4bd",
+      "field": "categories",
+      "id": "atlas-assertion:bicycle:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:bicycle#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:bicycle#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:bicycle#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/bicycle/card.yaml#/identity",
+          "atlas:atlas/bicycle/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/bicycle/bicycle-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bicycle.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bicycle"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:bicycle#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "bicycle",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:bicycle",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "3a4c5d73807eabebd65641bd9ac55d114da760c20e3ad4aea462d73cc264bba3",
+          "payload_sha256": "64875fb8e45999e2d11c8b538276cb170f6a4018a3bf25697c0e9bb628b58f85",
+          "semantic_hash": "faeb911bc7acdd4bebef24bb94f72242953ab43ef0c0d2bf86b518f5ea6a5b0e"
+        },
+        "id": "atlas-instance:bicycle:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:faeb911bc7acdd4bebef24bb94f72242953ab43ef0c0d2bf86b518f5ea6a5b0e:small-exact-distance-enumeration:5a653068c4765cbcb94089e711cc0ffaa5184965a53b63e272ec5144bfefddc3@1",
+            "certificate:faeb911bc7acdd4bebef24bb94f72242953ab43ef0c0d2bf86b518f5ea6a5b0e:structural-validity:86d6c9d140e6df1dd5ef35b0e571f3c89da2d8ceaf16e8752428bbaf0d3196d7@1"
+          ],
+          "instance_record_sha256": "c35a2c294815d028042ac164107bdf07894d0a7f78c614dd70f03849d2a94305",
+          "lean_report_sha256": "e61e9f2337cbb2cbf07feab79b039f93a001dc72074c928d3abe6faae0cfdd9a",
+          "semantic_hash": "faeb911bc7acdd4bebef24bb94f72242953ab43ef0c0d2bf86b518f5ea6a5b0e"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "3e34aa956c2ec058e7b1267495aa5741e87df7a06102c9df1de004383c92f33a",
+        "v2_envelope_id": "formal-ir-v2:bicycle:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:bicycle#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:bicycle:views:0",
+      "atlas-assertion:bicycle:categories:0",
+      "atlas-assertion:bicycle:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:bicycle#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:bicycle:views:0@6c442991139e036d6920bcaadc8db14bd2ef6ad46559b5f425db7b974a564b81",
+      "atlas-evidence:bicycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:bicycle:categories:1@9324c8c35846c8cfc03ff8f2ffb2999254a7affe037c4862ae2da12f56a0f4bd"
+    ],
+    "formalization_id": "atlas-formalization:bicycle",
+    "instance_ids": [
+      "atlas-instance:bicycle:primary"
+    ],
+    "page_id": "atlas-page:bicycle",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bicycle"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:bicycle#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:bicycle#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:bicycle",
+    "presented_entity_ids": [
+      "eczoo-entity:bicycle#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:bicycle#collection",
+    "redirects": [],
+    "route": "/entries/bicycle.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/bicycle"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

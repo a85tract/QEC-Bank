@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:tricycle",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:tricycle:views:0@fb03dcd07473c20156b6e9e7689c135e70410eea0861eeb8a739700dac6b04e0",
+      "field": "views",
+      "id": "atlas-assertion:tricycle:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:tricycle",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:tricycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:tricycle:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:tricycle#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:tricycle#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:tricycle#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/tricycle/card.yaml#/identity",
+          "atlas:atlas/tricycle/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/tricycle/tricycle-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/balanced_product/tricycle.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:tricycle"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:tricycle#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "tricycle",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:tricycle",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "8f46c6298f9e9693f3692b76bfbfb03778ef9fd1f25d18eda0ca6985554bc5ff",
+          "payload_sha256": "b4694de12864a9f8e2e8d1921af89cb4aa752fdadd246490f8a7ddfa28bb42c5",
+          "semantic_hash": "a17db6db0351818644e3f8784b1788a1efe1f1b25a6197ba29bef9cf7b56d973"
+        },
+        "id": "atlas-instance:tricycle:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:a17db6db0351818644e3f8784b1788a1efe1f1b25a6197ba29bef9cf7b56d973:small-exact-distance-enumeration:be1807d74f8d71064d15bc6950f210152647d55d404b5df5756b1d9543dd084e@1",
+            "certificate:a17db6db0351818644e3f8784b1788a1efe1f1b25a6197ba29bef9cf7b56d973:structural-validity:448d6a0d5698b1fb8b1869f346e38d9e5a08c4dbce5180f7d9447c7c2f90759b@1"
+          ],
+          "instance_record_sha256": "9fe0158331e95b0db584e18375e4ea42c38b0b1502452eb1477ab48a9da4b115",
+          "lean_report_sha256": "2593b270f5e403df22bd7d946f94ac1c8f2107325015ff5726b00044204a25cf",
+          "semantic_hash": "a17db6db0351818644e3f8784b1788a1efe1f1b25a6197ba29bef9cf7b56d973"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "38f251b06204576c012ed941cfa571c003044f679d18c849f59d4b7b5bcd28ad",
+        "v2_envelope_id": "formal-ir-v2:tricycle:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:tricycle#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:tricycle:views:0",
+      "atlas-assertion:tricycle:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:tricycle#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:tricycle:views:0@fb03dcd07473c20156b6e9e7689c135e70410eea0861eeb8a739700dac6b04e0",
+      "atlas-evidence:tricycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:tricycle",
+    "instance_ids": [
+      "atlas-instance:tricycle:primary"
+    ],
+    "page_id": "atlas-page:tricycle",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:tricycle"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:tricycle#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:tricycle#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:tricycle",
+    "presented_entity_ids": [
+      "eczoo-entity:tricycle#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:tricycle#collection",
+    "redirects": [],
+    "route": "/entries/tricycle.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/tricycle"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

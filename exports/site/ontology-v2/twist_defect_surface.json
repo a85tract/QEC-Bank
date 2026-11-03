@@ -1,0 +1,179 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:twist_defect_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:twist_defect_surface:views:0@fc944e5c639df0fa5abff29b7896aa2e497fbbdaa3d8d1d76739e0e292bfa18d",
+      "field": "views",
+      "id": "atlas-assertion:twist_defect_surface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:twist_defect_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:twist_defect_surface:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:twist_defect_surface:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:twist_defect_surface#collection",
+      "status": "preserved-with-science-hold",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:twist_defect_surface#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:twist_defect_surface#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/twist_defect_surface/card.yaml#/identity",
+          "atlas:atlas/twist_defect_surface/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/twist_defect_surface/twist_defect_surface-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/twist_defect/twist_defect_surface.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:twist_defect_surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:twist_defect_surface#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "twist_defect_surface",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:twist_defect_surface",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "aeb326f09806d13998efae93a7cf9c591bdeb435754c759ee77840fcffac2dcb",
+          "payload_sha256": "969a65b7b2fcc5c4d4b12a88a951fb79b994a9726137a846bfef8300e9da6cec",
+          "semantic_hash": "13bd4d633c59dfa3b21c7b787671cf084a471fba7979dd0e4f9d6c7ecca353a7"
+        },
+        "id": "atlas-instance:twist_defect_surface:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:13bd4d633c59dfa3b21c7b787671cf084a471fba7979dd0e4f9d6c7ecca353a7:small-exact-distance-enumeration:d2d4bc85585c92445ee0b8b790bf0f5d0b395f04ac4dbab0e7f0e8902f9cf72d@1",
+            "certificate:13bd4d633c59dfa3b21c7b787671cf084a471fba7979dd0e4f9d6c7ecca353a7:structural-validity:ae184854a9046126cee6c06d7d510856834a9b06bc379c825fcb06399d1bf14e@1"
+          ],
+          "instance_record_sha256": "558327660885a6801d0b79e027992b6ca8abaf97e1dbfff453eb908da1829c24",
+          "lean_report_sha256": "9ae284a8e57ce318b355891631b4b3d8f83eed243d51cee11451c70070fb6831",
+          "semantic_hash": "13bd4d633c59dfa3b21c7b787671cf084a471fba7979dd0e4f9d6c7ecca353a7"
+        },
+        "source_binding_status": "row-local-science-hold",
+        "source_sha256": "57fa37fe5178604ce5f321eea4320d1895fadb94e9b05e9b4119dc11fc053383",
+        "v2_envelope_id": "formal-ir-v2:twist_defect_surface:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "finite-payload-valid-source-binding-held",
+    "target_entity_id": "eczoo-entity:twist_defect_surface#collection"
+  },
+  "hold": {
+    "clean_coverage": false,
+    "ids": [
+      "seven_qubit_witness_source_split"
+    ],
+    "migration_blocking": false,
+    "state": "row-local-science-hold"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:twist_defect_surface:views:0",
+      "atlas-assertion:twist_defect_surface:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:twist_defect_surface#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:twist_defect_surface:views:0@fc944e5c639df0fa5abff29b7896aa2e497fbbdaa3d8d1d76739e0e292bfa18d",
+      "atlas-evidence:twist_defect_surface:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c"
+    ],
+    "formalization_id": "atlas-formalization:twist_defect_surface",
+    "instance_ids": [
+      "atlas-instance:twist_defect_surface:primary"
+    ],
+    "page_id": "atlas-page:twist_defect_surface",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:twist_defect_surface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:twist_defect_surface#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:twist_defect_surface#collection",
+        "status": "preserved-with-science-hold",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-held",
+    "id": "atlas-page:twist_defect_surface",
+    "presented_entity_ids": [
+      "eczoo-entity:twist_defect_surface#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:twist_defect_surface#collection",
+    "redirects": [],
+    "route": "/entries/twist_defect_surface.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/twist_defect_surface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

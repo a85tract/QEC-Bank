@@ -1,0 +1,225 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_hamming_css#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_css:views:0@58fe348fa69c9b1c3698dfcdc2486a5df58ccda7892ad0fdf9fe9d74d65d3af2",
+      "field": "views",
+      "id": "atlas-assertion:quantum_hamming_css:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_hamming_css#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_css:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_hamming_css:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:quantum_hamming_css#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:quantum_hamming_css#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:quantum_hamming_css#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/quantum_hamming_css/card.yaml#/identity",
+          "atlas:atlas/quantum_hamming_css/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_hamming_css/quantum_hamming_css-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/rm/quantum_hamming_css.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_hamming_css"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:quantum_hamming_css#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_hamming_css",
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_hamming_css",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b1b7ee3e230475e613c46c0d71ca20493d6d38990d99aa26f14199a17aeb0828",
+          "payload_sha256": "3cc19d4172213fe0e6f2bc8f624c2efaa452401c731d73ca024aa79ecd368086",
+          "semantic_hash": "1d8df1ace40098b41d398b5a27cad4517c1b0deaac341f58cd9a0e27c0ddbaaa"
+        },
+        "id": "atlas-instance:quantum_hamming_css:r3",
+        "label": "r3",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:1d8df1ace40098b41d398b5a27cad4517c1b0deaac341f58cd9a0e27c0ddbaaa:small-exact-distance-enumeration:9123966f2d8f65ed9302205e6faf5310abce1555d44b0d8e1c1b14ec5e4c10a8@1",
+            "certificate:1d8df1ace40098b41d398b5a27cad4517c1b0deaac341f58cd9a0e27c0ddbaaa:structural-validity:c96e37bf030de3bd8257ad7407a77e5461868f90add6e2aaba3566067f858e68@1"
+          ],
+          "instance_record_sha256": "475f4850a46dbb04b39c00d78fe3a1c32d096956fe80e870c3256590ff4f13d6",
+          "lean_report_sha256": "60ee519c66c3376b8595f063aeeec6dc99cf0dc411081de3fb78469649a3763a",
+          "semantic_hash": "1d8df1ace40098b41d398b5a27cad4517c1b0deaac341f58cd9a0e27c0ddbaaa"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "dd7ea63673ab9be8abc4ad5f027c5655f1170483e3ed4cd94a42a6bd96adcea5",
+        "v2_envelope_id": "formal-ir-v2:quantum_hamming_css:r3"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b1b7ee3e230475e613c46c0d71ca20493d6d38990d99aa26f14199a17aeb0828",
+          "payload_sha256": "b9e7e8b2c314e9d8b8588955ae746415d91d8fd88308f17e06e8aae7a8bb3817",
+          "semantic_hash": "ce4175f8f8bcea48c1a864e15e223307b38ac6de32dfe794a195da9ff98afede"
+        },
+        "id": "atlas-instance:quantum_hamming_css:r4",
+        "label": "r4",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:ce4175f8f8bcea48c1a864e15e223307b38ac6de32dfe794a195da9ff98afede:small-exact-distance-enumeration:173c8abc7242a0ae71ecc82d27f80110f82a53cc11617852e1ec5c86d25d22dc@1",
+            "certificate:ce4175f8f8bcea48c1a864e15e223307b38ac6de32dfe794a195da9ff98afede:structural-validity:1cb1379fec9b24ecc1408aea1a131726ef97c5c56653972554c2dc55a88f6f12@1"
+          ],
+          "instance_record_sha256": "0b083f75a0f171a4376cff51c31898e544fadce0c9412b6b9ee3cbbefea7e566",
+          "lean_report_sha256": "f031ba7fcf51fc8cc507d3dbd236ec8b310bd1aa261cd83f5b2e6f9e3340ea12",
+          "semantic_hash": "ce4175f8f8bcea48c1a864e15e223307b38ac6de32dfe794a195da9ff98afede"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e684988ba0af04efac444843a2b62fd51cbcd06b9ef09bc110a3956d15847cdb",
+        "v2_envelope_id": "formal-ir-v2:quantum_hamming_css:r4"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b1b7ee3e230475e613c46c0d71ca20493d6d38990d99aa26f14199a17aeb0828",
+          "payload_sha256": "8c074182d8d979bfbdfa398e0f0c2177d0ab5c2d3e5edb2f5f2a9cd0a8f82ee6",
+          "semantic_hash": "8ee09abc17719bc43942b860e31ca3f94c77b16e092f4dd25d8d7a26444059b5"
+        },
+        "id": "atlas-instance:quantum_hamming_css:r5",
+        "label": "r5",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8ee09abc17719bc43942b860e31ca3f94c77b16e092f4dd25d8d7a26444059b5:small-exact-distance-enumeration:30d1f8567f5504c084e8114b0de8ac67857bb9ba9d6934a9905d293ed1b65878@1",
+            "certificate:8ee09abc17719bc43942b860e31ca3f94c77b16e092f4dd25d8d7a26444059b5:structural-validity:ff990cd6e9cc580d38120c4491e91e6c33e05741d084b40dc43781cad791f771@1"
+          ],
+          "instance_record_sha256": "df956693b807d556af754e3cc29a3b9d108efaac9810b37f2a4dba25cc009654",
+          "lean_report_sha256": "05d385773e33dd41777c466b265130c67c3e17a2976e2ce76e0fe69a6f1adbcf",
+          "semantic_hash": "8ee09abc17719bc43942b860e31ca3f94c77b16e092f4dd25d8d7a26444059b5"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "9feb110c49a5ed1312383405de678682172cd12b3f5298718f40558a30593f50",
+        "v2_envelope_id": "formal-ir-v2:quantum_hamming_css:r5"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 3,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:quantum_hamming_css#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_hamming_css:views:0",
+      "atlas-assertion:quantum_hamming_css:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:quantum_hamming_css#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_hamming_css:views:0@58fe348fa69c9b1c3698dfcdc2486a5df58ccda7892ad0fdf9fe9d74d65d3af2",
+      "atlas-evidence:quantum_hamming_css:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:quantum_hamming_css",
+    "instance_ids": [
+      "atlas-instance:quantum_hamming_css:r3",
+      "atlas-instance:quantum_hamming_css:r4",
+      "atlas-instance:quantum_hamming_css:r5"
+    ],
+    "page_id": "atlas-page:quantum_hamming_css",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_hamming_css"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:quantum_hamming_css#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:quantum_hamming_css#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_hamming_css",
+    "presented_entity_ids": [
+      "eczoo-entity:quantum_hamming_css#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:quantum_hamming_css#collection",
+    "redirects": [],
+    "route": "/entries/quantum_hamming_css.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/quantum_hamming_css"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

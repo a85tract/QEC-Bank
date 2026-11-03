@@ -1,0 +1,176 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:4d_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:4d_surface:views:0@d219afa3d113354d68d8531d7dea08c232945778e85edb58a1a0eb80bc7b35cd",
+      "field": "views",
+      "id": "atlas-assertion:4d_surface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:4d_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:4d_surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:4d_surface:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:4d_surface#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:4d_surface#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:4d_surface#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/4d_surface/card.yaml#/identity",
+          "atlas:atlas/4d_surface/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/4d_surface/4d_surface-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/higher_d/4d_surface.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:4d_surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:4d_surface#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "4d_surface",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:4d_surface",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "82068c6f2b18724883e0d3f43e987c5ca6e1c42c4dd965b09948b8d6d3705977",
+          "payload_sha256": "696df5e92a5a42776fb3e13e15d636de8f25f8bcf5e1801c8fd53f673542fd74",
+          "semantic_hash": "4802be22c6afc58070fc1636fa8acbdfe9b45869f9f95ec3ea10566d8c308ccb"
+        },
+        "id": "atlas-instance:4d_surface:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:4802be22c6afc58070fc1636fa8acbdfe9b45869f9f95ec3ea10566d8c308ccb:structural-validity:4c1c6ee7ee0c2cc2336f943e00022a15c6e2e9934c29669fc1e5dbf8e9db53a9@1"
+          ],
+          "instance_record_sha256": "486b080d0b27c4903056cfcfee2d56f51d2e520dd9defedc5791f2c8d32ede15",
+          "lean_report_sha256": "5703ea1ec2b28f2662f73a2f194678156bebd94adfc7c250cf72380046895b18",
+          "semantic_hash": "4802be22c6afc58070fc1636fa8acbdfe9b45869f9f95ec3ea10566d8c308ccb"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "89725c81fdb35606aa8e347f63b1d5f026cee525561db348cca6c8bf3269cd15",
+        "v2_envelope_id": "formal-ir-v2:4d_surface:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:4d_surface#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:4d_surface:views:0",
+      "atlas-assertion:4d_surface:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:4d_surface#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:4d_surface:views:0@d219afa3d113354d68d8531d7dea08c232945778e85edb58a1a0eb80bc7b35cd",
+      "atlas-evidence:4d_surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:4d_surface",
+    "instance_ids": [
+      "atlas-instance:4d_surface:primary"
+    ],
+    "page_id": "atlas-page:4d_surface",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:4d_surface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:4d_surface#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:4d_surface#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:4d_surface",
+    "presented_entity_ids": [
+      "eczoo-entity:4d_surface#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:4d_surface#collection",
+    "redirects": [],
+    "route": "/entries/4d_surface.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/4d_surface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

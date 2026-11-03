@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:xysurface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:xysurface:views:0@4abae02321d78f7afff85024c674ad542fa72e0d02d8ad36ae5b58918a35ef54",
+      "field": "views",
+      "id": "atlas-assertion:xysurface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:xysurface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:xysurface:categories:0@796ab06b20468b5e3bb7cc4c0acd59d8aab48e04563169be1b8131a4e361ccc0",
+      "field": "categories",
+      "id": "atlas-assertion:xysurface:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:xysurface#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:xysurface#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/xysurface",
+          "atlas:atlas/xysurface/card.yaml#/identity",
+          "t222:docs/lit/xysurface/xysurface-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/topological/surface/2d_surface/xysurface.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo xysurface identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:xysurface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:xysurface#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "xysurface",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:xysurface",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "fd01069457b5491f7319af6bdbcb271037a87f5f8d4e530817ebfa7768066e6b",
+          "payload_sha256": "580c457fb134290da256c9598101436653d8cb40f34d832b76b18a044fb2c50d",
+          "semantic_hash": "a935688bdee7f0c90a4c1540a84a6818c454cda029d2fcf34a8672b2764c31ee"
+        },
+        "id": "atlas-instance:xysurface:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:a935688bdee7f0c90a4c1540a84a6818c454cda029d2fcf34a8672b2764c31ee:structural-validity:5f6d2472b90bc49550199af5ab0fa47ad5463eef365d27cc844ad0c1955dfe57@1"
+          ],
+          "instance_record_sha256": "add11cb6d40b6f21e0a2b83353c189f5d65bc1105f49eef5f4cf25c04599185c",
+          "lean_report_sha256": "5ce074baea50f69015227afcd06761a75b0aa571a4fdf35704372fa5a06f9d9e",
+          "semantic_hash": "a935688bdee7f0c90a4c1540a84a6818c454cda029d2fcf34a8672b2764c31ee"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "af94328f2db568f8c069498db034fa58a2c2dac796e32f6adb2d6c650e2788b0",
+        "v2_envelope_id": "formal-ir-v2:xysurface:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:xysurface#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:xysurface:views:0",
+      "atlas-assertion:xysurface:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:xysurface#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:xysurface:views:0@4abae02321d78f7afff85024c674ad542fa72e0d02d8ad36ae5b58918a35ef54",
+      "atlas-evidence:xysurface:categories:0@796ab06b20468b5e3bb7cc4c0acd59d8aab48e04563169be1b8131a4e361ccc0"
+    ],
+    "formalization_id": "atlas-formalization:xysurface",
+    "instance_ids": [
+      "atlas-instance:xysurface:primary"
+    ],
+    "page_id": "atlas-page:xysurface",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:xysurface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:xysurface#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:xysurface#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:xysurface",
+    "presented_entity_ids": [
+      "eczoo-entity:xysurface#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:xysurface#collection",
+    "redirects": [],
+    "route": "/entries/xysurface.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/xysurface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

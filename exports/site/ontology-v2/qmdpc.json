@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:qmdpc",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:qmdpc:views:0@4c5f80cdfa705d11b20b86ab6b8642f5b4bacd5c2569b66783e138d634c9dbee",
+      "field": "views",
+      "id": "atlas-assertion:qmdpc:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:qmdpc",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:qmdpc:categories:0@c2bfc294dc4dde0aa195ccbb6372129f5f4fb5273dedeea3be41dee59235b726",
+      "field": "categories",
+      "id": "atlas-assertion:qmdpc:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:qmdpc#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:qmdpc#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/qmdpc",
+          "atlas:atlas/qmdpc/card.yaml#/identity",
+          "t222:docs/lit/qmdpc/qmdpc-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/small_distance/qmdpc.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo qmdpc identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:qmdpc"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:qmdpc#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "qmdpc",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:qmdpc",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "63c2e9d4c0fd8bbec10fc8206230350f5dd6b9aa19c55ab91555c5c3c7a90745",
+          "payload_sha256": "cdab2c7f4432dbe8abd34ca8848313e52af565656172e5938347dc3a8a41f8bb",
+          "semantic_hash": "6bc83f17ad55ebdebc2b84f8cd3057a572e924bd554d28b78edecab83af455d7"
+        },
+        "id": "atlas-instance:qmdpc:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:6bc83f17ad55ebdebc2b84f8cd3057a572e924bd554d28b78edecab83af455d7:structural-validity:d29242acb1090ecf5f1548ea820817fa34c8d233381dd778574c16044ab9076e@1"
+          ],
+          "instance_record_sha256": "13bf3df11fa0bc406a2569f76317caf3d62787a5a2d0fbdd5fc48083f5246769",
+          "lean_report_sha256": "1904f9bfe69f35528cd62242d106baa06f160f6cd8904370ffe519532df8a8a2",
+          "semantic_hash": "6bc83f17ad55ebdebc2b84f8cd3057a572e924bd554d28b78edecab83af455d7"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "6c1051995dab45a762cfa90d350de7bdd6f8f7fbeab60e2e50ca353240e2255f",
+        "v2_envelope_id": "formal-ir-v2:qmdpc:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:qmdpc#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:qmdpc:views:0",
+      "atlas-assertion:qmdpc:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:qmdpc#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:qmdpc:views:0@4c5f80cdfa705d11b20b86ab6b8642f5b4bacd5c2569b66783e138d634c9dbee",
+      "atlas-evidence:qmdpc:categories:0@c2bfc294dc4dde0aa195ccbb6372129f5f4fb5273dedeea3be41dee59235b726"
+    ],
+    "formalization_id": "atlas-formalization:qmdpc",
+    "instance_ids": [
+      "atlas-instance:qmdpc:primary"
+    ],
+    "page_id": "atlas-page:qmdpc",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:qmdpc"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:qmdpc#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:qmdpc#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:qmdpc",
+    "presented_entity_ids": [
+      "eczoo-entity:qmdpc#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:qmdpc#collection",
+    "redirects": [],
+    "route": "/entries/qmdpc.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/qmdpc"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

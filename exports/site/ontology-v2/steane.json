@@ -1,0 +1,439 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:views:0@3fba96ea020aca0dde15f1f78ae7a186e6b5413ad5fcb7292262a0b6a3f0477d",
+      "field": "views",
+      "id": "atlas-assertion:steane:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:views:1@9690a0387228ded4d7e0d51717d1546bef9ce0cb74751fbd93815a1cc3a92b57",
+      "field": "views",
+      "id": "atlas-assertion:steane:views:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:views:2@589dcb5af855d45993f2f81b5f4ff374f424364cf88547dcd6a384eadb583db6",
+      "field": "views",
+      "id": "atlas-assertion:steane:views:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:views:3@2d919402f96e853e2bfaddb54240189044f0edcb0b1b9ec7454c8e2ec452ef35",
+      "field": "views",
+      "id": "atlas-assertion:steane:views:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:views:4@982e600f14731d1ac3dd2b7c8127aa17f1d686cf3c81c19cf2e25067769cae46",
+      "field": "views",
+      "id": "atlas-assertion:steane:views:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:views:5@e197d803dbd45dbe4b8be0ff429ce2b44cf3c49c3f834ec68bc2017cb32640ad",
+      "field": "views",
+      "id": "atlas-assertion:steane:views:5",
+      "index": 5
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:categories:0@3551d44fcda03a33ef959c3aa45bc4c57c94e9826a0b218669f3738296cef192",
+      "field": "categories",
+      "id": "atlas-assertion:steane:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:categories:1@4d6f8c0ff44f542f991ca5f8adb9d5377eaa395d1b2a0103ebbe057a864559db",
+      "field": "categories",
+      "id": "atlas-assertion:steane:categories:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:categories:2@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:steane:categories:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:categories:3@bc3ccc2ae11cc1239490f4a800dd2f79c1fbdfd03e46e68f1bc313007d178a9f",
+      "field": "categories",
+      "id": "atlas-assertion:steane:categories:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:decoders:0@d2833d96fcff8fed2c0c90e6b1b91df93eaa3da46097e38f9d6573e3039341af",
+      "field": "decoders",
+      "id": "atlas-assertion:steane:decoders:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:decoders:1@50b97403803e7e034b94408a5b3a6257f7fe9afc402dd95b3152bbe11305b6ca",
+      "field": "decoders",
+      "id": "atlas-assertion:steane:decoders:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:operations:0@a81a511c5e325487f43f810d98d5ea48b3211b9ca5456438010ab36aab35e57f",
+      "field": "operations",
+      "id": "atlas-assertion:steane:operations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:operations:1@89ababf4e0cb60444c03062171c93c36bf0fdeea271017333ff4219590f7e4e6",
+      "field": "operations",
+      "id": "atlas-assertion:steane:operations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:operations:2@21acf0e1304ca7249ce0a75ad392b43cb723b3f86d2106d7d43a806f3c0b633a",
+      "field": "operations",
+      "id": "atlas-assertion:steane:operations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:operations:3@782cc9c293572b024354952f97edbaa3ad702add64b6752b55ef742ade67e103",
+      "field": "operations",
+      "id": "atlas-assertion:steane:operations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:realizations:0@225ef514a7fe3bc0353d01b436b2493a3104d45d4774876c6bcd075c799923bb",
+      "field": "realizations",
+      "id": "atlas-assertion:steane:realizations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:realizations:1@c84646996946341ab34d7c125d555d8e1e59b6f8e5212989746da392ea68d8fd",
+      "field": "realizations",
+      "id": "atlas-assertion:steane:realizations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:realizations:2@1fa81eaab9468ca7217098f35b2d99256af5ea2ce44e13bab7d837a95989c462",
+      "field": "realizations",
+      "id": "atlas-assertion:steane:realizations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:realizations:3@dba69b6a5730653e050c30608b0af2e9cd460eeff73ac6c30cc7850a941abf13",
+      "field": "realizations",
+      "id": "atlas-assertion:steane:realizations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:realizations:4@11c4358927f4088bccef27df045fa375da7435a972ae5c57613060bc172fb7a8",
+      "field": "realizations",
+      "id": "atlas-assertion:steane:realizations:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:realizations:5@16ea9f0bbd8382897f1da730f8e72aedf215386d6095dca7e4fea61f82e6d74a",
+      "field": "realizations",
+      "id": "atlas-assertion:steane:realizations:5",
+      "index": 5
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:relations:0@9e86f1e0a77b8b1ced9e851fc54f72deba87543e78ad811d057864ad22923a6c",
+      "field": "relations",
+      "id": "atlas-assertion:steane:relations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:steane#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:steane:relations:1@bd03d14959562891e3520210e45d77affdd84a542e84d27523385871a9a791fb",
+      "field": "relations",
+      "id": "atlas-assertion:steane:relations:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:steane#object",
+      "status": "preserved",
+      "tier": "T3"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:steane#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:steane#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/steane/card.yaml#/identity",
+          "atlas:atlas/steane/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/steane/steane-foundations.md",
+          "t206:codes/quantum/qubits/small_distance/small/7/steane/steane.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:steane"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:steane#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "steane",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:steane",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "add39cba8fad22f01267875bc76c092892d295b830c2e97fc04d9cd94ea73d38",
+          "payload_sha256": "79f2f1e3f4d5f842648316871e2af97ae137afaf4776d0580d90ce7f39326de1",
+          "semantic_hash": "f5c90a151b5c10ce15d2b92ad46bcfdfa902d4f03ad238446027f6fb4e2e0b56"
+        },
+        "id": "atlas-instance:steane:n7",
+        "label": "n7",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:f5c90a151b5c10ce15d2b92ad46bcfdfa902d4f03ad238446027f6fb4e2e0b56:small-exact-distance-enumeration:9123966f2d8f65ed9302205e6faf5310abce1555d44b0d8e1c1b14ec5e4c10a8@1",
+            "certificate:f5c90a151b5c10ce15d2b92ad46bcfdfa902d4f03ad238446027f6fb4e2e0b56:structural-validity:c96e37bf030de3bd8257ad7407a77e5461868f90add6e2aaba3566067f858e68@1"
+          ],
+          "instance_record_sha256": "9626a9072c7f887efcb94e7401c803571118c0b19dc6dbbed1adccec833914bc",
+          "lean_report_sha256": "7763ef4b7ced6390e16fb40d921ab6d995dad00c715ce9b866c1985b927a143a",
+          "semantic_hash": "f5c90a151b5c10ce15d2b92ad46bcfdfa902d4f03ad238446027f6fb4e2e0b56"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "c7f6bc2eed5fbd57eedc506400d8005a3cb0a6b443caa3f027fd9ec440f30517",
+        "v2_envelope_id": "formal-ir-v2:steane:n7"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:steane#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:steane:views:0",
+      "atlas-assertion:steane:views:1",
+      "atlas-assertion:steane:views:2",
+      "atlas-assertion:steane:views:3",
+      "atlas-assertion:steane:views:4",
+      "atlas-assertion:steane:views:5",
+      "atlas-assertion:steane:categories:0",
+      "atlas-assertion:steane:categories:1",
+      "atlas-assertion:steane:categories:2",
+      "atlas-assertion:steane:categories:3",
+      "atlas-assertion:steane:decoders:0",
+      "atlas-assertion:steane:decoders:1",
+      "atlas-assertion:steane:operations:0",
+      "atlas-assertion:steane:operations:1",
+      "atlas-assertion:steane:operations:2",
+      "atlas-assertion:steane:operations:3",
+      "atlas-assertion:steane:realizations:0",
+      "atlas-assertion:steane:realizations:1",
+      "atlas-assertion:steane:realizations:2",
+      "atlas-assertion:steane:realizations:3",
+      "atlas-assertion:steane:realizations:4",
+      "atlas-assertion:steane:realizations:5",
+      "atlas-assertion:steane:relations:0",
+      "atlas-assertion:steane:relations:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:steane#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:steane:views:0@3fba96ea020aca0dde15f1f78ae7a186e6b5413ad5fcb7292262a0b6a3f0477d",
+      "atlas-evidence:steane:views:1@9690a0387228ded4d7e0d51717d1546bef9ce0cb74751fbd93815a1cc3a92b57",
+      "atlas-evidence:steane:views:2@589dcb5af855d45993f2f81b5f4ff374f424364cf88547dcd6a384eadb583db6",
+      "atlas-evidence:steane:views:3@2d919402f96e853e2bfaddb54240189044f0edcb0b1b9ec7454c8e2ec452ef35",
+      "atlas-evidence:steane:views:4@982e600f14731d1ac3dd2b7c8127aa17f1d686cf3c81c19cf2e25067769cae46",
+      "atlas-evidence:steane:views:5@e197d803dbd45dbe4b8be0ff429ce2b44cf3c49c3f834ec68bc2017cb32640ad",
+      "atlas-evidence:steane:categories:0@3551d44fcda03a33ef959c3aa45bc4c57c94e9826a0b218669f3738296cef192",
+      "atlas-evidence:steane:categories:1@4d6f8c0ff44f542f991ca5f8adb9d5377eaa395d1b2a0103ebbe057a864559db",
+      "atlas-evidence:steane:categories:2@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:steane:categories:3@bc3ccc2ae11cc1239490f4a800dd2f79c1fbdfd03e46e68f1bc313007d178a9f",
+      "atlas-evidence:steane:decoders:0@d2833d96fcff8fed2c0c90e6b1b91df93eaa3da46097e38f9d6573e3039341af",
+      "atlas-evidence:steane:decoders:1@50b97403803e7e034b94408a5b3a6257f7fe9afc402dd95b3152bbe11305b6ca",
+      "atlas-evidence:steane:operations:0@a81a511c5e325487f43f810d98d5ea48b3211b9ca5456438010ab36aab35e57f",
+      "atlas-evidence:steane:operations:1@89ababf4e0cb60444c03062171c93c36bf0fdeea271017333ff4219590f7e4e6",
+      "atlas-evidence:steane:operations:2@21acf0e1304ca7249ce0a75ad392b43cb723b3f86d2106d7d43a806f3c0b633a",
+      "atlas-evidence:steane:operations:3@782cc9c293572b024354952f97edbaa3ad702add64b6752b55ef742ade67e103",
+      "atlas-evidence:steane:realizations:0@225ef514a7fe3bc0353d01b436b2493a3104d45d4774876c6bcd075c799923bb",
+      "atlas-evidence:steane:realizations:1@c84646996946341ab34d7c125d555d8e1e59b6f8e5212989746da392ea68d8fd",
+      "atlas-evidence:steane:realizations:2@1fa81eaab9468ca7217098f35b2d99256af5ea2ce44e13bab7d837a95989c462",
+      "atlas-evidence:steane:realizations:3@dba69b6a5730653e050c30608b0af2e9cd460eeff73ac6c30cc7850a941abf13",
+      "atlas-evidence:steane:realizations:4@11c4358927f4088bccef27df045fa375da7435a972ae5c57613060bc172fb7a8",
+      "atlas-evidence:steane:realizations:5@16ea9f0bbd8382897f1da730f8e72aedf215386d6095dca7e4fea61f82e6d74a",
+      "atlas-evidence:steane:relations:0@9e86f1e0a77b8b1ced9e851fc54f72deba87543e78ad811d057864ad22923a6c",
+      "atlas-evidence:steane:relations:1@bd03d14959562891e3520210e45d77affdd84a542e84d27523385871a9a791fb"
+    ],
+    "formalization_id": "atlas-formalization:steane",
+    "instance_ids": [
+      "atlas-instance:steane:n7"
+    ],
+    "page_id": "atlas-page:steane",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:steane"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:steane#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:steane#object",
+        "status": "preserved",
+        "tier": "T3"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:steane",
+    "presented_entity_ids": [
+      "eczoo-entity:steane#object"
+    ],
+    "primary_entity_id": "eczoo-entity:steane#object",
+    "redirects": [],
+    "route": "/entries/steane.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/steane"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

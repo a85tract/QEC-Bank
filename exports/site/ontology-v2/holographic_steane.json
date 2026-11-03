@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:holographic_steane",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:holographic_steane:views:0@fedf6f711b376c3f3b63a53edb710e4944c0210084a8edf77a6a9a986ce32d84",
+      "field": "views",
+      "id": "atlas-assertion:holographic_steane:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:holographic_steane",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:holographic_steane:categories:0@7d484ba19a3b4e7f1f81415910ec7dab4cc089f71e54a1e3adeeefbbcec069eb",
+      "field": "categories",
+      "id": "atlas-assertion:holographic_steane:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:holographic_steane#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:holographic_steane#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/holographic_steane",
+          "atlas:atlas/holographic_steane/card.yaml#/identity",
+          "t222:docs/lit/holographic_steane/holographic_steane-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/holographic/holographic_steane.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo holographic_steane identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:holographic_steane"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:holographic_steane#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "holographic_steane",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:holographic_steane",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "4c320c8eb721bc9a6053382902dba6b4c5db563c8dbeca7ef3d00080d8d2c250",
+          "payload_sha256": "b8c8e79f6dfa98b694881258fdefe4c7cbf05066a2a4abbbfbbc22f35f22b2c3",
+          "semantic_hash": "41798364154cb89f302e5a5e24e5bf05c790d16c9c16225657673d04205a870e"
+        },
+        "id": "atlas-instance:holographic_steane:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:41798364154cb89f302e5a5e24e5bf05c790d16c9c16225657673d04205a870e:structural-validity:c96e37bf030de3bd8257ad7407a77e5461868f90add6e2aaba3566067f858e68@1"
+          ],
+          "instance_record_sha256": "709b5c5962e65c7af5a176e231099d7d9b776f81435cfde879a8f1bb0e0ed94b",
+          "lean_report_sha256": "852062631278dd825276498bb26bd605faf3acf9586d2b7e0a464abeff10017c",
+          "semantic_hash": "41798364154cb89f302e5a5e24e5bf05c790d16c9c16225657673d04205a870e"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "d3bc01db3c382087e62231cdd2ff4ef6a43de1cc82d1bc92f644ba6130761485",
+        "v2_envelope_id": "formal-ir-v2:holographic_steane:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:holographic_steane#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:holographic_steane:views:0",
+      "atlas-assertion:holographic_steane:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:holographic_steane#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:holographic_steane:views:0@fedf6f711b376c3f3b63a53edb710e4944c0210084a8edf77a6a9a986ce32d84",
+      "atlas-evidence:holographic_steane:categories:0@7d484ba19a3b4e7f1f81415910ec7dab4cc089f71e54a1e3adeeefbbcec069eb"
+    ],
+    "formalization_id": "atlas-formalization:holographic_steane",
+    "instance_ids": [
+      "atlas-instance:holographic_steane:primary"
+    ],
+    "page_id": "atlas-page:holographic_steane",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:holographic_steane"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:holographic_steane#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:holographic_steane#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:holographic_steane",
+    "presented_entity_ids": [
+      "eczoo-entity:holographic_steane#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:holographic_steane#collection",
+    "redirects": [],
+    "route": "/entries/holographic_steane.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/holographic_steane"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

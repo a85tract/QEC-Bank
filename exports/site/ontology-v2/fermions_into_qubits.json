@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:fermions_into_qubits",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:fermions_into_qubits:views:0@3762f8d39304e9818b14886e10ef5c3ac5201849897acb8d50c09824af64625c",
+      "field": "views",
+      "id": "atlas-assertion:fermions_into_qubits:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:fermions_into_qubits",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:fermions_into_qubits:categories:0@a8cf762818da80f22de0bbd6c0d8be2832dcc77cf3f7decb43fbaef8ec42afc8",
+      "field": "categories",
+      "id": "atlas-assertion:fermions_into_qubits:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:fermions_into_qubits#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:fermions_into_qubits#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/fermions_into_qubits",
+          "atlas:atlas/fermions_into_qubits/card.yaml#/identity",
+          "t222:docs/lit/fermions_into_qubits/fermions_into_qubits-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/fermion_into_qubit/fermions_into_qubits.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo fermions_into_qubits identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:fermions_into_qubits"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:fermions_into_qubits#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "fermions_into_qubits",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:fermions_into_qubits",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "0b320061b16ca01388a6303987ac3123f34e42422507122d20a3bfd8968512bd",
+          "payload_sha256": "365fb757249dfcf6215d6c63eb22e151940186f1baa8471ee96f1173dff1c5e7",
+          "semantic_hash": "2c26c627d8c3c980f810227c03d968eeb0a4e714461ba6cc7c541648f8f0784c"
+        },
+        "id": "atlas-instance:fermions_into_qubits:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:2c26c627d8c3c980f810227c03d968eeb0a4e714461ba6cc7c541648f8f0784c:structural-validity:f4aeefaee782a3fd998cad2905a424df864e107a55281d378870486d3adac858@1"
+          ],
+          "instance_record_sha256": "dfa7b266a9c4e791793b012e973cb04948c59d0f9048c625d58c73ae9e0c7dc6",
+          "lean_report_sha256": "189248a338fe1aa9da03ad4142f22ac7c2c59cd9caa91cdd74428a940ac0d283",
+          "semantic_hash": "2c26c627d8c3c980f810227c03d968eeb0a4e714461ba6cc7c541648f8f0784c"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "c6e796b65263aa866c594e047e0ea21c5e2dfa9dd71ee95092310a863fc3f4ff",
+        "v2_envelope_id": "formal-ir-v2:fermions_into_qubits:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:fermions_into_qubits#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:fermions_into_qubits:views:0",
+      "atlas-assertion:fermions_into_qubits:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:fermions_into_qubits#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:fermions_into_qubits:views:0@3762f8d39304e9818b14886e10ef5c3ac5201849897acb8d50c09824af64625c",
+      "atlas-evidence:fermions_into_qubits:categories:0@a8cf762818da80f22de0bbd6c0d8be2832dcc77cf3f7decb43fbaef8ec42afc8"
+    ],
+    "formalization_id": "atlas-formalization:fermions_into_qubits",
+    "instance_ids": [
+      "atlas-instance:fermions_into_qubits:primary"
+    ],
+    "page_id": "atlas-page:fermions_into_qubits",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:fermions_into_qubits"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:fermions_into_qubits#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:fermions_into_qubits#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:fermions_into_qubits",
+    "presented_entity_ids": [
+      "eczoo-entity:fermions_into_qubits#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:fermions_into_qubits#collection",
+    "redirects": [],
+    "route": "/entries/fermions_into_qubits.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/fermions_into_qubits"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

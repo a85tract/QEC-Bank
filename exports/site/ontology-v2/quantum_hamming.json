@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_hamming",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming:views:0@46d7a66d0bc53994f638173868634a16128e01808d73bfed9cddc1f42ff854eb",
+      "field": "views",
+      "id": "atlas-assertion:quantum_hamming:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_hamming",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_hamming:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:quantum_hamming#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:quantum_hamming#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:quantum_hamming#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/quantum_hamming/card.yaml#/identity",
+          "atlas:atlas/quantum_hamming/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_hamming/quantum_hamming-eczoo-intake.md",
+          "t206:codes/quantum/qubits/small_distance/quantum_hamming.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_hamming"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:quantum_hamming#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_hamming",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_hamming",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "e18675ce669bb9a41908acd79a27303e0c68bafc4ce6c4418e7a65c4f2525cd1",
+          "payload_sha256": "0507747644b0afbb6fa7515cc0c67f1d1466bdca7a0b600711bcf5205021f947",
+          "semantic_hash": "da6f35c7f50c11c24d3df6eb1dbf825307279b30aeaf688b89273d5c05f299ca"
+        },
+        "id": "atlas-instance:quantum_hamming:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:da6f35c7f50c11c24d3df6eb1dbf825307279b30aeaf688b89273d5c05f299ca:small-exact-distance-enumeration:eac73679d7defb7334ed4aea3635084fdcdbed36f5af6d7abaa8ee9f2051867e@1",
+            "certificate:da6f35c7f50c11c24d3df6eb1dbf825307279b30aeaf688b89273d5c05f299ca:structural-validity:2d1cc68a528e43e5f172efa1a6eaf094f7ed5b3218eacf45eb0f4573bd010470@1"
+          ],
+          "instance_record_sha256": "4b7a2293c96131edea0dd57e285d0a78678e93bd8cb58f9f8e079242169f31d0",
+          "lean_report_sha256": "6ff6410410f4ec3e3a6f4c2aae25eec52c59a0401e5e404904483f91eae316b7",
+          "semantic_hash": "da6f35c7f50c11c24d3df6eb1dbf825307279b30aeaf688b89273d5c05f299ca"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b4b07699df4ee5bec2a06d5c629ef836a8db3d8547e5ce35194d1058d1931c7e",
+        "v2_envelope_id": "formal-ir-v2:quantum_hamming:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:quantum_hamming#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_hamming:views:0",
+      "atlas-assertion:quantum_hamming:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:quantum_hamming#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_hamming:views:0@46d7a66d0bc53994f638173868634a16128e01808d73bfed9cddc1f42ff854eb",
+      "atlas-evidence:quantum_hamming:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c"
+    ],
+    "formalization_id": "atlas-formalization:quantum_hamming",
+    "instance_ids": [
+      "atlas-instance:quantum_hamming:primary"
+    ],
+    "page_id": "atlas-page:quantum_hamming",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_hamming"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:quantum_hamming#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:quantum_hamming#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_hamming",
+    "presented_entity_ids": [
+      "eczoo-entity:quantum_hamming#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:quantum_hamming#collection",
+    "redirects": [],
+    "route": "/entries/quantum_hamming.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/quantum_hamming"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

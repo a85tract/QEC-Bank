@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:hierarchical",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:hierarchical:views:0@6e6442d76ca50925dce0f0683781498291a2161d9ba011c5068f2a46b28bde37",
+      "field": "views",
+      "id": "atlas-assertion:hierarchical:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:hierarchical",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:hierarchical:categories:0@7e48f7037c02efb547fc8c2e197a64c5fad2851aca375a3c972840ec3a935439",
+      "field": "categories",
+      "id": "atlas-assertion:hierarchical:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:hierarchical#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:hierarchical#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/hierarchical",
+          "atlas:atlas/hierarchical/card.yaml#/identity",
+          "t222:docs/lit/hierarchical/hierarchical-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/qldpc/concatenated/hierarchical.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo hierarchical identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:hierarchical"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:hierarchical#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "hierarchical",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:hierarchical",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f3f7842b8a10b4dad984e3f4c84e8b562771c5112cf7a528b3d15bcc8fa0e179",
+          "payload_sha256": "2208062f99920550e5e8c3a6407e6a23b0c73d38827370b30d91ba71c9c8c11c",
+          "semantic_hash": "9e71e3842bbf5fd944771f7a521696361c4064e68ca3f1801f902405ec146ad9"
+        },
+        "id": "atlas-instance:hierarchical:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:9e71e3842bbf5fd944771f7a521696361c4064e68ca3f1801f902405ec146ad9:structural-validity:008bdf5fd34675ff4a0498ddb436ca1e8ef59c9e913ecc960b3a013c89a9ee5a@1"
+          ],
+          "instance_record_sha256": "a2d64952a20eb925e53284be1728b8cb09af8c6eefbaabdd3e8a02f382fc5c95",
+          "lean_report_sha256": "2227cbcc1f2e35c94371b2decc71b047a863d88c71b449ab09bd70243d3c5faa",
+          "semantic_hash": "9e71e3842bbf5fd944771f7a521696361c4064e68ca3f1801f902405ec146ad9"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "17696049554f62955af986fbbab1428dbbc8085f866d1004997ce785f3d693e5",
+        "v2_envelope_id": "formal-ir-v2:hierarchical:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:hierarchical#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:hierarchical:views:0",
+      "atlas-assertion:hierarchical:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:hierarchical#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:hierarchical:views:0@6e6442d76ca50925dce0f0683781498291a2161d9ba011c5068f2a46b28bde37",
+      "atlas-evidence:hierarchical:categories:0@7e48f7037c02efb547fc8c2e197a64c5fad2851aca375a3c972840ec3a935439"
+    ],
+    "formalization_id": "atlas-formalization:hierarchical",
+    "instance_ids": [
+      "atlas-instance:hierarchical:primary"
+    ],
+    "page_id": "atlas-page:hierarchical",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:hierarchical"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:hierarchical#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:hierarchical#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:hierarchical",
+    "presented_entity_ids": [
+      "eczoo-entity:hierarchical#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:hierarchical#collection",
+    "redirects": [],
+    "route": "/entries/hierarchical.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/hierarchical"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

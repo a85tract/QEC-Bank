@@ -1,0 +1,59 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Gauge group, center, and subsystem qubit count</title><link rel='stylesheet' href='../../../style.css?v=3d2fa6103434'><script defer src='../../../renderer/mathjax-config.js?v=6dc4bd4b7c05'></script><script defer src='https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js'></script></head><body><nav><a href='../../../index.html'>QEC Atlas</a> · <a href='../../../foundations/index.html'>Foundations</a> · <a href='../../../wanted.html'>Open problems</a></nav><h1>Gauge group, center, and subsystem qubit count</h1><div class='intuition'><p>This page derives the static rectangular presentation exported by <code>constructor.py</code>. It uses sign-free Pauli algebra; phases do not enter any rank or commutation statement.</p>
+<h2 id='coordinate-and-pauli-convention'>Coordinate and Pauli convention</h2>
+<p>Let rows be indexed by <code>i=0,...,r-1</code> and columns by <code>j=0,...,c-1</code>. The row-major qubit index is</p>
+<div class='math-display'>$$
+q(i,j)=ic+j.
+$$</div>
+<p>The local gauge generators are</p>
+<p>$$g^X_{i,j}=X_{i,j}X_{i+1,j},\qquad 0\le i&lt;r-1,\ 0\le j&lt;c,$$</p>
+<p>and</p>
+<p>$$g^Z_{i,j}=Z_{i,j}Z_{i,j+1},\qquad 0\le i&lt;r,\ 0\le j&lt;c-1.$$</p>
+<p>Thus X edges are vertical and Z edges are horizontal. The convention is deliberate: it makes a bare X logical span a row and a bare Z logical span a column. Transposing the grid and exchanging X/Z is equivalent, but it swaps the sector labels used below.</p>
+<h2 id='why-the-gauge-group-is-nonabelian'>Why the gauge group is nonabelian</h2>
+<p>Two generators of the same Pauli type commute. A vertical X edge and a horizontal Z edge anticommute exactly when they share one endpoint. For the <code>3 × 3</code> constructor order,</p>
+<p><code>g^X_{0,0}=X_0X_3</code></p>
+<p>and</p>
+<p><code>g^Z_{0,0}=Z_0Z_1</code></p>
+<p>share only <code>q0</code>, so their symplectic product is one. The tour highlights this pair as gauge items zero and six. This is why the individual pair outcomes cannot all be stabilizer eigenvalues.</p>
+<h2 id='constructing-the-center'>Constructing the center</h2>
+<p>For each adjacent row pair, multiply every vertical X edge across the columns:</p>
+<p>$$S^X_i=\prod_{j=0}^{c-1}g^X_{i,j} =\prod_{j=0}^{c-1}X_{i,j}X_{i+1,j}.$$</p>
+<p>For each adjacent column pair, multiply every horizontal Z edge across the rows:</p>
+<p>$$S^Z_j=\prod_{i=0}^{r-1}g^Z_{i,j} =\prod_{i=0}^{r-1}Z_{i,j}Z_{i,j+1}.$$</p>
+<p>An X strip and a Z strip overlap on the four corners of their <code>2 × 2</code> intersection, so they commute. More strongly, an X strip meets an individual horizontal Z edge on zero or two sites, and a Z strip meets an individual vertical X edge on zero or two sites. Every strip therefore commutes with the entire gauge group, not merely with the other strips.</p>
+<p>The constructor checks both statements:</p>
+<ul><li><code>CheckMatrix.validate()</code> rejects any stabilizer/gauge anticommutation;</li><li><code>rank([G;S])=rank(G)</code> proves that every declared center row lies in the generated gauge span.</li></ul>
+<h2 id='rank-ledger'>Rank ledger</h2>
+<p>Within one column, the vertical X supports are the <code>r-1</code> rows of the open length-<code>r</code> repetition parity matrix. They are independent. Different columns have disjoint supports, so</p>
+<div class='math-display'>$$
+rank(G_X)=c(r-1).
+$$</div>
+<p>Similarly, the horizontal Z supports form an independent length-<code>c</code> open chain inside each row:</p>
+<div class='math-display'>$$
+rank(G_Z)=r(c-1).
+$$</div>
+<p>X-only and Z-only symplectic rows occupy different binary halves, so their ranks add:</p>
+<div class='math-display'>$$
+rank(G)=c(r-1)+r(c-1)=2rc-r-c.
+$$</div>
+<p>The X center contains <code>r-1</code> independent adjacent-row strips; the Z center contains <code>c-1</code> independent adjacent-column strips. Hence</p>
+<div class='math-display'>$$
+rank(S)=r+c-2.
+$$</div>
+<p>For a subsystem code with gauge group <code>G</code> and center stabilizer group <code>S</code>, the protected and gauge dimensions are</p>
+<p>$$k=n-\frac{rank(G)+rank(S)}{2},\qquad g=\frac{rank(G)-rank(S)}{2}.$$</p>
+<p>Substituting <code>n=rc</code> gives</p>
+<div class='math-display'>$$
+k=1,\qquad g=rc-r-c+1=(r-1)(c-1).
+$$</div>
+<p>The three shipped instances therefore have the following independently recomputed ledger:</p>
+<div class='table-wrap markdown-table-wrap'><table class='markdown-table'><thead><tr><th class='align-left' scope='col'>rectangle</th><th class='align-right' scope='col'><code>rank(S)</code></th><th class='align-right' scope='col'><code>rank(G)</code></th><th class='align-right' scope='col'>protected <code>k</code></th><th class='align-right' scope='col'>gauge <code>g</code></th></tr></thead><tbody><tr><td class='align-left'><code>2 × 2</code></td><td class='align-right'>2</td><td class='align-right'>4</td><td class='align-right'>1</td><td class='align-right'>1</td></tr><tr><td class='align-left'><code>3 × 3</code></td><td class='align-right'>4</td><td class='align-right'>12</td><td class='align-right'>1</td><td class='align-right'>4</td></tr><tr><td class='align-left'><code>3 × 5</code></td><td class='align-right'>6</td><td class='align-right'>22</td><td class='align-right'>1</td><td class='align-right'>8</td></tr></tbody></table></div>
+<p>The structured gauge-count claims cite the subsystem literature because the ordinary entry verifier exposes <code>k</code> but does not emit gauge-qubit claims. <code>reproduce.py</code> checks every table cell without changing that provenance class.</p>
+<h2 id='bare-protected-pauli-algebra'>Bare protected Pauli algebra</h2>
+<p>Choose</p>
+<p>$$\bar X_b=\prod_{j=0}^{c-1}X_{0,j},\qquad \bar Z_b=\prod_{i=0}^{r-1}Z_{i,0}.$$</p>
+<p>The subscript <code>b</code> means *bare*: each operator commutes with the full gauge group. <code>\bar X_b</code> meets each horizontal Z edge in its row twice, and <code>\bar Z_b</code> meets each vertical X edge in its column twice. They meet each other once at <code>q(0,0)</code>, so they anticommute and generate one protected Pauli pair.</p>
+<p>A complete X row at height <code>i</code> differs from the row at <code>i+1</code> by <code>S^X_i</code>. Likewise, neighboring complete Z columns differ by <code>S^Z_j</code>. Parallel bare representatives therefore differ by center elements, which are also gauge elements.</p>
+<p>This bare pair proves a protected qubit exists, but it is not yet the distance proof. Distance permits multiplication by noncentral gauge operators and thus minimizes over dressed representatives; that quotient is derived on the <a href='dressed-distance-and-decoding.html'>distance page</a>.</p>
+<h2 id='what-the-calculation-does-not-establish'>What the calculation does not establish</h2>
+<ul><li>It does not specify a measurement schedule. Noncommuting pair generators require time ordering and a detector convention.</li><li>It does not turn the long center strips into local stabilizers. Only their measurement factors are local.</li><li>It does not prove a scalable distance theorem merely because the shared Atlas referee exactly enumerates the shipped small instances. Certified lower bounds beyond the exact-search ceiling and equivalence-safe changes of subsystem presentation remain routed to <code>wanted:subsystem-dressed-distance</code>.</li><li>It does not make the compass Hamiltonian self-correcting or topological. Hamiltonian protection is a dynamics claim with separate evidence.</li></ul></div></body></html>

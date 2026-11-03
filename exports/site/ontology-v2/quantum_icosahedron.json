@@ -1,0 +1,170 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_icosahedron#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_icosahedron:views:0@03cb4d3f7eb7455417c9b9e48c1783a3029ba2ba84d972d1a2429c8e5fb63a1f",
+      "field": "views",
+      "id": "atlas-assertion:quantum_icosahedron:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:quantum_icosahedron#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_icosahedron:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_icosahedron:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T234 same-cohort recovery producer draft; T231 lineage preserved; independent review and release gates pending",
+      "entity_id": "eczoo-entity:quantum_icosahedron#object",
+      "status": "draft-formal-skeleton",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:quantum_icosahedron#object",
+      "lineage": {
+        "action": "new-T231-object",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T234 same-cohort recovery is the current admission authority; reused T231 draft lineage preserved; independent review and release gates pending",
+        "evidence_locators": [
+          "docs/tasks/T234.md",
+          "docs/tasks/T231.md",
+          "docs/lit/quantum_icosahedron/quantum_icosahedron-eczoo-intake.md"
+        ]
+      },
+      "scope_boundary": "The single five-covered icosahedral code in arXiv:2411.14448v4 V.A.2, with six inputs at successive 300-degree turns; no other cover sizes or input placements.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:quantum_icosahedron"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:quantum_icosahedron#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_icosahedron",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_icosahedron",
+    "instance_role": "exact-fixed-code",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "4a0a959f52badd782c0d925b7ea8b3b57942d91d67ed79545b33ba4ac0ce539e",
+          "payload_sha256": "b880d2d76a81da8c48b12f999aa3153bd514a40869dc997d596ab3e759814d26",
+          "semantic_hash": "f3dc50743fa737583924d0090369819010ef6889f40b8cc0ff036ab5ae8517fe"
+        },
+        "id": "atlas-instance:quantum_icosahedron:five-cover",
+        "label": "five-cover",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:f3dc50743fa737583924d0090369819010ef6889f40b8cc0ff036ab5ae8517fe:structural-validity:187065c57ee2c882e4da3b470faa73d97ab8f202c11ec8558bc4a8b277ed9372@1"
+          ],
+          "instance_record_sha256": "8d80ee70897ac8d8b0faab10aeb39979f89cd9bc12d42adc3306e4c0d9f42524",
+          "lean_report_sha256": "d9a798c942bfa9fc9f69c42845e22e9daeaaed8d75c24200e5b37fcdb1bbb083",
+          "semantic_hash": "f3dc50743fa737583924d0090369819010ef6889f40b8cc0ff036ab5ae8517fe"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "99dcc1bb9da84d197aba9bc6179df8f042f675cb49ca7ef010188ca539ca8aa3",
+        "v2_envelope_id": "formal-ir-v2:quantum_icosahedron:five-cover"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "expected_instances": 1,
+      "replay_required": true,
+      "status": "controller-replay-pending",
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:quantum_icosahedron#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_icosahedron:views:0",
+      "atlas-assertion:quantum_icosahedron:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:quantum_icosahedron#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_icosahedron:views:0@03cb4d3f7eb7455417c9b9e48c1783a3029ba2ba84d972d1a2429c8e5fb63a1f",
+      "atlas-evidence:quantum_icosahedron:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c"
+    ],
+    "formalization_id": "atlas-formalization:quantum_icosahedron",
+    "instance_ids": [
+      "atlas-instance:quantum_icosahedron:five-cover"
+    ],
+    "page_id": "atlas-page:quantum_icosahedron",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:quantum_icosahedron"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:quantum_icosahedron#object",
+    "completion_scopes": [
+      {
+        "authority": "T234 same-cohort recovery producer draft; T231 lineage preserved; independent review and release gates pending",
+        "entity_id": "eczoo-entity:quantum_icosahedron#object",
+        "status": "draft-formal-skeleton",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_icosahedron",
+    "presented_entity_ids": [
+      "eczoo-entity:quantum_icosahedron#object"
+    ],
+    "primary_entity_id": "eczoo-entity:quantum_icosahedron#object",
+    "redirects": [],
+    "route": "/entries/quantum_icosahedron.html",
+    "route_action": "new-entry-route",
+    "route_continuity": "new-route",
+    "source_path": "atlas/quantum_icosahedron"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

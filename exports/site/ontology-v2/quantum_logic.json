@@ -1,0 +1,335 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-entity:quantum_logic#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_logic:views:0@9386d33df71d6eada648629da282b2021e9a1a32feca5da43902c223ec117d94",
+      "field": "views",
+      "id": "atlas-assertion:quantum_logic:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:quantum_logic#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_logic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_logic:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+    "status": "lossy"
+  },
+  "completion_scopes": [
+    {
+      "authority": "C2 does not transfer child completeness to parent",
+      "entity_id": "eczoo-entity:quantum_logic#collection",
+      "status": "new-broad-skeleton",
+      "tier": "T0"
+    },
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "atlas-entity:quantum_logic#subject",
+      "status": "preserved-child-scope",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family",
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:quantum_logic#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:quantum_logic#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+        "status": "lossy"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/quantum_logic/card.yaml#/identity",
+          "atlas:atlas/quantum_logic/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_logic/quantum_logic-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/css/quantum_logic.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:quantum_logic#collection@qec-atlas-eczoo-ontology-v2"
+    },
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "atlas-entity:quantum_logic#subject",
+      "lineage": {
+        "action": "atlas-scope-made-explicit",
+        "previous_version_ids": [
+          "atlas-page:quantum_logic@legacy-subject"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "C2-scoped-expansion",
+        "evidence_locators": [
+          "atlas:atlas/quantum_logic/card.yaml#/identity",
+          "atlas:atlas/quantum_logic/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_logic/quantum_logic-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/css/quantum_logic.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Four-qubit core, level-zero Quantum Logic codes indexed by r.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "atlas-entity:quantum_logic#subject@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_logic",
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_logic",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b633b3209f48595fb08933a88cbea9edb08337f037cca502618c1277af203eaa",
+          "payload_sha256": "fe72a276bcd8c0a6310cdfe94bf330cb9b42d7c7b0e19e8bbf857ca4f6f56d63",
+          "semantic_hash": "2dba56e863d8bc9e407b12fab664665a7a11f6bd623d9cd07c9ca1cec99cf0fc"
+        },
+        "id": "atlas-instance:quantum_logic:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:2dba56e863d8bc9e407b12fab664665a7a11f6bd623d9cd07c9ca1cec99cf0fc:small-exact-distance-enumeration:257f138a0004a9263075e2b9acadc4a3d1b268f5a0fe1e52cd56c21e214dbb40@1",
+            "certificate:2dba56e863d8bc9e407b12fab664665a7a11f6bd623d9cd07c9ca1cec99cf0fc:structural-validity:057983367453df783d2754231b1e6cb3685ee792ad08cb81ff61d4c84e1993fb@1"
+          ],
+          "instance_record_sha256": "22d9b0b691c43a2ebe7ea8eddd2de73703e678956bb0a79023b1936fc344438b",
+          "lean_report_sha256": "f697dc493c81773734aa4279d63be8f6c2f6d3845dd82fdf793c6d86563b7e65",
+          "semantic_hash": "2dba56e863d8bc9e407b12fab664665a7a11f6bd623d9cd07c9ca1cec99cf0fc"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "8b2d22893826b818b675b422e23516eb32a14a85c7e1c3d0015514125c87c88b",
+        "v2_envelope_id": "formal-ir-v2:quantum_logic:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "atlas-entity:quantum_logic#subject"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_logic:views:0",
+      "atlas-assertion:quantum_logic:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:quantum_logic#collection",
+      "atlas-entity:quantum_logic#subject"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_logic:views:0@9386d33df71d6eada648629da282b2021e9a1a32feca5da43902c223ec117d94",
+      "atlas-evidence:quantum_logic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:quantum_logic",
+    "instance_ids": [
+      "atlas-instance:quantum_logic:primary"
+    ],
+    "page_id": "atlas-page:quantum_logic",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "atlas-entity:quantum_logic#subject",
+    "completion_scopes": [
+      {
+        "authority": "C2 does not transfer child completeness to parent",
+        "entity_id": "eczoo-entity:quantum_logic#collection",
+        "status": "new-broad-skeleton",
+        "tier": "T0"
+      },
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "atlas-entity:quantum_logic#subject",
+        "status": "preserved-child-scope",
+        "tier": "T1"
+      }
+    ],
+    "composition": "scoped-expansion",
+    "id": "atlas-page:quantum_logic",
+    "presented_entity_ids": [
+      "eczoo-entity:quantum_logic#collection",
+      "atlas-entity:quantum_logic#subject"
+    ],
+    "primary_entity_id": "eczoo-entity:quantum_logic#collection",
+    "redirects": [],
+    "route": "/entries/quantum_logic.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/quantum_logic"
+  },
+  "parent_content": {
+    "child_relation": {
+      "assertion_id": "atlas-parent-assertion:quantum_logic:child-relation",
+      "from": "atlas-entity:quantum_logic#subject",
+      "origin": {
+        "kind": "verified",
+        "method": "owner-approved-C2-scoped-expansion"
+      },
+      "to": "eczoo-entity:quantum_logic#collection",
+      "type": "narrower-than"
+    },
+    "description": {
+      "applies_to": "eczoo-entity:quantum_logic#collection",
+      "assertion_id": "atlas-parent-assertion:quantum_logic:description",
+      "origin": {
+        "kind": "claimed",
+        "locators": [
+          "/description#paragraph:0",
+          "/description#paragraph:1"
+        ],
+        "method": "pinned-eczoo-source",
+        "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic"
+      },
+      "text": "Quantum Logic Codes form a collection generated by choosing among several self-dual CSS cores, taking disjoint copies, and optionally applying Steane concatenation. Atlas currently formalizes only one core choice at the un-concatenated level."
+    },
+    "entry_id": "quantum_logic",
+    "parent_entity_id": "eczoo-entity:quantum_logic#collection",
+    "scope": {
+      "applies_to": "eczoo-entity:quantum_logic#collection",
+      "assertion_id": "atlas-parent-assertion:quantum_logic:scope",
+      "excludes": [
+        "Restricting the collection to the four-qubit, level-zero Atlas child.",
+        "Transferring the child entry's T1 completion to the collection."
+      ],
+      "includes": [
+        "All source-listed self-dual CSS core choices.",
+        "The disjoint-copy axis and the Steane-concatenation axis."
+      ],
+      "origin": {
+        "kind": "claimed",
+        "locators": [
+          "/description#paragraph:1"
+        ],
+        "method": "pinned-eczoo-source-plus-owner-scope-decision",
+        "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic"
+      }
+    },
+    "source": {
+      "locators": [
+        "/description#paragraph:0",
+        "/description#paragraph:1",
+        "/protection#paragraph:0",
+        "/protection#paragraph:1"
+      ],
+      "node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic",
+      "path": "codes/quantum/qubits/stabilizer/css/quantum_logic.yml",
+      "sha256": "d547c7c50304ef3f664cd5d219e5c653904320ba49b199a4988c3a0e2e99310e",
+      "zoo_id": "quantum_logic"
+    },
+    "tier": "T0",
+    "variant_map": {
+      "applies_to": "eczoo-entity:quantum_logic#collection",
+      "assertion_id": "atlas-parent-assertion:quantum_logic:variant-map",
+      "completeness": "source-axis-map",
+      "variants": [
+        {
+          "atlas_status": "one-choice-formalized",
+          "id": "core-choice",
+          "label": "Source-listed self-dual CSS core choice",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:1"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic"
+          }
+        },
+        {
+          "atlas_status": "child-axis-partially-represented",
+          "id": "disjoint-copy-axis",
+          "label": "Disjoint-copy parameter axis",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:1"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic"
+          }
+        },
+        {
+          "atlas_status": "parent-only-axis",
+          "id": "steane-concatenation-axis",
+          "label": "Steane-concatenation level axis",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:1"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_logic"
+          }
+        }
+      ]
+    }
+  },
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

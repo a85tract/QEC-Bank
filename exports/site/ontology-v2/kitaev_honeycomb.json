@@ -1,0 +1,188 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:kitaev_honeycomb",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:kitaev_honeycomb:views:0@699a7a296f53630bfca7a4398114915bed345993c933ac617207586d0e7f09fd",
+      "field": "views",
+      "id": "atlas-assertion:kitaev_honeycomb:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:kitaev_honeycomb",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:kitaev_honeycomb:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:kitaev_honeycomb:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:kitaev_honeycomb#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:kitaev_honeycomb:categories:1@856d268eee33dc52618528a9c4db68ba3436569ddb1b74d811c20f97247e9253",
+      "field": "categories",
+      "id": "atlas-assertion:kitaev_honeycomb:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:kitaev_honeycomb#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:kitaev_honeycomb#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:kitaev_honeycomb#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/kitaev_honeycomb/card.yaml#/identity",
+          "atlas:atlas/kitaev_honeycomb/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/kitaev_honeycomb/kitaev_honeycomb-eczoo-intake.md",
+          "t206:codes/quantum/qubits/subsystem/topological/honeycomb/kitaev_honeycomb.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:kitaev_honeycomb"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:kitaev_honeycomb#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "kitaev_honeycomb",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:kitaev_honeycomb",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "a0b64982df082a71ceb0ecf6b9bf3173c51393ae92dd282035ca6b178edb0cc0",
+          "payload_sha256": "121507960d907bccd340bd5b599e88d464fa2c8c32623f30798f9c69d4ccd6b4",
+          "semantic_hash": "00584d0b7ad2d5a4c8015d73a1a32754c860520979b48359ef7b9af724275b00"
+        },
+        "id": "atlas-instance:kitaev_honeycomb:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:00584d0b7ad2d5a4c8015d73a1a32754c860520979b48359ef7b9af724275b00:structural-validity:73b758034241c37135f11063e6dc7f228ff9c9e93a83aa94107b69b4558eb650@1"
+          ],
+          "instance_record_sha256": "d61ab6684849ae5e6869af994ee4952b5d788195847e7cd9c5c59c8f4391b8b6",
+          "lean_report_sha256": "bebb4d8291a5d39377f21d15f452c01a5947da40e086010661a35b8172625954",
+          "semantic_hash": "00584d0b7ad2d5a4c8015d73a1a32754c860520979b48359ef7b9af724275b00"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b8a085e0b743cbfb5a8aeebdcc44a5988768df9879127242c140252c75cbdbc6",
+        "v2_envelope_id": "formal-ir-v2:kitaev_honeycomb:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:kitaev_honeycomb#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:kitaev_honeycomb:views:0",
+      "atlas-assertion:kitaev_honeycomb:categories:0",
+      "atlas-assertion:kitaev_honeycomb:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:kitaev_honeycomb#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:kitaev_honeycomb:views:0@699a7a296f53630bfca7a4398114915bed345993c933ac617207586d0e7f09fd",
+      "atlas-evidence:kitaev_honeycomb:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "atlas-evidence:kitaev_honeycomb:categories:1@856d268eee33dc52618528a9c4db68ba3436569ddb1b74d811c20f97247e9253"
+    ],
+    "formalization_id": "atlas-formalization:kitaev_honeycomb",
+    "instance_ids": [
+      "atlas-instance:kitaev_honeycomb:primary"
+    ],
+    "page_id": "atlas-page:kitaev_honeycomb",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:kitaev_honeycomb"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:kitaev_honeycomb#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:kitaev_honeycomb#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:kitaev_honeycomb",
+    "presented_entity_ids": [
+      "eczoo-entity:kitaev_honeycomb#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:kitaev_honeycomb#collection",
+    "redirects": [],
+    "route": "/entries/kitaev_honeycomb.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/kitaev_honeycomb"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

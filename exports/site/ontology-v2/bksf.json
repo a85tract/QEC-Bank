@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:bksf",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:bksf:views:0@3762f8d39304e9818b14886e10ef5c3ac5201849897acb8d50c09824af64625c",
+      "field": "views",
+      "id": "atlas-assertion:bksf:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:bksf",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:bksf:categories:0@b714af4fd7d868e4029c5d3e1867aa2fc39c742fcfc45999133eca0fdf2d57b9",
+      "field": "categories",
+      "id": "atlas-assertion:bksf:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:bksf#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:bksf#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/bksf",
+          "atlas:atlas/bksf/card.yaml#/identity",
+          "t222:docs/lit/bksf/bksf-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/fermion_into_qubit/bosonization/2d/bksf.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo bksf identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:bksf"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:bksf#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "bksf",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:bksf",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "0b900540a74a22ffbcf747257fc80a0e56be826f3a5511a68f7c2a421b4fd5c7",
+          "payload_sha256": "7af0ba110ca2c1cabc2a38759b0c2ba5e529fc0635c9c22c7d19a5ff5d5555e0",
+          "semantic_hash": "8d8f7d40b8a92c81a07b293f2bbb358fcb8c6898c1e245790cabc9ee5cda7f1e"
+        },
+        "id": "atlas-instance:bksf:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:8d8f7d40b8a92c81a07b293f2bbb358fcb8c6898c1e245790cabc9ee5cda7f1e:structural-validity:f4aeefaee782a3fd998cad2905a424df864e107a55281d378870486d3adac858@1"
+          ],
+          "instance_record_sha256": "2a8d55dee36c10df630c4be3465e3d828ce47b2e4b38923d6270b84fcc63581b",
+          "lean_report_sha256": "2dc237ef9b136039f24188ca5ad4a995f0e56f7cd1e2a54bf84b8a7fcdadb268",
+          "semantic_hash": "8d8f7d40b8a92c81a07b293f2bbb358fcb8c6898c1e245790cabc9ee5cda7f1e"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "c6e796b65263aa866c594e047e0ea21c5e2dfa9dd71ee95092310a863fc3f4ff",
+        "v2_envelope_id": "formal-ir-v2:bksf:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:bksf#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:bksf:views:0",
+      "atlas-assertion:bksf:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:bksf#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:bksf:views:0@3762f8d39304e9818b14886e10ef5c3ac5201849897acb8d50c09824af64625c",
+      "atlas-evidence:bksf:categories:0@b714af4fd7d868e4029c5d3e1867aa2fc39c742fcfc45999133eca0fdf2d57b9"
+    ],
+    "formalization_id": "atlas-formalization:bksf",
+    "instance_ids": [
+      "atlas-instance:bksf:primary"
+    ],
+    "page_id": "atlas-page:bksf",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:bksf"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:bksf#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:bksf#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:bksf",
+    "presented_entity_ids": [
+      "eczoo-entity:bksf#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:bksf#collection",
+    "redirects": [],
+    "route": "/entries/bksf.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/bksf"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

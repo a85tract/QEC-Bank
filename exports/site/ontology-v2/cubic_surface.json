@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:cubic_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:cubic_surface:views:0@ac304761260cadac4499ad2f34aeb683ab4d97d6e03fd42211967d55d4046c2e",
+      "field": "views",
+      "id": "atlas-assertion:cubic_surface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:cubic_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:cubic_surface:categories:0@0332ee357d7b61396e96177633cfca914a9d28d863f04f3c0426f7e4f19d6943",
+      "field": "categories",
+      "id": "atlas-assertion:cubic_surface:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:cubic_surface#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:cubic_surface#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/cubic_surface",
+          "atlas:atlas/cubic_surface/card.yaml#/identity",
+          "t222:docs/lit/cubic_surface/cubic_surface-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/small_distance/small/8/cubic_surface.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo cubic_surface identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:cubic_surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:cubic_surface#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "cubic_surface",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:cubic_surface",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "192dd630ae162ccc23404055240a07b989432b7c73eaa41a97efa375eb97903c",
+          "payload_sha256": "5d4d9b88eab9f960d3ff709a59c75057f60789465a46867f8cc6095ffdbf86b5",
+          "semantic_hash": "692212bd1ef35f4bccb6a3cc036ee55ba0d96ab4b90a8e6cc0f7849de8d40b9a"
+        },
+        "id": "atlas-instance:cubic_surface:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:692212bd1ef35f4bccb6a3cc036ee55ba0d96ab4b90a8e6cc0f7849de8d40b9a:structural-validity:5a9252ed45d07b2faa3bf791947d27404dbcb23dcc11e8c2d890b012f5f46056@1"
+          ],
+          "instance_record_sha256": "de22e9b67eecefb91cd00a73019711e4860a6f73c36c8b8d23ea49722400a39b",
+          "lean_report_sha256": "4f20ed44578f2eb4daf798fa6b326fc73469d34d134a5adb058fdf93f4289432",
+          "semantic_hash": "692212bd1ef35f4bccb6a3cc036ee55ba0d96ab4b90a8e6cc0f7849de8d40b9a"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b33bf08ade32c5b7944295370f1d36ae082d758c0017e2fb5971da9e5caa6f28",
+        "v2_envelope_id": "formal-ir-v2:cubic_surface:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:cubic_surface#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:cubic_surface:views:0",
+      "atlas-assertion:cubic_surface:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:cubic_surface#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:cubic_surface:views:0@ac304761260cadac4499ad2f34aeb683ab4d97d6e03fd42211967d55d4046c2e",
+      "atlas-evidence:cubic_surface:categories:0@0332ee357d7b61396e96177633cfca914a9d28d863f04f3c0426f7e4f19d6943"
+    ],
+    "formalization_id": "atlas-formalization:cubic_surface",
+    "instance_ids": [
+      "atlas-instance:cubic_surface:primary"
+    ],
+    "page_id": "atlas-page:cubic_surface",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:cubic_surface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:cubic_surface#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:cubic_surface#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:cubic_surface",
+    "presented_entity_ids": [
+      "eczoo-entity:cubic_surface#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:cubic_surface#collection",
+    "redirects": [],
+    "route": "/entries/cubic_surface.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/cubic_surface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

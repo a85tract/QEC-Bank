@@ -1,0 +1,171 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:triangle_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:triangle_surface:views:0@9288abeaa4219bd0e099146cb2c214e3ad986b2d31541a728255aecc9eb6ea55",
+      "field": "views",
+      "id": "atlas-assertion:triangle_surface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:triangle_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:triangle_surface:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:triangle_surface:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T234 current admission authority; reused T231 isolated production draft; independent acceptance pending",
+      "entity_id": "eczoo-entity:triangle_surface#collection",
+      "status": "formal-skeleton",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:triangle_surface#collection",
+      "lineage": {
+        "action": "proposed-by-T231",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T234 current admission authority; T231 prospectively authorized finite-witness scope retained as historical provenance",
+        "evidence_locators": [
+          "docs/tasks/T234.md",
+          "docs/tasks/T231.md",
+          "docs/lit/triangle_surface/triangle_surface-eczoo-intake.md"
+        ]
+      },
+      "scope_boundary": "Yoder–Kim r by s by t central-twist triangle family. Formal coverage is limited to the symmetric r=s=t=2 coordinate patch, with the source Pauli convention and no extraction circuit.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:triangle_surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:triangle_surface#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "triangle_surface",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated: r=s=t=2 only",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:triangle_surface",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "1c63ed52529a96e58bba453ed02aaf917fc06f782a0159bca0d730aa84ec02d6",
+          "payload_sha256": "dafdff18537c132f88ab584aa8c622e5b25115e6ccd6c7670d4970d7b9ab8494",
+          "semantic_hash": "f913c4ca998380290c5a91dad365b1d05b52de0fb271d36340b54651af279c6d"
+        },
+        "id": "atlas-instance:triangle_surface:r2-s2-t2",
+        "label": "r2-s2-t2",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:f913c4ca998380290c5a91dad365b1d05b52de0fb271d36340b54651af279c6d:small-exact-distance-enumeration:1b226fb0320fd0263ac49e5eceffb7465f84203cb7b361e0291909a1a13a029d@1",
+            "certificate:f913c4ca998380290c5a91dad365b1d05b52de0fb271d36340b54651af279c6d:structural-validity:1fa08ef109e662e6ab859b67469d66887e69e95cad25ddaab4d64e8a63c8734d@1"
+          ],
+          "lean_report_sha256": "4c149bbd81c9fe9911903a81d1bb337385a507c34bc3983b2f33b4e67cc3aa96",
+          "semantic_hash": "f913c4ca998380290c5a91dad365b1d05b52de0fb271d36340b54651af279c6d"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "1765f2914bacdcda6e7bac14ed22599162d2c767c2911b75ead42940087316b2",
+        "v2_envelope_id": "formal-ir-v2:triangle_surface:r2-s2-t2"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "finite-source-convention-bound; independent review pending",
+    "target_entity_id": "eczoo-entity:triangle_surface#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:triangle_surface:views:0",
+      "atlas-assertion:triangle_surface:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:triangle_surface#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:triangle_surface:views:0@9288abeaa4219bd0e099146cb2c214e3ad986b2d31541a728255aecc9eb6ea55",
+      "atlas-evidence:triangle_surface:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c"
+    ],
+    "formalization_id": "atlas-formalization:triangle_surface",
+    "instance_ids": [
+      "atlas-instance:triangle_surface:r2-s2-t2"
+    ],
+    "page_id": "atlas-page:triangle_surface",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:triangle_surface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:triangle_surface#collection",
+    "completion_scopes": [
+      {
+        "authority": "T234 current admission authority; reused T231 isolated production draft; independent acceptance pending",
+        "entity_id": "eczoo-entity:triangle_surface#collection",
+        "status": "formal-skeleton",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:triangle_surface",
+    "presented_entity_ids": [
+      "eczoo-entity:triangle_surface#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:triangle_surface#collection",
+    "redirects": [],
+    "route": "/entries/triangle_surface.html",
+    "route_action": "new-page",
+    "route_continuity": "new-route",
+    "source_path": "atlas/triangle_surface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

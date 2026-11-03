@@ -1,0 +1,464 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:0@493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:1@2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:2@8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:3@7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:4@b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:5@396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:5",
+      "index": 5
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:6@264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:6",
+      "index": 6
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:views:7@4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da",
+      "field": "views",
+      "id": "atlas-assertion:bivariate_bicycle:views:7",
+      "index": 7
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:bivariate_bicycle:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:categories:1@4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc",
+      "field": "categories",
+      "id": "atlas-assertion:bivariate_bicycle:categories:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:0@2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180",
+      "field": "decoders",
+      "id": "atlas-assertion:bivariate_bicycle:decoders:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:1@b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2",
+      "field": "decoders",
+      "id": "atlas-assertion:bivariate_bicycle:decoders:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:decoders:2@26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4",
+      "field": "decoders",
+      "id": "atlas-assertion:bivariate_bicycle:decoders:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:0@9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:1@1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:2@995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:3@1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:operations:4@bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60",
+      "field": "operations",
+      "id": "atlas-assertion:bivariate_bicycle:operations:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:0@99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:1@dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:2@990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:3@52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:realizations:4@26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91",
+      "field": "realizations",
+      "id": "atlas-assertion:bivariate_bicycle:realizations:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qcga#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bivariate_bicycle:relations:0@91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956",
+      "field": "relations",
+      "id": "atlas-assertion:bivariate_bicycle:relations:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:qcga#collection",
+      "status": "preserved",
+      "tier": "T3"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:qcga#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:qcga#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/bivariate_bicycle/card.yaml#/identity",
+          "atlas:atlas/bivariate_bicycle/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/bivariate_bicycle/bivariate_bicycle-foundations.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/qcga.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:qcga"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:qcga#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "bivariate_bicycle",
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:bivariate_bicycle",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "4aace05656e8b49ba71ce266f1270d90469dd5f72fd0ae2f643e9c58da77d480",
+          "payload_sha256": "48a8cbbc96277b535b521fcf24babfe80aad439b11f6ffff4b6bc9fb102ef8b6",
+          "semantic_hash": "74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092"
+        },
+        "id": "atlas-instance:bivariate_bicycle:gross",
+        "label": "gross",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092:structural-validity:6dd7200b4f5385ce2ba164c0fa8d8879f03aa0c30718692af22568cb8ca33e3d@1"
+          ],
+          "instance_record_sha256": "8431e4618d5f21f5007ab962ec85fe52e8ee8292119fd09961bdff81c613c28c",
+          "lean_report_sha256": "8d7b1dbddd5f3a147f6323ae8c0636be9e1ba8d6108b739f0686f4f823e57f80",
+          "semantic_hash": "74f45e7bdf312215fb7d77a3d82018886873c989f9e921cecf71154a391f2092"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "ea429b5484c50de4bca1837db4cd531080abab09b91ab6bbf69d8bff8c40fa65",
+        "v2_envelope_id": "formal-ir-v2:bivariate_bicycle:gross"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "4aace05656e8b49ba71ce266f1270d90469dd5f72fd0ae2f643e9c58da77d480",
+          "payload_sha256": "0881bfcd330574177db374a0ad2ccd4692a72f0dc977f174b240043d1232a228",
+          "semantic_hash": "b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7"
+        },
+        "id": "atlas-instance:bivariate_bicycle:toric_L3",
+        "label": "toric_L3",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7:small-exact-distance-enumeration:9ca87343fc63067318d2dc4d62581ed195c552ac8fad2e2929b7dddf6f628dec@1",
+            "certificate:b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7:structural-validity:58d582a3b955ac211644793c043b5d5fe9e64e1a8cbd02130e74a82b98213102@1"
+          ],
+          "instance_record_sha256": "5def90e6987f9da63c79f2ab9bb60a014c1d767038e70daf603cee4cef900164",
+          "lean_report_sha256": "0db855bbd02eee07f78837d9391d5c7066d4d6c212309dfd8208c73f29b7bf28",
+          "semantic_hash": "b469c20c64c071b142ab016f4e85290ee23baa898ab44f5b985e8de4ca7e78b7"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e53f23210b05afc4b511f4f4a2b4f313095d034ff209a80a4592f78306ecc021",
+        "v2_envelope_id": "formal-ir-v2:bivariate_bicycle:toric_L3"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 2,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:qcga#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:bivariate_bicycle:views:0",
+      "atlas-assertion:bivariate_bicycle:views:1",
+      "atlas-assertion:bivariate_bicycle:views:2",
+      "atlas-assertion:bivariate_bicycle:views:3",
+      "atlas-assertion:bivariate_bicycle:views:4",
+      "atlas-assertion:bivariate_bicycle:views:5",
+      "atlas-assertion:bivariate_bicycle:views:6",
+      "atlas-assertion:bivariate_bicycle:views:7",
+      "atlas-assertion:bivariate_bicycle:categories:0",
+      "atlas-assertion:bivariate_bicycle:categories:1",
+      "atlas-assertion:bivariate_bicycle:decoders:0",
+      "atlas-assertion:bivariate_bicycle:decoders:1",
+      "atlas-assertion:bivariate_bicycle:decoders:2",
+      "atlas-assertion:bivariate_bicycle:operations:0",
+      "atlas-assertion:bivariate_bicycle:operations:1",
+      "atlas-assertion:bivariate_bicycle:operations:2",
+      "atlas-assertion:bivariate_bicycle:operations:3",
+      "atlas-assertion:bivariate_bicycle:operations:4",
+      "atlas-assertion:bivariate_bicycle:realizations:0",
+      "atlas-assertion:bivariate_bicycle:realizations:1",
+      "atlas-assertion:bivariate_bicycle:realizations:2",
+      "atlas-assertion:bivariate_bicycle:realizations:3",
+      "atlas-assertion:bivariate_bicycle:realizations:4",
+      "atlas-assertion:bivariate_bicycle:relations:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:qcga#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:bivariate_bicycle:views:0@493ef61aea4eb1788cd51e47064ede5c8cfdfdced7e9e18909501bfe5e9e3966",
+      "atlas-evidence:bivariate_bicycle:views:1@2fe2391a691cff6c0444ffa2612359bb588a7cfa12ffa520bb47174d98d02e26",
+      "atlas-evidence:bivariate_bicycle:views:2@8c5b5dc8929a1a84da85c2ac9d6214d939a1882f40939a358f469c055fd6fb3f",
+      "atlas-evidence:bivariate_bicycle:views:3@7790847805a03c8d366ccd70f0ce9654bf149ff839819b873dc2205029fcf410",
+      "atlas-evidence:bivariate_bicycle:views:4@b6c66cf03773d2cfd6745a8df6639ca2ef56ec4bbacf7345d8f9946d69e7413f",
+      "atlas-evidence:bivariate_bicycle:views:5@396510baa107b3e53aa1d80dacbea956a0648bfaed44f75ba37c2d21097f82e9",
+      "atlas-evidence:bivariate_bicycle:views:6@264788170c4150bea80a29fbcf9e2a2759971e283ebbb19f2bd45b47c93a5c46",
+      "atlas-evidence:bivariate_bicycle:views:7@4df2b38a1647abfdb3d568f9c7edfcd14fbe1c45fd6e21aa134d28b4319cc9da",
+      "atlas-evidence:bivariate_bicycle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:bivariate_bicycle:categories:1@4820d97d2f98cb989ba497ad7dc2654aca98bf43381bc4548c6ff335ee82b7dc",
+      "atlas-evidence:bivariate_bicycle:decoders:0@2631d67dd48410ca2ca5e0f3b7736d7911281650ddd627bbbc7e63fe3fe7b180",
+      "atlas-evidence:bivariate_bicycle:decoders:1@b195277c7ba0ba03c8464f4d236713ff700bd2c3a5510180099890b272686dd2",
+      "atlas-evidence:bivariate_bicycle:decoders:2@26aee9ae47ec6c603128614db2197df44fc082924c3c5524d2777282195d13d4",
+      "atlas-evidence:bivariate_bicycle:operations:0@9a6afc175f256ce33b792ca0f2b3b1796cb652269549ea070c51aad351ed3c0b",
+      "atlas-evidence:bivariate_bicycle:operations:1@1c866c8c95c385ebd6cd8dce91269a172abc10e689ed66df95a273f817c8402a",
+      "atlas-evidence:bivariate_bicycle:operations:2@995b7dfd2e01d5eda411dcb42a2f0f5b79b8784e2493eb429b6dcc6964e004f6",
+      "atlas-evidence:bivariate_bicycle:operations:3@1c30cea701db1a9212327221f763f3ebf690bd3002473cd2d200ab654b2e2d5d",
+      "atlas-evidence:bivariate_bicycle:operations:4@bb3c274573ddf5cf22f2df6c800cd1ca38d96d4b2b46b7ba07ae0cc0eb441e60",
+      "atlas-evidence:bivariate_bicycle:realizations:0@99c83848e0a61fe79abf12c0e2fa20ad72703c0302e7b5294687b7128d7cb5c2",
+      "atlas-evidence:bivariate_bicycle:realizations:1@dcd6d26bf539db9bd601b164dfab19f65239a9d82a5ce594e96585b6f7470f0f",
+      "atlas-evidence:bivariate_bicycle:realizations:2@990e4a881f50c8ebca36c8864710b64f7e6a2308a4b7c1578c828735d8dc1884",
+      "atlas-evidence:bivariate_bicycle:realizations:3@52b300624be91ef9c282d8bd791e6b8046b4805b38330f6e76b8f87dc138948f",
+      "atlas-evidence:bivariate_bicycle:realizations:4@26324e0784672a96642e05aceecbbd5acd28094d54afa73cac824144e2a9df91",
+      "atlas-evidence:bivariate_bicycle:relations:0@91f961d08f3a9402a1e9cf8bae2c9adaae1c20420e91c09e635530c9d7c58956"
+    ],
+    "formalization_id": "atlas-formalization:bivariate_bicycle",
+    "instance_ids": [
+      "atlas-instance:bivariate_bicycle:gross",
+      "atlas-instance:bivariate_bicycle:toric_L3"
+    ],
+    "page_id": "atlas-page:bivariate_bicycle",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:qcga"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:qcga#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:qcga#collection",
+        "status": "preserved",
+        "tier": "T3"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:bivariate_bicycle",
+    "presented_entity_ids": [
+      "eczoo-entity:qcga#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:qcga#collection",
+    "redirects": [],
+    "route": "/entries/bivariate_bicycle.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/bivariate_bicycle"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

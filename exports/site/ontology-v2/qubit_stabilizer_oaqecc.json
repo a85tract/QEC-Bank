@@ -1,0 +1,185 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:qubit_stabilizer_oaqecc",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:qubit_stabilizer_oaqecc:views:0@b7ba3b85861782034c11f6b1ebaa5e2c340cf0bbdc7529df1cf86f0e81b07a0d",
+      "field": "views",
+      "id": "atlas-assertion:qubit_stabilizer_oaqecc:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:qubit_stabilizer_oaqecc",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:qubit_stabilizer_oaqecc:categories:0@002c0bd8fc647344c00bda6f77ad703db012d4d636d046a34c012bd2c9e1319d",
+      "field": "categories",
+      "id": "atlas-assertion:qubit_stabilizer_oaqecc:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:qubit_stabilizer_oaqecc",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:qubit_stabilizer_oaqecc:categories:1@701674b77cdadf160b4d545cd5b50f7ed02874ca1e2c7bc64586e8f79dbc88aa",
+      "field": "categories",
+      "id": "atlas-assertion:qubit_stabilizer_oaqecc:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:qubit_stabilizer_oaqecc#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:qubit_stabilizer_oaqecc#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/qubit_stabilizer_oaqecc",
+          "atlas:atlas/qubit_stabilizer_oaqecc/card.yaml#/identity",
+          "t222:docs/lit/qubit_stabilizer_oaqecc/qubit_stabilizer_oaqecc-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/oa/oa_stabilizer/qubit_stabilizer_oaqecc.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo qubit_stabilizer_oaqecc identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:qubit_stabilizer_oaqecc"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:qubit_stabilizer_oaqecc#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "qubit_stabilizer_oaqecc",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:qubit_stabilizer_oaqecc",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "eb827b878136b5c3a0bc1243af141268ad904c43baec79e9e8e8316395e47714",
+          "payload_sha256": "5153b5fada2e27591f681755edd332bc459848c13f246d9ef602e4856023c19f",
+          "semantic_hash": "00b5f758b25466a12a32dc5af7ec09b46836b846882f27039de0d75457c801b2"
+        },
+        "id": "atlas-instance:qubit_stabilizer_oaqecc:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:00b5f758b25466a12a32dc5af7ec09b46836b846882f27039de0d75457c801b2:structural-validity:d9c3eba0867e036d80ee055bfacaec81a80b70e2b2966450dda1e23faca73252@1"
+          ],
+          "instance_record_sha256": "a59ed592334f24fc6774106ee3f6e43832978cdf406560e96e5cb5f62933b8e3",
+          "lean_report_sha256": "15e5732a6f7f4f0cb3cfcbc87718877aec4137d36f9aedd60182f40064905f17",
+          "semantic_hash": "00b5f758b25466a12a32dc5af7ec09b46836b846882f27039de0d75457c801b2"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b94e6613852e64ef209673988018cb8cc97a762e177e866fbe6694a968eb3613",
+        "v2_envelope_id": "formal-ir-v2:qubit_stabilizer_oaqecc:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:qubit_stabilizer_oaqecc#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:qubit_stabilizer_oaqecc:views:0",
+      "atlas-assertion:qubit_stabilizer_oaqecc:categories:0",
+      "atlas-assertion:qubit_stabilizer_oaqecc:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:qubit_stabilizer_oaqecc#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:qubit_stabilizer_oaqecc:views:0@b7ba3b85861782034c11f6b1ebaa5e2c340cf0bbdc7529df1cf86f0e81b07a0d",
+      "atlas-evidence:qubit_stabilizer_oaqecc:categories:0@002c0bd8fc647344c00bda6f77ad703db012d4d636d046a34c012bd2c9e1319d",
+      "atlas-evidence:qubit_stabilizer_oaqecc:categories:1@701674b77cdadf160b4d545cd5b50f7ed02874ca1e2c7bc64586e8f79dbc88aa"
+    ],
+    "formalization_id": "atlas-formalization:qubit_stabilizer_oaqecc",
+    "instance_ids": [
+      "atlas-instance:qubit_stabilizer_oaqecc:primary"
+    ],
+    "page_id": "atlas-page:qubit_stabilizer_oaqecc",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:qubit_stabilizer_oaqecc"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:qubit_stabilizer_oaqecc#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:qubit_stabilizer_oaqecc#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:qubit_stabilizer_oaqecc",
+    "presented_entity_ids": [
+      "eczoo-entity:qubit_stabilizer_oaqecc#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:qubit_stabilizer_oaqecc#collection",
+    "redirects": [],
+    "route": "/entries/qubit_stabilizer_oaqecc.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/qubit_stabilizer_oaqecc"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

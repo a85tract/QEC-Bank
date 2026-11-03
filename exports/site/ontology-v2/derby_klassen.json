@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:derby_klassen",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:derby_klassen:views:0@070cf3077cb2110da54ace1b9776577826983e147a6845ff7d548ecd8f4de142",
+      "field": "views",
+      "id": "atlas-assertion:derby_klassen:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:derby_klassen",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:derby_klassen:categories:0@8d38b8b48ddda5517b8a325e135523e29fcc5b42711b9cab0139090fb4090085",
+      "field": "categories",
+      "id": "atlas-assertion:derby_klassen:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:derby_klassen#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:derby_klassen#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/derby_klassen",
+          "atlas:atlas/derby_klassen/card.yaml#/identity",
+          "t222:docs/lit/derby_klassen/derby_klassen-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/fermion_into_qubit/bosonization/2d/derby_klassen.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo derby_klassen identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:derby_klassen"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:derby_klassen#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "derby_klassen",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:derby_klassen",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "c034a60fb368855ef90ddddeb377684f5ba558e93c8453b9019c16c576ed7402",
+          "payload_sha256": "746154fcad73a348b891125c9fe240dba630de29d8d2f708af28ca9da059cc67",
+          "semantic_hash": "d7224fe44750d1625003533f9911f5f79f003aab8f9da6270a4e9dce8f8a088a"
+        },
+        "id": "atlas-instance:derby_klassen:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:d7224fe44750d1625003533f9911f5f79f003aab8f9da6270a4e9dce8f8a088a:structural-validity:f6f3b089df143589126d2d80f2fcfbe7d5420dc5e2de1f3711524a76071939fc@1"
+          ],
+          "instance_record_sha256": "687f393282465d0a72887f81d01a543c030d4eb645b1ffef069b0abcf8ed03a5",
+          "lean_report_sha256": "cf2fee2836cc4aae6442a86da33db2e330f0b7baef3cb91759ea2204194efeb9",
+          "semantic_hash": "d7224fe44750d1625003533f9911f5f79f003aab8f9da6270a4e9dce8f8a088a"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "74cf74caa88d530e857601bf37f81136bfeed854f8ba2e59cafcb44f65a605c6",
+        "v2_envelope_id": "formal-ir-v2:derby_klassen:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:derby_klassen#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:derby_klassen:views:0",
+      "atlas-assertion:derby_klassen:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:derby_klassen#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:derby_klassen:views:0@070cf3077cb2110da54ace1b9776577826983e147a6845ff7d548ecd8f4de142",
+      "atlas-evidence:derby_klassen:categories:0@8d38b8b48ddda5517b8a325e135523e29fcc5b42711b9cab0139090fb4090085"
+    ],
+    "formalization_id": "atlas-formalization:derby_klassen",
+    "instance_ids": [
+      "atlas-instance:derby_klassen:primary"
+    ],
+    "page_id": "atlas-page:derby_klassen",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:derby_klassen"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:derby_klassen#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:derby_klassen#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:derby_klassen",
+    "presented_entity_ids": [
+      "eczoo-entity:derby_klassen#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:derby_klassen#collection",
+    "redirects": [],
+    "route": "/entries/derby_klassen.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/derby_klassen"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

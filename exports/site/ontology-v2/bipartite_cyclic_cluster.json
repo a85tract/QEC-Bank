@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:bipartite_cyclic_cluster",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:bipartite_cyclic_cluster:views:0@08917c48455e02578265ff219acb4677501408bb5e1b728d731d49b30934c608",
+      "field": "views",
+      "id": "atlas-assertion:bipartite_cyclic_cluster:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:bipartite_cyclic_cluster",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:bipartite_cyclic_cluster:categories:0@88ac8299af07e77cb0d3ee7273159f38d1cd1d012ed42a3bc1b827b05f0513bc",
+      "field": "categories",
+      "id": "atlas-assertion:bipartite_cyclic_cluster:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:bipartite_cyclic_cluster#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:bipartite_cyclic_cluster#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/bipartite_cyclic_cluster",
+          "atlas:atlas/bipartite_cyclic_cluster/card.yaml#/identity",
+          "t222:docs/lit/bipartite_cyclic_cluster/bipartite_cyclic_cluster-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bipartite_cyclic_cluster.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo bipartite_cyclic_cluster identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:bipartite_cyclic_cluster"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:bipartite_cyclic_cluster#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "bipartite_cyclic_cluster",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:bipartite_cyclic_cluster",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "e42e2473368450a0df6c9ca9020597eda959ecce821d0086642c7cdd63fa6564",
+          "payload_sha256": "56c72cba94caf709b2c4fc232e1bcf12d44de9dccb1dbd21660fddb3e4bb0f58",
+          "semantic_hash": "9b2d617090853d8498f34debef976dfabf3e5ba05da4d9c1008a3af211d937fb"
+        },
+        "id": "atlas-instance:bipartite_cyclic_cluster:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:9b2d617090853d8498f34debef976dfabf3e5ba05da4d9c1008a3af211d937fb:structural-validity:6b755c1e69201423f94f72302a5ec5799a9e3369236d03b47758662d09a7cbda@1"
+          ],
+          "instance_record_sha256": "a72f7ff717ef6697004bd635bdc7ebbee5216d5be36f4eb02ef62b3b12bcffb5",
+          "lean_report_sha256": "5112ae979b0f0dcecf9e001a9e47dc705477453fb62bf685624a791a7f3fbc23",
+          "semantic_hash": "9b2d617090853d8498f34debef976dfabf3e5ba05da4d9c1008a3af211d937fb"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "d07057bca52e23e5e849e3864d342626ef9dce4f4440ef230c543d5d79437937",
+        "v2_envelope_id": "formal-ir-v2:bipartite_cyclic_cluster:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:bipartite_cyclic_cluster#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:bipartite_cyclic_cluster:views:0",
+      "atlas-assertion:bipartite_cyclic_cluster:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:bipartite_cyclic_cluster#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:bipartite_cyclic_cluster:views:0@08917c48455e02578265ff219acb4677501408bb5e1b728d731d49b30934c608",
+      "atlas-evidence:bipartite_cyclic_cluster:categories:0@88ac8299af07e77cb0d3ee7273159f38d1cd1d012ed42a3bc1b827b05f0513bc"
+    ],
+    "formalization_id": "atlas-formalization:bipartite_cyclic_cluster",
+    "instance_ids": [
+      "atlas-instance:bipartite_cyclic_cluster:primary"
+    ],
+    "page_id": "atlas-page:bipartite_cyclic_cluster",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:bipartite_cyclic_cluster"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:bipartite_cyclic_cluster#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:bipartite_cyclic_cluster#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:bipartite_cyclic_cluster",
+    "presented_entity_ids": [
+      "eczoo-entity:bipartite_cyclic_cluster#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:bipartite_cyclic_cluster#collection",
+    "redirects": [],
+    "route": "/entries/bipartite_cyclic_cluster.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/bipartite_cyclic_cluster"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

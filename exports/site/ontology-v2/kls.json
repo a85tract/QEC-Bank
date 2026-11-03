@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:kls",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:kls:views:0@3cf757a3c28de1752e9cc7ad4e4cd918ebb06575d6579ae64dcb4edc12aa6050",
+      "field": "views",
+      "id": "atlas-assertion:kls:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:kls",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:kls:categories:0@843a1130fb3b63a50e51445409cbfdc66d21ce7db02d3194a079b68cc243d704",
+      "field": "categories",
+      "id": "atlas-assertion:kls:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:kls#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:kls#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/kls",
+          "atlas:atlas/kls/card.yaml#/identity",
+          "t222:docs/lit/kls/kls-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/small_distance/kls.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo kls identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:kls"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:kls#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "kls",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:kls",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "12161dbc458cf3004d8f1326b00fbf9f76aeef6b39be76d5d3c46892ec407c3c",
+          "payload_sha256": "c1eb277a41079c8391b80873dc257e1a0887634eac5a3a65a485540c2f49dfb8",
+          "semantic_hash": "bfd3ab0127c1d096f50deb9b440fc5d9ba893da7c1e39bbadafd1201ad64d89f"
+        },
+        "id": "atlas-instance:kls:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:bfd3ab0127c1d096f50deb9b440fc5d9ba893da7c1e39bbadafd1201ad64d89f:structural-validity:585b89f44a3e879cc89e3eeac342106115b1e5af16353205b5bfa3adc54b0c1f@1"
+          ],
+          "instance_record_sha256": "7511c0041288c8dd0bde412225cb1ea2ce8ad6c7ba66f9736d64966bcd8b178d",
+          "lean_report_sha256": "3e018fdabd26bda3947e35918a50f206394f50c591ce9976f20223b8b555ba48",
+          "semantic_hash": "bfd3ab0127c1d096f50deb9b440fc5d9ba893da7c1e39bbadafd1201ad64d89f"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "ae2da310800a4d579c3cc7469460fb23240a7d2e5dbdfbfb5c405e8536e21d57",
+        "v2_envelope_id": "formal-ir-v2:kls:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:kls#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:kls:views:0",
+      "atlas-assertion:kls:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:kls#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:kls:views:0@3cf757a3c28de1752e9cc7ad4e4cd918ebb06575d6579ae64dcb4edc12aa6050",
+      "atlas-evidence:kls:categories:0@843a1130fb3b63a50e51445409cbfdc66d21ce7db02d3194a079b68cc243d704"
+    ],
+    "formalization_id": "atlas-formalization:kls",
+    "instance_ids": [
+      "atlas-instance:kls:primary"
+    ],
+    "page_id": "atlas-page:kls",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:kls"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:kls#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:kls#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:kls",
+    "presented_entity_ids": [
+      "eczoo-entity:kls#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:kls#collection",
+    "redirects": [],
+    "route": "/entries/kls.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/kls"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

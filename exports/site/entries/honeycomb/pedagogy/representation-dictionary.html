@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Representation dictionary</title><link rel='stylesheet' href='../../../style.css?v=3d2fa6103434'><script defer src='../../../renderer/mathjax-config.js?v=6dc4bd4b7c05'></script><script defer src='https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js'></script></head><body><nav><a href='../../../index.html'>QEC Atlas</a> · <a href='../../../foundations/index.html'>Foundations</a> · <a href='../../../wanted.html'>Open problems</a></nav><h1>Representation dictionary</h1><div class='intuition'><p>No single representation makes every Honeycomb claim transparent. The useful maps form a chain, and every arrow has a different proof status.</p>
+<h2 id='schedule-and-isg'>Schedule and ISG</h2>
+<p><b>Objects:</b> measured Pauli words grouped into ordered rounds; a commuting binary symplectic row space updated after each outcome.</p>
+<p><b>Best for:</b> exact round content, commutation within a round, startup rank, periodic rank, <code>dynamic_k</code>, and machine export.</p>
+<p><b>Atlas status:</b> executable. <code>constructor.py</code>, <code>Schedule</code>, and <code>ISGTracker</code> recompute these facts.</p>
+<p><b>Blind spot:</b> physical outcome signs, preparation/readout circuits, detectors, and geometry coordinates are not present.</p>
+<h2 id='plaquette-backbone-and-moving-matching'>Plaquette backbone and moving matching</h2>
+<p><b>Objects:</b> rank-eight span of weight-six plaquette products plus the currently measured perfect matching.</p>
+<p><b>Best for:</b> understanding the steady ISG rank and why incompatible measurements do not erase the code.</p>
+<p><b>Atlas status:</b> recomputed by <code>reproduce.py</code>; the first plaquette words and all row-space memberships are asserted.</p>
+<p><b>Blind spot:</b> the logical anyon labels require the toric-frame conversion.</p>
+<h2 id='instantaneous-toric-code'>Instantaneous toric code</h2>
+<p><b>Map:</b> contract the just-measured matching and apply local Clifford changes of basis.</p>
+<p><b>Best for:</b> two torus logical qubits, winding strings, topological order, and the meaning of electric/magnetic labels.</p>
+<p><b>Atlas status:</b> curated from Hastings-Haah. The current engine checks the rank consequence but does not replay the local Clifford circuit.</p>
+<p><b>Blind spot:</b> one frame omits measurement faults and logical transport through time.</p>
+<h2 id='majorana-parton-gauge-theory'>Majorana / parton gauge theory</h2>
+<p>Represent a spin by four Majoranas <code>b^x,b^y,b^z,c</code> with a local parity constraint. A directional edge term factors schematically as</p>
+<p><code>sigma_u^a sigma_v^a = (i b_u^a b_v^a)(i c_u c_v)</code>.</p>
+<p>The first factor is a <code>Z2</code> gauge link and the second pairs matter Majoranas. Plaquette products become gauge fluxes. Cycling measurements changes the pairing pattern.</p>
+<p><b>Best for:</b> the local anticommuting edge algebra, gauge-invariant plaquettes, and weak/coherent-measurement extensions.</p>
+<p><b>Atlas status:</b> curated from <a href='https://arxiv.org/abs/cond-mat/0506438'>Kitaev</a> and <a href='https://arxiv.org/abs/2311.08450'>later monitored-fermion work</a>. There is no generic fermionic compiler in the repository, so this view is not machine-derived.</p>
+<p><b>Blind spot:</b> a static Kitaev Hamiltonian and a projective measurement schedule have different dynamics.</p>
+<h2 id='spacetime-detector-model'>Spacetime detector model</h2>
+<p><b>Map:</b> compile the physical parity circuit into measurement outcomes, detector parities, logical observables, and fault-to-detector incidence.</p>
+<p><b>Best for:</b> matching, correlations, timelike boundaries, leakage, logical error rates, and fault distance.</p>
+<p><b>Atlas status:</b> literature-curated. The ideal schedule is exported, but no Honeycomb circuit/DEM is produced by this constructor.</p>
+<p><b>Blind spot:</b> detector graphs depend on the circuit and noise model; there is no circuit-independent threshold graph.</p>
+<h2 id='anyon-automorphism'>Anyon automorphism</h2>
+<p><b>Map:</b> compose the local equivalences between consecutive instantaneous topological frames.</p>
+<p><b>Best for:</b> the <code>e &lt;-&gt; m</code> exchange, logical-frame transport, twist defects, and cross-cap gates.</p>
+<p><b>Atlas status:</b> curated from Hastings-Haah and the automorphism-code framework.</p>
+<p><b>Blind spot:</b> naming an automorphism does not supply detector circuits or hardware costs.</p>
+<h2 id='measurement-qca'>Measurement QCA</h2>
+<p><b>Objects:</b> a locality-preserving transformation of quantum information induced by periodic measurement and classical outcomes.</p>
+<p><b>Best for:</b> anomalous boundary information flow and why bulk stabilizer rank misses boundary dynamics.</p>
+<p><b>Atlas status:</b> curated from <a href='https://arxiv.org/abs/2304.01277'>Aasen, Haah, Li, and Mong</a>.</p>
+<p><b>Blind spot:</b> the classification is coarser than a device noise model.</p>
+<h2 id='zx-spacetime'>ZX spacetime</h2>
+<p><b>Objects:</b> a graphical tensor network in which parity measurements, preparations, fusions, and feed-forward are ZX nodes and connections.</p>
+<p><b>Best for:</b> relating circuit, measurement-based, fusion-based, and Floquet protocols by local diagram rewrites.</p>
+<p><b>Atlas status:</b> curated from <a href='https://arxiv.org/abs/2303.08829'>Bombin et al.</a>; no Honeycomb ZX artifact ships with the entry.</p>
+<p><b>Blind spot:</b> a local diagram equivalence preserves logical structure under its assumptions, not the numerical noise performance of every physical realization.</p>
+<h2 id='conversion-ledger'>Conversion ledger</h2>
+<div class='table-wrap markdown-table-wrap'><table class='markdown-table'><thead><tr><th class='align-left' scope='col'>from</th><th class='align-left' scope='col'>to</th><th class='align-left' scope='col'>status in this entry</th></tr></thead><tbody><tr><td class='align-left'>constructor schedule</td><td class='align-left'>ideal round/edge export</td><td class='align-left'>verified</td></tr><tr><td class='align-left'>schedule history</td><td class='align-left'>steady ISG snapshot</td><td class='align-left'>verified</td></tr><tr><td class='align-left'>face walks</td><td class='align-left'>plaquette row space</td><td class='align-left'>verified in reproduction</td></tr><tr><td class='align-left'>steady ISG</td><td class='align-left'>toric stabilizers</td><td class='align-left'>curated local-Clifford map</td></tr><tr><td class='align-left'>physical circuit</td><td class='align-left'>detector graph</td><td class='align-left'>cited, not exported</td></tr><tr><td class='align-left'>spin Paulis</td><td class='align-left'>Majorana gauge variables</td><td class='align-left'>curated dictionary</td></tr><tr><td class='align-left'>period of frames</td><td class='align-left'>anyon automorphism</td><td class='align-left'>curated</td></tr><tr><td class='align-left'>measurement protocol</td><td class='align-left'>ZX / measurement-QCA</td><td class='align-left'>curated</td></tr></tbody></table></div>
+<p>This ledger prevents a derived rank from lending machine certainty to a curated conversion farther down the chain.</p></div></body></html>

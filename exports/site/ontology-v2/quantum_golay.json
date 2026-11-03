@@ -1,0 +1,174 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qubit_golay#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_golay:views:0@f0a6092ec61731e5024940d48b4f29c7f1418f3eea468ec76d0fc52a34b211b0",
+      "field": "views",
+      "id": "atlas-assertion:quantum_golay:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qubit_golay#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_golay:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_golay:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:qubit_golay#object",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:qubit_golay#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:qubit_golay#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/quantum_golay/card.yaml#/identity",
+          "atlas:atlas/quantum_golay/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_golay/quantum_golay-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/magic/qubit_golay.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:qubit_golay"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:qubit_golay#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_golay",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_golay",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "1d7cf7d2286e37994616dc682e94810b4fb077e96a77ca3457b4c66c94ed2c0f",
+          "payload_sha256": "2b1c1c7aa1ab6a4cdeda93edc53f96983ed4e974aacdef2a0ea98a38a6cfcebb",
+          "semantic_hash": "2ce7db8c21796c87c2fdd9e42a468066be85e6dd61e651ed5c64a58f532973f8"
+        },
+        "id": "atlas-instance:quantum_golay:golay23",
+        "label": "golay23",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:2ce7db8c21796c87c2fdd9e42a468066be85e6dd61e651ed5c64a58f532973f8:structural-validity:69d15e91dbf5622e3742141d5bc606df82ea380d02209fd015b991c13c6a7f8c@1"
+          ],
+          "instance_record_sha256": "0ba04490a13f046ab5f4a0ce4ca8eae4f499dd4cfc044c087fe28a9019a29ec5",
+          "lean_report_sha256": "40303bf02068d3602e7f5f9c9fb078dffee24a476b8a1658fe457f68774b3961",
+          "semantic_hash": "2ce7db8c21796c87c2fdd9e42a468066be85e6dd61e651ed5c64a58f532973f8"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b0b27d2f2825d3e0e854214b7ba1b1d9a88be8706b0fd10d1efbe0144a4e450b",
+        "v2_envelope_id": "formal-ir-v2:quantum_golay:golay23"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:qubit_golay#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_golay:views:0",
+      "atlas-assertion:quantum_golay:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:qubit_golay#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_golay:views:0@f0a6092ec61731e5024940d48b4f29c7f1418f3eea468ec76d0fc52a34b211b0",
+      "atlas-evidence:quantum_golay:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:quantum_golay",
+    "instance_ids": [
+      "atlas-instance:quantum_golay:golay23"
+    ],
+    "page_id": "atlas-page:quantum_golay",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:qubit_golay"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:qubit_golay#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:qubit_golay#object",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_golay",
+    "presented_entity_ids": [
+      "eczoo-entity:qubit_golay#object"
+    ],
+    "primary_entity_id": "eczoo-entity:qubit_golay#object",
+    "redirects": [],
+    "route": "/entries/quantum_golay.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/quantum_golay"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

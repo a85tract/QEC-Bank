@@ -1,0 +1,328 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-entity:bb5#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bb5:views:0@8cbbe8c9d70a0dee312ac5f104296d3eae11192a5853c3d328d07609fecc090d",
+      "field": "views",
+      "id": "atlas-assertion:bb5:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:bb5#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bb5:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:bb5:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:bb5#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bb5:categories:1@193625cb3e4c55cbe5b89c1c5c9ba873f1dfac7b8fa796c7bd8776f054b33919",
+      "field": "categories",
+      "id": "atlas-assertion:bb5:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "C2 does not transfer child completeness to parent",
+      "entity_id": "eczoo-entity:bb5#collection",
+      "status": "new-broad-skeleton",
+      "tier": "T0"
+    },
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "atlas-entity:bb5#subject",
+      "status": "preserved-child-scope",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:bb5#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:bb5#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/bb5/card.yaml#/identity",
+          "atlas:atlas/bb5/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/bb5/bb5-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/bb5.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bb5"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:bb5#collection@qec-atlas-eczoo-ontology-v2"
+    },
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "atlas-entity:bb5#subject",
+      "lineage": {
+        "action": "atlas-scope-made-explicit",
+        "previous_version_ids": [
+          "atlas-page:bb5@legacy-subject"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "C2-scoped-expansion",
+        "evidence_locators": [
+          "atlas:atlas/bb5/card.yaml#/identity",
+          "atlas:atlas/bb5/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/bb5/bb5-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/bb5.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "The fixed [[30,4,5]] BB5 member formalized by Atlas.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bb5"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "atlas-entity:bb5#subject@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "bb5",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:bb5",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b3a0e4641a2f772e83458e344a45a24a002c82a34d1a8bae1f57011ca15a0176",
+          "payload_sha256": "d8077337a0c975b613a17b44e3e1c7964dffe3918b5849515c1f4bf19611c7b3",
+          "semantic_hash": "433823824b6f4b269892669021cf1a209fd480f8d6054eb0755a0a4d1e60be8e"
+        },
+        "id": "atlas-instance:bb5:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:433823824b6f4b269892669021cf1a209fd480f8d6054eb0755a0a4d1e60be8e:structural-validity:402e1f90421acf9a17d4844e2c5ddcb2af56ad245a10a6b979e172b192743d2b@1"
+          ],
+          "instance_record_sha256": "33787b4191866f61c6342f56b1d1b87fb073e33b0bc565fc961e684ade1e0e78",
+          "lean_report_sha256": "b4514bf41989aa2cca927c757da100c47c558426cd157041ef656d6ed6fb56f0",
+          "semantic_hash": "433823824b6f4b269892669021cf1a209fd480f8d6054eb0755a0a4d1e60be8e"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "9ca506771329f54263221ff5bb382ded36a3675831af2b5929b126587e955b78",
+        "v2_envelope_id": "formal-ir-v2:bb5:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "atlas-entity:bb5#subject"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:bb5:views:0",
+      "atlas-assertion:bb5:categories:0",
+      "atlas-assertion:bb5:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:bb5#collection",
+      "atlas-entity:bb5#subject"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:bb5:views:0@8cbbe8c9d70a0dee312ac5f104296d3eae11192a5853c3d328d07609fecc090d",
+      "atlas-evidence:bb5:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:bb5:categories:1@193625cb3e4c55cbe5b89c1c5c9ba873f1dfac7b8fa796c7bd8776f054b33919"
+    ],
+    "formalization_id": "atlas-formalization:bb5",
+    "instance_ids": [
+      "atlas-instance:bb5:primary"
+    ],
+    "page_id": "atlas-page:bb5",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bb5"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "atlas-entity:bb5#subject",
+    "completion_scopes": [
+      {
+        "authority": "C2 does not transfer child completeness to parent",
+        "entity_id": "eczoo-entity:bb5#collection",
+        "status": "new-broad-skeleton",
+        "tier": "T0"
+      },
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "atlas-entity:bb5#subject",
+        "status": "preserved-child-scope",
+        "tier": "T1"
+      }
+    ],
+    "composition": "scoped-expansion",
+    "id": "atlas-page:bb5",
+    "presented_entity_ids": [
+      "eczoo-entity:bb5#collection",
+      "atlas-entity:bb5#subject"
+    ],
+    "primary_entity_id": "eczoo-entity:bb5#collection",
+    "redirects": [],
+    "route": "/entries/bb5.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/bb5"
+  },
+  "parent_content": {
+    "child_relation": {
+      "assertion_id": "atlas-parent-assertion:bb5:child-relation",
+      "from": "atlas-entity:bb5#subject",
+      "origin": {
+        "kind": "verified",
+        "method": "owner-approved-C2-scoped-expansion"
+      },
+      "to": "eczoo-entity:bb5#collection",
+      "type": "member-of"
+    },
+    "description": {
+      "applies_to": "eczoo-entity:bb5#collection",
+      "assertion_id": "atlas-parent-assertion:bb5:description",
+      "origin": {
+        "kind": "claimed",
+        "locators": [
+          "/description#paragraph:0"
+        ],
+        "method": "pinned-eczoo-source",
+        "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bb5"
+      },
+      "text": "BB5 denotes the collection of bivariate-bicycle codes selected by a weight-five stabilizer-check condition, not only the finite member currently constructed by Atlas."
+    },
+    "entry_id": "bb5",
+    "parent_entity_id": "eczoo-entity:bb5#collection",
+    "scope": {
+      "applies_to": "eczoo-entity:bb5#collection",
+      "assertion_id": "atlas-parent-assertion:bb5:scope",
+      "excludes": [
+        "Treating the Atlas [[30,4,5]] constructor as exhaustive of BB5.",
+        "Transferring the child entry's T1 completion to the collection."
+      ],
+      "includes": [
+        "BB5 members satisfying the source's weight-five check condition.",
+        "The distinct finite members highlighted by the pinned source."
+      ],
+      "origin": {
+        "kind": "claimed",
+        "locators": [
+          "/description#paragraph:0",
+          "/description#paragraph:1"
+        ],
+        "method": "pinned-eczoo-source-plus-owner-scope-decision",
+        "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bb5"
+      }
+    },
+    "source": {
+      "locators": [
+        "/description#paragraph:0",
+        "/description#paragraph:1"
+      ],
+      "node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bb5",
+      "path": "codes/quantum/qubits/stabilizer/qldpc/balanced_product/lp/bb/bb5.yml",
+      "sha256": "e6e201915442d9c810b06ce6e328a50f417cde4ef275db453e2087011e21132a",
+      "zoo_id": "bb5"
+    },
+    "tier": "T0",
+    "variant_map": {
+      "applies_to": "eczoo-entity:bb5#collection",
+      "assertion_id": "atlas-parent-assertion:bb5:variant-map",
+      "completeness": "source-highlighted-not-exhaustive",
+      "variants": [
+        {
+          "atlas_status": "formalized-child",
+          "id": "bb5-30-4-5",
+          "label": "[[30,4,5]] highlighted member",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:1"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bb5"
+          }
+        },
+        {
+          "atlas_status": "parent-only-variant",
+          "id": "bb5-48-4-7",
+          "label": "[[48,4,7]] highlighted member",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:1"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:bb5"
+          }
+        }
+      ]
+    }
+  },
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

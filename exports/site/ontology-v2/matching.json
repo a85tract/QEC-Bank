@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:matching",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:matching:views:0@18784682fdefd5d7670bca5a476ac9f4710ab53b24116b3f012f403966d70af3",
+      "field": "views",
+      "id": "atlas-assertion:matching:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:matching",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:matching:categories:0@72c631afc1be4780b88b38bfc07144ceeca1174f60eb9fd31ece509375ddf0bf",
+      "field": "categories",
+      "id": "atlas-assertion:matching:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:matching#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:matching#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/matching",
+          "atlas:atlas/matching/card.yaml#/identity",
+          "t222:docs/lit/matching/matching-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/topological/matching/matching.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo matching identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:matching"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:matching#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "matching",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:matching",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "9e29aa61dd6dfc9716e581477c2ddaadd0d61706d815ae91fa867361a383bfe4",
+          "payload_sha256": "b9a3c1d6f53a1514bffef5da670ca7b152ba1248f66065aa3114a90999a9b778",
+          "semantic_hash": "fba112b037749a303f93681c731accbed0c9cd4b17a601bec04a5fd297111237"
+        },
+        "id": "atlas-instance:matching:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:fba112b037749a303f93681c731accbed0c9cd4b17a601bec04a5fd297111237:structural-validity:eee007c53ac83e1236768ead659ff279e3125a0a68992e4af6f9642e407e9c44@1"
+          ],
+          "instance_record_sha256": "be8b15aac01569453138a3c129989fd3fd1177957d39cf800671a602c2961253",
+          "lean_report_sha256": "9df0bd8ed1c7f9281f785a922670dda32fb5a1479a31a694d8dd8a7b4da5c24a",
+          "semantic_hash": "fba112b037749a303f93681c731accbed0c9cd4b17a601bec04a5fd297111237"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "eb0cf38274bf65f0b25bce9ed1d93878fcb9046126a995c07584fbe2745d6b7a",
+        "v2_envelope_id": "formal-ir-v2:matching:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:matching#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:matching:views:0",
+      "atlas-assertion:matching:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:matching#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:matching:views:0@18784682fdefd5d7670bca5a476ac9f4710ab53b24116b3f012f403966d70af3",
+      "atlas-evidence:matching:categories:0@72c631afc1be4780b88b38bfc07144ceeca1174f60eb9fd31ece509375ddf0bf"
+    ],
+    "formalization_id": "atlas-formalization:matching",
+    "instance_ids": [
+      "atlas-instance:matching:primary"
+    ],
+    "page_id": "atlas-page:matching",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:matching"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:matching#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:matching#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:matching",
+    "presented_entity_ids": [
+      "eczoo-entity:matching#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:matching#collection",
+    "redirects": [],
+    "route": "/entries/matching.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/matching"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:lacross",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:lacross:views:0@ad455ce2bd2abd3fda785e45ad762ffaa02e1346642d58f1a69ce8b3f7715661",
+      "field": "views",
+      "id": "atlas-assertion:lacross:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:lacross",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:lacross:categories:0@7139861f5a18bbaa46745cce826db855975e6b51882ee1be05151d5c9db70ff5",
+      "field": "categories",
+      "id": "atlas-assertion:lacross:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:lacross#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:lacross#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/lacross",
+          "atlas:atlas/lacross/card.yaml#/identity",
+          "t222:docs/lit/lacross/lacross-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/lacross.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo lacross identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:lacross"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:lacross#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "lacross",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:lacross",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "e911209a7768ee0aa8dd6ee4554ccf5a776baed810b067e40f61155a51d66b56",
+          "payload_sha256": "d956018e0bf4ac9cc66cb43b5d0782773ca45e427d2ef6dd7bfb419c4bd1803f",
+          "semantic_hash": "fdd37015fc1484d57740479172826bcd5539405621eb3336ae48e0facf207cc4"
+        },
+        "id": "atlas-instance:lacross:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:fdd37015fc1484d57740479172826bcd5539405621eb3336ae48e0facf207cc4:structural-validity:66912fd9c9a59be222db75ed172a736d4b5226d7163d995c30631322603ddb4c@1"
+          ],
+          "instance_record_sha256": "2d04822c55c50f1dec08c116feb542d3fb7db15b4d2bea99c0848838f8bd950e",
+          "lean_report_sha256": "e3dde8a388a5c2a4b76306136d46230ac20a7429d5e679b8f9d219206ef491f5",
+          "semantic_hash": "fdd37015fc1484d57740479172826bcd5539405621eb3336ae48e0facf207cc4"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "8ea3b0677ba1c1b74717473ae9a02ec9d1bd1e33b686c1e02826230ed6c5fbd0",
+        "v2_envelope_id": "formal-ir-v2:lacross:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:lacross#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:lacross:views:0",
+      "atlas-assertion:lacross:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:lacross#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:lacross:views:0@ad455ce2bd2abd3fda785e45ad762ffaa02e1346642d58f1a69ce8b3f7715661",
+      "atlas-evidence:lacross:categories:0@7139861f5a18bbaa46745cce826db855975e6b51882ee1be05151d5c9db70ff5"
+    ],
+    "formalization_id": "atlas-formalization:lacross",
+    "instance_ids": [
+      "atlas-instance:lacross:primary"
+    ],
+    "page_id": "atlas-page:lacross",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:lacross"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:lacross#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:lacross#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:lacross",
+    "presented_entity_ids": [
+      "eczoo-entity:lacross#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:lacross#collection",
+    "redirects": [],
+    "route": "/entries/lacross.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/lacross"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

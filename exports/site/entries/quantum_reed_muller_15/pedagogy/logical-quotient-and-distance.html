@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Logical quotient and sector distances</title><link rel='stylesheet' href='../../../style.css?v=3d2fa6103434'><script defer src='../../../renderer/mathjax-config.js?v=6dc4bd4b7c05'></script><script defer src='https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js'></script></head><body><nav><a href='../../../index.html'>QEC Atlas</a> · <a href='../../../foundations/index.html'>Foundations</a> · <a href='../../../wanted.html'>Open problems</a></nav><h1>Logical quotient and sector distances</h1><div class='intuition'><p class='note'><b>Question.</b> Why does the scalar label <code>[[15,1,3]]</code> hide a seven-versus-three asymmetry between logical X and logical Z?</p>
+<p>Let <code>L=row(H_X)</code> and <code>G=L+span{1}</code> as on the <a href='punctured-evaluation-css.html'>construction page</a>. The CSS normalizer splits into two classical quotient problems.</p>
+<h2 id='1-x-normalizers-and-the-logical-x-coset'>1. X normalizers and the logical-X coset</h2>
+<p>An X-support vector <code>x</code> commutes with every Z stabilizer exactly when <code>x in S_Z^perp</code>. Since <code>S_Z=G^perp</code>, finite-dimensional duality gives</p>
+<p><code>S_Z^perp = G = L + span{1}</code>.</p>
+<p>Quotienting by X stabilizers <code>L</code> leaves two cosets: the trivial coset <code>L</code> and the logical coset <code>1+L</code>. Complete enumeration gives</p>
+<div class='table-wrap markdown-table-wrap'><table class='markdown-table'><thead><tr><th class='align-left' scope='col'>X coset</th><th class='align-left' scope='col'>weights and multiplicities</th></tr></thead><tbody><tr><td class='align-left'><code>L</code></td><td class='align-left'>weight 0: 1 word; weight 8: 15 words</td></tr><tr><td class='align-left'><code>1+L</code></td><td class='align-left'>weight 7: 15 words; weight 15: 1 word</td></tr></tbody></table></div>
+<p>The constructor declares the all-one representative, but multiplying it by any nonzero X stabilizer replaces it by the complement of a weight-eight word and reduces its weight to seven. Therefore the pure-X distance is</p>
+<p><code>d_X=7</code>.</p>
+<p>The logical-basis routine selects <code>XXXXXXX________</code> in its deterministic symplectic Gram–Schmidt convention; it is in the same coset as the all-one operator.</p>
+<h2 id='2-z-normalizers-as-zero-sum-label-sets'>2. Z normalizers as zero-sum label sets</h2>
+<p>A Z-support vector <code>z</code> commutes with all four X checks when</p>
+<p><code>H_X z^T = 0</code>.</p>
+<p>The four syndrome bits are the coordinate-wise XOR of all labels in the support. Thus <code>z</code> is a Z normalizer exactly when its selected nonzero vectors sum to <code>0000</code>.</p>
+<p>The Z stabilizer space imposes one further condition: <code>z dot 1=0</code>, meaning the support size is even. Consequently:</p>
+<ul><li>even zero-sum supports are Z stabilizers;</li><li>odd zero-sum supports are the nontrivial logical-Z coset.</li></ul>
+<p>This parity quotient has dimension one, matching the encoded-qubit count.</p>
+<h2 id='3-exact-lower-and-upper-bounds-meet-at-three'>3. Exact lower and upper bounds meet at three</h2>
+<p><b>No weight one.</b> A one-point support sums to its nonzero label, not to zero.</p>
+<p><b>No weight two.</b> Two labels sum to zero over <code>F_2</code> only when they are equal, but a binary support cannot contain the same coordinate twice.</p>
+<p><b>A weight-three witness.</b> For distinct nonzero labels <code>a</code> and <code>b</code>, the third label <code>a+b</code> is nonzero and distinct from both. The support</p>
+<p><code>{a,b,a+b}</code></p>
+<p>sums to zero and has odd cardinality, so it commutes with every X check but is not a Z stabilizer. In the declared order, <code>{0001,0010,0011}</code> gives <code>ZZZ____________</code>.</p>
+<p>The lower exclusion and upper witness prove <code>d_Z=3</code>. There are exactly thirty-five such three-point supports: each two-dimensional subspace of <code>F_2^4</code> contains precisely its three nonzero points, and the Gaussian binomial count is</p>
+<p><code>((2^4-1)(2^4-2))/((2^2-1)(2^2-2)) = 35</code>.</p>
+<p>The reproduction transcript also enumerates all <code>C(15,3)</code> supports and finds the same thirty-five witnesses without relying on that counting formula.</p>
+<h2 id='4-total-distance-and-error-correction'>4. Total distance and error correction</h2>
+<p>For a CSS code, a minimum logical Pauli may be chosen pure X or pure Z, so</p>
+<p><code>d = min(d_X,d_Z) = min(7,3) = 3</code>.</p>
+<p>The exact verifier searches supports in increasing weight, tests both CSS sectors, and returns <code>(3, exact-css-enum)</code>. This establishes correction of an arbitrary single-qubit Pauli error. It does not establish comparable logical rates in the two sectors under biased noise: rates also depend on the decoder, syndrome circuit, and physical error distribution.</p>
+<h2 id='5-full-z-normalizer-enumerator'>5. Full Z-normalizer enumerator</h2>
+<p>The kernel of <code>H_X</code> has dimension eleven and therefore contains 2048 support vectors. Exact enumeration separates it by parity:</p>
+<div class='table-wrap markdown-table-wrap'><table class='markdown-table'><thead><tr><th class='align-left' scope='col'>coset</th><th class='align-left' scope='col'>weight enumerator</th></tr></thead><tbody><tr><td class='align-left'>Z stabilizers</td><td class='align-left'><code>1 + 105 y^4 + 280 y^6 + 435 y^8 + 168 y^10 + 35 y^12</code></td></tr><tr><td class='align-left'>logical Z</td><td class='align-left'><code>35 y^3 + 168 y^5 + 435 y^7 + 280 y^9 + 105 y^11 + y^15</code></td></tr></tbody></table></div>
+<p>The two rows each contain 1024 words. The odd row becomes the logical-error numerator in the idealized distillation model on the <a href='distillation-switching-realizations.html'>protocol ledger</a>. These coefficients are constructor-derived facts; no experimental or circuit-level rate is being inferred from them.</p></div></body></html>

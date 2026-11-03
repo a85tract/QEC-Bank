@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:square_lattice_cluster",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:square_lattice_cluster:views:0@444ec1a3a7a419ead54d8f1b573534256a55e1981b4afa7c3246e9c70f187527",
+      "field": "views",
+      "id": "atlas-assertion:square_lattice_cluster:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:square_lattice_cluster",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:square_lattice_cluster:categories:0@5913343bd972fe76f59218106dac340e00ce568f47a5d357fe2f0782ca874359",
+      "field": "categories",
+      "id": "atlas-assertion:square_lattice_cluster:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:square_lattice_cluster#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:square_lattice_cluster#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/square_lattice_cluster",
+          "atlas:atlas/square_lattice_cluster/card.yaml#/identity",
+          "t222:docs/lit/square_lattice_cluster/square_lattice_cluster-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/mbqc/square_lattice_cluster.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo square_lattice_cluster identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:square_lattice_cluster"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:square_lattice_cluster#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "square_lattice_cluster",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:square_lattice_cluster",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "6b3df8c03a091240476a9688a2ec3730b3c00f10768a080ce567f4af504a04d2",
+          "payload_sha256": "87640dfb216e6b60cbb6e30b48e440995c679aa34bba6ea229530a134f237385",
+          "semantic_hash": "58c5fa7e7ef6b0a342f934cb32961c6f6e6fe2959bfd96743059ea525e2741c0"
+        },
+        "id": "atlas-instance:square_lattice_cluster:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:58c5fa7e7ef6b0a342f934cb32961c6f6e6fe2959bfd96743059ea525e2741c0:structural-validity:ee112423554a8f0422c94e35728bd35437957ed4f1fc21ac5d22d24bc6507902@1"
+          ],
+          "instance_record_sha256": "d8750ca14d8f31a22338dfd9adf6e49052823d1282fd487a382f3fc7d21f70af",
+          "lean_report_sha256": "06f2226088fb8488573823d07d5f76cd583fe026f54ccf66d2c1ec4b0580c181",
+          "semantic_hash": "58c5fa7e7ef6b0a342f934cb32961c6f6e6fe2959bfd96743059ea525e2741c0"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "7442c0613941e0ca7c343742b79c5839a88763b02308060f4555d6542d4d8cab",
+        "v2_envelope_id": "formal-ir-v2:square_lattice_cluster:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:square_lattice_cluster#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:square_lattice_cluster:views:0",
+      "atlas-assertion:square_lattice_cluster:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:square_lattice_cluster#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:square_lattice_cluster:views:0@444ec1a3a7a419ead54d8f1b573534256a55e1981b4afa7c3246e9c70f187527",
+      "atlas-evidence:square_lattice_cluster:categories:0@5913343bd972fe76f59218106dac340e00ce568f47a5d357fe2f0782ca874359"
+    ],
+    "formalization_id": "atlas-formalization:square_lattice_cluster",
+    "instance_ids": [
+      "atlas-instance:square_lattice_cluster:primary"
+    ],
+    "page_id": "atlas-page:square_lattice_cluster",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:square_lattice_cluster"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:square_lattice_cluster#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:square_lattice_cluster#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:square_lattice_cluster",
+    "presented_entity_ids": [
+      "eczoo-entity:square_lattice_cluster#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:square_lattice_cluster#collection",
+    "redirects": [],
+    "route": "/entries/square_lattice_cluster.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/square_lattice_cluster"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

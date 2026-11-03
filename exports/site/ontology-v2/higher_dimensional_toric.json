@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:higher_dimensional_toric",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:higher_dimensional_toric:views:0@afbf418113681d00d67f566030fc0d63c063fc1da9accb3af1565d85cb2808e2",
+      "field": "views",
+      "id": "atlas-assertion:higher_dimensional_toric:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:higher_dimensional_toric",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:higher_dimensional_toric:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:higher_dimensional_toric:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:higher_dimensional_toric#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:higher_dimensional_toric#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:higher_dimensional_toric#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/higher_dimensional_toric/card.yaml#/identity",
+          "atlas:atlas/higher_dimensional_toric/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/higher_dimensional_toric/higher_dimensional_toric-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/higher_d/higher_dimensional_toric.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:higher_dimensional_toric"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:higher_dimensional_toric#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "higher_dimensional_toric",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:higher_dimensional_toric",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "a52e8dddf263838e5bc6897bcaf9ded8aef688fa8f35fb40ab959e01f8dec1ed",
+          "payload_sha256": "c3fc541057ebc1c8e5cba628a29e17f837b6af8b3e45e83a8144835e8eda2c2e",
+          "semantic_hash": "8a8487c3cab4c8bb2aa7614792937f059b6ac123262741870a887e4fc7e75ef9"
+        },
+        "id": "atlas-instance:higher_dimensional_toric:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8a8487c3cab4c8bb2aa7614792937f059b6ac123262741870a887e4fc7e75ef9:small-exact-distance-enumeration:628478bca44454b6769943b00765dfbdcd3b0e749d01cb7101e6d15e818ddd0f@1",
+            "certificate:8a8487c3cab4c8bb2aa7614792937f059b6ac123262741870a887e4fc7e75ef9:structural-validity:fa848a211e70cef14a2cd1e64e8219b99a27d8628edd79e16ba13aa5db9ef99d@1"
+          ],
+          "instance_record_sha256": "51f326c56dc524451cbafd88e47f9f9c2d653e6d02c69b84a93502b213aff005",
+          "lean_report_sha256": "fd04a3910299214ad79aff521debbd1c306b65284266714e583b9468882c8f82",
+          "semantic_hash": "8a8487c3cab4c8bb2aa7614792937f059b6ac123262741870a887e4fc7e75ef9"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "3ccd85e7e94639d71b67bb6bd564a8c5fe30d627f2e73ae7b9cbe26be763672a",
+        "v2_envelope_id": "formal-ir-v2:higher_dimensional_toric:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:higher_dimensional_toric#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:higher_dimensional_toric:views:0",
+      "atlas-assertion:higher_dimensional_toric:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:higher_dimensional_toric#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:higher_dimensional_toric:views:0@afbf418113681d00d67f566030fc0d63c063fc1da9accb3af1565d85cb2808e2",
+      "atlas-evidence:higher_dimensional_toric:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:higher_dimensional_toric",
+    "instance_ids": [
+      "atlas-instance:higher_dimensional_toric:primary"
+    ],
+    "page_id": "atlas-page:higher_dimensional_toric",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:higher_dimensional_toric"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:higher_dimensional_toric#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:higher_dimensional_toric#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:higher_dimensional_toric",
+    "presented_entity_ids": [
+      "eczoo-entity:higher_dimensional_toric#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:higher_dimensional_toric#collection",
+    "redirects": [],
+    "route": "/entries/higher_dimensional_toric.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/higher_dimensional_toric"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

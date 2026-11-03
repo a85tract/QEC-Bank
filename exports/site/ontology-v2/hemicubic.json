@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:hemicubic",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:hemicubic:views:0@e50471f2efe099477389726bea6c8226c58490be4a437e8af8234a0843d9b343",
+      "field": "views",
+      "id": "atlas-assertion:hemicubic:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:hemicubic",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:hemicubic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:hemicubic:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+    "status": "lossy"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:hemicubic#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family",
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:hemicubic#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:hemicubic#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+        "status": "lossy"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/hemicubic/card.yaml#/identity",
+          "atlas:atlas/hemicubic/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/hemicubic/hemicubic-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/higher_d/hemicubic.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:hemicubic"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:hemicubic#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "hemicubic",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:hemicubic",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "6cb185764043dc63f591d67c0b92832820dc1b34b46d085ec1db47eab86b0cfa",
+          "payload_sha256": "bf4ad7a490d2b0b6b56c957964a6a8591d34e33a01f80bfc5b45d5ac61fc14e5",
+          "semantic_hash": "95d5230b9aab5503a89dc13d6af0e39eae0f8905329bdfc8b3587cc0427d8d26"
+        },
+        "id": "atlas-instance:hemicubic:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:95d5230b9aab5503a89dc13d6af0e39eae0f8905329bdfc8b3587cc0427d8d26:small-exact-distance-enumeration:018f553af26f7fbc14c77514e487f7fbad1ff5f2b8bc63e592fc29a91d834ed0@1",
+            "certificate:95d5230b9aab5503a89dc13d6af0e39eae0f8905329bdfc8b3587cc0427d8d26:structural-validity:4b0634bf1cd21eccfbbd9ddc528b8d8f2ec422c73f84f2f2cbdb3ff60753d9db@1"
+          ],
+          "instance_record_sha256": "9a2076412466b992207b4886d53518904678f626e34fc854e0595f47f14cef7a",
+          "lean_report_sha256": "8b7b5e882fdf129758891169d65ac294c8aa6b2252a2ab18d8bfbbd26a4891f0",
+          "semantic_hash": "95d5230b9aab5503a89dc13d6af0e39eae0f8905329bdfc8b3587cc0427d8d26"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "6647d5ac241b0072da6c2dd7ba738d8b6fd9aa0433bcceb65c7ce2a60598d66f",
+        "v2_envelope_id": "formal-ir-v2:hemicubic:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:hemicubic#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:hemicubic:views:0",
+      "atlas-assertion:hemicubic:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:hemicubic#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:hemicubic:views:0@e50471f2efe099477389726bea6c8226c58490be4a437e8af8234a0843d9b343",
+      "atlas-evidence:hemicubic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:hemicubic",
+    "instance_ids": [
+      "atlas-instance:hemicubic:primary"
+    ],
+    "page_id": "atlas-page:hemicubic",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:hemicubic"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:hemicubic#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:hemicubic#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:hemicubic",
+    "presented_entity_ids": [
+      "eczoo-entity:hemicubic#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:hemicubic#collection",
+    "redirects": [],
+    "route": "/entries/hemicubic.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/hemicubic"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

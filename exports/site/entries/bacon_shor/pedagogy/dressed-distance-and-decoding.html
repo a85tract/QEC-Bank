@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Dressed distance and the two repetition decoders</title><link rel='stylesheet' href='../../../style.css?v=3d2fa6103434'><script defer src='../../../renderer/mathjax-config.js?v=6dc4bd4b7c05'></script><script defer src='https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js'></script></head><body><nav><a href='../../../index.html'>QEC Atlas</a> · <a href='../../../foundations/index.html'>Foundations</a> · <a href='../../../wanted.html'>Open problems</a></nav><h1>Dressed distance and the two repetition decoders</h1><div class='intuition'><p>The same parity quotient proves both the sector distances and the perfect-gauge-readout decoder. This page fixes the meaning of &quot;modulo gauge&quot; before using a repetition analogy.</p>
+<h2 id='x-type-dressed-operators'>X-type dressed operators</h2>
+<p>Represent an X-type Pauli by a binary <code>r × c</code> support matrix <code>A</code>. Multiplying by a vertical X gauge edge flips two adjacent entries in one column. Such moves preserve the column-parity vector</p>
+<div class='math-display'>$$
+p_j=\sum_{i=0}^{r-1}A_{i,j}\pmod 2.
+$$</div>
+<p>Conversely, adjacent-pair moves generate every even-parity pattern inside a column. Two X supports are therefore in the same X-gauge coset exactly when they have the same <code>c</code> column parities.</p>
+<p>Commutation with the Z center strip between columns <code>j</code> and <code>j+1</code> requires</p>
+<div class='math-display'>$$
+p_j+p_{j+1}=0.
+$$</div>
+<p>All column parities of a dressed X normalizer must be equal. The all-zero choice is X-gauge-trivial. The only nontrivial protected choice is</p>
+<div class='math-display'>$$
+p=(1,1,\ldots,1).
+$$</div>
+<p>Any support in this coset contains at least one X in every column, so its weight is at least <code>c</code>. A complete X row has exactly one occupied site per column and realizes the bound:</p>
+<div class='math-display'>$$
+d_X=c.
+$$</div>
+<p>The row is bare, but a general minimum representative can zig-zag by multiplying vertical gauge edges. This is the concrete difference between a bare logical and a dressed logical.</p>
+<h2 id='z-type-dressed-operators'>Z-type dressed operators</h2>
+<p>For a Z support matrix <code>B</code>, horizontal Z gauge edges generate every even-parity pattern within a row. The gauge invariant is the row-parity vector</p>
+<div class='math-display'>$$
+u_i=\sum_{j=0}^{c-1}B_{i,j}\pmod 2.
+$$</div>
+<p>Commutation with adjacent-row X center strips forces every <code>u_i</code> to be equal. The zero vector is gauge-trivial; the nontrivial protected coset has one in every row. At least one Z is needed per row, and a complete column reaches the bound:</p>
+<div class='math-display'>$$
+d_Z=r.
+$$</div>
+<p>For a CSS subsystem code with this single protected pair, a mixed Pauli cannot beat both pure-sector minima: its X and Z support components must each be either gauge-trivial or in the corresponding logical parity class, and its Pauli weight contains the support of every nontrivial component. Hence</p>
+<div class='math-display'>$$
+d=\min(r,c).
+$$</div>
+<p><code>reproduce.py</code> exhausts all pure-X and pure-Z supports through these minima for every shipped rectangle and checks nonmembership in the full gauge row space. Independently, the shared referee enumerates mixed Pauli supports in increasing weight and verifies the total <code>d</code> values <code>2</code>, <code>3</code>, and <code>3</code> for the shipped <code>2 × 2</code>, <code>3 × 3</code>, and <code>3 × 5</code> instances. The structured total-distance claims therefore carry <code>verified</code> origins. The <code>d_X</code> and <code>d_Z</code> rows remain literature-attributed because the generic referee reports the minimum over all Pauli types rather than two named sectors.</p>
+<p>The exact enumerator refuses an over-budget layer before treating partial work as a lower bound. For the committed <code>5 × 7</code> case, the separate seeded search finds a weight-<code>12</code> representative in <code>32</code> trials with seed <code>17</code>; the independent validator accepts the Pauli, while the evidence envelope records <code>optimality: not-certified</code>. This is an achieved upper bound only and does not replace the parity proof of the rectangular family formula.</p>
+<h2 id='z-errors-become-a-repetition-problem-on-rows'>Z errors become a repetition problem on rows</h2>
+<p>Let <code>E</code> be a Z-error support and retain only its row parities <code>u</code>. Horizontal Z gauge motion changes positions within a row without changing <code>u</code>. The X-center syndrome between rows <code>i</code> and <code>i+1</code> is</p>
+<div class='math-display'>$$
+s^X_i=u_i+u_{i+1}.
+$$</div>
+<p>Thus the protected syndrome is exactly the open repetition parity matrix applied to <code>u</code>. There are two row-parity patterns for a given syndrome; they differ by the all-one vector. That difference is the logical Z coset. Under a specified independent-noise prior, the decoder chooses between those two cosets by likelihood or majority logic.</p>
+<p>For the <code>3 × 3</code> block, one Z error in each possible row gives:</p>
+<div class='table-wrap markdown-table-wrap'><table class='markdown-table'><thead><tr><th class='align-left' scope='col'>representative</th><th class='align-left' scope='col'>row parity <code>u</code></th><th class='align-left' scope='col'>X-center syndrome <code>(s0,s1)</code></th></tr></thead><tbody><tr><td class='align-left'><code>Z</code> on <code>q0</code></td><td class='align-left'><code>100</code></td><td class='align-left'><code>10</code></td></tr><tr><td class='align-left'><code>Z</code> on <code>q3</code></td><td class='align-left'><code>010</code></td><td class='align-left'><code>11</code></td></tr><tr><td class='align-left'><code>Z</code> on <code>q6</code></td><td class='align-left'><code>001</code></td><td class='align-left'><code>01</code></td></tr></tbody></table></div>
+<p>The column position is absent because changing it by horizontal Z gauge edges does not change the protected action.</p>
+<p>If physical Z errors are independent with probability <code>p</code>, the probability that one row of length <code>c</code> has odd parity is</p>
+<p>$$p_{row}=\sum_{w\text{ odd}}{c\choose w}p^w(1-p)^{c-w} =\frac{1-(1-2p)^c}{2}.$$</p>
+<p>This formula defines the perfect-readout effective repetition channel. It is not a circuit-level threshold: measurement faults, propagation, correlations, and repeated-round inference are absent.</p>
+<h2 id='x-errors-become-a-repetition-problem-on-columns'>X errors become a repetition problem on columns</h2>
+<p>The perpendicular argument retains one parity <code>p_j</code> for each column. The Z-center syndrome is</p>
+<div class='math-display'>$$
+s^Z_j=p_j+p_{j+1}.
+$$</div>
+<p>On the <code>3 × 3</code> block:</p>
+<div class='table-wrap markdown-table-wrap'><table class='markdown-table'><thead><tr><th class='align-left' scope='col'>representative</th><th class='align-left' scope='col'>column parity <code>p</code></th><th class='align-left' scope='col'>Z-center syndrome <code>(s0,s1)</code></th></tr></thead><tbody><tr><td class='align-left'><code>X</code> on <code>q0</code></td><td class='align-left'><code>100</code></td><td class='align-left'><code>10</code></td></tr><tr><td class='align-left'><code>X</code> on <code>q1</code></td><td class='align-left'><code>010</code></td><td class='align-left'><code>11</code></td></tr><tr><td class='align-left'><code>X</code> on <code>q2</code></td><td class='align-left'><code>001</code></td><td class='align-left'><code>01</code></td></tr></tbody></table></div>
+<p>For independent X errors with probability <code>p</code>, the odd parity of a column of height <code>r</code> has probability <code>[1-(1-2p)^r]/2</code>. A <code>3 × 5</code> rectangle therefore creates a length-five column-parity repetition decision for X errors and a length-three row-parity decision for Z errors. Which shape is optimal depends on both physical channels and the complete correction protocol.</p>
+<h2 id='degeneracy-is-the-algorithm-not-a-nuisance'>Degeneracy is the algorithm, not a nuisance</h2>
+<p>An ordinary decoder might try to identify the exact physical error. Here that goal is unnecessarily strict. All supports with the same row or column parity differ by gauge action and are equivalent on the protected subsystem. The minimal sufficient statistic for perfect readout is the parity vector, and the only remaining ambiguity is whether it belongs to the trivial or logical all-one coset.</p>
+<p>This quotient is also why a stabilizer-only distance routine is wrong for the entry. Quotienting only by <code>S</code> would retain many operators that differ by noncentral gauge action and would misclassify disposable degrees of freedom as protected logicals.</p>
+<h2 id='boundary-of-the-perfect-syndrome-result'>Boundary of the perfect-syndrome result</h2>
+<p>The tables above assume exact center syndromes. In a hardware circuit one normally measures weight-two gauge generators, not the strips directly. Raw gauge outcomes from different Pauli rounds can be disturbed, and a faulty ancilla interaction can change both data and measurement records. The decoder must consume the actual schedule&#x27;s history. The next page derives the safe outcome products and then separates the named circuit-level regimes: <a href='measurement-and-fault-tolerance.html'>gauge measurement and fault tolerance</a>.</p></div></body></html>

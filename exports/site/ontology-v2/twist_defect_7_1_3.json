@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:twist_defect_7_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:twist_defect_7_1_3:views:0@15d6c8a35943c92187a0cdf3d530d2baeeb42975dc2a33a5286a9c8e23be84c9",
+      "field": "views",
+      "id": "atlas-assertion:twist_defect_7_1_3:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:twist_defect_7_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:twist_defect_7_1_3:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:twist_defect_7_1_3:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:twist_defect_7_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:twist_defect_7_1_3:categories:1@b82f6c2a4a15d7606b71a19e27c2c3359ca30299c5528bb7c6c385fcf315b515",
+      "field": "categories",
+      "id": "atlas-assertion:twist_defect_7_1_3:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:twist_defect_7_1_3#object",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:twist_defect_7_1_3#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:twist_defect_7_1_3#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/twist_defect_7_1_3/card.yaml#/identity",
+          "atlas:atlas/twist_defect_7_1_3/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/twist_defect_7_1_3/twist_defect_7_1_3-eczoo-intake.md",
+          "t206:codes/quantum/qubits/small_distance/small/7/twist_defect_7_1_3.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:twist_defect_7_1_3"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:twist_defect_7_1_3#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "twist_defect_7_1_3",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:twist_defect_7_1_3",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "bde9066a7d1ea0da84914cc510ae60340485d96f0e1d75f21c068c2dbc766726",
+          "payload_sha256": "6ca3a07de3b341bdff06284cb7991f7f2e2f9cfb28b17726d8f31758ddd2c50e",
+          "semantic_hash": "b61bf7ce0429f2334877da4b195e326675e86cc2aaa7ddb1bb014271613a241c"
+        },
+        "id": "atlas-instance:twist_defect_7_1_3:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:b61bf7ce0429f2334877da4b195e326675e86cc2aaa7ddb1bb014271613a241c:small-exact-distance-enumeration:d2d4bc85585c92445ee0b8b790bf0f5d0b395f04ac4dbab0e7f0e8902f9cf72d@1",
+            "certificate:b61bf7ce0429f2334877da4b195e326675e86cc2aaa7ddb1bb014271613a241c:structural-validity:ae184854a9046126cee6c06d7d510856834a9b06bc379c825fcb06399d1bf14e@1"
+          ],
+          "instance_record_sha256": "4db8dc0f542f0b19f122a4aeefce35f7c837ace1e2cff7d2ef40f29ec731fcbc",
+          "lean_report_sha256": "0381a6f344e927af5eda98db366f43e593f2ef029531f5dad340518785ab7c49",
+          "semantic_hash": "b61bf7ce0429f2334877da4b195e326675e86cc2aaa7ddb1bb014271613a241c"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "9773aa70a4907f74ac1fdd96800cab342ca76c470a2fe714d85f325efd58784a",
+        "v2_envelope_id": "formal-ir-v2:twist_defect_7_1_3:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:twist_defect_7_1_3#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:twist_defect_7_1_3:views:0",
+      "atlas-assertion:twist_defect_7_1_3:categories:0",
+      "atlas-assertion:twist_defect_7_1_3:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:twist_defect_7_1_3#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:twist_defect_7_1_3:views:0@15d6c8a35943c92187a0cdf3d530d2baeeb42975dc2a33a5286a9c8e23be84c9",
+      "atlas-evidence:twist_defect_7_1_3:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "atlas-evidence:twist_defect_7_1_3:categories:1@b82f6c2a4a15d7606b71a19e27c2c3359ca30299c5528bb7c6c385fcf315b515"
+    ],
+    "formalization_id": "atlas-formalization:twist_defect_7_1_3",
+    "instance_ids": [
+      "atlas-instance:twist_defect_7_1_3:primary"
+    ],
+    "page_id": "atlas-page:twist_defect_7_1_3",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:twist_defect_7_1_3"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:twist_defect_7_1_3#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:twist_defect_7_1_3#object",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:twist_defect_7_1_3",
+    "presented_entity_ids": [
+      "eczoo-entity:twist_defect_7_1_3#object"
+    ],
+    "primary_entity_id": "eczoo-entity:twist_defect_7_1_3#object",
+    "redirects": [],
+    "route": "/entries/twist_defect_7_1_3.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/twist_defect_7_1_3"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

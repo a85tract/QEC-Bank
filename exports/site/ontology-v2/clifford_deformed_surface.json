@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:clifford_deformed_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:clifford_deformed_surface:views:0@6c2b4f423422a5b0b6b752561ff8a3983a456bf2ce7ea2068ee47d65493a3b60",
+      "field": "views",
+      "id": "atlas-assertion:clifford_deformed_surface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:clifford_deformed_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:clifford_deformed_surface:categories:0@c5a027aa5a331790cd794ffd5732ba8643305817ee99f4deb3f4c2e4ab0eb239",
+      "field": "categories",
+      "id": "atlas-assertion:clifford_deformed_surface:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:clifford-deformed_surface#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:clifford-deformed_surface#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/clifford-deformed_surface",
+          "atlas:atlas/clifford_deformed_surface/card.yaml#/identity",
+          "t222:docs/lit/clifford_deformed_surface/clifford_deformed_surface-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/topological/surface/twist_defect/clifford-deformed_surface.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo clifford-deformed_surface identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:clifford-deformed_surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:clifford-deformed_surface#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "clifford_deformed_surface",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:clifford_deformed_surface",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7aea1490f6c1dd510e8ecfee0a9731f1e81f1c7ac2c545d04284b2c3d56dcacf",
+          "payload_sha256": "9c4abd4b457c74efab7400759d1fdd625327683e8f14b1dbb13e0ac25ec87915",
+          "semantic_hash": "285c4cffca7c04ed60bb190ab3f03103101fe7a7fb403440f58b96c7c710b4a0"
+        },
+        "id": "atlas-instance:clifford_deformed_surface:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:285c4cffca7c04ed60bb190ab3f03103101fe7a7fb403440f58b96c7c710b4a0:structural-validity:a5c940572c5054b2be30b82d7bd3a938d242edd37f3685332627ce8401c4297b@1"
+          ],
+          "instance_record_sha256": "a17d9be295351c6415dd1b03ad3b8727e159ca46caa24c1f198bf62bfc0169fd",
+          "lean_report_sha256": "10afbe6979c330a836dfed7c26f49016f8a1d262a10bbe1a299bb7327c47c1e4",
+          "semantic_hash": "285c4cffca7c04ed60bb190ab3f03103101fe7a7fb403440f58b96c7c710b4a0"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "af94328f2db568f8c069498db034fa58a2c2dac796e32f6adb2d6c650e2788b0",
+        "v2_envelope_id": "formal-ir-v2:clifford_deformed_surface:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:clifford-deformed_surface#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:clifford_deformed_surface:views:0",
+      "atlas-assertion:clifford_deformed_surface:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:clifford-deformed_surface#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:clifford_deformed_surface:views:0@6c2b4f423422a5b0b6b752561ff8a3983a456bf2ce7ea2068ee47d65493a3b60",
+      "atlas-evidence:clifford_deformed_surface:categories:0@c5a027aa5a331790cd794ffd5732ba8643305817ee99f4deb3f4c2e4ab0eb239"
+    ],
+    "formalization_id": "atlas-formalization:clifford_deformed_surface",
+    "instance_ids": [
+      "atlas-instance:clifford_deformed_surface:primary"
+    ],
+    "page_id": "atlas-page:clifford_deformed_surface",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:clifford-deformed_surface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:clifford-deformed_surface#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:clifford-deformed_surface#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:clifford_deformed_surface",
+    "presented_entity_ids": [
+      "eczoo-entity:clifford-deformed_surface#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:clifford-deformed_surface#collection",
+    "redirects": [],
+    "route": "/entries/clifford_deformed_surface.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/clifford_deformed_surface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

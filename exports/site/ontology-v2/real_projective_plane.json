@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:real_projective_plane",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:real_projective_plane:views:0@628e1a3443986407faa64ccad36fb21abce5bd5e34bfc743d68d9a42f5749138",
+      "field": "views",
+      "id": "atlas-assertion:real_projective_plane:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:real_projective_plane",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:real_projective_plane:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:real_projective_plane:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+    "status": "lossy"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:real_projective_plane#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family",
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:real_projective_plane#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:real_projective_plane#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+        "status": "lossy"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/real_projective_plane/card.yaml#/identity",
+          "atlas:atlas/real_projective_plane/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/real_projective_plane/real_projective_plane-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/2d_surface/real_projective_plane.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:real_projective_plane"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:real_projective_plane#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "real_projective_plane",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:real_projective_plane",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f1204fd75010929cfda99b73605b6da75f6f0ac2ce31974f5bc7045ffbeccd1e",
+          "payload_sha256": "dfcb6949a4ac1fd5aa94e48708adee59d686dca16e09ed1333cb254e2f6bad3e",
+          "semantic_hash": "bab7fc73b61201c1343aaf69ef54ef4ca55b419613aaa515a992811b362c790e"
+        },
+        "id": "atlas-instance:real_projective_plane:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:bab7fc73b61201c1343aaf69ef54ef4ca55b419613aaa515a992811b362c790e:small-exact-distance-enumeration:aab2e0f1bbe6ae935c9a33e16ef5af269c59ed3928caa592401653fd0b62032c@1",
+            "certificate:bab7fc73b61201c1343aaf69ef54ef4ca55b419613aaa515a992811b362c790e:structural-validity:356a773ac2bafc15a72ade3c2dd36d4f81a39309fb03e6006073218aa5737477@1"
+          ],
+          "instance_record_sha256": "da5e8c9f598d5e8ec7cca1e4c1705f281b7497649327b5dadddbb737273eecaa",
+          "lean_report_sha256": "1c2891fe4cd12e45eef9792b54587be3a1d054dcfb56d0b967ea249483a31d23",
+          "semantic_hash": "bab7fc73b61201c1343aaf69ef54ef4ca55b419613aaa515a992811b362c790e"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "9ad63d3cd7167856dbba48c51db9ecbe77b046e2760101dd1a177465224e6e1e",
+        "v2_envelope_id": "formal-ir-v2:real_projective_plane:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:real_projective_plane#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:real_projective_plane:views:0",
+      "atlas-assertion:real_projective_plane:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:real_projective_plane#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:real_projective_plane:views:0@628e1a3443986407faa64ccad36fb21abce5bd5e34bfc743d68d9a42f5749138",
+      "atlas-evidence:real_projective_plane:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:real_projective_plane",
+    "instance_ids": [
+      "atlas-instance:real_projective_plane:primary"
+    ],
+    "page_id": "atlas-page:real_projective_plane",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:real_projective_plane"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:real_projective_plane#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:real_projective_plane#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:real_projective_plane",
+    "presented_entity_ids": [
+      "eczoo-entity:real_projective_plane#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:real_projective_plane#collection",
+    "redirects": [],
+    "route": "/entries/real_projective_plane.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/real_projective_plane"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

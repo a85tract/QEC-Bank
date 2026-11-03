@@ -1,0 +1,185 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:subsystem_qubits_into_qubits",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:subsystem_qubits_into_qubits:views:0@4060f4e2e0196afbf836ec4f51811e3cfe4ae1d580a8c65fb5e07281962e8e79",
+      "field": "views",
+      "id": "atlas-assertion:subsystem_qubits_into_qubits:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:subsystem_qubits_into_qubits",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:subsystem_qubits_into_qubits:categories:0@dcff67f95f4718853a7ba7bd23b477cc48c0fcc86f8b4bc0132c2ead941565c2",
+      "field": "categories",
+      "id": "atlas-assertion:subsystem_qubits_into_qubits:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:subsystem_qubits_into_qubits",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:subsystem_qubits_into_qubits:categories:1@ee67076a2c202b16009a5918c3d058aae0e18ab1ac628af9f3f22a74c5c7a8e9",
+      "field": "categories",
+      "id": "atlas-assertion:subsystem_qubits_into_qubits:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:subsystem_qubits_into_qubits#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:subsystem_qubits_into_qubits#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/subsystem_qubits_into_qubits",
+          "atlas:atlas/subsystem_qubits_into_qubits/card.yaml#/identity",
+          "t222:docs/lit/subsystem_qubits_into_qubits/subsystem_qubits_into_qubits-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/subsystem/subsystem_qubits_into_qubits.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo subsystem_qubits_into_qubits identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:subsystem_qubits_into_qubits"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:subsystem_qubits_into_qubits#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "subsystem_qubits_into_qubits",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:subsystem_qubits_into_qubits",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "e9e7a011cba3d49ca27e1249b97ee86f885b35866ecafc6eddf8d3bbea662e8d",
+          "payload_sha256": "bfe096e56ec1000629c825825df4b38387f9e36cadd2801f161996d6f5fab940",
+          "semantic_hash": "fa99bc92fc635557b03fd8cdf94fafceac36d0943152a4aa578a05696a083a2c"
+        },
+        "id": "atlas-instance:subsystem_qubits_into_qubits:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:fa99bc92fc635557b03fd8cdf94fafceac36d0943152a4aa578a05696a083a2c:structural-validity:d9c3eba0867e036d80ee055bfacaec81a80b70e2b2966450dda1e23faca73252@1"
+          ],
+          "instance_record_sha256": "104c73f0eb53978d1822ab80a8e388938b32f04f2471607934c204125d3151e9",
+          "lean_report_sha256": "20c949fcc1bbeecef57dd2ecab33dc71c2ad98d080987b7b905c3e21a0208002",
+          "semantic_hash": "fa99bc92fc635557b03fd8cdf94fafceac36d0943152a4aa578a05696a083a2c"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b94e6613852e64ef209673988018cb8cc97a762e177e866fbe6694a968eb3613",
+        "v2_envelope_id": "formal-ir-v2:subsystem_qubits_into_qubits:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:subsystem_qubits_into_qubits#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:subsystem_qubits_into_qubits:views:0",
+      "atlas-assertion:subsystem_qubits_into_qubits:categories:0",
+      "atlas-assertion:subsystem_qubits_into_qubits:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:subsystem_qubits_into_qubits#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:subsystem_qubits_into_qubits:views:0@4060f4e2e0196afbf836ec4f51811e3cfe4ae1d580a8c65fb5e07281962e8e79",
+      "atlas-evidence:subsystem_qubits_into_qubits:categories:0@dcff67f95f4718853a7ba7bd23b477cc48c0fcc86f8b4bc0132c2ead941565c2",
+      "atlas-evidence:subsystem_qubits_into_qubits:categories:1@ee67076a2c202b16009a5918c3d058aae0e18ab1ac628af9f3f22a74c5c7a8e9"
+    ],
+    "formalization_id": "atlas-formalization:subsystem_qubits_into_qubits",
+    "instance_ids": [
+      "atlas-instance:subsystem_qubits_into_qubits:primary"
+    ],
+    "page_id": "atlas-page:subsystem_qubits_into_qubits",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:subsystem_qubits_into_qubits"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:subsystem_qubits_into_qubits#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:subsystem_qubits_into_qubits#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:subsystem_qubits_into_qubits",
+    "presented_entity_ids": [
+      "eczoo-entity:subsystem_qubits_into_qubits#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:subsystem_qubits_into_qubits#collection",
+    "redirects": [],
+    "route": "/entries/subsystem_qubits_into_qubits.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/subsystem_qubits_into_qubits"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

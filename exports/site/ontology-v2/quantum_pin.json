@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_pin",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:quantum_pin:views:0@923dd3a3f0c305d6b71fcc6ff809a6a5affeba86e77fed08631c81125a0ac216",
+      "field": "views",
+      "id": "atlas-assertion:quantum_pin:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_pin",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:quantum_pin:categories:0@58d205fdfcd078c4894773b1bcd67230c850cc2b380eed78d740ca6c91443b0d",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_pin:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:quantum_pin#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:quantum_pin#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/quantum_pin",
+          "atlas:atlas/quantum_pin/card.yaml#/identity",
+          "t222:docs/lit/quantum_pin/quantum_pin-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/magic/k-orthogonal/quantum_pin.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo quantum_pin identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:quantum_pin"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:quantum_pin#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_pin",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_pin",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b1c64191a5fa8cb8a474dcb675055c16a80a8a52cd6c474ee8e3bc7c4ed855a1",
+          "payload_sha256": "d77fa1c3bb5a7ecffba61d5011e086c5bc8bdb8b3d09294ad0a42c71ef76c855",
+          "semantic_hash": "091b757eaa2be347368f97b1156b24fb6399fc2413e488b38f8cb3ba1b081265"
+        },
+        "id": "atlas-instance:quantum_pin:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:091b757eaa2be347368f97b1156b24fb6399fc2413e488b38f8cb3ba1b081265:structural-validity:de95ce62bcd1dd10d98b805776ab2eac54dafe3de8ba67b79112a2af2383eccc@1"
+          ],
+          "instance_record_sha256": "560e3efeb9ec158d6be864b65e14764ddcb8409658057428380b7a22ce0e7cab",
+          "lean_report_sha256": "4ca62c0db0b6eef82835fdb7eeadd61c5fd6a26124f6df0a34e5eb811beb0bc1",
+          "semantic_hash": "091b757eaa2be347368f97b1156b24fb6399fc2413e488b38f8cb3ba1b081265"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e2a56169133c3a078818392ec59998981bd734465a1ed09ded34f4cc772b6c09",
+        "v2_envelope_id": "formal-ir-v2:quantum_pin:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:quantum_pin#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_pin:views:0",
+      "atlas-assertion:quantum_pin:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:quantum_pin#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_pin:views:0@923dd3a3f0c305d6b71fcc6ff809a6a5affeba86e77fed08631c81125a0ac216",
+      "atlas-evidence:quantum_pin:categories:0@58d205fdfcd078c4894773b1bcd67230c850cc2b380eed78d740ca6c91443b0d"
+    ],
+    "formalization_id": "atlas-formalization:quantum_pin",
+    "instance_ids": [
+      "atlas-instance:quantum_pin:primary"
+    ],
+    "page_id": "atlas-page:quantum_pin",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:quantum_pin"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:quantum_pin#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:quantum_pin#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_pin",
+    "presented_entity_ids": [
+      "eczoo-entity:quantum_pin#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:quantum_pin#collection",
+    "redirects": [],
+    "route": "/entries/quantum_pin.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/quantum_pin"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

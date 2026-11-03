@@ -1,0 +1,427 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:0@81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:1@e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:2@644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:3@a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:4@c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:5@870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:5",
+      "index": 5
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:views:6@6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7",
+      "field": "views",
+      "id": "atlas-assertion:haah_cubic:views:6",
+      "index": 6
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:haah_cubic:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:categories:1@b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032",
+      "field": "categories",
+      "id": "atlas-assertion:haah_cubic:categories:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:categories:2@be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb",
+      "field": "categories",
+      "id": "atlas-assertion:haah_cubic:categories:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:decoders:0@b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1",
+      "field": "decoders",
+      "id": "atlas-assertion:haah_cubic:decoders:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:decoders:1@2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d",
+      "field": "decoders",
+      "id": "atlas-assertion:haah_cubic:decoders:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:decoders:2@67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f",
+      "field": "decoders",
+      "id": "atlas-assertion:haah_cubic:decoders:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:operations:0@f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915",
+      "field": "operations",
+      "id": "atlas-assertion:haah_cubic:operations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:operations:1@e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a",
+      "field": "operations",
+      "id": "atlas-assertion:haah_cubic:operations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:operations:2@4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b",
+      "field": "operations",
+      "id": "atlas-assertion:haah_cubic:operations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:realizations:0@549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885",
+      "field": "realizations",
+      "id": "atlas-assertion:haah_cubic:realizations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:relations:0@ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604",
+      "field": "relations",
+      "id": "atlas-assertion:haah_cubic:relations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:haah_cubic#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:haah_cubic:relations:1@7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad",
+      "field": "relations",
+      "id": "atlas-assertion:haah_cubic:relations:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:haah_cubic#collection",
+      "status": "preserved",
+      "tier": "T2"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:haah_cubic#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:haah_cubic#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/haah_cubic/card.yaml#/identity",
+          "atlas:atlas/haah_cubic/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/haah_cubic/haah_cubic-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/fracton/haah_cubic.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:haah_cubic"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:haah_cubic#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "haah_cubic",
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:haah_cubic",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+          "payload_sha256": "69608bea8b7bb9b49761ff35476f50842626a3af9b6e19e574ff62ef810381eb",
+          "semantic_hash": "e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628"
+        },
+        "id": "atlas-instance:haah_cubic:L2_periodic",
+        "label": "L2_periodic",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628:small-exact-distance-enumeration:4e68d500c7e13b3838142c6a7e1f7ff61d5cc92f062c93410237afc471439c1a@1",
+            "certificate:e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628:structural-validity:4caaaaa56e91c709ede16f7740f2f44835bc3a8c2b38ecdf47ab433ee23d21e9@1"
+          ],
+          "instance_record_sha256": "494a12e6be640986d00c3575f3a38c1c3dec3c8070458f7d3772d76f5953205d",
+          "lean_report_sha256": "49865adda69ca5919e3d73e820797344b965a18283d85a1a0434bf3963cce329",
+          "semantic_hash": "e0e24bb0805c5295373ef32bf592191b22597fb6cd6b4152680ef9568a832628"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "7d94aa15e1e87fba7a1ce23162bcb456c734183608d051a16078d82c82fc7cd8",
+        "v2_envelope_id": "formal-ir-v2:haah_cubic:L2_periodic"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+          "payload_sha256": "02fc076f5ff01f3dc755744f5d7e63b45458c17457c6d2de9a7b19491c78139d",
+          "semantic_hash": "24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033"
+        },
+        "id": "atlas-instance:haah_cubic:L3_periodic",
+        "label": "L3_periodic",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033:structural-validity:842ecfbf7c151e9ee63268901a44eabfd63788d5c288cdd97a049ec63bfad80d@1"
+          ],
+          "instance_record_sha256": "0ef665ca92634ed027e3abc723636ab1c7cd0647b55a0183cf9bb9c54c5763de",
+          "lean_report_sha256": "662974ba9fc066a4c3aa9ce12f97c7dbe70ff49a2bb7f0535b87f534cc910a91",
+          "semantic_hash": "24969a17f063cad6c8d5d307cc08d5c4c30b1efbc0f677659ccb8b404bd50033"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "155b0f7ec164c577239f6db97d0cf5c58cc1192a4aaa1cf6c08ad94c32293411",
+        "v2_envelope_id": "formal-ir-v2:haah_cubic:L3_periodic"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7bd6129bcb32bca75376ee891e85fd8f78e0bec2c22689e8d2bc030b278e920b",
+          "payload_sha256": "9a38f00b77138f6537d380d0242fe61d24590423ecc64dd9bffc50a3af5b6faa",
+          "semantic_hash": "b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac"
+        },
+        "id": "atlas-instance:haah_cubic:L4_periodic",
+        "label": "L4_periodic",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac:structural-validity:06328281685596e3ea30d2b3bf50b0dc3a73a8b9be997cc26ee80ae0e6f17306@1"
+          ],
+          "instance_record_sha256": "b2ebbdcc9c385f4dd1fd6e1eeb6ff55e95e05645b3c4487272fc68dc37765917",
+          "lean_report_sha256": "77a582f6678ce87e702e6d182e7df20f5f37352f2bb02a85683e386cfc8a0f89",
+          "semantic_hash": "b3230966c6ff843aacdffc59c7de24be1610672c089bde40f293d11f262673ac"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "15810f872ebc489aef2571bd99915e4f0085cabe799c0f7e25eb4d30901814a9",
+        "v2_envelope_id": "formal-ir-v2:haah_cubic:L4_periodic"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 3,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:haah_cubic#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:haah_cubic:views:0",
+      "atlas-assertion:haah_cubic:views:1",
+      "atlas-assertion:haah_cubic:views:2",
+      "atlas-assertion:haah_cubic:views:3",
+      "atlas-assertion:haah_cubic:views:4",
+      "atlas-assertion:haah_cubic:views:5",
+      "atlas-assertion:haah_cubic:views:6",
+      "atlas-assertion:haah_cubic:categories:0",
+      "atlas-assertion:haah_cubic:categories:1",
+      "atlas-assertion:haah_cubic:categories:2",
+      "atlas-assertion:haah_cubic:decoders:0",
+      "atlas-assertion:haah_cubic:decoders:1",
+      "atlas-assertion:haah_cubic:decoders:2",
+      "atlas-assertion:haah_cubic:operations:0",
+      "atlas-assertion:haah_cubic:operations:1",
+      "atlas-assertion:haah_cubic:operations:2",
+      "atlas-assertion:haah_cubic:realizations:0",
+      "atlas-assertion:haah_cubic:relations:0",
+      "atlas-assertion:haah_cubic:relations:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:haah_cubic#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:haah_cubic:views:0@81ac67615e259154fff491a4fd6ca378a3a5705d30064345d3c670e7715fd5d8",
+      "atlas-evidence:haah_cubic:views:1@e04a52c93cb40612d951a2a33c433a7f2226d0df4adaa2f41974e42c9124c199",
+      "atlas-evidence:haah_cubic:views:2@644f1a21b6776c580c13d5a65523a4120fc8559091ce2150d35346117b18eb4c",
+      "atlas-evidence:haah_cubic:views:3@a1dc7b283351f779495fd6e5cea92494d777c9ced29b52050d5de25e1ab961b3",
+      "atlas-evidence:haah_cubic:views:4@c85ae6bec2e3ab4643a8cd523627d550ef2205382267d056b36d80b35791e872",
+      "atlas-evidence:haah_cubic:views:5@870700b2c571723cf72d018cef62ff692fa6b1ee476fa2a5a0e928d5a663ef65",
+      "atlas-evidence:haah_cubic:views:6@6a0aa4434de6133e1a80877e23b8907ed732018d248c523b6525932b6c6dc2b7",
+      "atlas-evidence:haah_cubic:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:haah_cubic:categories:1@b4d71c38f7f340b174e052d6da4c249026e6b53c2089ac306c52b62539dbb032",
+      "atlas-evidence:haah_cubic:categories:2@be29219df3416bc097f7bb724153fcb52d4e9033106b073796e2a5d729d5a8bb",
+      "atlas-evidence:haah_cubic:decoders:0@b84ea3187dfbede14b16ebc351ca527694164544ed22525f7b8e0e4ed1c25fd1",
+      "atlas-evidence:haah_cubic:decoders:1@2a1ee79ff7460c9b4be8f701f8f9b26ce71d994055edb7acf3d6cc659ff15c2d",
+      "atlas-evidence:haah_cubic:decoders:2@67565289651a94fbf7e7da4917d0a175ac0e4e97065c123f602ad1694d874d6f",
+      "atlas-evidence:haah_cubic:operations:0@f381e5cc5f5d12729aacdd88d5ec251e37e2d860aa0659e5bd6dbb21fb8d0915",
+      "atlas-evidence:haah_cubic:operations:1@e97d26a387330b9caf6d640bb71335cfbea0382f8e854a281f2398d67901d26a",
+      "atlas-evidence:haah_cubic:operations:2@4a59a5489defdea5e318e532f40d432a4930b2ac906365519e7ea6efa1bd016b",
+      "atlas-evidence:haah_cubic:realizations:0@549f091049e40192b58f86177cd95416c16572e2b058e760bd31b6f5161b6885",
+      "atlas-evidence:haah_cubic:relations:0@ccada96fadc501c8b21575a721b5690b5763c32ca9d1397332ea273c7f7dc604",
+      "atlas-evidence:haah_cubic:relations:1@7b4b2dcb68352e616ebde1bc1d389bae09720e823e40f54599dc4fe828ca21ad"
+    ],
+    "formalization_id": "atlas-formalization:haah_cubic",
+    "instance_ids": [
+      "atlas-instance:haah_cubic:L2_periodic",
+      "atlas-instance:haah_cubic:L3_periodic",
+      "atlas-instance:haah_cubic:L4_periodic"
+    ],
+    "page_id": "atlas-page:haah_cubic",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:haah_cubic"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:haah_cubic#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:haah_cubic#collection",
+        "status": "preserved",
+        "tier": "T2"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:haah_cubic",
+    "presented_entity_ids": [
+      "eczoo-entity:haah_cubic#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:haah_cubic#collection",
+    "redirects": [],
+    "route": "/entries/haah_cubic.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/haah_cubic"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

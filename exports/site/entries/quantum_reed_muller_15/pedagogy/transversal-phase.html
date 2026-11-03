@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Triorthogonality and the logical phase convention</title><link rel='stylesheet' href='../../../style.css?v=3d2fa6103434'><script defer src='../../../renderer/mathjax-config.js?v=6dc4bd4b7c05'></script><script defer src='https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js'></script></head><body><nav><a href='../../../index.html'>QEC Atlas</a> · <a href='../../../foundations/index.html'>Foundations</a> · <a href='../../../wanted.html'>Open problems</a></nav><h1>Triorthogonality and the logical phase convention</h1><div class='intuition'><p class='note'><b>Question.</b> Which property beyond CSS commutation makes a bitwise T-type phase preserve this code, and why does the answer contain a dagger?</p>
+<p>CSS commutation tests overlaps between an X-check row and a Z-check row. Diagonal phase gates instead test how X-stabilizer codewords overlap with one another. The relevant five-row matrix is</p>
+<p><code>G = [1; H_X]</code>,</p>
+<p>where the first row is the odd all-one logical-X representative and the last four rows are even X stabilizers.</p>
+<h2 id='1-pair-and-triple-overlap-ledger'>1. Pair and triple overlap ledger</h2>
+<p>Index the rows by <code>g_0=1</code> and the four coordinate functions <code>g_1,...,g_4</code>.</p>
+<ul><li><code>|g_0 and g_i|=8</code>: a coordinate function is one at eight labels.</li><li><code>|g_i and g_j|=4</code> for distinct coordinates: fixing two bits to one leaves four choices for the other bits.</li><li><code>|g_0 and g_i and g_j|=4</code>: intersecting with the all-one row changes nothing.</li><li><code>|g_i and g_j and g_k|=2</code> for distinct coordinates: fixing three bits leaves two choices for the fourth.</li></ul>
+<p>All pair and triple overlaps are even. This is the triorthogonality condition of <a href='https://arxiv.org/abs/1209.2426'>Bravyi and Haah</a>. The Atlas predicate <code>transversal_t_candidate(H_X, LOGICAL_X)</code> recomputes all ten pair tests and all ten triple tests on the shipped matrix.</p>
+<p>Triorthogonality is stronger than the pairwise CSS relation. The Steane matrix, for example, has an odd three-row intersection and fails this test despite defining a valid self-dual CSS code.</p>
+<h2 id='2-stabilizer-codewords-have-weight-zero-modulo-eight'>2. Stabilizer codewords have weight zero modulo eight</h2>
+<p>The X-stabilizer space <code>L</code> contains the zero word and the fifteen nonzero linear functions. Their exact weight enumerator is</p>
+<p><code>W_L(y) = 1 + 15 y^8</code>.</p>
+<p>Define the encoded computational basis using the X-stabilizer superpositions</p>
+<p><code>|0_L&gt; = (1/4) sum_(x in L) |x&gt;</code></p>
+<p>and</p>
+<p><code>|1_L&gt; = X(1)|0_L&gt; = (1/4) sum_(x in L) |1+x&gt;</code>.</p>
+<p>Every component of <code>|0_L&gt;</code> has weight zero modulo eight. Hence bitwise physical T, whose phase on <code>|x&gt;</code> is <code>exp(i pi |x|/4)</code>, assigns the common phase one to the entire logical-zero state.</p>
+<h2 id='3-the-logical-one-coset-has-weight-seven-modulo-eight'>3. The logical-one coset has weight seven modulo eight</h2>
+<p>Complementing the zero word gives weight fifteen; complementing any weight-eight word gives weight seven. Therefore</p>
+<p><code>W_(1+L)(y) = y^15 + 15 y^7</code>,</p>
+<p>and every logical-one component has weight seven modulo eight. Physical <code>T^otimes 15</code> supplies the common phase</p>
+<p><code>exp(i pi 7/4) = exp(-i pi/4)</code>.</p>
+<p>In the ordered basis <code>(|0_L&gt;,|1_L&gt;)</code>, the induced operation is therefore</p>
+<p><code>diag(1, exp(-i pi/4)) = T^dagger</code>.</p>
+<p>The inverse physical layer, <code>(T^dagger)^otimes 15</code>, implements logical T. This derivation fixes the card&#x27;s convention. Replacing a bare statement “transversal T” with this phase calculation prevents two sources using conjugate magic-state conventions from appearing to disagree.</p>
+<h2 id='4-why-signs-and-phases-matter'>4. Why signs and phases matter</h2>
+<p>The sign-free binary symplectic matrix establishes supports, commutation, and logical Pauli quotients. It does not retain the eighth-root phases introduced by T. That is why the reproduction transcript explicitly enumerates computational-basis weights in addition to running a triorthogonality predicate.</p>
+<p>An XP-stabilizer representation can keep this phase data in one algebraic object; <a href='https://arxiv.org/abs/2203.00103'>Webster, Brown, and Bartlett</a> provide that broader formalism. The Atlas still treats XP as a curated dictionary here because the ordinary constructor exports a Pauli <code>CheckMatrix</code>, not a phase-aware XP object.</p>
+<h2 id='5-other-transversal-and-non-transversal-operations'>5. Other transversal and non-transversal operations</h2>
+<p><b>CNOT.</b> Pairwise physical CNOT between identically ordered CSS blocks preserves the two stabilizer groups and induces logical CNOT. The support conjugation is exact at the check-matrix level; routing and recovery are separate circuit costs.</p>
+<p><b>Hadamard.</b> Bitwise H exchanges X and Z. Here their ranks are four and ten, so H cannot map the unchanged stabilizer group to itself. The card therefore does not call H transversal. Its cited H route switches to the Steane code, uses Steane&#x27;s transversal H, then switches back.</p>
+<p><b>Universality.</b> T-type phase plus CNOT is not a complete native fault-tolerant instruction set for one unchanged block. The cited universal constructions add error correction, code switching, state preparation, measurement, or another encoded block. The <a href='distillation-switching-realizations.html'>protocol ledger</a> accounts for those resources instead of charging them to transversality.</p>
+<h2 id='6-certification-boundary'>6. Certification boundary</h2>
+<p>The pair/triple overlaps and logical diagonal phase are fully recomputed for this fixed constructor. The operations facet remains literature-originated because the repository does not yet certify complete logical gate sets, fault propagation, or circuit gadgets. That larger capability is tracked by <code>wanted:transversal-gate-cert</code>; the current exact proxy is the narrow triorthogonality and coset-phase calculation used here.</p></div></body></html>

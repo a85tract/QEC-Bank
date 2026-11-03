@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:approximate_log_depth",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:approximate_log_depth:views:0@eae2a9b854e99d69131375c6ad036a6283b43793e74b9dbf3b6cf533450712d4",
+      "field": "views",
+      "id": "atlas-assertion:approximate_log_depth:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:approximate_log_depth",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:approximate_log_depth:categories:0@9c23e935f7df98957c02781b181da218add6176fa54c0e84c191ac849679e5f5",
+      "field": "categories",
+      "id": "atlas-assertion:approximate_log_depth:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:approximate_log_depth#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:approximate_log_depth#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/approximate_log_depth",
+          "atlas:atlas/approximate_log_depth/card.yaml#/identity",
+          "t222:docs/lit/approximate_log_depth/approximate_log_depth-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/dynamic/random/approximate_log_depth.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo approximate_log_depth identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:approximate_log_depth"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:approximate_log_depth#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "approximate_log_depth",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:approximate_log_depth",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "1edff70396f5c6c39e4307bf4d559ed290fa2132c252102f48f1dc616dca74b2",
+          "payload_sha256": "07ed113aeba53f78cfdd0c2482ce1408907286c66b4e8638c65ec94bff232b15",
+          "semantic_hash": "8e0bc50a0549dc108eb492580060216bb74f908894c1cefd192ba5ec406f90e1"
+        },
+        "id": "atlas-instance:approximate_log_depth:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8e0bc50a0549dc108eb492580060216bb74f908894c1cefd192ba5ec406f90e1:structural-validity:d52ebed1e79de9d56f8f97fd59fa2f354c8b57282939db19ad3665632ee40d42@1"
+          ],
+          "instance_record_sha256": "86925e2062b5a81bd135e7b0e07dd437a7d1f03830c592e3821ac52630f87ae0",
+          "lean_report_sha256": "663c9eddbd91826ae2dc6e5e2ec85d8bd4002407dd63ef5917d37a91a47778f3",
+          "semantic_hash": "8e0bc50a0549dc108eb492580060216bb74f908894c1cefd192ba5ec406f90e1"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e7b6b5da6703ad62d0edbc6ef02f35bfac112cb66724781d9bcca1113ae78840",
+        "v2_envelope_id": "formal-ir-v2:approximate_log_depth:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:approximate_log_depth#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:approximate_log_depth:views:0",
+      "atlas-assertion:approximate_log_depth:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:approximate_log_depth#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:approximate_log_depth:views:0@eae2a9b854e99d69131375c6ad036a6283b43793e74b9dbf3b6cf533450712d4",
+      "atlas-evidence:approximate_log_depth:categories:0@9c23e935f7df98957c02781b181da218add6176fa54c0e84c191ac849679e5f5"
+    ],
+    "formalization_id": "atlas-formalization:approximate_log_depth",
+    "instance_ids": [
+      "atlas-instance:approximate_log_depth:primary"
+    ],
+    "page_id": "atlas-page:approximate_log_depth",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:approximate_log_depth"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:approximate_log_depth#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:approximate_log_depth#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:approximate_log_depth",
+    "presented_entity_ids": [
+      "eczoo-entity:approximate_log_depth#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:approximate_log_depth#collection",
+    "redirects": [],
+    "route": "/entries/approximate_log_depth.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/approximate_log_depth"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,379 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:views:0@c8336bfa95aa82e4f075005a12e7e99524fc5a6749fd3232b2045e7727c60d2c",
+      "field": "views",
+      "id": "atlas-assertion:four_two_two:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:views:1@2fbf88437f5c2419a161f448d8ef6a2879465b1492b71380a366cf396ffbae00",
+      "field": "views",
+      "id": "atlas-assertion:four_two_two:views:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:views:2@f5faf98bbcdfaa8c7268a3029a3f47a5a978942265415237682f3d8c7a8f98aa",
+      "field": "views",
+      "id": "atlas-assertion:four_two_two:views:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:views:3@479ef06f82573329951a131d10f2311d546ec0d57dc0ff5869552f034426ee71",
+      "field": "views",
+      "id": "atlas-assertion:four_two_two:views:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:views:4@ea98936b9510e0d377e115ea67476ebfb0d2b6313a7ef46c765e8113066139a6",
+      "field": "views",
+      "id": "atlas-assertion:four_two_two:views:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:categories:0@7d10ba61ace54bcfc21f42320e0e5a9b84a25009ad25e4e0998b426df5e3fbd8",
+      "field": "categories",
+      "id": "atlas-assertion:four_two_two:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:categories:1@22fc0d8d1387e09077b4b33503297cf9e48f8a2c49b7488a264e8ffaf4aac300",
+      "field": "categories",
+      "id": "atlas-assertion:four_two_two:categories:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:categories:2@cd8c56b1bbbda0656bd2ef157f3d537d6b9babc88be2d3cf9cba7e73cd7dd634",
+      "field": "categories",
+      "id": "atlas-assertion:four_two_two:categories:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:decoders:0@b1a51be8a1ef98ecbfa628e7ba183b716f1018ec30ad249807526fa058d36cda",
+      "field": "decoders",
+      "id": "atlas-assertion:four_two_two:decoders:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:decoders:1@e60a4a491e7a75d0a655799a722fc2e822aed371a66886132d95b7cc1f420902",
+      "field": "decoders",
+      "id": "atlas-assertion:four_two_two:decoders:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:operations:0@1b7cbb1a5f90ddc663aa00b0fb861ecc07c46af68df26a0e056c7027a36931f6",
+      "field": "operations",
+      "id": "atlas-assertion:four_two_two:operations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:operations:1@b96f6976df7a6ba66332b2f7f786892d5ce65ef7a2cc187a493e69f740794424",
+      "field": "operations",
+      "id": "atlas-assertion:four_two_two:operations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:operations:2@6ba9e9e2dbd0d32b6cd5c1125487290a8d47236c8bad372a465baf1bfa8a77ed",
+      "field": "operations",
+      "id": "atlas-assertion:four_two_two:operations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:operations:3@4b65937c0f122417c4240976167f24ffe24852927d3da9b131f36fa39fb9fc43",
+      "field": "operations",
+      "id": "atlas-assertion:four_two_two:operations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:realizations:0@219c7f650d704d88e9331403c46bf934bd79e8443a71414aa7ce7d96d1bf640f",
+      "field": "realizations",
+      "id": "atlas-assertion:four_two_two:realizations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:realizations:1@d4fef2dc845b342c862bef7a117788831e016262f5b5f7a9c129460761f27e63",
+      "field": "realizations",
+      "id": "atlas-assertion:four_two_two:realizations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:realizations:2@0631b63a75419d0f1566258a8a332cf07ea0ce4a727716c9943615c041947485",
+      "field": "realizations",
+      "id": "atlas-assertion:four_two_two:realizations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:realizations:3@df2dbe2f911f471ccfdeaac80c4138b82078c9137bbae2b2e6725f1337e078a5",
+      "field": "realizations",
+      "id": "atlas-assertion:four_two_two:realizations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_4_2_2#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:four_two_two:relations:0@2663839150fe7481eb40694574c9fdf4002b98b84f513b92bb71ee9fd0f34457",
+      "field": "relations",
+      "id": "atlas-assertion:four_two_two:relations:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:stab_4_2_2#object",
+      "status": "preserved",
+      "tier": "T2"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:stab_4_2_2#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:stab_4_2_2#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/four_two_two/card.yaml#/identity",
+          "atlas:atlas/four_two_two/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/four_two_two/four_two_two-eczoo-intake.md",
+          "t206:codes/quantum/qubits/small_distance/small/4/stab_4_2_2.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:stab_4_2_2"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:stab_4_2_2#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "four_two_two",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:four_two_two",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "831eb37786378fd4a7fed17bf99c87004baaa28269c98bccc9bbf19bc8d7fd0d",
+          "payload_sha256": "29cbac124f5ec34296f810a1bb8ca0ea2f223bb27678b716ad5bdd0efc6836f9",
+          "semantic_hash": "2522821e07074935469d29c96c61d466ce136dc1027991252035f1f07336b5e3"
+        },
+        "id": "atlas-instance:four_two_two:n4",
+        "label": "n4",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:2522821e07074935469d29c96c61d466ce136dc1027991252035f1f07336b5e3:small-exact-distance-enumeration:271b03921909450750bb1d1e462d4b68b5b50302a41e961dc447240854903d06@1",
+            "certificate:2522821e07074935469d29c96c61d466ce136dc1027991252035f1f07336b5e3:structural-validity:f7956fd0b0cfe63cb0c0022b6d22e1e84f3602ce4a5aecf08ba588d044180726@1"
+          ],
+          "instance_record_sha256": "cfc14accb5f9266a212ecd768bbe3f5dc553404301d77156c501a0f6f38632b4",
+          "lean_report_sha256": "c40e654c7ae1f62ed5d152de94c3c87a1f3d5ae36f013c673d2cb9db8be05a3d",
+          "semantic_hash": "2522821e07074935469d29c96c61d466ce136dc1027991252035f1f07336b5e3"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "58fcd629af284f0b586f2f954e3ad317fa1712b193782c838c571f070ab2a1d4",
+        "v2_envelope_id": "formal-ir-v2:four_two_two:n4"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:stab_4_2_2#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:four_two_two:views:0",
+      "atlas-assertion:four_two_two:views:1",
+      "atlas-assertion:four_two_two:views:2",
+      "atlas-assertion:four_two_two:views:3",
+      "atlas-assertion:four_two_two:views:4",
+      "atlas-assertion:four_two_two:categories:0",
+      "atlas-assertion:four_two_two:categories:1",
+      "atlas-assertion:four_two_two:categories:2",
+      "atlas-assertion:four_two_two:decoders:0",
+      "atlas-assertion:four_two_two:decoders:1",
+      "atlas-assertion:four_two_two:operations:0",
+      "atlas-assertion:four_two_two:operations:1",
+      "atlas-assertion:four_two_two:operations:2",
+      "atlas-assertion:four_two_two:operations:3",
+      "atlas-assertion:four_two_two:realizations:0",
+      "atlas-assertion:four_two_two:realizations:1",
+      "atlas-assertion:four_two_two:realizations:2",
+      "atlas-assertion:four_two_two:realizations:3",
+      "atlas-assertion:four_two_two:relations:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:stab_4_2_2#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:four_two_two:views:0@c8336bfa95aa82e4f075005a12e7e99524fc5a6749fd3232b2045e7727c60d2c",
+      "atlas-evidence:four_two_two:views:1@2fbf88437f5c2419a161f448d8ef6a2879465b1492b71380a366cf396ffbae00",
+      "atlas-evidence:four_two_two:views:2@f5faf98bbcdfaa8c7268a3029a3f47a5a978942265415237682f3d8c7a8f98aa",
+      "atlas-evidence:four_two_two:views:3@479ef06f82573329951a131d10f2311d546ec0d57dc0ff5869552f034426ee71",
+      "atlas-evidence:four_two_two:views:4@ea98936b9510e0d377e115ea67476ebfb0d2b6313a7ef46c765e8113066139a6",
+      "atlas-evidence:four_two_two:categories:0@7d10ba61ace54bcfc21f42320e0e5a9b84a25009ad25e4e0998b426df5e3fbd8",
+      "atlas-evidence:four_two_two:categories:1@22fc0d8d1387e09077b4b33503297cf9e48f8a2c49b7488a264e8ffaf4aac300",
+      "atlas-evidence:four_two_two:categories:2@cd8c56b1bbbda0656bd2ef157f3d537d6b9babc88be2d3cf9cba7e73cd7dd634",
+      "atlas-evidence:four_two_two:decoders:0@b1a51be8a1ef98ecbfa628e7ba183b716f1018ec30ad249807526fa058d36cda",
+      "atlas-evidence:four_two_two:decoders:1@e60a4a491e7a75d0a655799a722fc2e822aed371a66886132d95b7cc1f420902",
+      "atlas-evidence:four_two_two:operations:0@1b7cbb1a5f90ddc663aa00b0fb861ecc07c46af68df26a0e056c7027a36931f6",
+      "atlas-evidence:four_two_two:operations:1@b96f6976df7a6ba66332b2f7f786892d5ce65ef7a2cc187a493e69f740794424",
+      "atlas-evidence:four_two_two:operations:2@6ba9e9e2dbd0d32b6cd5c1125487290a8d47236c8bad372a465baf1bfa8a77ed",
+      "atlas-evidence:four_two_two:operations:3@4b65937c0f122417c4240976167f24ffe24852927d3da9b131f36fa39fb9fc43",
+      "atlas-evidence:four_two_two:realizations:0@219c7f650d704d88e9331403c46bf934bd79e8443a71414aa7ce7d96d1bf640f",
+      "atlas-evidence:four_two_two:realizations:1@d4fef2dc845b342c862bef7a117788831e016262f5b5f7a9c129460761f27e63",
+      "atlas-evidence:four_two_two:realizations:2@0631b63a75419d0f1566258a8a332cf07ea0ce4a727716c9943615c041947485",
+      "atlas-evidence:four_two_two:realizations:3@df2dbe2f911f471ccfdeaac80c4138b82078c9137bbae2b2e6725f1337e078a5",
+      "atlas-evidence:four_two_two:relations:0@2663839150fe7481eb40694574c9fdf4002b98b84f513b92bb71ee9fd0f34457"
+    ],
+    "formalization_id": "atlas-formalization:four_two_two",
+    "instance_ids": [
+      "atlas-instance:four_two_two:n4"
+    ],
+    "page_id": "atlas-page:four_two_two",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:stab_4_2_2"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:stab_4_2_2#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:stab_4_2_2#object",
+        "status": "preserved",
+        "tier": "T2"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:four_two_two",
+    "presented_entity_ids": [
+      "eczoo-entity:stab_4_2_2#object"
+    ],
+    "primary_entity_id": "eczoo-entity:stab_4_2_2#object",
+    "redirects": [],
+    "route": "/entries/four_two_two.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/four_two_two"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

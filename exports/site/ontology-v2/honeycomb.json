@@ -1,0 +1,427 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:honeycomb",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:0@00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:honeycomb",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:1@ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:2@c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:3@2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:4@7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:5@e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:5",
+      "index": 5
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:6@421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:6",
+      "index": 6
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:views:7@8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263",
+      "field": "views",
+      "id": "atlas-assertion:honeycomb:views:7",
+      "index": 7
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:categories:0@bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f",
+      "field": "categories",
+      "id": "atlas-assertion:honeycomb:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:honeycomb",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:categories:1@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:honeycomb:categories:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:categories:2@931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4",
+      "field": "categories",
+      "id": "atlas-assertion:honeycomb:categories:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:decoders:0@e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f",
+      "field": "decoders",
+      "id": "atlas-assertion:honeycomb:decoders:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:decoders:1@c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25",
+      "field": "decoders",
+      "id": "atlas-assertion:honeycomb:decoders:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:operations:0@14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4",
+      "field": "operations",
+      "id": "atlas-assertion:honeycomb:operations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:operations:1@941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893",
+      "field": "operations",
+      "id": "atlas-assertion:honeycomb:operations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:operations:2@5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409",
+      "field": "operations",
+      "id": "atlas-assertion:honeycomb:operations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:realizations:0@4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30",
+      "field": "realizations",
+      "id": "atlas-assertion:honeycomb:realizations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:realizations:1@99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d",
+      "field": "realizations",
+      "id": "atlas-assertion:honeycomb:realizations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:realizations:2@afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c",
+      "field": "realizations",
+      "id": "atlas-assertion:honeycomb:realizations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:realizations:3@ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a",
+      "field": "realizations",
+      "id": "atlas-assertion:honeycomb:realizations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:honeycomb_floquet#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:honeycomb:relations:0@27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018",
+      "field": "relations",
+      "id": "atlas-assertion:honeycomb:relations:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:honeycomb_floquet#collection",
+      "status": "preserved",
+      "tier": "T3"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:honeycomb_floquet#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:honeycomb_floquet#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/honeycomb/card.yaml#/identity",
+          "atlas:atlas/honeycomb/card.yaml#/eczoo/zoo_id",
+          "t205:atlas/honeycomb/card.yaml",
+          "t206:codes/quantum/qubits/dynamic/floquet/2d/honeycomb_floquet.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:honeycomb_floquet"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:honeycomb_floquet#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "honeycomb",
+  "formalization": {
+    "constructor_relation": "restricted-parameterized-slice",
+    "coverage": "partial",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:honeycomb",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f3932abad6e7f5718c59220e11a238e9e90032b14e36513378775d484e27381a",
+          "payload_sha256": "49705b340cfba511e18f0c959d9319102d9f9f40a5e7a9f9e9336bfd9931d8b2",
+          "semantic_hash": "d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44"
+        },
+        "id": "atlas-instance:honeycomb:L3x3",
+        "label": "L3x3",
+        "lean_v1": {
+          "branch": "measurement-schedule",
+          "certificate_ids": [
+            "certificate:d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44:structural-validity:d7032e65917144c22cbd7aaae81615bd8adae68dab749b9d6edc87bfd4f1837f@1"
+          ],
+          "instance_record_sha256": "02a9d15481ff1b1de932ad07758a6047edf13db947652d612e72c540719e31c6",
+          "lean_report_sha256": "8e5f91dcfa5bc94cf278e06ffe88aba6b21a0297bbfa59635192c8807528677e",
+          "semantic_hash": "d5b4d9490b98a5d12d84acb79192da8ff2a1bb8be5b46c9d76fabaf8307b3f44"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "55cb3816d24143da9a23f7c2c8e19653ebd7e9355741bab78dfd06e51373e96f",
+        "v2_envelope_id": "formal-ir-v2:honeycomb:L3x3"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f3932abad6e7f5718c59220e11a238e9e90032b14e36513378775d484e27381a",
+          "payload_sha256": "c172d0a6c1a69071e86d7207b97a367b791539495d5886b4900d9a4f6d20b15f",
+          "semantic_hash": "cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b"
+        },
+        "id": "atlas-instance:honeycomb:L6x6",
+        "label": "L6x6",
+        "lean_v1": {
+          "branch": "measurement-schedule",
+          "certificate_ids": [
+            "certificate:cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b:structural-validity:f0a3cef5c3265e971f13ba988d13ac604edfa8b96fe95f97007328be398c6128@1"
+          ],
+          "instance_record_sha256": "f9939ea3d88cb90cabe124675587cbf78b284a76ab0a0c33bcaf9788d668a03a",
+          "lean_report_sha256": "7a24707622d7b1c1aa0fdfda73c6d1707677c464dd5cb7561dd5a3ac33e6ef24",
+          "semantic_hash": "cd53c52c3bbfd56b0b6df7e86540d204d295697029b72c4b0905f3a9ad9d741b"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "57a8aef6c343275975f9210d82962db77f95f4a25de0c43501139f9b7d2ed5cc",
+        "v2_envelope_id": "formal-ir-v2:honeycomb:L6x6"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 2,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:honeycomb_floquet#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:honeycomb:views:0",
+      "atlas-assertion:honeycomb:views:1",
+      "atlas-assertion:honeycomb:views:2",
+      "atlas-assertion:honeycomb:views:3",
+      "atlas-assertion:honeycomb:views:4",
+      "atlas-assertion:honeycomb:views:5",
+      "atlas-assertion:honeycomb:views:6",
+      "atlas-assertion:honeycomb:views:7",
+      "atlas-assertion:honeycomb:categories:0",
+      "atlas-assertion:honeycomb:categories:1",
+      "atlas-assertion:honeycomb:categories:2",
+      "atlas-assertion:honeycomb:decoders:0",
+      "atlas-assertion:honeycomb:decoders:1",
+      "atlas-assertion:honeycomb:operations:0",
+      "atlas-assertion:honeycomb:operations:1",
+      "atlas-assertion:honeycomb:operations:2",
+      "atlas-assertion:honeycomb:realizations:0",
+      "atlas-assertion:honeycomb:realizations:1",
+      "atlas-assertion:honeycomb:realizations:2",
+      "atlas-assertion:honeycomb:realizations:3",
+      "atlas-assertion:honeycomb:relations:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:honeycomb_floquet#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:honeycomb:views:0@00afd2f1f9216dd5e8bbdb872783292c244075c1b79ba1597ddb1d3454311b3c",
+      "atlas-evidence:honeycomb:views:1@ca1b2d30de93736d66246a7853c7a00165e7c5c006061ca17989a28969906fa9",
+      "atlas-evidence:honeycomb:views:2@c7e511ec0cb4cbb0cbcfa69d94a4018dffab954705e99acd1a2cdc38a48eb450",
+      "atlas-evidence:honeycomb:views:3@2ac466dba27c7888842282ea28b45c345d6e502d4d689ae3e255d938fc2ba7c4",
+      "atlas-evidence:honeycomb:views:4@7561f3568f689f58007408ff624d7c88ded421c50160645a0306c284b90494fc",
+      "atlas-evidence:honeycomb:views:5@e455b5b68296bf79c1f6d828eb839f87fa5a2b2b4496fcbb0c10988563e6871d",
+      "atlas-evidence:honeycomb:views:6@421025c431d7f18cfdc7176c6b5b849db07ac98475850bf37c4663b598c425f0",
+      "atlas-evidence:honeycomb:views:7@8211a3a44ec8756599127e0d9af20093d48942947a47988e0f1ab0b357a00263",
+      "atlas-evidence:honeycomb:categories:0@bdb40e00db57cd6101b97f5a0add1f2a33f65bef928b352079ea515af090585f",
+      "atlas-evidence:honeycomb:categories:1@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "atlas-evidence:honeycomb:categories:2@931f01990b159cbe75352f9a373d25d4e27add6b7c562358979bdff2af974ab4",
+      "atlas-evidence:honeycomb:decoders:0@e19bec7583c2b671fcf9bdace3671495bd62cf343ffaa9053d1116c4f038e95f",
+      "atlas-evidence:honeycomb:decoders:1@c5b6647cf96a89075d69d5a33a50cdf983ed062159377ef43de47ec566166e25",
+      "atlas-evidence:honeycomb:operations:0@14f468ef32552e6e187b5049b44f01bba17f7b2dc636481d5d9a5ea792cb3dc4",
+      "atlas-evidence:honeycomb:operations:1@941a9e14a297e3d60e08aba1bb29ebb30bb163bc9828c85bcac81a705b9c4893",
+      "atlas-evidence:honeycomb:operations:2@5d6fb46e45a82654adb26b3c4e8b1e68ebf275a91200f5ce46f8ad1597457409",
+      "atlas-evidence:honeycomb:realizations:0@4832ab708c2a344921acc2e48636a46db70dbe0f4c86b75acb7541e7a4de8c30",
+      "atlas-evidence:honeycomb:realizations:1@99c541a1fc7f1a083091d6cc4e31811821a645dc9214aa630b8b32b4e602773d",
+      "atlas-evidence:honeycomb:realizations:2@afda572a6f504873378f1b538b27e4c8f0a8805435f73dc6864b067f88ee445c",
+      "atlas-evidence:honeycomb:realizations:3@ba2458ba6f75e0033dcf3d5732d77d5517248f8e9b5075af6b853266ac99162a",
+      "atlas-evidence:honeycomb:relations:0@27f0efb32b4041ce5eef5e47f5473f73ff02b66105ba3167cc600c47509eb018"
+    ],
+    "formalization_id": "atlas-formalization:honeycomb",
+    "instance_ids": [
+      "atlas-instance:honeycomb:L3x3",
+      "atlas-instance:honeycomb:L6x6"
+    ],
+    "page_id": "atlas-page:honeycomb",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:honeycomb_floquet"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:honeycomb_floquet#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:honeycomb_floquet#collection",
+        "status": "preserved",
+        "tier": "T3"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:honeycomb",
+    "presented_entity_ids": [
+      "eczoo-entity:honeycomb_floquet#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:honeycomb_floquet#collection",
+    "redirects": [],
+    "route": "/entries/honeycomb.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/honeycomb"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

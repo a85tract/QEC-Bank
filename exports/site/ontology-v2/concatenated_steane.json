@@ -1,0 +1,176 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:concatenated_steane",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:concatenated_steane:views:0@951cd9d7b6cd7a8bae66c77effd3185a675ec341c7d8ed6a53b340275336e38d",
+      "field": "views",
+      "id": "atlas-assertion:concatenated_steane:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:concatenated_steane",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:concatenated_steane:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:concatenated_steane:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:concatenated_steane#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:concatenated_steane#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:concatenated_steane#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/concatenated_steane/card.yaml#/identity",
+          "atlas:atlas/concatenated_steane/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/concatenated_steane/concatenated_steane-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/concatenated/concatenated_steane.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:concatenated_steane"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:concatenated_steane#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "concatenated_steane",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:concatenated_steane",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "d2484af41fc5fd5b208829a595c11993ad4753c878cf04dbc78deaf1a01920cd",
+          "payload_sha256": "4a6a528ce6b37b2dd36b2dbf34c73dae0c84001f54e8b15cbfe9c5721b34bb14",
+          "semantic_hash": "4320c7822c7d799083d94260f67253d1f0687d1d5a344e6fb4208eab6a872659"
+        },
+        "id": "atlas-instance:concatenated_steane:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:4320c7822c7d799083d94260f67253d1f0687d1d5a344e6fb4208eab6a872659:structural-validity:5931a0526168de326d8c5a74959aa51b96331dd0cb8bbe4a616155273f4cd39f@1"
+          ],
+          "instance_record_sha256": "02d2078000330b2381136d8cf75b6c71e4ca80425c1fa9117432370b8d59a4f0",
+          "lean_report_sha256": "2809fbc25ba50f082a0a3091e83edbf92db24df26715808e141e358362a6f128",
+          "semantic_hash": "4320c7822c7d799083d94260f67253d1f0687d1d5a344e6fb4208eab6a872659"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "7b4f1585d30e3cc134e4faaff364ef13a7806a4eaf3f0564b21b105f2ded85fa",
+        "v2_envelope_id": "formal-ir-v2:concatenated_steane:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:concatenated_steane#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:concatenated_steane:views:0",
+      "atlas-assertion:concatenated_steane:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:concatenated_steane#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:concatenated_steane:views:0@951cd9d7b6cd7a8bae66c77effd3185a675ec341c7d8ed6a53b340275336e38d",
+      "atlas-evidence:concatenated_steane:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:concatenated_steane",
+    "instance_ids": [
+      "atlas-instance:concatenated_steane:primary"
+    ],
+    "page_id": "atlas-page:concatenated_steane",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:concatenated_steane"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:concatenated_steane#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:concatenated_steane#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:concatenated_steane",
+    "presented_entity_ids": [
+      "eczoo-entity:concatenated_steane#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:concatenated_steane#collection",
+    "redirects": [],
+    "route": "/entries/concatenated_steane.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/concatenated_steane"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

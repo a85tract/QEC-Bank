@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:nonlocal_lowdepth",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:nonlocal_lowdepth:views:0@0230821db60998ae7c2618f04beac692c8674126fe792b4368cdecdce52215ce",
+      "field": "views",
+      "id": "atlas-assertion:nonlocal_lowdepth:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:nonlocal_lowdepth",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:nonlocal_lowdepth:categories:0@fce2a12387f4b8d7d79c4c36378cf1fd78981646a062a776a6185cfa2c730972",
+      "field": "categories",
+      "id": "atlas-assertion:nonlocal_lowdepth:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:nonlocal_lowdepth#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:nonlocal_lowdepth#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/nonlocal_lowdepth",
+          "atlas:atlas/nonlocal_lowdepth/card.yaml#/identity",
+          "t222:docs/lit/nonlocal_lowdepth/nonlocal_lowdepth-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/dynamic/random/nonlocal_lowdepth.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo nonlocal_lowdepth identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:nonlocal_lowdepth"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:nonlocal_lowdepth#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "nonlocal_lowdepth",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:nonlocal_lowdepth",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "abf224a851ba40a0f9ec47e4c3225397886177aee98db4efa67de4051121f577",
+          "payload_sha256": "ce9d840f946194664d663d65139c693292b9a600edaae27e7ef56619eabea6aa",
+          "semantic_hash": "8a391b46472725f2b8ba0251dfbeea72fa5147083e0537c7138e8dc74daa0752"
+        },
+        "id": "atlas-instance:nonlocal_lowdepth:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8a391b46472725f2b8ba0251dfbeea72fa5147083e0537c7138e8dc74daa0752:structural-validity:3f089a78f5a713cff41272736aa4a9ca2048823f52e5fbe3415423cb11191284@1"
+          ],
+          "instance_record_sha256": "fdda93fcb54d3435e4206a3080437df8c34f3a2c11811eca3a0c7eb139b5f316",
+          "lean_report_sha256": "70dcbc4db86e3574c3d9f168fdd2bef7fb7891545b0ad819cc28338f23c1b6a9",
+          "semantic_hash": "8a391b46472725f2b8ba0251dfbeea72fa5147083e0537c7138e8dc74daa0752"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e7b6b5da6703ad62d0edbc6ef02f35bfac112cb66724781d9bcca1113ae78840",
+        "v2_envelope_id": "formal-ir-v2:nonlocal_lowdepth:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:nonlocal_lowdepth#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:nonlocal_lowdepth:views:0",
+      "atlas-assertion:nonlocal_lowdepth:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:nonlocal_lowdepth#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:nonlocal_lowdepth:views:0@0230821db60998ae7c2618f04beac692c8674126fe792b4368cdecdce52215ce",
+      "atlas-evidence:nonlocal_lowdepth:categories:0@fce2a12387f4b8d7d79c4c36378cf1fd78981646a062a776a6185cfa2c730972"
+    ],
+    "formalization_id": "atlas-formalization:nonlocal_lowdepth",
+    "instance_ids": [
+      "atlas-instance:nonlocal_lowdepth:primary"
+    ],
+    "page_id": "atlas-page:nonlocal_lowdepth",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:nonlocal_lowdepth"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:nonlocal_lowdepth#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:nonlocal_lowdepth#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:nonlocal_lowdepth",
+    "presented_entity_ids": [
+      "eczoo-entity:nonlocal_lowdepth#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:nonlocal_lowdepth#collection",
+    "redirects": [],
+    "route": "/entries/nonlocal_lowdepth.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/nonlocal_lowdepth"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,415 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:views:0@e607608eb37a7ce5d773bf9faf60fb6ebdd8caff2444edf69ef65373848952cc",
+      "field": "views",
+      "id": "atlas-assertion:quantum_reed_muller_15:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:views:1@de12bfa7f9a159e58a22e49d19a1dfeb0f837e32af55db6fe1e11648cf9fbd84",
+      "field": "views",
+      "id": "atlas-assertion:quantum_reed_muller_15:views:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:views:2@98bff734dc13925418a2343a5e32c9fe4e009c3d0649aeda36b44797fcdaf2f0",
+      "field": "views",
+      "id": "atlas-assertion:quantum_reed_muller_15:views:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:views:3@fe3df28fe60e086b7274dd5c6551e339cfec2f95719188b7b360aead592af5e5",
+      "field": "views",
+      "id": "atlas-assertion:quantum_reed_muller_15:views:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:views:4@eeca141ff6ed4f582b16fcc41ad1258a897b0afe1f8c50b1cf8c9d5eb9c01dee",
+      "field": "views",
+      "id": "atlas-assertion:quantum_reed_muller_15:views:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:views:5@52666306fc0738f351d8c7ac75b5a50a789c04cd48d995c84f6be7a1651e25fc",
+      "field": "views",
+      "id": "atlas-assertion:quantum_reed_muller_15:views:5",
+      "index": 5
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:views:6@51e3b51d97ed11d1eab00a780bebc51354f2e9a1026ee236b682ae13acb4b9e3",
+      "field": "views",
+      "id": "atlas-assertion:quantum_reed_muller_15:views:6",
+      "index": 6
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:categories:0@7c98bbd45a9f718ba498668975cc242921284f80af94ee9adad26b2852a6ddbd",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_reed_muller_15:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:categories:1@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_reed_muller_15:categories:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:decoders:0@7e6f9e80da51b913a2dc96b91601a57b23723e0e064865d67491ed5d14aaaf1a",
+      "field": "decoders",
+      "id": "atlas-assertion:quantum_reed_muller_15:decoders:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:decoders:1@245353c34ab4f245af6cb6fa68b53e75b3170ad77da3d3d58631e2b632f5c003",
+      "field": "decoders",
+      "id": "atlas-assertion:quantum_reed_muller_15:decoders:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:decoders:2@7b2881e32e9d3d006bf889f3f84a9ae5c8fcd164bc133ad72868fee0cfbb1693",
+      "field": "decoders",
+      "id": "atlas-assertion:quantum_reed_muller_15:decoders:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:decoders:3@966179d8cff4f80e80029bca4011505d46acf07747452a750bec265e3cbb9d21",
+      "field": "decoders",
+      "id": "atlas-assertion:quantum_reed_muller_15:decoders:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:operations:0@b047fb66c8168cf0fa82d93ce1dbbbdea328db5aef29be22bf8db51470216278",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_reed_muller_15:operations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:operations:1@b7a8f7b99b46cec7b281666f6823e919743c3b28d8d8529ba3dae68b62325449",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_reed_muller_15:operations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:operations:2@14a5e4b36c4bfe64a03880fa89696da9ced2b9890bfb4d6838c6e5531195121b",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_reed_muller_15:operations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:operations:3@7d921a3fa83c44b5d7cdcaec252f1ba3fcab2e5b6dd3131f454fdc22fee54d3f",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_reed_muller_15:operations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:realizations:0@09550b26649be4de485d15b41e69d828122207cac5bbc2c1279b5fd980d2a51d",
+      "field": "realizations",
+      "id": "atlas-assertion:quantum_reed_muller_15:realizations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:realizations:1@ca317719669de370e45c165bdff08572e053455fbfb349a706389a9316072a47",
+      "field": "realizations",
+      "id": "atlas-assertion:quantum_reed_muller_15:realizations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:relations:0@467eaf358dfbbbae14a7e5d9d918c7b82085ffaac69cbd7e240c90f1a3f72020",
+      "field": "relations",
+      "id": "atlas-assertion:quantum_reed_muller_15:relations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:relations:1@ed2797d9b03123e9cdb4e78f3492e638c0b95d91d4c96159c0ead3b7ee286090",
+      "field": "relations",
+      "id": "atlas-assertion:quantum_reed_muller_15:relations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_reed_muller_15:relations:2@693d02a3536735b75893a12f7492107878a9615abe66d73c79ad944abb8d9c5f",
+      "field": "relations",
+      "id": "atlas-assertion:quantum_reed_muller_15:relations:2",
+      "index": 2
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:stab_15_1_3#object",
+      "status": "preserved",
+      "tier": "T3"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:stab_15_1_3#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:stab_15_1_3#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/quantum_reed_muller_15/card.yaml#/identity",
+          "atlas:atlas/quantum_reed_muller_15/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_reed_muller_15/quantum_reed_muller_15-foundations.md",
+          "t206:codes/quantum/qubits/small_distance/small/15/stab_15_1_3.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:stab_15_1_3"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:stab_15_1_3#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_reed_muller_15",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_reed_muller_15",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "dc4cdfb6a6ba2f168d430d92ee27d5de0f9616807b370fed8371fb42687abf5c",
+          "payload_sha256": "0561af3831179311609a3e49abc502d120e34a5b05f036860956c087b51073ee",
+          "semantic_hash": "e9455617b3bd1c8be1529a95896fc881b853579cb375596ff9b384463c9616e6"
+        },
+        "id": "atlas-instance:quantum_reed_muller_15:n15",
+        "label": "n15",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:e9455617b3bd1c8be1529a95896fc881b853579cb375596ff9b384463c9616e6:small-exact-distance-enumeration:db7b9cfcb6892f31568d6d09af29de1d50b6462407f0b45d169e68bbc4278f78@1",
+            "certificate:e9455617b3bd1c8be1529a95896fc881b853579cb375596ff9b384463c9616e6:structural-validity:de95ce62bcd1dd10d98b805776ab2eac54dafe3de8ba67b79112a2af2383eccc@1"
+          ],
+          "instance_record_sha256": "309e1af5415e59c26dc649dd8f93dda27a95d286f88cccefb297cd7f4f1b9c19",
+          "lean_report_sha256": "fd4670ce226b9aa1a109bdae8c27cafc9f5e07463ff42ab9d8807a07eb9a2519",
+          "semantic_hash": "e9455617b3bd1c8be1529a95896fc881b853579cb375596ff9b384463c9616e6"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "c4a2f77652b5768d3d3a8ed200085f652209c291eeb6d26ae4408c1e0ce79d28",
+        "v2_envelope_id": "formal-ir-v2:quantum_reed_muller_15:n15"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:stab_15_1_3#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_reed_muller_15:views:0",
+      "atlas-assertion:quantum_reed_muller_15:views:1",
+      "atlas-assertion:quantum_reed_muller_15:views:2",
+      "atlas-assertion:quantum_reed_muller_15:views:3",
+      "atlas-assertion:quantum_reed_muller_15:views:4",
+      "atlas-assertion:quantum_reed_muller_15:views:5",
+      "atlas-assertion:quantum_reed_muller_15:views:6",
+      "atlas-assertion:quantum_reed_muller_15:categories:0",
+      "atlas-assertion:quantum_reed_muller_15:categories:1",
+      "atlas-assertion:quantum_reed_muller_15:decoders:0",
+      "atlas-assertion:quantum_reed_muller_15:decoders:1",
+      "atlas-assertion:quantum_reed_muller_15:decoders:2",
+      "atlas-assertion:quantum_reed_muller_15:decoders:3",
+      "atlas-assertion:quantum_reed_muller_15:operations:0",
+      "atlas-assertion:quantum_reed_muller_15:operations:1",
+      "atlas-assertion:quantum_reed_muller_15:operations:2",
+      "atlas-assertion:quantum_reed_muller_15:operations:3",
+      "atlas-assertion:quantum_reed_muller_15:realizations:0",
+      "atlas-assertion:quantum_reed_muller_15:realizations:1",
+      "atlas-assertion:quantum_reed_muller_15:relations:0",
+      "atlas-assertion:quantum_reed_muller_15:relations:1",
+      "atlas-assertion:quantum_reed_muller_15:relations:2"
+    ],
+    "entity_ids": [
+      "eczoo-entity:stab_15_1_3#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_reed_muller_15:views:0@e607608eb37a7ce5d773bf9faf60fb6ebdd8caff2444edf69ef65373848952cc",
+      "atlas-evidence:quantum_reed_muller_15:views:1@de12bfa7f9a159e58a22e49d19a1dfeb0f837e32af55db6fe1e11648cf9fbd84",
+      "atlas-evidence:quantum_reed_muller_15:views:2@98bff734dc13925418a2343a5e32c9fe4e009c3d0649aeda36b44797fcdaf2f0",
+      "atlas-evidence:quantum_reed_muller_15:views:3@fe3df28fe60e086b7274dd5c6551e339cfec2f95719188b7b360aead592af5e5",
+      "atlas-evidence:quantum_reed_muller_15:views:4@eeca141ff6ed4f582b16fcc41ad1258a897b0afe1f8c50b1cf8c9d5eb9c01dee",
+      "atlas-evidence:quantum_reed_muller_15:views:5@52666306fc0738f351d8c7ac75b5a50a789c04cd48d995c84f6be7a1651e25fc",
+      "atlas-evidence:quantum_reed_muller_15:views:6@51e3b51d97ed11d1eab00a780bebc51354f2e9a1026ee236b682ae13acb4b9e3",
+      "atlas-evidence:quantum_reed_muller_15:categories:0@7c98bbd45a9f718ba498668975cc242921284f80af94ee9adad26b2852a6ddbd",
+      "atlas-evidence:quantum_reed_muller_15:categories:1@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:quantum_reed_muller_15:decoders:0@7e6f9e80da51b913a2dc96b91601a57b23723e0e064865d67491ed5d14aaaf1a",
+      "atlas-evidence:quantum_reed_muller_15:decoders:1@245353c34ab4f245af6cb6fa68b53e75b3170ad77da3d3d58631e2b632f5c003",
+      "atlas-evidence:quantum_reed_muller_15:decoders:2@7b2881e32e9d3d006bf889f3f84a9ae5c8fcd164bc133ad72868fee0cfbb1693",
+      "atlas-evidence:quantum_reed_muller_15:decoders:3@966179d8cff4f80e80029bca4011505d46acf07747452a750bec265e3cbb9d21",
+      "atlas-evidence:quantum_reed_muller_15:operations:0@b047fb66c8168cf0fa82d93ce1dbbbdea328db5aef29be22bf8db51470216278",
+      "atlas-evidence:quantum_reed_muller_15:operations:1@b7a8f7b99b46cec7b281666f6823e919743c3b28d8d8529ba3dae68b62325449",
+      "atlas-evidence:quantum_reed_muller_15:operations:2@14a5e4b36c4bfe64a03880fa89696da9ced2b9890bfb4d6838c6e5531195121b",
+      "atlas-evidence:quantum_reed_muller_15:operations:3@7d921a3fa83c44b5d7cdcaec252f1ba3fcab2e5b6dd3131f454fdc22fee54d3f",
+      "atlas-evidence:quantum_reed_muller_15:realizations:0@09550b26649be4de485d15b41e69d828122207cac5bbc2c1279b5fd980d2a51d",
+      "atlas-evidence:quantum_reed_muller_15:realizations:1@ca317719669de370e45c165bdff08572e053455fbfb349a706389a9316072a47",
+      "atlas-evidence:quantum_reed_muller_15:relations:0@467eaf358dfbbbae14a7e5d9d918c7b82085ffaac69cbd7e240c90f1a3f72020",
+      "atlas-evidence:quantum_reed_muller_15:relations:1@ed2797d9b03123e9cdb4e78f3492e638c0b95d91d4c96159c0ead3b7ee286090",
+      "atlas-evidence:quantum_reed_muller_15:relations:2@693d02a3536735b75893a12f7492107878a9615abe66d73c79ad944abb8d9c5f"
+    ],
+    "formalization_id": "atlas-formalization:quantum_reed_muller_15",
+    "instance_ids": [
+      "atlas-instance:quantum_reed_muller_15:n15"
+    ],
+    "page_id": "atlas-page:quantum_reed_muller_15",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:stab_15_1_3"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:stab_15_1_3#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:stab_15_1_3#object",
+        "status": "preserved",
+        "tier": "T3"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_reed_muller_15",
+    "presented_entity_ids": [
+      "eczoo-entity:stab_15_1_3#object"
+    ],
+    "primary_entity_id": "eczoo-entity:stab_15_1_3#object",
+    "redirects": [],
+    "route": "/entries/quantum_reed_muller_15.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/quantum_reed_muller_15"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

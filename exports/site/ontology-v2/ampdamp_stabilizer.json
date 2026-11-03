@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:ampdamp_stabilizer",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:ampdamp_stabilizer:views:0@b36a40b843726b5e9f4de23c6438052b5c6645e0384e14e1a26c26ffd871aa1c",
+      "field": "views",
+      "id": "atlas-assertion:ampdamp_stabilizer:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:ampdamp_stabilizer",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:ampdamp_stabilizer:categories:0@a73421e62598b9568ad16a699914917dfc788e0975765aca0bbeb12612399539",
+      "field": "categories",
+      "id": "atlas-assertion:ampdamp_stabilizer:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:ampdamp_stabilizer#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:ampdamp_stabilizer#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/ampdamp_stabilizer",
+          "atlas:atlas/ampdamp_stabilizer/card.yaml#/identity",
+          "t222:docs/lit/ampdamp_stabilizer/ampdamp_stabilizer-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/small_distance/ampdamp_stabilizer.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo ampdamp_stabilizer identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:ampdamp_stabilizer"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:ampdamp_stabilizer#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "ampdamp_stabilizer",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:ampdamp_stabilizer",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "d47408be6ef1b252036bc4d716b5aecdb94f377fdf0157208263b8ddfd987fd5",
+          "payload_sha256": "699dcc53b1150b9f903efc7d6dd97124a130da523ddb3014efed63a755c35757",
+          "semantic_hash": "ea419cb81bd5525312fde0e396c1063803ba0ef7a6cbfca55a3bb2babaab8b9a"
+        },
+        "id": "atlas-instance:ampdamp_stabilizer:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:ea419cb81bd5525312fde0e396c1063803ba0ef7a6cbfca55a3bb2babaab8b9a:structural-validity:2692913c27e522552737bccf487ac7668b3b5595e65d52ba4bf1c8fbb670dbe4@1"
+          ],
+          "instance_record_sha256": "17ac52dc4ccbc7e9896883dbce35e9bd32079951cfe20e7c0fad32e4b85c5d7c",
+          "lean_report_sha256": "7ad914c41fdf0dde41a0514d56a07238daacbfbf48d4a4ce7d70be926f64c98f",
+          "semantic_hash": "ea419cb81bd5525312fde0e396c1063803ba0ef7a6cbfca55a3bb2babaab8b9a"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b94e6613852e64ef209673988018cb8cc97a762e177e866fbe6694a968eb3613",
+        "v2_envelope_id": "formal-ir-v2:ampdamp_stabilizer:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:ampdamp_stabilizer#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:ampdamp_stabilizer:views:0",
+      "atlas-assertion:ampdamp_stabilizer:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:ampdamp_stabilizer#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:ampdamp_stabilizer:views:0@b36a40b843726b5e9f4de23c6438052b5c6645e0384e14e1a26c26ffd871aa1c",
+      "atlas-evidence:ampdamp_stabilizer:categories:0@a73421e62598b9568ad16a699914917dfc788e0975765aca0bbeb12612399539"
+    ],
+    "formalization_id": "atlas-formalization:ampdamp_stabilizer",
+    "instance_ids": [
+      "atlas-instance:ampdamp_stabilizer:primary"
+    ],
+    "page_id": "atlas-page:ampdamp_stabilizer",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:ampdamp_stabilizer"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:ampdamp_stabilizer#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:ampdamp_stabilizer#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:ampdamp_stabilizer",
+    "presented_entity_ids": [
+      "eczoo-entity:ampdamp_stabilizer#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:ampdamp_stabilizer#collection",
+    "redirects": [],
+    "route": "/entries/ampdamp_stabilizer.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/ampdamp_stabilizer"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:yoked_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:yoked_surface:views:0@4c5f80cdfa705d11b20b86ab6b8642f5b4bacd5c2569b66783e138d634c9dbee",
+      "field": "views",
+      "id": "atlas-assertion:yoked_surface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:yoked_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:yoked_surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:yoked_surface:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:yoked_surface#collection",
+      "status": "preserved-with-science-hold",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:yoked_surface#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:yoked_surface#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/yoked_surface/card.yaml#/identity",
+          "atlas:atlas/yoked_surface/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/yoked_surface/yoked_surface-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/qldpc/concatenated/yoked_surface.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:yoked_surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:yoked_surface#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "yoked_surface",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:yoked_surface",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "e7710978c39fb354ece19d95ecef888dfd03bdbb8ee932d19159c6f17d3dbc25",
+          "payload_sha256": "aaf979bdc2064db0d57c439fdfda16de53fc09cbceea5dad231a5ad100b8c541",
+          "semantic_hash": "8a4e74481de7dd774e9e52835cf81105294516b357ce5edc6b80c125d66a601b"
+        },
+        "id": "atlas-instance:yoked_surface:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8a4e74481de7dd774e9e52835cf81105294516b357ce5edc6b80c125d66a601b:structural-validity:92b843a5bc2e73ae47e327d85be6087d5787e50b319727b7bad48de502339d1a@1"
+          ],
+          "instance_record_sha256": "5fe69c01c4e5cc5898f9c6766601679ceff901a91cc23d359e2a76abdf5544f4",
+          "lean_report_sha256": "3197633020faaf11c7445408b70274b0c17b009680473c085c6ec41b721787c7",
+          "semantic_hash": "8a4e74481de7dd774e9e52835cf81105294516b357ce5edc6b80c125d66a601b"
+        },
+        "source_binding_status": "row-local-science-hold",
+        "source_sha256": "2e1b91945808e2668a7010221df4be4250da5830be2292fce4f9a2a24ed9b2bb",
+        "v2_envelope_id": "formal-ir-v2:yoked_surface:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "finite-payload-valid-source-binding-held",
+    "target_entity_id": "eczoo-entity:yoked_surface#collection"
+  },
+  "hold": {
+    "clean_coverage": false,
+    "ids": [
+      "rotated_inner_block_mismatch"
+    ],
+    "migration_blocking": false,
+    "state": "row-local-science-hold"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:yoked_surface:views:0",
+      "atlas-assertion:yoked_surface:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:yoked_surface#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:yoked_surface:views:0@4c5f80cdfa705d11b20b86ab6b8642f5b4bacd5c2569b66783e138d634c9dbee",
+      "atlas-evidence:yoked_surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:yoked_surface",
+    "instance_ids": [
+      "atlas-instance:yoked_surface:primary"
+    ],
+    "page_id": "atlas-page:yoked_surface",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:yoked_surface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:yoked_surface#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:yoked_surface#collection",
+        "status": "preserved-with-science-hold",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-held",
+    "id": "atlas-page:yoked_surface",
+    "presented_entity_ids": [
+      "eczoo-entity:yoked_surface#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:yoked_surface#collection",
+    "redirects": [],
+    "route": "/entries/yoked_surface.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/yoked_surface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

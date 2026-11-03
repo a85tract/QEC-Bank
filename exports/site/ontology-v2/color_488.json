@@ -1,0 +1,586 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:color_488",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:color_488:views:0@124f50525b69a2e207a60e4dcff82d0d906698f044f77ba2e55dc2a7cdc6ee03",
+      "field": "views",
+      "id": "atlas-assertion:color_488:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:color_488",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:color_488:views:1@2b1ce406d171ca5c132d1ef72271d971ce2c350d7e907a2ed2424ea2dac7c10b",
+      "field": "views",
+      "id": "atlas-assertion:color_488:views:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:views:2@5d8a51b81a3532cb1c023d74daf8cae53fe22ecd40343d09b1425a2c306618ab",
+      "field": "views",
+      "id": "atlas-assertion:color_488:views:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:views:3@0a74289d27167e8ec41816afb414bc56c6f416f3307de11b8bfd42128cb39c07",
+      "field": "views",
+      "id": "atlas-assertion:color_488:views:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:views:4@d311b08e8037252370343c1977cf44b071e09add1c2614f33e77c00dc40ef2ae",
+      "field": "views",
+      "id": "atlas-assertion:color_488:views:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:color_488",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:color_488:views:5@be192409154ef2a4c48713d0a3cec092c69edbc2a14ffe081bc1869749d643f0",
+      "field": "views",
+      "id": "atlas-assertion:color_488:views:5",
+      "index": 5
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:color_488",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:color_488:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:color_488:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:categories:1@bc3ccc2ae11cc1239490f4a800dd2f79c1fbdfd03e46e68f1bc313007d178a9f",
+      "field": "categories",
+      "id": "atlas-assertion:color_488:categories:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:categories:2@b82858b19e90b0dc72673e4d250be9dca45b19083b10f2cb26aaaa0d80fdf46c",
+      "field": "categories",
+      "id": "atlas-assertion:color_488:categories:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:decoders:0@dfa0482ec46a4674e6d131fef091046487e57f66e7fceba22d4296178f006bd9",
+      "field": "decoders",
+      "id": "atlas-assertion:color_488:decoders:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:decoders:1@72bd4887baae84bfe02e2e3b05ded26256a6f7e27ddca993a5248fac660cb0f5",
+      "field": "decoders",
+      "id": "atlas-assertion:color_488:decoders:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:operations:0@664e08446e31b8d22cb17a6cb7029a0928294ec7128644f050ca4d9769096a69",
+      "field": "operations",
+      "id": "atlas-assertion:color_488:operations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:operations:1@de37354e1aff384fff455abc597d5f301d7f0073b8c1da7e0097061288d1606b",
+      "field": "operations",
+      "id": "atlas-assertion:color_488:operations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:operations:2@eb05b0bc8fa30cb187cdc9ff3ed45993dccddaa80f376e9e3bef6c47a5cc7bae",
+      "field": "operations",
+      "id": "atlas-assertion:color_488:operations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:operations:3@47da5222ebc91b9bd25bd8b9aedf67bb34fd9811fe90f569ba7766aaf837fe43",
+      "field": "operations",
+      "id": "atlas-assertion:color_488:operations:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:operations:4@81babab3ab2c17e877ac5a891c57d9d087bd6e9406e64d7dcca663592785404b",
+      "field": "operations",
+      "id": "atlas-assertion:color_488:operations:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:realizations:0@5e7b3e283c4a839a0a61708cbf7b1cc5bd9603e523437971559047eada84ff04",
+      "field": "realizations",
+      "id": "atlas-assertion:color_488:realizations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:realizations:1@069f1da326c124e51b96696c6c3acbe06d5e867520a24b55fcf638fcf20d7d0e",
+      "field": "realizations",
+      "id": "atlas-assertion:color_488:realizations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:relations:0@a7b7e105b98c636e95cd63215eedc738154b09c5e86dda9225a08e112af7cd8d",
+      "field": "relations",
+      "id": "atlas-assertion:color_488:relations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:relations:1@4666781d2f02057c87f82dae09086c9cd0ec73adf7f6512598e1a448775ca13c",
+      "field": "relations",
+      "id": "atlas-assertion:color_488:relations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "atlas-entity:color_488#subject",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:color_488:relations:2@0639d54e6fa806e88f6d31e9cb53d9471164ab67e811912c4c0d1ffca8f128a9",
+      "field": "relations",
+      "id": "atlas-assertion:color_488:relations:2",
+      "index": 2
+    }
+  ],
+  "compatibility_projection": {
+    "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+    "status": "lossy"
+  },
+  "completion_scopes": [
+    {
+      "authority": "C2 does not transfer child completeness to parent",
+      "entity_id": "eczoo-entity:488_color#collection",
+      "status": "new-broad-skeleton",
+      "tier": "T0"
+    },
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "atlas-entity:color_488#subject",
+      "status": "preserved-child-scope",
+      "tier": "T2"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family",
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:488_color#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:488_color#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+        "status": "lossy"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/color_488/card.yaml#/identity",
+          "atlas:atlas/color_488/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/color_488/color_488-foundations.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/color/2d_color/488_color/488_color.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:488_color"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:488_color#collection@qec-atlas-eczoo-ontology-v2"
+    },
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "atlas-entity:color_488#subject",
+      "lineage": {
+        "action": "atlas-scope-made-explicit",
+        "previous_version_ids": [
+          "atlas-page:color_488@legacy-subject"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "C2-scoped-expansion",
+        "evidence_locators": [
+          "atlas:atlas/color_488/card.yaml#/identity",
+          "atlas:atlas/color_488/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/color_488/color_488-foundations.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/color/2d_color/488_color/488_color.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Three-color triangular-disc 4.8.8 patches represented by Atlas.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:488_color"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "atlas-entity:color_488#subject@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "color_488",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:color_488",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "909132379f08ffcda48daae6eb1b3ea6daade8ff39c8d4211eeec255cf082cc7",
+          "payload_sha256": "0c92e58de8a0753c689980f247063f544acd7c392ce28ba49d85db2c60f678a3",
+          "semantic_hash": "d01cd311e867a66300a35d5ddbefde0cdcc47cfb0d9e5be6a3cb7109aff24d65"
+        },
+        "id": "atlas-instance:color_488:d3_triangle",
+        "label": "d3_triangle",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:d01cd311e867a66300a35d5ddbefde0cdcc47cfb0d9e5be6a3cb7109aff24d65:small-exact-distance-enumeration:df45c456526e16d64494460e5302ad8dd5d13c4bd8e96f21104d6e7b474c11de@1",
+            "certificate:d01cd311e867a66300a35d5ddbefde0cdcc47cfb0d9e5be6a3cb7109aff24d65:structural-validity:fa6a1183e2eefcfd0661e25e1269075a09aaf226cc78d67ada93fca801ddba0b@1"
+          ],
+          "instance_record_sha256": "d2188a00aadec9ac0cdbf7eb0fa6d32398ddeb13f21a0fcac10cfca39d36cd18",
+          "lean_report_sha256": "26a16472ce0f56c171415bae95f1497227a10e8094c0598c78d1a668089f9f6d",
+          "semantic_hash": "d01cd311e867a66300a35d5ddbefde0cdcc47cfb0d9e5be6a3cb7109aff24d65"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "de52a56b4160ca54c9ddd1ae515b10ed74b2cf018c0556322d827f53e97f6c4f",
+        "v2_envelope_id": "formal-ir-v2:color_488:d3_triangle"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "909132379f08ffcda48daae6eb1b3ea6daade8ff39c8d4211eeec255cf082cc7",
+          "payload_sha256": "1386c555eabf294538cf807f9f205cf1f7268d0fbdb2a0d1d9274956541369a9",
+          "semantic_hash": "2f985a47361c2de18fc4bd7d81a6225b5de38a91a93760b83dfb948b52d242a2"
+        },
+        "id": "atlas-instance:color_488:d5_triangle",
+        "label": "d5_triangle",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:2f985a47361c2de18fc4bd7d81a6225b5de38a91a93760b83dfb948b52d242a2:structural-validity:77e90fad15e72608734e221c07f9b65cbfe80b5ab1f0400eb63d9507f6dcae05@1"
+          ],
+          "instance_record_sha256": "f3b245bf8744088ab144d275e707a24d53ba24cae0ab13872f3f38f291e065c7",
+          "lean_report_sha256": "76192cfda2728c63c966835cfe7bda398fe3750d647b938f3229aea3219b72f6",
+          "semantic_hash": "2f985a47361c2de18fc4bd7d81a6225b5de38a91a93760b83dfb948b52d242a2"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b379ea063be914c45e032afdd17d2ad166fae9403d67900c52608cc105b83352",
+        "v2_envelope_id": "formal-ir-v2:color_488:d5_triangle"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 2,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "atlas-entity:color_488#subject"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:color_488:views:0",
+      "atlas-assertion:color_488:views:1",
+      "atlas-assertion:color_488:views:2",
+      "atlas-assertion:color_488:views:3",
+      "atlas-assertion:color_488:views:4",
+      "atlas-assertion:color_488:views:5",
+      "atlas-assertion:color_488:categories:0",
+      "atlas-assertion:color_488:categories:1",
+      "atlas-assertion:color_488:categories:2",
+      "atlas-assertion:color_488:decoders:0",
+      "atlas-assertion:color_488:decoders:1",
+      "atlas-assertion:color_488:operations:0",
+      "atlas-assertion:color_488:operations:1",
+      "atlas-assertion:color_488:operations:2",
+      "atlas-assertion:color_488:operations:3",
+      "atlas-assertion:color_488:operations:4",
+      "atlas-assertion:color_488:realizations:0",
+      "atlas-assertion:color_488:realizations:1",
+      "atlas-assertion:color_488:relations:0",
+      "atlas-assertion:color_488:relations:1",
+      "atlas-assertion:color_488:relations:2"
+    ],
+    "entity_ids": [
+      "eczoo-entity:488_color#collection",
+      "atlas-entity:color_488#subject"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:color_488:views:0@124f50525b69a2e207a60e4dcff82d0d906698f044f77ba2e55dc2a7cdc6ee03",
+      "atlas-evidence:color_488:views:1@2b1ce406d171ca5c132d1ef72271d971ce2c350d7e907a2ed2424ea2dac7c10b",
+      "atlas-evidence:color_488:views:2@5d8a51b81a3532cb1c023d74daf8cae53fe22ecd40343d09b1425a2c306618ab",
+      "atlas-evidence:color_488:views:3@0a74289d27167e8ec41816afb414bc56c6f416f3307de11b8bfd42128cb39c07",
+      "atlas-evidence:color_488:views:4@d311b08e8037252370343c1977cf44b071e09add1c2614f33e77c00dc40ef2ae",
+      "atlas-evidence:color_488:views:5@be192409154ef2a4c48713d0a3cec092c69edbc2a14ffe081bc1869749d643f0",
+      "atlas-evidence:color_488:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:color_488:categories:1@bc3ccc2ae11cc1239490f4a800dd2f79c1fbdfd03e46e68f1bc313007d178a9f",
+      "atlas-evidence:color_488:categories:2@b82858b19e90b0dc72673e4d250be9dca45b19083b10f2cb26aaaa0d80fdf46c",
+      "atlas-evidence:color_488:decoders:0@dfa0482ec46a4674e6d131fef091046487e57f66e7fceba22d4296178f006bd9",
+      "atlas-evidence:color_488:decoders:1@72bd4887baae84bfe02e2e3b05ded26256a6f7e27ddca993a5248fac660cb0f5",
+      "atlas-evidence:color_488:operations:0@664e08446e31b8d22cb17a6cb7029a0928294ec7128644f050ca4d9769096a69",
+      "atlas-evidence:color_488:operations:1@de37354e1aff384fff455abc597d5f301d7f0073b8c1da7e0097061288d1606b",
+      "atlas-evidence:color_488:operations:2@eb05b0bc8fa30cb187cdc9ff3ed45993dccddaa80f376e9e3bef6c47a5cc7bae",
+      "atlas-evidence:color_488:operations:3@47da5222ebc91b9bd25bd8b9aedf67bb34fd9811fe90f569ba7766aaf837fe43",
+      "atlas-evidence:color_488:operations:4@81babab3ab2c17e877ac5a891c57d9d087bd6e9406e64d7dcca663592785404b",
+      "atlas-evidence:color_488:realizations:0@5e7b3e283c4a839a0a61708cbf7b1cc5bd9603e523437971559047eada84ff04",
+      "atlas-evidence:color_488:realizations:1@069f1da326c124e51b96696c6c3acbe06d5e867520a24b55fcf638fcf20d7d0e",
+      "atlas-evidence:color_488:relations:0@a7b7e105b98c636e95cd63215eedc738154b09c5e86dda9225a08e112af7cd8d",
+      "atlas-evidence:color_488:relations:1@4666781d2f02057c87f82dae09086c9cd0ec73adf7f6512598e1a448775ca13c",
+      "atlas-evidence:color_488:relations:2@0639d54e6fa806e88f6d31e9cb53d9471164ab67e811912c4c0d1ffca8f128a9"
+    ],
+    "formalization_id": "atlas-formalization:color_488",
+    "instance_ids": [
+      "atlas-instance:color_488:d3_triangle",
+      "atlas-instance:color_488:d5_triangle"
+    ],
+    "page_id": "atlas-page:color_488",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:488_color"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "atlas-entity:color_488#subject",
+    "completion_scopes": [
+      {
+        "authority": "C2 does not transfer child completeness to parent",
+        "entity_id": "eczoo-entity:488_color#collection",
+        "status": "new-broad-skeleton",
+        "tier": "T0"
+      },
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "atlas-entity:color_488#subject",
+        "status": "preserved-child-scope",
+        "tier": "T2"
+      }
+    ],
+    "composition": "scoped-expansion",
+    "id": "atlas-page:color_488",
+    "presented_entity_ids": [
+      "eczoo-entity:488_color#collection",
+      "atlas-entity:color_488#subject"
+    ],
+    "primary_entity_id": "eczoo-entity:488_color#collection",
+    "redirects": [],
+    "route": "/entries/color_488.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/color_488"
+  },
+  "parent_content": {
+    "child_relation": {
+      "assertion_id": "atlas-parent-assertion:color_488:child-relation",
+      "from": "atlas-entity:color_488#subject",
+      "origin": {
+        "kind": "verified",
+        "method": "owner-approved-C2-scoped-expansion"
+      },
+      "to": "eczoo-entity:488_color#collection",
+      "type": "narrower-than"
+    },
+    "description": {
+      "applies_to": "eczoo-entity:488_color#collection",
+      "assertion_id": "atlas-parent-assertion:color_488:description",
+      "origin": {
+        "kind": "claimed",
+        "locators": [
+          "/description#paragraph:0",
+          "/description#paragraph:1",
+          "/description#paragraph:5"
+        ],
+        "method": "pinned-eczoo-source",
+        "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:488_color"
+      },
+      "text": "The 4.8.8 color-code collection consists of two-dimensional color codes on square-octagon patches, with an equivalent dual-lattice description and boundary choices that can change the encoded space."
+    },
+    "entry_id": "color_488",
+    "parent_entity_id": "eczoo-entity:488_color#collection",
+    "scope": {
+      "applies_to": "eczoo-entity:488_color#collection",
+      "assertion_id": "atlas-parent-assertion:color_488:scope",
+      "excludes": [
+        "Restricting the collection to Atlas's triangular-disc child.",
+        "Transferring the child entry's T2 completion to the collection."
+      ],
+      "includes": [
+        "Square-octagon-patch realizations described by the source.",
+        "The equivalent Tetrakis-square or Union-Jack presentation.",
+        "Boundary-conditioned members of the source collection."
+      ],
+      "origin": {
+        "kind": "claimed",
+        "locators": [
+          "/description#paragraph:0",
+          "/description#paragraph:1",
+          "/description#paragraph:5"
+        ],
+        "method": "pinned-eczoo-source-plus-owner-scope-decision",
+        "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:488_color"
+      }
+    },
+    "source": {
+      "locators": [
+        "/description#paragraph:0",
+        "/description#paragraph:1",
+        "/description#paragraph:5",
+        "/protection#paragraph:0"
+      ],
+      "node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:488_color",
+      "path": "codes/quantum/qubits/stabilizer/topological/color/2d_color/488_color/488_color.yml",
+      "sha256": "963d5888dbacb787a64d7f57e6798f31145ec0f721153b9aae5386f3554c47d7",
+      "zoo_id": "488_color"
+    },
+    "tier": "T0",
+    "variant_map": {
+      "applies_to": "eczoo-entity:488_color#collection",
+      "assertion_id": "atlas-parent-assertion:color_488:variant-map",
+      "completeness": "source-axis-map",
+      "variants": [
+        {
+          "atlas_status": "broad-parent-axis",
+          "id": "square-octagon-patch",
+          "label": "Square-octagon patch presentation",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:0"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:488_color"
+          }
+        },
+        {
+          "atlas_status": "broad-parent-axis",
+          "id": "tetrakis-union-jack",
+          "label": "Equivalent Tetrakis-square or Union-Jack presentation",
+          "origin": {
+            "kind": "claimed",
+            "locators": [
+              "/description#paragraph:1"
+            ],
+            "method": "pinned-eczoo-source",
+            "source_node_id": "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:488_color"
+          }
+        },
+        {
+          "atlas_status": "formalized-child",
+          "id": "triangular-disc-child",
+          "label": "Three-color triangular-disc subfamily",
+          "origin": {
+            "kind": "verified",
+            "method": "owner-approved-C2-scoped-expansion"
+          }
+        }
+      ]
+    }
+  },
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

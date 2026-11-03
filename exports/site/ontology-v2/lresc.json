@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:lresc",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:lresc:views:0@f315687580fb9804aaad97d84b186ef19f58dd6e1923786586a08d42d9a91743",
+      "field": "views",
+      "id": "atlas-assertion:lresc:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:lresc",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:lresc:categories:0@7fb1cdbbacf4d7b7eca7711556a8c6b59aefda7e8ece8149c62a218d7dbb9103",
+      "field": "categories",
+      "id": "atlas-assertion:lresc:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:lresc#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:lresc#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/lresc",
+          "atlas:atlas/lresc/card.yaml#/identity",
+          "t222:docs/lit/lresc/lresc-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/lresc.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo lresc identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:lresc"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:lresc#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "lresc",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:lresc",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "43964d316652ed7f6d76fde2fc86781ebd8a2e01dc8a3046c6fa5afb250ed45c",
+          "payload_sha256": "368488ba65425bd6c11ef1980f46a6e904e7f0ff569a6f218884ee8d6150fbde",
+          "semantic_hash": "a013fb508bf0fccdb7ff49077e885c0e6896fe598552edeb18f41cebe88668c0"
+        },
+        "id": "atlas-instance:lresc:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:a013fb508bf0fccdb7ff49077e885c0e6896fe598552edeb18f41cebe88668c0:structural-validity:a464d6a88b6099bfdb03a37d85930c455773ee87209f4ec4e7dec33f57c157ef@1"
+          ],
+          "instance_record_sha256": "e1d4eb8aea8840e4697fc61a99fc07cfcd9b726966f05af8adbdddc1c29a86c8",
+          "lean_report_sha256": "1e063bf901318ea23b50999d1994f4b73baec3bc5e29c2ff1d81ecc7fdbfd60e",
+          "semantic_hash": "a013fb508bf0fccdb7ff49077e885c0e6896fe598552edeb18f41cebe88668c0"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "2fa12ee4a91dfb15a76865d6517131bbebb64d863768d1b95cb013ce26642bf0",
+        "v2_envelope_id": "formal-ir-v2:lresc:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:lresc#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:lresc:views:0",
+      "atlas-assertion:lresc:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:lresc#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:lresc:views:0@f315687580fb9804aaad97d84b186ef19f58dd6e1923786586a08d42d9a91743",
+      "atlas-evidence:lresc:categories:0@7fb1cdbbacf4d7b7eca7711556a8c6b59aefda7e8ece8149c62a218d7dbb9103"
+    ],
+    "formalization_id": "atlas-formalization:lresc",
+    "instance_ids": [
+      "atlas-instance:lresc:primary"
+    ],
+    "page_id": "atlas-page:lresc",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:lresc"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:lresc#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:lresc#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:lresc",
+    "presented_entity_ids": [
+      "eczoo-entity:lresc#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:lresc#collection",
+    "redirects": [],
+    "route": "/entries/lresc.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/lresc"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

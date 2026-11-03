@@ -1,0 +1,319 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:views:0@21b708f905a15483cf227b25ca1758cc2a88b490dc80ad76295b7972b3b59bf9",
+      "field": "views",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:views:1@b68c44042040153b5c3d9404b818648ff8ec58f5d24815f787995ccba00c07ab",
+      "field": "views",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:views:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:views:2@3d5c89be0fbca23ab52d180fd26a4b2d3db04dac9d26e4bfc4a0a02dfbd05828",
+      "field": "views",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:views:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:views:3@c01e747b531e0734515719b9d06121b6fa359914b840b31b76223f148330419b",
+      "field": "views",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:views:3",
+      "index": 3
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:views:4@99068fad6da9676637b6c2fc23bf29a2c1e342d94b9a548132cc0bb5f2797938",
+      "field": "views",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:views:4",
+      "index": 4
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:views:5@22376067bb4b3168179abae849050b2d0b3f26891d3a9544a0e4a81900252974",
+      "field": "views",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:views:5",
+      "index": 5
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:categories:0@2ca75d3a9f7372bb9b68660e5f9e039d07710e19a48f1a5c210453867cfd5f2a",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:categories:1@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:categories:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:decoders:0@504739818ea2853fb199be18037f264400300765dc087306ed550c36838fd7da",
+      "field": "decoders",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:decoders:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:operations:0@0e85126208ca2bb779ae14d7da5d1e9d4ca9fd07987374f65ab23dff3291bc48",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:operations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:operations:1@9e0f99ff369b6ea5796e4fa13d9e8a8e559e403c6359302b03f8d670b9fbda47",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:operations:1",
+      "index": 1
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:operations:2@32a5ac79af8e6e59b92132690e13c3f3dbb06045d373d53b99c057f8b3c9ce65",
+      "field": "operations",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:operations:2",
+      "index": 2
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:relations:0@89c479e1a5831db6c7c6fd642802ca908b0743d771b3c1ae71832c9a6a02fc90",
+      "field": "relations",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:relations:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stab_15_7_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:quantum_hamming_15_7_3:relations:1@e4c886979b42a602c066cd84e5bbc8dd193ae6c1bba6f8dd76c1a05e4d300ed8",
+      "field": "relations",
+      "id": "atlas-assertion:quantum_hamming_15_7_3:relations:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:stab_15_7_3#object",
+      "status": "preserved",
+      "tier": "T2"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:stab_15_7_3#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:stab_15_7_3#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/quantum_hamming_15_7_3/card.yaml#/identity",
+          "atlas:atlas/quantum_hamming_15_7_3/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_hamming_15_7_3/quantum_hamming_15_7_3-eczoo-intake.md",
+          "t206:codes/quantum/qubits/small_distance/small/15/stab_15_7_3.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:stab_15_7_3"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:stab_15_7_3#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_hamming_15_7_3",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_hamming_15_7_3",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "d20fe7ecc404d0d7d92ef70c64a84d8a99747f79e4a160563127a18b3808212f",
+          "payload_sha256": "2c815af934d5d41a1a568fe68dd867c3bbf79cb5031bf0a696353b778230e6ae",
+          "semantic_hash": "8ccac4ba6d7a6f1725dedc64d988e94f5e03b8a4616d27cc7bbda53aca4b150f"
+        },
+        "id": "atlas-instance:quantum_hamming_15_7_3:n15",
+        "label": "n15",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8ccac4ba6d7a6f1725dedc64d988e94f5e03b8a4616d27cc7bbda53aca4b150f:small-exact-distance-enumeration:173c8abc7242a0ae71ecc82d27f80110f82a53cc11617852e1ec5c86d25d22dc@1",
+            "certificate:8ccac4ba6d7a6f1725dedc64d988e94f5e03b8a4616d27cc7bbda53aca4b150f:structural-validity:1cb1379fec9b24ecc1408aea1a131726ef97c5c56653972554c2dc55a88f6f12@1"
+          ],
+          "instance_record_sha256": "488b261b64a46559e1c26ff1b679701bf8662ef54c820e2485a253676c72ae25",
+          "lean_report_sha256": "89641dc0e0436a0d421ae32593d01df25f8a77b243cbf087fa699f6c94b44cfe",
+          "semantic_hash": "8ccac4ba6d7a6f1725dedc64d988e94f5e03b8a4616d27cc7bbda53aca4b150f"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "a169a70522d253a8f9e9ea8cbf37b0fd4c2fa7cdecf6e759dddeefb90f9996b1",
+        "v2_envelope_id": "formal-ir-v2:quantum_hamming_15_7_3:n15"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:stab_15_7_3#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_hamming_15_7_3:views:0",
+      "atlas-assertion:quantum_hamming_15_7_3:views:1",
+      "atlas-assertion:quantum_hamming_15_7_3:views:2",
+      "atlas-assertion:quantum_hamming_15_7_3:views:3",
+      "atlas-assertion:quantum_hamming_15_7_3:views:4",
+      "atlas-assertion:quantum_hamming_15_7_3:views:5",
+      "atlas-assertion:quantum_hamming_15_7_3:categories:0",
+      "atlas-assertion:quantum_hamming_15_7_3:categories:1",
+      "atlas-assertion:quantum_hamming_15_7_3:decoders:0",
+      "atlas-assertion:quantum_hamming_15_7_3:operations:0",
+      "atlas-assertion:quantum_hamming_15_7_3:operations:1",
+      "atlas-assertion:quantum_hamming_15_7_3:operations:2",
+      "atlas-assertion:quantum_hamming_15_7_3:relations:0",
+      "atlas-assertion:quantum_hamming_15_7_3:relations:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:stab_15_7_3#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_hamming_15_7_3:views:0@21b708f905a15483cf227b25ca1758cc2a88b490dc80ad76295b7972b3b59bf9",
+      "atlas-evidence:quantum_hamming_15_7_3:views:1@b68c44042040153b5c3d9404b818648ff8ec58f5d24815f787995ccba00c07ab",
+      "atlas-evidence:quantum_hamming_15_7_3:views:2@3d5c89be0fbca23ab52d180fd26a4b2d3db04dac9d26e4bfc4a0a02dfbd05828",
+      "atlas-evidence:quantum_hamming_15_7_3:views:3@c01e747b531e0734515719b9d06121b6fa359914b840b31b76223f148330419b",
+      "atlas-evidence:quantum_hamming_15_7_3:views:4@99068fad6da9676637b6c2fc23bf29a2c1e342d94b9a548132cc0bb5f2797938",
+      "atlas-evidence:quantum_hamming_15_7_3:views:5@22376067bb4b3168179abae849050b2d0b3f26891d3a9544a0e4a81900252974",
+      "atlas-evidence:quantum_hamming_15_7_3:categories:0@2ca75d3a9f7372bb9b68660e5f9e039d07710e19a48f1a5c210453867cfd5f2a",
+      "atlas-evidence:quantum_hamming_15_7_3:categories:1@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:quantum_hamming_15_7_3:decoders:0@504739818ea2853fb199be18037f264400300765dc087306ed550c36838fd7da",
+      "atlas-evidence:quantum_hamming_15_7_3:operations:0@0e85126208ca2bb779ae14d7da5d1e9d4ca9fd07987374f65ab23dff3291bc48",
+      "atlas-evidence:quantum_hamming_15_7_3:operations:1@9e0f99ff369b6ea5796e4fa13d9e8a8e559e403c6359302b03f8d670b9fbda47",
+      "atlas-evidence:quantum_hamming_15_7_3:operations:2@32a5ac79af8e6e59b92132690e13c3f3dbb06045d373d53b99c057f8b3c9ce65",
+      "atlas-evidence:quantum_hamming_15_7_3:relations:0@89c479e1a5831db6c7c6fd642802ca908b0743d771b3c1ae71832c9a6a02fc90",
+      "atlas-evidence:quantum_hamming_15_7_3:relations:1@e4c886979b42a602c066cd84e5bbc8dd193ae6c1bba6f8dd76c1a05e4d300ed8"
+    ],
+    "formalization_id": "atlas-formalization:quantum_hamming_15_7_3",
+    "instance_ids": [
+      "atlas-instance:quantum_hamming_15_7_3:n15"
+    ],
+    "page_id": "atlas-page:quantum_hamming_15_7_3",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:stab_15_7_3"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:stab_15_7_3#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:stab_15_7_3#object",
+        "status": "preserved",
+        "tier": "T2"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_hamming_15_7_3",
+    "presented_entity_ids": [
+      "eczoo-entity:stab_15_7_3#object"
+    ],
+    "primary_entity_id": "eczoo-entity:stab_15_7_3#object",
+    "redirects": [],
+    "route": "/entries/quantum_hamming_15_7_3.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/quantum_hamming_15_7_3"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

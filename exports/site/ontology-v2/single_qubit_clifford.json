@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:single_qubit_clifford",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:single_qubit_clifford:views:0@1de91333c9234fa4c1a25f50f81d49e4bd138c62e186df94abfd32fcc293384a",
+      "field": "views",
+      "id": "atlas-assertion:single_qubit_clifford:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:single_qubit_clifford",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:single_qubit_clifford:categories:0@4e08bdfddad856fe108a3b2e64a394e4679ab45304b68d30798ae18e42d583e2",
+      "field": "categories",
+      "id": "atlas-assertion:single_qubit_clifford:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:single_qubit_clifford#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:single_qubit_clifford#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/single_qubit_clifford",
+          "atlas:atlas/single_qubit_clifford/card.yaml#/identity",
+          "t222:docs/lit/single_qubit_clifford/single_qubit_clifford-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/rm/single_qubit_clifford.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo single_qubit_clifford identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:single_qubit_clifford"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:single_qubit_clifford#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "single_qubit_clifford",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:single_qubit_clifford",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b31ff78d41d85a0076f5156e5ad155a9f42c664a49060fec562431bcb3a671ff",
+          "payload_sha256": "3acf19ff9637921fce5733bb2737d3dcb85ef95a254f15c969827214a37f1572",
+          "semantic_hash": "8717005ac59390af57bbc6094cce4da2ac1f8c58d26671decd6ed54147ecddf2"
+        },
+        "id": "atlas-instance:single_qubit_clifford:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8717005ac59390af57bbc6094cce4da2ac1f8c58d26671decd6ed54147ecddf2:structural-validity:c96e37bf030de3bd8257ad7407a77e5461868f90add6e2aaba3566067f858e68@1"
+          ],
+          "instance_record_sha256": "54e6ecb64e5e4d03bfacba5927c1fab3056377871188b6718cbd2d2d3926ff87",
+          "lean_report_sha256": "1feafa29c14eb764d254c73576ee2f3211073aac1390d7a273b81bd9ef87bbde",
+          "semantic_hash": "8717005ac59390af57bbc6094cce4da2ac1f8c58d26671decd6ed54147ecddf2"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "d3bc01db3c382087e62231cdd2ff4ef6a43de1cc82d1bc92f644ba6130761485",
+        "v2_envelope_id": "formal-ir-v2:single_qubit_clifford:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:single_qubit_clifford#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:single_qubit_clifford:views:0",
+      "atlas-assertion:single_qubit_clifford:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:single_qubit_clifford#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:single_qubit_clifford:views:0@1de91333c9234fa4c1a25f50f81d49e4bd138c62e186df94abfd32fcc293384a",
+      "atlas-evidence:single_qubit_clifford:categories:0@4e08bdfddad856fe108a3b2e64a394e4679ab45304b68d30798ae18e42d583e2"
+    ],
+    "formalization_id": "atlas-formalization:single_qubit_clifford",
+    "instance_ids": [
+      "atlas-instance:single_qubit_clifford:primary"
+    ],
+    "page_id": "atlas-page:single_qubit_clifford",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:single_qubit_clifford"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:single_qubit_clifford#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:single_qubit_clifford#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:single_qubit_clifford",
+    "presented_entity_ids": [
+      "eczoo-entity:single_qubit_clifford#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:single_qubit_clifford#collection",
+    "redirects": [],
+    "route": "/entries/single_qubit_clifford.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/single_qubit_clifford"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

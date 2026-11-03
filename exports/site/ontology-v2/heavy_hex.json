@@ -1,0 +1,185 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:heavy_hex",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:heavy_hex:views:0@8d3038e217c88fbbff7512c5e92744a9c1e67b3c0f520f2e29e3d7c2a5734bae",
+      "field": "views",
+      "id": "atlas-assertion:heavy_hex:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:heavy_hex",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:heavy_hex:categories:0@405da9347a7dad0fc7b87a6f0f010e42bf3a84a9adb4b27a15fe1b1cce3c36ed",
+      "field": "categories",
+      "id": "atlas-assertion:heavy_hex:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:heavy_hex",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:heavy_hex:categories:1@cd37c4cd28a8271892c54f7631399ec3965e9baca28176ee499743cb38e6aea6",
+      "field": "categories",
+      "id": "atlas-assertion:heavy_hex:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:heavy_hex#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:heavy_hex#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/heavy_hex",
+          "atlas:atlas/heavy_hex/card.yaml#/identity",
+          "t222:docs/lit/heavy_hex/heavy_hex-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/subsystem/topological/other/heavy_hex.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo heavy_hex identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:heavy_hex"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:heavy_hex#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "heavy_hex",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:heavy_hex",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "5e86b8833cc97c645d7685701d4044e0d91706d4c8d6eb19c361f9b33e602f73",
+          "payload_sha256": "0487425082a84823750ea516b5459cadb7000c0809dd45fbb0b581ef28e58025",
+          "semantic_hash": "fe643cbadd60e6176d42d910ed97fa96178aa6a65e8e195f904032808737b242"
+        },
+        "id": "atlas-instance:heavy_hex:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:fe643cbadd60e6176d42d910ed97fa96178aa6a65e8e195f904032808737b242:structural-validity:25769c03abd04b40061d9c6a2be1acf2d2e92c66890b2551870621a59a591230@1"
+          ],
+          "instance_record_sha256": "03f851cd8688426a3bdbf8b3d6b953cd5b29ef31792956ad8ac75e262c7a4d6d",
+          "lean_report_sha256": "c3e39d944f2173800a361c953dc3887f793e202ceaf905a265d4b24046aa65be",
+          "semantic_hash": "fe643cbadd60e6176d42d910ed97fa96178aa6a65e8e195f904032808737b242"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "ae2da310800a4d579c3cc7469460fb23240a7d2e5dbdfbfb5c405e8536e21d57",
+        "v2_envelope_id": "formal-ir-v2:heavy_hex:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:heavy_hex#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:heavy_hex:views:0",
+      "atlas-assertion:heavy_hex:categories:0",
+      "atlas-assertion:heavy_hex:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:heavy_hex#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:heavy_hex:views:0@8d3038e217c88fbbff7512c5e92744a9c1e67b3c0f520f2e29e3d7c2a5734bae",
+      "atlas-evidence:heavy_hex:categories:0@405da9347a7dad0fc7b87a6f0f010e42bf3a84a9adb4b27a15fe1b1cce3c36ed",
+      "atlas-evidence:heavy_hex:categories:1@cd37c4cd28a8271892c54f7631399ec3965e9baca28176ee499743cb38e6aea6"
+    ],
+    "formalization_id": "atlas-formalization:heavy_hex",
+    "instance_ids": [
+      "atlas-instance:heavy_hex:primary"
+    ],
+    "page_id": "atlas-page:heavy_hex",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:heavy_hex"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:heavy_hex#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:heavy_hex#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:heavy_hex",
+    "presented_entity_ids": [
+      "eczoo-entity:heavy_hex#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:heavy_hex#collection",
+    "redirects": [],
+    "route": "/entries/heavy_hex.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/heavy_hex"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

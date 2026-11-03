@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:two_foliated",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:two_foliated:views:0@9b483c577207947ea38509919d20fe7ae736e82feb38fe55eeff88274722e81d",
+      "field": "views",
+      "id": "atlas-assertion:two_foliated:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:two_foliated",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:two_foliated:categories:0@10bcff446bf8986ee88f13aa8cb546d09a7b27b4ef72fd3a0ead5cb820aab6d6",
+      "field": "categories",
+      "id": "atlas-assertion:two_foliated:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:two_foliated#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:two_foliated#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/two_foliated",
+          "atlas:atlas/two_foliated/card.yaml#/identity",
+          "t222:docs/lit/two_foliated/two_foliated-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/fracton/two_foliated.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo two_foliated identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:two_foliated"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:two_foliated#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "two_foliated",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:two_foliated",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b4886e221c8d5adb3fededf4993c65e6fc424e7da204776e22b99f6166b9119e",
+          "payload_sha256": "e12f15596c1de2a8d789c41cec6be41107142456b3c9434c964d99dc2d746ffe",
+          "semantic_hash": "ad5bac057cbb4fefe3a2ddf09135e7faf1bf9d371711759a32834aadfc9df2ee"
+        },
+        "id": "atlas-instance:two_foliated:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:ad5bac057cbb4fefe3a2ddf09135e7faf1bf9d371711759a32834aadfc9df2ee:structural-validity:b9e468d7d49f922b42df910bf925adc75835c37a413f4bfaf8dca396856254bc@1"
+          ],
+          "instance_record_sha256": "0a2e32be838e25cb21d164efbf3bd516c008a24172327db0ce2ca93c22817bd6",
+          "lean_report_sha256": "9a2887c1862e4f0fe00565112001511e6aa29b0248d17781d40e6551c34a5c63",
+          "semantic_hash": "ad5bac057cbb4fefe3a2ddf09135e7faf1bf9d371711759a32834aadfc9df2ee"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "fe67ca7c0dce6f6c3d7da625e5c70fd370ae5143a691a97cbe5148bc4f480830",
+        "v2_envelope_id": "formal-ir-v2:two_foliated:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:two_foliated#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:two_foliated:views:0",
+      "atlas-assertion:two_foliated:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:two_foliated#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:two_foliated:views:0@9b483c577207947ea38509919d20fe7ae736e82feb38fe55eeff88274722e81d",
+      "atlas-evidence:two_foliated:categories:0@10bcff446bf8986ee88f13aa8cb546d09a7b27b4ef72fd3a0ead5cb820aab6d6"
+    ],
+    "formalization_id": "atlas-formalization:two_foliated",
+    "instance_ids": [
+      "atlas-instance:two_foliated:primary"
+    ],
+    "page_id": "atlas-page:two_foliated",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:two_foliated"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:two_foliated#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:two_foliated#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:two_foliated",
+    "presented_entity_ids": [
+      "eczoo-entity:two_foliated#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:two_foliated#collection",
+    "redirects": [],
+    "route": "/entries/two_foliated.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/two_foliated"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

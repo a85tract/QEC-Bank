@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:twisted_xzzx",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:twisted_xzzx:views:0@6751fa87b0b52c7aa7abbd715fd5e044d2c5d8cabe9c2ad0029c61f479d0bb7b",
+      "field": "views",
+      "id": "atlas-assertion:twisted_xzzx:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:twisted_xzzx",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:twisted_xzzx:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:twisted_xzzx:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:twisted_xzzx#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:twisted_xzzx#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:twisted_xzzx#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/twisted_xzzx/card.yaml#/identity",
+          "atlas:atlas/twisted_xzzx/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/twisted_xzzx/twisted_xzzx-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/twist_defect/twisted_xzzx.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:twisted_xzzx"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:twisted_xzzx#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "twisted_xzzx",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:twisted_xzzx",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "45eb09c36288e9d739d119d26d39297287b78d7807e65248931f8113f7eefe3c",
+          "payload_sha256": "101b831a8f21a23d45309245ef2a37e4085bf2659844920a8ad95a41cf52fa35",
+          "semantic_hash": "1787db6fe97b9734594428719b4423708319180680c8c97bfbe1ff1ad3d93493"
+        },
+        "id": "atlas-instance:twisted_xzzx:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:1787db6fe97b9734594428719b4423708319180680c8c97bfbe1ff1ad3d93493:small-exact-distance-enumeration:6f48ac8837f751e4ddeaf0b815cd4d263edd552d3845fe902ad0cbbff9303866@1",
+            "certificate:1787db6fe97b9734594428719b4423708319180680c8c97bfbe1ff1ad3d93493:structural-validity:6d2c3b22148ff1581631c24ab897f1e6e54bba3255959b7686b76fe831559b72@1"
+          ],
+          "instance_record_sha256": "cd2477f338bdf503bff9d1806f77c2066751d96a7d05071e7dc43f322bf2e89f",
+          "lean_report_sha256": "bc1e4473928498a77027a571f9e15c7e03466bb4cb97404c7ea3c8829d5427aa",
+          "semantic_hash": "1787db6fe97b9734594428719b4423708319180680c8c97bfbe1ff1ad3d93493"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e755718fe64a0c8bfbcca42729f26c93cffdcdb2cec79758478b3863914d59ca",
+        "v2_envelope_id": "formal-ir-v2:twisted_xzzx:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:twisted_xzzx#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:twisted_xzzx:views:0",
+      "atlas-assertion:twisted_xzzx:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:twisted_xzzx#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:twisted_xzzx:views:0@6751fa87b0b52c7aa7abbd715fd5e044d2c5d8cabe9c2ad0029c61f479d0bb7b",
+      "atlas-evidence:twisted_xzzx:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:twisted_xzzx",
+    "instance_ids": [
+      "atlas-instance:twisted_xzzx:primary"
+    ],
+    "page_id": "atlas-page:twisted_xzzx",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:twisted_xzzx"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:twisted_xzzx#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:twisted_xzzx#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:twisted_xzzx",
+    "presented_entity_ids": [
+      "eczoo-entity:twisted_xzzx#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:twisted_xzzx#collection",
+    "redirects": [],
+    "route": "/entries/twisted_xzzx.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/twisted_xzzx"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

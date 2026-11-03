@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:tree_cluster",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:tree_cluster:views:0@4fab7850f5d0df3b85a95f51556bab5816766b2f8dde53a8711055caea574991",
+      "field": "views",
+      "id": "atlas-assertion:tree_cluster:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:tree_cluster",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:tree_cluster:categories:0@f4e0f7fc53dbbb470aae79e45e6fe730e27c4f3384b6878079407007c759bb9a",
+      "field": "categories",
+      "id": "atlas-assertion:tree_cluster:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:tree_cluster#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:tree_cluster#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/tree_cluster",
+          "atlas:atlas/tree_cluster/card.yaml#/identity",
+          "t222:docs/lit/tree_cluster/tree_cluster-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/mbqc/tree_cluster.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo tree_cluster identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:tree_cluster"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:tree_cluster#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "tree_cluster",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:tree_cluster",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "00e0eed4fc7f45d650c67391a27c1b32e2b099b65dd4d44a41758b34a3022379",
+          "payload_sha256": "420596d266384609249e654ebd9e4ed82c7d49f604bdf68c9acfcb404432dd3d",
+          "semantic_hash": "55a4118ddb6bc29f045a532db9dad7fbfe3421ad139dce82790eff4b9ddb7dc4"
+        },
+        "id": "atlas-instance:tree_cluster:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:55a4118ddb6bc29f045a532db9dad7fbfe3421ad139dce82790eff4b9ddb7dc4:structural-validity:a1e0384a492315fec1d6a5610bba4945a74fb7314bd584c4bea9d9360e28e5ee@1"
+          ],
+          "instance_record_sha256": "c9064e8aa49e9824b5ef71282dba04efef6045cd79172f585a3092e6daa5480f",
+          "lean_report_sha256": "d0935522e952d63aed105b1ad76827affba6076fb9adbdf506c9239b997533aa",
+          "semantic_hash": "55a4118ddb6bc29f045a532db9dad7fbfe3421ad139dce82790eff4b9ddb7dc4"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "c799c72100ff23592b5e647f8fb9c0491c9cce83f59ace8f51a0e5bc39a224e0",
+        "v2_envelope_id": "formal-ir-v2:tree_cluster:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:tree_cluster#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:tree_cluster:views:0",
+      "atlas-assertion:tree_cluster:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:tree_cluster#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:tree_cluster:views:0@4fab7850f5d0df3b85a95f51556bab5816766b2f8dde53a8711055caea574991",
+      "atlas-evidence:tree_cluster:categories:0@f4e0f7fc53dbbb470aae79e45e6fe730e27c4f3384b6878079407007c759bb9a"
+    ],
+    "formalization_id": "atlas-formalization:tree_cluster",
+    "instance_ids": [
+      "atlas-instance:tree_cluster:primary"
+    ],
+    "page_id": "atlas-page:tree_cluster",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:tree_cluster"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:tree_cluster#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:tree_cluster#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:tree_cluster",
+    "presented_entity_ids": [
+      "eczoo-entity:tree_cluster#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:tree_cluster#collection",
+    "redirects": [],
+    "route": "/entries/tree_cluster.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/tree_cluster"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

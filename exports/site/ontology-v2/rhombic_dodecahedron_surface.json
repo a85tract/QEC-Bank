@@ -1,0 +1,186 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:rhombic_dodecahedron_surface#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:rhombic_dodecahedron_surface:views:0@ed6ed019045838be8e370bbdd82424b6b9b9815e111ee57af6004c22e283ecd6",
+      "field": "views",
+      "id": "atlas-assertion:rhombic_dodecahedron_surface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:rhombic_dodecahedron_surface#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:rhombic_dodecahedron_surface:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "field": "categories",
+      "id": "atlas-assertion:rhombic_dodecahedron_surface:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:rhombic_dodecahedron_surface#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:rhombic_dodecahedron_surface:categories:1@c3a03770555af04ba79c85c4410f8317767278a048b7506563b400d0b13f803f",
+      "field": "categories",
+      "id": "atlas-assertion:rhombic_dodecahedron_surface:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:rhombic_dodecahedron_surface#object",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:rhombic_dodecahedron_surface#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:rhombic_dodecahedron_surface#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/rhombic_dodecahedron_surface/card.yaml#/identity",
+          "atlas:atlas/rhombic_dodecahedron_surface/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/rhombic_dodecahedron_surface/rhombic_dodecahedron_surface-eczoo-intake.md",
+          "t206:codes/quantum/qubits/small_distance/small/14/rhombic_dodecahedron_surface.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:rhombic_dodecahedron_surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:rhombic_dodecahedron_surface#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "rhombic_dodecahedron_surface",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:rhombic_dodecahedron_surface",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "a585d08396290c464ba12ba4596736e4d20236a80f88dceb34c6707bec632157",
+          "payload_sha256": "24af01721c785f7c3f8c0fdbaa1b1c7df1f57cad976e7133940d2fd9343e4d14",
+          "semantic_hash": "d57b73a73673ac5dc35464dbc444df518df4ab78b95b357803001d61764dccae"
+        },
+        "id": "atlas-instance:rhombic_dodecahedron_surface:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:d57b73a73673ac5dc35464dbc444df518df4ab78b95b357803001d61764dccae:structural-validity:998397eb15672d3e2c01b935db927bf969760775b62b033d4e2711705b5a809b@1"
+          ],
+          "instance_record_sha256": "8a8853420180db5c9a92994c1bd300c12c99a39f116b85cbb8c9ed9703be7502",
+          "lean_report_sha256": "23af45c3c57c79549668da35bcd6f4e79720856bb762c390f4f85228a51cd8e2",
+          "semantic_hash": "d57b73a73673ac5dc35464dbc444df518df4ab78b95b357803001d61764dccae"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b5235f58a121ece01135624c52003327f26cc7d1d5706e8a67d18df732b28f69",
+        "v2_envelope_id": "formal-ir-v2:rhombic_dodecahedron_surface:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:rhombic_dodecahedron_surface#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:rhombic_dodecahedron_surface:views:0",
+      "atlas-assertion:rhombic_dodecahedron_surface:categories:0",
+      "atlas-assertion:rhombic_dodecahedron_surface:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:rhombic_dodecahedron_surface#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:rhombic_dodecahedron_surface:views:0@ed6ed019045838be8e370bbdd82424b6b9b9815e111ee57af6004c22e283ecd6",
+      "atlas-evidence:rhombic_dodecahedron_surface:categories:0@dd2c10d008c2ba721c8080ad97227b4801276b2e6d2d1b64ad384329c79ab64c",
+      "atlas-evidence:rhombic_dodecahedron_surface:categories:1@c3a03770555af04ba79c85c4410f8317767278a048b7506563b400d0b13f803f"
+    ],
+    "formalization_id": "atlas-formalization:rhombic_dodecahedron_surface",
+    "instance_ids": [
+      "atlas-instance:rhombic_dodecahedron_surface:primary"
+    ],
+    "page_id": "atlas-page:rhombic_dodecahedron_surface",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:rhombic_dodecahedron_surface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:rhombic_dodecahedron_surface#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:rhombic_dodecahedron_surface#object",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:rhombic_dodecahedron_surface",
+    "presented_entity_ids": [
+      "eczoo-entity:rhombic_dodecahedron_surface#object"
+    ],
+    "primary_entity_id": "eczoo-entity:rhombic_dodecahedron_surface#object",
+    "redirects": [],
+    "route": "/entries/rhombic_dodecahedron_surface.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/rhombic_dodecahedron_surface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

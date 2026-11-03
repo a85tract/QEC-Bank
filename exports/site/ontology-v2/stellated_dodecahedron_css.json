@@ -1,0 +1,175 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stellated_dodecahedron_css#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:stellated_dodecahedron_css:views:0@a818aaccb8453fe87fec9979bbc0e206ec2a0541344be1d5132663b816253315",
+      "field": "views",
+      "id": "atlas-assertion:stellated_dodecahedron_css:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:stellated_dodecahedron_css#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:stellated_dodecahedron_css:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:stellated_dodecahedron_css:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:stellated_dodecahedron_css#object",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:stellated_dodecahedron_css#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:stellated_dodecahedron_css#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/stellated_dodecahedron_css/card.yaml#/identity",
+          "atlas:atlas/stellated_dodecahedron_css/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/stellated_dodecahedron_css/stellated_dodecahedron_css-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/hyperbolic/2d_hyperbolic/stellated_dodecahedron_css.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:stellated_dodecahedron_css"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:stellated_dodecahedron_css#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "stellated_dodecahedron_css",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:stellated_dodecahedron_css",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "20be1f8a97a2e3c77169d7830d4eeb39b5e1c4652a6036d8b5fd48636ba64698",
+          "payload_sha256": "0ad07262ac04972b5586bdde364e04c36e97e222c3258ea53f1f0a91940c6b1b",
+          "semantic_hash": "8669c14185becfb519bf011b2652790f3fb9550d001c1471e5d4a5d783da2ffc"
+        },
+        "id": "atlas-instance:stellated_dodecahedron_css:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:8669c14185becfb519bf011b2652790f3fb9550d001c1471e5d4a5d783da2ffc:small-exact-distance-enumeration:1604dfe8a86c1129710c430625196ec2d8b45f031bf18b4c4fd952de6de23083@1",
+            "certificate:8669c14185becfb519bf011b2652790f3fb9550d001c1471e5d4a5d783da2ffc:structural-validity:341ec0c338588ef56654a1ccd61df538692bac6ceed9392a1ce0187ac1c671e5@1"
+          ],
+          "instance_record_sha256": "4b85f5198af785ac30ed5dda88fbd2c9bbaeb6b83240000d848262799d70cd75",
+          "lean_report_sha256": "e7bc7bb9a3dc27634531d046ab3c53defd5b66f2830068a8b2c042190eaf3540",
+          "semantic_hash": "8669c14185becfb519bf011b2652790f3fb9550d001c1471e5d4a5d783da2ffc"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "73f17fb595f624c5c772c9fb2d194c385b83a72642f2d4dba73c9097d9272cbc",
+        "v2_envelope_id": "formal-ir-v2:stellated_dodecahedron_css:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:stellated_dodecahedron_css#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:stellated_dodecahedron_css:views:0",
+      "atlas-assertion:stellated_dodecahedron_css:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:stellated_dodecahedron_css#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:stellated_dodecahedron_css:views:0@a818aaccb8453fe87fec9979bbc0e206ec2a0541344be1d5132663b816253315",
+      "atlas-evidence:stellated_dodecahedron_css:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:stellated_dodecahedron_css",
+    "instance_ids": [
+      "atlas-instance:stellated_dodecahedron_css:primary"
+    ],
+    "page_id": "atlas-page:stellated_dodecahedron_css",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:stellated_dodecahedron_css"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:stellated_dodecahedron_css#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:stellated_dodecahedron_css#object",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:stellated_dodecahedron_css",
+    "presented_entity_ids": [
+      "eczoo-entity:stellated_dodecahedron_css#object"
+    ],
+    "primary_entity_id": "eczoo-entity:stellated_dodecahedron_css#object",
+    "redirects": [],
+    "route": "/entries/stellated_dodecahedron_css.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/stellated_dodecahedron_css"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

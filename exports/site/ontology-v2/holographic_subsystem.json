@@ -1,0 +1,185 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:holographic_subsystem",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:holographic_subsystem:views:0@9a9d28fe4280624e1099879bc55a5faf18049cce8cca3e0ae2ca68016bd75d05",
+      "field": "views",
+      "id": "atlas-assertion:holographic_subsystem:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:holographic_subsystem",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:holographic_subsystem:categories:0@30cb5a12ed5b353a0998abc7009a3e5edde30a9ef237c53fcd2e1317634c84d7",
+      "field": "categories",
+      "id": "atlas-assertion:holographic_subsystem:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:holographic_subsystem",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:holographic_subsystem:categories:1@5e49b892424c38954100549005740292183e90c38eed990192bfb88dd899c8cc",
+      "field": "categories",
+      "id": "atlas-assertion:holographic_subsystem:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:holographic_subsystem#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:holographic_subsystem#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/holographic_subsystem",
+          "atlas:atlas/holographic_subsystem/card.yaml#/identity",
+          "t222:docs/lit/holographic_subsystem/holographic_subsystem-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/subsystem/holographic_subsystem.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo holographic_subsystem identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:holographic_subsystem"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:holographic_subsystem#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "holographic_subsystem",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:holographic_subsystem",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "2f2e06c0d9a990273beaf1ede9119585f71dbc5931c881e4e96a87eaa7b5226b",
+          "payload_sha256": "1aa54fbc8f63797d470c1e11401c059d29dfe5c413b2eb4e203684657ac0812b",
+          "semantic_hash": "4ac730f4ba921805ac23a65925e504e4cdca6e051030749b10d22611f2e5e32e"
+        },
+        "id": "atlas-instance:holographic_subsystem:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:4ac730f4ba921805ac23a65925e504e4cdca6e051030749b10d22611f2e5e32e:structural-validity:d9c3eba0867e036d80ee055bfacaec81a80b70e2b2966450dda1e23faca73252@1"
+          ],
+          "instance_record_sha256": "4e34bde869e981fefc7923c1886c32996b410aff87699459a78779be64d4db62",
+          "lean_report_sha256": "9c585c6c1566b9b888ce4045426569790f1458cc869e6dc7f6c2ed5b85075bb7",
+          "semantic_hash": "4ac730f4ba921805ac23a65925e504e4cdca6e051030749b10d22611f2e5e32e"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b94e6613852e64ef209673988018cb8cc97a762e177e866fbe6694a968eb3613",
+        "v2_envelope_id": "formal-ir-v2:holographic_subsystem:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:holographic_subsystem#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:holographic_subsystem:views:0",
+      "atlas-assertion:holographic_subsystem:categories:0",
+      "atlas-assertion:holographic_subsystem:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:holographic_subsystem#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:holographic_subsystem:views:0@9a9d28fe4280624e1099879bc55a5faf18049cce8cca3e0ae2ca68016bd75d05",
+      "atlas-evidence:holographic_subsystem:categories:0@30cb5a12ed5b353a0998abc7009a3e5edde30a9ef237c53fcd2e1317634c84d7",
+      "atlas-evidence:holographic_subsystem:categories:1@5e49b892424c38954100549005740292183e90c38eed990192bfb88dd899c8cc"
+    ],
+    "formalization_id": "atlas-formalization:holographic_subsystem",
+    "instance_ids": [
+      "atlas-instance:holographic_subsystem:primary"
+    ],
+    "page_id": "atlas-page:holographic_subsystem",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:holographic_subsystem"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:holographic_subsystem#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:holographic_subsystem#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:holographic_subsystem",
+    "presented_entity_ids": [
+      "eczoo-entity:holographic_subsystem#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:holographic_subsystem#collection",
+    "redirects": [],
+    "route": "/entries/holographic_subsystem.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/holographic_subsystem"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

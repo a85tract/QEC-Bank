@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:cyclic_hgp",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:cyclic_hgp:views:0@8540f92c9135c418daeb7923c680984e3859d2c034965ab014181bf5e5517446",
+      "field": "views",
+      "id": "atlas-assertion:cyclic_hgp:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:cyclic_hgp",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:cyclic_hgp:categories:0@db1865bb5e90d8584fff23d715810890da082fa0fe4955987588badb81f7d752",
+      "field": "categories",
+      "id": "atlas-assertion:cyclic_hgp:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:cyclic_hgp#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:cyclic_hgp#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/cyclic_hgp",
+          "atlas:atlas/cyclic_hgp/card.yaml#/identity",
+          "t222:docs/lit/cyclic_hgp/cyclic_hgp-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/qldpc/balanced_product/tensor/singlesector/hypergraph/cyclic_hgp.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo cyclic_hgp identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:cyclic_hgp"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:cyclic_hgp#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "cyclic_hgp",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:cyclic_hgp",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "ee739051dcfc614b33e681b37fff18ab1b3ffd504c39784b137d696be997980d",
+          "payload_sha256": "4db9e0884232fc181dab13e472e937bb40a7b2cbdea57973bda05194d3254569",
+          "semantic_hash": "4ca2d791e4f0db2fd8531581f330398b4f938d7d5184a2629dddc9ac5fcba9af"
+        },
+        "id": "atlas-instance:cyclic_hgp:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:4ca2d791e4f0db2fd8531581f330398b4f938d7d5184a2629dddc9ac5fcba9af:structural-validity:152cf633d63015e8bd8278462963f78ffeb61a124aa9eaa4e0a0b8a32afe7cbb@1"
+          ],
+          "instance_record_sha256": "16c11937b5b7790f22dc90c046befca2077a5034d99bcbfd147165832efa0fbd",
+          "lean_report_sha256": "d394d3e63ca7df4283c91428b17567cbd9f2cf09979cdd58c0c7b87d4d83f3f2",
+          "semantic_hash": "4ca2d791e4f0db2fd8531581f330398b4f938d7d5184a2629dddc9ac5fcba9af"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "a415aee0093aa4878fb9f0cde6dd13581e1a1a033ff0b7b743389e78c2c7c731",
+        "v2_envelope_id": "formal-ir-v2:cyclic_hgp:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:cyclic_hgp#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:cyclic_hgp:views:0",
+      "atlas-assertion:cyclic_hgp:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:cyclic_hgp#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:cyclic_hgp:views:0@8540f92c9135c418daeb7923c680984e3859d2c034965ab014181bf5e5517446",
+      "atlas-evidence:cyclic_hgp:categories:0@db1865bb5e90d8584fff23d715810890da082fa0fe4955987588badb81f7d752"
+    ],
+    "formalization_id": "atlas-formalization:cyclic_hgp",
+    "instance_ids": [
+      "atlas-instance:cyclic_hgp:primary"
+    ],
+    "page_id": "atlas-page:cyclic_hgp",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:cyclic_hgp"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:cyclic_hgp#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:cyclic_hgp#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:cyclic_hgp",
+    "presented_entity_ids": [
+      "eczoo-entity:cyclic_hgp#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:cyclic_hgp#collection",
+    "redirects": [],
+    "route": "/entries/cyclic_hgp.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/cyclic_hgp"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:ball_color",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:ball_color:views:0@1de91333c9234fa4c1a25f50f81d49e4bd138c62e186df94abfd32fcc293384a",
+      "field": "views",
+      "id": "atlas-assertion:ball_color:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:ball_color",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:ball_color:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:ball_color:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:ball_color#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:ball_color#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:ball_color#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/ball_color/card.yaml#/identity",
+          "atlas:atlas/ball_color/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/ball_color/ball_color-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/color/ball_color.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:ball_color"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:ball_color#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "ball_color",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:ball_color",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "b1fed47dae38e5c2000db60cbce450a7c6d3e178737764477a28977803cff5db",
+          "payload_sha256": "d409f8a729a2afbb06eadf9a6206563314493d573182e265e55db3d6d92e72b9",
+          "semantic_hash": "007345d21961b9d70dd295f7b1afcb2f10284913acca23b49c4de1501111be68"
+        },
+        "id": "atlas-instance:ball_color:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:007345d21961b9d70dd295f7b1afcb2f10284913acca23b49c4de1501111be68:small-exact-distance-enumeration:ff0421296973cc9f2708424ecb404db634255bb9bbcbd58532c408c27f9da1cc@1",
+            "certificate:007345d21961b9d70dd295f7b1afcb2f10284913acca23b49c4de1501111be68:structural-validity:3b9a2c4131631fbd9b085e932c5020af558df1bbd15587a82e7ea2a580bc44b9@1"
+          ],
+          "instance_record_sha256": "10b5642e36ff17ba29b2fa02967c2fccc97e31207649145647dd8420422932b7",
+          "lean_report_sha256": "14318974afb8eb4d7e3a8e21bddb80666d9cb4fc35bd013a9b003e858731c811",
+          "semantic_hash": "007345d21961b9d70dd295f7b1afcb2f10284913acca23b49c4de1501111be68"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "a04fa4dc3ba7184d6728825b9d0df0159d7544e33283e8bf60c0386096f9a05d",
+        "v2_envelope_id": "formal-ir-v2:ball_color:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:ball_color#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:ball_color:views:0",
+      "atlas-assertion:ball_color:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:ball_color#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:ball_color:views:0@1de91333c9234fa4c1a25f50f81d49e4bd138c62e186df94abfd32fcc293384a",
+      "atlas-evidence:ball_color:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:ball_color",
+    "instance_ids": [
+      "atlas-instance:ball_color:primary"
+    ],
+    "page_id": "atlas-page:ball_color",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:ball_color"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:ball_color#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:ball_color#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:ball_color",
+    "presented_entity_ids": [
+      "eczoo-entity:ball_color#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:ball_color#collection",
+    "redirects": [],
+    "route": "/entries/ball_color.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/ball_color"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

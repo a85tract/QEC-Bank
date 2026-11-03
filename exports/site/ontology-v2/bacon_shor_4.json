@@ -1,0 +1,181 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:bacon_shor_4",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor_4:views:0@37f7ce1707d91d431d0953837378a28a5de32fb3b5f481992c2ff9e2f4633fa6",
+      "field": "views",
+      "id": "atlas-assertion:bacon_shor_4:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:bacon_shor_4",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor_4:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:bacon_shor_4:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:bacon_shor_4#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:bacon_shor_4:categories:1@fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389",
+      "field": "categories",
+      "id": "atlas-assertion:bacon_shor_4:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T234 same-frozen-cohort recovery draft; T231 predecessor lineage only, no prior admission; fresh independent review and release pending",
+      "entity_id": "eczoo-entity:bacon_shor_4#object",
+      "status": "draft",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:bacon_shor_4#object",
+      "lineage": {
+        "action": "new-admission",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T234 same-frozen-cohort recovery prospective scope; T231 predecessor lineage, not item admission; review pending",
+        "evidence_locators": [
+          "docs/tasks/T234.md",
+          "docs/tasks/T231.md",
+          "docs/lit/bacon_shor_4"
+        ]
+      },
+      "scope_boundary": "The individual fixed 2-by-2 Bacon-Shor subsystem member named by the pinned bacon_shor_4 node, in the positive center sector. This is distinct from the whole collection indexed by bacon_shor. The gauge subsystem is retained; neither the center-only subspace code nor a gauge-fixed code is the subject.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:bacon_shor_4"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:bacon_shor_4#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "bacon_shor_4",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton; build() with params={} and row-major q=2*r+c",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:bacon_shor_4",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "97e2f0d671a097eb8c1649ddc3fbf60a7dfddf7eeb382a2ee8ec791f5f7b0ccd",
+          "payload_sha256": "2d7de5f414b2c780e39d128099e7876e0e460e78d5b7caad21a6bcbf4cbe3630",
+          "semantic_hash": "e2eb2c5a42f4116b097d57a8d068534858b04a63a2b48bf17654dff28fabd6e4"
+        },
+        "id": "atlas-instance:bacon_shor_4:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:e2eb2c5a42f4116b097d57a8d068534858b04a63a2b48bf17654dff28fabd6e4:small-exact-distance-enumeration:271b03921909450750bb1d1e462d4b68b5b50302a41e961dc447240854903d06@1",
+            "certificate:e2eb2c5a42f4116b097d57a8d068534858b04a63a2b48bf17654dff28fabd6e4:structural-validity:d9c3eba0867e036d80ee055bfacaec81a80b70e2b2966450dda1e23faca73252@1"
+          ],
+          "lean_report_sha256": "3e205852a5e756d13ede454c9df415bcf318570444464073e8c2e2bbc86e0b99",
+          "semantic_hash": "e2eb2c5a42f4116b097d57a8d068534858b04a63a2b48bf17654dff28fabd6e4"
+        },
+        "source_binding_status": "clean",
+        "v2_envelope_id": "formal-ir-v2:bacon_shor_4:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:bacon_shor_4#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:bacon_shor_4:views:0",
+      "atlas-assertion:bacon_shor_4:categories:0",
+      "atlas-assertion:bacon_shor_4:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:bacon_shor_4#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:bacon_shor_4:views:0@37f7ce1707d91d431d0953837378a28a5de32fb3b5f481992c2ff9e2f4633fa6",
+      "atlas-evidence:bacon_shor_4:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:bacon_shor_4:categories:1@fb9832861aca3f111758b05808367c4a82b07499b5193380ec6afea736302389"
+    ],
+    "formalization_id": "atlas-formalization:bacon_shor_4",
+    "instance_ids": [
+      "atlas-instance:bacon_shor_4:primary"
+    ],
+    "page_id": "atlas-page:bacon_shor_4",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:bacon_shor_4"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:bacon_shor_4#object",
+    "completion_scopes": [
+      {
+        "authority": "T234 same-frozen-cohort recovery draft; T231 predecessor lineage only, no prior admission; fresh independent review and release pending",
+        "entity_id": "eczoo-entity:bacon_shor_4#object",
+        "status": "draft",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:bacon_shor_4",
+    "presented_entity_ids": [
+      "eczoo-entity:bacon_shor_4#object"
+    ],
+    "primary_entity_id": "eczoo-entity:bacon_shor_4#object",
+    "redirects": [],
+    "route": "/entries/bacon_shor_4.html",
+    "route_action": "new-route",
+    "route_continuity": "new-admission",
+    "source_path": "atlas/bacon_shor_4"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

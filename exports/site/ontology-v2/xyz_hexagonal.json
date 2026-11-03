@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:xyz_hexagonal",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:xyz_hexagonal:views:0@1faa3d158ef2c61e074f9027302dc6c9787e0b1f8a71857bd0972142400a16ba",
+      "field": "views",
+      "id": "atlas-assertion:xyz_hexagonal:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:xyz_hexagonal",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:xyz_hexagonal:categories:0@44c6d96ed0f9ae85c976f5c0a824c29c91074bde8d310cc6398ac1043b5ecfbf",
+      "field": "categories",
+      "id": "atlas-assertion:xyz_hexagonal:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:xyz_hexagonal#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:xyz_hexagonal#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/xyz_hexagonal",
+          "atlas:atlas/xyz_hexagonal/card.yaml#/identity",
+          "t222:docs/lit/xyz_hexagonal/xyz_hexagonal-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/topological/matching/xyz_hexagonal.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo xyz_hexagonal identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:xyz_hexagonal"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:xyz_hexagonal#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "xyz_hexagonal",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:xyz_hexagonal",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "5622025348ec9d178f9b730a70183842545263eab86b31f3bc164d282f5ff7f4",
+          "payload_sha256": "28270fffe98b68099ecb016583836eab350a719c87a42e7dd9493fbff42bc6d9",
+          "semantic_hash": "8c3089edf80e12a537c23fb686d5f65f91176e217571433769a769853945fdf8"
+        },
+        "id": "atlas-instance:xyz_hexagonal:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:8c3089edf80e12a537c23fb686d5f65f91176e217571433769a769853945fdf8:structural-validity:eee007c53ac83e1236768ead659ff279e3125a0a68992e4af6f9642e407e9c44@1"
+          ],
+          "instance_record_sha256": "e17ab91b2d54affe12ea3aecfe00071fc633683fa402bca54ef0f25538920985",
+          "lean_report_sha256": "2787ec3eaf0b1ac8d871ef7d79d4d402fa7d59e9300b7b73bf582c8e4f44da7b",
+          "semantic_hash": "8c3089edf80e12a537c23fb686d5f65f91176e217571433769a769853945fdf8"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "eb0cf38274bf65f0b25bce9ed1d93878fcb9046126a995c07584fbe2745d6b7a",
+        "v2_envelope_id": "formal-ir-v2:xyz_hexagonal:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:xyz_hexagonal#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:xyz_hexagonal:views:0",
+      "atlas-assertion:xyz_hexagonal:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:xyz_hexagonal#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:xyz_hexagonal:views:0@1faa3d158ef2c61e074f9027302dc6c9787e0b1f8a71857bd0972142400a16ba",
+      "atlas-evidence:xyz_hexagonal:categories:0@44c6d96ed0f9ae85c976f5c0a824c29c91074bde8d310cc6398ac1043b5ecfbf"
+    ],
+    "formalization_id": "atlas-formalization:xyz_hexagonal",
+    "instance_ids": [
+      "atlas-instance:xyz_hexagonal:primary"
+    ],
+    "page_id": "atlas-page:xyz_hexagonal",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:xyz_hexagonal"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:xyz_hexagonal#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:xyz_hexagonal#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:xyz_hexagonal",
+    "presented_entity_ids": [
+      "eczoo-entity:xyz_hexagonal#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:xyz_hexagonal#collection",
+    "redirects": [],
+    "route": "/entries/xyz_hexagonal.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/xyz_hexagonal"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

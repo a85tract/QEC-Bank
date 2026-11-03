@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:higher_dimensional_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:higher_dimensional_surface:views:0@d219afa3d113354d68d8531d7dea08c232945778e85edb58a1a0eb80bc7b35cd",
+      "field": "views",
+      "id": "atlas-assertion:higher_dimensional_surface:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:higher_dimensional_surface",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:higher_dimensional_surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:higher_dimensional_surface:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:higher_dimensional_surface#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:higher_dimensional_surface#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:higher_dimensional_surface#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/higher_dimensional_surface/card.yaml#/identity",
+          "atlas:atlas/higher_dimensional_surface/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/higher_dimensional_surface/higher_dimensional_surface-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/higher_dimensional_surface.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:higher_dimensional_surface"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:higher_dimensional_surface#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "higher_dimensional_surface",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:higher_dimensional_surface",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7d0b59adb57b0f574e3767acb5dc7db596770b221a7ea1ca275392bc35214b6a",
+          "payload_sha256": "59967f63911a7308c7edfa137423ea24cc557b8d03917f68a89a179b5fd2f148",
+          "semantic_hash": "6829cc1835852c1eaf7714b71015025f13ae43a1bba7fde4752e90b8deecd766"
+        },
+        "id": "atlas-instance:higher_dimensional_surface:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:6829cc1835852c1eaf7714b71015025f13ae43a1bba7fde4752e90b8deecd766:small-exact-distance-enumeration:6b5b12b81b16118bdd7ce5fc00e5d7e74460b9c5215790d03eea22382ecc9974@1",
+            "certificate:6829cc1835852c1eaf7714b71015025f13ae43a1bba7fde4752e90b8deecd766:structural-validity:50a68f19516188a22bc4a671d68e2491cb1c2e1d370624f5f47891f3ef1b8be0@1"
+          ],
+          "instance_record_sha256": "3fd2b087c7086437391ea9ba48062a96fc524ada75b670f4291dc06c3ff3017e",
+          "lean_report_sha256": "a52aa9f8316817f00c491f81d37a873ef7bb6b403412f75d0bd6d6719b2f9c7f",
+          "semantic_hash": "6829cc1835852c1eaf7714b71015025f13ae43a1bba7fde4752e90b8deecd766"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "a71909e97c63bb4a9241051ff9d716fd98a169393e1532a85f5c42c0aa6b910f",
+        "v2_envelope_id": "formal-ir-v2:higher_dimensional_surface:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:higher_dimensional_surface#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:higher_dimensional_surface:views:0",
+      "atlas-assertion:higher_dimensional_surface:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:higher_dimensional_surface#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:higher_dimensional_surface:views:0@d219afa3d113354d68d8531d7dea08c232945778e85edb58a1a0eb80bc7b35cd",
+      "atlas-evidence:higher_dimensional_surface:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:higher_dimensional_surface",
+    "instance_ids": [
+      "atlas-instance:higher_dimensional_surface:primary"
+    ],
+    "page_id": "atlas-page:higher_dimensional_surface",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:higher_dimensional_surface"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:higher_dimensional_surface#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:higher_dimensional_surface#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:higher_dimensional_surface",
+    "presented_entity_ids": [
+      "eczoo-entity:higher_dimensional_surface#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:higher_dimensional_surface#collection",
+    "redirects": [],
+    "route": "/entries/higher_dimensional_surface.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/higher_dimensional_surface"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

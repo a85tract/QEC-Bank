@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:campbell_howard",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:campbell_howard:views:0@f06c580b70ecdc5ad374d94d17cca541e0b7f417d34f310e6b68d5bc7d71c05b",
+      "field": "views",
+      "id": "atlas-assertion:campbell_howard:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:campbell_howard",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:campbell_howard:categories:0@9d235d6932bf0d1d8d56239d476cc85d189d6a4f41534c344164cbda597023f9",
+      "field": "categories",
+      "id": "atlas-assertion:campbell_howard:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:campbell_howard#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:campbell_howard#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/campbell_howard",
+          "atlas:atlas/campbell_howard/card.yaml#/identity",
+          "t222:docs/lit/campbell_howard/campbell_howard-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/magic/k-divisible/campbell_howard.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo campbell_howard identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:campbell_howard"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:campbell_howard#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "campbell_howard",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:campbell_howard",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "2fc40fdf83b7ff8d9f92ef122ce515a22b82d982d66214fd214bd5ce2b24ff38",
+          "payload_sha256": "d6ccca0355bf6b4765541871ad34398929d778f5c2eaca45a50365ea4365345c",
+          "semantic_hash": "fb103bc79acedf240280363d95e52c2f084c5498abbd6d0c12cdd5b345d258dc"
+        },
+        "id": "atlas-instance:campbell_howard:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:fb103bc79acedf240280363d95e52c2f084c5498abbd6d0c12cdd5b345d258dc:structural-validity:6730167faaafef5bf0a14b6d05e28f3ae58d10a92243607e51230d1515665972@1"
+          ],
+          "instance_record_sha256": "1b406820365550812fd4da29b266b399b143e756f9ffe4bb2568b3f94804b337",
+          "lean_report_sha256": "49a9bcbde1d5edb620f36af75a72984a9180cd5a87b5b5afbf8615004040b283",
+          "semantic_hash": "fb103bc79acedf240280363d95e52c2f084c5498abbd6d0c12cdd5b345d258dc"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "adabc8daabc62402d357a4a1ca9ed7b2b4b28799a824334286083214ecd0d365",
+        "v2_envelope_id": "formal-ir-v2:campbell_howard:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:campbell_howard#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:campbell_howard:views:0",
+      "atlas-assertion:campbell_howard:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:campbell_howard#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:campbell_howard:views:0@f06c580b70ecdc5ad374d94d17cca541e0b7f417d34f310e6b68d5bc7d71c05b",
+      "atlas-evidence:campbell_howard:categories:0@9d235d6932bf0d1d8d56239d476cc85d189d6a4f41534c344164cbda597023f9"
+    ],
+    "formalization_id": "atlas-formalization:campbell_howard",
+    "instance_ids": [
+      "atlas-instance:campbell_howard:primary"
+    ],
+    "page_id": "atlas-page:campbell_howard",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:campbell_howard"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:campbell_howard#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:campbell_howard#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:campbell_howard",
+    "presented_entity_ids": [
+      "eczoo-entity:campbell_howard#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:campbell_howard#collection",
+    "redirects": [],
+    "route": "/entries/campbell_howard.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/campbell_howard"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

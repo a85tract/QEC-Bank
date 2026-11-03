@@ -1,0 +1,179 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qubit_8_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:qubit_8_1_3:views:0@f230569799de7eeb0464e65d055b1eca2f6d79f16dabd173614940f6d960d0c3",
+      "field": "views",
+      "id": "atlas-assertion:qubit_8_1_3:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qubit_8_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:qubit_8_1_3:categories:0@c14036141ca11a7cadb8e45cec5cd3fded4307ff93aa82af7d387615e5fabd95",
+      "field": "categories",
+      "id": "atlas-assertion:qubit_8_1_3:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:qubit_8_1_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:qubit_8_1_3:categories:1@fe5bab0707dfda29d5caad6139abfb1ef6bce2447b7e7fb7980ab12848d7408e",
+      "field": "categories",
+      "id": "atlas-assertion:qubit_8_1_3:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T234 same-frozen-cohort recovery; T231 draft reused; independent review and release pending",
+      "entity_id": "eczoo-entity:qubit_8_1_3#object",
+      "status": "draft",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:qubit_8_1_3#object",
+      "lineage": {
+        "action": "new-T231-admission-candidate",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T234 same-frozen-cohort recovery; source draft lineage T231; producer draft pending fresh independent review",
+        "evidence_locators": [
+          "docs/tasks/T234.md",
+          "docs/tasks/T231.md",
+          "docs/lit/qubit_8_1_3/qubit_8_1_3-eczoo-intake.md",
+          "https://arxiv.org/pdf/quant-ph/9603022v1#page=2"
+        ]
+      },
+      "scope_boundary": "The fixed Plenio-Vedral-Knight subspace of quant-ph/9603022v1 equations (8)-(9), including their relative signs; its phase-free tableau is expressed in the explicitly reversible Pauli frame Q = IIIIXZZY.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:qubit_8_1_3"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:qubit_8_1_3#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "qubit_8_1_3",
+  "formalization": {
+    "constructor_relation": "exact-representation-with-explicit-Pauli-frame",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:qubit_8_1_3",
+    "instance_role": "exact-fixed-block",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "0682bb8cccd41bcb74daf04b86692cfb19babb4dd8913a05af9911269fe2aa69",
+          "payload_sha256": "b767ec978720432177025cef3531937f73d1af52d914b41c75626722f0d266ad",
+          "semantic_hash": "fdb006b294e2732b687b92ad972a3cc6d7f1464fcc0386196b7ef598bc142096"
+        },
+        "id": "atlas-instance:qubit_8_1_3:n8",
+        "label": "n8",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:fdb006b294e2732b687b92ad972a3cc6d7f1464fcc0386196b7ef598bc142096:small-exact-distance-enumeration:96af9b6f7b13ffd7d2e2319e3a945cb27c6d94d8c468e4864af36e604f058d62@1",
+            "certificate:fdb006b294e2732b687b92ad972a3cc6d7f1464fcc0386196b7ef598bc142096:structural-validity:9dd798888343f676f719d19e4746068e518f0e5c045d313e82f92dc6aee561ed@1"
+          ],
+          "lean_report_sha256": "ba25b85156f5c58f95a44442c0b53fe51c287182849dbc603e059188154a31ec",
+          "semantic_hash": "fdb006b294e2732b687b92ad972a3cc6d7f1464fcc0386196b7ef598bc142096"
+        },
+        "source_binding_status": "clean",
+        "v2_envelope_id": "formal-ir-v2:qubit_8_1_3:n8"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:qubit_8_1_3#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:qubit_8_1_3:views:0",
+      "atlas-assertion:qubit_8_1_3:categories:0",
+      "atlas-assertion:qubit_8_1_3:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:qubit_8_1_3#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:qubit_8_1_3:views:0@f230569799de7eeb0464e65d055b1eca2f6d79f16dabd173614940f6d960d0c3",
+      "atlas-evidence:qubit_8_1_3:categories:0@c14036141ca11a7cadb8e45cec5cd3fded4307ff93aa82af7d387615e5fabd95",
+      "atlas-evidence:qubit_8_1_3:categories:1@fe5bab0707dfda29d5caad6139abfb1ef6bce2447b7e7fb7980ab12848d7408e"
+    ],
+    "formalization_id": "atlas-formalization:qubit_8_1_3",
+    "instance_ids": [
+      "atlas-instance:qubit_8_1_3:n8"
+    ],
+    "page_id": "atlas-page:qubit_8_1_3",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:qubit_8_1_3"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:qubit_8_1_3#object",
+    "completion_scopes": [
+      {
+        "authority": "T234 same-frozen-cohort recovery; T231 draft reused; independent review and release pending",
+        "entity_id": "eczoo-entity:qubit_8_1_3#object",
+        "status": "draft",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:qubit_8_1_3",
+    "presented_entity_ids": [
+      "eczoo-entity:qubit_8_1_3#object"
+    ],
+    "primary_entity_id": "eczoo-entity:qubit_8_1_3#object",
+    "redirects": [],
+    "route": "/entries/qubit_8_1_3.html",
+    "route_action": "new-route",
+    "route_continuity": "new-entry",
+    "source_path": "atlas/qubit_8_1_3"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

@@ -1,0 +1,177 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_parity",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:quantum_parity:views:0@47e6b753f791669aa60eb1d63f93ba720e65bab5963319504fb5e1022e8cce09",
+      "field": "views",
+      "id": "atlas-assertion:quantum_parity:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_parity",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:quantum_parity:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_parity:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:quantum_parity#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:quantum_parity#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:quantum_parity#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/quantum_parity/card.yaml#/identity",
+          "atlas:atlas/quantum_parity/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/quantum_parity/quantum_parity-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/css/quantum_parity.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_parity"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:quantum_parity#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_parity",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_parity",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "7f9e539357b723344ad432ccdf1b008a644cff5a6a5083c48e0c5eddc859dc61",
+          "payload_sha256": "7fc276491e27e18dbe159c11333772f0bd3774f7f16af7b2762407267e2d7110",
+          "semantic_hash": "d200f51056dad4fb16bbce8769fb65bb4e967ad28b81ea26bc980bd3b7971501"
+        },
+        "id": "atlas-instance:quantum_parity:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:d200f51056dad4fb16bbce8769fb65bb4e967ad28b81ea26bc980bd3b7971501:small-exact-distance-enumeration:af37b0bac377d20bb198c545de1800ae342cc84a3ddfefaaa7cb265a8c0760f1@1",
+            "certificate:d200f51056dad4fb16bbce8769fb65bb4e967ad28b81ea26bc980bd3b7971501:structural-validity:974b720a64a8a809e01da5eb09f16b471b41608dcc1f348fd2c322bce0430006@1"
+          ],
+          "instance_record_sha256": "a47a6f70d3fffff24a563a269440144486507666b155028b826a42972ad0ba50",
+          "lean_report_sha256": "2b9196f8fff7be0908383be04a3f5c3d0bb38f282b440cb9045ebb98ec1511f0",
+          "semantic_hash": "d200f51056dad4fb16bbce8769fb65bb4e967ad28b81ea26bc980bd3b7971501"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "2d7aa35339f2eee500b48a9916c904ce0ae0a9d7ffe3269e8d4ca612a2760cfb",
+        "v2_envelope_id": "formal-ir-v2:quantum_parity:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:quantum_parity#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_parity:views:0",
+      "atlas-assertion:quantum_parity:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:quantum_parity#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_parity:views:0@47e6b753f791669aa60eb1d63f93ba720e65bab5963319504fb5e1022e8cce09",
+      "atlas-evidence:quantum_parity:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418"
+    ],
+    "formalization_id": "atlas-formalization:quantum_parity",
+    "instance_ids": [
+      "atlas-instance:quantum_parity:primary"
+    ],
+    "page_id": "atlas-page:quantum_parity",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:quantum_parity"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:quantum_parity#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:quantum_parity#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_parity",
+    "presented_entity_ids": [
+      "eczoo-entity:quantum_parity#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:quantum_parity#collection",
+    "redirects": [],
+    "route": "/entries/quantum_parity.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/quantum_parity"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

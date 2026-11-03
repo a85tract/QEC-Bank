@@ -1,0 +1,213 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:klein_bottle#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:klein_bottle:views:0@0bf15b4f5027390a422c375959e218ade7771c28e454d486e002d99d1c78d9d7",
+      "field": "views",
+      "id": "atlas-assertion:klein_bottle:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:klein_bottle#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:klein_bottle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:klein_bottle:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:klein_bottle#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:klein_bottle:categories:1@ef61f820eee20193824d7dee908f4b7b4181b5445f92e4e34574454f6efd090b",
+      "field": "categories",
+      "id": "atlas-assertion:klein_bottle:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+    "status": "lossy"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:klein_bottle#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family",
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:klein_bottle#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:klein_bottle#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+        "status": "lossy"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/klein_bottle/card.yaml#/identity",
+          "atlas:atlas/klein_bottle/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/klein_bottle/klein_bottle-eczoo-intake.md",
+          "t206:codes/quantum/qubits/stabilizer/topological/surface/2d_surface/klein_bottle.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:klein_bottle"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:klein_bottle#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "klein_bottle",
+  "formalization": {
+    "constructor_relation": "parameterized-generator",
+    "coverage": "exact",
+    "domain": "parameterized",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:klein_bottle",
+    "instance_role": "member",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f046c3fe66dfbc8f43ab4f5c361f4fb7c8c96965f9e90d9e7db423f5738f24c6",
+          "payload_sha256": "c1408f14d4144b6b1b4ebf51dcae1cf1ec3307bdf6220fa6042f2b858fe2bce9",
+          "semantic_hash": "31f570e050406751b821304b892922a8c6d82884606f79bcd0b978e122f32925"
+        },
+        "id": "atlas-instance:klein_bottle:L3",
+        "label": "L3",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:31f570e050406751b821304b892922a8c6d82884606f79bcd0b978e122f32925:small-exact-distance-enumeration:ec4aade1489690d97be5562c2be1fffa3423b13eaff270ff2d67d05a6a1beb19@1",
+            "certificate:31f570e050406751b821304b892922a8c6d82884606f79bcd0b978e122f32925:structural-validity:f84597cb6049870b74f7d6ff50f44c969c31af259e1982dee315d0c5e081df64@1"
+          ],
+          "instance_record_sha256": "68bac38eb1ac5731bfb431d5c972babbef6f4743e3be755af17b8d28d262cf19",
+          "lean_report_sha256": "488854d237a6ec267f27a4c0616cd15877e63e3d402a06d473e323cdc529c931",
+          "semantic_hash": "31f570e050406751b821304b892922a8c6d82884606f79bcd0b978e122f32925"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b6eaf161ad932729b6bef44a2e7c19e7a099b25b563ce3448ea229f8f2e61080",
+        "v2_envelope_id": "formal-ir-v2:klein_bottle:L3"
+      },
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "f046c3fe66dfbc8f43ab4f5c361f4fb7c8c96965f9e90d9e7db423f5738f24c6",
+          "payload_sha256": "8e4edf6c30f40288b6bd3c4cd8e91d711bb148ce547f983d255f19ed84729574",
+          "semantic_hash": "96d82bf43fb0955499d189a3e087ce3a7f1dca1699f0853cfb91997abce4bc20"
+        },
+        "id": "atlas-instance:klein_bottle:L4",
+        "label": "L4",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:96d82bf43fb0955499d189a3e087ce3a7f1dca1699f0853cfb91997abce4bc20:structural-validity:f633d6fc412ad7596e08df3119ce674062e6af7bf687d2c6f53d47ce71fcc98e@1"
+          ],
+          "instance_record_sha256": "ecb19cd3805a89039b9ba99d6e3d53e839aaa4f99f853f0c8c50cce7fbc19d83",
+          "lean_report_sha256": "8ae67ec3d347699c4344444268b33a08252ac8b16217ce24daec75f9eb56a30c",
+          "semantic_hash": "96d82bf43fb0955499d189a3e087ce3a7f1dca1699f0853cfb91997abce4bc20"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "568395b20f76dea416c3a2fa12cd00f0fe86d95895433828d12d6acaad482fbf",
+        "v2_envelope_id": "formal-ir-v2:klein_bottle:L4"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 2,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:klein_bottle#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:klein_bottle:views:0",
+      "atlas-assertion:klein_bottle:categories:0",
+      "atlas-assertion:klein_bottle:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:klein_bottle#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:klein_bottle:views:0@0bf15b4f5027390a422c375959e218ade7771c28e454d486e002d99d1c78d9d7",
+      "atlas-evidence:klein_bottle:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:klein_bottle:categories:1@ef61f820eee20193824d7dee908f4b7b4181b5445f92e4e34574454f6efd090b"
+    ],
+    "formalization_id": "atlas-formalization:klein_bottle",
+    "instance_ids": [
+      "atlas-instance:klein_bottle:L3",
+      "atlas-instance:klein_bottle:L4"
+    ],
+    "page_id": "atlas-page:klein_bottle",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:klein_bottle"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:klein_bottle#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:klein_bottle#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:klein_bottle",
+    "presented_entity_ids": [
+      "eczoo-entity:klein_bottle#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:klein_bottle#collection",
+    "redirects": [],
+    "route": "/entries/klein_bottle.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/klein_bottle"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

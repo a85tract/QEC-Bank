@@ -1,0 +1,189 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:trapezoid",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:trapezoid:views:0@3d0927105545574c7565e81105a03073581e92553a3183958f2e9697944152fb",
+      "field": "views",
+      "id": "atlas-assertion:trapezoid:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:trapezoid",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:trapezoid:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:trapezoid:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:trapezoid#collection",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:trapezoid:categories:1@1d007798881d02d7b8b3074d511175d5ddc13a8629a5ae23c86a5a65ed3006c9",
+      "field": "categories",
+      "id": "atlas-assertion:trapezoid:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+    "status": "lossy"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:trapezoid#collection",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family",
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:trapezoid#collection",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:trapezoid#collection@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "reason": "The five-way compatibility vocabulary loses independent ontology axes.",
+        "status": "lossy"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/trapezoid/card.yaml#/identity",
+          "atlas:atlas/trapezoid/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/trapezoid/trapezoid-eczoo-intake.md",
+          "t206:codes/quantum/qubits/subsystem/qldpc/bbs/trapezoid.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:trapezoid"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:trapezoid#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "trapezoid",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:trapezoid",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "807ff1753201bc3cfe9a4160106bd24edd9b61d4fbc80ec5062de44ecf9e03a0",
+          "payload_sha256": "5aa533803a9edb77ab2f487a50ca8c0f664cb675df7823aebfba3284773b92ee",
+          "semantic_hash": "527a60f2040d512579c234b1f9fff51adac742ef86bc10b4c7a31246ebb9e3fb"
+        },
+        "id": "atlas-instance:trapezoid:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "subsystem-gauge",
+          "certificate_ids": [
+            "certificate:527a60f2040d512579c234b1f9fff51adac742ef86bc10b4c7a31246ebb9e3fb:structural-validity:d3790451a391ff8611a44c2b2cafe954084b1fd101fe356cf43d2e0f54cff205@1"
+          ],
+          "instance_record_sha256": "e3964307c1a9e2aef85b8af1abce8315fe9b8b0612a75b86c2d9a92ae9915092",
+          "lean_report_sha256": "cd756d5ea2a7b6d23a35c3ac627ee15034746dc3dec8bd11e3095eb50bb16aa4",
+          "semantic_hash": "527a60f2040d512579c234b1f9fff51adac742ef86bc10b4c7a31246ebb9e3fb"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "5aacfc7402e4fe0bde8fd2dd026dcc1ac9865205861cfb003f255ff40455d3a3",
+        "v2_envelope_id": "formal-ir-v2:trapezoid:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:trapezoid#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:trapezoid:views:0",
+      "atlas-assertion:trapezoid:categories:0",
+      "atlas-assertion:trapezoid:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:trapezoid#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:trapezoid:views:0@3d0927105545574c7565e81105a03073581e92553a3183958f2e9697944152fb",
+      "atlas-evidence:trapezoid:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:trapezoid:categories:1@1d007798881d02d7b8b3074d511175d5ddc13a8629a5ae23c86a5a65ed3006c9"
+    ],
+    "formalization_id": "atlas-formalization:trapezoid",
+    "instance_ids": [
+      "atlas-instance:trapezoid:primary"
+    ],
+    "page_id": "atlas-page:trapezoid",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:trapezoid"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:trapezoid#collection",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:trapezoid#collection",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:trapezoid",
+    "presented_entity_ids": [
+      "eczoo-entity:trapezoid#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:trapezoid#collection",
+    "redirects": [],
+    "route": "/entries/trapezoid.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/trapezoid"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

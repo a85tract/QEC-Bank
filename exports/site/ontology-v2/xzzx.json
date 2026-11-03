@@ -1,0 +1,172 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:xzzx",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:xzzx:views:0@f3088e02414a098e25545d30066440c6b0bcfc6c637addb764679aac8361f799",
+      "field": "views",
+      "id": "atlas-assertion:xzzx:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:xzzx",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:xzzx:categories:0@2321474b313898d4cae0900d24dac6c9ff620c7780f7118ecb45ac104ddd4d9e",
+      "field": "categories",
+      "id": "atlas-assertion:xzzx:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "family"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T234 same-cohort recovery; predecessor draft lineage T231; independent controller review and release pending",
+      "entity_id": "eczoo-entity:xzzx#collection",
+      "status": "draft",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "indexed-family"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:xzzx#collection",
+      "lineage": {
+        "action": "new-entry",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "family"
+      },
+      "provenance": {
+        "authority": "T234",
+        "evidence_locators": [
+          "docs/lit/xzzx/xzzx-eczoo-intake.md",
+          "https://arxiv.org/pdf/2009.07851v1#page=10"
+        ],
+        "predecessor_authority": "T231"
+      },
+      "scope_boundary": "Planar open-boundary XZZX surface family. Formalization covers only the distance-three specialization of Figure 9, excluding periodic and twisted identifications and all threshold claims.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:xzzx"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:xzzx#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "xzzx",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated; build() has no parameters and implements only the distance-three open patch",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:xzzx",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "ae2a537f858ef63cd9342af81f94516272c1933f0a7668026c017c88d13db884",
+          "payload_sha256": "c9a6e96a8c26d0e8d83839d20c03751caccadb4a17e9e41ed6b45a797d18d2f3",
+          "semantic_hash": "1a83d82a12efdbfb6eec0ba03597c7adf8d45fc0d017e4743467df0fcf271226"
+        },
+        "id": "atlas-instance:xzzx:d3-open",
+        "label": "d3-open",
+        "lean_v1": {
+          "branch": "static-stabilizer",
+          "certificate_ids": [
+            "certificate:1a83d82a12efdbfb6eec0ba03597c7adf8d45fc0d017e4743467df0fcf271226:small-exact-distance-enumeration:ff84f3ab75c575bd51a24bd62d88bbab4886340519f0455ba98c1ad27f1f2a17@1",
+            "certificate:1a83d82a12efdbfb6eec0ba03597c7adf8d45fc0d017e4743467df0fcf271226:structural-validity:de626aa88ac35baa109be33578aac0ad74888f298ef579641b899fab63b8699f@1"
+          ],
+          "lean_report_sha256": "bb2f1a88e3364478242b2ed9c1591cb5c3c39b84dc6600677f7b1d4e0e391f8e",
+          "semantic_hash": "1a83d82a12efdbfb6eec0ba03597c7adf8d45fc0d017e4743467df0fcf271226"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "bfeecae46db9d09929bc934a57fb815942c36ec36e8855e621410e179bd7237c",
+        "v2_envelope_id": "formal-ir-v2:xzzx:d3-open"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:xzzx#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:xzzx:views:0",
+      "atlas-assertion:xzzx:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:xzzx#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:xzzx:views:0@f3088e02414a098e25545d30066440c6b0bcfc6c637addb764679aac8361f799",
+      "atlas-evidence:xzzx:categories:0@2321474b313898d4cae0900d24dac6c9ff620c7780f7118ecb45ac104ddd4d9e"
+    ],
+    "formalization_id": "atlas-formalization:xzzx",
+    "instance_ids": [
+      "atlas-instance:xzzx:d3-open"
+    ],
+    "page_id": "atlas-page:xzzx",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:xzzx"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:xzzx#collection",
+    "completion_scopes": [
+      {
+        "authority": "T234 same-cohort recovery; predecessor draft lineage T231; independent controller review and release pending",
+        "entity_id": "eczoo-entity:xzzx#collection",
+        "status": "draft",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:xzzx",
+    "presented_entity_ids": [
+      "eczoo-entity:xzzx#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:xzzx#collection",
+    "redirects": [],
+    "route": "/entries/xzzx.html",
+    "route_action": "new-entry-route",
+    "route_continuity": "new-route",
+    "source_path": "atlas/xzzx"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

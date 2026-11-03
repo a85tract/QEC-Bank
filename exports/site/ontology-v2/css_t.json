@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:css_t",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:css_t:views:0@281d230eeb51607fbe2b87f8fffca9db43cde6e01b40acbdc0950391a7f556de",
+      "field": "views",
+      "id": "atlas-assertion:css_t:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:css_t",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:css_t:categories:0@acc7398c5cc1b94c904d2f67fbc10908ae50fb083aebb4155f1ee72bef3e32f2",
+      "field": "categories",
+      "id": "atlas-assertion:css_t:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:css-t#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:css-t#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/css-t",
+          "atlas:atlas/css_t/card.yaml#/identity",
+          "t222:docs/lit/css_t/css_t-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/magic/k-orthogonal/css-t.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo css-t identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:css-t"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:css-t#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "css_t",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:css_t",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "6b65ff41581a165922a99258dab5ce65f5731facb4198d279f2c32b1cc5bdad6",
+          "payload_sha256": "8ba7da1403a6e43ea0de0115f23def09dd1eb2aedfe257b86dc890eb0564a2ca",
+          "semantic_hash": "4c909ef05a79d86dbc1ade942ae4bad49f1791803caff243ce82985959fbbcc6"
+        },
+        "id": "atlas-instance:css_t:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:4c909ef05a79d86dbc1ade942ae4bad49f1791803caff243ce82985959fbbcc6:structural-validity:de95ce62bcd1dd10d98b805776ab2eac54dafe3de8ba67b79112a2af2383eccc@1"
+          ],
+          "instance_record_sha256": "588d8383658f27254388946c162567210ae1343b0a183dc883533ae872696dea",
+          "lean_report_sha256": "0c7d9410d0d2ef1ac351382519d2c24726fd6b3dd53b6bb80bb41bb47d571e13",
+          "semantic_hash": "4c909ef05a79d86dbc1ade942ae4bad49f1791803caff243ce82985959fbbcc6"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e2a56169133c3a078818392ec59998981bd734465a1ed09ded34f4cc772b6c09",
+        "v2_envelope_id": "formal-ir-v2:css_t:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:css-t#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:css_t:views:0",
+      "atlas-assertion:css_t:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:css-t#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:css_t:views:0@281d230eeb51607fbe2b87f8fffca9db43cde6e01b40acbdc0950391a7f556de",
+      "atlas-evidence:css_t:categories:0@acc7398c5cc1b94c904d2f67fbc10908ae50fb083aebb4155f1ee72bef3e32f2"
+    ],
+    "formalization_id": "atlas-formalization:css_t",
+    "instance_ids": [
+      "atlas-instance:css_t:primary"
+    ],
+    "page_id": "atlas-page:css_t",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:css-t"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:css-t#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:css-t#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:css_t",
+    "presented_entity_ids": [
+      "eczoo-entity:css-t#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:css-t#collection",
+    "redirects": [],
+    "route": "/entries/css_t.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/css_t"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

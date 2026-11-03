@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>From plaquette coloring to a periodic ISG</title><link rel='stylesheet' href='../../../style.css?v=3d2fa6103434'><script defer src='../../../renderer/mathjax-config.js?v=6dc4bd4b7c05'></script><script defer src='https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js'></script></head><body><nav><a href='../../../index.html'>QEC Atlas</a> · <a href='../../../foundations/index.html'>Foundations</a> · <a href='../../../wanted.html'>Open problems</a></nav><h1>From plaquette coloring to a periodic ISG</h1><div class='intuition'><p>This page derives the exact finite object built by <code>constructor.py</code>. It does not use the instantaneous toric-code equivalence as a substitute for the schedule algebra.</p>
+<h2 id='two-labels-on-every-edge'>Two labels on every edge</h2>
+<p>Index the two vertices of cell <code>(i,j)</code> by</p>
+<p><code>A(i,j) = 2(i L2 + j)</code> and <code>B(i,j) = A(i,j) + 1</code>,</p>
+<p>with both coordinates reduced periodically. The constructor uses</p>
+<ul><li><code>z</code>: <code>A(i,j)--B(i,j)</code>,</li><li><code>x</code>: <code>B(i,j)--A(i+1,j)</code>,</li><li><code>y</code>: <code>B(i,j)--A(i,j+1)</code>.</li></ul>
+<p>Direction fixes the measured operator: <code>ZZ</code>, <code>XX</code>, or <code>YY</code>. This is the first edge label.</p>
+<p>The hexagons are properly colored by <code>0,1,2</code>. If an edge separates faces with colors <code>a</code> and <code>b</code>, its round label is the missing color</p>
+<p><code>r = 3 - a - b</code>.</p>
+<p>This is the second edge label. It is transverse to direction: on the shipped <code>3 x 3</code> torus, each round contains three <code>XX</code>, three <code>YY</code>, and three <code>ZZ</code> measurements.</p>
+<h2 id='why-every-round-is-a-perfect-matching'>Why every round is a perfect matching</h2>
+<p>At a honeycomb vertex, the three incident edges separate the three pairs of neighboring face colors: <code>{0,1}</code>, <code>{1,2}</code>, and <code>{2,0}</code>. Their missing colors are respectively <code>2</code>, <code>0</code>, and <code>1</code>. Exactly one incident edge therefore belongs to each round.</p>
+<p>Consequently, edges with one round label are disjoint and cover every vertex. Their two-qubit Pauli measurements commute because they have disjoint support. For <code>n = 2 L1 L2</code>, every round contains <code>n/2 = L1 L2</code> measurements. The constructor turns this proof obligation into a hard check by sorting all round supports and requiring the list <code>0,...,n-1</code> exactly once.</p>
+<h2 id='the-rank-eight-plaquette-backbone'>The rank-eight plaquette backbone</h2>
+<p>For a face <code>p</code>, multiply the directional Pauli operator on each of its six boundary edges. Two different letters meet at every vertex. Their product, up to a phase omitted by the Atlas sign-free representation, is the third Pauli letter. The resulting <code>W_p</code> has weight six.</p>
+<p>There are two commutation cases:</p>
+<ol><li>A measured boundary edge overlaps <code>W_p</code> at two endpoints. Its Pauli letter differs from the plaquette letter at each endpoint, so two anticommutations cancel.</li><li>A measured edge leaving the face overlaps at one vertex. Its direction is the direction unused by the two boundary edges, exactly the Pauli letter left on <code>W_p</code> at that vertex, so the local operators commute.</li></ol>
+<p>Thus <code>W_p</code> commutes with every edge measurement in all rounds.</p>
+<p>For the <code>3 x 3</code> convention, the first three plaquette words are</p>
+<pre><code class='language-text'>XY___ZZ___YX______
+_ZXY__YXZ_________
+___ZXY__YXZ_______</code></pre>
+<p>The reproduction script constructs all nine words from the six-edge face walks. Every word has weight six, all lie in the steady snapshot row space, and their binary rank is eight. The one dependency is the closed-torus global product relation.</p>
+<h2 id='the-measurement-update'>The measurement update</h2>
+<p>Let the current commuting ISG generators be rows <code>g_i</code> and let <code>p</code> be the next measured Pauli.</p>
+<ul><li>If <code>p</code> commutes with every <code>g_i</code> and is outside their span, append it.</li><li>If <code>p</code> is already in the span, only its outcome sign changes; the sign-free row space stays fixed.</li><li>If <code>p</code> anticommutes with generators indexed by a set <code>A</code>, choose one pivot <code>g_a</code>. Replace every other <code>g_b</code>, <code>b in A</code>, by <code>g_b g_a</code>, which now commutes with <code>p</code>, and replace <code>g_a</code> by <code>p</code>.</li></ul>
+<p>The third rule trades one generator for one measurement rather than increasing rank. Binary symplectic addition implements multiplication and the symplectic inner product selects <code>A</code>. This is the exact <code>ISGTracker.measure</code> algorithm used by the constructor.</p>
+<p>Starting from no generators on the <code>3 x 3</code> instance, the ranks after each complete round are</p>
+<pre><code class='language-text'>9, 12, 14, 16, 16, 16,
+16, 16, 16, ...</code></pre>
+<p>Once the rank reaches sixteen, the phase-specific row spaces repeat after each three-round period. Nine current-round measurements plus eight plaquette generators have combined rank sixteen, so their spans share one relation. On eighteen qubits, <code>dynamic_k = 18 - 16 = 2</code>.</p>
+<h2 id='the-torus-coloring-constraint'>The torus coloring constraint</h2>
+<p>The face-adjacency graph is triangular. In the constructor coordinates, a valid closed formula is</p>
+<p><code>c(i,j) = i - j mod 3</code>.</p>
+<p>Transport around the first periodic handle shifts <code>i</code> by <code>L1</code>; transport around the second shifts <code>j</code> by <code>L2</code>. The color returns to itself only if both lengths vanish modulo three. The constructor also tries the opposite orientation and constraint propagation, then rejects a torus when no proper coloring is found.</p>
+<p>The reproduction script checks all <code>2 &lt;= L1,L2 &lt;= 9</code> face graphs and finds a coloring exactly when both dimensions are divisible by three. This finite scan is a regression certificate for the shipped constructor. The winding argument supplies the reason for its accepted family.</p>
+<h2 id='the-direction-grouped-counterexample'>The direction-grouped counterexample</h2>
+<p>The most dangerous wrong constructor measures all <code>XX</code> direction edges, then all <code>YY</code>, then all <code>ZZ</code>. Every round is still a perfect matching. Plaquette products still commute with every measurement. Those two local checks therefore cannot distinguish the protocol.</p>
+<p>The long-time ISG does. On the <code>6 x 6</code> torus:</p>
+<div class='table-wrap markdown-table-wrap'><table class='markdown-table'><thead><tr><th class='align-left' scope='col'>grouping</th><th class='align-right' scope='col'>physical qubits</th><th class='align-right' scope='col'>steady ISG rank</th><th class='align-right' scope='col'><code>dynamic_k</code></th></tr></thead><tbody><tr><td class='align-left'>plaquette missing color</td><td class='align-right'>72</td><td class='align-right'>70</td><td class='align-right'>2</td></tr><tr><td class='align-left'>edge direction / Pauli letter</td><td class='align-right'>72</td><td class='align-right'>52</td><td class='align-right'>20</td></tr></tbody></table></div>
+<p>Every entry in this table is recomputed by <code>reproduce.py</code>. The wrong sequence is not a small convention change; it preserves an extensive collection of logical degrees of freedom instead of the two toric logicals.</p>
+<h2 id='what-this-page-establishes'>What this page establishes</h2>
+<p>The schedule&#x27;s correctness is certified by a chain of independent invariants: proper face coloring, perfect matchings, mixed Pauli content, commuting plaquette products, startup rank profile, periodic rank, and a counterexample that passes the local checks but fails the dynamical count. The literature is needed to interpret the steady ISG as topological order; the finite algebra above is executable and recomputed.</p></div></body></html>

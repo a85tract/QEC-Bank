@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_rainbow",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:quantum_rainbow:views:0@13a0a12695d01badef15f60cbdde5eddb36a108fc94afbee7d8b6dae6417fa56",
+      "field": "views",
+      "id": "atlas-assertion:quantum_rainbow:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "atlas-formalization:quantum_rainbow",
+        "kind": "formalization"
+      },
+      "evidence_id": "atlas-evidence:quantum_rainbow:categories:0@2448cb1f3fa4189420ee9e6447b0e8422841d99b5cb65c1bc105b9028fe838de",
+      "field": "categories",
+      "id": "atlas-assertion:quantum_rainbow:categories:0",
+      "index": 0
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "class"
+  },
+  "completion_scopes": [
+    {
+      "authority": "T222 Batch 06 owner-authorized production",
+      "entity_id": "eczoo-entity:quantum_rainbow#collection",
+      "status": "admitted",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [
+        "property-class"
+      ],
+      "form": "collection",
+      "id": "eczoo-entity:quantum_rainbow#collection",
+      "lineage": {
+        "action": "admitted-by-T222",
+        "previous_version_ids": [],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "class"
+      },
+      "provenance": {
+        "authority": "T222 owner-authorized Batch 06 freeze",
+        "evidence_locators": [
+          "t222:queue/eczoo/breadth-batch-06.yaml#/items/quantum_rainbow",
+          "atlas:atlas/quantum_rainbow/card.yaml#/identity",
+          "t222:docs/lit/quantum_rainbow/quantum_rainbow-eczoo-intake.md",
+          "eczoo:codes/quantum/qubits/stabilizer/magic/k-orthogonal/quantum_rainbow.yml"
+        ]
+      },
+      "scope_boundary": "The T222 freeze admits the EC Zoo quantum_rainbow identity as one collection with one finite T1 witness.",
+      "source_node_ids": [
+        "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:quantum_rainbow"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:quantum_rainbow#collection@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "quantum_rainbow",
+  "formalization": {
+    "constructor_relation": "finite-witness",
+    "coverage": "partial",
+    "domain": "enumerated",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:quantum_rainbow",
+    "instance_role": "witness",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "3e7698e73607ef727519ba5ebabed52df1f47d36fc914f5f71e368399615b273",
+          "payload_sha256": "92eb9e02a1a81770f0e24c012e6123696047b5b44aab7c27d8438674df01b9c6",
+          "semantic_hash": "d9380c9ae6e348f3672ff660062e3801775d253a19c22fc1c7daa0d0dc7469b1"
+        },
+        "id": "atlas-instance:quantum_rainbow:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:d9380c9ae6e348f3672ff660062e3801775d253a19c22fc1c7daa0d0dc7469b1:structural-validity:de95ce62bcd1dd10d98b805776ab2eac54dafe3de8ba67b79112a2af2383eccc@1"
+          ],
+          "instance_record_sha256": "0e303836e2d218dd55341b8151f0b6211466f5083224bdb674910f66cb867c8f",
+          "lean_report_sha256": "c8eb6c6d73be8ad6bf61ea266eacfa972e0b9902fc4fc4f3f1b500b594f3c34e",
+          "semantic_hash": "d9380c9ae6e348f3672ff660062e3801775d253a19c22fc1c7daa0d0dc7469b1"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "e2a56169133c3a078818392ec59998981bd734465a1ed09ded34f4cc772b6c09",
+        "v2_envelope_id": "formal-ir-v2:quantum_rainbow:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:quantum_rainbow#collection"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:quantum_rainbow:views:0",
+      "atlas-assertion:quantum_rainbow:categories:0"
+    ],
+    "entity_ids": [
+      "eczoo-entity:quantum_rainbow#collection"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:quantum_rainbow:views:0@13a0a12695d01badef15f60cbdde5eddb36a108fc94afbee7d8b6dae6417fa56",
+      "atlas-evidence:quantum_rainbow:categories:0@2448cb1f3fa4189420ee9e6447b0e8422841d99b5cb65c1bc105b9028fe838de"
+    ],
+    "formalization_id": "atlas-formalization:quantum_rainbow",
+    "instance_ids": [
+      "atlas-instance:quantum_rainbow:primary"
+    ],
+    "page_id": "atlas-page:quantum_rainbow",
+    "source_node_ids": [
+      "eczoo-source:b2437d9e2dc09284e04c66ef72ee81b7ed7bd129:quantum_rainbow"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:quantum_rainbow#collection",
+    "completion_scopes": [
+      {
+        "authority": "T222 Batch 06 owner-authorized production",
+        "entity_id": "eczoo-entity:quantum_rainbow#collection",
+        "status": "admitted",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:quantum_rainbow",
+    "presented_entity_ids": [
+      "eczoo-entity:quantum_rainbow#collection"
+    ],
+    "primary_entity_id": "eczoo-entity:quantum_rainbow#collection",
+    "redirects": [],
+    "route": "/entries/quantum_rainbow.html",
+    "route_action": "admit-new-stable-route",
+    "route_continuity": "new-route-no-redirect",
+    "source_path": "atlas/quantum_rainbow"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

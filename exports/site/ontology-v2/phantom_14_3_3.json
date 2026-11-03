@@ -1,0 +1,186 @@
+{
+  "assertions": [
+    {
+      "applies_to": {
+        "id": "eczoo-entity:phantom_14_3_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:phantom_14_3_3:views:0@31d91fb90619352484c19b10b23dd68ed10999d8c51e9ad3c27f54f9b49b183a",
+      "field": "views",
+      "id": "atlas-assertion:phantom_14_3_3:views:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:phantom_14_3_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:phantom_14_3_3:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "field": "categories",
+      "id": "atlas-assertion:phantom_14_3_3:categories:0",
+      "index": 0
+    },
+    {
+      "applies_to": {
+        "id": "eczoo-entity:phantom_14_3_3#object",
+        "kind": "entity"
+      },
+      "evidence_id": "atlas-evidence:phantom_14_3_3:categories:1@848ceaea7c38c27403cf345f948b82b742067d4c8aac5e7ec37c2c13c88c3f65",
+      "field": "categories",
+      "id": "atlas-assertion:phantom_14_3_3:categories:1",
+      "index": 1
+    }
+  ],
+  "compatibility_projection": {
+    "status": "exact",
+    "value": "code"
+  },
+  "completion_scopes": [
+    {
+      "authority": "existing Atlas completion evidence",
+      "entity_id": "eczoo-entity:phantom_14_3_3#object",
+      "status": "preserved",
+      "tier": "T1"
+    }
+  ],
+  "entities": [
+    {
+      "collection_semantics": [],
+      "form": "object",
+      "id": "eczoo-entity:phantom_14_3_3#object",
+      "lineage": {
+        "action": "carried-forward",
+        "previous_version_ids": [
+          "eczoo-entity:phantom_14_3_3#object@qec-atlas-eczoo-ontology-v1"
+        ],
+        "superseded_by_entity_ids": [],
+        "supersedes_entity_ids": []
+      },
+      "ontology_version": "qec-atlas-eczoo-ontology-v2",
+      "projection": {
+        "status": "exact",
+        "value": "code"
+      },
+      "provenance": {
+        "authority": "T206+C1-C7",
+        "evidence_locators": [
+          "atlas:atlas/phantom_14_3_3/card.yaml#/identity",
+          "atlas:atlas/phantom_14_3_3/card.yaml#/eczoo/zoo_id",
+          "t205:docs/lit/phantom_14_3_3/phantom_14_3_3-eczoo-intake.md",
+          "t206:codes/quantum/qubits/small_distance/small/14/phantom_14_3_3.yml",
+          "owner:docs/design-references/2026-08-29-t207-atlas-eczoo-crosswalk-v1-owner-decision.md"
+        ]
+      },
+      "scope_boundary": "Carried forward from the accepted T206 denotation.",
+      "source_node_ids": [
+        "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:phantom_14_3_3"
+      ],
+      "status": "active",
+      "subject_role": "code",
+      "version_id": "eczoo-entity:phantom_14_3_3#object@qec-atlas-eczoo-ontology-v2"
+    }
+  ],
+  "entry_id": "phantom_14_3_3",
+  "formalization": {
+    "constructor_relation": "exact-representation",
+    "coverage": "exact",
+    "domain": "singleton",
+    "formal_ir_v2": {
+      "bridge": "exact-v1-finite-payload-envelope-v1",
+      "expected_payload_comparison": "byte-and-semantic-identical",
+      "replay_required": true,
+      "schema": "qec-atlas-formal-ir-v2",
+      "target_path": "computed/formal_ir/atlas-formal-ir-v2.jsonl"
+    },
+    "id": "atlas-formalization:phantom_14_3_3",
+    "instance_role": "representative",
+    "instances": [
+      {
+        "expected_comparison": "byte-and-semantic-identical",
+        "formal_ir_v1": {
+          "entry_record_sha256": "272198efe721d16d8857a22c200b9c1bc55b1c00efb190b1bbb27b5e8ecb9019",
+          "payload_sha256": "75658b9c750cd5c1185ae38a75fd1878fcaafe4cdfc684a0d48d347b34b38a91",
+          "semantic_hash": "4dfdc83fe3428a570443d80da3dfcf4fbaa3b0eb59c46277ec0f63932bb00421"
+        },
+        "id": "atlas-instance:phantom_14_3_3:primary",
+        "label": "primary",
+        "lean_v1": {
+          "branch": "css-chain",
+          "certificate_ids": [
+            "certificate:4dfdc83fe3428a570443d80da3dfcf4fbaa3b0eb59c46277ec0f63932bb00421:structural-validity:215b93b91295605cb3524ac48989681d14a2e946aac0eeb9740cf485797723e3@1"
+          ],
+          "instance_record_sha256": "30b17ab8902cc4a5241682d5a66088823b95017a707a6b184864e09c8c3b299f",
+          "lean_report_sha256": "91220e63417a73b6a242a2ea10bc1c7d98bc4a08d00e30db46c183e3f0b66225",
+          "semantic_hash": "4dfdc83fe3428a570443d80da3dfcf4fbaa3b0eb59c46277ec0f63932bb00421"
+        },
+        "source_binding_status": "clean",
+        "source_sha256": "b534d1e69ee28142458c02fb1dae3c96a2a11c1d63807b750c727a6ca7716cf4",
+        "v2_envelope_id": "formal-ir-v2:phantom_14_3_3:primary"
+      }
+    ],
+    "lean": {
+      "checker": "qec-atlas-lean-complete-v1",
+      "checker_semantics": "unchanged",
+      "envelope_only_change": true,
+      "expected_instances": 1,
+      "replay_required": true,
+      "target_path": "computed/lean_proofs/complete-v2/certificate-set.json"
+    },
+    "scope_status": "clean",
+    "target_entity_id": "eczoo-entity:phantom_14_3_3#object"
+  },
+  "hold": {
+    "clean_coverage": true,
+    "ids": [],
+    "migration_blocking": false,
+    "state": "none"
+  },
+  "identities": {
+    "assertion_ids": [
+      "atlas-assertion:phantom_14_3_3:views:0",
+      "atlas-assertion:phantom_14_3_3:categories:0",
+      "atlas-assertion:phantom_14_3_3:categories:1"
+    ],
+    "entity_ids": [
+      "eczoo-entity:phantom_14_3_3#object"
+    ],
+    "evidence_ids": [
+      "atlas-evidence:phantom_14_3_3:views:0@31d91fb90619352484c19b10b23dd68ed10999d8c51e9ad3c27f54f9b49b183a",
+      "atlas-evidence:phantom_14_3_3:categories:0@dd3160d8a0e3ae6840f3174322cd8d7b015ef366a122703663f89b92fdd6c418",
+      "atlas-evidence:phantom_14_3_3:categories:1@848ceaea7c38c27403cf345f948b82b742067d4c8aac5e7ec37c2c13c88c3f65"
+    ],
+    "formalization_id": "atlas-formalization:phantom_14_3_3",
+    "instance_ids": [
+      "atlas-instance:phantom_14_3_3:primary"
+    ],
+    "page_id": "atlas-page:phantom_14_3_3",
+    "source_node_ids": [
+      "eczoo-source:5c11f03d77895fe46564fe792288304fe4b6a998:phantom_14_3_3"
+    ]
+  },
+  "page": {
+    "assertion_subject_entity_id": "eczoo-entity:phantom_14_3_3#object",
+    "completion_scopes": [
+      {
+        "authority": "existing Atlas completion evidence",
+        "entity_id": "eczoo-entity:phantom_14_3_3#object",
+        "status": "preserved",
+        "tier": "T1"
+      }
+    ],
+    "composition": "exact-clean",
+    "id": "atlas-page:phantom_14_3_3",
+    "presented_entity_ids": [
+      "eczoo-entity:phantom_14_3_3#object"
+    ],
+    "primary_entity_id": "eczoo-entity:phantom_14_3_3#object",
+    "redirects": [],
+    "route": "/entries/phantom_14_3_3.html",
+    "route_action": "preserve-stable-route",
+    "route_continuity": "same-route-no-redirect",
+    "source_path": "atlas/phantom_14_3_3"
+  },
+  "parent_content": null,
+  "schema": "qec-atlas-entry-ontology-v2-site-binding",
+  "target_version": "entry-ontology-v2"
+}

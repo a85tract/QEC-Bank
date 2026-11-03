@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>From punctured Boolean evaluations to a CSS block</title><link rel='stylesheet' href='../../../style.css?v=3d2fa6103434'><script defer src='../../../renderer/mathjax-config.js?v=6dc4bd4b7c05'></script><script defer src='https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js'></script></head><body><nav><a href='../../../index.html'>QEC Atlas</a> · <a href='../../../foundations/index.html'>Foundations</a> · <a href='../../../wanted.html'>Open problems</a></nav><h1>From punctured Boolean evaluations to a CSS block</h1><div class='intuition'><p class='note'><b>Question.</b> How do fifteen four-bit labels determine the complete stabilizer space, rather than merely suggest a Reed–Muller analogy?</p>
+<p>Everything below uses the constructor&#x27;s fixed order: qubit <code>q</code> carries the four-bit binary expansion of <code>q+1</code>, from <code>0001</code> through <code>1111</code>, with the most-significant bit first.</p>
+<h2 id='1-the-evaluation-map'>1. The evaluation map</h2>
+<p>Let <code>V=F_2^4</code> and <code>V*=V\{0}</code>. For <code>u in F_2^4</code>, define the length-fifteen word</p>
+<p><code>ell_u = (u dot v)_(v in V*)</code>.</p>
+<p>The map <code>u -&gt; ell_u</code> is linear and injective. If <code>ell_u</code> vanished for every nonzero <code>v</code>, then it would vanish on the four standard basis vectors and force <code>u=0</code>. Its image</p>
+<p><code>L = {ell_u : u in F_2^4}</code></p>
+<p>therefore has dimension four. The constructor uses the four coordinate functions as an ordered basis:</p>
+<pre><code class='language-text'>000000011111111
+000111100001111
+011001100110011
+101010101010101</code></pre>
+<p>Every nonzero <code>ell_u</code> has weight eight. On all sixteen inputs a nonzero linear functional has an eight-dimensional zero half and an eight-dimensional one half; its value at the removed input <code>0000</code> is zero, so puncturing does not change the weight.</p>
+<p>This Boolean-evaluation starting point is the route given by Steane&#x27;s <a href='https://arxiv.org/abs/quant-ph/9608026'>quantum Reed–Muller construction</a>. The Atlas fixes an explicit basis and coordinate order so every later statement is executable.</p>
+<h2 id='2-why-the-all-one-row-is-logical-not-a-check'>2. Why the all-one row is logical, not a check</h2>
+<p>Let <code>1</code> be the length-fifteen all-one word. It is not in <code>L</code>: the zero word in <code>L</code> has weight zero and every nonzero word has weight eight, while <code>1</code> has weight fifteen. Hence</p>
+<p><code>G = L + span{1}</code></p>
+<p>has dimension five. The code uses <code>L</code> as its X-stabilizer space and reserves the other coset <code>1+L</code> for logical X. This choice is essential. If the odd row were also declared an X stabilizer, the encoded dimension and diagonal phase action would both change.</p>
+<h2 id='3-build-z-checks-by-orthogonality'>3. Build Z checks by orthogonality</h2>
+<p>Define</p>
+<p><code>S_Z = G^perp = {z : z dot ell_u = 0 for all u, and z dot 1 = 0}</code>.</p>
+<p>The constructor obtains an ordered basis with <code>gf2.nullspace(vstack([X_CHECKS, LOGICAL_X]))</code>. Its ten output rows are a basis of <code>S_Z</code>, not ten individually canonical geometric faces. Any invertible row recombination gives the same Z-stabilizer group.</p>
+<p>Because <code>S_Z</code> is orthogonal to <code>L</code>,</p>
+<p><code>H_X H_Z^T = 0</code>.</p>
+<p>Thus every X generator commutes with every Z generator. Same-type generators already commute, so <code>CheckMatrix.from_css(H_X,H_Z)</code> is a valid stabilizer matrix. The verifier checks this product and calls <code>validate()</code> on the full symplectic array.</p>
+<p>The extra condition <code>z dot 1=0</code> says every Z stabilizer has even support. It also distinguishes Z stabilizers from the odd logical-Z coset used on the <a href='logical-quotient-and-distance.html'>distance page</a>.</p>
+<h2 id='4-count-the-encoded-dimension'>4. Count the encoded dimension</h2>
+<p>The X rank is four. Since <code>G</code> has dimension five in a fifteen-dimensional ambient space, <code>S_Z=G^perp</code> has dimension ten. X-only and Z-only stabilizer rows occupy disjoint symplectic halves, so their ranks add:</p>
+<p><code>rank(S)=4+10=14</code>.</p>
+<p>A rank-fourteen stabilizer on fifteen qubits encodes</p>
+<p><code>k=15-14=1</code>.</p>
+<p>This count is independent of the particular nullspace basis printed in <code>constructor.py</code>. It depends only on the evaluation space <code>L</code> and the reserved all-one row.</p>
+<h2 id='5-relation-to-the-fifteen-qubit-quantum-hamming-block'>5. Relation to the fifteen-qubit quantum Hamming block</h2>
+<p>The repository&#x27;s <code>[[15,7,3]]</code> quantum Hamming entry uses the same four coordinate rows for both X and Z checks. Its four-dimensional Z space is a subspace of this code&#x27;s ten-dimensional <code>S_Z</code>. Adding six independent Z constraints fixes six of the Hamming block&#x27;s seven logical degrees of freedom and leaves this one-qubit block. The companion entry verifies that literal row-space containment in the shared qubit order.</p>
+<p>This relation is gauge-out/dimension reduction, not two names for the same stabilizer code. The ranks <code>8</code> and <code>14</code> already rule out that conflation.</p>
+<h2 id='6-what-is-and-is-not-verified-here'>6. What is and is not verified here</h2>
+<p>The evaluation points, matrices, ranks, commutation, and encoded dimension are recomputed by <code>pedagogy/reproduce.py</code>. The historical naming and the fact that this block is the punctured four-variable member of the broader quantum Reed–Muller lineage remain cited to the primary literature. The tetrahedral 3D color-code realization is a separate curated dictionary; the present proof uses no unexported geometric assumption.</p></div></body></html>
