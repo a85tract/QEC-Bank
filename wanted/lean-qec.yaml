@@ -1,0 +1,8 @@
+id: lean-qec
+title: "Lean QEC framework library (L1)"
+statement: "Formalize symplectic GF(2), Pauli/stabilizer/subsystem codes, Knill-Laflamme for Pauli errors, CSS/chain complexes in Lean 4 / Mathlib (spec section 11; outline = foundations/)."
+why_it_matters: "Framework-first formalization makes every code an instance; L1+L2 alone is a publishable artifact."
+current_proxy: "Accepted exact-pinned Pauli-symplectic seam plus one sealed generic Lean Complete v1 checker and a governed all-instance replay for finite static stabilizer, CSS/chain, subsystem/gauge, and measurement-schedule structures. The accepted framework exposes structural, logical-witness, upper-bound, and bounded small-exact certificate classes. Every current shipped instance has a checked structural certificate; policy-eligible verified exact-distance instances also have bounded small-exact certificates. Knill-Laflamme, family theorems, decoder correctness, thresholds, hardware, dynamic logical transport, and broader certificate classes remain open."
+difficulty: open-research
+related: []
+status: partial

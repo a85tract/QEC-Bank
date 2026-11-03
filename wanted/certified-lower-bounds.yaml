@@ -1,0 +1,8 @@
+id: certified-lower-bounds
+title: "Machine-checkable distance lower-bound certificates"
+statement: "Certificates for 'no logical below weight w' that a proof assistant can verify (feeds Lean L2); small-n exhaustion transcripts first, relaxation duals later."
+why_it_matters: "The formal-foundations layer needs LB certificates to state [[n,k,d]] theorems about instances."
+current_proxy: "Exact enumeration for small n only, unverified beyond."
+difficulty: open-research
+related: []
+status: open

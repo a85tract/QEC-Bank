@@ -1,0 +1,8 @@
+id: subsystem-dressed-distance
+title: "Scalable subsystem dressed-distance certification"
+statement: "Extend exact-small and witnessed upper-bound dressed-distance replay to scalable certified lower bounds, named Pauli sectors, and equivalence-safe subsystem presentations."
+why_it_matters: "Finite C(S)/G enumeration now verifies small Bacon-Shor instances, but large subsystem families still need lower-bound certificates and proof that gauge-equivalent presentations preserve the claimed quantity."
+current_proxy: "The referee exactly enumerates complete small weight layers and validates seeded randomized upper witnesses modulo the full gauge group. Over-budget witnesses remain upper-only with not-certified optimality; no asymptotic or presentation-equivalence theorem is inferred."
+difficulty: open-research
+related: [code-equivalence, certified-lower-bounds]
+status: open

@@ -1,0 +1,8 @@
+id: transversal-gate-cert
+title: "Transversal-gate certification library"
+statement: "Given a code, enumerate/certify its transversal logical gates. Routes: triorthogonality checks (done, exact), automorphism-based logical Cliffords (Tanner-graph autos via nauty), brute force for small n."
+why_it_matters: "Turns the operations facet from claimed(ref) into verified for the gates that matter; feeds fair comparison of computation, not just memory."
+current_proxy: "triortho.transversal_t_candidate + literature claims."
+difficulty: hard-engineering
+related: [steane, eight_three_two]
+status: partial

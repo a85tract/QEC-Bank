@@ -1,0 +1,18 @@
+id: qldpc-circuit-decoding
+title: "Circuit-level decoding for nongeometric qLDPC families"
+statement: >-
+  Build a replayable decoder and benchmark adapter for repeated syndrome
+  extraction on sparse nongeometric qLDPC codes, including measurement,
+  routing, leakage, and correlated circuit faults rather than only perfect
+  syndrome bits.
+why_it_matters: >-
+  Quantum-expander and related HGP memories have code-capacity algorithms, but
+  the Atlas cannot compare their operational memory performance until the
+  extraction circuit, detector model, decoder, and noise normalization are one
+  versioned executable contract.
+current_proxy: >-
+  Perfect-syndrome small-set flip, BP-OSD, and algebraic CSS baselines; none is
+  a family-specific circuit-level threshold workflow.
+difficulty: hard-engineering
+related: [quantum_expander, bivariate_bicycle]
+status: open

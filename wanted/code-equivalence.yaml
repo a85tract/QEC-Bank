@@ -1,0 +1,8 @@
+id: code-equivalence
+title: "Code equivalence / canonical forms"
+statement: "Decide when two entries are the same code up to local equivalence; canonical fingerprints beyond (n, k, d-bounds, weight histograms)."
+why_it_matters: "Dedup as the zoo grows past hundreds of entries; unify quon/parton/majorana presentations of the same object."
+current_proxy: "Invariant fingerprint + curated identity edges."
+difficulty: open-research
+related: []
+status: open

@@ -1,0 +1,8 @@
+id: fermionic-compiler
+title: "Fermionic compiler / ZX-fermion translator"
+statement: "Compilation in the unified Majorana/parton/quon representation (spec 3.2: one 'fermionic' type, dialects majorana-pairs|parton|quon). Plausibly the same computational content as ZX compilation. First deliverable: a formal ZX <-> fermionic dictionary."
+why_it_matters: "Makes the fermionic view machine-derived instead of fully curated; opens Majorana-native compilation for Floquet codes."
+current_proxy: "Curated per-entry fermionic notes only (refs arXiv:1703.02973, arXiv:1910.12065)."
+difficulty: open-research
+related: [honeycomb]
+status: open

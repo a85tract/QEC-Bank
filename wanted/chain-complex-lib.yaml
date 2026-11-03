@@ -1,0 +1,8 @@
+id: chain-complex-lib
+title: "General cell-complex library (boundaries, 3D+, geometry)"
+statement: "Extend the minimal ChainComplex (length-3, no geometry) to cell complexes with boundaries, higher dimensions, and coordinate embeddings."
+why_it_matters: "Needed for 3D codes (toric3d, color3d, gauge color) and for lattice embeddings beyond hand-coding; doubles as infrastructure for 3D self-correction research."
+current_proxy: "qeclib.chain (length-3, matrix-only) + hand-coded lattice dicts."
+difficulty: hard-engineering
+related: [surface]
+status: partial

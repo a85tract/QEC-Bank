@@ -1,0 +1,9 @@
+id: fast-distance
+title: "Distance at n >~ 100 for qLDPC"
+statement: "Compute or certify code distance for qLDPC instances beyond exhaustive range. Exactness NOT required: a relaxation-based certified LOWER bound (LP/SDP-style, symmetry-reduced, spectral/expansion) counts as a full solution — upper bounds are already cheap (any found logical certifies one); the lower bound is the open half."
+why_it_matters: "Unblocks 'verified' distance fields for every large entry (gross code and beyond); the Atlas comparison tables stay 'bounded/claimed' without it."
+current_proxy: "rand-lowweight-v1 upper bounds + literature claims with refs; exact enumeration only for small n."
+difficulty: open-research
+related: [bivariate_bicycle, surface]
+working_repo: https://github.com/Xun-Gao/fast-code-distance-estimator  # active research on the certified lower-bound half
+status: open

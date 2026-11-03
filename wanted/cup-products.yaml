@@ -1,0 +1,8 @@
+id: cup-products
+title: "Cohomology operations (cup products) on explicit complexes"
+statement: "Compute cup products / cohomology operations on the chain complexes of product codes to certify native non-Clifford logicals (arXiv:2501.19375)."
+why_it_matters: "Connects the homological representation directly to the LogicalOperation facet: the topology computes the gates."
+current_proxy: "Curated operations entries with refs."
+difficulty: open-research
+related: [surface, bivariate_bicycle]
+status: open

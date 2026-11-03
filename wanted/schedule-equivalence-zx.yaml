@@ -1,0 +1,8 @@
+id: schedule-equivalence-zx
+title: "Schedule equivalence via ZX rewriting"
+statement: "Decide when two measurement schedules realize the same fault-tolerant object, using the ZX local-equivalence picture (arXiv:2303.08829) as target semantics."
+why_it_matters: "Canonicalizes dynamical entries; catches duplicate codes wearing different schedules."
+current_proxy: "None; curated identity claims only."
+difficulty: open-research
+related: [honeycomb]
+status: open

@@ -1,0 +1,8 @@
+id: floquet-fault-distance
+title: "Floquet fault distance under a named schedule"
+statement: "Detector design + fault-distance computation for dynamical codes (timelike vs spacelike kept separate); beyond-graphlike DEM search."
+why_it_matters: "Honeycomb and all Floquet entries show d = ? until this exists."
+current_proxy: "ISG structure verified (dynamic_k); d omitted or claimed(ref)."
+difficulty: hard-engineering
+related: [honeycomb]
+status: open

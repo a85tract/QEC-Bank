@@ -1,0 +1,8 @@
+id: decoders-3d-fracton
+title: "Standard decoders for 3D color / gauge color / fracton codes"
+statement: "Production-quality decoders (and benchmark harness rows) for code families where none is standard."
+why_it_matters: "decoders: none-known entries stay benchmark-blind; comparison tables honestly show the gap this item closes."
+current_proxy: "status: none-known recorded per card; curated literature curves allowed with refs."
+difficulty: open-research
+related: []
+status: open
