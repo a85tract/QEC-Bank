@@ -6,7 +6,7 @@ where every number comes from.
 
 **Browse the data:** https://a85tract.github.io/QEC-Bank/
 
-**Tutorials:** https://a85tract.github.io/QEC-Bank-Academy/ ([source](https://github.com/a85tract/QEC-Bank-Academy))
+**Tutorials:** https://a85tract.github.io/QEC-Bank-Academy/?lang=en ([source](https://github.com/a85tract/QEC-Bank-Academy))
 
 ## What is in this release
 
